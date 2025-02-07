@@ -1,2 +1,24 @@
-# hrms-frontend-dev
-hrms-frontend-dev is a Vue.js-based project serving as the front end for our Human Resource Management System.
+# app
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
