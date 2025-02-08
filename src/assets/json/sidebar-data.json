@@ -36,11 +36,21 @@
       }  
     ]
   },
+
   {
-    "tittle": "Requirment",
+    "tittle": "Grant",
     "showAsTab": false,
     "separateRoute": false,
     "menu": [
+      {
+        "menuValue": "Grants",
+        "route": "/grant/list",
+        "active_link": "grant",
+        "hasSubRoute": false,
+        "showSubRoute": false,
+        "icon": "award",
+        "subMenus": []
+      },
       {
         "menuValue": "Jobs",
         "route": "/recuritment/job-grid",
@@ -50,7 +60,15 @@
         "showSubRoute": false,
         "icon": "timeline",
         "subMenus": []
-      },
+      }
+    ]
+  },
+
+  {
+    "tittle": "Recruitment",
+    "showAsTab": false,
+    "separateRoute": false,
+    "menu": [
       {
         "menuValue": "Candidates",
         "route": "/recuritment/candidates-grid",
@@ -70,49 +88,6 @@
         "showSubRoute": false,
         "icon": "ux-circle",
         "subMenus": []
-      }
-    ]
-  },
-  {
-    "tittle": "Projects",
-    "showAsTab": false,
-    "separateRoute": false,
-    "menu": [
-      {
-        "menuValue": "Clients",
-        "route": "/projects/clients-grid",
-        "active_link": "/projects/clients",
-        "active_link1": "/projects/clients-grid",
-        "active_link2": "/projects/clients-details",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "users-group",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Projects",
-        "active_link": "projects",
-        "hasSubRoute": true,
-        "showSubRoute": false,
-        "icon": "box",
-        "subMenus": [
-          {
-            "menuValue": "Projects",
-            "route": "/projects/projects-grid",
-            "active_link": "/projects/projects-grid",
-            "active_link1": "/projects/projects-list"
-          },
-          { 
-            "menuValue": "Tasks", 
-            "route": "/projects/tasks", 
-            "active_link": "/projects/tasks"
-          },
-          {
-            "menuValue": "Task Board",
-            "route": "/projects/task-board",
-            "active_link": "/projects/task-board"
-          }
-        ]
       }
     ]
   },

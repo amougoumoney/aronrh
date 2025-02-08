@@ -16,7 +16,6 @@ export const authGuard = (to, from, next) => {
                 return next('/dashboard/hr-manager-dashboard');
             case 'hr-assistant':
                 return next('/dashboard/hr-assistant-dashboard');
-            case 'manager':
             case 'employee':
                 return next('/dashboard/employee-dashboard');
             default:
@@ -40,7 +39,6 @@ export const authGuard = (to, from, next) => {
                 return next('/dashboard/hr-manager-dashboard');
             case 'hr-assistant':
                 return next('/dashboard/hr-assistant-dashboard');
-            case 'manager':
             case 'employee':
                 return next('/dashboard/employee-dashboard');
             default:
@@ -61,6 +59,12 @@ export const roleGuard = (allowedRoles) => {
 
         // Convert both arrays to lowercase for case-insensitive comparison
         const userRoleLower = userRole.toLowerCase();
+        
+        // Allow admin to access all dashboard routes
+        if (userRoleLower === 'admin' && to.path.startsWith('/dashboard/')) {
+            return next();
+        }
+        
         const allowedRolesLower = allowedRoles.map(role => role.toLowerCase());
 
         if (allowedRolesLower.includes(userRoleLower)) {

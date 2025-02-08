@@ -33,10 +33,23 @@ class MenuService {
         return roleAccess?.allowedMenus.includes(menuValue) || false;
     }
 
+    // Check if submenu item is allowed for user's role
+    isSubmenuAllowed(parentMenuValue, submenuValue) {
+        const userRole = this.getUserRole();
+        const roleAccess = ROLE_MENU_ACCESS[userRole];
+        return roleAccess?.allowedSubMenus?.[parentMenuValue]?.includes(submenuValue) || false;
+    }
+
     // Get allowed menus for current user
     getAllowedMenus() {
         const userRole = this.getUserRole();
         return ROLE_MENU_ACCESS[userRole]?.allowedMenus || [];
+    }
+
+    // Get allowed submenus for a specific menu
+    getAllowedSubmenus(menuValue) {
+        const userRole = this.getUserRole();
+        return ROLE_MENU_ACCESS[userRole]?.allowedSubMenus?.[menuValue] || [];
     }
 
     // Filter sidebar data based on user's role
@@ -51,6 +64,8 @@ class MenuService {
                 
                 // If it has subroutes, filter them too
                 if (menuItem.hasSubRoute || menuItem.hasSubRouteTwo) {
+                    const allowedSubmenus = this.getAllowedSubmenus(menuItem.menuValue);
+                    
                     menuItem.subMenus = menuItem.subMenus.filter(subMenu => {
                         // For items with nested submenus
                         if (subMenu.customSubmenuTwo) {
@@ -59,6 +74,12 @@ class MenuService {
                             );
                             return subMenu.subMenusTwo.length > 0;
                         }
+                        
+                        // If parent menu has specific submenu restrictions
+                        if (allowedSubmenus.length > 0) {
+                            return allowedSubmenus.includes(subMenu.menuValue);
+                        }
+                        
                         return this.canAccessRoute(subMenu.route);
                     });
                     

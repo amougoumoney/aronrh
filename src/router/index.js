@@ -2,6 +2,11 @@ import {createRouter, createWebHistory} from 'vue-router';
 import { authGuard, roleGuard } from './guards';
 import UnauthorizedPage from '@/views/pages/authentication/unauthorized.vue';
 
+// Grant components
+import grantIndex from '@/views/pages/grant/grant-index.vue';
+import grantList from '@/views/pages/grant/grant-list.vue';
+import grantDetails from '@/views/pages/grant/grant-details.vue';
+
 import dashboardIndex from '@/views/pages/dashboard/dashboard-index.vue';
 import adminDashboard from '@/views/pages/dashboard/admin-dashboard/admin-dashboard.vue';
 import employeeDashboard from '@/views/pages/dashboard/employee-dashboard/employee-dashboard.vue';
@@ -328,22 +333,34 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: LoginIndex
+    component: LoginIndex,
+    meta: {
+        title: 'Login'
+    }
   },
   {
     path: '/forgot-password',
     name: 'forgot-password',
-    component: forgotPassword
+    component: forgotPassword,
+    meta: {
+        title: 'Forgot Password'
+    }
   },
   {
     path: '/reset-password',
     name: 'reset-password',
-    component: resetPassword
+    component: resetPassword,
+    meta: {
+        title: 'Reset Password'
+    }
   },
   {
     path: '/unauthorized',
     name: 'unauthorized',
-    component: UnauthorizedPage
+    component: UnauthorizedPage,
+    meta: {
+        title: 'Unauthorized Access'
+    }
   },
 
   // Protected routes
@@ -361,7 +378,7 @@ const routes = [
     path: '/dashboard/employee-dashboard',
     name: 'employee-dashboard',
     component: employeeDashboard,
-    beforeEnter: roleGuard(['employee', 'manager']),
+    beforeEnter: roleGuard(['employee', 'manager', 'admin']),
     meta: {
       requiresAuth: true,
       title: 'Employee Dashboard'
@@ -381,7 +398,7 @@ const routes = [
     path: '/dashboard/hr-manager-dashboard',
     name: 'hr-manager-dashboard',
     component: hrManagerDashboard,
-    beforeEnter: roleGuard(['hr-manager']),
+    beforeEnter: roleGuard(['hr-manager', 'admin']),
     meta: {
       requiresAuth: true,
       title: 'HR Manager Dashboard'
@@ -391,7 +408,7 @@ const routes = [
     path: '/dashboard/hr-assistant-dashboard',
     name: 'hr-assistant-dashboard',
     component: hrAssistantDashboard,
-    beforeEnter: roleGuard(['hr-assistant']),
+    beforeEnter: roleGuard(['hr-assistant', 'admin']),
     meta: {
       requiresAuth: true,
       title: 'HR Assistant Dashboard'
@@ -413,7 +430,6 @@ const routes = [
             return '/dashboard/hr-manager-dashboard';
           case 'hr-assistant':
             return '/dashboard/hr-assistant-dashboard';
-          case 'manager':
           case 'employee':
             return '/dashboard/employee-dashboard';
           default:
@@ -971,30 +987,65 @@ const routes = [
       { path: "form-wizard", component: Formwizard },
     ]
   },
-  ];
+  {
+    path: '/grant',
+    component: grantIndex,
+    beforeEnter: roleGuard(['admin', 'hr-manager', 'hr-assistant']),
+    children: [
+      { path: '', redirect: '/grant/list' },
+      { 
+        path: 'list',
+        component: grantList,
+        meta: { 
+          title: 'Grants',
+          requiresAuth: true,
+          roles: ['admin', 'hr-manager']
+        }
+      },
+      { 
+        path: 'details/:id',
+        component: grantDetails,
+        meta: { 
+          title: 'Grant Details',
+          requiresAuth: true,
+          roles: ['admin', 'hr-manager']
+        }
+      }
+    ]
+  },
+];
 export const router = createRouter({
     history: createWebHistory('/hrms/'),
     linkActiveClass: 'active',
     routes,
 }); 
 
-
+// Title handling
 router.afterEach((to) => {
-  if (to.name === "layout-rtl") {
-    document.body.classList.add("layout-mode-rtl");
-  } else {
-    document.body.classList.remove("layout-mode-rtl");
-  }
+    // Handle RTL layout
+    if (to.name === "layout-rtl") {
+        document.body.classList.add("layout-mode-rtl");
+    } else {
+        document.body.classList.remove("layout-mode-rtl");
+    }
+
+    // Update page title
+    const defaultTitle = 'HRMS';
+    let title = to.meta.title || defaultTitle;
+    
+    // If you want to always include the default title
+    if (to.meta.title) {
+        title = `${to.meta.title} - ${defaultTitle}`;
+    }
+    
+    document.title = title;
 });
 
-
-
+// Scroll behavior
 router.beforeEach((to, from, next) => {
-// Scroll to the top of the page
-window.scrollTo({ top: 0, behavior: 'smooth' });
-
-// Continue with the navigation
-next();
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    next();
 });
 
 // Global navigation guard

@@ -35,7 +35,6 @@ export default {
 			<router-link to="/dashboard/" class="logo-small">
 				<span class="logo-text">HRMS</span>
 
-
 			</router-link>
 			<router-link to="/dashboard/" class="dark-logo">
 				<span class="logo-text">HRMS</span>
