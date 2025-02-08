@@ -234,6 +234,8 @@ import UI_Iconflag from "@/views/pages/uiinterface/icons/icon-flag.vue";
 
 // Authentication component
 import LoginIndex from '@/views/pages/authentication/login-index.vue';
+import forgotPassword from '@/views/pages/authentication/forgot-password.vue';
+import resetPassword from '@/views/pages/authentication/reset-password.vue';
 
 import FormLayouts from '@/views/pages/uiinterface/forms/layouts/form-layouts.vue';
 
@@ -327,6 +329,16 @@ const routes = [
     path: '/login',
     name: 'login',
     component: LoginIndex
+  },
+  {
+    path: '/forgot-password',
+    name: 'forgot-password',
+    component: forgotPassword
+  },
+  {
+    path: '/reset-password',
+    name: 'reset-password',
+    component: resetPassword
   },
   {
     path: '/unauthorized',

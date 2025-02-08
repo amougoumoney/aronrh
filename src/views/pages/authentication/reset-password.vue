@@ -1,27 +1,141 @@
 <script>
+import { ref, reactive, onMounted } from 'vue';
+import { useVuelidate } from '@vuelidate/core';
+import { required, minLength } from '@vuelidate/validators';
+import { authService } from '@/services/auth.service';
+import { useRouter } from 'vue-router';
+
 export default {
-  data() {
+  setup() {
+    const router = useRouter();
+    const loading = ref(false);
+    const message = ref('');
+    const error = ref('');
+    const showPassword = ref(false);
+    const showPasswordConfirm = ref(false);
+
+    const formData = reactive({
+      token: '',
+      email: '',
+      password: '',
+      password_confirmation: ''
+    });
+
+    const rules = {
+      password: { 
+        required, 
+        minLength: minLength(8)
+      },
+      password_confirmation: { 
+        required,
+        sameAs: (value) => value === formData.password || 'Passwords must match'
+      }
+    };
+
+    const v$ = useVuelidate(rules, formData);
+
+    onMounted(() => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const token = urlParams.get('token');
+      const email = urlParams.get('email');
+
+      if (!token || !email) {
+        error.value = 'Invalid or expired password reset link. Please request a new one.';
+        setTimeout(() => {
+          router.push('/forgot-password');
+        }, 3000);
+        return;
+      }
+
+      // Decode and validate email
+      try {
+        const decodedEmail = decodeURIComponent(email);
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(decodedEmail)) {
+          throw new Error('Invalid email format');
+        }
+        formData.email = decodedEmail;
+      } catch (e) {
+        error.value = 'Invalid email in reset link. Please request a new password reset.';
+        setTimeout(() => {
+          router.push('/forgot-password');
+        }, 3000);
+        return;
+      }
+
+      // Validate token
+      if (!/^[a-f0-9]{64}$/i.test(token)) {
+        error.value = 'Invalid reset token format. Please request a new password reset.';
+        setTimeout(() => {
+          router.push('/forgot-password');
+        }, 3000);
+        return;
+      }
+
+      formData.token = token;
+    });
+
+    const submitForm = async () => {
+      try {
+        const result = await v$.value.$validate();
+        if (!result) return;
+
+        loading.value = true;
+        message.value = '';
+        error.value = '';
+
+        await authService.resetPassword({
+          token: formData.token,
+          email: formData.email,
+          password: formData.password,
+          password_confirmation: formData.password_confirmation
+        });
+        
+        message.value = 'Password has been reset successfully. Redirecting to login...';
+        setTimeout(() => {
+          router.push('/login');
+        }, 3000);
+      } catch (err) {
+        if (err.response?.status === 422) {
+          const errors = err.response.data.errors || {};
+          const errorMessages = Object.values(errors)
+            .flat()
+            .filter(msg => msg)
+            .join('\n');
+          error.value = errorMessages || err.response.data.message || 'Validation error';
+        } else if (err.response?.status === 400) {
+          error.value = 'Invalid or expired reset token. Please request a new password reset link.';
+          setTimeout(() => {
+            router.push('/forgot-password');
+          }, 3000);
+        } else if (!err.response) {
+          error.value = 'Unable to connect to the server. Please check your connection and try again.';
+        } else {
+          error.value = err.response?.data?.message || 'Failed to reset password. Please try again.';
+        }
+      } finally {
+        loading.value = false;
+      }
+    };
+
     return {
-      showPassword: false,
-      showPassword1: false,
+      formData,
+      loading,
+      message,
+      error,
+      showPassword,
+      showPasswordConfirm,
+      v$,
+      submitForm
     };
   },
   mounted() {
     this.updateBodyClass();
   },
   watch: {
-    // Watch for route changes
     $route() {
       this.updateBodyClass();
-    },
-  },
-  computed: {
-    buttonLabel() {
-      return this.showPassword ? "Hide" : "Show";
-    },
-    buttonLabel1() {
-      return this.showPassword1 ? "Hide" : "Show";
-    },
+    }
   },
   methods: {
     updateBodyClass() {
@@ -31,16 +145,14 @@ export default {
         document.body.classList.remove("bg-white");
       }
     },
-    submitForm() {
-      this.$router.push("/success");
-    },
-    toggleShow() {
-      this.showPassword = !this.showPassword;
-    },
-    toggleShow1() {
-      this.showPassword1 = !this.showPassword1;
-    },
-  },
+    togglePasswordVisibility(field) {
+      if (field === 'password') {
+        this.showPassword = !this.showPassword;
+      } else {
+        this.showPasswordConfirm = !this.showPasswordConfirm;
+      }
+    }
+  }
 };
 </script>
 
@@ -91,60 +203,85 @@ export default {
                     <div class="text-center mb-3">
                       <h2 class="mb-2">Reset Password</h2>
                       <p class="mb-0">
-                        Your new password must be different from previous used passwords.
+                        Your new password must be different from previously used passwords.
                       </p>
                     </div>
-                    <div>
-                      <div class="input-block mb-3">
-                        <div class="mb-3">
-                          <label class="form-label">Password</label>
-                          <div class="pass-group" id="passwordInput">
-                            <input
-                              :type="showPassword ? 'text' : 'password'"
-                              class="pass-input form-control"
-                            />
-                            <span
-                              @click="toggleShow"
-                              class="ti toggle-password"
+
+                    <!-- Success Message -->
+                    <div v-if="message" class="alert alert-success alert-dismissible fade show" role="alert">
+                      {{ message }}
+                      <button type="button" class="btn-close" @click="message = ''"></button>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div v-if="error" class="alert alert-danger alert-dismissible fade show" role="alert">
+                      {{ error }}
+                      <button type="button" class="btn-close" @click="error = ''"></button>
+                    </div>
+
+                    <div class="input-block mb-3">
+                      <div class="mb-3">
+                        <label class="form-label">New Password</label>
+                        <div class="input-group" :class="{ 'is-invalid': v$.password.$error }">
+                          <input
+                            :type="showPassword ? 'text' : 'password'"
+                            v-model="formData.password"
+                            class="form-control"
+                            :class="{ 'is-invalid': v$.password.$error }"
+                            :disabled="loading"
+                          />
+                          <span class="input-group-text">
+                            <i 
+                              @click="togglePasswordVisibility('password')"
+                              class="ti"
                               :class="{
                                 'ti-eye': showPassword,
                                 'ti-eye-off': !showPassword,
                               }"
-                            ></span>
-                          </div>
+                              style="cursor: pointer;"
+                            ></i>
+                          </span>
                         </div>
-                        <div class="password-strength d-flex" id="passwordStrength">
-                          <span id="poor"></span>
-                          <span id="weak"></span>
-                          <span id="strong"></span>
-                          <span id="heavy"></span>
+                        <div class="invalid-feedback" v-if="v$.password.$error">
+                          Password must be at least 8 characters long
                         </div>
-                        <div id="passwordInfo" class="mb-2"></div>
-                        <p class="fs-12">
-                          Use 8 or more characters with a mix of letters, numbers &
-                          symbols.
-                        </p>
                       </div>
+
                       <div class="mb-3">
                         <label class="form-label">Confirm Password</label>
-                        <div class="pass-group">
+                        <div class="input-group" :class="{ 'is-invalid': v$.password_confirmation.$error }">
                           <input
-                            :type="showPassword1 ? 'text' : 'password'"
-                            class="pass-inputs form-control"
+                            :type="showPasswordConfirm ? 'text' : 'password'"
+                            v-model="formData.password_confirmation"
+                            class="form-control"
+                            :class="{ 'is-invalid': v$.password_confirmation.$error }"
+                            :disabled="loading"
                           />
-                          <span
-                            @click="toggleShow1"
-                            class="ti toggle-passwords"
-                            :class="{
-                              'ti-eye': showPassword1,
-                              'ti-eye-off': !showPassword1,
-                            }"
-                          ></span>
+                          <span class="input-group-text">
+                            <i 
+                              @click="togglePasswordVisibility('confirm')"
+                              class="ti"
+                              :class="{
+                                'ti-eye': showPasswordConfirm,
+                                'ti-eye-off': !showPasswordConfirm,
+                              }"
+                              style="cursor: pointer;"
+                            ></i>
+                          </span>
+                        </div>
+                        <div class="invalid-feedback" v-if="v$.password_confirmation.$error">
+                          Passwords must match
                         </div>
                       </div>
+
                       <div class="mb-3">
-                        <button type="submit" class="btn btn-primary w-100">
-                          Submit
+                        <button 
+                          type="submit" 
+                          class="btn btn-primary w-100"
+                          :disabled="loading"
+                        >
+                          <span v-if="loading" class="spinner-border spinner-border-sm me-2"></span>
+                          {{ loading ? 'Resetting Password...' : 'Reset Password' }}
                         </button>
                       </div>
                     </div>

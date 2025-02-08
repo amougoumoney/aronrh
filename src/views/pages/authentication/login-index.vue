@@ -4,7 +4,6 @@ import { useRouter } from 'vue-router';
 import { useVuelidate } from '@vuelidate/core';
 import { required, email, minLength } from '@vuelidate/validators';
 import { authService } from '@/services/auth.service';
-import Swal from 'sweetalert2';
 
 export default {
   name: 'LoginIndex',
@@ -104,32 +103,38 @@ export default {
         isLoading.value = true;
         const response = await authService.login(formData);
         
-        if (response.access_token) {
+        if (response.success) {
+          // Show warning if exists
+          if (response.warning) {
+            console.warn(response.warning);
+          }
+          
           // Redirect to the appropriate dashboard
-          router.push(response.dashboardPath);
+          if (response.redirectPath) {
+            router.push(response.redirectPath);
+          } else {
+            router.push('/dashboard/employee-dashboard');
+          }
+        } else {
+          error.value = 'Login failed. Please try again.';
         }
       } catch (err) {
         console.error('Login error:', err);
         
-        let errorMessage = 'Invalid credentials';
-        if (err.response?.status === 429) {
-          errorMessage = 'Too many login attempts. Please try again later.';
+        // Handle error based on type
+        if (err.type === 'AUTH_ERROR') {
+          error.value = 'Invalid email or password';
+        } else if (err.type === 'VALIDATION_ERROR' && err.errors) {
+          error.value = Object.values(err.errors).flat().join(', ');
+        } else if (err.type === 'NETWORK_ERROR') {
+          error.value = 'Unable to connect to the server. Please check your connection.';
+        } else if (err.type === 'RATE_LIMIT_ERROR') {
+          error.value = 'Too many login attempts. Please try again later.';
         } else if (err.response?.data?.message) {
-          errorMessage = err.response.data.message;
+          error.value = err.response.data.message;
+        } else {
+          error.value = err.message || 'An unexpected error occurred';
         }
-
-        // Show error message
-        await Swal.fire({
-          title: 'Login Failed',
-          text: errorMessage,
-          icon: 'error',
-          timer: 2000,
-          showConfirmButton: false,
-          position: 'top-end',
-          toast: true
-        });
-
-        error.value = errorMessage;
       } finally {
         isLoading.value = false;
       }

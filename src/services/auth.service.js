@@ -1,6 +1,5 @@
 import { apiService } from './api.service';
 import { API_ENDPOINTS } from '../config/api.config';
-import Swal from 'sweetalert2';
 import { roleService } from './role.service';
 
 class AuthService {
@@ -11,7 +10,6 @@ class AuthService {
 
     // Initialize token check
     initTokenCheck() {
-        // Check token expiration on service initialization
         const expiration = localStorage.getItem('tokenExpiration');
         if (expiration) {
             const timeLeft = new Date(parseInt(expiration)) - new Date();
@@ -48,8 +46,8 @@ class AuthService {
         )[0] || 'employee';
     }
 
-    // Helper method to get dashboard path based on role
-    getDashboardPath(role) {
+    // Helper method to get redirect path based on role
+    getRedirectPath(role) {
         switch (role.toLowerCase()) {
             case 'admin':
                 return '/dashboard/admin-dashboard';
@@ -58,9 +56,7 @@ class AuthService {
             case 'hr-assistant':
                 return '/dashboard/hr-assistant-dashboard';
             case 'manager':
-                return '/dashboard/employee-dashboard';
             case 'employee':
-                return '/dashboard/employee-dashboard';
             default:
                 return '/dashboard/employee-dashboard';
         }
@@ -70,12 +66,24 @@ class AuthService {
     async login(credentials) {
         try {
             const response = await apiService.post(API_ENDPOINTS.AUTH.LOGIN, credentials);
-            if (response.access_token) {
-                // Store token with bearer type
-                localStorage.setItem('token', response.access_token);
-                apiService.setAuthToken(`${response.token_type} ${response.access_token}`);
+            
+            // Validate response
+            if (!response || typeof response !== 'object') {
+                throw new Error('Invalid response format from server');
+            }
 
-                // Store user data
+            // Check for access token
+            if (!response.access_token) {
+                throw new Error('No access token received');
+            }
+
+            // Store token with bearer type
+            const tokenType = response.token_type || 'Bearer';
+            localStorage.setItem('token', response.access_token);
+            apiService.setAuthToken(`${tokenType} ${response.access_token}`);
+
+            // Validate and store user data
+            if (response.user && typeof response.user === 'object') {
                 localStorage.setItem('user', JSON.stringify(response.user));
                 
                 // Get user role from the roles array using slug
@@ -83,42 +91,109 @@ class AuthService {
                 localStorage.setItem('userRole', userRole);
 
                 // Set token expiration
-                const expiresIn = response.expires_in * 1000;
-                const expirationTime = new Date().getTime() + expiresIn;
-                localStorage.setItem('tokenExpiration', expirationTime.toString());
-                
-                // Set timer for auto logout
-                this.setTokenTimer(expiresIn);
-
-                // Show success toast
-                await Swal.fire({
-                    title: 'Login Successful!',
-                    text: 'Welcome back ' + response.user.name,
-                    icon: 'success',
-                    timer: 1500,
-                    showConfirmButton: false,
-                    position: 'top-end',
-                    toast: true
-                });
+                if (response.expires_in) {
+                    const expiresIn = response.expires_in * 1000;
+                    const expirationTime = new Date().getTime() + expiresIn;
+                    localStorage.setItem('tokenExpiration', expirationTime.toString());
+                    
+                    // Set timer for auto logout
+                    this.setTokenTimer(expiresIn);
+                }
 
                 // Get role permissions
                 try {
                     const rolePermissions = await roleService.getRolePermissions(userRole);
-                    localStorage.setItem('permissions', JSON.stringify(rolePermissions));
+                    if (rolePermissions) {
+                        localStorage.setItem('permissions', JSON.stringify(rolePermissions));
+                    }
+                    
+                    // Get redirect path based on role
+                    const redirectPath = this.getRedirectPath(userRole);
+                    return {
+                        ...response,
+                        redirectPath,
+                        success: true
+                    };
                 } catch (permError) {
                     console.error('Error fetching permissions:', permError);
+                    // Continue even if permissions fetch fails
+                    const redirectPath = this.getRedirectPath(userRole);
+                    return {
+                        ...response,
+                        redirectPath,
+                        success: true,
+                        warning: 'Logged in successfully but failed to fetch permissions'
+                    };
                 }
-
-                // Return the dashboard path with the response
-                return {
-                    ...response,
-                    dashboardPath: this.getDashboardPath(userRole)
-                };
+            } else {
+                this.clearAuthData();
+                throw new Error('Invalid user data received');
             }
-            return response;
         } catch (error) {
             console.error('Login error:', error);
-            throw error;
+            
+            // Clean up any partial auth data on error
+            this.clearAuthData();
+
+            // If the error has a response from the API
+            if (error.response) {
+                const statusCode = error.response.status;
+                const apiError = error.response.data;
+
+                // Handle specific status codes
+                switch (statusCode) {
+                    case 401:
+                        throw {
+                            type: 'AUTH_ERROR',
+                            message: 'Invalid email or password',
+                            statusCode: 401
+                        };
+                    case 422:
+                        throw {
+                            type: 'VALIDATION_ERROR',
+                            message: apiError?.message || 'Validation failed',
+                            errors: apiError?.errors,
+                            statusCode: 422
+                        };
+                    case 429:
+                        throw {
+                            type: 'RATE_LIMIT_ERROR',
+                            message: 'Too many login attempts. Please try again later.',
+                            statusCode: 429
+                        };
+                    default:
+                        throw {
+                            type: 'SERVER_ERROR',
+                            message: apiError?.message || 'An unexpected error occurred',
+                            statusCode: statusCode
+                        };
+                }
+            }
+            
+            // Check if it's a network error
+            if (error.message === 'Network Error' || (!error.response && !error.status)) {
+                throw {
+                    type: 'NETWORK_ERROR',
+                    message: 'Unable to connect to the server. Please check your connection.',
+                    statusCode: 0
+                };
+            }
+
+            // Handle parsing errors
+            if (error instanceof SyntaxError) {
+                throw {
+                    type: 'PARSE_ERROR',
+                    message: 'Invalid response format from server',
+                    statusCode: 500
+                };
+            }
+
+            // Handle other errors
+            throw {
+                type: 'UNKNOWN_ERROR',
+                message: error.message || 'An unexpected error occurred',
+                statusCode: 500
+            };
         }
     }
 
@@ -132,27 +207,11 @@ class AuthService {
         try {
             const token = localStorage.getItem('token');
             if (token) {
-                try {
-                    // Ensure the token is set in the API service before logout
-                    apiService.setAuthToken(`Bearer ${token}`);
-                    
-                    // Call the API logout endpoint
-                    await apiService.post(API_ENDPOINTS.AUTH.LOGOUT);
-
-                    // Show success message
-                    await Swal.fire({
-                        title: 'Logged Out',
-                        text: 'You have been successfully logged out',
-                        icon: 'success',
-                        timer: 1500,
-                        showConfirmButton: false,
-                        position: 'top-end',
-                        toast: true
-                    });
-                } catch (apiError) {
-                    console.error('API logout error:', apiError);
-                    // Don't show error for API failure
-                }
+                // Ensure the token is set in the API service before logout
+                apiService.setAuthToken(`Bearer ${token}`);
+                
+                // Call the API logout endpoint
+                await apiService.post(API_ENDPOINTS.AUTH.LOGOUT);
             }
             
             // Always clear auth data
@@ -239,7 +298,13 @@ class AuthService {
 
     // Reset Password
     async resetPassword(resetData) {
-        return await apiService.post(API_ENDPOINTS.AUTH.RESET_PASSWORD, resetData);
+        try {
+            const response = await apiService.post(API_ENDPOINTS.AUTH.RESET_PASSWORD, resetData);
+            return response;
+        } catch (error) {
+            console.error('Reset password error:', error);
+            throw error;
+        }
     }
 
     // Verify Email

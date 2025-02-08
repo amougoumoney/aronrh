@@ -3,10 +3,10 @@
     <div class="main-header">
       <div class="header-left">
         <router-link to="/dashboard/" class="logo">
-          <img src="@/assets/img/logo.svg" alt="Logo" />
+          <span class="logo-text">HRMS</span>
         </router-link>
         <router-link to="/dashboard/" class="dark-logo">
-          <img src="@/assets/img/logo-white.svg" alt="Logo" />
+          <span class="logo-text">HRMS</span>
         </router-link>
       </div>
 

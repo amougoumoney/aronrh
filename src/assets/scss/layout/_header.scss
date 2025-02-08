@@ -1078,3 +1078,50 @@
         }
     }
 }
+
+// Custom Logo Text
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #FE9F43, #FF7F50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+    padding: 10px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 20px;
+    }
+}
+
+// Specific adjustments for sidebar logo
+.sidebar-logo {
+    .logo-text {
+        font-size: 24px;
+        padding: 5px 0;
+    }
+}
+
+// Specific adjustments for small logo
+.logo-small {
+    .logo-text {
+        font-size: 18px;
+        padding: 3px 0;
+    }
+}
+
+// Specific adjustments for dark logo
+.dark-logo {
+    .logo-text {
+        font-size: 24px;
+        padding: 5px 0;
+    }
+}

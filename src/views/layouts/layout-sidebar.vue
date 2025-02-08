@@ -30,15 +30,18 @@ export default {
 		<!-- Logo -->
 		<div class="sidebar-logo">
 			<router-link to="/dashboard/" class="logo logo-normal">
-				<img src="@/assets/img/logo.svg" alt="Logo">
+				<span class="logo-text">HRMS</span>
 			</router-link>
 			<router-link to="/dashboard/" class="logo-small">
-				<img src="@/assets/img/logo-small.svg" alt="Logo">
+				<span class="logo-text">HRMS</span>
+
+
 			</router-link>
 			<router-link to="/dashboard/" class="dark-logo">
-				<img src="@/assets/img/logo-white.svg" alt="Logo">
+				<span class="logo-text">HRMS</span>
 			</router-link>
 		</div>
+
 		<!-- /Logo -->
 		<div class="modern-profile p-3 pb-0">
 			<div class="text-center rounded bg-light p-3 mb-4 user-profile">
@@ -65,6 +68,7 @@ export default {
 				</ul>
 			</div>
 		</div>
+
 		<div class="sidebar-header p-3 pb-0 pt-2">
 			<div class="text-center rounded bg-light p-2 mb-4 sidebar-profile d-flex align-items-center">
 				<div class="avatar avatar-md onlin">

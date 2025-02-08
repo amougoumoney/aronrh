@@ -23,10 +23,16 @@ class ApiService {
     // Handle response
     async handleResponse(response) {
         const data = await response.json();
+        
         if (!response.ok) {
-            const error = (data && data.message) || response.statusText;
+            const error = new Error(data.message || response.statusText);
+            error.response = {
+                status: response.status,
+                data: data
+            };
             return Promise.reject(error);
         }
+        
         return data;
     }
 
@@ -39,6 +45,9 @@ class ApiService {
             });
             return this.handleResponse(response);
         } catch (error) {
+            if (!error.response) {
+                error.message = 'Network Error';
+            }
             return Promise.reject(error);
         }
     }
@@ -53,6 +62,9 @@ class ApiService {
             });
             return this.handleResponse(response);
         } catch (error) {
+            if (!error.response) {
+                error.message = 'Network Error';
+            }
             return Promise.reject(error);
         }
     }

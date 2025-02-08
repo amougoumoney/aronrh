@@ -18,297 +18,57 @@
             "active_link": "/dashboard/admin-dashboard"
           },
           {
+            "menuValue": "HR Manager Dashboard",
+            "route": "/dashboard/hr-manager-dashboard",
+            "active_link": "/dashboard/hr-manager-dashboard"
+          },
+          {
+            "menuValue": "HR Assistant Dashboard",
+            "route": "/dashboard/hr-assistant-dashboard",
+            "active_link": "/dashboard/hr-assistant-dashboard"
+          }, 
+          {
             "menuValue": "Employee Dashboard",
             "route": "/dashboard/employee-dashboard",
             "active_link": "/dashboard/employee-dashboard"
-          },
-          {
-            "menuValue": "Deals Dashboard",
-            "route": "/dashboard/deals-dashboard",
-            "active_link": "/dashboard/deals-dashboard"
-          },
-          {
-            "menuValue": "Leads Dashboard",
-            "route": "/dashboard/leads-dashboard",
-            "active_link": "/dashboard/leads-dashboard"
           }
         ]
-      },
-      {
-        "menuValue": "Applications",
-        "hasSubRouteTwo": true,
-        "showSubRoute": false,
-        "icon": "layout-grid-add",
-        "active_link": "applications",
-        "active_link1": "calls",
-        "subMenus": [
-          {
-            "menuValue": "Chat",
-            "route": "/applications/chat",
-            "active_link": "/applications/chat",
-            "customSubmenuTwo": false
-          },
-          {
-            "menuValue": "Calls",
-            "customSubmenuTwo": true,
-            "active_link": "calls",
-            "subMenusTwo": [
-              {
-                "menuValue": "Voice Call",
-                "route": "/calls/voice-call",
-                "active_link": "/calls/voice-call"
-              },
-              {
-                "menuValue": "Video Call",
-                "route": "/calls/video-call",
-                "active_link": "/calls/video-call"
-              },
-              {
-                "menuValue": "Outgoing Call",
-                "route": "/calls/outgoing-call",
-                "active_link": "/calls/outgoing-call"
-              },
-              {
-                "menuValue": "Incoming Call",
-                "route": "/calls/incoming-call",
-                "active_link": "/calls/incoming-call"
-              },
-              {
-                "menuValue": "Call History",
-                "route": "/calls/call-history",
-                "active_link": "/calls/call-history"
-              }
-            ]
-          },
-          {
-            "menuValue": "Calendar",
-            "hasSubRoute": true,
-            "showSubRoute": false,
-            "route": "/applications/events",
-            "active_link": "/applications/events",
-            "customSubmenuTwo": false
-          },          
-          {
-            "menuValue": "Email",
-            "hasSubRoute": true,
-            "showSubRoute": false,
-            "route": "/applications/email",
-            "active_link": "/applications/email",
-            "customSubmenuTwo": false
-          },
-          {
-            "menuValue": "Todo",
-            "hasSubRoute": true,
-            "showSubRoute": false,
-            "route": "/applications/todo",
-            "active_link": "/applications/todo",
-            "customSubmenuTwo": false
-          },
-          {
-            "menuValue": "Notes",
-            "hasSubRoute": true,
-            "showSubRoute": false,
-            "route": "/applications/notes",
-            "active_link": "/applications/notes",
-            "customSubmenuTwo": false
-          },
-          {
-            "menuValue": "Social Feed",
-            "hasSubRoute": true,
-            "showSubRoute": false,
-            "route": "/applications/social-feed",
-            "active_link": "/applications/social-feed",
-            "customSubmenuTwo": false
-          },
-          {
-            "menuValue": "File Manager",
-            "hasSubRoute": true,
-            "showSubRoute": false,
-            "route": "/applications/file-manager",
-            "active_link": "/applications/file-manager",
-            "customSubmenuTwo": false
-          },
-          {
-            "menuValue": "Kanban",
-            "hasSubRoute": true,
-            "showSubRoute": false,
-            "route": "/applications/kanban-view",
-            "active_link": "/applications/kanban-view",
-            "customSubmenuTwo": false
-          },
-          {
-            "menuValue": "Invoices",
-            "hasSubRoute": true,
-            "showSubRoute": false,
-            "route": "/applications/invoices",
-            "active_link": "/applications/invoices",
-            "customSubmenuTwo": false
-          }
-        ]
-      },
-      {
-        "menuValue": "Super Admin",
-        "route": "/super-admin/",
-        "hasSubRoute": true,
-        "showSubRoute": false,
-        "icon": "user-star",
-        "active_link": "super-admin",
-        "subMenus": [
-          {
-            "menuValue": "Dashboard",
-            "route": "/super-admin/dashboard",
-            "active_link": "/super-admin/dashboard"
-          },
-          {
-            "menuValue": "Companies",
-            "route": "/super-admin/companies",
-            "active_link": "/super-admin/companies"
-          },
-          {
-            "menuValue": "Subscriptions",
-            "route": "/super-admin/subscription",
-            "active_link": "/super-admin/subscription"
-          },
-          {
-            "menuValue": "Packages",
-            "route": "/super-admin/packages",
-            "active_link": "/super-admin/packages"
-          },
-          {
-            "menuValue": "Domain",
-            "route": "/super-admin/domain",
-            "active_link": "/super-admin/domain"
-          },
-          {
-            "menuValue": "Purchase Transaction",
-            "route": "/super-admin/purchase-transaction",
-            "active_link": "/super-admin/purchase-transaction"
-          }
-        ]
-      }
+      }  
     ]
   },
   {
-    "tittle": "Layout",
+    "tittle": "Requirment",
     "showAsTab": false,
     "separateRoute": false,
-    "active_link": "layouts",
     "menu": [
       {
-        "menuValue": "Horizontal",
-        "route": "/layouts/layout-horizontal",
-        "active_link": "/layouts/layout-horizontal",
+        "menuValue": "Jobs",
+        "route": "/recuritment/job-grid",
+        "active_link": "/recuritment/job-grid",
+        "active_link1": "/recuritment/job-list",
         "hasSubRoute": false,
         "showSubRoute": false,
-        "icon": "layout-navbar",
+        "icon": "timeline",
         "subMenus": []
       },
       {
-        "menuValue": "Detached",
-        "route": "/layouts/layout-detached",
-        "active_link": "/layouts/layout-detached",
+        "menuValue": "Candidates",
+        "route": "/recuritment/candidates-grid",
+        "active_link": "/recuritment/candidates-grid",
+        "active_link1": "/recuritment/candidates",
+        "active_link2": "/recuritment/candidates-kanban",
         "hasSubRoute": false,
         "showSubRoute": false,
-        "icon": "details",
+        "icon": "user-shield",
         "subMenus": []
       },
       {
-        "menuValue": "Modern",
-        "route": "/layouts/layout-modern",
-        "active_link": "/layouts/layout-modern",
+        "menuValue": "Referrals",
+        "route": "/recuritment/refferals",
+        "active_link": "/recuritment/refferals",
         "hasSubRoute": false,
         "showSubRoute": false,
-        "icon": "layout-board-split",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Two Column",
-        "route": "/layouts/layout-two-column",
-        "active_link": "/layouts/layout-two-column",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "columns-2",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Hovered",
-        "route": "/layouts/layout-hovered",
-        "active_link": "/layouts/layout-hovered",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "column-insert-left",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Boxed",
-        "route": "/layouts/layout-box",
-        "active_link": "/layouts/layout-box",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "layout-align-middle",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Horizontal Single",
-        "route": "/layouts/layout-horizontal-single",
-        "active_link": "/layouts/layout-horizontal-single",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "layout-navbar-inactive",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Horizontal Overlay",
-        "route": "/layouts/layout-horizontal-overlay",
-        "active_link": "/layouts/layout-horizontal-overlay",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "layout-collage",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Horizontal Box",
-        "route": "/layouts/layout-horizontal-box",
-        "active_link": "/layouts/layout-horizontal-box",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "layout-board",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Menu Aside",
-        "route": "/layouts/layout-horizontal-sidemenu",
-        "active_link": "/layouts/layout-horizontal-sidemenu",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "table",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Transparent",
-        "route": "/layouts/layout-vertical-transparent",
-        "active_link": "/layouts/layout-vertical-transparent",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "layout",
-        "subMenus": []
-      },
-      {
-        "menuValue": "RTL",
-        "route": "/layouts/layout-rtl",
-        "active_link": "/layouts/layout-rtl",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "text-direction-rtl",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Dark",
-        "route": "/layouts/layout-dark",
-        "active_link": "/layouts/layout-dark",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "moon",
+        "icon": "ux-circle",
         "subMenus": []
       }
     ]
@@ -353,84 +113,6 @@
             "active_link": "/projects/task-board"
           }
         ]
-      }
-    ]
-  },
-  {
-    "tittle": "CRM",
-    "showAsTab": false,
-    "separateRoute": false,
-    "menu": [
-      {
-        "menuValue": "Contacts",
-        "route": "/crm/contacts-grid",
-        "active_link": "/crm/contacts",
-        "active_link1": "/crm/contacts-grid",
-        "active_link2": "/crm/contact-details",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "user-shield",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Companies",
-        "route": "/crm/companies-grid",
-        "active_link": "/crm/companies-crm",
-        "active_link1": "/crm/companies-grid",
-        "active_link2": "/crm/companies-details",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "building",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Deals",
-        "route": "/crm/deals-list",
-        "active_link": "/crm/deals-list",
-        "active_link1": "/crm/deals-kanban",
-        "active_link2": "/crm/deals-details",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "heart-handshake",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Leads",
-        "route": "/crm/leads-list",
-        "active_link": "/crm/leads-list",
-        "active_link1": "/crm/leads-kanban",
-        "active_link2": "/crm/leads-details",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "user-check",
-        "subMenus": []
-      },
-      {
-        "menuValue": " Pipeline",
-        "route": "/crm/pipeline",
-        "active_link": "/crm/pipeline",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "timeline-event-text",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Analytics",
-        "route": "/crm/analytics",
-        "active_link": "/crm/analytics",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "graph",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Activities",
-        "route": "/crm/activity",
-        "active_link": "/crm/activity",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "activity",
-        "subMenus": []
       }
     ]
   },
@@ -647,43 +329,6 @@
         "hasSubRoute": false,
         "showSubRoute": false,
         "icon": "circle-x",
-        "subMenus": []
-      }
-    ]
-  },
-  {
-    "tittle": "Requirment",
-    "showAsTab": false,
-    "separateRoute": false,
-    "menu": [
-      {
-        "menuValue": "Jobs",
-        "route": "/recuritment/job-grid",
-        "active_link": "/recuritment/job-grid",
-        "active_link1": "/recuritment/job-list",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "timeline",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Candidates",
-        "route": "/recuritment/candidates-grid",
-        "active_link": "/recuritment/candidates-grid",
-        "active_link1": "/recuritment/candidates",
-        "active_link2": "/recuritment/candidates-kanban",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "user-shield",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Referrals",
-        "route": "/recuritment/refferals",
-        "active_link": "/recuritment/refferals",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "ux-circle",
         "subMenus": []
       }
     ]
@@ -1152,208 +797,6 @@
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "tittle": "Content",
-    "showAsTab": false,
-    "separateRoute": false,
-    "menu": [
-      {
-        "menuValue": "Pages",
-        "route": "/content/pages",
-        "active_link": "/content/pages",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "box-multiple",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Blogs",
-        "hasSubRoute": true,
-        "showSubRoute": false,
-        "icon": "brand-blogger",
-        "active_link": "blog",
-        "subMenus": [
-          {
-            "menuValue": "All Blogs",
-            "route": "/blog/blogs",
-            "active_link": "/blog/blogs"
-          },
-          {
-            "menuValue": "Categories",
-            "route": "/blog/blog-categories",
-            "active_link": "/blog/blog-categories"
-          },
-          {
-            "menuValue": "Comments",
-            "route": "/blog/blog-comments",
-            "active_link": "/blog/blog-comments"
-          },
-          {
-            "menuValue": "Blog Tags",
-            "route": "/blog/blog-tags",
-            "active_link": "/blog/blog-tags"
-          }
-        ]
-      },
-      {
-        "menuValue": "Locations",
-        "hasSubRoute": true,
-        "showSubRoute": false,
-        "icon": "map-pin-check",
-        "active_link": "location",
-        "subMenus": [
-          {
-            "menuValue": "Countries",
-            "route": "/location/countries",
-            "active_link": "/location/countries"
-          },
-          {
-            "menuValue": "States",
-            "route": "/location/states",
-            "active_link": "/location/states"
-          },
-          {
-            "menuValue": "Cities",
-            "route": "/location/cities",
-            "active_link": "/location/cities"
-          }
-        ]
-      },
-      {
-        "menuValue": "Testimonials",
-        "route": "/content/testimonials",
-        "active_link": "/content/testimonials",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "message-2",
-        "subMenus": []
-      },
-      {
-        "menuValue": "FAQ’S",
-        "route": "/content/faq",
-        "active_link": "/content/faq",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "question-mark",
-        "subMenus": []
-      }
-    ]
-  },
-  {
-    "tittle": "Pages",
-    "showAsTab": false,
-    "separateRoute": false,
-    "menu": [
-      {
-        "menuValue": "Starter",
-        "route": "/pages/starter",
-        "active_link": "/pages/starter",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "layout-sidebar",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Profile",
-        "route": "/pages/profile",
-        "active_link": "/pages/profile",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "user-circle",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Gallery",
-        "route": "/pages/gallery",
-        "active_link": "/pages/gallery",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "photo",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Search Results",
-        "route": "/pages/search-result",
-        "active_link": "/pages/search-result",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "list-search",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Timeline",
-        "route": "/pages/timeline",
-        "active_link": "/pages/timeline",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "timeline",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Pricing",
-        "route": "/pages/pricing",
-        "active_link": "/pages/pricing",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "file-dollar",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Coming Soon",
-        "route": "/pages/coming-soon",
-        "active_link": "/pages/coming-soon",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "progress-bolt",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Under Maintenance",
-        "route": "/pages/under-maintenance",
-        "active_link": "/pages/under-maintenance",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "alert-octagon",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Under Construction",
-        "route": "/pages/under-construction",
-        "active_link": "/pages/under-construction",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "barrier-block",
-        "subMenus": []
-      },
-      {
-        "menuValue": "API Keys",
-        "route": "/pages/api-keys",
-        "active_link": "/pages/api-keys",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "api",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Privacy Policy",
-        "route": "/pages/privacy-policy",
-        "active_link": "/pages/privacy-policy",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "file-description",
-        "subMenus": []
-      },
-      {
-        "menuValue": "Terms & Conditions",
-        "route": "/pages/terms-condition",
-        "active_link": "/pages/terms-condition",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "file-check",
-        "subMenus": []
       }
     ]
   },

@@ -57,59 +57,30 @@
                 </ul>
             </li>
         </template>
-        <li class="menu-title"><span>Extras</span></li>
-        <li>
-            <ul>
-                <li>
-                    <a href="javascript:void(0);"><i class="ti ti-file-text"></i><span>Documentation</span></a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);"><i class="ti ti-exchange"></i><span>Changelog</span><span class="badge bg-pink badge-xs text-white fs-10 ms-s">v4.0.2</span></a>
-                </li>
-                <li class="submenu">
-                    <a href="javascript:void(0);" :class="{ subdrop: multilevel[0] }" @click="multilevel[0] = !multilevel[0]">
-                        <i class="ti ti-menu-2"></i>
-                        <span>Multi Level</span>
-                        <span class="menu-arrow"></span>
-                    </a>
-                    <ul :class="{ 'd-block': multilevel[0], 'd-none': !multilevel[0] }">
-                        <li>
-                            <a href="javascript:void(0);" :class="{ subdrop: multilevel[1] }" @click="multilevel[1] = !multilevel[1]">Multilevel 1</a>
-                        </li>
-                        <li class="submenu submenu-two">
-                            <a href="javascript:void(0);" :class="{ subdrop: multilevel[2] }" @click="multilevel[2] = !multilevel[2]">Multilevel 2<span class="menu-arrow inside-submenu"></span></a>
-                            <ul :class="{ 'd-block': multilevel[2], 'd-none': !multilevel[2] }">
-                                <li><a href="javascript:void(0);">Multilevel 2.1</a></li>
-                                <li class="submenu submenu-two submenu-three">
-                                    <a href="javascript:void(0);" :class="{ subdrop: multilevel[3] }" @click="multilevel[3] = !multilevel[3]">Multilevel 2.2<span class="menu-arrow inside-submenu inside-submenu-two"></span></a>
-                                    <ul :class="{ 'd-block': multilevel[3], 'd-none': !multilevel[3] }">
-                                        <li><a href="javascript:void(0);">Multilevel 2.2.1</a></li>
-                                        <li><a href="javascript:void(0);">Multilevel 2.2.2</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="javascript:void(0);">Multilevel 3</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
     </ul>
 </template>
 
 <script>
 import sideBarData from "@/assets/json/sidebar-data.json";
+import { menuService } from '@/services/menu.service';
+
 export default {
     data() {
         return {
-            sideBarData: sideBarData,
+            sideBarData: [],
             openMenuItem: null,
             openSubmenuOneItem: null,
             route_array: [],
             multilevel: [false, false, false],
         };
     },
+    created() {
+        this.initializeMenu();
+    },
     computed: {
+        userRole() {
+            return localStorage.getItem('userRole') || 'employee'; // Default to employee if no role set
+        },
         isMenuActive() {
             return (menu) => {
                 return this.$route.path === menu.route ||
@@ -137,6 +108,10 @@ export default {
         }
     },
     methods: {
+        initializeMenu() {
+            // Use menu service to filter sidebar data
+            this.sideBarData = menuService.filterSidebarData(sideBarData);
+        },
         expandSubMenus(menu) {
             this.sideBarData.forEach((item) => {
                 item.menu.forEach((subMenu) => {
