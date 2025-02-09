@@ -210,17 +210,24 @@ class AuthService {
                 // Ensure the token is set in the API service before logout
                 apiService.setAuthToken(`Bearer ${token}`);
                 
-                // Call the API logout endpoint
-                await apiService.post(API_ENDPOINTS.AUTH.LOGOUT);
+                try {
+                    // Try to call the API logout endpoint
+                    await apiService.post(API_ENDPOINTS.AUTH.LOGOUT);
+                } catch (error) {
+                    // If API call fails, just log it but continue with local logout
+                    console.warn('Logout API call failed:', error);
+                }
             }
             
-            // Always clear auth data
+            // Always clear auth data regardless of API call success
             this.clearAuthData();
+            
+            return { success: true };
         } catch (error) {
-            console.error('Logout error:', error);
             // Clear auth data even on error
             this.clearAuthData();
-            throw error;
+            console.error('Logout error:', error);
+            return { success: true };
         }
     }
 

@@ -50,16 +50,6 @@
         "showSubRoute": false,
         "icon": "award",
         "subMenus": []
-      },
-      {
-        "menuValue": "Jobs",
-        "route": "/recuritment/job-grid",
-        "active_link": "/recuritment/job-grid",
-        "active_link1": "/recuritment/job-list",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "timeline",
-        "subMenus": []
       }
     ]
   },
@@ -70,20 +60,33 @@
     "separateRoute": false,
     "menu": [
       {
+        "menuValue": "Jobs",
+        "route": "/recruitment/job-list",
+        "active_link": "/recruitment/job-list",
+        "active_link1": "/recruitment/job-list",
+        "hasSubRoute": false,
+        "showSubRoute": false,
+        "icon": "timeline",
+        "subMenus": []
+
+      },
+      {
         "menuValue": "Candidates",
-        "route": "/recuritment/candidates-grid",
-        "active_link": "/recuritment/candidates-grid",
-        "active_link1": "/recuritment/candidates",
-        "active_link2": "/recuritment/candidates-kanban",
+        "route": "/recruitment/candidates-list",
+        "active_link": "/recruitment/candidates-list",
+        "active_link1": "/recruitment/candidates-list",
+        "active_link2": "/recruitment/candidates-kanban",
         "hasSubRoute": false,
         "showSubRoute": false,
         "icon": "user-shield",
+
+
         "subMenus": []
       },
       {
         "menuValue": "Referrals",
-        "route": "/recuritment/refferals",
-        "active_link": "/recuritment/refferals",
+        "route": "/recruitment/refferals",
+        "active_link": "/recruitment/refferals",
         "hasSubRoute": false,
         "showSubRoute": false,
         "icon": "ux-circle",
@@ -109,11 +112,6 @@
             "active_link": "/employee/employee-list"
           },
           {
-            "menuValue": "Employee Grid",
-            "route": "/employee/employee-grid",
-            "active_link": "/employee/employee-grid"
-          },
-          {
             "menuValue": "Employee Details",
             "route": "/employee/employee-details",
             "active_link": "/employee/employee-details"
@@ -132,25 +130,6 @@
             "menuValue": "Policies",
             "route": "/employee/policy",
             "active_link": "/employee/policy"
-          }
-        ]
-      },
-      {
-        "menuValue": "Tickets",
-        "active_link": "tickets",
-        "hasSubRoute": true,
-        "showSubRoute": false,
-        "icon": "ticket",
-        "subMenus": [
-          {
-            "menuValue": "Tickets",
-            "route": "/tickets/ticket",
-            "active_link": "/tickets/ticket"
-          },
-          {
-            "menuValue": "Ticket Details",
-            "route": "/tickets/tickets-details",
-            "active_link": "/tickets/tickets-details"
           }
         ]
       },

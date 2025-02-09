@@ -2,10 +2,10 @@
   <div class="header">
     <div class="main-header">
       <div class="header-left">
-        <router-link to="/dashboard/" class="logo">
+        <router-link :to="dashboardRoute" class="logo">
           <span class="logo-text">HRMS</span>
         </router-link>
-        <router-link to="/dashboard/" class="dark-logo">
+        <router-link :to="dashboardRoute" class="dark-logo">
           <span class="logo-text">HRMS</span>
         </router-link>
       </div>
@@ -750,11 +750,14 @@ export default {
         });
 
         if (result.isConfirmed) {
-          await authService.logout();
-          this.$router.push('/login');
+          const logoutResult = await authService.logout();
+          if (logoutResult.success) {
+            this.$router.push('/login');
+          }
         }
       } catch (error) {
         console.error('Logout failed:', error);
+        // Still redirect to login page even if API call fails
         this.$router.push('/login');
       }
     }
@@ -762,6 +765,11 @@ export default {
   beforeUnmount() {
     document.removeEventListener("mouseover", this.handleMouseover);
     document.removeEventListener("click", this.handleOutsideClick);
+  },
+  computed: {
+    dashboardRoute() {
+      return '/dashboard/';
+    }
   },
 };
 </script>

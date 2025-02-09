@@ -1,6 +1,7 @@
 <script>
 import { PerfectScrollbar } from "vue3-perfect-scrollbar";
 import "vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css";
+
 export default {
     components: {
         PerfectScrollbar,
@@ -20,6 +21,21 @@ export default {
         currentPath() {
             return this.$route.name;
         },
+        dashboardRoute() {
+            const userRole = localStorage.getItem('userRole')?.toLowerCase();
+            switch (userRole) {
+                case 'admin':
+                    return '/dashboard/admin-dashboard';
+                case 'hr-manager':
+                    return '/dashboard/hr-manager-dashboard';
+                case 'hr-assistant':
+                    return '/dashboard/hr-assistant-dashboard';
+                case 'manager':
+                case 'employee':
+                default:
+                    return '/dashboard/employee-dashboard';
+            }
+        }
     },
 };
 </script>
@@ -29,14 +45,13 @@ export default {
 	<div class="sidebar" id="sidebar">
 		<!-- Logo -->
 		<div class="sidebar-logo">
-			<router-link to="/dashboard/" class="logo logo-normal">
+			<router-link :to="dashboardRoute" class="logo logo-normal">
 				<span class="logo-text">HRMS</span>
 			</router-link>
-			<router-link to="/dashboard/" class="logo-small">
+			<router-link :to="dashboardRoute" class="logo-small">
 				<span class="logo-text">HRMS</span>
-
 			</router-link>
-			<router-link to="/dashboard/" class="dark-logo">
+			<router-link :to="dashboardRoute" class="dark-logo">
 				<span class="logo-text">HRMS</span>
 			</router-link>
 		</div>

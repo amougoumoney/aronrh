@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BASE_URL: 'http://127.0.0.1:8000/api/v1',
+    BASE_URL: process.env.VUE_APP_API_URL || 'http://127.0.0.1:8000/api/v1',
     HEADERS: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
@@ -17,6 +17,7 @@ export const API_ENDPOINTS = {
         REFRESH: '/auth/refresh',
         FORGOT_PASSWORD: '/auth/forgot-password',
         RESET_PASSWORD: '/auth/reset-password',
+        VERIFY_EMAIL: '/auth/verify-email'
     },
     
     // User endpoints
@@ -98,5 +99,19 @@ export const API_ENDPOINTS = {
         DETAILS: '/roles/:id',
         GET_PERMISSIONS: '/roles/:id/permissions',
         UPDATE_PERMISSIONS: '/roles/:id/permissions'
+    },
+
+    // Grant endpoints
+    GRANT: {
+        LIST: '/grants',
+        CREATE: '/grants',
+        UPDATE: '/grants/:id',
+        DELETE: '/grants/:id',
+        DETAILS: '/grants/:id',
+        APPROVE: '/grants/:id/approve',
+        REJECT: '/grants/:id/reject',
+        DOCUMENTS: '/grants/:id/documents',
+        UPLOAD_DOCUMENT: '/grants/:id/documents/upload',
+        DELETE_DOCUMENT: '/grants/:id/documents/:documentId'
     }
 }; 

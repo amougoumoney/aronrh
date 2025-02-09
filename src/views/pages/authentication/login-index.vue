@@ -191,7 +191,7 @@ export default {
               <form @submit.prevent="handleLogin">
                 <div>
                   <div class="mx-auto mb-5 text-center">
-                    <img src="@/assets/img/logo.svg" class="img-fluid" alt="Logo" />
+                    <span class="logo-text fw-bold fs-1">HRMS</span>
                   </div>
                   <div class="">
                     <div class="text-center mb-3">
@@ -273,11 +273,6 @@ export default {
                       <span v-if="isLoading" class="spinner-border spinner-border-sm me-2"></span>
                       {{ isLoading ? 'Signing in...' : 'Sign In' }}
                     </button>
-
-                    <!-- Register Link -->
-                    <div class="text-center">
-                      <p>Don't have an account? <router-link to="/register" class="text-primary">Sign Up</router-link></p>
-                    </div>
                   </div>
                 </div>
               </form>

@@ -1,4 +1,4 @@
-import { ROLE_HIERARCHY, DEFAULT_ROUTES, ROLE_MENU_ACCESS } from '../config/role-menu.config';
+import { ROLE_HIERARCHY, ROLE_MENU_ACCESS } from '../config/role-menu.config';
 
 class MenuService {
     // Get user's role
@@ -113,12 +113,6 @@ class MenuService {
     hasAnyPermission(requiredPermissions) {
         if (!requiredPermissions || requiredPermissions.length === 0) return true;
         return requiredPermissions.some(permission => this.hasPermission(permission));
-    }
-
-    // Get default route for current user
-    getDefaultRoute() {
-        const userRole = this.getUserRole();
-        return DEFAULT_ROUTES[userRole] || '/dashboard/employee-dashboard';
     }
 
     // Check if user can access a specific route

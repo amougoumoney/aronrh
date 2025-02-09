@@ -59,12 +59,6 @@ export const roleGuard = (allowedRoles) => {
 
         // Convert both arrays to lowercase for case-insensitive comparison
         const userRoleLower = userRole.toLowerCase();
-        
-        // Allow admin to access all dashboard routes
-        if (userRoleLower === 'admin' && to.path.startsWith('/dashboard/')) {
-            return next();
-        }
-        
         const allowedRolesLower = allowedRoles.map(role => role.toLowerCase());
 
         if (allowedRolesLower.includes(userRoleLower)) {

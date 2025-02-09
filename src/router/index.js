@@ -283,7 +283,7 @@ import TrainingType from '@/views/pages/hrm/attendance/training/training-type.vu
 import PromotionList from '@/views/pages/hrm/promotion/promotion-list.vue';
 import ResignationList from '@/views/pages/hrm/resignation/resignation-list.vue';
 import TerminationList from '@/views/pages/hrm/termination/termination-list.vue';
-import RecuritmentIndex from '@/views/pages/recruitment/recuritment-index.vue';
+import RecruitmentIndex from '@/views/pages/recruitment/recruitment-index.vue';
 import JobGrid from '@/views/pages/recruitment/jobs/job-grid.vue';
 import JobList from '@/views/pages/recruitment/jobs/job-list.vue';
 import CandidatesGrid from '@/views/pages/recruitment/candidates/candidates-grid.vue';
@@ -378,21 +378,23 @@ const routes = [
     path: '/dashboard/employee-dashboard',
     name: 'employee-dashboard',
     component: employeeDashboard,
-    beforeEnter: roleGuard(['employee', 'manager', 'admin']),
+    beforeEnter: roleGuard(['employee', 'hr-manager', 'admin', 'hr-assistant']),
     meta: {
       requiresAuth: true,
       title: 'Employee Dashboard'
     }
+
   },
   {
     path: '/dashboard/deals-dashboard',
     name: 'deals-dashboard',
     component: dealsDashboard,
-    beforeEnter: roleGuard(['manager', 'admin']),
+    beforeEnter: roleGuard(['hr-manager', 'admin']),
     meta: {
       requiresAuth: true,
       title: 'Deals Dashboard'
     }
+
   },
   {
     path: '/dashboard/hr-manager-dashboard',
@@ -408,7 +410,7 @@ const routes = [
     path: '/dashboard/hr-assistant-dashboard',
     name: 'hr-assistant-dashboard',
     component: hrAssistantDashboard,
-    beforeEnter: roleGuard(['hr-assistant', 'admin']),
+    beforeEnter: roleGuard(['hr-assistant', 'hr-manager' ,'admin']),
     meta: {
       requiresAuth: true,
       title: 'HR Assistant Dashboard'
@@ -677,14 +679,19 @@ const routes = [
     ]
   },
   {
-    path: '/recuritment',
-    component: RecuritmentIndex,
+    path: '/recruitment',
+    component: RecruitmentIndex,
+    beforeEnter: roleGuard(['hr-assistant', 'hr-manager', 'admin']),
+    meta: {
+      requiresAuth: true,
+      title: 'Job'
+    },
     children: [
-      { path: '', redirect: '/recuritment/job-grid' },
+      { path: '', redirect: '/recruitment/job-grid' },
       { path: "job-grid", component: JobGrid },
       { path: "job-list", component: JobList },
       { path: "candidates-grid", component: CandidatesGrid },
-      { path: "candidates", component: CandidatesList },
+      { path: "candidates-list", component: CandidatesList },
       { path: "candidates-kanban", component: CandidatesKanban },
       { path: "refferals", component: RefferalsList },
     ]
@@ -757,6 +764,11 @@ const routes = [
   {
     path: '/employee',
     component: employeesIndex,
+    beforeEnter: roleGuard(['hr-assistant', 'hr-manager', 'admin']),
+    meta: {
+      requiresAuth: true,
+      title: 'Employee'
+    },
     children: [
       { path: '', redirect: '/employee/employee-list' },
       { path: "employee-list", component: employeesList },
@@ -1015,7 +1027,7 @@ const routes = [
   },
 ];
 export const router = createRouter({
-    history: createWebHistory('/hrms/'),
+    history: createWebHistory(process.env.BASE_URL),
     linkActiveClass: 'active',
     routes,
 }); 
@@ -1035,10 +1047,10 @@ router.afterEach((to) => {
     
     // If you want to always include the default title
     if (to.meta.title) {
-        title = `${to.meta.title} - ${defaultTitle}`;
+        document.title = `${title} - ${defaultTitle}`;
+    } else {
+        document.title = defaultTitle;
     }
-    
-    document.title = title;
 });
 
 // Scroll behavior
