@@ -41,7 +41,8 @@ class ApiService {
         try {
             const response = await fetch(this.getFullURL(endpoint), {
                 method: 'GET',
-                headers: this.headers
+                headers: this.headers,
+                credentials: 'include'
             });
             return this.handleResponse(response);
         } catch (error) {
@@ -58,7 +59,8 @@ class ApiService {
             const response = await fetch(this.getFullURL(endpoint), {
                 method: 'POST',
                 headers: this.headers,
-                body: JSON.stringify(data)
+                body: JSON.stringify(data),
+                credentials: 'include'
             });
             return this.handleResponse(response);
         } catch (error) {
@@ -75,7 +77,8 @@ class ApiService {
             const response = await fetch(this.getFullURL(endpoint), {
                 method: 'PUT',
                 headers: this.headers,
-                body: JSON.stringify(data)
+                body: JSON.stringify(data),
+                credentials: 'include'
             });
             return this.handleResponse(response);
         } catch (error) {
@@ -88,7 +91,8 @@ class ApiService {
         try {
             const response = await fetch(this.getFullURL(endpoint), {
                 method: 'DELETE',
-                headers: this.headers
+                headers: this.headers,
+                credentials: 'include'
             });
             return this.handleResponse(response);
         } catch (error) {
@@ -102,7 +106,8 @@ class ApiService {
             const response = await fetch(this.getFullURL(endpoint), {
                 method: 'PATCH',
                 headers: this.headers,
-                body: JSON.stringify(data)
+                body: JSON.stringify(data),
+                credentials: 'include'
             });
             return this.handleResponse(response);
         } catch (error) {

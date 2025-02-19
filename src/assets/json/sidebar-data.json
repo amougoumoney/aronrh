@@ -18,7 +18,7 @@
             "active_link": "/dashboard/admin-dashboard"
           },
           {
-            "menuValue": "HR Manager Dashboard",
+            "menuValue": "HR Manager Dashboard", 
             "route": "/dashboard/hr-manager-dashboard",
             "active_link": "/dashboard/hr-manager-dashboard"
           },
@@ -26,7 +26,7 @@
             "menuValue": "HR Assistant Dashboard",
             "route": "/dashboard/hr-assistant-dashboard",
             "active_link": "/dashboard/hr-assistant-dashboard"
-          }, 
+          },
           {
             "menuValue": "Employee Dashboard",
             "route": "/dashboard/employee-dashboard",
@@ -45,7 +45,7 @@
       {
         "menuValue": "Grants",
         "route": "/grant/list",
-        "active_link": "grant",
+        "active_link": "/grant/list",
         "hasSubRoute": false,
         "showSubRoute": false,
         "icon": "award",
@@ -60,37 +60,34 @@
     "separateRoute": false,
     "menu": [
       {
-        "menuValue": "Jobs",
-        "route": "/recruitment/job-list",
-        "active_link": "/recruitment/job-list",
-        "active_link1": "/recruitment/job-list",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "timeline",
-        "subMenus": []
-
-      },
-      {
-        "menuValue": "Candidates",
-        "route": "/recruitment/candidates-list",
-        "active_link": "/recruitment/candidates-list",
-        "active_link1": "/recruitment/candidates-list",
-        "active_link2": "/recruitment/candidates-kanban",
-        "hasSubRoute": false,
+        "menuValue": "Recruitment",
+        "currentActive": true,
+        "hasSubRoute": true,
         "showSubRoute": false,
         "icon": "user-shield",
-
-
-        "subMenus": []
-      },
-      {
-        "menuValue": "Referrals",
-        "route": "/recruitment/refferals",
-        "active_link": "/recruitment/refferals",
-        "hasSubRoute": false,
-        "showSubRoute": false,
-        "icon": "ux-circle",
-        "subMenus": []
+        "active_link": "recruitment",
+        "subMenus": [
+          {
+            "menuValue": "Interviews",
+            "route": "/recruitment/interviews-list",
+            "active_link": "/recruitment/interviews-list"
+          },
+          {
+            "menuValue": "Jobs",
+            "route": "/recruitment/job-list",
+            "active_link": "/recruitment/job-list"
+          },
+          {
+            "menuValue": "Candidates", 
+            "route": "/recruitment/candidates-list",
+            "active_link": "/recruitment/candidates-list"
+          },
+          {
+            "menuValue": "Referrals",
+            "route": "/recruitment/refferals",
+            "active_link": "/recruitment/refferals"
+          }
+        ]
       }
     ]
   },
@@ -143,36 +140,57 @@
         "subMenus": []
       },
       {
+        "menuValue": "Leaves",
+        "route": "/leaves/",
+        "active_link": "leaves",
+        "hasSubRoute": true,
+        "showSubRoute": false,
+        "icon": "clipboard-check",
+        "subMenus": [
+          {
+            "menuValue": "Leaves (Admin)",
+            "route": "/leave/admin/leaves-admin",
+            "active_link": "/leave/admin/leaves-admin"
+          },
+          {
+            "menuValue": "Leave (Employee)",
+            "route": "/leave/employee/leaves-employee",
+            "active_link": "/leave/employee/leaves-employee"
+          },
+          {
+            "menuValue": "Leave Settings",
+            "route": "/leave/admin/leave-settings",
+            "active_link": "/leave/admin/leave-settings"
+          }
+        ]
+      },
+      {
+        "menuValue": "Travel",
+        "route": "/requests/travel",
+        "active_link": "/requests/travel",
+        "hasSubRoute": true,
+        "showSubRoute": false,
+        "icon": "bus",
+        "subMenus": [
+          {
+            "menuValue": "Travel (Admin)",
+            "route": "/requests/travel/admin",
+            "active_link": "/requests/travel/admin"
+          },
+          {
+            "menuValue": "Travel (Employee)",
+            "route": "/requests/travel",
+            "active_link": "/requests/travel"
+          }
+        ]
+      },
+      {
         "menuValue": "Attendance",
-        "hasSubRouteTwo": true,
+        "hasSubRoute": true,
         "showSubRoute": false,
         "icon": "file-time",
         "active_link": "attendance",
-        "active_link1": "leaves",
         "subMenus": [
-          {
-            "menuValue": "Leaves",
-            "customSubmenuTwo": true,
-            "route": "/leaves/",
-            "active_link": "leaves",
-            "subMenusTwo": [
-              {
-                "menuValue": "Leaves (Admin)",
-                "route": "/leave/leaves-admin",
-                "active_link": "/leave/leaves-admin"
-              },
-              {
-                "menuValue": "Leave (Employee)",
-                "route": "/leave/leaves-employee",
-                "active_link": "/leave/leaves-employee"
-              },
-              {
-                "menuValue": "Leave Settings",
-                "route": "/leave/leave-settings",
-                "active_link": "/leave/leave-settings"
-              }
-            ]
-          },          
           {
             "menuValue": "Attendance (Admin)",
             "route": "/attendance/attendance-admin",

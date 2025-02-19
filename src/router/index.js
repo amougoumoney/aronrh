@@ -7,6 +7,11 @@ import grantIndex from '@/views/pages/grant/grant-index.vue';
 import grantList from '@/views/pages/grant/grant-list.vue';
 import grantDetails from '@/views/pages/grant/grant-details.vue';
 
+// Request components
+import travelRequestIndex from '@/views/pages/requests/travel/travel-index.vue';
+import travelRequestList from '@/views/pages/requests/travel/travel-list.vue';
+import travelRequestDetails from '@/views/pages/requests/travel/travel-details.vue';
+
 import dashboardIndex from '@/views/pages/dashboard/dashboard-index.vue';
 import adminDashboard from '@/views/pages/dashboard/admin-dashboard/admin-dashboard.vue';
 import employeeDashboard from '@/views/pages/dashboard/employee-dashboard/employee-dashboard.vue';
@@ -326,7 +331,8 @@ import PayslipReport from '@/views/pages/administration/reports/payslip-report.v
 import AttendanceReport from '@/views/pages/administration/reports/attendance-report.vue';
 import LeaveReport from '@/views/pages/administration/reports/leave-report.vue';
 import DailyReport from '@/views/pages/administration/reports/daily-report.vue';
-
+import InterviewsList from '@/views/pages/recruitment/interviews/interviews-list.vue';
+import InterviewsDetails from '@/views/pages/recruitment/interviews/interviews-details.vue';
 
 const routes = [
   // Public routes
@@ -524,6 +530,11 @@ const routes = [
   {
     path: '/user-management',
     component: userManagement,
+    beforeEnter: roleGuard(['admin']),
+    meta: {
+      requiresAuth: true,
+      title: 'User Management'
+    },
     children: [
       { path: '', redirect: '/user-management/users' },
       { path: "users", component: userList },
@@ -687,13 +698,15 @@ const routes = [
       title: 'Job'
     },
     children: [
-      { path: '', redirect: '/recruitment/job-grid' },
+      { path: '', redirect: '/recruitment/job-list' },
       { path: "job-grid", component: JobGrid },
       { path: "job-list", component: JobList },
       { path: "candidates-grid", component: CandidatesGrid },
       { path: "candidates-list", component: CandidatesList },
       { path: "candidates-kanban", component: CandidatesKanban },
       { path: "refferals", component: RefferalsList },
+      { path: "interviews-list", component: InterviewsList },
+      { path: "interviews-details", component: InterviewsDetails },
     ]
   },
   {    
@@ -742,14 +755,32 @@ const routes = [
     ]
   },
   {
-    path: '/leave',
+    path: '/leave/admin',
     component: LeaveIndex,
+    beforeEnter: roleGuard(['hr-assistant', 'hr-manager', 'admin']),
+    meta: {
+      requiresAuth: true,
+      title: 'Leave Management'
+    },
     children: [
-      { path: '', redirect: '/leave/leaves-admin' },
+      { path: '', redirect: '/leave/admin/leaves-admin' },
       { path: "leaves-admin", component: LeavesAdmin },
-      { path: "leaves-employee", component: LeavesEmployee },
       { path: "leave-settings", component: LeaveSettings },
     ]
+  },
+  {
+    path: '/leave/employee', 
+    component: LeaveIndex,
+    beforeEnter: roleGuard(['employee']),
+    meta: {
+      requiresAuth: true,
+      title: 'My Leave'
+    },
+    children: [
+      { path: '', redirect: '/leave/employee/leaves-employee' },
+      { path: "leaves-employee", component: LeavesEmployee },
+    ]
+
   },
   {
     path: '/tickets',
@@ -1023,6 +1054,39 @@ const routes = [
           roles: ['admin', 'hr-manager']
         }
       }
+    ]
+  },
+  {
+    path: '/requests/travel/admin',
+    component: travelRequestIndex,
+    beforeEnter: roleGuard(['admin', 'hr-manager', 'hr-assistant']),
+    meta: {
+      requiresAuth: true,
+      title: 'Travel Requests Admin'
+    },
+    children: [
+      { 
+        path: '', 
+        component: () => import('@/views/pages/requests/travel/travel-admin.vue'),
+        meta: {
+          title: 'Travel Requests Admin'
+        }
+      },
+      { path: ':id', component: travelRequestDetails }
+    ]
+  },
+  {
+    path: '/requests/travel',
+    component: travelRequestIndex, 
+    beforeEnter: roleGuard(['employee', 'hr-manager', 'hr-assistant']),
+    meta: {
+      requiresAuth: true,
+      title: 'Travel Requests'
+    },
+
+    children: [
+      { path: '', component: travelRequestList },
+      { path: ':id', component: travelRequestDetails }
     ]
   },
 ];

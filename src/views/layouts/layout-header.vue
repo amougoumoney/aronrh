@@ -4,6 +4,7 @@
       <div class="header-left">
         <router-link :to="dashboardRoute" class="logo">
           <span class="logo-text">HRMS</span>
+          <span style="color: #00008B; font-size: 8px;">SMRU/BHF</span>
         </router-link>
         <router-link :to="dashboardRoute" class="dark-logo">
           <span class="logo-text">HRMS</span>
@@ -40,244 +41,8 @@
               </span>
             </div>
             <!-- /Search -->
-            <div class="dropdown crm-dropdown">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-menubar me-1"
-                data-bs-toggle="dropdown"
-              >
-                <i class="ti ti-layout-grid"></i>
-              </a>
-              <div class="dropdown-menu dropdown-lg dropdown-menu-start">
-                <div class="card mb-0 border-0 shadow-none">
-                  <div class="card-header">
-                    <h4>CRM</h4>
-                  </div>
-                  <div class="card-body pb-1">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <router-link
-                          to="/crm/contacts"
-                          class="d-flex align-items-center justify-content-between p-2 crm-link mb-3"
-                        >
-                          <span class="d-flex align-items-center me-3">
-                            <i class="ti ti-user-shield text-default me-2"></i>Contacts
-                          </span>
-                          <i class="ti ti-arrow-right"></i>
-                        </router-link>
-                        <router-link
-                          to="/crm/deals-grid"
-                          class="d-flex align-items-center justify-content-between p-2 crm-link mb-3"
-                        >
-                          <span class="d-flex align-items-center me-3">
-                            <i class="ti ti-heart-handshake text-default me-2"></i>Deals
-                          </span>
-                          <i class="ti ti-arrow-right"></i>
-                        </router-link>
-                        <router-link
-                          to="/crm/pipeline"
-                          class="d-flex align-items-center justify-content-between p-2 crm-link mb-3"
-                        >
-                          <span class="d-flex align-items-center me-3">
-                            <i class="ti ti-timeline-event-text text-default me-2"></i
-                            >Pipeline
-                          </span>
-                          <i class="ti ti-arrow-right"></i>
-                        </router-link>
-                      </div>
-                      <div class="col-sm-6">
-                        <router-link
-                          to="/crm/companies-grid"
-                          class="d-flex align-items-center justify-content-between p-2 crm-link mb-3"
-                        >
-                          <span class="d-flex align-items-center me-3">
-                            <i class="ti ti-building text-default me-2"></i>Companies
-                          </span>
-                          <i class="ti ti-arrow-right"></i>
-                        </router-link>
-                        <router-link
-                          to="/crm/leads-grid"
-                          class="d-flex align-items-center justify-content-between p-2 crm-link mb-3"
-                        >
-                          <span class="d-flex align-items-center me-3">
-                            <i class="ti ti-user-check text-default me-2"></i>Leads
-                          </span>
-                          <i class="ti ti-arrow-right"></i>
-                        </router-link>
-                        <router-link
-                          to="/crm/activity"
-                          class="d-flex align-items-center justify-content-between p-2 crm-link mb-3"
-                        >
-                          <span class="d-flex align-items-center me-3">
-                            <i class="ti ti-activity text-default me-2"></i>Activities
-                          </span>
-                          <i class="ti ti-arrow-right"></i>
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <router-link to="/general-settings/profile-settings" class="btn btn-menubar">
-              <i class="ti ti-settings-cog"></i>
-            </router-link>
-          </div>
-
-          <!-- Horizontal Single -->
-          <div class="sidebar sidebar-horizontal" id="horizontal-single">
-            <div class="sidebar-menu">
-              <div class="main-menu">
-                <ul class="nav-menu">
-                  <template v-for="item in sideBarData" :key="item.tittle">
-                    <li class="menu-title">
-                      <span>{{ item.tittle }}</span>
-                    </li>
-                    <template v-for="menu in item.menu" :key="menu.menuValue">
-                      <li v-if="!menu.hasSubRoute && menu.menuValue === 'Application'">
-                        <router-link :to="menu.route">
-                          <i :class="'ti ti-' + menu.icon"></i>
-                          <span>{{ menu.menuValue }}</span>
-                        </router-link>
-                      </li>
-                      <li
-                        class="submenu"
-                        v-else-if="
-                          menu.hasSubRoute &&
-                          (menu.menuValue === 'Dashboard' ||
-                            menu.menuValue === 'Applications' ||
-                            menu.menuValue === 'Super Admin' ||
-                            menu.menuValue === 'Layouts')
-                        "
-                        @click="expandSubMenus(menu)"
-                      >
-                        <a
-                          href="javascript:void(0)"
-                          :class="{ subdrop: menu.showSubRoute }"
-                        >
-                          <i :class="'ti ti-' + menu.icon"></i>
-                          <span>{{ menu.menuValue }}</span>
-                          <span class="menu-arrow"></span>
-                        </a>
-                        <ul
-                          :class="{
-                            'd-block': menu.showSubRoute,
-                            'd-none': !menu.showSubRoute,
-                          }"
-                        >
-                          <template
-                            v-for="subMenu in menu.subMenus"
-                            :key="subMenu.menuValue"
-                          >
-                            <li>
-                              <router-link :to="subMenu.route">{{
-                                subMenu.menuValue
-                              }}</router-link>
-                            </li>
-                          </template>
-                        </ul>
-                      </li>
-                      <li v-if="menu.hasSubRouteTwo" class="submenu">
-                        <a
-                          href="javascript:void(0);"
-                          @click="openMenu(menu)"
-                          :class="{
-                            subdrop: openMenuItem === menu,
-                            active: route_array[0] === menu.active_link,
-                          }"
-                        >
-                          <i :class="'ti ti-' + menu.icon"></i
-                          ><span>{{ menu.menuValue }}</span>
-                          <span class="menu-arrow"></span>
-                        </a>
-                        <ul
-                          :class="{
-                            'd-block': openMenuItem === menu,
-                            'd-none': openMenuItem !== menu,
-                          }"
-                        >
-                          <li
-                            v-for="subMenus in menu.subMenus"
-                            :key="subMenus.menuValue"
-                            :class="{
-                              'submenu submenu-two':
-                                subMenus.menuValue === 'Calls' ||
-                                subMenus.menuValue === 'Projects' ||
-                                subMenus.menuValue === 'Crm' ||
-                                subMenus.menuValue === 'Employee' ||
-                                subMenus.menuValue === 'Tickets' ||
-                                subMenus.menuValue === 'Attendance' ||
-                                subMenus.menuValue === 'Performance' ||
-                                subMenus.menuValue === 'Training' ||
-                                subMenus.menuValue === 'Requirment' ||
-                                subMenus.menuValue === 'Sales' ||
-                                subMenus.menuValue === 'Accounting' ||
-                                subMenus.menuValue === 'Payroll' ||
-                                subMenus.menuValue === 'Assets' ||
-                                subMenus.menuValue === 'Help & Supports' ||
-                                subMenus.menuValue === 'User Management' ||
-                                subMenus.menuValue === 'Reports' ||
-                                subMenus.menuValue === 'General Settings' ||
-                                subMenus.menuValue === 'Website Settings' ||
-                                subMenus.menuValue === 'App Settings' ||
-                                subMenus.menuValue === 'System Settings' ||
-                                subMenus.menuValue === 'Financial Settings' ||
-                                subMenus.menuValue === 'Other Settings' ||
-                                subMenus.menuValue === 'Blogs' ||
-                                subMenus.menuValue === 'Locations' ||
-                                subMenus.menuValue === 'Login' ||
-                                subMenus.menuValue === 'Register' ||
-                                subMenus.menuValue === 'Forgot Password' ||
-                                subMenus.menuValue === 'Reset Password' ||
-                                subMenus.menuValue === 'Email Verification' ||
-                                subMenus.menuValue === '2 Step Verification' ||
-                                subMenus.menuValue === 'Base UI' ||
-                                subMenus.menuValue === 'Advanced UI' ||
-                                subMenus.menuValue === 'Forms' ||
-                                subMenus.menuValue === 'Tables' ||
-                                subMenus.menuValue === 'Charts' ||
-                                subMenus.menuValue === 'Icons',
-                            }"
-                          >
-                            <template v-if="!subMenus.customSubmenuTwo">
-                              <router-link :to="subMenus.route">{{
-                                subMenus.menuValue
-                              }}</router-link>
-                            </template>
-                            <template v-else-if="subMenus.customSubmenuTwo">
-                              <a
-                                href="javascript:void(0);"
-                                @click="openSubmenuOne(subMenus)"
-                                :class="{ subdrop: openSubmenuOneItem === subMenus }"
-                                >{{ subMenus.menuValue
-                                }}<span class="menu-arrow inside-submenu"></span
-                              ></a>
-                              <ul
-                                :class="{
-                                  'd-block': openSubmenuOneItem === subMenus,
-                                  'd-none': openSubmenuOneItem !== subMenus,
-                                }"
-                              >
-                                <li
-                                  v-for="subMenuTwo in subMenus.subMenusTwo"
-                                  :key="subMenuTwo.menuValue"
-                                >
-                                  <router-link :to="subMenuTwo.route">{{
-                                    subMenuTwo.menuValue
-                                  }}</router-link>
-                                </li>
-                              </ul>
-                            </template>
-                          </li>
-                        </ul>
-                      </li>
-                    </template>
-                  </template>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /Horizontal Single -->
+            
+          </div>          
 
           <div class="d-flex align-items-center">
             <div class="me-1">
@@ -289,71 +54,7 @@
                 <i class="ti ti-maximize"></i>
               </a>
             </div>
-            <div class="dropdown me-1">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-menubar"
-                data-bs-toggle="dropdown"
-              >
-                <i class="ti ti-layout-grid-remove"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-end">
-                <div class="card mb-0 border-0 shadow-none">
-                  <div class="card-header">
-                    <h4>Applications</h4>
-                  </div>
-                  <div class="card-body">
-                    <router-link to="/applications/events" class="d-block pb-2">
-                      <span class="avatar avatar-md bg-transparent-dark me-2"
-                        ><i class="ti ti-calendar text-gray-9"></i></span
-                      >Calendar
-                    </router-link>
-                    <router-link to="/applications/todo" class="d-block py-2">
-                      <span class="avatar avatar-md bg-transparent-dark me-2"
-                        ><i class="ti ti-subtask text-gray-9"></i></span
-                      >To Do
-                    </router-link>
-                    <router-link to="/applications/notes" class="d-block py-2">
-                      <span class="avatar avatar-md bg-transparent-dark me-2"
-                        ><i class="ti ti-notes text-gray-9"></i></span
-                      >Notes
-                    </router-link>
-                    <router-link to="/applications/file-manager" class="d-block py-2">
-                      <span class="avatar avatar-md bg-transparent-dark me-2"
-                        ><i class="ti ti-folder text-gray-9"></i></span
-                      >File Manager
-                    </router-link>
-                    <router-link to="/applications/kanban-view" class="d-block py-2">
-                      <span class="avatar avatar-md bg-transparent-dark me-2"
-                        ><i class="ti ti-layout-kanban text-gray-9"></i></span
-                      >Kanban
-                    </router-link>
-                    <router-link to="/applications/invoices" class="d-block py-2 pb-0">
-                      <span class="avatar avatar-md bg-transparent-dark me-2"
-                        ><i class="ti ti-file-invoice text-gray-9"></i></span
-                      >Invoices
-                    </router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="me-1">
-              <router-link
-                to="/applications/chat"
-                class="btn btn-menubar position-relative"
-              >
-                <i class="ti ti-brand-hipchat"></i>
-                <span
-                  class="badge bg-info rounded-pill d-flex align-items-center justify-content-center header-badge"
-                  >5</span
-                >
-              </router-link>
-            </div>
-            <div class="me-1">
-              <router-link to="/applications/email" class="btn btn-menubar">
-                <i class="ti ti-mail"></i>
-              </router-link>
-            </div>
+            
             <div class="me-1 notification_item">
               <a
                 href="javascript:void(0);"
@@ -499,6 +200,7 @@
                 </div>
               </div>
             </div>
+
             <div class="dropdown profile-dropdown">
               <a
                 href="javascript:void(0);"
@@ -521,8 +223,8 @@
                         <img src="@/assets/img/profiles/avatar-12.jpg" alt="img" />
                       </span>
                       <div>
-                        <h5 class="mb-0">Kevin Larry</h5>
-                        <p class="fs-12 fw-medium mb-0">warren@example.com</p>
+                        <h5 class="mb-0">{{ username}}</h5>
+                        <p class="fs-12 fw-medium mb-0">{{ email}}</p>
                       </div>
                     </div>
                   </div>
@@ -539,24 +241,13 @@
                     >
                       <i class="ti ti-settings me-1"></i>Settings
                     </router-link>
-                    <router-link
-                      class="dropdown-item d-inline-flex align-items-center p-0 py-2"
-                      to="/general-settings/profile-settings"
-                    >
-                      <i class="ti ti-status-change me-1"></i>Status
-                    </router-link>
-                    <router-link
-                      class="dropdown-item d-inline-flex align-items-center p-0 py-2"
-                      to="/general-settings/profile-settings"
-                    >
-                      <i class="ti ti-circle-arrow-up me-1"></i>My Account
-                    </router-link>
-                    <router-link
-                      class="dropdown-item d-inline-flex align-items-center p-0 py-2"
-                      to="/general-settings/profile-settings"
-                    >
-                      <i class="ti ti-question-mark me-1"></i>Knowledge Base
-                    </router-link>
+
+                    
+
+                    
+
+                    
+
                   </div>
                   <div class="card-footer">
                     <a 
@@ -609,15 +300,40 @@ export default {
       sideBarData: sideBarData,
       openMenuItem: null,
       openSubmenuOneItem: null,
-      route_array: []
+      route_array: [],
+      username: null,
+      email: null
     };
   },
 
   mounted() {
     this.initMouseoverListener();
     this.handleOutsideClick = this.handleOutsideClick.bind(this);
+    this.fetchUserDetails(); // Call fetchUserDetails when component is mounted
   },
   methods: {
+
+    fetchUserDetails() {
+      const userStr = localStorage.getItem('user');
+      if (userStr) {
+        try {
+          const userData = JSON.parse(userStr);
+          this.username = userData.name || 'User';
+          this.email = userData.email || 'user@example.com';
+        } catch (e) {
+          this.username = 'User';
+          this.email = 'user@example.com';
+        }
+      } else {
+        this.username = 'User';
+        this.email = 'user@example.com';
+      }
+      return {
+        username: this.username,
+        email: this.email
+      };
+    },
+
     handleClick(event) {
       event.stopPropagation();
 

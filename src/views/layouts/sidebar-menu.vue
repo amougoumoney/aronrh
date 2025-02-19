@@ -15,38 +15,39 @@
                         </li>
                         <li v-else-if="menu.menuValue === 'Dashboard'" class="submenu">
                             <a href="javascript:void(0);" @click="toggleDashboard" 
-                            :class="{ subdrop: isDashboardOpen, 'active': isActive(menu) }">
+                            :class="{ subdrop: isDashboardOpen || hasActiveSubMenu(menu), 'active': isActive(menu) }">
                                 <i :class="'ti ti-' + menu.icon"></i><span>{{ menu.menuValue }}</span>
                                 <span class="menu-arrow"></span>
                             </a>
-                            <ul :class="{ 'd-block': isDashboardOpen, 'd-none': !isDashboardOpen }">
+                            <ul :class="{ 'd-block': isDashboardOpen || hasActiveSubMenu(menu), 'd-none': !isDashboardOpen && !hasActiveSubMenu(menu) }">
                                 <li v-for="(subMenu, index) in menu.subMenus" :key="index"
                                     :class="{ 'active': isSubMenuActive(subMenu) }">
                                     <router-link :to="subMenu.route">{{ subMenu.menuValue }}</router-link>
                                 </li>
                             </ul>
                         </li>
+
                         <li v-else class="submenu">
                             <a href="javascript:void(0);" @click="expandSubMenus(menu)" 
-                            :class="{ subdrop: menu.showSubRoute, 'active': isActive(menu) }">
+                            :class="{ subdrop: menu.showSubRoute || hasActiveSubMenu(menu), 'active': isActive(menu) }">
                                 <i :class="'ti ti-' + menu.icon"></i><span>{{ menu.menuValue }}</span>
-                                <span v-if="menu.currentActive" class="badge badge-danger fs-10 fw-medium text-white p-1">Hot</span>
                                 <span class="menu-arrow"></span>
                             </a>
-                            <ul :class="{ 'd-block': menu.showSubRoute, 'd-none': !menu.showSubRoute }">
+                            <ul :class="{ 'd-block': menu.showSubRoute || hasActiveSubMenu(menu), 'd-none': !menu.showSubRoute && !hasActiveSubMenu(menu) }">
                                 <li v-for="(subMenu, index) in menu.subMenus" :key="index"
                                     :class="{ 'active': isSubMenuActive(subMenu) }">
                                     <router-link :to="subMenu.route">{{ subMenu.menuValue }}</router-link>
                                 </li>
                             </ul>
                         </li>
+                        
                         <li v-if="menu.hasSubRouteTwo" class="submenu">
                             <a href="javascript:void(0);" @click="OpenMenu(menu)"
-                            :class="{ subdrop: openMenuItem === menu, 'active': isActive(menu) }">
+                            :class="{ subdrop: openMenuItem === menu || hasActiveSubMenu(menu), 'active': isActive(menu) }">
                                 <i :class="'ti ti-' + menu.icon"></i><span>{{ menu.menuValue }}</span>
                                 <span class="menu-arrow"></span>
                             </a>
-                            <ul :class="{ 'd-block': openMenuItem === menu, 'd-none': openMenuItem !== menu }">
+                            <ul :class="{ 'd-block': openMenuItem === menu || hasActiveSubMenu(menu), 'd-none': openMenuItem !== menu && !hasActiveSubMenu(menu) }">
                                 <li v-for="subMenus in menu.subMenus" :key="subMenus.menuValue">
                                     <template v-if="!subMenus.customSubmenuTwo">
                                         <router-link :to="subMenus.route" :class="{ 'active': isSubMenuActive(subMenus) }">
@@ -56,10 +57,10 @@
                                     <template v-else-if="subMenus.customSubmenuTwo">
                                         <li class="submenu submenu-two">
                                             <a href="javascript:void(0);" @click="openSubmenuOne(subMenus)"
-                                            :class="{ subdrop: openSubmenuOneItem === subMenus, 'active': isSubActive(subMenus) }">
+                                            :class="{ subdrop: openSubmenuOneItem === subMenus || hasActiveSubMenuTwo(subMenus), 'active': isSubActive(subMenus) }">
                                                 {{ subMenus.menuValue }}<span class="menu-arrow inside-submenu"></span>
                                             </a>
-                                            <ul :class="{ 'd-block': openSubmenuOneItem === subMenus, 'd-none': openSubmenuOneItem !== subMenus }">
+                                            <ul :class="{ 'd-block': openSubmenuOneItem === subMenus || hasActiveSubMenuTwo(subMenus), 'd-none': openSubmenuOneItem !== subMenus && !hasActiveSubMenuTwo(subMenus) }">
                                                 <li v-for="subMenuTwo in subMenus.subMenusTwo" :key="subMenuTwo.menuValue">
                                                     <router-link :to="subMenuTwo.route">{{ subMenuTwo.menuValue }}</router-link>
                                                 </li>
@@ -83,7 +84,7 @@ import { menuService } from '@/services/menu.service';
 export default {
     data() {
         return {
-            sideBarData: [],
+            sideBarData: sideBarData,
             openMenuItem: null,
             openSubmenuOneItem: null,
             route_array: [],
@@ -91,43 +92,40 @@ export default {
             isDashboardOpen: false
         };
     },
-    created() {
-        this.initializeMenu();
-        this.initializeActiveMenus();
-    },
-    watch: {
-        '$route': {
-            handler() {
-                this.initializeActiveMenus();
-            },
-            immediate: true
-        }
-    },
     computed: {
         userRole() {
-            return localStorage.getItem('userRole') || 'employee';
+            return localStorage.getItem('userRole')?.toLowerCase() || 'employee';
+        },
+        currentPath() {
+            return this.$route.path;
         },
         isMenuActive() {
             return (menu) => {
+                if (menu.menuValue === 'Dashboard') {
+                    return this.$route.path.includes('/dashboard/');
+                }
                 const currentPath = this.$route.path;
+                const pathSegments = currentPath.split('/').filter(part => part);
+                const menuPath = menu.route?.split('/').filter(part => part) || [];
+                
                 return currentPath === menu.route ||
                        currentPath === menu.active_link ||
                        currentPath === menu.active_link1 ||
-                       currentPath === menu.active_link2 ||
-                       currentPath === menu.active_link3 ||
-                       currentPath === menu.active_link4 ||
-                       currentPath === menu.active_link5 ||
-                       (currentPath.startsWith('/dashboard/') && menu.route === '/dashboard/');
+                       (pathSegments[0] === menuPath[0]);
             };
         },
         isActive() {
             return (menu) => {
+                if (menu.menuValue === 'Dashboard') {
+                    return this.$route.path.includes('/dashboard/');
+                }
                 const currentPath = this.$route.path;
                 const pathSegments = currentPath.split('/').filter(part => part);
                 const base = pathSegments[0];
+                
                 return base === menu.active_link || 
                        base === menu.active_link1 ||
-                       (base === 'dashboard' && menu.menuValue === 'Dashboard');
+                       (menu.route && currentPath.startsWith(menu.route));
             };
         },
         isSubActive() {
@@ -136,26 +134,63 @@ export default {
                 const pathSegments = currentPath.split('/').filter(part => part);
                 const base = pathSegments[0];
                 const subPath = pathSegments[1];
+                
+                if (base === 'dashboard') {
+                    const dashboardType = subPath?.replace('-dashboard', '');
+                    const menuValue = menu.menuValue.toLowerCase();
+                    return menuValue.includes(dashboardType);
+                }
+                
                 return base === menu.active_link ||
-                       (base === 'dashboard' && subPath && menu.menuValue.toLowerCase().includes(subPath.replace('-dashboard', '')));
+                       (menu.route && currentPath.startsWith(menu.route));
             };
         }
     },
+    watch: {
+        '$route': {
+            handler(newRoute) {
+                if (newRoute.path.includes('/dashboard/')) {
+                    this.isDashboardOpen = true;
+                }
+                this.initializeActiveMenus();
+            },
+            immediate: true
+        }
+    },
+    created() {
+        this.sideBarData = menuService.filterSidebarData(JSON.parse(JSON.stringify(sideBarData)));
+    },
     methods: {
-        initializeMenu() {
-            this.sideBarData = menuService.filterSidebarData(sideBarData);
-        },
-        initializeActiveMenus() {
-            const currentPath = this.$route.path;
-            if (currentPath.startsWith('/dashboard/')) {
-                this.isDashboardOpen = true;
-            }
-        },
         isSubMenuActive(subMenu) {
-            return this.$route.path === subMenu.route;
+            const currentPath = this.$route.path;
+            return currentPath === subMenu.route || 
+                   currentPath === subMenu.active_link;
+        },
+        hasActiveSubMenu(menu) {
+            return menu.subMenus?.some(subMenu => this.isSubMenuActive(subMenu)) || false;
+        },
+        hasActiveSubMenuTwo(subMenus) {
+            return subMenus.subMenusTwo?.some(subMenu => this.isSubMenuActive(subMenu)) || false;
         },
         toggleDashboard() {
             this.isDashboardOpen = !this.isDashboardOpen;
+        },
+        initializeActiveMenus() {
+            const currentPath = this.$route.path;
+            
+            // Handle dashboard routes
+            if (currentPath.startsWith('/dashboard/')) {
+                this.isDashboardOpen = true;
+            }
+            
+            // Close other menus when navigating to a new route
+            this.sideBarData.forEach(section => {
+                section.menu.forEach(menuItem => {
+                    if (menuItem.menuValue !== 'Dashboard') {
+                        menuItem.showSubRoute = this.isMenuActive(menuItem);
+                    }
+                });
+            });
         },
         expandSubMenus(menu) {
             this.sideBarData.forEach((item) => {
@@ -175,5 +210,4 @@ export default {
         }
     }
 };
-</script>
-  
+</script>  

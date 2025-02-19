@@ -7,11 +7,12 @@ import moment from "moment";
 import DateRangePicker from "daterangepicker";
 
 export default {
+ 
   data() {
     return {
       title: "Leaves",
       text: "Employee",
-      text1: "Leaves Employee",
+      text1: "My Leaves",
     };
   },
   methods: {
@@ -75,7 +76,7 @@ export default {
       <div
         class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
       >
-        <breadcrumb :title="title" :text="text" :text1="text1" />
+        <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">

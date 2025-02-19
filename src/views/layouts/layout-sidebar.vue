@@ -46,13 +46,19 @@ export default {
 		<!-- Logo -->
 		<div class="sidebar-logo">
 			<router-link :to="dashboardRoute" class="logo logo-normal">
-				<span class="logo-text">HRMS</span>
+				<span class="logo-text">HRMS </span>
+				<span style="background: linear-gradient(to right, #00008B, #4169E1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 10px; font-weight: bold;">
+					&#64;SMRU/BHF
+				</span>
+
 			</router-link>
 			<router-link :to="dashboardRoute" class="logo-small">
-				<span class="logo-text">HRMS</span>
+				<span class="logo-text">HRMS </span>
+				<span style="background: linear-gradient(to right, #00008B, #4169E1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 8px; font-weight: bold;">@SMRU/BHF</span>
 			</router-link>
 			<router-link :to="dashboardRoute" class="dark-logo">
-				<span class="logo-text">HRMS</span>
+				<span class="logo-text">HRMS </span>
+				<span style="background: linear-gradient(to right, #00008B, #4169E1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 10px; font-weight: bold;">@SMRU/BHF</span>
 			</router-link>
 		</div>
 

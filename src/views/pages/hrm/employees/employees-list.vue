@@ -8,7 +8,7 @@
       <div
         class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
       >
-        <breadcrumb :title="title" :text="text" :text1="text1" />
+        <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="d-flex align-items-center border bg-white rounded p-1 me-2">
@@ -405,6 +405,7 @@ import { ref } from "vue";
 import { onMounted } from "vue";
 import moment from "moment";
 import DateRangePicker from "daterangepicker";
+
 const columns = [
   {
     sorter: false,
@@ -629,7 +630,7 @@ export default {
       data,
       columns,
       rowSelection,
-      title: "Employee",
+      title: "Employees",
       text: "Employee",
       text1: "Employee List",
     };

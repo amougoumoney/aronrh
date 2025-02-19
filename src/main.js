@@ -47,6 +47,7 @@ import projectTable from '@/views/pages/dashboard/admin-dashboard/project-table.
 import salesOverview from '@/views/pages/dashboard/admin-dashboard/sales-overview.vue';
 import schedulesIndex from '@/views/pages/dashboard/admin-dashboard/schedules-index.vue';
 import welcomeWrap from '@/views/pages/dashboard/admin-dashboard/welcome-wrap.vue';
+import welcomeHrManager from '@/views/pages/dashboard/hr-manager-dashboard/welcome-hr-manager.vue';
 import countryDeals from '@/views/pages/dashboard/deals-dashboard/country-deals.vue';
 import dealsStages from '@/views/pages/dashboard/deals-dashboard/deals-stages.vue';
 import recentDeals from '@/views/pages/dashboard/deals-dashboard/recent-deals.vue';
@@ -159,6 +160,14 @@ import SubscriptionTable from '@/views/pages/superadmin/subscription-table.vue';
 import ProjectsTable from '@/views/pages/projects/project/projects-table.vue';
 import clientTable from '@/views/pages/projects/clients/client-table.vue';
 
+// Request Components
+import travelRequestList from '@/views/pages/requests/travel/travel-list.vue';
+import travelRequestDetails from '@/views/pages/requests/travel/travel-details.vue';
+
+// Interview components 
+import interviewsList from '@/views/pages/recruitment/interviews/interviews-list.vue';
+import interviewsDetails from '@/views/pages/recruitment/interviews/interviews-details.vue';
+
 
 
 /************Modal********************/
@@ -253,9 +262,15 @@ import FaqModal from '@/components/modal/faq-modal.vue';
 import policyModal from '@/components/modal/policy-modal.vue';
 import adminDashboardModal from '@/components/modal/admin-dashboard-modal.vue';
 import employeeDashboardModal from '@/components/modal/employee-dashboard-modal.vue';
+import hrManagerDashboard from '@/views/pages/dashboard/hr-manager-dashboard/hr-manager-dashboard.vue';
+import hrAssistantDashboard from '@/views/pages/dashboard/hr-assistant-dashboard/hr-assistant-dashboard.vue';
 import PackagesModal from '@/components/modal/packages-modal.vue';
 import DomainModal from '@/components/modal/domain-modal.vue';
+import InterviewModal from '@/components/modal/interview-modal.vue';
+
+
 import fileManagerModal from '@/components/modal/file-manager-modal.vue';
+
 import blogsTagsModal from '@/components/modal/blogs-tags-modal.vue';
 import cronjobScheduleModal from '@/components/modal/cronjob-schedule-modal.vue';
 import userListModal from '@/components/modal/user-list-modal.vue';
@@ -297,7 +312,7 @@ app.component('theme-color', themeColor)
 
 
 /*************Breadcrumb *****************/
-app.component('breadcrumb',indexBreadcrumb)
+app.component('index-breadcrumb', indexBreadcrumb)
 
 /************Page Components********************/
 app.component('employee-top',employeeTop)
@@ -315,6 +330,7 @@ app.component('leads-stages',leadsStages)
 app.component('leads-recent',leadsRecent)
 app.component('total-leads',totalLeads)
 app.component('welcome-wrap',welcomeWrap)
+app.component('welcome-hr-manager',welcomeHrManager)
 app.component('schedules-index',schedulesIndex)
 app.component('sales-overview',salesOverview)
 app.component('project-table',projectTable)
@@ -403,6 +419,10 @@ app.component('subscription-table', SubscriptionTable)
 app.component('projects-table', ProjectsTable)
 app.component('client-table', clientTable)
 
+app.component('hr-manager-dashboard', hrManagerDashboard)
+app.component('hr-assistant-dashboard', hrAssistantDashboard)
+app.component('travel-request-list', travelRequestList)
+app.component('travel-request-details', travelRequestDetails)
 
 app.component('rtl-welcome-wrap',rtlwelcomeWrap)
 app.component('rtl-schedules-index',rtlschedulesIndex)
@@ -418,6 +438,9 @@ app.component("carousel-two", Carouseltwo);
 app.component("carousel-three", Carouselthree);
 app.component("lightbox-one", LightBoxOne);
 app.component("lightbox-two", LightBoxTwo);
+
+app.component('interviews-list', interviewsList)
+app.component('interviews-details', interviewsDetails)
 
 /************Page Filter********************/
 
@@ -519,6 +542,7 @@ app.component('file-manager-modal', fileManagerModal)
 app.component('blogs-tags-modal', blogsTagsModal)
 app.component('cronjob-schedule-modal', cronjobScheduleModal)
 app.component('user-list-modal', userListModal)
+app.component('interview-modal', InterviewModal)
 
 app.component('vue-select', VueSelect);
 app.component(VueFeather.name, VueFeather)

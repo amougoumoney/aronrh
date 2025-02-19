@@ -7,6 +7,7 @@ import moment from "moment";
 import DateRangePicker from "daterangepicker";
 
 export default {
+  
   data() {
     return {
       title: "Holidays",
@@ -75,7 +76,7 @@ export default {
       <div
         class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
       >
-        <breadcrumb :title="title" :text="text" :text1="text1" />
+        <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
             <a

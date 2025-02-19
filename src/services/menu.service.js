@@ -3,12 +3,23 @@ import { ROLE_HIERARCHY, ROLE_MENU_ACCESS } from '../config/role-menu.config';
 class MenuService {
     // Get user's role
     getUserRole() {
-        return localStorage.getItem('userRole')?.toLowerCase() || 'employee';
+        const role = localStorage.getItem('userRole');
+        if (!role) {
+            console.warn('No user role found in storage');
+            return 'employee'; // default fallback
+        }
+        return role.toLowerCase();
     }
 
     // Get user's permissions
     getUserPermissions() {
-        return JSON.parse(localStorage.getItem('permissions') || '[]');
+        try {
+            const user = JSON.parse(localStorage.getItem('user') || '{}');
+            return user.permissions || [];
+        } catch (error) {
+            console.error('Error parsing user permissions:', error);
+            return [];
+        }
     }
 
     // Check if user has required role based on hierarchy
@@ -54,44 +65,67 @@ class MenuService {
 
     // Filter sidebar data based on user's role
     filterSidebarData(sidebarData) {
-        const allowedMenus = this.getAllowedMenus();
-        
-        return sidebarData.map(section => ({
-            ...section,
-            menu: section.menu.filter(menuItem => {
-                // Check if menu item is allowed
-                const isAllowed = allowedMenus.includes(menuItem.menuValue);
-                
-                // If it has subroutes, filter them too
-                if (menuItem.hasSubRoute || menuItem.hasSubRouteTwo) {
-                    const allowedSubmenus = this.getAllowedSubmenus(menuItem.menuValue);
-                    
-                    menuItem.subMenus = menuItem.subMenus.filter(subMenu => {
-                        // For items with nested submenus
-                        if (subMenu.customSubmenuTwo) {
-                            subMenu.subMenusTwo = subMenu.subMenusTwo.filter(subMenuTwo => 
-                                this.canAccessRoute(subMenuTwo.route)
-                            );
-                            return subMenu.subMenusTwo.length > 0;
-                        }
-                        
-                        // If parent menu has specific submenu restrictions
-                        if (allowedSubmenus.length > 0) {
-                            return allowedSubmenus.includes(subMenu.menuValue);
-                        }
-                        
-                        return this.canAccessRoute(subMenu.route);
-                    });
-                    
-                    // Only include menu item if it has allowed submenu items
-                    return isAllowed && menuItem.subMenus.length > 0;
+        try {
+          const userRole = this.getUserRole();
+          const roleAccess = ROLE_MENU_ACCESS[userRole];
+      
+          if (!roleAccess) {
+            console.warn(`No menu access configuration found for role: ${userRole}`);
+            return [];
+          }
+      
+          const allowedMenus = roleAccess.allowedMenus;
+      
+          // Process each section and update its menu items
+          const filteredData = sidebarData.map(section => {
+            // Use reduce to both transform and filter menu items
+            const filteredMenus = section.menu.reduce((acc, menuItem) => {
+              // Handle Dashboard specially (case-insensitive)
+              if (menuItem.menuValue.toLowerCase() === 'dashboard') {
+                // Get allowed Dashboard submenu items for this role
+                const allowedDashboardSubMenus = roleAccess.allowedSubMenus?.[menuItem.menuValue] || [];
+                // Filter the Dashboard submenus based on allowed values
+                const filteredSubMenus = menuItem.subMenus.filter(subMenu =>
+                  allowedDashboardSubMenus.includes(subMenu.menuValue)
+                );
+                // Only add the Dashboard menu if there is at least one allowed submenu
+                if (filteredSubMenus.length > 0) {
+                  acc.push({ ...menuItem, subMenus: filteredSubMenus });
                 }
-                
-                return isAllowed;
-            })
-        })).filter(section => section.menu.length > 0);
-    }
-
+              } else {
+                // For non-dashboard items, check if the menu is allowed
+                if (allowedMenus.includes(menuItem.menuValue)) {
+                  // If the menu has subroutes, filter them too
+                  if (menuItem.hasSubRoute || menuItem.hasSubRouteTwo) {
+                    const allowedSubmenus = roleAccess.allowedSubMenus?.[menuItem.menuValue] || [];
+                    const filteredSubMenus = menuItem.subMenus.filter(subMenu =>
+                      allowedSubmenus.includes(subMenu.menuValue)
+                    );
+                    // Only include the menu if there is at least one allowed submenu
+                    if (filteredSubMenus.length > 0) {
+                      acc.push({ ...menuItem, subMenus: filteredSubMenus });
+                    }
+                  } else {
+                    // For menus without subroutes, simply add them
+                    acc.push(menuItem);
+                  }
+                }
+              }
+              return acc;
+            }, []);
+      
+            return { ...section, menu: filteredMenus };
+          })
+          // Remove sections that have no menu items
+          .filter(section => section.menu.length > 0);
+      
+          return filteredData;
+        } catch (error) {
+          console.error('Error filtering sidebar data:', error);
+          return [];
+        }
+      }
+      
     // Check if user has required permission
     hasPermission(requiredPermission) {
         if (!requiredPermission) return true;
@@ -121,4 +155,4 @@ class MenuService {
     }
 }
 
-export const menuService = new MenuService(); 
+export const menuService = new MenuService();
