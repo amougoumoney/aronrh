@@ -167,9 +167,27 @@ export default {
               <form @submit.prevent="handleLogin">
                 <div>
                   <div class="mx-auto mb-5 text-center">
-                    <span class="logo-text fw-bold fs-1">HRMS</span>
-                    <span style="background: linear-gradient(to right, #00008B, #4169E1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 12px; font-weight: bold;"> @SMRU/BHF</span>
-                  </div>
+                        <!-- Custom Logo Box -->
+                        <div class="d-inline-block position-relative" style="width: 220px; height: 90px; border: 6px solid #0D3E5F; border-radius: 20px; background-color: #fff;">
+                            <h1 style="color: #0D3E5F; margin: 0; font-size: 4rem;">HRMS</h1>
+
+                            <!-- SMRU / BHF on the bottom-right corner -->
+                            <span style="
+                                position: absolute;
+                                bottom: -10px;
+                                right: 10px;
+                                background-color: white;
+                                padding: 0 8px;
+                                font-weight: 600;
+                                color: #0D3E5F;
+                                font-size: 0.9rem;
+                            ">
+                                SMRU / BHF
+                            </span>
+                        </div>
+                    </div>
+
+
                   <div class="">
                     <div class="text-center mb-3">
                       <h2 class="mb-2">Sign In</h2>
