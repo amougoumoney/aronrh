@@ -9,7 +9,7 @@
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
-            <button class="btn btn-primary" @click="openAddTravelModal">
+            <button class="btn btn-primary" @click="openAddTravelModal" data-bs-toggle="modal" data-bs-target="#add_travel">
               <i class="ti ti-plus me-1"></i>Create Travel Request
             </button>
           </div>
@@ -72,11 +72,10 @@
   </div>
 
   <!-- Travel Modal -->
-  <travel-modal ref="travelModal" @submit="handleTravelSubmit" />
+  <travel-employee-modal></travel-employee-modal>
 </template>
 
 <script>
-import { Modal } from 'bootstrap';
 
 export default {
   name: 'TravelList',
@@ -117,22 +116,6 @@ export default {
         default:
           return 'bg-secondary';
       }
-    },
-    openAddTravelModal() {
-      this.$refs.travelModal.resetForm();
-      new Modal(document.getElementById('travel_modal')).show();
-    },
-    openEditTravelModal(travel) {
-      this.$refs.travelModal.setEditData(travel);
-      new Modal(document.getElementById('travel_modal')).show();
-    },
-    handleTravelSubmit(formData) {
-      console.log('Submitted travel data:', formData);
-      // TODO: Add API call to save/update travel data
-    },
-    deleteTravel(id) {
-      console.log('Delete travel:', id);
-      this.travels = this.travels.filter(travel => travel.id !== id);
     }
   }
 };

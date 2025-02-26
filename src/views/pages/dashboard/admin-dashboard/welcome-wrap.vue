@@ -14,7 +14,7 @@
         </span>
         <div class="ms-3">
           <h3 class="mb-2">
-            Welcome Back, Adrian
+            Welcome Back, {{ username }}
             <a href="javascript:void(0);" class="edit-icon"
               ><i class="ti ti-edit fs-14"></i
             ></a>
@@ -27,22 +27,8 @@
           </p>
         </div>
       </div>
-      <div class="d-flex align-items-center flex-wrap mb-1">
-        <a
-          href="javascript:void(0);"
-          class="btn btn-secondary btn-md me-2 mb-2"
-          data-bs-toggle="modal"
-          data-bs-target="#add_project"
-          ><i class="ti ti-square-rounded-plus me-1"></i>Add Project</a
-        >
-        <a
-          href="javascript:void(0);"
-          class="btn btn-primary btn-md mb-2"
-          data-bs-toggle="modal"
-          data-bs-target="#add_leaves"
-          ><i class="ti ti-square-rounded-plus me-1"></i>Add Requests</a
-        >
-      </div>
+
+      
     </div>
   </div>
   <!-- /Welcome Wrap -->
@@ -268,7 +254,26 @@ export default {
   data() {
     return {
       empDepartment: empDepartment,
+      username: '',
     };
+  },
+  created() {
+    this.getUserDetails(); // Call getUserDetails when component is created
+  },
+  methods: {
+    getUserDetails() {
+      const userStr = localStorage.getItem('user');
+      if (userStr) {
+        try {
+          const userData = JSON.parse(userStr);
+          this.username = userData.name || 'User';
+        } catch (e) {
+          this.username = 'User';
+        }
+      } else {
+        this.username = 'User';
+      }
+    },
   },
 };
 </script>

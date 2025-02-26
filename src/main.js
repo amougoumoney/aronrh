@@ -127,6 +127,7 @@ import JobTable from '@/views/pages/recruitment/jobs/job-table.vue';
 import CandidatesTable from '@/views/pages/recruitment/candidates/candidates-table.vue';
 import CandidatesBoard from '@/views/pages/recruitment/candidates/candidates-board.vue';
 import RefferalsTable from '@/views/pages/recruitment/refferals/refferals-table.vue';
+import ReferencesTable from '@/views/pages/recruitment/references/references-list.vue';
 import EstimatesTable from '@/views/pages/finance-accounts/sales/estimates-table.vue';
 import InvoicesTable from '@/views/pages/finance-accounts/sales/invoices-table.vue';
 import PaymentsTable from '@/views/pages/finance-accounts/sales/payments-table.vue';
@@ -267,7 +268,7 @@ import hrAssistantDashboard from '@/views/pages/dashboard/hr-assistant-dashboard
 import PackagesModal from '@/components/modal/packages-modal.vue';
 import DomainModal from '@/components/modal/domain-modal.vue';
 import InterviewModal from '@/components/modal/interview-modal.vue';
-
+import TravelEmployeeModal from '@/components/modal/travel-employee-modal.vue';
 
 import fileManagerModal from '@/components/modal/file-manager-modal.vue';
 
@@ -386,6 +387,7 @@ app.component('job-table', JobTable)
 app.component('candidates-table', CandidatesTable)
 app.component('candidates-board', CandidatesBoard)
 app.component('refferals-table', RefferalsTable)
+app.component('references-table', ReferencesTable)
 app.component('estimates-table', EstimatesTable)
 app.component('invoices-table', InvoicesTable)
 app.component('payments-table', PaymentsTable)
@@ -543,6 +545,7 @@ app.component('blogs-tags-modal', blogsTagsModal)
 app.component('cronjob-schedule-modal', cronjobScheduleModal)
 app.component('user-list-modal', userListModal)
 app.component('interview-modal', InterviewModal)
+app.component('travel-employee-modal', TravelEmployeeModal)
 
 app.component('vue-select', VueSelect);
 app.component(VueFeather.name, VueFeather)

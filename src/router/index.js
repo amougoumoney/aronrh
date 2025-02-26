@@ -7,6 +7,9 @@ import grantIndex from '@/views/pages/grant/grant-index.vue';
 import grantList from '@/views/pages/grant/grant-list.vue';
 import grantDetails from '@/views/pages/grant/grant-details.vue';
 
+// References components
+import ReferencesList from '@/views/pages/recruitment/references/references-list.vue';
+
 // Request components
 import travelRequestIndex from '@/views/pages/requests/travel/travel-index.vue';
 import travelRequestList from '@/views/pages/requests/travel/travel-list.vue';
@@ -695,7 +698,7 @@ const routes = [
     beforeEnter: roleGuard(['hr-assistant', 'hr-manager', 'admin']),
     meta: {
       requiresAuth: true,
-      title: 'Job'
+      title: 'Recruitment'
     },
     children: [
       { path: '', redirect: '/recruitment/job-list' },
@@ -705,6 +708,7 @@ const routes = [
       { path: "candidates-list", component: CandidatesList },
       { path: "candidates-kanban", component: CandidatesKanban },
       { path: "refferals", component: RefferalsList },
+      { path: "references", component: ReferencesList },
       { path: "interviews-list", component: InterviewsList },
       { path: "interviews-details", component: InterviewsDetails },
     ]

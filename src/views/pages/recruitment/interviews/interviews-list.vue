@@ -65,14 +65,14 @@
                   <tbody>
                     <tr v-for="interview in interviews" :key="interview.id">
                       <td>{{ interview.id }}</td>
-                      <td>{{ interview.job_position }}</td>
-                      <td>{{ formatDate(interview.interview_date) }}</td>
-                      <td>{{ formatTime(interview.start_time) }} - {{ formatTime(interview.end_time) }}</td>
-                      <td>{{ interview.interviewer_name }}</td>
-                      <td>{{ interview.interview_mode }}</td>
+                      <td>{{ interview.position }}</td>
+                      <td>{{ formatDate(interview.interviewDate) }}</td>
+                      <td>{{ interview.interviewTime }}</td>
+                      <td>{{ interview.candidateName }}</td>
+                      <td>{{ interview.interviewType }}</td>
                       <td>
-                        <span :class="'badge ' + getStatusClass(interview.interview_status)">
-                          {{ interview.interview_status }}
+                        <span :class="'badge ' + getStatusClass(interview.status)">
+                          {{ interview.status }}
                         </span>
                       </td>
                       <td>{{ interview.score || 'N/A' }}</td>
@@ -115,6 +115,7 @@
 
 <script>
 import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
+import { interviewService } from '@/services/interview.service';
 
 export default {
   name: 'InterviewsList',
@@ -135,10 +136,26 @@ export default {
     };
   },
   methods: {
-    
+    async fetchInterviews() {
+      try {
+        const response = await interviewService.getAllInterviews();
+        this.interviews = response.data.map(interview => ({
+          id: interview.id,
+          candidateName: interview.candidateName,
+          position: interview.job_position,
+          interviewDate: interview.interview_date,
+          interviewTime: interview.start_time,
+          interviewType: interview.interview_mode,
+          status: interview.interview_status,
+          feedback: interview.feedback,
+          score: interview.score
+        }));
+      } catch (error) {
+        console.error('Error fetching interviews:', error);
+      }
+    },
     
     onInterviewAdded(interview) {
-      // Add the new interview to the list
       this.interviews.push({
         id: this.interviews.length + 1,
         ...interview
@@ -155,40 +172,30 @@ export default {
       return statusClasses[status] || 'bg-secondary-light';
     },
     formatDate(date) {
+      if (!date) return '';
       return new Date(date).toLocaleDateString();
     },
-    formatTime(time) {
-      return time.substring(0, 5); // Format HH:mm
-    },
     viewInterviewDetails(interviewId) {
-      // Navigate to interview details page
       this.$router.push(`/interviews/details/${interviewId}`);
     },
     editInterviewDetails(interviewId) {
-      // Navigate to interview edit page
       this.$router.push(`/interviews/edit/${interviewId}`);
     },
     addFeedback(interviewId) {
-      // Open feedback modal or navigate to feedback page
       this.$router.push(`/interviews/feedback/${interviewId}`);
     },
-    deleteInterviewRecord(interviewId) {
-      // Implement delete confirmation and API call
+    async deleteInterviewRecord(interviewId) {
       if (confirm('Are you sure you want to delete this interview record?')) {
-        // Call API to delete interview
-        console.log('Deleting interview record:', interviewId);
+        try {
+          await interviewService.deleteInterview(interviewId);
+          this.interviews = this.interviews.filter(interview => interview.id !== interviewId);
+        } catch (error) {
+          console.error('Error deleting interview:', error);
+        }
       }
     },
-    async fetchInterviews() {
-      try {
-        // Implement API call to fetch interviews
-        // const response = await interviewService.getInterviews();
-        // this.interviews = response.data;
-      } catch (error) {
-        console.error('Error fetching interviews:', error);
-      }
-    }
   },
+  
   mounted() {
     this.fetchInterviews();
   }

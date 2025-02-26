@@ -6,7 +6,7 @@
         <div class="modal-header">
           <h4 class="modal-title">Add Employee Salary</h4>
           <button
-            type="button"
+            type="button" 
             class="btn-close custom-btn-close"
             data-bs-dismiss="modal"
             aria-label="Close"
@@ -17,17 +17,18 @@
         <form @submit.prevent="submitForm">
           <div class="modal-body pb-0">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-12 col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Employee Name</label>
                   <vue-select
                     :options="EmpoyeName"
                     id="empoyename"
                     placeholder="Select"
+                    class="w-100"
                   />
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-12 col-md-6">
                 <label class="form-label">Net Salary</label>
                 <input type="text" class="form-control" />
               </div>
@@ -39,25 +40,25 @@
                   ><i class="ti ti-plus me-2"></i>Add New</a
                 >
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Basic</label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">DA(40%)</label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">HRA(15%)</label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Conveyance</label>
                   <input type="text" class="form-control" />
@@ -66,19 +67,19 @@
             </div>
 
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
-                  <label class="form-label">Allowance </label>
+                  <label class="form-label">Allowance</label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Medical Allowance</label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Others</label>
                   <input type="text" class="form-control" />
@@ -92,25 +93,25 @@
                   ><i class="ti ti-plus me-2"></i>Add New</a
                 >
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">TDS</label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">ESI</label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">PF</label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Leave</label>
                   <input type="text" class="form-control" />
@@ -118,19 +119,19 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Prof.Tax</label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Labour Welfare</label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Others</label>
                   <input type="text" class="form-control" />
@@ -172,17 +173,18 @@
         <form @submit.prevent="submitForm">
           <div class="modal-body pb-0">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-12 col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Employee Name</label>
                   <vue-select
                     :options="EditEmpoyeName"
                     id="editempoyename"
                     placeholder="Anthony Lewis"
+                    class="w-100"
                   />
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-12 col-md-6">
                 <label class="form-label">Net Salary</label>
                 <input type="text" class="form-control" />
               </div>
@@ -194,25 +196,25 @@
                   ><i class="ti ti-plus me-2"></i>Add New</a
                 >
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Basic</label>
                   <input type="text" class="form-control" value="$40000" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">DA(40%)</label>
                   <input type="text" class="form-control" value="$16000" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">HRA(15%)</label>
                   <input type="text" class="form-control" value="$2666" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Conveyance</label>
                   <input type="text" class="form-control" value="$2000" />
@@ -221,19 +223,19 @@
             </div>
 
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
-                  <label class="form-label">Allowance </label>
+                  <label class="form-label">Allowance</label>
                   <input type="text" class="form-control" value="$1000" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Medical Allowance</label>
                   <input type="text" class="form-control" value="$2000" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Others</label>
                   <input type="text" class="form-control" />
@@ -247,25 +249,25 @@
                   ><i class="ti ti-plus me-2"></i>Add New</a
                 >
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">TDS</label>
                   <input type="text" class="form-control" value="$4000" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">ESI</label>
                   <input type="text" class="form-control" value="$2000" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">PF</label>
                   <input type="text" class="form-control" value="$3000" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Leave</label>
                   <input type="text" class="form-control" value="$1000" />
@@ -273,19 +275,19 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Prof.Tax</label>
                   <input type="text" class="form-control" value="$800" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Labour Welfare</label>
                   <input type="text" class="form-control" value="$500" />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
                   <label class="form-label">Others</label>
                   <input type="text" class="form-control" value="$100" />

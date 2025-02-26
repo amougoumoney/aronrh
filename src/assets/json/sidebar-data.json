@@ -86,6 +86,11 @@
             "menuValue": "Referrals",
             "route": "/recruitment/refferals",
             "active_link": "/recruitment/refferals"
+          },
+          {
+            "menuValue": "References",
+            "route": "/recruitment/references",
+            "active_link": "/recruitment/references"
           }
         ]
       }
