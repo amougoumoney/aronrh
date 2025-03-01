@@ -155,40 +155,43 @@ export default {
   <div class="container-fuild">
     <div class="w-100 overflow-hidden position-relative flex-wrap d-block vh-100">
       <div class="row">
+        
         <div class="col-lg-5">
           <div class="login-background position-relative d-lg-flex align-items-center justify-content-center d-none flex-wrap vh-100">
-            
+            <!-- Add picture for background -->
+
+            <!-- Overlay -->
           </div>
         </div>
+        
         <div class="col-lg-7 col-md-12 col-sm-12">
           <div class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap">
-            <div class="col-md-7 mx-auto p-4">
+            <div class="col-md-7 mx-auto p-4 d-flex flex-column">
               <!-- Form with @submit.prevent -->
-              <form @submit.prevent="handleLogin">
-                <div>
-                  <div class="mx-auto mb-5 text-center">
-                        <!-- Custom Logo Box -->
-                        <div class="d-inline-block position-relative" style="width: 220px; height: 90px; border: 6px solid #0D3E5F; border-radius: 20px; background-color: #fff;">
-                            <h1 style="color: #0D3E5F; margin: 0; font-size: 4rem;">HRMS</h1>
+              <div class="flex-grow-1 d-flex flex-column">
+                <div class="mx-auto mb-5 text-center">
+                  <!-- Custom Logo Box -->
+                  <div class="d-inline-block position-relative" style="width: 220px; height: 90px; border: 6px solid #0D3E5F; border-radius: 20px; background-color: #fff;">
+                    <h1 style="color: #0D3E5F; margin: 0; font-size: 4rem;">HRMS</h1>
 
-                            <!-- SMRU / BHF on the bottom-right corner -->
-                            <span style="
-                                position: absolute;
-                                bottom: -10px;
-                                right: 10px;
-                                background-color: white;
-                                padding: 0 8px;
-                                font-weight: 600;
-                                color: #0D3E5F;
-                                font-size: 0.9rem;
-                            ">
-                                SMRU / BHF
-                            </span>
-                        </div>
-                    </div>
+                    <!-- SMRU / BHF on the bottom-right corner -->
+                    <span style="
+                        position: absolute;
+                        bottom: -10px;
+                        right: 10px;
+                        background-color: white;
+                        padding: 0 8px;
+                        font-weight: 600;
+                        color: #0D3E5F;
+                        font-size: 0.9rem;
+                    ">
+                        SMRU / BHF
+                    </span>
+                  </div>
+                </div>
 
-
-                  <div class="">
+                <form @submit.prevent="handleLogin" class="flex-grow-1 d-flex flex-column">
+                  <div class="flex-grow-1">
                     <div class="text-center mb-3">
                       <h2 class="mb-2">Sign In</h2>
                       <p class="mb-0">Please enter your details to sign in</p>
@@ -269,8 +272,24 @@ export default {
                       {{ isLoading ? 'Signing in...' : 'Sign In' }}
                     </button>
                   </div>
+                </form>
+              </div>
+              
+              <!-- Footer with logos -->
+              <div class="footer mt-4">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="@/assets/img/smru-logo.png" 
+                      alt="SMRU Logo" 
+                      class="me-4"
+                      style="max-height: 50px;" />
+                  <img src="@/assets/img/bhf-logo.png" 
+                      alt="BHF Logo" 
+                      style="max-height: 50px;" />
                 </div>
-              </form>
+                <div class="text-center mt-2">
+                  <small class="text-muted">&copy; 2023 SMRU/BHF HR Management System</small>
+                </div>
+              </div>
             </div>
           </div>
         </div>
