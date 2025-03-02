@@ -116,7 +116,12 @@ class AuthService {
   }
 
   async initializeCSRF() {
-    return fetch('http://127.0.0.1:8000/sanctum/csrf-cookie', {
+    const baseUrl = process.env.VUE_APP_API_BASE_URL || 'https://hrms-backend-api-v1-main-wrhlmg.laravel.cloud/api/v1';
+    // Extract the domain part from the API URL
+    const urlObj = new URL(baseUrl);
+    const domain = `${urlObj.protocol}//${urlObj.hostname}${urlObj.port ? ':' + urlObj.port : ''}`;
+    
+    return fetch(`${domain}/sanctum/csrf-cookie`, {
       credentials: 'include'
     });
   }
