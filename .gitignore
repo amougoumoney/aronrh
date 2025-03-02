@@ -50,3 +50,6 @@ lerna-debug.log*
 .env.test.local
 .env.production.local
 *.local
+
+# Keep example environment files
+!.env.example
