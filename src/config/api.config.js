@@ -1,10 +1,13 @@
 export const API_CONFIG = {
-    BASE_URL: process.env.VUE_APP_API_URL || 'http://127.0.0.1:8000/api/v1',
-    HEADERS: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'Authorization': `Bearer ${localStorage.getItem('token')}` 
-    }
+  BASE_URL:
+    process.env.NODE_ENV === 'production'
+      ? 'https://hrms-backend-api-v1-main-wrhlmg.laravel.cloud/api/v1'
+      : 'http://127.0.0.1:8000/api/v1',
+  HEADERS: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'Authorization': `Bearer ${localStorage.getItem('token')}`
+  }
 };
 
 // API endpoints
