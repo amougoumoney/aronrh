@@ -2,10 +2,16 @@
   <div class="header">
     <div class="main-header">
       <div class="header-left">
-        <router-link :to="dashboardRoute" class="logo">
-          <span class="logo-text">HRMS</span>
-          <span style="color: #00008B; font-size: 8px;">SMRU/BHF</span>
-        </router-link>
+        <!-- New Normal Logo -->
+        <div class="logo-wrapper">
+          <router-link :to="dashboardRoute" class="logo logo-normal">
+            <div class="logo-container">
+              <h1 class="logo-title">HRMS</h1>
+              <span class="logo-tagline">SMRU / BHF</span>
+            </div>
+          </router-link>
+        </div>
+
         <router-link :to="dashboardRoute" class="dark-logo">
           <span class="logo-text">HRMS</span>
         </router-link>
