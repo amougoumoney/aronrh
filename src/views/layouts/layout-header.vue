@@ -285,7 +285,11 @@
           <router-link class="dropdown-item" to="/general-settings/profile-settings"
             >Settings</router-link
           >
-          <router-link class="dropdown-item" to="/">Logout</router-link>
+          <a 
+            class="dropdown-item" 
+            href="#" 
+            @click.prevent="handleLogout"
+          >Logout</a>
         </div>
       </div>
       <!-- /Mobile Menu -->
