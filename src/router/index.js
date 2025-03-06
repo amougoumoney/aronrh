@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import { authGuard, roleGuard } from './guards';
 import UnauthorizedPage from '@/views/pages/authentication/unauthorized.vue';
 
@@ -169,7 +169,7 @@ import layoutRtl from '@/views/pages/layout/layout-rtl/layout-rtl.vue';
 import layoutDark from '@/views/pages/layout/layout-dark.vue';
 
 
-import Tables from '@/views/pages/uiinterface/tables/ui-tables'
+import Tables from '@/views/pages/uiinterface/tables/ui-tables.vue'
 import Tables_Basic from '@/views/pages/uiinterface/tables/tables-basic.vue'
 import Data_Tables from '@/views/pages/uiinterface/tables/data-tables.vue'
 import Chartapex from '@/views/pages/uiinterface/charts/apex/chart-apex.vue'
@@ -344,7 +344,7 @@ const routes = [
     name: 'login',
     component: LoginIndex,
     meta: {
-        title: 'Login'
+      title: 'Login'
     }
   },
   {
@@ -352,7 +352,7 @@ const routes = [
     name: 'forgot-password',
     component: forgotPassword,
     meta: {
-        title: 'Forgot Password'
+      title: 'Forgot Password'
     }
   },
   {
@@ -360,7 +360,7 @@ const routes = [
     name: 'reset-password',
     component: resetPassword,
     meta: {
-        title: 'Reset Password'
+      title: 'Reset Password'
     }
   },
   {
@@ -368,7 +368,7 @@ const routes = [
     name: 'unauthorized',
     component: UnauthorizedPage,
     meta: {
-        title: 'Unauthorized Access'
+      title: 'Unauthorized Access'
     }
   },
 
@@ -419,7 +419,7 @@ const routes = [
     path: '/dashboard/hr-assistant-dashboard',
     name: 'hr-assistant-dashboard',
     component: hrAssistantDashboard,
-    beforeEnter: roleGuard(['hr-assistant', 'hr-manager' ,'admin']),
+    beforeEnter: roleGuard(['hr-assistant', 'hr-manager', 'admin']),
     meta: {
       requiresAuth: true,
       title: 'HR Assistant Dashboard'
@@ -432,7 +432,7 @@ const routes = [
     redirect: () => {
       const user = JSON.parse(localStorage.getItem('user'));
       const userRole = localStorage.getItem('userRole')?.toLowerCase();
-      
+
       if (user && userRole) {
         switch (userRole) {
           case 'admin':
@@ -713,18 +713,18 @@ const routes = [
       { path: "interviews-details", component: InterviewsDetails },
     ]
   },
-  {    
+  {
     path: '/hrm',
     component: HrmIndex,
     children: [
       { path: '', redirect: '/hrm/holidays' },
       { path: "holidays", component: HolidaysList },
-      { path: "promotion", component: PromotionList }, 
-      { path: "resignation", component: ResignationList }, 
-      { path: "termination", component: TerminationList }, 
+      { path: "promotion", component: PromotionList },
+      { path: "resignation", component: ResignationList },
+      { path: "termination", component: TerminationList },
     ]
   },
-  {    
+  {
     path: '/training',
     component: TrainingIndex,
     children: [
@@ -734,7 +734,7 @@ const routes = [
       { path: "training-type", component: TrainingType },
     ]
   },
-  {    
+  {
     path: '/performance',
     component: PerformanceIndex,
     children: [
@@ -755,7 +755,7 @@ const routes = [
       { path: "attendance-employee", component: AttendanceEmployee },
       { path: "timesheets", component: TimesheetsList },
       { path: "schedule-timing", component: ScheduleTiming },
-      { path: "overtime", component: OvertimeList }      
+      { path: "overtime", component: OvertimeList }
     ]
   },
   {
@@ -773,7 +773,7 @@ const routes = [
     ]
   },
   {
-    path: '/leave/employee', 
+    path: '/leave/employee',
     component: LeaveIndex,
     beforeEnter: roleGuard(['employee']),
     meta: {
@@ -859,11 +859,11 @@ const routes = [
       { path: '', redirect: '/super-admin/dashboard' },
       { path: "dashboard", component: superDashboard },
       { path: "companies", component: companiesList },
-      { path: "subscription" , component: superSubscription },
-      { path: "packages" , component: packagesList },
-      { path: "packages-grid" , component: packagesGrid },
-      { path: "domain" , component: domainList },
-      { path: "purchase-transaction" , component: purchaseTransaction }
+      { path: "subscription", component: superSubscription },
+      { path: "packages", component: packagesList },
+      { path: "packages-grid", component: packagesGrid },
+      { path: "domain", component: domainList },
+      { path: "purchase-transaction", component: purchaseTransaction }
     ]
   },
   {
@@ -946,20 +946,20 @@ const routes = [
       { path: "ui-dropdowns", component: UI_Dropdowns },
       { path: "ui-grid", component: UI_Grid },
       { path: "ui-images", component: UI_Images },
-      { path: "ui-lightbox", component: UI_Lightbox},
-      { path: "ui-media", component: UI_Media},
-      { path: "ui-modals", component: UI_Modals},
-      { path: "ui-offcanvas", component: UI_Offcanvas},
-      { path: "ui-pagination", component: UI_Pagination},
-      { path: "ui-popovers", component: UI_Popovers},
-      { path: "ui-progress", component: UI_Progress},
-      { path: "ui-placeholders", component: UI_Placeholders},
-      { path: "ui-nav-tabs", component: Ui_Navtabs},
-      { path: "ui-spinner", component: UI_Spinner},
-      { path: "ui-sweetalerts", component: UI_Sweetalerts},
-      { path: "ui-tooltips", component: UI_Tooltips},
-      { path: "ui-typography", component: UI_Typography},
-      { path: "ui-video", component: UI_Video},
+      { path: "ui-lightbox", component: UI_Lightbox },
+      { path: "ui-media", component: UI_Media },
+      { path: "ui-modals", component: UI_Modals },
+      { path: "ui-offcanvas", component: UI_Offcanvas },
+      { path: "ui-pagination", component: UI_Pagination },
+      { path: "ui-popovers", component: UI_Popovers },
+      { path: "ui-progress", component: UI_Progress },
+      { path: "ui-placeholders", component: UI_Placeholders },
+      { path: "ui-nav-tabs", component: Ui_Navtabs },
+      { path: "ui-spinner", component: UI_Spinner },
+      { path: "ui-sweetalerts", component: UI_Sweetalerts },
+      { path: "ui-tooltips", component: UI_Tooltips },
+      { path: "ui-typography", component: UI_Typography },
+      { path: "ui-video", component: UI_Video },
     ]
   },
   {
@@ -975,7 +975,7 @@ const routes = [
       { path: "ui-scrollbar", component: UI_Scrollbar },
       { path: "ui-rating", component: UI_Rating },
       { path: "ui-stickynote", component: UI_Stickynote },
-      { path: "ui-rangeslider", component: UI_Rangeslider},
+      { path: "ui-rangeslider", component: UI_Rangeslider },
       { path: "ui-timeline", component: UI_Timeline }
     ]
   },
@@ -1040,19 +1040,19 @@ const routes = [
     beforeEnter: roleGuard(['admin', 'hr-manager', 'hr-assistant']),
     children: [
       { path: '', redirect: '/grant/list' },
-      { 
+      {
         path: 'list',
         component: grantList,
-        meta: { 
+        meta: {
           title: 'Grants',
           requiresAuth: true,
           roles: ['admin', 'hr-manager']
         }
       },
-      { 
+      {
         path: 'details/:id',
         component: grantDetails,
-        meta: { 
+        meta: {
           title: 'Grant Details',
           requiresAuth: true,
           roles: ['admin', 'hr-manager']
@@ -1069,8 +1069,8 @@ const routes = [
       title: 'Travel Requests Admin'
     },
     children: [
-      { 
-        path: '', 
+      {
+        path: '',
         component: () => import('@/views/pages/requests/travel/travel-admin.vue'),
         meta: {
           title: 'Travel Requests Admin'
@@ -1081,7 +1081,7 @@ const routes = [
   },
   {
     path: '/requests/travel',
-    component: travelRequestIndex, 
+    component: travelRequestIndex,
     beforeEnter: roleGuard(['employee', 'hr-manager', 'hr-assistant']),
     meta: {
       requiresAuth: true,
@@ -1095,37 +1095,37 @@ const routes = [
   },
 ];
 export const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
-    linkActiveClass: 'active',
-    routes,
-}); 
+  history: createWebHistory(import.meta.env.BASE_URL),
+  linkActiveClass: 'active',
+  routes,
+});
 
 // Title handling
 router.afterEach((to) => {
-    // Handle RTL layout
-    if (to.name === "layout-rtl") {
-        document.body.classList.add("layout-mode-rtl");
-    } else {
-        document.body.classList.remove("layout-mode-rtl");
-    }
+  // Handle RTL layout
+  if (to.name === "layout-rtl") {
+    document.body.classList.add("layout-mode-rtl");
+  } else {
+    document.body.classList.remove("layout-mode-rtl");
+  }
 
-    // Update page title
-    const defaultTitle = 'HRMS';
-    let title = to.meta.title || defaultTitle;
-    
-    // If you want to always include the default title
-    if (to.meta.title) {
-        document.title = `${title} - ${defaultTitle}`;
-    } else {
-        document.title = defaultTitle;
-    }
+  // Update page title
+  const defaultTitle = 'HRMS';
+  let title = to.meta.title || defaultTitle;
+
+  // If you want to always include the default title
+  if (to.meta.title) {
+    document.title = `${title} - ${defaultTitle}`;
+  } else {
+    document.title = defaultTitle;
+  }
 });
 
 // Scroll behavior
 router.beforeEach((to, from, next) => {
-    // Scroll to the top of the page
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    next();
+  // Scroll to the top of the page
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  next();
 });
 
 // Global navigation guard

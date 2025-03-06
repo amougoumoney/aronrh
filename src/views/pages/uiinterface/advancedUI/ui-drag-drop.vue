@@ -135,17 +135,9 @@
           <div class="card custom-card">
             <div class="card-header border-bottom-0 justify-content-between">
               <div class="card-title">Card With Collapse Button</div>
-              <a
-                href="javascript:void(0);"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseExample"
-                aria-expanded="false"
-                aria-controls="collapseExample"
-              >
-                <vue-feather
-                  type="chevron-down"
-                  class="fs-18 collapse-open"
-                ></vue-feather>
+              <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                <vue-feather type="chevron-down" class="fs-18 collapse-open"></vue-feather>
                 <vue-feather type="chevron-up" class="collapse-close fs-18"></vue-feather>
               </a>
             </div>
@@ -166,11 +158,7 @@
           <div class="card custom-card">
             <div class="card-header justify-content-between">
               <div class="card-title">Card With Close Button</div>
-              <a
-                href="javascript:void(0);"
-                data-bs-toggle="card-remove"
-                @click="removeCard"
-              >
+              <a href="javascript:void(0);" data-bs-toggle="card-remove" @click="removeCard">
                 <vue-feather type="x" class="fs-18"></vue-feather>
               </a>
             </div>
@@ -192,7 +180,7 @@
   </div>
 </template>
 <script>
-import dragula from "dragula";
+//import dragula from "dragula";
 export default {
   data() {
     return {};
@@ -201,7 +189,7 @@ export default {
     const leftContainer = document.getElementById("draggable-left");
     const rightContainer = document.getElementById("draggable-right");
 
-    dragula([leftContainer, rightContainer]);
+    //dragula([leftContainer, rightContainer]);
   },
   methods: {
     removeCard(event) {

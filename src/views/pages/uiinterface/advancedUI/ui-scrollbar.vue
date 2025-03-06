@@ -24,11 +24,7 @@
               <div class="scroll-bar-wrap">
                 <div class="horizontal-scroll scroll-demo">
                   <div class="horz-scroll-content">
-                    <perfect-scrollbar
-                      class="scroll-area-2"
-                      :settings="settings"
-                      @ps-scroll-y="scrollHanle"
-                    >
+                    <perfect-scrollbar class="scroll-area-2" :settings="settings" @ps-scroll-y="scrollHanle">
                       <div class="row">
                         <div class="col-sm-3">
                           <p>
@@ -68,11 +64,7 @@
             </div>
             <div class="card-body">
               <div class="vertical-scroll scroll-demo">
-                <perfect-scrollbar
-                  class="scroll-area-1"
-                  :settings="settings"
-                  @ps-scroll-y="scrollHanle"
-                >
+                <perfect-scrollbar class="scroll-area-1" :settings="settings" @ps-scroll-y="scrollHanle">
                   <p>
                     {{ para1 }}
                   </p>
@@ -103,11 +95,7 @@
             </div>
             <div class="card-body">
               <div class="scrollbar-margins large-margin scroll-demo">
-                <perfect-scrollbar
-                  class="scroll-area-1"
-                  :settings="settings"
-                  @ps-scroll-y="scrollHanle"
-                >
+                <perfect-scrollbar class="scroll-area-1" :settings="settings" @ps-scroll-y="scrollHanle">
                   <p>
                     {{ para1 }}
                   </p>
@@ -140,11 +128,7 @@
               <div class="scroll-bar-wrap">
                 <div class="visible-scroll always-visible scroll-demo">
                   <div class="horz-scroll-content">
-                    <perfect-scrollbar
-                      class="scroll-area-1"
-                      :settings="settings"
-                      @ps-scroll-y="scrollHanle"
-                    >
+                    <perfect-scrollbar class="scroll-area-1" :settings="settings" @ps-scroll-y="scrollHanle">
                       <div class="row">
                         <div class="col-sm-3">
                           <p>{{ para1 }}</p>
@@ -181,7 +165,7 @@
 </template>
 <script>
 import { PerfectScrollbar } from "vue3-perfect-scrollbar";
-import "vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css";
+import 'vue3-perfect-scrollbar/style.css';
 export default {
   components: {
     PerfectScrollbar,
@@ -202,7 +186,7 @@ export default {
     };
   },
   methods: {
-    scrollHanle() {},
+    scrollHanle() { },
   },
 };
 </script>
@@ -213,6 +197,7 @@ export default {
   height: 250px;
   background-color: transparent !important;
 }
+
 .scroll-area-2 {
   position: relative;
   margin: auto;

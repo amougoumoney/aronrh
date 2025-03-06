@@ -1,14 +1,13 @@
 import { createApp } from 'vue';
 import { router } from './router';
 import App from "./App.vue";
-import {BootstrapVue3, BToastPlugin} from 'bootstrap-vue-3'
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/reset.css';
 import VueFeather from 'vue-feather';
 import FlagIcon from 'vue-flag-icon';
-import VueSweetalert2 from 'vue-sweetalert2' 
+import VueSweetalert2 from 'vue-sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css'
-import VueApexCharts from "vue3-apexcharts"; 
+import VueApexCharts from "vue3-apexcharts";
 import StarRating from 'vue-star-rating'
 import VueFormWizard from "vue3-form-wizard";
 import "vue-form-wizard/dist/vue-form-wizard.min.css";
@@ -40,7 +39,7 @@ import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
 
 
 /************Page Components********************/
-
+import SelectView from './components/select/SelectView.vue';
 import employeeStatus from '@/views/pages/dashboard/admin-dashboard/employee-status.vue';
 import jobApplicants from '@/views/pages/dashboard/admin-dashboard/job-applicants.vue';
 import projectTable from '@/views/pages/dashboard/admin-dashboard/project-table.vue';
@@ -278,7 +277,7 @@ import userListModal from '@/components/modal/user-list-modal.vue';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+//import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'ionicons-npm/css/ionicons.css';
@@ -302,12 +301,12 @@ const app = createApp(App)
 /*Global Components */
 
 /*************Layout *****************/
-app.component('layout-header',Layout_Header)
-app.component('layout-sidebar',Layout_Sidebar)
-app.component('horizontal-header',Horizontal_Header)
-app.component('two-sidebar',Two_Sidebar)
-app.component('stacked-sidebar',Stacked_Sidebar)
-app.component('theme-settings',Theme_Settings)
+app.component('layout-header', Layout_Header)
+app.component('layout-sidebar', Layout_Sidebar)
+app.component('horizontal-header', Horizontal_Header)
+app.component('two-sidebar', Two_Sidebar)
+app.component('stacked-sidebar', Stacked_Sidebar)
+app.component('theme-settings', Theme_Settings)
 app.component('sidebar-menu', SidebarMenu)
 app.component('theme-color', themeColor)
 
@@ -316,41 +315,41 @@ app.component('theme-color', themeColor)
 app.component('index-breadcrumb', indexBreadcrumb)
 
 /************Page Components********************/
-app.component('employee-top',employeeTop)
-app.component('attendence-employee',attendenceEmployee)
-app.component('employee-task',employeeTask)
-app.component('employee-performance',employeePerformance)
-app.component('team-member',teamMember)
-app.component('total-deals',totalDeals)
-app.component('recent-deals',recentDeals)
-app.component('deals-stages',dealsStages)
-app.component('country-deals',countryDeals)
-app.component('leads-countries',leadsCountries)
-app.component('leads-reason',leadsReason)
-app.component('leads-stages',leadsStages)
-app.component('leads-recent',leadsRecent)
-app.component('total-leads',totalLeads)
-app.component('welcome-wrap',welcomeWrap)
-app.component('welcome-hr-manager',welcomeHrManager)
-app.component('schedules-index',schedulesIndex)
-app.component('sales-overview',salesOverview)
-app.component('project-table',projectTable)
-app.component('job-applicants',jobApplicants)
-app.component('employee-status',employeeStatus)
-app.component('deals-board',dealsBoard)
-app.component('leads-board',leadsBoard)
-app.component('all-kanban',allKanban)
-app.component('high-kanban',highKanban)
-app.component('low-kanban',lowKanban)
-app.component('medium-kanban',mediumKanban)
+app.component('employee-top', employeeTop)
+app.component('attendence-employee', attendenceEmployee)
+app.component('employee-task', employeeTask)
+app.component('employee-performance', employeePerformance)
+app.component('team-member', teamMember)
+app.component('total-deals', totalDeals)
+app.component('recent-deals', recentDeals)
+app.component('deals-stages', dealsStages)
+app.component('country-deals', countryDeals)
+app.component('leads-countries', leadsCountries)
+app.component('leads-reason', leadsReason)
+app.component('leads-stages', leadsStages)
+app.component('leads-recent', leadsRecent)
+app.component('total-leads', totalLeads)
+app.component('welcome-wrap', welcomeWrap)
+app.component('welcome-hr-manager', welcomeHrManager)
+app.component('schedules-index', schedulesIndex)
+app.component('sales-overview', salesOverview)
+app.component('project-table', projectTable)
+app.component('job-applicants', jobApplicants)
+app.component('employee-status', employeeStatus)
+app.component('deals-board', dealsBoard)
+app.component('leads-board', leadsBoard)
+app.component('all-kanban', allKanban)
+app.component('high-kanban', highKanban)
+app.component('low-kanban', lowKanban)
+app.component('medium-kanban', mediumKanban)
 
-app.component('general-sidebar',generalSidebar)
-app.component('website-sidebar',websiteSidebar)
-app.component('app-sidebar',appSidebar)
-app.component('system-sidebar',systemSidebar)
-app.component('others-sidebar',othersidebar)
-app.component('financial-sidebar',financialSidebar)
-app.component('settings-tab',settingsTab)
+app.component('general-sidebar', generalSidebar)
+app.component('website-sidebar', websiteSidebar)
+app.component('app-sidebar', appSidebar)
+app.component('system-sidebar', systemSidebar)
+app.component('others-sidebar', othersidebar)
+app.component('financial-sidebar', financialSidebar)
+app.component('settings-tab', settingsTab)
 
 app.component('packages-table', PackagesTable)
 app.component('domain-table', DomainTable)
@@ -376,11 +375,11 @@ app.component('trainers-table', TrainersTable)
 app.component('training-type-table', TrainingTypeTable)
 app.component('promotion-table', PromotionTable)
 app.component("notes-carousel", NotesCarousel);
-app.component('social-image',socialImage)
-app.component('social-carousel',socialCarousel)
-app.component('recent-file',recentFile)
-app.component('recent-folder',recentFolder)
-app.component('recent-video',recentVideo)
+app.component('social-image', socialImage)
+app.component('social-carousel', socialCarousel)
+app.component('recent-file', recentFile)
+app.component('recent-folder', recentFolder)
+app.component('recent-video', recentVideo)
 app.component('resignation-table', ResignationTable)
 app.component('termination-table', TerminationTable)
 app.component('job-table', JobTable)
@@ -426,15 +425,15 @@ app.component('hr-assistant-dashboard', hrAssistantDashboard)
 app.component('travel-request-list', travelRequestList)
 app.component('travel-request-details', travelRequestDetails)
 
-app.component('rtl-welcome-wrap',rtlwelcomeWrap)
-app.component('rtl-schedules-index',rtlschedulesIndex)
-app.component('rtl-sales-overview',rtlsalesOverview)
-app.component('rtl-project-table',rtlprojectTable)
-app.component('rtl-job-applicants',rtljobApplicants)
-app.component('rtl-employee-status',rtlemployeeStatus)
+app.component('rtl-welcome-wrap', rtlwelcomeWrap)
+app.component('rtl-schedules-index', rtlschedulesIndex)
+app.component('rtl-sales-overview', rtlsalesOverview)
+app.component('rtl-project-table', rtlprojectTable)
+app.component('rtl-job-applicants', rtljobApplicants)
+app.component('rtl-employee-status', rtlemployeeStatus)
 
 app.component("input-size", Inputsize);
-app.component('form-validation-one',Form_Validation_One)
+app.component('form-validation-one', Form_Validation_One)
 app.component("carousel-one", Carouselone);
 app.component("carousel-two", Carouseltwo);
 app.component("carousel-three", Carouselthree);
@@ -448,38 +447,38 @@ app.component('interviews-details', interviewsDetails)
 
 
 /************Modal********************/
-app.component('call-history-modal',CallHistoryModal)
-app.component('calendar-modal',calendarModal)
-app.component('companies-modal',companiesModal)
-app.component('companies-details-modal',companiesDetailsModal)
-app.component('companies-crm-modal',companiesCrmmodal)
-app.component('clients-list-modal',clientsListModal)
-app.component('clients-details-modal',clientsDetailsModal)
-app.component('project-grid-modal',projectGridModal)
-app.component('project-details-modal',projectDetailsModal)
-app.component('todo-modal',todoModal)
-app.component('deals-grid-modal',dealsGridModal)
-app.component('leads-modal',leadsModal)
-app.component('deals-details-modal',dealsDetailsModal)
+app.component('call-history-modal', CallHistoryModal)
+app.component('calendar-modal', calendarModal)
+app.component('companies-modal', companiesModal)
+app.component('companies-details-modal', companiesDetailsModal)
+app.component('companies-crm-modal', companiesCrmmodal)
+app.component('clients-list-modal', clientsListModal)
+app.component('clients-details-modal', clientsDetailsModal)
+app.component('project-grid-modal', projectGridModal)
+app.component('project-details-modal', projectDetailsModal)
+app.component('todo-modal', todoModal)
+app.component('deals-grid-modal', dealsGridModal)
+app.component('leads-modal', leadsModal)
+app.component('deals-details-modal', dealsDetailsModal)
 app.component('purchase-modal', PurchaseModal)
 app.component('tasks-modal', TasksModal)
 app.component('contacts-modal', ContactsModal)
 app.component('contact-details-modal', ContactDetailsModal)
-app.component('employee-list-modal',employeeListModal)
-app.component('employee-details-modal',employeeDetailsModal)
-app.component('department-modal',departmentModal)
-app.component('designations-modal',designationsModal)
-app.component('ticket-details-modal',ticketDetailsModal)
-app.component('tickets-modal',ticketsModal)
-app.component('budgets-modal',budgetsModal)
-app.component('budgets-expense-modal',budgetsExpenseModal)
-app.component('budgets-revenues-modal',budgetsRevenuesModal)
-app.component('employee-salary-modal',employeeSalaryModal)
-app.component('payroll-modal',payrollModal)
-app.component('payroll-deduction-modal',payrollDeductionModal)
-app.component('payroll-overtime-modal',payrollOvertimeModal)
-app.component('assets-modal',assetsModal)
-app.component('roles-modal',rolesModal)
+app.component('employee-list-modal', employeeListModal)
+app.component('employee-details-modal', employeeDetailsModal)
+app.component('department-modal', departmentModal)
+app.component('designations-modal', designationsModal)
+app.component('ticket-details-modal', ticketDetailsModal)
+app.component('tickets-modal', ticketsModal)
+app.component('budgets-modal', budgetsModal)
+app.component('budgets-expense-modal', budgetsExpenseModal)
+app.component('budgets-revenues-modal', budgetsRevenuesModal)
+app.component('employee-salary-modal', employeeSalaryModal)
+app.component('payroll-modal', payrollModal)
+app.component('payroll-deduction-modal', payrollDeductionModal)
+app.component('payroll-overtime-modal', payrollOvertimeModal)
+app.component('assets-modal', assetsModal)
+app.component('roles-modal', rolesModal)
 app.component('company-details-modal', CompanyDetailsModal)
 app.component('pipeline-modal', PipelineModal)
 app.component('activity-modal', ActivityModal)
@@ -491,15 +490,15 @@ app.component('attendence-admin-modal', AttendenceAdminModal)
 app.component('attendance-employee-modal', AttendanceEmployeeModal)
 app.component('timesheets-modal', TimesheetsModal)
 app.component('leave-type-modal', leaveTypeModal)
-app.component('custom-fields-modal',customFieldsModal)
-app.component('email-modal',emailModal)
-app.component('sms-template-modal',smsTemplateModal)
-app.component('sms-settings-modal',smsSettingsModal)
-app.component('tax-rates-modal',taxRatesModal)
-app.component('currencies-modal',currenciesModal)
-app.component('ban-modal',banModal)
-app.component('backup-modal',backupModal)
-app.component('clear-modal',clearModal)
+app.component('custom-fields-modal', customFieldsModal)
+app.component('email-modal', emailModal)
+app.component('sms-template-modal', smsTemplateModal)
+app.component('sms-settings-modal', smsSettingsModal)
+app.component('tax-rates-modal', taxRatesModal)
+app.component('currencies-modal', currenciesModal)
+app.component('ban-modal', banModal)
+app.component('backup-modal', backupModal)
+app.component('clear-modal', clearModal)
 app.component('schedule-time-modal', ScheduleTimeModal)
 app.component('overtime-modal', OvertimeModal)
 app.component('indicator-modal', IndicatorModal)
@@ -512,9 +511,9 @@ app.component('training-modal', TrainingModal)
 app.component('trainers-modal', TrainersModal)
 app.component('training-type-modal', TrainingTypeModal)
 app.component('promotion-modal', PromotionModal)
-app.component('api-keys-modal',apiKeysModal)
-app.component('todo-list-modal',todoListModal)
-app.component('notes-modal',notesModal)
+app.component('api-keys-modal', apiKeysModal)
+app.component('todo-list-modal', todoListModal)
+app.component('notes-modal', notesModal)
 app.component('resignation-modal', ResignationModal)
 app.component('termination-modal', TerminationModal)
 app.component('job-grid-modal', JobGridModal)
@@ -538,7 +537,7 @@ app.component('faq-modal', FaqModal)
 app.component('policy-modal', policyModal)
 app.component('admin-dashboard-modal', adminDashboardModal)
 app.component('employee-dashboard-modal', employeeDashboardModal)
-app.component('packages-modal', PackagesModal) 
+app.component('packages-modal', PackagesModal)
 app.component('domain-modal', DomainModal)
 app.component('file-manager-modal', fileManagerModal)
 app.component('blogs-tags-modal', blogsTagsModal)
@@ -547,24 +546,24 @@ app.component('user-list-modal', userListModal)
 app.component('interview-modal', InterviewModal)
 app.component('travel-employee-modal', TravelEmployeeModal)
 
-app.component('vue-select', VueSelect);
+app.component('vue-select', SelectView);
 app.component(VueFeather.name, VueFeather)
 app.use(VueSweetalert2)
 app.use(VueApexCharts)
 app.component('star-rating', StarRating)
-app.component('circle-progress',CircleProgress)
+app.component('circle-progress', CircleProgress)
 app.component('date-picker', DatePicker);
 app.component('vue3-tags-input', Vue3TagsInput);
 app.use(FlagIcon)
-.use(Antd)
-.use(VueEasyLightbox)
-.use(VueFormWizard)
+  .use(Antd)
+  .use(VueEasyLightbox)
+  .use(VueFormWizard)
 app.use(VCalendar)
-.use(BootstrapVue3)
-.use(BToastPlugin)
+  // .use(BootstrapVue3)
+  // .use(BToastPlugin)
   .use(ThemifyIcon)
   .use(SimpleLineIcons)
 app.component('IconHome', IconHome);
 app.use(CKEditor);
-app.use(router).mount('#app'); 
+app.use(router).mount('#app');
 
