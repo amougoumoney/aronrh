@@ -42,17 +42,14 @@ export default {
       <div class="row">
         <div class="col-lg-5">
           <div
-            class="d-lg-flex align-items-center justify-content-center d-none flex-wrap vh-100 bg-primary-transparent"
-          >
+            class="d-lg-flex align-items-center justify-content-center d-none flex-wrap vh-100 bg-primary-transparent">
             <div>
               <img src="@/assets/img/bg/authentication-bg-06.svg" alt="Img" />
             </div>
           </div>
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12">
-          <div
-            class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap"
-          >
+          <div class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap">
             <div class="col-md-7 mx-auto p-4">
               <form @submit.prevent="submitForm">
                 <div>
@@ -71,18 +68,11 @@ export default {
                         <div class="mb-3">
                           <label class="form-label">Password</label>
                           <div class="pass-group" id="passwordInput">
-                            <input
-                              :type="showPassword ? 'text' : 'password'"
-                              class="pass-input form-control"
-                            />
-                            <span
-                              @click="toggleShow"
-                              class="ti toggle-password"
-                              :class="{
-                                'ti-eye': showPassword,
-                                'ti-eye-off': !showPassword,
-                              }"
-                            ></span>
+                            <input :type="showPassword ? 'text' : 'password'" class="pass-input form-control" />
+                            <span @click="toggleShow" class="ti toggle-password" :class="{
+                              'ti-eye': showPassword,
+                              'ti-eye-off': !showPassword,
+                            }"></span>
                           </div>
                         </div>
                         <div class="password-strength d-flex" id="passwordStrength">
@@ -100,18 +90,11 @@ export default {
                       <div class="mb-3">
                         <label class="form-label">Confirm Password</label>
                         <div class="pass-group">
-                          <input
-                            :type="showPassword1 ? 'text' : 'password'"
-                            class="pass-inputs form-control"
-                          />
-                          <span
-                            @click="toggleShow1"
-                            class="ti toggle-passwords"
-                            :class="{
-                              'ti-eye': showPassword1,
-                              'ti-eye-off': !showPassword1,
-                            }"
-                          ></span>
+                          <input :type="showPassword1 ? 'text' : 'password'" class="pass-inputs form-control" />
+                          <span @click="toggleShow1" class="ti toggle-passwords" :class="{
+                            'ti-eye': showPassword1,
+                            'ti-eye-off': !showPassword1,
+                          }"></span>
                         </div>
                       </div>
                       <div class="mb-3">
@@ -123,7 +106,7 @@ export default {
                   </div>
                   <div class="mt-5 text-center">
                     <p class="mb-0 text-gray-9">
-                      Copyright &copy; {{ new Date().getFullYear() }} - Smarthr
+                      Copyright &copy; {{ new Date().getFullYear() }} - AronHR
                     </p>
                   </div>
                 </div>

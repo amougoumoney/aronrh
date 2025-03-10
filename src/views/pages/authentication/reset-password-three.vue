@@ -47,9 +47,7 @@ export default {
 <template>
   <div class="container-fuild">
     <div class="w-100 overflow-hidden position-relative flex-wrap d-block vh-100">
-      <div
-        class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap"
-      >
+      <div class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap">
         <div class="col-md-4 mx-auto p-4">
           <form @submit.prevent="submitForm">
             <div class="mx-auto mb-5 text-center">
@@ -67,18 +65,11 @@ export default {
                   <div class="mb-3">
                     <label class="form-label">Password</label>
                     <div class="pass-group" id="passwordInput">
-                      <input
-                        :type="showPassword ? 'text' : 'password'"
-                        class="pass-input form-control"
-                      />
-                      <span
-                        @click="toggleShow"
-                        class="ti toggle-password"
-                        :class="{
-                          'ti-eye': showPassword,
-                          'ti-eye-off': !showPassword,
-                        }"
-                      ></span>
+                      <input :type="showPassword ? 'text' : 'password'" class="pass-input form-control" />
+                      <span @click="toggleShow" class="ti toggle-password" :class="{
+                        'ti-eye': showPassword,
+                        'ti-eye-off': !showPassword,
+                      }"></span>
                     </div>
                   </div>
                   <div class="password-strength d-flex" id="passwordStrength">
@@ -95,18 +86,11 @@ export default {
                 <div class="mb-3">
                   <label class="form-label">Confirm Password</label>
                   <div class="pass-group">
-                    <input
-                      :type="showPassword1 ? 'text' : 'password'"
-                      class="pass-inputs form-control"
-                    />
-                    <span
-                      @click="toggleShow1"
-                      class="ti toggle-passwords"
-                      :class="{
-                        'ti-eye': showPassword1,
-                        'ti-eye-off': !showPassword1,
-                      }"
-                    ></span>
+                    <input :type="showPassword1 ? 'text' : 'password'" class="pass-inputs form-control" />
+                    <span @click="toggleShow1" class="ti toggle-passwords" :class="{
+                      'ti-eye': showPassword1,
+                      'ti-eye-off': !showPassword1,
+                    }"></span>
                   </div>
                 </div>
                 <div class="mb-3">
@@ -115,7 +99,7 @@ export default {
               </div>
               <div class="mt-5 text-center">
                 <p class="mb-0 text-gray-9">
-                  Copyright &copy; {{ new Date().getFullYear() }} - Smarthr
+                  Copyright &copy; {{ new Date().getFullYear() }} - AronHR
                 </p>
               </div>
             </div>

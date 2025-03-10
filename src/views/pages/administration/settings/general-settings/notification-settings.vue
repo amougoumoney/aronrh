@@ -5,20 +5,11 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -54,32 +45,17 @@
                       </td>
                       <td>
                         <div class="form-check form-check-md form-switch me-2">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                       <td>
                         <div class="form-check form-check-md form-switch me-2">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                       <td class="pe-0">
                         <div class="form-check form-check-md form-switch">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                     </tr>
@@ -90,32 +66,17 @@
                       </td>
                       <td>
                         <div class="form-check form-check-md form-switch me-2">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                       <td>
                         <div class="form-check form-check-md form-switch me-2">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                       <td class="pe-0">
                         <div class="form-check form-check-md form-switch">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                     </tr>
@@ -128,32 +89,17 @@
                       </td>
                       <td>
                         <div class="form-check form-check-md form-switch me-2">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                       <td>
                         <div class="form-check form-check-md form-switch me-2">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                       <td class="pe-0">
                         <div class="form-check form-check-md form-switch">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                     </tr>
@@ -164,32 +110,17 @@
                       </td>
                       <td>
                         <div class="form-check form-check-md form-switch me-2">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                       <td>
                         <div class="form-check form-check-md form-switch me-2">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                       <td class="pe-0">
                         <div class="form-check form-check-md form-switch">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                     </tr>
@@ -200,32 +131,17 @@
                       </td>
                       <td>
                         <div class="form-check form-check-md form-switch me-2">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                       <td>
                         <div class="form-check form-check-md form-switch me-2">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                       <td class="pe-0">
                         <div class="form-check form-check-md form-switch">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                            checked
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                         </div>
                       </td>
                     </tr>
@@ -237,10 +153,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

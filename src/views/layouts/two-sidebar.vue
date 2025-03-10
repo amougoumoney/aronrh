@@ -7,136 +7,57 @@
           <img src="@/assets/img/logo-small.svg" alt="Logo" />
         </router-link>
         <div class="sidebar-left slimscroll">
-          <div
-            class="nav flex-column align-items-center nav-pills"
-            id="sidebar-tabs"
-            role="tablist"
-            aria-orientation="vertical"
-          >
-            <a
-              href="javascript:void(0);"
-              class="nav-link active"
-              title="Dashboard"
-              data-bs-toggle="tab"
-              data-bs-target="#dashboard"
-            >
+          <div class="nav flex-column align-items-center nav-pills" id="sidebar-tabs" role="tablist"
+            aria-orientation="vertical">
+            <a href="javascript:void(0);" class="nav-link active" title="Dashboard" data-bs-toggle="tab"
+              data-bs-target="#dashboard">
               <i class="ti ti-smart-home"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Apps"
-              data-bs-toggle="tab"
-              data-bs-target="#application"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Apps" data-bs-toggle="tab"
+              data-bs-target="#application">
               <i class="ti ti-layout-grid-add"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Super Admin"
-              data-bs-toggle="tab"
-              data-bs-target="#super-admin"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Super Admin" data-bs-toggle="tab"
+              data-bs-target="#super-admin">
               <i class="ti ti-user-star"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Layout"
-              data-bs-toggle="tab"
-              data-bs-target="#layout"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Layout" data-bs-toggle="tab" data-bs-target="#layout">
               <i class="ti ti-layout-board-split"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Projects"
-              data-bs-toggle="tab"
-              data-bs-target="#projects"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Projects" data-bs-toggle="tab"
+              data-bs-target="#projects">
               <i class="ti ti-users-group"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Crm"
-              data-bs-toggle="tab"
-              data-bs-target="#crm"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Crm" data-bs-toggle="tab" data-bs-target="#crm">
               <i class="ti ti-user-shield"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Hrm"
-              data-bs-toggle="tab"
-              data-bs-target="#hrm"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Hrm" data-bs-toggle="tab" data-bs-target="#hrm">
               <i class="ti ti-user"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Finance"
-              data-bs-toggle="tab"
-              data-bs-target="#finance"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Finance" data-bs-toggle="tab"
+              data-bs-target="#finance">
               <i class="ti ti-shopping-cart-dollar"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Administration"
-              data-bs-toggle="tab"
-              data-bs-target="#administration"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Administration" data-bs-toggle="tab"
+              data-bs-target="#administration">
               <i class="ti ti-cash"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Content"
-              data-bs-toggle="tab"
-              data-bs-target="#content"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Content" data-bs-toggle="tab"
+              data-bs-target="#content">
               <i class="ti ti-license"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Pages"
-              data-bs-toggle="tab"
-              data-bs-target="#pages"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Pages" data-bs-toggle="tab" data-bs-target="#pages">
               <i class="ti ti-page-break"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Authentication"
-              data-bs-toggle="tab"
-              data-bs-target="#authentication"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Authentication" data-bs-toggle="tab"
+              data-bs-target="#authentication">
               <i class="ti ti-lock-check"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="UI Elements"
-              data-bs-toggle="tab"
-              data-bs-target="#ui-elements"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="UI Elements" data-bs-toggle="tab"
+              data-bs-target="#ui-elements">
               <i class="ti ti-ux-circle"></i>
             </a>
-            <a
-              href="javascript:void(0);"
-              class="nav-link"
-              title="Extras"
-              data-bs-toggle="tab"
-              data-bs-target="#extras"
-            >
+            <a href="javascript:void(0);" class="nav-link" title="Extras" data-bs-toggle="tab" data-bs-target="#extras">
               <i class="ti ti-vector-triangle"></i>
             </a>
           </div>
@@ -152,14 +73,10 @@
           </router-link>
         </div>
         <div class="sidebar-scroll">
-          <h6 class="mb-3">Welcome to SmartHR</h6>
+          <h6 class="mb-3">Welcome to AronHR</h6>
           <div class="text-center rounded bg-light p-3 mb-4">
             <div class="avatar avatar-lg online mb-3">
-              <img
-                src="@/assets/img/profiles/avatar-02.jpg"
-                alt="Img"
-                class="img-fluid rounded-circle"
-              />
+              <img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" class="img-fluid rounded-circle" />
             </div>
             <h6 class="fs-12 fw-normal mb-1">Adrian Herman</h6>
             <p class="fs-10">System Admin</p>
@@ -224,14 +141,10 @@
                   <router-link to="/layouts/layout-box"><span>Boxed</span></router-link>
                 </li>
                 <li>
-                  <router-link to="/layouts/layout-horizontal-single"
-                    ><span>Horizontal Single</span></router-link
-                  >
+                  <router-link to="/layouts/layout-horizontal-single"><span>Horizontal Single</span></router-link>
                 </li>
                 <li>
-                  <router-link to="/layouts/layout-horizontal-overlay"
-                    ><span>Horizontal Overlay</span></router-link
-                  >
+                  <router-link to="/layouts/layout-horizontal-overlay"><span>Horizontal Overlay</span></router-link>
                 </li>
                 <li>
                   <router-link to="/layouts/layout-horizontal-box"><span>Horizontal Box</span></router-link>
@@ -258,8 +171,7 @@
                 <li class="menu-title"><span>PROJECTS</span></li>
                 <li><router-link to="/projects/clients">Clients</router-link></li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Projects</span>
+                  <a href="javascript:void(0);"><span>Projects</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -300,8 +212,7 @@
               <ul>
                 <li class="menu-title"><span>HRM</span></li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Employees</span>
+                  <a href="javascript:void(0);"><span>Employees</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -314,8 +225,7 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Tickets</span>
+                  <a href="javascript:void(0);"><span>Tickets</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -327,15 +237,12 @@
                   <router-link to="/hrm/holidays"><span>Holidays</span></router-link>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Attendance</span>
+                  <a href="javascript:void(0);"><span>Attendance</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
                     <li class="submenu submenu-two">
-                      <a href="javascript:void(0);"
-                        >Leaves<span class="menu-arrow inside-submenu"></span
-                      ></a>
+                      <a href="javascript:void(0);">Leaves<span class="menu-arrow inside-submenu"></span></a>
                       <ul>
                         <li><router-link to="/leave/leaves-admin">Leaves (Admin)</router-link></li>
                         <li><router-link to="/leave/leaves-employee">Leave (Employee)</router-link></li>
@@ -350,8 +257,7 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Performance</span>
+                  <a href="javascript:void(0);"><span>Performance</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -367,8 +273,7 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Training</span>
+                  <a href="javascript:void(0);"><span>Training</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -392,8 +297,7 @@
               <ul>
                 <li class="menu-title"><span>FINANCE & ACCOUNTS</span></li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Sales</span>
+                  <a href="javascript:void(0);"><span>Sales</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -406,8 +310,7 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Accounting</span>
+                  <a href="javascript:void(0);"><span>Accounting</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -418,8 +321,7 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Payroll</span>
+                  <a href="javascript:void(0);"><span>Payroll</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -434,8 +336,7 @@
               <ul>
                 <li class="menu-title"><span>ADMINISTRATION</span></li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Assets</span>
+                  <a href="javascript:void(0);"><span>Assets</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -444,8 +345,7 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Help & Supports</span>
+                  <a href="javascript:void(0);"><span>Help & Supports</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -454,8 +354,7 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>User Management</span>
+                  <a href="javascript:void(0);"><span>User Management</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -464,8 +363,7 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Reports</span>
+                  <a href="javascript:void(0);"><span>Reports</span>
                     <span class="menu-arrow"></span>
                   </a>
                   <ul>
@@ -512,9 +410,7 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    >App Settings<span class="menu-arrow"></span
-                  ></a>
+                  <a href="javascript:void(0);">App Settings<span class="menu-arrow"></span></a>
                   <ul>
                     <li><router-link to="/app-settings/salary-settings">Salary Settings</router-link></li>
                     <li><router-link to="/app-settings/approval-settings">Approval Settings</router-link></li>
@@ -550,9 +446,7 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    >Other Settings<span class="menu-arrow"></span
-                  ></a>
+                  <a href="javascript:void(0);">Other Settings<span class="menu-arrow"></span></a>
                   <ul>
                     <li><router-link to="/others-settings/custom-css">Custom CSS</router-link></li>
                     <li><router-link to="/others-settings/custom-js">Custom JS</router-link></li>
@@ -709,8 +603,7 @@
               <ul>
                 <li class="menu-title"><span>UI INTERFACE</span></li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    >Base UI<span class="menu-arrow"></span>
+                  <a href="javascript:void(0);">Base UI<span class="menu-arrow"></span>
                   </a>
                   <ul>
                     <li><router-link to="/baseui/ui-alerts">Alerts</router-link></li>
@@ -766,9 +659,7 @@
                   </a>
                   <ul>
                     <li class="submenu submenu-two">
-                      <a href="javascript:void(0);"
-                        >Form Elements<span class="menu-arrow inside-submenu"></span
-                      ></a>
+                      <a href="javascript:void(0);">Form Elements<span class="menu-arrow inside-submenu"></span></a>
                       <ul>
                         <li><router-link to="/form-elements/form-basic-inputs">Basic Inputs</router-link></li>
                         <li><router-link to="/form-elements/form-checkbox-radios">Checkbox & Radios</router-link></li>
@@ -780,9 +671,7 @@
                       </ul>
                     </li>
                     <li class="submenu submenu-two">
-                      <a href="javascript:void(0);"
-                        >Layouts<span class="menu-arrow inside-submenu"></span
-                      ></a>
+                      <a href="javascript:void(0);">Layouts<span class="menu-arrow inside-submenu"></span></a>
                       <ul>
                         <li><router-link to="/form-layouts/form-horizontal">Horizontal Form</router-link></li>
                         <li><router-link to="/form-layouts/form-vertical">Vertical Form</router-link></li>
@@ -795,17 +684,14 @@
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    >Tables <span class="menu-arrow"></span
-                  ></a>
+                  <a href="javascript:void(0);">Tables <span class="menu-arrow"></span></a>
                   <ul>
                     <li><router-link to="/tables/tables-basic">Basic Tables </router-link></li>
                     <li><router-link to="/tables/data-tables">Data Table </router-link></li>
                   </ul>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    >Charts<span class="menu-arrow"></span>
+                  <a href="javascript:void(0);">Charts<span class="menu-arrow"></span>
                   </a>
                   <ul>
                     <li><router-link to="/charts/chart-apex">Apex Charts</router-link></li>
@@ -838,23 +724,16 @@
                 <li><a href="javascript:void(0);">Documentation</a></li>
                 <li><a href="javascript:void(0);">Change Log</a></li>
                 <li class="submenu">
-                  <a href="javascript:void(0);"
-                    ><span>Multi Level</span><span class="menu-arrow"></span
-                  ></a>
+                  <a href="javascript:void(0);"><span>Multi Level</span><span class="menu-arrow"></span></a>
                   <ul>
                     <li><a href="javascript:void(0);">Multilevel 1</a></li>
                     <li class="submenu submenu-two">
-                      <a href="javascript:void(0);"
-                        >Multilevel 2<span class="menu-arrow inside-submenu"></span
-                      ></a>
+                      <a href="javascript:void(0);">Multilevel 2<span class="menu-arrow inside-submenu"></span></a>
                       <ul>
                         <li><a href="javascript:void(0);">Multilevel 2.1</a></li>
                         <li class="submenu submenu-two submenu-three">
-                          <a href="javascript:void(0);"
-                            >Multilevel 2.2<span
-                              class="menu-arrow inside-submenu inside-submenu-two"
-                            ></span
-                          ></a>
+                          <a href="javascript:void(0);">Multilevel 2.2<span
+                              class="menu-arrow inside-submenu inside-submenu-two"></span></a>
                           <ul>
                             <li><a href="javascript:void(0);">Multilevel 2.2.1</a></li>
                             <li><a href="javascript:void(0);">Multilevel 2.2.2</a></li>

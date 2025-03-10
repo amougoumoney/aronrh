@@ -5,20 +5,11 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -49,11 +40,7 @@
                             <div class="card-body">
                               <a href="javascript:void(0);">
                                 <div class="border rounded border-gray mb-2">
-                                  <img
-                                    src="@/assets/img/theme/light.svg"
-                                    class="img-fluid rounded"
-                                    alt="theme"
-                                  />
+                                  <img src="@/assets/img/theme/light.svg" class="img-fluid rounded" alt="theme" />
                                 </div>
                                 <p class="text-dark text-center">Light</p>
                               </a>
@@ -65,11 +52,7 @@
                             <div class="card-body">
                               <a href="javascript:void(0);">
                                 <div class="border rounded border-gray mb-2">
-                                  <img
-                                    src="@/assets/img/theme/dark.svg"
-                                    class="img-fluid rounded"
-                                    alt="theme"
-                                  />
+                                  <img src="@/assets/img/theme/dark.svg" class="img-fluid rounded" alt="theme" />
                                 </div>
                                 <p class="text-dark text-center">Dark</p>
                               </a>
@@ -81,11 +64,7 @@
                             <div class="card-body">
                               <a href="javascript:void(0);">
                                 <div class="border rounded border-gray mb-2">
-                                  <img
-                                    src="@/assets/img/theme/automatic.svg"
-                                    class="img-fluid rounded"
-                                    alt="theme"
-                                  />
+                                  <img src="@/assets/img/theme/automatic.svg" class="img-fluid rounded" alt="theme" />
                                 </div>
                                 <p class="text-dark text-center">Automatic</p>
                               </a>
@@ -105,17 +84,11 @@
                       <div class="theme-colors mb-4">
                         <ul class="d-flex align-items-center">
                           <li v-for="(color, index) in colors" :key="index">
-                            <span
-                              class="themecolorset"
-                              :class="{ active: selectedColor === color }"
-                              @click="selectColor(color)"
-                            >
+                            <span class="themecolorset" :class="{ active: selectedColor === color }"
+                              @click="selectColor(color)">
                               <span class="primecolor" :class="color">
                                 <span class="colorcheck text-white">
-                                  <i
-                                    v-if="selectedColor === color"
-                                    class="ti ti-check text-primary fs-10"
-                                  ></i>
+                                  <i v-if="selectedColor === color" class="ti ti-check text-primary fs-10"></i>
                                 </span>
                               </span>
                             </span>
@@ -131,11 +104,7 @@
                       </div>
                     </div>
                     <div class="col-xl-3 col-lg-12 col-md-3">
-                      <vue-select
-                        :options="SmallSel"
-                        id="smallsel"
-                        placeholder="Select"
-                      />
+                      <vue-select :options="SmallSel" id="smallsel" placeholder="Select" />
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
@@ -161,10 +130,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

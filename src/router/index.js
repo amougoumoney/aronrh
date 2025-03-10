@@ -1110,7 +1110,7 @@ router.afterEach((to) => {
   }
 
   // Update page title
-  const defaultTitle = 'HRMS';
+  const defaultTitle = 'ARONHR';
   let title = to.meta.title || defaultTitle;
 
   // If you want to always include the default title

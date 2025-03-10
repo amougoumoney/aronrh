@@ -10,37 +10,26 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="head-icons">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -56,20 +45,13 @@
                 <div class="row align-items-center">
                   <div class="col-7">
                     <div>
-                      <span class="fs-14 fw-normal text-truncate mb-1"
-                        >Total Transaction</span
-                      >
+                      <span class="fs-14 fw-normal text-truncate mb-1">Total Transaction</span>
                       <h5>$5,340</h5>
                     </div>
                   </div>
                   <div class="col-5">
                     <div id="total-chart">
-                      <apexchart
-                        type="area"
-                        width="50"
-                        :options="totalChart.total"
-                        :series="totalChart.series"
-                      >
+                      <apexchart type="area" width="50" :options="totalChart.total" :series="totalChart.series">
                       </apexchart>
                     </div>
                   </div>
@@ -78,8 +60,7 @@
               <div class="d-flex">
                 <p class="fs-12 fw-normal d-flex align-items-center text-truncate">
                   <span class="text-primary fs-12 d-flex align-items-center me-1">
-                    <i class="ti ti-arrow-wave-right-up me-1"></i>+19.01%</span
-                  >from last week
+                    <i class="ti ti-arrow-wave-right-up me-1"></i>+19.01%</span>from last week
                 </p>
               </div>
             </div>
@@ -92,20 +73,13 @@
                 <div class="row align-items-center">
                   <div class="col-7">
                     <div>
-                      <span class="fs-14 fw-normal text-truncate mb-1"
-                        >Total Subscribers</span
-                      >
+                      <span class="fs-14 fw-normal text-truncate mb-1">Total Subscribers</span>
                       <h5>600</h5>
                     </div>
                   </div>
                   <div class="col-5">
                     <div id="active-chart">
-                      <apexchart
-                        type="area"
-                        width="50"
-                        :options="activeChart.active"
-                        :series="activeChart.series"
-                      >
+                      <apexchart type="area" width="50" :options="activeChart.active" :series="activeChart.series">
                       </apexchart>
                     </div>
                   </div>
@@ -114,8 +88,7 @@
               <div class="d-flex">
                 <p class="fs-12 fw-normal d-flex align-items-center text-truncate">
                   <span class="text-primary fs-12 d-flex align-items-center me-1">
-                    <i class="ti ti-arrow-wave-right-up me-1"></i>+19.01%</span
-                  >from last week
+                    <i class="ti ti-arrow-wave-right-up me-1"></i>+19.01%</span>from last week
                 </p>
               </div>
             </div>
@@ -128,20 +101,14 @@
                 <div class="row align-items-center">
                   <div class="col-7">
                     <div>
-                      <span class="fs-14 fw-normal text-truncate mb-1"
-                        >Active Subscribers</span
-                      >
+                      <span class="fs-14 fw-normal text-truncate mb-1">Active Subscribers</span>
                       <h5>560</h5>
                     </div>
                   </div>
                   <div class="col-5">
                     <div id="inactive-chart">
-                      <apexchart
-                        type="area"
-                        width="50"
-                        :options="inactiveChart.inactive"
-                        :series="inactiveChart.series"
-                      >
+                      <apexchart type="area" width="50" :options="inactiveChart.inactive"
+                        :series="inactiveChart.series">
                       </apexchart>
                     </div>
                   </div>
@@ -150,8 +117,7 @@
               <div class="d-flex">
                 <p class="fs-12 fw-normal d-flex align-items-center text-truncate">
                   <span class="text-primary fs-12 d-flex align-items-center me-1">
-                    <i class="ti ti-arrow-wave-right-up me-1"></i>+19.01%</span
-                  >from last week
+                    <i class="ti ti-arrow-wave-right-up me-1"></i>+19.01%</span>from last week
                 </p>
               </div>
             </div>
@@ -164,20 +130,14 @@
                 <div class="row align-items-center">
                   <div class="col-7">
                     <div>
-                      <span class="fs-14 fw-normal text-truncate mb-1"
-                        >Expired Subscribers</span
-                      >
+                      <span class="fs-14 fw-normal text-truncate mb-1">Expired Subscribers</span>
                       <h5>40</h5>
                     </div>
                   </div>
                   <div class="col-5">
                     <div id="location-chart">
-                      <apexchart
-                        type="area"
-                        width="50"
-                        :options="locationChart.location"
-                        :series="locationChart.series"
-                      >
+                      <apexchart type="area" width="50" :options="locationChart.location"
+                        :series="locationChart.series">
                       </apexchart>
                     </div>
                   </div>
@@ -186,8 +146,7 @@
               <div class="d-flex">
                 <p class="fs-12 fw-normal d-flex align-items-center text-truncate">
                   <span class="text-primary fs-12 d-flex align-items-center me-1">
-                    <i class="ti ti-arrow-wave-right-up me-1"></i>+19.01%</span
-                  >from last week
+                    <i class="ti ti-arrow-wave-right-up me-1"></i>+19.01%</span>from last week
                 </p>
               </div>
             </div>
@@ -196,58 +155,38 @@
       </div>
 
       <div class="card">
-        <div
-          class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-        >
+        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
           <h5>Subscription List</h5>
-          <div
-            class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3"
-          >
+          <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
             <div class="me-3">
               <div class="input-icon-end position-relative">
-                <input
-                  type="text"
-                  class="form-control date-range bookingrange"
-                  ref="dateRangeInput"
-                  placeholder="dd/mm/yyyy - dd/mm/yyyy"
-                />
+                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
+                  placeholder="dd/mm/yyyy - dd/mm/yyyy" />
                 <span class="input-icon-addon">
                   <i class="ti ti-chevron-down"></i>
                 </span>
               </div>
             </div>
             <div class="dropdown me-3">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Select Plan
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Advanced (Monthly)</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Advanced (Monthly)</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Basic (Yearly)</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Basic (Yearly)</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Enterprise (Monthly)</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Enterprise (Monthly)</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown me-3">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Select Status
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
@@ -260,38 +199,25 @@
               </ul>
             </div>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Sort By : Last 7 Days
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Recently Added</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Ascending</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Desending</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last Month</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last 7 Days</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                 </li>
               </ul>
             </div>
@@ -305,10 +231,8 @@
       </div>
     </div>
 
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014-2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014-2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

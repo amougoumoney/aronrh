@@ -30,17 +30,14 @@ export default {
       <div class="row">
         <div class="col-lg-5">
           <div
-            class="d-lg-flex align-items-center justify-content-center d-none flex-wrap vh-100 bg-primary-transparent"
-          >
+            class="d-lg-flex align-items-center justify-content-center d-none flex-wrap vh-100 bg-primary-transparent">
             <div>
               <img src="@/assets/img/bg/authentication-bg-08.svg" alt="Img" />
             </div>
           </div>
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12">
-          <div
-            class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap"
-          >
+          <div class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap">
             <div class="col-md-7 mx-auto p-4">
               <form @submit.prevent="submitForm">
                 <div>
@@ -57,41 +54,14 @@ export default {
                     </div>
                     <div class="text-center otp-input">
                       <div class="d-flex align-items-center mb-3">
-                        <input
-                          type="text"
-                          class="rounded w-100 py-sm-3 py-2 text-center fs-26 fw-bold me-3"
-                          id="digit-1"
-                          name="digit-1"
-                          data-next="digit-2"
-                          maxlength="1"
-                        />
-                        <input
-                          type="text"
-                          class="rounded w-100 py-sm-3 py-2 text-center fs-26 fw-bold me-3"
-                          id="digit-2"
-                          name="digit-2"
-                          data-next="digit-3"
-                          data-previous="digit-1"
-                          maxlength="1"
-                        />
-                        <input
-                          type="text"
-                          class="rounded w-100 py-sm-3 py-2 text-center fs-26 fw-bold me-3"
-                          id="digit-3"
-                          name="digit-3"
-                          data-next="digit-4"
-                          data-previous="digit-2"
-                          maxlength="1"
-                        />
-                        <input
-                          type="text"
-                          class="rounded w-100 py-sm-3 py-2 text-center fs-26 fw-bold"
-                          id="digit-4"
-                          name="digit-4"
-                          data-next="digit-5"
-                          data-previous="digit-3"
-                          maxlength="1"
-                        />
+                        <input type="text" class="rounded w-100 py-sm-3 py-2 text-center fs-26 fw-bold me-3"
+                          id="digit-1" name="digit-1" data-next="digit-2" maxlength="1" />
+                        <input type="text" class="rounded w-100 py-sm-3 py-2 text-center fs-26 fw-bold me-3"
+                          id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" maxlength="1" />
+                        <input type="text" class="rounded w-100 py-sm-3 py-2 text-center fs-26 fw-bold me-3"
+                          id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" maxlength="1" />
+                        <input type="text" class="rounded w-100 py-sm-3 py-2 text-center fs-26 fw-bold" id="digit-4"
+                          name="digit-4" data-next="digit-5" data-previous="digit-3" maxlength="1" />
                       </div>
                       <div>
                         <div class="badge bg-danger-transparent mb-3">
@@ -102,9 +72,7 @@ export default {
                         <div class="mb-3 d-flex justify-content-center">
                           <p class="text-gray-9">
                             Didn't get the OTP?
-                            <a href="javascript:void(0);" class="text-primary"
-                              >Resend OTP</a
-                            >
+                            <a href="javascript:void(0);" class="text-primary">Resend OTP</a>
                           </p>
                         </div>
                       </div>
@@ -117,7 +85,7 @@ export default {
                   </div>
                   <div class="mt-5 text-center">
                     <p class="mb-0 text-gray-9">
-                      Copyright &copy; {{ new Date().getFullYear() }} - Smarthr
+                      Copyright &copy; {{ new Date().getFullYear() }} - AronHR
                     </p>
                   </div>
                 </div>

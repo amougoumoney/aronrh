@@ -31,40 +31,40 @@ export default {
 
         // Move the function declaration outside of the onMounted callback
         function booking_range(start, end) {
-        return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+            return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
         }
 
         onMounted(() => {
-        if (dateRangeInput.value) {
-            const start = moment().subtract(6, "days");
-            const end = moment();
+            if (dateRangeInput.value) {
+                const start = moment().subtract(6, "days");
+                const end = moment();
 
-            new DateRangePicker(
-            dateRangeInput.value,
-            {
-                startDate: start,
-                endDate: end,
-                ranges: {
-                Today: [moment(), moment()],
-                Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-                "Last 7 Days": [moment().subtract(6, "days"), moment()],
-                "Last 30 Days": [moment().subtract(29, "days"), moment()],
-                "This Month": [moment().startOf("month"), moment().endOf("month")],
-                "Last Month": [
-                    moment().subtract(1, "month").startOf("month"),
-                    moment().subtract(1, "month").endOf("month"),
-                ],
-                },
-            },
-            booking_range
-            );
+                new DateRangePicker(
+                    dateRangeInput.value,
+                    {
+                        startDate: start,
+                        endDate: end,
+                        ranges: {
+                            Today: [moment(), moment()],
+                            Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+                            "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                            "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                            "This Month": [moment().startOf("month"), moment().endOf("month")],
+                            "Last Month": [
+                                moment().subtract(1, "month").startOf("month"),
+                                moment().subtract(1, "month").endOf("month"),
+                            ],
+                        },
+                    },
+                    booking_range
+                );
 
-            booking_range(start, end);
-        }
+                booking_range(start, end);
+            }
         });
 
         return {
-        dateRangeInput,
+            dateRangeInput,
         };
     },
 }
@@ -84,22 +84,27 @@ export default {
                 <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
                     <div class="mb-2">
                         <div class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);"
+                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                                data-bs-toggle="dropdown">
                                 <i class="ti ti-file-export me-1"></i>Export
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                            class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                            class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
                     <div class="head-icons ms-2">
-                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse" id="collapse-header"  @click="toggleHeader">
+                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                             <i class="ti ti-chevrons-up"></i>
                         </a>
                     </div>
@@ -119,7 +124,9 @@ export default {
                                             <h4>300</h4>
                                         </div>
                                         <div class="leave-report-icon">
-                                            <a href="javascript:void(0);"><span class="p-2 border border-primary bg-transparent-primary rounded-circle d-flex align-items-center justify-content-center"><i class="ti ti-user-check text-primary"></i></span></a>
+                                            <a href="javascript:void(0);"><span
+                                                    class="p-2 border border-primary bg-transparent-primary rounded-circle d-flex align-items-center justify-content-center"><i
+                                                        class="ti ti-user-check text-primary"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -127,8 +134,8 @@ export default {
                         </div>
                         <!-- /Total Companies -->
 
-                            <!-- Total Companies -->
-                            <div class="col-lg-6 col-md-6 d-flex">
+                        <!-- Total Companies -->
+                        <div class="col-lg-6 col-md-6 d-flex">
                             <div class="card flex-fill">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between">
@@ -137,7 +144,9 @@ export default {
                                             <h4>100</h4>
                                         </div>
                                         <div class="leave-report-icon">
-                                            <a href="javascript:void(0);"><span class="p-2 border border-success bg-transparent-success rounded-circle d-flex align-items-center justify-content-center"><i class="ti ti-subtask text-success"></i></span></a>
+                                            <a href="javascript:void(0);"><span
+                                                    class="p-2 border border-success bg-transparent-success rounded-circle d-flex align-items-center justify-content-center"><i
+                                                        class="ti ti-subtask text-success"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -146,7 +155,7 @@ export default {
                         <!-- /Total Companies -->
 
                         <!-- Inactive Companies -->
-                            <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="col-lg-6 col-md-6 d-flex">
                             <div class="card flex-fill">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between">
@@ -155,7 +164,9 @@ export default {
                                             <h4>15</h4>
                                         </div>
                                         <div class="leave-report-icon">
-                                            <a href="javascript:void(0);"><span class="p-2 border border-danger bg-transparent-danger rounded-circle d-flex align-items-center justify-content-center"><i class="ti ti-user-x text-danger"></i></span></a>
+                                            <a href="javascript:void(0);"><span
+                                                    class="p-2 border border-danger bg-transparent-danger rounded-circle d-flex align-items-center justify-content-center"><i
+                                                        class="ti ti-user-x text-danger"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -164,7 +175,7 @@ export default {
                         <!-- /Inactive Companies -->
 
                         <!-- Company Location -->
-                            <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="col-lg-6 col-md-6 d-flex">
                             <div class="card flex-fill">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between">
@@ -173,7 +184,9 @@ export default {
                                             <h4>125</h4>
                                         </div>
                                         <div class="leave-report-icon">
-                                            <a href="javascript:void(0);"><span class="p-2 border border-skyblue bg-transparent-skyblue rounded-circle d-flex align-items-center justify-content-center"><i class="ti ti-user-x text-skyblue"></i></span></a>
+                                            <a href="javascript:void(0);"><span
+                                                    class="p-2 border border-skyblue bg-transparent-skyblue rounded-circle d-flex align-items-center justify-content-center"><i
+                                                        class="ti ti-user-x text-skyblue"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -201,7 +214,9 @@ export default {
                                     </p>
                                 </div>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle btn btn-sm fs-12 btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                                    <a href="javascript:void(0);"
+                                        class="dropdown-toggle btn btn-sm fs-12 btn-white d-inline-flex align-items-center"
+                                        data-bs-toggle="dropdown">
                                         This Year
                                     </a>
                                     <ul class="dropdown-menu  dropdown-menu-end p-2">
@@ -219,17 +234,13 @@ export default {
                             </div>
                         </div>
                         <div class="card-body py-0">
-                            <div id="daily-report"> 
-                                <apexchart
-                                    type="area"
-                                    height="190"
-                                    :options="dailyReport.sline"
-                                    :series="dailyReport.series"
-                                ></apexchart>
+                            <div id="daily-report">
+                                <apexchart type="area" height="190" :options="dailyReport.sline"
+                                    :series="dailyReport.series"></apexchart>
                             </div>
                         </div>
                     </div>
-                </div>				
+                </div>
             </div>
 
             <div class="card">
@@ -238,14 +249,17 @@ export default {
                     <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
                         <div class="me-3">
                             <div class="input-icon-end position-relative">
-                                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput" placeholder="dd/mm/yyyy - dd/mm/yyyy">
+                                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
+                                    placeholder="dd/mm/yyyy - dd/mm/yyyy">
                                 <span class="input-icon-addon">
                                     <i class="ti ti-chevron-down"></i>
                                 </span>
                             </div>
                         </div>
                         <div class="dropdown me-3">
-                            <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);"
+                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                                data-bs-toggle="dropdown">
                                 Select Status
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
@@ -258,7 +272,9 @@ export default {
                             </ul>
                         </div>
                         <div class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);"
+                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                                data-bs-toggle="dropdown">
                                 Sort By : Last 7 Days
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
@@ -291,7 +307,7 @@ export default {
         </div>
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
-            <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+            <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
             <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
         </div>
 

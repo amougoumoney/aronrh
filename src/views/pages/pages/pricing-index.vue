@@ -5,17 +5,13 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <div class="my-auto mb-2">
           <h2 class="mb-1">Pricing</h2>
           <nav>
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item">
-                <router-link to="/dashboard/"
-                  ><i class="ti ti-smart-home"></i
-                ></router-link>
+                <router-link to="/dashboard/"><i class="ti ti-smart-home"></i></router-link>
               </li>
               <li class="breadcrumb-item">Pages</li>
               <li class="breadcrumb-item active" aria-current="page">Pricing</li>
@@ -25,47 +21,32 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-primary d-flex align-items-center"
-              data-bs-toggle="modal"
-              data-bs-target="#add_plans"
-            >
+            <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal"
+              data-bs-target="#add_plans">
               <i class="ti ti-circle-plus me-2"></i>Add New Plan
             </a>
           </div>
           <div class="head-icons ms-2">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -79,11 +60,7 @@
           <div class="d-flex justify-content-center align-items-center mb-4">
             <p class="mb-0 me-2">Monthly</p>
             <div class="form-check form-switch">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="flexSwitchCheckDefault"
-              />
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
             </div>
             <p>Yearly</p>
           </div>
@@ -102,29 +79,23 @@
                       <h6 class="fs-14 fw-medium text-gray w-100">Features Includes</h6>
                     </div>
                     <div>
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>10
-                        Employees</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>50
-                        Projects</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>50
-                        Clients</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>50
-                        GB Storage</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-circle-x-filled text-danger me-2"></i>Voice &
-                        Video Chat</span
-                      >
-                      <span class="text-dark d-flex align-items-center"
-                        ><i class="ti ti-circle-x-filled text-danger me-2"></i>CRM</span
-                      >
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>10
+                        Employees</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>50
+                        Projects</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>50
+                        Clients</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>50
+                        GB Storage</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-circle-x-filled text-danger me-2"></i>Voice &
+                        Video Chat</span>
+                      <span class="text-dark d-flex align-items-center"><i
+                          class="ti ti-circle-x-filled text-danger me-2"></i>CRM</span>
                     </div>
                   </div>
                   <a href="javascript:void(0);" class="btn btn-dark w-100">Choose Plan</a>
@@ -145,29 +116,22 @@
                       <h6 class="fs-14 fw-medium text-gray w-100">Features Includes</h6>
                     </div>
                     <div>
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>50
-                        Employees</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>100
-                        Projects</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>100
-                        Clients</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>50
-                        GB Storage</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i
-                        >Voice & Video Chat</span
-                      >
-                      <span class="text-dark d-flex align-items-center"
-                        ><i class="ti ti-circle-x-filled text-danger me-2"></i>CRM</span
-                      >
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>50
+                        Employees</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>100
+                        Projects</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>100
+                        Clients</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>50
+                        GB Storage</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>Voice & Video Chat</span>
+                      <span class="text-dark d-flex align-items-center"><i
+                          class="ti ti-circle-x-filled text-danger me-2"></i>CRM</span>
                     </div>
                   </div>
                   <a href="javascript:void(0);" class="btn btn-dark w-100">Choose Plan</a>
@@ -188,30 +152,21 @@
                       <h6 class="fs-14 fw-medium text-gray w-100">Features Includes</h6>
                     </div>
                     <div>
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>100
-                        Employees</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>200
-                        Projects</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i>200
-                        Clients</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i
-                        >Unlimited Storage</span
-                      >
-                      <span class="text-dark d-flex align-items-center mb-3"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i
-                        >Voice & Video Chat</span
-                      >
-                      <span class="text-dark d-flex align-items-center"
-                        ><i class="ti ti-discount-check-filled text-success me-2"></i
-                        >CRM</span
-                      >
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>100
+                        Employees</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>200
+                        Projects</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>200
+                        Clients</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>Unlimited Storage</span>
+                      <span class="text-dark d-flex align-items-center mb-3"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>Voice & Video Chat</span>
+                      <span class="text-dark d-flex align-items-center"><i
+                          class="ti ti-discount-check-filled text-success me-2"></i>CRM</span>
                     </div>
                   </div>
                   <a href="javascript:void(0);" class="btn btn-dark w-100">Choose Plan</a>
@@ -225,59 +180,38 @@
 
       <!-- Pricing Table -->
       <div class="card">
-        <div
-          class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-        >
+        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
           <h5>Plan Details</h5>
-          <div
-            class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3"
-          >
+          <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
             <div class="me-3">
               <div class="input-icon-end position-relative">
-                <input
-                  type="text"
-                  class="form-control date-range bookingrange"
-                  ref="dateRangeInput"
-                  placeholder="dd/mm/yyyy - dd/mm/yyyy"
-                />
+                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
+                  placeholder="dd/mm/yyyy - dd/mm/yyyy" />
                 <span class="input-icon-addon">
                   <i class="ti ti-chevron-down"></i>
                 </span>
               </div>
             </div>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Sort By : Last 7 Days
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Recently Added</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Ascending</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Desending</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last Month</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last 7 Days</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                 </li>
               </ul>
             </div>
@@ -285,12 +219,8 @@
         </div>
         <div class="card-body p-0">
           <div class="custom-datatable-filter table-responsive">
-            <a-table
-              class="table datatable thead-light"
-              :columns="columns"
-              :data-source="data"
-              :row-selection="rowSelection"
-            >
+            <a-table class="table datatable thead-light" :columns="columns" :data-source="data"
+              :row-selection="rowSelection">
               <template #bodyCell="{ column, record }">
                 <template v-if="column.key === 'Plan'">
                   <h6 class="fw-medium">
@@ -305,10 +235,8 @@
       <!-- /Pricing Table -->
     </div>
 
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>
@@ -322,12 +250,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Plan</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -335,17 +258,10 @@
           <div class="modal-body pb-0">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                >
+                <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                   <div
-                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                  >
-                    <img
-                      src="@/assets/img/profiles/avatar-30.jpg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
+                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
+                    <img src="@/assets/img/profiles/avatar-30.jpg" alt="img" class="rounded-circle" />
                   </div>
                   <div class="profile-upload">
                     <div class="mb-2">
@@ -357,64 +273,48 @@
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                        >Cancel</a
-                      >
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Plan Name <span class="text-danger"> *</span></label>
                   <vue-select :options="BasSele" id="bassele" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Type <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Plan Type <span class="text-danger"> *</span></label>
                   <vue-select :options="YeaPric" id="yeapric" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Position<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Plan Position<span class="text-danger"> *</span></label>
                   <vue-select :options="PlanPri" id="planpri" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Currency<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Plan Currency<span class="text-danger"> *</span></label>
                   <vue-select :options="CurrPri" id="currpri" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <div class="d-flex justify-content-between">
-                    <label class="form-label"
-                      >Plan Currency<span class="text-danger"> *</span></label
-                    >
-                    <span class="text-primary"
-                      ><i class="fa-solid fa-circle-exclamation me-2"></i>Set 0 for
-                      free</span
-                    >
+                    <label class="form-label">Plan Currency<span class="text-danger"> *</span></label>
+                    <span class="text-primary"><i class="fa-solid fa-circle-exclamation me-2"></i>Set 0 for
+                      free</span>
                   </div>
                   <vue-select :options="PercPri" id="percpri" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Discount Type<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Discount Type<span class="text-danger"> *</span></label>
                   <div class="pass-group">
                     <vue-select :options="PeFexSel" id="pefexsel" placeholder="Select" />
                   </div>
@@ -422,9 +322,7 @@
               </div>
               <div class="col-md-3">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Discount<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Discount<span class="text-danger"> *</span></label>
                   <div class="pass-group">
                     <input type="text" class="form-control" />
                   </div>
@@ -600,11 +498,7 @@
                       Access Trial
                     </label>
                     <div class="form-check form-switch me-2">
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        role="switch"
-                      />
+                      <input class="form-check-input me-2" type="checkbox" role="switch" />
                     </div>
                   </div>
                 </div>
@@ -624,19 +518,13 @@
                       Is Recommended
                     </label>
                     <div class="form-check form-switch me-2">
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        role="switch"
-                      />
+                      <input class="form-check-input me-2" type="checkbox" role="switch" />
                     </div>
                   </div>
                 </div>
                 <div class="col-md-5">
                   <div class="mb-3">
-                    <label class="form-label"
-                      >Status<span class="text-danger"> *</span></label
-                    >
+                    <label class="form-label">Status<span class="text-danger"> *</span></label>
                     <vue-select :opitons="SelePri" id="selepri" placeholder="Select" />
                   </div>
                 </div>
@@ -767,9 +655,9 @@ const data = [
   },
 ];
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 export default {
   data() {

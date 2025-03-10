@@ -50,28 +50,18 @@ export default {
               <div class="card-body bg-primary bg-opacity-10 rounded p-4">
                 <div class="mb-4 text-center">
                   <h2 class="mb-2">Welcome back!</h2>
-                  <img
-                    src="@/assets/img/profiles/avatar-12.jpg"
-                    alt="img"
-                    class="img-fluid avatar avatar-xxl rounded-pill my-3"
-                  />
+                  <img src="@/assets/img/profiles/avatar-12.jpg" alt="img"
+                    class="img-fluid avatar avatar-xxl rounded-pill my-3" />
                   <h6 class="text-dark">Adrian Davies</h6>
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Password</label>
                   <div class="pass-group">
-                    <input
-                      :type="showPassword ? 'text' : 'password'"
-                      class="pass-input form-control"
-                    />
-                    <span
-                      @click="toggleShow"
-                      class="ti toggle-password"
-                      :class="{
-                        'ti-eye': showPassword,
-                        'ti-eye-off': !showPassword,
-                      }"
-                    ></span>
+                    <input :type="showPassword ? 'text' : 'password'" class="pass-input form-control" />
+                    <span @click="toggleShow" class="ti toggle-password" :class="{
+                      'ti-eye': showPassword,
+                      'ti-eye-off': !showPassword,
+                    }"></span>
                   </div>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Sign In</button>
@@ -79,15 +69,13 @@ export default {
             </div>
             <div class="p-4 text-center">
               <div class="d-flex justify-content-center">
-                <a href="javascript:void(0);" class="me-3 text-gray-9"
-                  >Terms & Condition</a
-                >
+                <a href="javascript:void(0);" class="me-3 text-gray-9">Terms & Condition</a>
                 <a href="javascript:void(0);" class="me-3 text-gray-9">Privacy</a>
                 <a href="javascript:void(0);" class="me-3 text-gray-9">Help</a>
               </div>
               <div class="p-2 text-center">
                 <p class="mb-0 text-gray-9">
-                  Copyright &copy; {{ new Date().getFullYear() }} - SmartHR
+                  Copyright &copy; {{ new Date().getFullYear() }} - AronHR
                 </p>
               </div>
             </div>

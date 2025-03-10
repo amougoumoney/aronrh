@@ -9,23 +9,15 @@
           <div class="card">
             <div class="card-body">
               <div class="d-flex align-items-center justify-content-between mb-4">
-                <router-link
-                  to="/applications/invoices"
-                  class="back-icon align-items-center fs-14 d-inline-flex fw-medium"
-                >
-                  <span
-                    class="d-flex justify-content-center align-items-center rounded-circle me-2"
-                  >
+                <router-link to="/applications/invoices"
+                  class="back-icon align-items-center fs-14 d-inline-flex fw-medium">
+                  <span class="d-flex justify-content-center align-items-center rounded-circle me-2">
                     <i class="ti ti-arrow-left fs-12"></i>
                   </span>
                   Back to List
                 </router-link>
-                <a
-                  href="javascript:void(0);"
-                  class="text-primary text-decoration-underline"
-                  data-bs-toggle="modal"
-                  data-bs-target="#invoice_preview"
-                >
+                <a href="javascript:void(0);" class="text-primary text-decoration-underline" data-bs-toggle="modal"
+                  data-bs-target="#invoice_preview">
                   Preview
                 </a>
               </div>
@@ -34,10 +26,9 @@
               <div class="bg-light p-3 rounded mb-3">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h5>From</h5>
-                  <a href="javascript:void(0);" class="text-dark fw-medium"
-                    ><span class="text-gray me-2"><i class="ti ti-edit"></i></span>Edit
-                    Details</a
-                  >
+                  <a href="javascript:void(0);" class="text-dark fw-medium"><span class="text-gray me-2"><i
+                        class="ti ti-edit"></i></span>Edit
+                    Details</a>
                 </div>
                 <div>
                   <h4 class="mb-1">Thomas Lawler</h4>
@@ -55,11 +46,7 @@
                 <h4 class="mb-2">Invoice Details</h4>
                 <div class="mb-2">
                   <label class="form-label">Invoice Title</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Design & development of Website"
-                  />
+                  <input type="text" class="form-control" value="Design & development of Website" />
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-12">
@@ -75,14 +62,8 @@
                         <span class="input-icon-addon">
                           <i class="ti ti-calendar"></i>
                         </span>
-                        <date-picker
-                          v-model="startdate"
-                          class="form-control datetimepicker"
-                          placeholder="dd/mm/yyyy"
-                          :editable="true"
-                          :clearable="false"
-                          :input-format="dateFormat"
-                        />
+                        <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                          :editable="true" :clearable="false" :input-format="dateFormat" />
                       </div>
                     </div>
                   </div>
@@ -93,14 +74,8 @@
                         <span class="input-icon-addon">
                           <i class="ti ti-calendar"></i>
                         </span>
-                        <date-picker
-                          v-model="startdateOne"
-                          class="form-control datetimepicker"
-                          placeholder="dd/mm/yyyy"
-                          :editable="true"
-                          :clearable="false"
-                          :input-format="dateFormat"
-                        />
+                        <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                          :editable="true" :clearable="false" :input-format="dateFormat" />
                       </div>
                     </div>
                   </div>
@@ -117,12 +92,8 @@
                     <div class="mb-3">
                       <div class="d-flex justify-content-between align-items-center">
                         <label class="form-label">Customer</label>
-                        <a
-                          href="javascript:void(0);"
-                          class="text-primary fw-medium d-flex align-items-center"
-                          data-bs-toggle="modal"
-                          data-bs-target="#add_customer"
-                        >
+                        <a href="javascript:void(0);" class="text-primary fw-medium d-flex align-items-center"
+                          data-bs-toggle="modal" data-bs-target="#add_customer">
                           <i class="ti ti-plus me-2"></i>Add New
                         </a>
                       </div>
@@ -138,21 +109,13 @@
                   <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="mb-3">
                       <label class="form-label">Select Payment Type</label>
-                      <vue-select
-                        :options="EditDebiSel"
-                        id="editdebisel"
-                        placeholder="Credit"
-                      />
+                      <vue-select :options="EditDebiSel" id="editdebisel" placeholder="Credit" />
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="mb-3">
                       <label class="form-label">Bank Details</label>
-                      <vue-select
-                        :options="EditAmerDe"
-                        id="editamerde"
-                        placeholder="Bank of America"
-                      />
+                      <vue-select :options="EditAmerDe" id="editamerde" placeholder="Bank of America" />
                     </div>
                   </div>
                 </div>
@@ -169,11 +132,7 @@
                       <div class="col-md-6">
                         <div class="mb-3">
                           <label class="form-label">Description</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            v-model="item.description"
-                          />
+                          <input type="text" class="form-control" v-model="item.description" />
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -181,53 +140,34 @@
                           <div class="col-md-4">
                             <div class="mb-3">
                               <label class="form-label">Qty</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                v-model="item.qty"
-                              />
+                              <input type="text" class="form-control" v-model="item.qty" />
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="mb-3">
                               <label class="form-label">Discount</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                v-model="item.discount"
-                              />
+                              <input type="text" class="form-control" v-model="item.discount" />
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="mb-3">
                               <label class="form-label">Rate</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                v-model="item.rate"
-                              />
+                              <input type="text" class="form-control" v-model="item.rate" />
                             </div>
                           </div>
                         </div>
                       </div>
 
                       <!-- Delete Button only shows if the item is not empty -->
-                      <a
-                        href="javascript:void(0);"
-                        class="link-danger ms-2 delete-item"
-                        v-if="item.description || item.qty || item.discount || item.rate"
-                        @click="deleteItem(index)"
-                      >
+                      <a href="javascript:void(0);" class="link-danger ms-2 delete-item"
+                        v-if="item.description || item.qty || item.discount || item.rate" @click="deleteItem(index)">
                         <i class="far fa-trash-alt"></i> Delete
                       </a>
                     </div>
 
                     <!-- Add New Item Button -->
-                    <a
-                      href="javascript:void(0);"
-                      class="text-primary add-more-description fw-medium d-flex align-items-center"
-                      @click="addNewItem"
-                    >
+                    <a href="javascript:void(0);"
+                      class="text-primary add-more-description fw-medium d-flex align-items-center" @click="addNewItem">
                       <i class="ti ti-plus me-2"></i> Add New
                     </a>
                   </div>
@@ -249,19 +189,12 @@
               </div>
               <!-- Additional Details-->
 
-              <div
-                class="d-flex justify-content-end align-items-center flex-wrap row-gap-3"
-              >
-                <a
-                  href="javascript:void(0);"
-                  class="btn btn-dark d-flex justify-content-center align-items-center"
-                  ><i class="ti ti-printer me-2"></i>Save as Draft</a
-                >
-                <a
-                  href="javascript:void(0);"
-                  class="btn btn-primary d-flex justify-content-center align-items-center ms-2"
-                  ><i class="ti ti-copy me-2"></i>Save & Send</a
-                >
+              <div class="d-flex justify-content-end align-items-center flex-wrap row-gap-3">
+                <a href="javascript:void(0);" class="btn btn-dark d-flex justify-content-center align-items-center"><i
+                    class="ti ti-printer me-2"></i>Save as Draft</a>
+                <a href="javascript:void(0);"
+                  class="btn btn-primary d-flex justify-content-center align-items-center ms-2"><i
+                    class="ti ti-copy me-2"></i>Save & Send</a>
               </div>
             </div>
           </div>
@@ -270,10 +203,8 @@
     </div>
 
     <!-- Footer -->
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed & Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>
@@ -291,9 +222,7 @@
             <!-- Invoices -->
             <div class="d-flex justify-content-center align-items-center">
               <div class="flex-fill">
-                <div
-                  class="row justify-content-between align-items-center border-bottom mb-3"
-                >
+                <div class="row justify-content-between align-items-center border-bottom mb-3">
                   <div class="col-md-6">
                     <div class="mb-2">
                       <img src="@/assets/img/logo.svg" class="img-fluid" alt="logo" />
@@ -342,9 +271,7 @@
                   <div class="border-bottom mb-3">
                     <p class="mb-3">
                       Invoice For :
-                      <span class="text-dark fw-medium"
-                        >Design & development of Website</span
-                      >
+                      <span class="text-dark fw-medium">Design & development of Website</span>
                     </p>
                   </div>
                   <div class="table-responsive mb-3">
@@ -393,27 +320,19 @@
                 </div>
                 <div class="row border-bottom mb-3">
                   <div class="col-md-12">
-                    <div
-                      class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3">
                       <p class="mb-0">Sub Total</p>
                       <p class="text-dark fw-medium mb-2">$5500</p>
                     </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3">
                       <p class="mb-0">Discount(0%)</p>
                       <p class="text-dark fw-medium mb-2">$400</p>
                     </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-3 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center mb-3 pe-3">
                       <p class="mb-0">VAT(5%)</p>
                       <p class="text-dark fw-medium mb-2">$54</p>
                     </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-3 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center mb-3 pe-3">
                       <h5>Total Amount</h5>
                       <h5>$5775</h5>
                     </div>
@@ -449,23 +368,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Customer</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
         <form action="#">
           <div class="modal-body">
-            <div
-              class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-            >
+            <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
               <div
-                class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-              >
+                class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
                 <i class="ti ti-photo-plus fs-16"></i>
               </div>
               <div class="profile-upload">
@@ -485,99 +396,67 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >First Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">First Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Last Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Last Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >User Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">User Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Email <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Email <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Password <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Password <span class="text-danger"> *</span></label>
                   <div class="pass-group">
-                    <input
-                      :type="showPassword ? 'text' : 'password'"
-                      class="pass-input form-control"
-                    />
-                    <span
-                      @click="toggleShow"
-                      class="ti toggle-password"
-                      :class="{
-                        'ti-eye': showPassword,
-                        'ti-eye-off': !showPassword,
-                      }"
-                    ></span>
+                    <input :type="showPassword ? 'text' : 'password'" class="pass-input form-control" />
+                    <span @click="toggleShow" class="ti toggle-password" :class="{
+                      'ti-eye': showPassword,
+                      'ti-eye-off': !showPassword,
+                    }"></span>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Confirm Password <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Confirm Password <span class="text-danger"> *</span></label>
                   <div class="pass-group">
-                    <input
-                      :type="showPassword1 ? 'text' : 'password'"
-                      class="pass-inputs form-control"
-                    />
-                    <span
-                      @click="toggleShow1"
-                      class="ti toggle-passwords"
-                      :class="{
-                        'ti-eye': showPassword1,
-                        'ti-eye-off': !showPassword1,
-                      }"
-                    ></span>
+                    <input :type="showPassword1 ? 'text' : 'password'" class="pass-inputs form-control" />
+                    <span @click="toggleShow1" class="ti toggle-passwords" :class="{
+                      'ti-eye': showPassword1,
+                      'ti-eye-off': !showPassword1,
+                    }"></span>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Phone Number <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Phone Number <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Company <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Company <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-0">
-                  <label class="form-label"
-                    >Address <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Address <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -585,11 +464,7 @@
           </div>
           <div class="modal-footer">
             <div class="d-flex align-items-center justify-content-end m-0">
-              <button
-                class="btn btn-outline border me-2"
-                type="button"
-                data-bs-dismiss="modal"
-              >
+              <button class="btn btn-outline border me-2" type="button" data-bs-dismiss="modal">
                 Cancel
               </button>
               <button type="submit" class="btn btn-primary">Save</button>

@@ -5,49 +5,28 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="d-flex align-items-center border rounded p-1 me-2">
-            <router-link
-              to="/applications/todo-list"
-              class="btn btn-icon btn-sm active bg-primary text-white"
-              ><i class="ti ti-list-tree"></i
-            ></router-link>
-            <router-link to="/applications/todo" class="btn btn-icon btn-sm"
-              ><i class="ti ti-table"></i
-            ></router-link>
+            <router-link to="/applications/todo-list" class="btn btn-icon btn-sm active bg-primary text-white"><i
+                class="ti ti-list-tree"></i></router-link>
+            <router-link to="/applications/todo" class="btn btn-icon btn-sm"><i class="ti ti-table"></i></router-link>
           </div>
           <div class="">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-primary d-flex align-items-center"
-              data-bs-toggle="modal"
-              data-bs-target="#add_todo"
-              ><i class="ti ti-circle-plus me-2"></i>Create New</a
-            >
+            <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal"
+              data-bs-target="#add_todo"><i class="ti ti-circle-plus me-2"></i>Create New</a>
           </div>
           <div class="ms-2 mb-0 head-icons">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
         </div>
       </div>
       <div class="card">
-        <div
-          class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-        >
+        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
           <h5 class="d-flex align-items-center">
             Todo Lists <span class="badge bg-soft-pink ms-2">200 Employees</span>
           </h5>
@@ -56,39 +35,24 @@
               <span class="icon-addon">
                 <i class="ti ti-calendar"></i>
               </span>
-              <input
-                type="text"
-                class="form-control date-range bookingrange"
-                ref="dateRangeInput"
-                placeholder="dd/mm/yyyy - dd/mm/yyyy"
-              />
+              <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
+                placeholder="dd/mm/yyyy - dd/mm/yyyy" />
             </div>
             <div class="input-icon position-relative w-120 me-2">
               <span class="input-icon-addon">
                 <i class="ti ti-calendar"></i>
               </span>
-              <date-picker
-                v-model="startdate"
-                class="form-control datetimepicker"
-                placeholder="dd/mm/yyyy"
-                :editable="true"
-                :clearable="false"
-                :input-format="dateFormat"
-              />
+              <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                :editable="true" :clearable="false" :input-format="dateFormat" />
             </div>
             <div class="dropdown me-2">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Tags
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >All Tags</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">All Tags</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Urgent</a>
@@ -102,11 +66,8 @@
               </ul>
             </div>
             <div class="dropdown me-2">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Assignee
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
@@ -114,9 +75,7 @@
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Sophie</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Cameron</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Cameron</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Doris</a>
@@ -127,28 +86,19 @@
               </ul>
             </div>
             <div class="dropdown me-2">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Select Status
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Completed</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Completed</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Pending</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Pending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Inprogress</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Inprogress</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Onhold</a>
@@ -156,29 +106,20 @@
               </ul>
             </div>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center fs-12"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center fs-12"
+                data-bs-toggle="dropdown">
                 <span class="fs-12 d-inline-flex me-1">Sort By : </span>
                 Last 7 Days
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last 7 Days</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last 1 month</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 1 month</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last 1 year</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 1 year</a>
                 </li>
               </ul>
             </div>
@@ -212,12 +153,9 @@
                       <div class="form-check form-check-md">
                         <input class="form-check-input" type="checkbox" />
                       </div>
-                      <span class="mx-2 d-flex align-items-center rating-select"
-                        ><i class="ti ti-star"></i
-                      ></span>
-                      <span class="d-flex align-items-center"
-                        ><i class="ti ti-square-rounded text-danger me-2"></i
-                      ></span>
+                      <span class="mx-2 d-flex align-items-center rating-select"><i class="ti ti-star"></i></span>
+                      <span class="d-flex align-items-center"><i
+                          class="ti ti-square-rounded text-danger me-2"></i></span>
                     </div>
                   </td>
                   <td>
@@ -229,70 +167,39 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-19.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-19.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-29.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-29.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-16.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-16.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
                   <td>14 Jan 2024</td>
                   <td>
                     <span class="d-block mb-1">Progress : 100%</span>
-                    <div
-                      class="progress progress-xs flex-grow-1 mb-2"
-                      style="width: 190px"
-                    >
-                      <div
-                        class="progress-bar bg-success rounded"
-                        role="progressbar"
-                        style="width: 100%"
-                        aria-valuenow="30"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="progress progress-xs flex-grow-1 mb-2" style="width: 190px">
+                      <div class="progress-bar bg-success rounded" role="progressbar" style="width: 100%"
+                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
                   <td>14 Jan 2024</td>
                   <td>
-                    <span
-                      class="badge badge-soft-success d-inline-flex align-items-center"
-                    >
+                    <span class="badge badge-soft-success d-inline-flex align-items-center">
                       <i class="ti ti-circle-filled fs-5 me-1"></i>
                       Completed
                     </span>
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#edit_todo"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -304,12 +211,10 @@
                       <div class="form-check form-check-md">
                         <input class="form-check-input" type="checkbox" />
                       </div>
-                      <span class="mx-2 d-flex align-items-center rating-select"
-                        ><i class="ti ti-star-filled filled"></i
-                      ></span>
-                      <span class="d-flex align-items-center"
-                        ><i class="ti ti-square-rounded text-purple me-2"></i
-                      ></span>
+                      <span class="mx-2 d-flex align-items-center rating-select"><i
+                          class="ti ti-star-filled filled"></i></span>
+                      <span class="d-flex align-items-center"><i
+                          class="ti ti-square-rounded text-purple me-2"></i></span>
                     </div>
                   </td>
                   <td>
@@ -321,43 +226,22 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-01.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-01.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-02.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-03.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-03.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
                   <td>21 Jan 2024</td>
                   <td>
                     <span class="d-block mb-1">Progress : 15%</span>
-                    <div
-                      class="progress progress-xs flex-grow-1 mb-2"
-                      style="width: 190px"
-                    >
-                      <div
-                        class="progress-bar bg-danger rounded"
-                        role="progressbar"
-                        style="width: 15%"
-                        aria-valuenow="30"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="progress progress-xs flex-grow-1 mb-2" style="width: 190px">
+                      <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 15%"
+                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
                   <td>21 Jan 2024</td>
@@ -369,20 +253,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#edit_todo"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -394,12 +270,9 @@
                       <div class="form-check form-check-md">
                         <input class="form-check-input" type="checkbox" />
                       </div>
-                      <span class="mx-2 d-flex align-items-center rating-select"
-                        ><i class="ti ti-star"></i
-                      ></span>
-                      <span class="d-flex align-items-center"
-                        ><i class="ti ti-square-rounded text-purple me-2"></i
-                      ></span>
+                      <span class="mx-2 d-flex align-items-center rating-select"><i class="ti ti-star"></i></span>
+                      <span class="d-flex align-items-center"><i
+                          class="ti ti-square-rounded text-purple me-2"></i></span>
                     </div>
                   </td>
                   <td>
@@ -411,70 +284,39 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-04.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-04.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-05.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-05.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-06.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
                   <td>20 Feb 2024</td>
                   <td>
                     <span class="d-block mb-1">Progress : 45%</span>
-                    <div
-                      class="progress progress-xs flex-grow-1 mb-2"
-                      style="width: 190px"
-                    >
-                      <div
-                        class="progress-bar bg-warning rounded"
-                        role="progressbar"
-                        style="width: 45%"
-                        aria-valuenow="30"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="progress progress-xs flex-grow-1 mb-2" style="width: 190px">
+                      <div class="progress-bar bg-warning rounded" role="progressbar" style="width: 45%"
+                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
                   <td>20 Feb 2024</td>
                   <td>
-                    <span
-                      class="badge bg-transparent-purple d-inline-flex align-items-center"
-                    >
+                    <span class="badge bg-transparent-purple d-inline-flex align-items-center">
                       <i class="ti ti-circle-filled fs-5 me-1"></i>
                       Inprogress
                     </span>
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#edit_todo"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -486,12 +328,9 @@
                       <div class="form-check form-check-md">
                         <input class="form-check-input" type="checkbox" />
                       </div>
-                      <span class="mx-2 d-flex align-items-center rating-select"
-                        ><i class="ti ti-star"></i
-                      ></span>
-                      <span class="d-flex align-items-center"
-                        ><i class="ti ti-square-rounded text-warning me-2"></i
-                      ></span>
+                      <span class="mx-2 d-flex align-items-center rating-select"><i class="ti ti-star"></i></span>
+                      <span class="d-flex align-items-center"><i
+                          class="ti ti-square-rounded text-warning me-2"></i></span>
                     </div>
                   </td>
                   <td>
@@ -503,70 +342,39 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-05.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-05.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-06.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-07.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-07.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
                   <td>15 Mar 2024</td>
                   <td>
                     <span class="d-block mb-1">Progress : 40%</span>
-                    <div
-                      class="progress progress-xs flex-grow-1 mb-2"
-                      style="width: 190px"
-                    >
-                      <div
-                        class="progress-bar bg-warning rounded"
-                        role="progressbar"
-                        style="width: 40%"
-                        aria-valuenow="30"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="progress progress-xs flex-grow-1 mb-2" style="width: 190px">
+                      <div class="progress-bar bg-warning rounded" role="progressbar" style="width: 40%"
+                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
                   <td>15 Mar 2024</td>
                   <td>
-                    <span
-                      class="badge bg-transparent-purple d-inline-flex align-items-center"
-                    >
+                    <span class="badge bg-transparent-purple d-inline-flex align-items-center">
                       <i class="ti ti-circle-filled fs-5 me-1"></i>
                       Inprogress
                     </span>
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#edit_todo"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -578,12 +386,9 @@
                       <div class="form-check form-check-md">
                         <input class="form-check-input" type="checkbox" />
                       </div>
-                      <span class="mx-2 d-flex align-items-center rating-select"
-                        ><i class="ti ti-star"></i
-                      ></span>
-                      <span class="d-flex align-items-center"
-                        ><i class="ti ti-square-rounded text-purple me-2"></i
-                      ></span>
+                      <span class="mx-2 d-flex align-items-center rating-select"><i class="ti ti-star"></i></span>
+                      <span class="d-flex align-items-center"><i
+                          class="ti ti-square-rounded text-purple me-2"></i></span>
                     </div>
                   </td>
                   <td>
@@ -595,43 +400,22 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-08.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-08.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-09.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-09.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-10.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-10.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
                   <td>12 Apr 2024</td>
                   <td>
                     <span class="d-block mb-1">Progress : 65%</span>
-                    <div
-                      class="progress progress-xs flex-grow-1 mb-2"
-                      style="width: 190px"
-                    >
-                      <div
-                        class="progress-bar bg-purple rounded"
-                        role="progressbar"
-                        style="width: 65%"
-                        aria-valuenow="30"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="progress progress-xs flex-grow-1 mb-2" style="width: 190px">
+                      <div class="progress-bar bg-purple rounded" role="progressbar" style="width: 65%"
+                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
                   <td>12 Apr 2024</td>
@@ -643,20 +427,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#edit_todo"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -668,12 +444,9 @@
                       <div class="form-check form-check-md">
                         <input class="form-check-input" type="checkbox" />
                       </div>
-                      <span class="mx-2 d-flex align-items-center rating-select"
-                        ><i class="ti ti-star"></i
-                      ></span>
-                      <span class="d-flex align-items-center"
-                        ><i class="ti ti-square-rounded text-warning me-2"></i
-                      ></span>
+                      <span class="mx-2 d-flex align-items-center rating-select"><i class="ti ti-star"></i></span>
+                      <span class="d-flex align-items-center"><i
+                          class="ti ti-square-rounded text-warning me-2"></i></span>
                     </div>
                   </td>
                   <td>
@@ -685,43 +458,22 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-11.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-11.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-12.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-12.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-13.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-13.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
                   <td>20 May 2024</td>
                   <td>
                     <span class="d-block mb-1">Progress : 85%</span>
-                    <div
-                      class="progress progress-xs flex-grow-1 mb-2"
-                      style="width: 190px"
-                    >
-                      <div
-                        class="progress-bar bg-pink rounded"
-                        role="progressbar"
-                        style="width: 85%"
-                        aria-valuenow="30"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="progress progress-xs flex-grow-1 mb-2" style="width: 190px">
+                      <div class="progress-bar bg-pink rounded" role="progressbar" style="width: 85%" aria-valuenow="30"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
                   <td>20 May 2024</td>
@@ -733,20 +485,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#edit_todo"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -758,12 +502,9 @@
                       <div class="form-check form-check-md">
                         <input class="form-check-input" type="checkbox" />
                       </div>
-                      <span class="mx-2 d-flex align-items-center rating-select"
-                        ><i class="ti ti-star"></i
-                      ></span>
-                      <span class="d-flex align-items-center"
-                        ><i class="ti ti-square-rounded text-success me-2"></i
-                      ></span>
+                      <span class="mx-2 d-flex align-items-center rating-select"><i class="ti ti-star"></i></span>
+                      <span class="d-flex align-items-center"><i
+                          class="ti ti-square-rounded text-success me-2"></i></span>
                     </div>
                   </td>
                   <td>
@@ -775,70 +516,39 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-14.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-14.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-15.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-15.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-16.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-16.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
                   <td>06 Jul 2024</td>
                   <td>
                     <span class="d-block mb-1">Progress : 100%</span>
-                    <div
-                      class="progress progress-xs flex-grow-1 mb-2"
-                      style="width: 190px"
-                    >
-                      <div
-                        class="progress-bar bg-success rounded"
-                        role="progressbar"
-                        style="width: 100%"
-                        aria-valuenow="30"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="progress progress-xs flex-grow-1 mb-2" style="width: 190px">
+                      <div class="progress-bar bg-success rounded" role="progressbar" style="width: 100%"
+                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
                   <td>06 Jul 2024</td>
                   <td>
-                    <span
-                      class="badge badge-soft-success d-inline-flex align-items-center"
-                    >
+                    <span class="badge badge-soft-success d-inline-flex align-items-center">
                       <i class="ti ti-circle-filled fs-5 me-1"></i>
                       Completed
                     </span>
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#edit_todo"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -850,12 +560,9 @@
                       <div class="form-check form-check-md">
                         <input class="form-check-input" type="checkbox" />
                       </div>
-                      <span class="mx-2 d-flex align-items-center rating-select"
-                        ><i class="ti ti-star"></i
-                      ></span>
-                      <span class="d-flex align-items-center"
-                        ><i class="ti ti-square-rounded text-success me-2"></i
-                      ></span>
+                      <span class="mx-2 d-flex align-items-center rating-select"><i class="ti ti-star"></i></span>
+                      <span class="d-flex align-items-center"><i
+                          class="ti ti-square-rounded text-success me-2"></i></span>
                     </div>
                   </td>
                   <td>
@@ -867,43 +574,22 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-17.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-17.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-18.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-18.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-19.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-19.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
                   <td>02 Sep 2024</td>
                   <td>
                     <span class="d-block mb-1">Progress : 65%</span>
-                    <div
-                      class="progress progress-xs flex-grow-1 mb-2"
-                      style="width: 190px"
-                    >
-                      <div
-                        class="progress-bar bg-danger rounded"
-                        role="progressbar"
-                        style="width: 65%"
-                        aria-valuenow="30"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="progress progress-xs flex-grow-1 mb-2" style="width: 190px">
+                      <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 65%"
+                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
                   <td>02 Sep 2024</td>
@@ -915,20 +601,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#edit_todo"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -940,12 +618,9 @@
                       <div class="form-check form-check-md">
                         <input class="form-check-input" type="checkbox" />
                       </div>
-                      <span class="mx-2 d-flex align-items-center rating-select"
-                        ><i class="ti ti-star"></i
-                      ></span>
-                      <span class="d-flex align-items-center"
-                        ><i class="ti ti-square-rounded text-purple me-2"></i
-                      ></span>
+                      <span class="mx-2 d-flex align-items-center rating-select"><i class="ti ti-star"></i></span>
+                      <span class="d-flex align-items-center"><i
+                          class="ti ti-square-rounded text-purple me-2"></i></span>
                     </div>
                   </td>
                   <td>
@@ -957,70 +632,39 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-20.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-20.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-21.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-21.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-22.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-22.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
                   <td>15 Nov 2024</td>
                   <td>
                     <span class="d-block mb-1">Progress : 75%</span>
-                    <div
-                      class="progress progress-xs flex-grow-1 mb-2"
-                      style="width: 190px"
-                    >
-                      <div
-                        class="progress-bar bg-purple rounded"
-                        role="progressbar"
-                        style="width: 75%"
-                        aria-valuenow="30"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="progress progress-xs flex-grow-1 mb-2" style="width: 190px">
+                      <div class="progress-bar bg-purple rounded" role="progressbar" style="width: 75%"
+                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
                   <td>15 Nov 2024</td>
                   <td>
-                    <span
-                      class="badge bg-transparent-purple d-inline-flex align-items-center"
-                    >
+                    <span class="badge bg-transparent-purple d-inline-flex align-items-center">
                       <i class="ti ti-circle-filled fs-5 me-1"></i>
                       Inprogress
                     </span>
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#edit_todo"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -1032,12 +676,9 @@
                       <div class="form-check form-check-md">
                         <input class="form-check-input" type="checkbox" />
                       </div>
-                      <span class="mx-2 d-flex align-items-center rating-select"
-                        ><i class="ti ti-star"></i
-                      ></span>
-                      <span class="d-flex align-items-center"
-                        ><i class="ti ti-square-rounded text-success me-2"></i
-                      ></span>
+                      <span class="mx-2 d-flex align-items-center rating-select"><i class="ti ti-star"></i></span>
+                      <span class="d-flex align-items-center"><i
+                          class="ti ti-square-rounded text-success me-2"></i></span>
                     </div>
                   </td>
                   <td>
@@ -1049,43 +690,22 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-23.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-23.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-24.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-24.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-25.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-25.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
                   <td>10 Dec 2024</td>
                   <td>
                     <span class="d-block mb-1">Progress : 90%</span>
-                    <div
-                      class="progress progress-xs flex-grow-1 mb-2"
-                      style="width: 190px"
-                    >
-                      <div
-                        class="progress-bar bg-pink rounded"
-                        role="progressbar"
-                        style="width: 90%"
-                        aria-valuenow="30"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="progress progress-xs flex-grow-1 mb-2" style="width: 190px">
+                      <div class="progress-bar bg-pink rounded" role="progressbar" style="width: 90%" aria-valuenow="30"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
                   <td>10 Dec 2024</td>
@@ -1097,20 +717,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#edit_todo"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-icon"
-                        data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -1123,10 +735,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

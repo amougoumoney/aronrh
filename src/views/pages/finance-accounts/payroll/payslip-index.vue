@@ -5,26 +5,16 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a href="javascript:void(0);" class="btn btn-dark d-flex align-items-center"
-              ><i class="ti ti-download me-2"></i>Download</a
-            >
+            <a href="javascript:void(0);" class="btn btn-dark d-flex align-items-center"><i
+                class="ti ti-download me-2"></i>Download</a>
           </div>
           <div class="head-icons ms-2">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -38,9 +28,7 @@
           <div class="col-sm-12">
             <div class="card">
               <div class="card-body">
-                <div
-                  class="row justify-content-between align-items-center border-bottom mb-3"
-                >
+                <div class="row justify-content-between align-items-center border-bottom mb-3">
                   <div class="col-md-6">
                     <div class="mb-3">
                       <div class="mb-2">
@@ -170,8 +158,7 @@
                     <p>
                       Net Salary :
                       <span class="text-gray-9 fw-medium">
-                        $3600(Three thousand six hundred only)</span
-                      >
+                        $3600(Three thousand six hundred only)</span>
                     </p>
                   </div>
                 </div>
@@ -184,10 +171,8 @@
     </div>
 
     <!-- Footer -->
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed & Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

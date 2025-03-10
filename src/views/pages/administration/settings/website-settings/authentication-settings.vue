@@ -1,24 +1,14 @@
 <template>
   <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar
-  ><!-- Page Wrapper -->
+  <layout-sidebar></layout-sidebar><!-- Page Wrapper -->
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -44,18 +34,10 @@
                         </div>
                         <div class="col-md-6 d-flex align-items-center">
                           <div class="form-check form-switch me-2">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              role="switch"
-                            />
+                            <input class="form-check-input" type="checkbox" role="switch" />
                           </div>
                           <div class="form-check form-check-md">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="checkebox-md"
-                            />
+                            <input class="form-check-input" type="checkbox" id="checkebox-md" />
                             <label class="form-check-label" for="checkebox-md">
                               Invite Only
                             </label>
@@ -68,11 +50,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-check form-switch">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              role="switch"
-                            />
+                            <input class="form-check-input" type="checkbox" role="switch" />
                           </div>
                         </div>
                       </div>
@@ -92,11 +70,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-check form-switch">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              role="switch"
-                            />
+                            <input class="form-check-input" type="checkbox" role="switch" />
                           </div>
                         </div>
                       </div>
@@ -108,23 +82,13 @@
                         </div>
                         <div class="col-md-6 d-flex align-items-center">
                           <div class="form-check me-2">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="Radio"
-                              id="Radio-sm"
-                            />
+                            <input class="form-check-input" type="radio" name="Radio" id="Radio-sm" />
                             <label class="form-check-label" for="Radio-sm">
                               Mobile
                             </label>
                           </div>
                           <div class="form-check me-2">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="Radio"
-                              id="Radio-smone"
-                            />
+                            <input class="form-check-input" type="radio" name="Radio" id="Radio-smone" />
                             <label class="form-check-label" for="Radio-smone">
                               Email
                             </label>
@@ -137,11 +101,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-check form-switch">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              role="switch"
-                            />
+                            <input class="form-check-input" type="checkbox" role="switch" />
                           </div>
                         </div>
                       </div>
@@ -151,11 +111,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-check form-switch">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              role="switch"
-                            />
+                            <input class="form-check-input" type="checkbox" role="switch" />
                           </div>
                         </div>
                       </div>
@@ -167,23 +123,13 @@
                         </div>
                         <div class="col-md-6 d-flex align-items-center">
                           <div class="form-check me-2">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="Radio1"
-                              id="Radio-smtwo"
-                            />
+                            <input class="form-check-input" type="radio" name="Radio1" id="Radio-smtwo" />
                             <label class="form-check-label" for="Radio-smtwo">
                               SMS OTP
                             </label>
                           </div>
                           <div class="form-check me-2">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="Radio1"
-                              id="Radio-smthree"
-                            />
+                            <input class="form-check-input" type="radio" name="Radio1" id="Radio-smthree" />
                             <label class="form-check-label" for="Radio-smthree">
                               Email OTP
                             </label>
@@ -205,10 +151,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

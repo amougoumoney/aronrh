@@ -23,9 +23,7 @@
               <a href="javascript:void(0);" class="btn btn-menubar position-relative">
                 <i class="ti ti-shopping-bag"></i>
                 <span
-                  class="badge bg-success rounded-pill d-flex align-items-center justify-content-center header-badge"
-                  >5</span
-                >
+                  class="badge bg-success rounded-pill d-flex align-items-center justify-content-center header-badge">5</span>
               </a>
             </div>
             <div class="mb-1">
@@ -37,18 +35,11 @@
               <a href="javascript:void(0);" class="btn btn-menubar position-relative">
                 <i class="ti ti-brand-hipchat"></i>
                 <span
-                  class="badge bg-info rounded-pill d-flex align-items-center justify-content-center header-badge"
-                  >5</span
-                >
+                  class="badge bg-info rounded-pill d-flex align-items-center justify-content-center header-badge">5</span>
               </a>
             </div>
             <div class="mb-1">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-menubar"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a href="javascript:void(0);" class="btn btn-menubar" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="ti ti-message"></i>
               </a>
             </div>
@@ -57,203 +48,104 @@
       </div>
       <div class="sidebar-right d-flex justify-content-between flex-column">
         <div class="sidebar-scroll">
-          <h6 class="mb-3">Welcome to SmartHR</h6>
+          <h6 class="mb-3">Welcome to AronHR</h6>
           <div class="sidebar-profile text-center rounded bg-light p-3 mb-4">
             <div class="avatar avatar-lg online mb-3">
-              <img
-                src="@/assets/img/profiles/avatar-02.jpg"
-                alt="Img"
-                class="img-fluid rounded-circle"
-              />
+              <img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" class="img-fluid rounded-circle" />
             </div>
             <h6 class="fs-12 fw-normal mb-1">Adrian Herman</h6>
             <p class="fs-10">System Admin</p>
           </div>
           <div class="stack-menu">
-            <div
-              class="nav flex-column align-items-center nav-pills"
-              role="tablist"
-              aria-orientation="vertical"
-            >
+            <div class="nav flex-column align-items-center nav-pills" role="tablist" aria-orientation="vertical">
               <div class="row g-2">
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link active"
-                    title="Dashboard"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-dashboard"
-                    aria-selected="true"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link active" title="Dashboard"
+                    data-bs-toggle="tab" data-bs-target="#menu-dashboard" aria-selected="true">
                     <span><i class="ti ti-smart-home"></i></span>
                     <p>Dashboard</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="Apps"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-application"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="Apps" data-bs-toggle="tab"
+                    data-bs-target="#menu-application" aria-selected="false">
                     <span><i class="ti ti-layout-grid-add"></i></span>
                     <p>Applications</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="Apps"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-superadmin"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="Apps" data-bs-toggle="tab"
+                    data-bs-target="#menu-superadmin" aria-selected="false">
                     <span><i class="ti ti-user-star"></i></span>
                     <p>Super Admin</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="Layout"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-layout"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="Layout" data-bs-toggle="tab"
+                    data-bs-target="#menu-layout" aria-selected="false">
                     <span><i class="ti ti-layout-board-split"></i></span>
                     <p>Layouts</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="Projects"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-project"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="Projects" data-bs-toggle="tab"
+                    data-bs-target="#menu-project" aria-selected="false">
                     <span><i class="ti ti-folder"></i></span>
                     <p>Projects</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="CRM"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-crm"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="CRM" data-bs-toggle="tab"
+                    data-bs-target="#menu-crm" aria-selected="false">
                     <span><i class="ti ti-user-shield"></i></span>
                     <p>Crm</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="HRM"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-hrm"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="HRM" data-bs-toggle="tab"
+                    data-bs-target="#menu-hrm" aria-selected="false">
                     <span><i class="ti ti-users"></i></span>
                     <p>Hrm</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="Finance & Accounts"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-finance"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="Finance & Accounts"
+                    data-bs-toggle="tab" data-bs-target="#menu-finance" aria-selected="false">
                     <span><i class="ti ti-shopping-cart-dollar"></i></span>
                     <p>Finance & Accounts</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="Administration"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-administration"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="Administration" data-bs-toggle="tab"
+                    data-bs-target="#menu-administration" aria-selected="false">
                     <span><i class="ti ti-cash"></i></span>
                     <p>Administration</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="Content"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-content"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="Content" data-bs-toggle="tab"
+                    data-bs-target="#menu-content" aria-selected="false">
                     <span><i class="ti ti-license"></i></span>
                     <p>Contents</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="Pages"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-pages"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="Pages" data-bs-toggle="tab"
+                    data-bs-target="#menu-pages" aria-selected="false">
                     <span><i class="ti ti-page-break"></i></span>
                     <p>Pages</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="Authentication"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-authentication"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="Authentication" data-bs-toggle="tab"
+                    data-bs-target="#menu-authentication" aria-selected="false">
                     <span><i class="ti ti-lock-check"></i></span>
                     <p>Authentication</p>
                   </a>
                 </div>
                 <div class="col-6">
-                  <a
-                    href="javascript:void(0);"
-                    role="tab"
-                    class="nav-link"
-                    title="UI Elements"
-                    data-bs-toggle="tab"
-                    data-bs-target="#menu-ui-elements"
-                    aria-selected="false"
-                  >
+                  <a href="javascript:void(0);" role="tab" class="nav-link" title="UI Elements" data-bs-toggle="tab"
+                    data-bs-target="#menu-ui-elements" aria-selected="false">
                     <span><i class="ti ti-ux-circle"></i></span>
                     <p>Basic UI</p>
                   </a>
@@ -272,21 +164,19 @@
               <div class="tab-pane fade" id="menu-superadmin">
                 <ul class="stack-submenu">
                   <li class="menu-title"><span>SUPER ADMIN</span></li>
-                <li><router-link to="/super-admin/dashboard">Dashboard</router-link></li>
-                <li><router-link to="/super-admin/companies">Companies</router-link></li>
-                <li><router-link to="/super-admin/subscription">Subscriptions</router-link></li>
-                <li><router-link to="/super-admin/packages">Packages</router-link></li>
-                <li><router-link to="/super-admin/domain">Domain</router-link></li>
-                <li><router-link to="/super-admin/purchase-transaction">Purchase Transaction</router-link></li>
+                  <li><router-link to="/super-admin/dashboard">Dashboard</router-link></li>
+                  <li><router-link to="/super-admin/companies">Companies</router-link></li>
+                  <li><router-link to="/super-admin/subscription">Subscriptions</router-link></li>
+                  <li><router-link to="/super-admin/packages">Packages</router-link></li>
+                  <li><router-link to="/super-admin/domain">Domain</router-link></li>
+                  <li><router-link to="/super-admin/purchase-transaction">Purchase Transaction</router-link></li>
                 </ul>
               </div>
               <div class="tab-pane fade" id="menu-application">
                 <ul class="stack-submenu">
                   <li><router-link to="/applications/chat">Chat</router-link></li>
                   <li class="submenu submenu-two">
-                    <a href="javascript:void(0);"
-                      >Calls<span class="menu-arrow inside-submenu"></span
-                    ></a>
+                    <a href="javascript:void(0);">Calls<span class="menu-arrow inside-submenu"></span></a>
                     <ul>
                       <li><router-link to="/calls/video-call">Voice Call</router-link></li>
                       <li><router-link to="/calls/video-call">Video Call</router-link></li>
@@ -326,8 +216,7 @@
                 <ul class="stack-submenu">
                   <li><router-link to="/projects/clients">Clients</router-link></li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Projects</span>
+                    <a href="javascript:void(0);"><span>Projects</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -366,8 +255,7 @@
               <div class="tab-pane fade" id="menu-hrm">
                 <ul class="stack-submenu">
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Employees</span>
+                    <a href="javascript:void(0);"><span>Employees</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -380,8 +268,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Tickets</span>
+                    <a href="javascript:void(0);"><span>Tickets</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -393,15 +280,12 @@
                     <router-link to="/hrm/holidays"><span>Holidays</span></router-link>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Attendance</span>
+                    <a href="javascript:void(0);"><span>Attendance</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
                       <li class="submenu submenu-two">
-                        <a href="javascript:void(0);"
-                          >Leaves<span class="menu-arrow inside-submenu"></span
-                        ></a>
+                        <a href="javascript:void(0);">Leaves<span class="menu-arrow inside-submenu"></span></a>
                         <ul>
                           <li><router-link to="/leave/leaves-admin">Leaves (Admin)</router-link></li>
                           <li><router-link to="/leave/leaves-employee">Leave (Employee)</router-link></li>
@@ -416,8 +300,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Performance</span>
+                    <a href="javascript:void(0);"><span>Performance</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -433,8 +316,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Training</span>
+                    <a href="javascript:void(0);"><span>Training</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -457,8 +339,7 @@
               <div class="tab-pane fade" id="menu-finance">
                 <ul class="stack-submenu">
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Sales</span>
+                    <a href="javascript:void(0);"><span>Sales</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -471,8 +352,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Accounting</span>
+                    <a href="javascript:void(0);"><span>Accounting</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -483,8 +363,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Payroll</span>
+                    <a href="javascript:void(0);"><span>Payroll</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -498,8 +377,7 @@
               <div class="tab-pane fade" id="menu-administration">
                 <ul class="stack-submenu">
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Assets</span>
+                    <a href="javascript:void(0);"><span>Assets</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -508,8 +386,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Help & Supports</span>
+                    <a href="javascript:void(0);"><span>Help & Supports</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -518,8 +395,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>User Management</span>
+                    <a href="javascript:void(0);"><span>User Management</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -528,8 +404,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      ><span>Reports</span>
+                    <a href="javascript:void(0);"><span>Reports</span>
                       <span class="menu-arrow"></span>
                     </a>
                     <ul>
@@ -576,9 +451,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >App Settings<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);">App Settings<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/app-settings/salary-settings">Salary Settings</router-link></li>
                       <li><router-link to="/app-settings/approval-settings">Approval Settings</router-link></li>
@@ -614,9 +487,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >Other Settings<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);">Other Settings<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/others-settings/custom-css">Custom CSS</router-link></li>
                       <li><router-link to="/others-settings/custom-js">Custom JS</router-link></li>
@@ -632,9 +503,7 @@
               <div class="tab-pane fade" id="menu-content">
                 <ul class="stack-submenu">
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >Blogs<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);">Blogs<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/blog/blogs">All Blogs</router-link></li>
                       <li><router-link to="/blog/blog-categories">Categories</router-link></li>
@@ -643,9 +512,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >Locations<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);">Locations<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/location/countries">Countries</router-link></li>
                       <li><router-link to="/location/states">States</router-link></li>
@@ -699,9 +566,7 @@
               <div class="tab-pane fade" id="menu-authentication">
                 <ul class="stack-submenu">
                   <li class="submenu">
-                    <a href="javascript:void(0);" class=""
-                      >Login<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);" class="">Login<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/">Cover</router-link></li>
                       <li><router-link to="/login-2">Illustration</router-link></li>
@@ -709,9 +574,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);" class=""
-                      >Register<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);" class="">Register<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/register">Cover</router-link></li>
                       <li><router-link to="/register-2">Illustration</router-link></li>
@@ -719,9 +582,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >Reset Password<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);">Reset Password<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/reset-password">Cover</router-link></li>
                       <li><router-link to="/reset-password-2">Illustration</router-link></li>
@@ -729,9 +590,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >Email Verification<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);">Email Verification<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/email-verification">Cover</router-link></li>
                       <li><router-link to="/email-verification-2">Illustration</router-link></li>
@@ -739,9 +598,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >2 Step Verification<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);">2 Step Verification<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/two-step-verification">Cover</router-link></li>
                       <li><router-link to="/two-step-verification-2">Illustration</router-link></li>
@@ -756,9 +613,7 @@
               <div class="tab-pane fade" id="menu-ui-elements">
                 <ul class="stack-submenu">
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >Base UI<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);">Base UI<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/baseui/ui-alerts">Alerts</router-link></li>
                       <li><router-link to="/baseui/ui-accordion">Accordion</router-link></li>
@@ -792,8 +647,7 @@
                   </li>
                   <li class="submenu">
                     <a href="javascript:void(0);">
-                      Advanced UI<span class="menu-arrow"></span
-                    ></a>
+                      Advanced UI<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/advancedui/ui-ribbon">Ribbon</router-link></li>
                       <li><router-link to="/advancedui/ui-clipboard">Clipboard</router-link></li>
@@ -808,14 +662,11 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >Forms<span class="menu-arrow"></span>
+                    <a href="javascript:void(0);">Forms<span class="menu-arrow"></span>
                     </a>
                     <ul>
                       <li class="submenu submenu-two">
-                        <a href="javascript:void(0);"
-                          >Form Elements<span class="menu-arrow inside-submenu"></span
-                        ></a>
+                        <a href="javascript:void(0);">Form Elements<span class="menu-arrow inside-submenu"></span></a>
                         <ul>
                           <li><router-link to="/form-elements/form-basic-inputs">Basic Inputs</router-link></li>
                           <li><router-link to="/form-elements/form-checkbox-radios">Checkbox & Radios</router-link></li>
@@ -827,9 +678,7 @@
                         </ul>
                       </li>
                       <li class="submenu submenu-two">
-                        <a href="javascript:void(0);"
-                          >Layouts<span class="menu-arrow inside-submenu"></span
-                        ></a>
+                        <a href="javascript:void(0);">Layouts<span class="menu-arrow inside-submenu"></span></a>
                         <ul>
                           <li><router-link to="/form-layouts/form-horizontal">Horizontal Form</router-link></li>
                           <li><router-link to="/form-layouts/form-vertical">Vertical Form</router-link></li>
@@ -842,17 +691,14 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >Tables<span class="menu-arrow"></span
-                    ></a>
+                    <a href="javascript:void(0);">Tables<span class="menu-arrow"></span></a>
                     <ul>
                       <li><router-link to="/tables/tables-basic">Basic Tables </router-link></li>
                       <li><router-link to="/tables/data-tables">Data Table </router-link></li>
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >Charts<span class="menu-arrow"></span>
+                    <a href="javascript:void(0);">Charts<span class="menu-arrow"></span>
                     </a>
                     <ul>
                       <li><router-link to="/charts/chart-apex">Apex Charts</router-link></li>
@@ -863,8 +709,7 @@
                     </ul>
                   </li>
                   <li class="submenu">
-                    <a href="javascript:void(0);"
-                      >Icons<span class="menu-arrow"></span>
+                    <a href="javascript:void(0);">Icons<span class="menu-arrow"></span>
                     </a>
                     <ul>
                       <li><router-link to="/icons/icon-fontawesome">Fontawesome Icons</router-link></li>
@@ -885,14 +730,9 @@
           </div>
         </div>
         <div class="p-3">
-          <a href="javascript:void(0);" class="d-flex align-items-center fs-12 mb-3"
-            >Documentation</a
-          >
-          <a href="javascript:void(0);" class="d-flex align-items-center fs-12"
-            >Change Log<span class="badge bg-pink badge-xs text-white fs-10 ms-2"
-              >v4.0.2</span
-            ></a
-          >
+          <a href="javascript:void(0);" class="d-flex align-items-center fs-12 mb-3">Documentation</a>
+          <a href="javascript:void(0);" class="d-flex align-items-center fs-12">Change Log<span
+              class="badge bg-pink badge-xs text-white fs-10 ms-2">v4.0.2</span></a>
         </div>
       </div>
     </div>

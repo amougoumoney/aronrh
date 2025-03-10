@@ -47,23 +47,21 @@ export default {
 		<div class="sidebar-logo">
 			<router-link :to="dashboardRoute" class="logo logo-normal">
 				<div class="logo-container">
-					<h1 class="logo-title">HRMS</h1>
-					<span class="logo-tagline">SMRU / BHF</span>
+					<h1 class="logo-title">AR HR</h1>
 				</div>
 			</router-link>
 
 			<router-link :to="dashboardRoute" class="logo logo-small">
 				<div class="logo-container">
-					<h1 class="logo-title">HRMS</h1>
-					<span class="logo-tagline">SMRU / BHF</span>
+					<h1 class="logo-title">ARHR</h1>
 				</div>
 			</router-link>
 
 
 			<router-link :to="dashboardRoute" class="dark-logo">
-				<span class="logo-text">HRMS </span>
+				<span class="logo-text">ARONHR </span>
 				<span
-					style="background: linear-gradient(to right, #00008B, #4169E1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 10px; font-weight: bold;">@SMRU/BHF</span>
+					style="background: linear-gradient(to right, #00008B, #4169E1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 10px; font-weight: bold;">@ARONHR</span>
 			</router-link>
 		</div>
 
@@ -103,7 +101,7 @@ export default {
 				<span class="input-icon-addon">
 					<i class="ti ti-search"></i>
 				</span>
-				<input type="text" class="form-control" placeholder="Search in HRMS">
+				<input type="text" class="form-control" placeholder="Search in ARONHR">
 				<span class="input-group-text">
 					<kbd>CTRL + / </kbd>
 				</span>

@@ -5,9 +5,7 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
@@ -15,27 +13,18 @@
               <span class="input-icon-addon">
                 <i class="ti ti-calendar"></i>
               </span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Search Files / Folders"
-              />
+              <input type="text" class="form-control" placeholder="Search Files / Folders" />
             </div>
           </div>
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 All Files
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >All Files</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">All Files</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Music</a>
@@ -44,9 +33,7 @@
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Video</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Documents</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Documents</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Photos</a>
@@ -55,24 +42,12 @@
             </div>
           </div>
           <div class="mb-2">
-            <a
-              href="javascript:void(0);"
-              data-bs-toggle="modal"
-              data-bs-target="#add_folder"
-              class="btn btn-primary d-flex align-items-center"
-              ><i class="ti ti-circle-plus me-2"></i>Create Folder</a
-            >
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_folder"
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Create Folder</a>
           </div>
           <div class="ms-2 head-icons">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -90,41 +65,28 @@
                   <h5 class="ms-2">Dropbox</h5>
                 </div>
                 <div class="dropdown">
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex align-items-center"
-                    data-bs-toggle="dropdown"
-                  >
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                     <i class="ti ti-dots"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-folder-open me-2"></i>Open</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-folder-open me-2"></i>Open</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-trash me-1"></i>Delete All</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-trash me-1"></i>Delete All</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-status-change me-1"></i>Reset</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-status-change me-1"></i>Reset</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="progress progress-xs flex-grow-1 mb-2">
-                <div
-                  class="progress-bar bg-pink rounded"
-                  role="progressbar"
-                  style="width: 20%"
-                  aria-valuenow="30"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+                <div class="progress-bar bg-pink rounded" role="progressbar" style="width: 20%" aria-valuenow="30"
+                  aria-valuemin="0" aria-valuemax="100"></div>
               </div>
               <div class="d-flex align-items-center justify-content-between">
                 <p class="mb-0">200 Files</p>
@@ -145,41 +107,28 @@
                   <h5 class="ms-2">Google Drive</h5>
                 </div>
                 <div class="dropdown">
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex align-items-center"
-                    data-bs-toggle="dropdown"
-                  >
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                     <i class="ti ti-dots"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-folder-open me-2"></i>Open</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-folder-open me-2"></i>Open</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-trash me-1"></i>Delete All</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-trash me-1"></i>Delete All</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-status-change me-1"></i>Reset</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-status-change me-1"></i>Reset</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="progress progress-xs flex-grow-1 mb-2">
-                <div
-                  class="progress-bar bg-pink rounded"
-                  role="progressbar"
-                  style="width: 80%"
-                  aria-valuenow="30"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+                <div class="progress-bar bg-pink rounded" role="progressbar" style="width: 80%" aria-valuenow="30"
+                  aria-valuemin="0" aria-valuemax="100"></div>
               </div>
               <div class="d-flex align-items-center justify-content-between">
                 <p class="mb-0">144 Files</p>
@@ -200,41 +149,28 @@
                   <h5 class="ms-2">Cloud Storage</h5>
                 </div>
                 <div class="dropdown">
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex align-items-center"
-                    data-bs-toggle="dropdown"
-                  >
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                     <i class="ti ti-dots"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-folder-open me-2"></i>Open</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-folder-open me-2"></i>Open</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-trash me-1"></i>Delete All</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-trash me-1"></i>Delete All</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-status-change me-1"></i>Reset</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-status-change me-1"></i>Reset</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="progress progress-xs flex-grow-1 mb-2">
-                <div
-                  class="progress-bar bg-purple rounded"
-                  role="progressbar"
-                  style="width: 50%"
-                  aria-valuenow="30"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+                <div class="progress-bar bg-purple rounded" role="progressbar" style="width: 50%" aria-valuenow="30"
+                  aria-valuemin="0" aria-valuemax="100"></div>
               </div>
               <div class="d-flex align-items-center justify-content-between">
                 <p class="mb-0">144 Files</p>
@@ -255,41 +191,28 @@
                   <h5 class="ms-2">Internal Storage</h5>
                 </div>
                 <div class="dropdown">
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex align-items-center"
-                    data-bs-toggle="dropdown"
-                  >
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                     <i class="ti ti-dots"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-folder-open me-2"></i>Open</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-folder-open me-2"></i>Open</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-trash me-1"></i>Delete All</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-trash me-1"></i>Delete All</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        ><i class="ti ti-status-change me-1"></i>Reset</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                          class="ti ti-status-change me-1"></i>Reset</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="progress progress-xs flex-grow-1 mb-2">
-                <div
-                  class="progress-bar bg-purple rounded"
-                  role="progressbar"
-                  style="width: 20%"
-                  aria-valuenow="30"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+                <div class="progress-bar bg-purple rounded" role="progressbar" style="width: 20%" aria-valuenow="30"
+                  aria-valuemin="0" aria-valuemax="100"></div>
               </div>
               <div class="d-flex align-items-center justify-content-between">
                 <p class="mb-0">144 Files</p>
@@ -310,11 +233,7 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center overflow-hidden">
                     <span class="avatar">
-                      <img
-                        src="@/assets/img/profiles/avatar-29.jpg"
-                        alt="img"
-                        class="rounded-circle"
-                      />
+                      <img src="@/assets/img/profiles/avatar-29.jpg" alt="img" class="rounded-circle" />
                     </span>
                     <div class="overflow-hidden ms-2">
                       <h5 class="text-truncate">James Hong</h5>
@@ -322,18 +241,13 @@
                     </div>
                   </div>
                   <div class="dropdown ms-2">
-                    <a
-                      href="javascript:void(0);"
-                      class="d-inline-flex align-items-center"
-                      data-bs-toggle="dropdown"
-                    >
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                       <i class="ti ti-dots"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end p-3">
                       <li>
-                        <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                          ><i class="ti ti-edit me-1"></i>Edit</a
-                        >
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                            class="ti ti-edit me-1"></i>Edit</a>
                       </li>
                     </ul>
                   </div>
@@ -350,46 +264,22 @@
                 <input type="file" />
               </div>
               <div class="files-list nav d-block">
-                <a
-                  href="javscript:void(0);"
-                  class="d-flex align-items-center fw-medium p-2 active"
-                  ><i class="ti ti-folder-up me-2"></i>All Folder / Files</a
-                >
-                <a
-                  href="javscript:void(0);"
-                  class="d-flex align-items-center fw-medium p-2"
-                  ><i class="ti ti-star me-2"></i>Drive</a
-                >
-                <a
-                  href="javscript:void(0);"
-                  class="d-flex align-items-center fw-medium p-2"
-                  ><i class="ti ti-octahedron me-2"></i>Dropbox</a
-                >
-                <a
-                  href="javscript:void(0);"
-                  class="d-flex align-items-center fw-medium p-2"
-                  ><i class="ti ti-share-2 me-2"></i>Shared with Me</a
-                >
-                <a
-                  href="javscript:void(0);"
-                  class="d-flex align-items-center fw-medium p-2"
-                  ><i class="ti ti-file me-2"></i>Document</a
-                >
-                <a
-                  href="javscript:void(0);"
-                  class="d-flex align-items-center fw-medium p-2"
-                  ><i class="ti ti-clock-hour-11 me-2"></i>Recent File</a
-                >
-                <a
-                  href="javscript:void(0);"
-                  class="d-flex align-items-center fw-medium p-2"
-                  ><i class="ti ti-star me-2"></i>Important</a
-                >
-                <a
-                  href="javscript:void(0);"
-                  class="d-flex align-items-center fw-medium p-2"
-                  ><i class="ti ti-music me-2"></i>Media</a
-                >
+                <a href="javscript:void(0);" class="d-flex align-items-center fw-medium p-2 active"><i
+                    class="ti ti-folder-up me-2"></i>All Folder / Files</a>
+                <a href="javscript:void(0);" class="d-flex align-items-center fw-medium p-2"><i
+                    class="ti ti-star me-2"></i>Drive</a>
+                <a href="javscript:void(0);" class="d-flex align-items-center fw-medium p-2"><i
+                    class="ti ti-octahedron me-2"></i>Dropbox</a>
+                <a href="javscript:void(0);" class="d-flex align-items-center fw-medium p-2"><i
+                    class="ti ti-share-2 me-2"></i>Shared with Me</a>
+                <a href="javscript:void(0);" class="d-flex align-items-center fw-medium p-2"><i
+                    class="ti ti-file me-2"></i>Document</a>
+                <a href="javscript:void(0);" class="d-flex align-items-center fw-medium p-2"><i
+                    class="ti ti-clock-hour-11 me-2"></i>Recent File</a>
+                <a href="javscript:void(0);" class="d-flex align-items-center fw-medium p-2"><i
+                    class="ti ti-star me-2"></i>Important</a>
+                <a href="javscript:void(0);" class="d-flex align-items-center fw-medium p-2"><i
+                    class="ti ti-music me-2"></i>Media</a>
               </div>
             </div>
           </div>
@@ -402,12 +292,7 @@
                 <span class="badge badge-success mb-2">Used 77%</span>
               </div>
               <div id="storage-chart">
-                <apexchart
-                  type="donut"
-                  height="200"
-                  :options="notesChart.notes"
-                  :series="notesChart.series"
-                >
+                <apexchart type="donut" height="200" :options="notesChart.notes" :series="notesChart.series">
                 </apexchart>
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3">
@@ -479,9 +364,8 @@
             <div class="card-body text-center">
               <img src="@/assets/img/icons/upgrade.svg" alt="img" class="mb-3" />
               <h6 class="mb-3 text-white">Upgrade to Pro for Unlimited Storage</h6>
-              <a href="javascript:void(0);" class="btn btn-white btn-sm"
-                >Upgrade Now<i class="ti ti-arrow-right ms-1"></i
-              ></a>
+              <a href="javascript:void(0);" class="btn btn-white btn-sm">Upgrade Now<i
+                  class="ti ti-arrow-right ms-1"></i></a>
             </div>
           </div>
           <!-- /Upgrade Details -->
@@ -494,34 +378,22 @@
             <div class="d-flex align-items-center justify-content-between mb-2">
               <h4 class="mb-2">Quick Access</h4>
               <div>
-                <a href="javascript:void(0);" class="mb-2 me-3 fw-medium link-default"
-                  >Close</a
-                >
-                <a href="javascript:void(0);" class="mb-2 fw-medium link-default"
-                  >View All</a
-                >
+                <a href="javascript:void(0);" class="mb-2 me-3 fw-medium link-default">Close</a>
+                <a href="javascript:void(0);" class="mb-2 fw-medium link-default">View All</a>
               </div>
             </div>
-            <div
-              class="row row-cols-xxl-5 row-cols-xl-3 row-cols-sm-3 row-cols-1 justify-content-center"
-            >
+            <div class="row row-cols-xxl-5 row-cols-xl-3 row-cols-sm-3 row-cols-1 justify-content-center">
               <div class="col d-flex">
                 <div class="card access-wrap border-0 flex-fill">
                   <div class="card-body text-center">
                     <img src="@/assets/img/icons/file.svg" alt="img" class="mb-3" />
                     <h6 class="mb-2 fw-medium">
-                      <a
-                        href="javascript:void(0);"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#preview"
-                        >Final Change.doc</a
-                      >
+                      <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#preview">Final
+                        Change.doc</a>
                     </h6>
                     <span class="badge badge-dark-transparent">2.4 GB</span>
                   </div>
-                  <span class="access-rate rating-select"
-                    ><i class="ti ti-star-filled filled"></i
-                  ></span>
+                  <span class="access-rate rating-select"><i class="ti ti-star-filled filled"></i></span>
                 </div>
               </div>
               <div class="col d-flex">
@@ -529,18 +401,12 @@
                   <div class="card-body text-center">
                     <img src="@/assets/img/icons/pdf-icon.svg" alt="img" class="mb-3" />
                     <h6 class="mb-2 fw-medium">
-                      <a
-                        href="javascript:void(0);"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#preview"
-                        >Marklist.pdf</a
-                      >
+                      <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                        data-bs-target="#preview">Marklist.pdf</a>
                     </h6>
                     <span class="badge badge-dark-transparent">2.4 GB</span>
                   </div>
-                  <span class="access-rate rating-select"
-                    ><i class="ti ti-star"></i
-                  ></span>
+                  <span class="access-rate rating-select"><i class="ti ti-star"></i></span>
                 </div>
               </div>
               <div class="col d-flex">
@@ -548,18 +414,11 @@
                   <div class="card-body text-center">
                     <img src="@/assets/img/icons/image.svg" alt="img" class="mb-3" />
                     <h6 class="mb-2 fw-medium">
-                      <a
-                        href="javascript:void(0);"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#preview"
-                        >Nature.png</a
-                      >
+                      <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#preview">Nature.png</a>
                     </h6>
                     <span class="badge badge-dark-transparent">2.4 GB</span>
                   </div>
-                  <span class="access-rate rating-select"
-                    ><i class="ti ti-star-filled filled"></i
-                  ></span>
+                  <span class="access-rate rating-select"><i class="ti ti-star-filled filled"></i></span>
                 </div>
               </div>
               <div class="col d-flex">
@@ -567,41 +426,24 @@
                   <div class="card-body text-center">
                     <img src="@/assets/img/icons/xls-icon.svg" alt="img" class="mb-3" />
                     <h6 class="mb-2 fw-medium">
-                      <a
-                        href="javascript:void(0);"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#preview"
-                        >List.xlsx</a
-                      >
+                      <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#preview">List.xlsx</a>
                     </h6>
                     <span class="badge badge-dark-transparent">2.4 GB</span>
                   </div>
-                  <span class="access-rate rating-select"
-                    ><i class="ti ti-star"></i
-                  ></span>
+                  <span class="access-rate rating-select"><i class="ti ti-star"></i></span>
                 </div>
               </div>
               <div class="col d-flex">
                 <div class="card access-wrap border-0 flex-fill">
                   <div class="card-body text-center">
-                    <img
-                      src="@/assets/img/icons/folder-icon.svg"
-                      alt="img"
-                      class="mb-3"
-                    />
+                    <img src="@/assets/img/icons/folder-icon.svg" alt="img" class="mb-3" />
                     <h6 class="mb-2 fw-medium">
-                      <a
-                        href="javascript:void(0);"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#preview"
-                        >Group Photos</a
-                      >
+                      <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#preview">Group
+                        Photos</a>
                     </h6>
                     <span class="badge badge-dark-transparent">2.4 GB</span>
                   </div>
-                  <span class="access-rate rating-select"
-                    ><i class="ti ti-star"></i
-                  ></span>
+                  <span class="access-rate rating-select"><i class="ti ti-star"></i></span>
                 </div>
               </div>
             </div>
@@ -625,11 +467,7 @@
             <h4 class="mb-2">Files</h4>
             <div class="d-flex align-items-center">
               <div class="dropdown mb-2 me-2">
-                <a
-                  href="javascript:void(0);"
-                  class="dropdown-toggle btn btn-white"
-                  data-bs-toggle="dropdown"
-                >
+                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white" data-bs-toggle="dropdown">
                   Sort By : Docs Type
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
@@ -640,23 +478,17 @@
                     <a href="javascript:void(0);" class="dropdown-item rounded-1">Pdf</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                      >Image</a
-                    >
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Image</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                      >Folder</a
-                    >
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Folder</a>
                   </li>
                   <li>
                     <a href="javascript:void(0);" class="dropdown-item rounded-1">Xml</a>
                   </li>
                 </ul>
               </div>
-              <a href="javascript:void(0);" class="link-primary fw-medium mb-2"
-                >View All</a
-              >
+              <a href="javascript:void(0);" class="link-primary fw-medium mb-2">View All</a>
             </div>
           </div>
           <div class="custom-datatable-filter table-responsive mb-4">
@@ -685,25 +517,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md bg-light"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#preview"
-                      >
-                        <img
-                          src="@/assets/img/icons/file-01.svg"
-                          class="img-fluid"
-                          alt="img"
-                      /></a>
+                      <a href="javascript:void(0);" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas"
+                        data-bs-target="#preview">
+                        <img src="@/assets/img/icons/file-01.svg" class="img-fluid" alt="img" /></a>
                       <div class="ms-2">
                         <p class="text-title fw-medium mb-0">
-                          <a
-                            href="javascript:void(0);"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#preview"
-                            >Secret</a
-                          >
+                          <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#preview">Secret</a>
                         </p>
                       </div>
                     </div>
@@ -717,25 +536,13 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-27.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-27.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-29.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-29.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-12.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-12.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
@@ -745,12 +552,8 @@
                         <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
                       </div>
                       <div class="dropdown">
-                        <a
-                          href="javascript:void(0);"
-                          class="d-flex align-items-center justify-content-center"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"
+                          data-bs-toggle="dropdown" aria-expanded="false">
                           <i class="ti ti-dots fs-14"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-right p-3">
@@ -777,25 +580,13 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md bg-light"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#preview"
-                      >
-                        <img
-                          src="@/assets/img/icons/file-02.svg"
-                          class="img-fluid"
-                          alt="img"
-                      /></a>
+                      <a href="javascript:void(0);" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas"
+                        data-bs-target="#preview">
+                        <img src="@/assets/img/icons/file-02.svg" class="img-fluid" alt="img" /></a>
                       <div class="ms-2">
                         <p class="text-title fw-medium mb-0">
-                          <a
-                            href="javascript:void(0);"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#preview"
-                            >Sophie Headrick</a
-                          >
+                          <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#preview">Sophie
+                            Headrick</a>
                         </p>
                       </div>
                     </div>
@@ -809,18 +600,10 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-15.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-15.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-16.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-16.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
@@ -830,12 +613,8 @@
                         <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
                       </div>
                       <div class="dropdown">
-                        <a
-                          href="javascript:void(0);"
-                          class="d-flex align-items-center justify-content-center"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"
+                          data-bs-toggle="dropdown" aria-expanded="false">
                           <i class="ti ti-dots fs-14"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-right p-3">
@@ -862,25 +641,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md bg-light"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#preview"
-                      >
-                        <img
-                          src="@/assets/img/icons/file-03.svg"
-                          class="img-fluid"
-                          alt="img"
-                      /></a>
+                      <a href="javascript:void(0);" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas"
+                        data-bs-target="#preview">
+                        <img src="@/assets/img/icons/file-03.svg" class="img-fluid" alt="img" /></a>
                       <div class="ms-2">
                         <p class="text-title fw-medium mb-0">
-                          <a
-                            href="javascript:void(0);"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#preview"
-                            >Gallery</a
-                          >
+                          <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#preview">Gallery</a>
                         </p>
                       </div>
                     </div>
@@ -894,37 +660,18 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-02.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-03.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-03.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-05.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-05.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-06.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                       </span>
-                      <a
-                        class="avatar bg-primary avatar-rounded text-fixed-white"
-                        href="javascript:void(0);"
-                      >
+                      <a class="avatar bg-primary avatar-rounded text-fixed-white" href="javascript:void(0);">
                         +1
                       </a>
                     </div>
@@ -935,12 +682,8 @@
                         <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
                       </div>
                       <div class="dropdown">
-                        <a
-                          href="javascript:void(0);"
-                          class="d-flex align-items-center justify-content-center"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"
+                          data-bs-toggle="dropdown" aria-expanded="false">
                           <i class="ti ti-dots fs-14"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-right p-3">
@@ -967,25 +710,13 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md bg-light"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#preview"
-                      >
-                        <img
-                          src="@/assets/img/icons/file-04.svg"
-                          class="img-fluid"
-                          alt="img"
-                      /></a>
+                      <a href="javascript:void(0);" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas"
+                        data-bs-target="#preview">
+                        <img src="@/assets/img/icons/file-04.svg" class="img-fluid" alt="img" /></a>
                       <div class="ms-2">
                         <p class="text-title fw-medium mb-0">
-                          <a
-                            href="javascript:void(0);"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#preview"
-                            >Doris Crowley</a
-                          >
+                          <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#preview">Doris
+                            Crowley</a>
                         </p>
                       </div>
                     </div>
@@ -999,25 +730,13 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-06.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-10.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-10.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-15.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-15.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
@@ -1027,12 +746,8 @@
                         <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
                       </div>
                       <div class="dropdown">
-                        <a
-                          href="javascript:void(0);"
-                          class="d-flex align-items-center justify-content-center"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"
+                          data-bs-toggle="dropdown" aria-expanded="false">
                           <i class="ti ti-dots fs-14"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-right p-3">
@@ -1059,25 +774,13 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md bg-light"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#preview"
-                      >
-                        <img
-                          src="@/assets/img/icons/file-05.svg"
-                          class="img-fluid"
-                          alt="img"
-                      /></a>
+                      <a href="javascript:void(0);" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas"
+                        data-bs-target="#preview">
+                        <img src="@/assets/img/icons/file-05.svg" class="img-fluid" alt="img" /></a>
                       <div class="ms-2">
                         <p class="text-title fw-medium mb-0">
-                          <a
-                            href="javascript:void(0);"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#preview"
-                            >Cheat_codez</a
-                          >
+                          <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                            data-bs-target="#preview">Cheat_codez</a>
                         </p>
                       </div>
                     </div>
@@ -1091,32 +794,16 @@
                   <td>
                     <div class="avatar-list-stacked avatar-group-sm">
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-04.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-04.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-28.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-28.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-14.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-14.jpg" alt="img" />
                       </span>
                       <span class="avatar avatar-rounded">
-                        <img
-                          class="border border-white"
-                          src="@/assets/img/profiles/avatar-15.jpg"
-                          alt="img"
-                        />
+                        <img class="border border-white" src="@/assets/img/profiles/avatar-15.jpg" alt="img" />
                       </span>
                     </div>
                   </td>
@@ -1126,12 +813,8 @@
                         <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
                       </div>
                       <div class="dropdown">
-                        <a
-                          href="javascript:void(0);"
-                          class="d-flex align-items-center justify-content-center"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"
+                          data-bs-toggle="dropdown" aria-expanded="false">
                           <i class="ti ti-dots fs-14"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-right p-3">
@@ -1157,10 +840,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

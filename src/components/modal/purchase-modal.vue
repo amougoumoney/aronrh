@@ -29,9 +29,9 @@
             <div class="col-md-7">
               <p class="text-dark mb-2 fw-medium fs-16">Invoice From :</p>
               <div>
-                <p class="mb-1">SmartHR</p>
+                <p class="mb-1">AronHR</p>
                 <p class="mb-1">367 Hillcrest Lane, Irvine, California, United States</p>
-                <p class="mb-1">smarthr@example.com</p>
+                <p class="mb-1">AronHR@example.com</p>
               </div>
             </div>
             <div class="col-md-5">
@@ -129,15 +129,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/super-admin/purchase-transaction" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/super-admin/purchase-transaction" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

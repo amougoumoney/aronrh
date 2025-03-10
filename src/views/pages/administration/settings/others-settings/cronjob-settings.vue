@@ -5,20 +5,11 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -36,30 +27,18 @@
                   <h4>Cronjob</h4>
                 </div>
                 <div class="col-md-6 col-sm-8">
-                  <div
-                    class="d-flex justify-content-sm-end align-items-center flex-wrap row-gap-2"
-                  >
-                    <router-link
-                      to="/others-settings/cronjob-schedule"
-                      class="btn btn-dark me-2"
-                      ><i class="ti ti-clock-hour-4 me-2"></i>Cron Schedule</router-link
-                    >
-                    <a
-                      href="javascript:void(0);"
-                      class="btn btn-primary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#add_cronjob"
-                      ><i class="ti ti-circle-plus me-2"></i>Add Cronjob</a
-                    >
+                  <div class="d-flex justify-content-sm-end align-items-center flex-wrap row-gap-2">
+                    <router-link to="/others-settings/cronjob-schedule" class="btn btn-dark me-2"><i
+                        class="ti ti-clock-hour-4 me-2"></i>Cron Schedule</router-link>
+                    <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#add_cronjob"><i class="ti ti-circle-plus me-2"></i>Add Cronjob</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="card-body pb-0">
               <div class="card mb-3">
-                <div
-                  class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-                >
+                <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
                   <h5>Cronjob List</h5>
                 </div>
                 <div class="card-body p-0">
@@ -69,11 +48,7 @@
                         <tr>
                           <th class="no-sort">
                             <div class="form-check form-check-md">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                id="select-all"
-                              />
+                              <input class="form-check-input" type="checkbox" id="select-all" />
                             </div>
                           </th>
                           <th>Name</th>
@@ -108,24 +83,15 @@
                             </div>
                           </td>
                           <td>
-                            <span
-                              class="badge badge-success d-flex align-items-center badge-xs"
-                            >
+                            <span class="badge badge-success d-flex align-items-center badge-xs">
                               <i class="ti ti-point-filled me-1"></i>Running
                             </span>
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
-                              <a href="javascript:void(0);" class="me-2"
-                                ><i class="ti ti-player-pause"></i
-                              ></a>
-                              <a
-                                href="javascript:void(0);"
-                                class="me-2"
-                                data-bs-toggle="modal"
-                                data-bs-target="#edit_cronjob"
-                                ><i class="ti ti-edit"></i
-                              ></a>
+                              <a href="javascript:void(0);" class="me-2"><i class="ti ti-player-pause"></i></a>
+                              <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
+                                data-bs-target="#edit_cronjob"><i class="ti ti-edit"></i></a>
                               <a href="javascript:void(0);" class=""><i class="ti ti-clock-bolt"></i></a>
                             </div>
                           </td>
@@ -153,24 +119,15 @@
                             </div>
                           </td>
                           <td>
-                            <span
-                              class="badge badge-success d-flex align-items-center badge-xs"
-                            >
+                            <span class="badge badge-success d-flex align-items-center badge-xs">
                               <i class="ti ti-point-filled me-1"></i>Running
                             </span>
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
-                              <a href="javascript:void(0);" class="me-2"
-                                ><i class="ti ti-player-pause"></i
-                              ></a>
-                              <a
-                                href="javascript:void(0);"
-                                class="me-2"
-                                data-bs-toggle="modal"
-                                data-bs-target="#edit_cronjob"
-                                ><i class="ti ti-edit"></i
-                              ></a>
+                              <a href="javascript:void(0);" class="me-2"><i class="ti ti-player-pause"></i></a>
+                              <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
+                                data-bs-target="#edit_cronjob"><i class="ti ti-edit"></i></a>
                               <a href="javascript:void(0);" class=""><i class="ti ti-clock-bolt"></i></a>
                             </div>
                           </td>
@@ -185,10 +142,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>
@@ -202,12 +157,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Cronjob</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -236,14 +186,8 @@
                   <div class="col-md-5">
                     <div class="mb-3">
                       <div class="input-icon-end position-relative">
-                        <date-picker
-                          v-model="startdate"
-                          class="form-control datetimepicker"
-                          placeholder="dd/mm/yyyy"
-                          :editable="true"
-                          :clearable="false"
-                          :input-format="dateFormat"
-                        />
+                        <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                          :editable="true" :clearable="false" :input-format="dateFormat" />
                         <span class="input-icon-addon">
                           <i class="ti ti-calendar text-gray-7"></i>
                         </span>
@@ -253,13 +197,8 @@
                   <div class="col-md-5">
                     <div class="mb-3">
                       <div class="input-icon position-relative w-100">
-                        <a-time-picker
-                          class="form-control timepicker"
-                          placeholder="Choose"
-                          use12-hours
-                          format="h:mm a"
-                          type="text"
-                        />
+                        <a-time-picker class="form-control timepicker" placeholder="Choose" use12-hours format="h:mm a"
+                          type="text" />
                         <span class="input-icon-addon">
                           <i class="ti ti-clock-hour-3"></i>
                         </span>
@@ -294,12 +233,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Cronjob</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -309,21 +243,13 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Report Generation Cron"
-                  />
+                  <input type="text" class="form-control" value="Report Generation Cron" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Schedule</label>
-                  <vue-select
-                    :options="EditSchedCron"
-                    id="editschedcron"
-                    placeholder="5 Minutes"
-                  />
+                  <vue-select :options="EditSchedCron" id="editschedcron" placeholder="5 Minutes" />
                 </div>
               </div>
               <div class="col-md-12">
@@ -336,14 +262,8 @@
                   <div class="col-md-5">
                     <div class="mb-3">
                       <div class="input-icon-end position-relative">
-                        <date-picker
-                          v-model="startdateOne"
-                          class="form-control datetimepicker"
-                          placeholder="dd/mm/yyyy"
-                          :editable="true"
-                          :clearable="false"
-                          :input-format="dateFormat"
-                        />
+                        <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                          :editable="true" :clearable="false" :input-format="dateFormat" />
                         <span class="input-icon-addon">
                           <i class="ti ti-calendar text-gray-7"></i>
                         </span>
@@ -353,13 +273,8 @@
                   <div class="col-md-5">
                     <div class="mb-3">
                       <div class="input-icon position-relative w-100">
-                        <a-time-picker
-                          class="form-control timepicker"
-                          placeholder="Choose"
-                          use12-hours
-                          format="h:mm a"
-                          type="text"
-                        />
+                        <a-time-picker class="form-control timepicker" placeholder="Choose" use12-hours format="h:mm a"
+                          type="text" />
                         <span class="input-icon-addon">
                           <i class="ti ti-clock-hour-3"></i>
                         </span>

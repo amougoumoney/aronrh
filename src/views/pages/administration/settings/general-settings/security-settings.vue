@@ -5,20 +5,11 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -35,9 +26,7 @@
                 <h4>Security Settings</h4>
               </div>
               <div>
-                <div
-                  class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3"
-                >
+                <div class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3">
                   <div class="mb-3">
                     <h5 class="fw-medium mb-1">Password</h5>
                     <div class="d-flex align-items-center">
@@ -48,18 +37,11 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <a
-                      href="javascript:void(0);"
-                      class="btn btn-dark btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target="#change-password"
-                      >Change Pasword</a
-                    >
+                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#change-password">Change Pasword</a>
                   </div>
                 </div>
-                <div
-                  class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3"
-                >
+                <div class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3">
                   <div class="mb-3">
                     <h5 class="fw-medium mb-1">Two Factor Authentication</h5>
                     <p>Receive codes via SMS or email every time you login</p>
@@ -68,15 +50,11 @@
                     <a href="javascript:void(0);" class="btn btn-dark btn-sm">Enable</a>
                   </div>
                 </div>
-                <div
-                  class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3"
-                >
+                <div class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3">
                   <div class="mb-3">
                     <h5 class="fw-medium d-flex align-items-center mb-1">
                       Google Authentication
-                      <span
-                        class="badge badge-xs ms-2 bg-outline-success rounded-pill d-flex align-items-center"
-                      >
+                      <span class="badge badge-xs ms-2 bg-outline-success rounded-pill d-flex align-items-center">
                         <i class="ti ti-point-filled"></i>Connected
                       </span>
                     </h5>
@@ -84,23 +62,15 @@
                   </div>
                   <div class="mb-3">
                     <div class="form-check form-check-md form-switch me-2">
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        role="switch"
-                      />
+                      <input class="form-check-input me-2" type="checkbox" role="switch" />
                     </div>
                   </div>
                 </div>
-                <div
-                  class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3"
-                >
+                <div class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3">
                   <div class="mb-3">
                     <h5 class="fw-medium d-flex align-items-center mb-1">
                       Phone Number Verification
-                      <span
-                        ><i class="ti ti-discount-check-filled text-success ms-2"></i
-                      ></span>
+                      <span><i class="ti ti-discount-check-filled text-success ms-2"></i></span>
                     </h5>
                     <div class="d-flex align-items-center">
                       <p class="mb-0 me-2 pe-2 border-end">
@@ -110,27 +80,17 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <a href="javascript:void(0);" class="btn btn-outline-light btn-sm border me-2"
-                      >Remove</a
-                    >
-                    <a
-                      href="javascript:void(0);"
-                      class="btn btn-dark btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target="#change-phone"
-                      >Change
+                    <a href="javascript:void(0);" class="btn btn-outline-light btn-sm border me-2">Remove</a>
+                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#change-phone">Change
                     </a>
                   </div>
                 </div>
-                <div
-                  class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3"
-                >
+                <div class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3">
                   <div class="mb-3">
                     <h5 class="fw-medium d-flex align-items-center mb-1">
                       Email Verification
-                      <span
-                        ><i class="ti ti-discount-check-filled text-success ms-2"></i
-                      ></span>
+                      <span><i class="ti ti-discount-check-filled text-success ms-2"></i></span>
                     </h5>
                     <div class="d-flex align-items-center">
                       <p class="mb-0 me-2 pe-2 border-end">
@@ -140,55 +100,33 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <a href="javascript:void(0);" class="btn btn-outline-light btn-sm border me-2"
-                      >Remove</a
-                    >
-                    <a
-                      href="javascript:void(0);"
-                      class="btn btn-dark btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target="#change-email"
-                      >Change
+                    <a href="javascript:void(0);" class="btn btn-outline-light btn-sm border me-2">Remove</a>
+                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#change-email">Change
                     </a>
                   </div>
                 </div>
-                <div
-                  class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3"
-                >
+                <div class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3">
                   <div class="mb-3">
                     <h5 class="fw-medium mb-1">Device Management</h5>
                     <p>The devices associated with the account</p>
                   </div>
                   <div class="mb-3">
-                    <a
-                      href="javascript:void(0);"
-                      class="btn btn-dark btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target="#device_management"
-                      >Manage</a
-                    >
+                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#device_management">Manage</a>
                   </div>
                 </div>
-                <div
-                  class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3"
-                >
+                <div class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3">
                   <div class="mb-3">
                     <h5 class="fw-medium mb-1">Account Activity</h5>
                     <p>The activities of the account</p>
                   </div>
                   <div class="mb-3">
-                    <a
-                      href="javascript:void(0);"
-                      class="btn btn-dark btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target="#account_activity"
-                      >View</a
-                    >
+                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#account_activity">View</a>
                   </div>
                 </div>
-                <div
-                  class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3"
-                >
+                <div class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3">
                   <div class="mb-3">
                     <h5 class="fw-medium mb-1">Deactivate Account</h5>
                     <p>
@@ -200,21 +138,14 @@
                     <a href="javascript:void(0);" class="btn btn-dark btn-sm">Deactivate</a>
                   </div>
                 </div>
-                <div
-                  class="d-flex justify-content-between align-items-center flex-wrap row-gap-3"
-                >
+                <div class="d-flex justify-content-between align-items-center flex-wrap row-gap-3">
                   <div>
                     <h5 class="fw-medium mb-1">Delete Account</h5>
                     <p>Your account will be permanently deleted</p>
                   </div>
                   <div>
-                    <a
-                      href="javascript:void(0);"
-                      class="btn btn-dark btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target="#del-account"
-                      >Delete</a
-                    >
+                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#del-account">Delete</a>
                   </div>
                 </div>
               </div>
@@ -223,10 +154,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>
@@ -238,38 +167,29 @@
   <div class="modal fade custom-modal" id="change-password">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content doctor-profile">
-        <div
-          class="modal-header d-flex align-items-center justify-content-between border-bottom"
-        >
+        <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Change Password</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"
-            ><i class="ti ti-circle-x-filled fs-20"></i
-          ></a>
+          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
+              class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <div class="modal-body p-4">
           <form @submit.prevent="submitForm">
             <div class="mb-3">
-              <label class="form-label"
-                >Current Password <span class="text-danger">*</span></label
-              >
+              <label class="form-label">Current Password <span class="text-danger">*</span></label>
               <div class="pass-group">
                 <input type="password" class="pass-input form-control" />
                 <span class="ti toggle-password ti-eye-off"></span>
               </div>
             </div>
             <div class="mb-3">
-              <label class="form-label"
-                >Current Password<span class="text-danger">*</span></label
-              >
+              <label class="form-label">Current Password<span class="text-danger">*</span></label>
               <div class="pass-group">
                 <input type="password" class="pass-inputs form-control" />
                 <span class="ti toggle-passwords ti-eye-off"></span>
               </div>
             </div>
             <div class="mb-3">
-              <label class="form-label"
-                >Confirm New Password<span class="text-danger">*</span></label
-              >
+              <label class="form-label">Confirm New Password<span class="text-danger">*</span></label>
               <div class="pass-group">
                 <input type="password" class="form-control pass-inputa" />
                 <span class="ti toggle-passworda ti-eye-off"></span>
@@ -279,12 +199,7 @@
         </div>
         <div class="modal-footer border-top">
           <div class="acc-submit">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-2"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button class="btn btn-primary" type="submit">Save</button>
           </div>
         </div>
@@ -297,13 +212,10 @@
   <div class="modal fade custom-modal" id="change-email">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content doctor-profile">
-        <div
-          class="modal-header d-flex align-items-center justify-content-between border-bottom"
-        >
+        <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Change Email</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"
-            ><i class="ti ti-circle-x-filled fs-20"></i
-          ></a>
+          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
+              class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <div class="modal-body p-4">
           <form>
@@ -313,15 +225,11 @@
                 <input type="email" class="form-control" />
               </div>
               <div class="mb-3">
-                <label class="form-label"
-                  >New Email Address <span class="text-danger">*</span></label
-                >
+                <label class="form-label">New Email Address <span class="text-danger">*</span></label>
                 <input type="email" class="form-control" />
               </div>
               <div class="mb-3">
-                <label class="form-label"
-                  >Confirm New Password<span class="text-danger">*</span></label
-                >
+                <label class="form-label">Confirm New Password<span class="text-danger">*</span></label>
                 <div class="pass-group">
                   <input type="password" class="form-control pass-inputa" />
                   <span class="ti toggle-passworda ti-eye-off"></span>
@@ -332,12 +240,7 @@
         </div>
         <div class="modal-footer border-top">
           <div class="acc-submit">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-2"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button class="btn btn-primary" type="button" data-bs-dismiss="modal">
               Save Change
             </button>
@@ -352,43 +255,26 @@
   <div class="modal fade custom-modal" id="change-phone">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content doctor-profile">
-        <div
-          class="modal-header d-flex align-items-center justify-content-between border-bottom"
-        >
+        <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Change Phone Number</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"
-            ><i class="ti ti-circle-x-filled fs-20"></i
-          ></a>
+          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
+              class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <div class="modal-body p-4">
           <form>
             <div class="wallet-add">
               <div class="mb-3">
                 <label class="form-label">Current Phone Number</label>
-                <input
-                  class="form-control form-control-lg group_formcontrol"
-                  id="phone"
-                  name="phone"
-                  type="text"
-                  placeholder="Enter Phone Number"
-                />
+                <input class="form-control form-control-lg group_formcontrol" id="phone" name="phone" type="text"
+                  placeholder="Enter Phone Number" />
               </div>
               <div class="mb-3">
-                <label class="form-label"
-                  >New Phone Number <span class="text-danger">*</span></label
-                >
-                <input
-                  class="form-control form-control-lg group_formcontrol"
-                  id="phone1"
-                  name="phone"
-                  type="text"
-                  placeholder="Enter Phone Number"
-                />
+                <label class="form-label">New Phone Number <span class="text-danger">*</span></label>
+                <input class="form-control form-control-lg group_formcontrol" id="phone1" name="phone" type="text"
+                  placeholder="Enter Phone Number" />
               </div>
               <div class="mb-3">
-                <label class="form-label"
-                  >Confirm New Password<span class="text-danger">*</span></label
-                >
+                <label class="form-label">Confirm New Password<span class="text-danger">*</span></label>
                 <div class="pass-group">
                   <input type="password" class="form-control pass-inputa" />
                   <span class="ti toggle-passworda ti-eye-off"></span>
@@ -399,12 +285,7 @@
         </div>
         <div class="modal-footer border-top">
           <div class="acc-submit">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-2"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button class="btn btn-dark" type="button" data-bs-dismiss="modal">
               Change Number
             </button>
@@ -419,13 +300,10 @@
   <div class="modal fade custom-modal" id="device_management">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div
-          class="modal-header d-flex align-items-center justify-content-between border-bottom"
-        >
+        <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Device Management</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"
-            ><i class="ti ti-circle-x-filled fs-20"></i
-          ></a>
+          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
+              class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <div class="modal-body">
           <div class="table">
@@ -489,13 +367,10 @@
   <div class="modal fade custom-modal" id="account_activity">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div
-          class="modal-header d-flex align-items-center justify-content-between border-bottom"
-        >
+        <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Account Activity</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"
-            ><i class="ti ti-circle-x-filled fs-20"></i
-          ></a>
+          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
+              class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <div class="modal-body">
           <div class="table">
@@ -516,9 +391,7 @@
                   <td>New York / USA</td>
                   <td>232.222.12.72</td>
                   <td>
-                    <span class="badge badge-sm badge-success"
-                      ><i class="ti ti-point-filled me-1"></i>connect</span
-                    >
+                    <span class="badge badge-sm badge-success"><i class="ti ti-point-filled me-1"></i>connect</span>
                   </td>
                 </tr>
                 <tr>
@@ -527,9 +400,7 @@
                   <td>New York / USA</td>
                   <td>224.111.12.75</td>
                   <td>
-                    <span class="badge badge-sm badge-success"
-                      ><i class="ti ti-point-filled me-1"></i>connect</span
-                    >
+                    <span class="badge badge-sm badge-success"><i class="ti ti-point-filled me-1"></i>connect</span>
                   </td>
                 </tr>
                 <tr>
@@ -538,9 +409,7 @@
                   <td>New York / USA</td>
                   <td>111.222.13.28</td>
                   <td>
-                    <span class="badge badge-sm badge-success"
-                      ><i class="ti ti-point-filled me-1"></i>connect</span
-                    >
+                    <span class="badge badge-sm badge-success"><i class="ti ti-point-filled me-1"></i>connect</span>
                   </td>
                 </tr>
                 <tr>
@@ -549,9 +418,7 @@
                   <td>New York / USA</td>
                   <td>333.555.10.54</td>
                   <td>
-                    <span class="badge badge-sm badge-success"
-                      ><i class="ti ti-point-filled me-1"></i>connect</span
-                    >
+                    <span class="badge badge-sm badge-success"><i class="ti ti-point-filled me-1"></i>connect</span>
                   </td>
                 </tr>
               </tbody>
@@ -567,13 +434,10 @@
   <div class="modal fade custom-modal" id="del-account">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div
-          class="modal-header d-flex align-items-center justify-content-between border-bottom"
-        >
+        <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Delete Account</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"
-            ><i class="ti ti-circle-x-filled fs-20"></i
-          ></a>
+          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
+              class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <form @submit.prevent="submitFormOne">
           <div class="modal-body">
@@ -582,9 +446,7 @@
               your password.
             </p>
             <div class="mb-3">
-              <label class="form-label"
-                >Confirm New Password<span class="text-danger">*</span></label
-              >
+              <label class="form-label">Confirm New Password<span class="text-danger">*</span></label>
               <div class="pass-group">
                 <input type="password" class="form-control pass-inputa" />
                 <span class="ti toggle-passworda ti-eye-off"></span>
@@ -592,12 +454,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-2"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button type="button" data-bs-dismiss="modal" class="btn btn-primary">Delete Account</button>
           </div>
         </form>

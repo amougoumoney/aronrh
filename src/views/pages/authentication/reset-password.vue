@@ -22,11 +22,11 @@ export default {
     });
 
     const rules = {
-      password: { 
-        required, 
+      password: {
+        required,
         minLength: minLength(8)
       },
-      password_confirmation: { 
+      password_confirmation: {
         required,
         sameAs: (value) => value === formData.password || 'Passwords must match'
       }
@@ -90,7 +90,7 @@ export default {
           password: formData.password,
           password_confirmation: formData.password_confirmation
         });
-        
+
         message.value = 'Password has been reset successfully. Redirecting to login...';
         setTimeout(() => {
           router.push('/login');
@@ -162,8 +162,7 @@ export default {
       <div class="row">
         <div class="col-lg-5">
           <div
-            class="login-background position-relative d-lg-flex align-items-center justify-content-center d-none flex-wrap vh-100"
-          >
+            class="login-background position-relative d-lg-flex align-items-center justify-content-center d-none flex-wrap vh-100">
             <div class="bg-overlay-img">
               <img src="@/assets/img/bg/bg-01.png" class="bg-1" alt="" />
               <img src="@/assets/img/bg/bg-02.png" class="bg-2" alt="" />
@@ -190,9 +189,7 @@ export default {
           </div>
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12">
-          <div
-            class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap"
-          >
+          <div class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap">
             <div class="col-md-7 mx-auto p-4">
               <form @submit.prevent="submitForm">
                 <div>
@@ -223,23 +220,13 @@ export default {
                       <div class="mb-3">
                         <label class="form-label">New Password</label>
                         <div class="input-group" :class="{ 'is-invalid': v$.password.$error }">
-                          <input
-                            :type="showPassword ? 'text' : 'password'"
-                            v-model="formData.password"
-                            class="form-control"
-                            :class="{ 'is-invalid': v$.password.$error }"
-                            :disabled="loading"
-                          />
+                          <input :type="showPassword ? 'text' : 'password'" v-model="formData.password"
+                            class="form-control" :class="{ 'is-invalid': v$.password.$error }" :disabled="loading" />
                           <span class="input-group-text">
-                            <i 
-                              @click="togglePasswordVisibility('password')"
-                              class="ti"
-                              :class="{
-                                'ti-eye': showPassword,
-                                'ti-eye-off': !showPassword,
-                              }"
-                              style="cursor: pointer;"
-                            ></i>
+                            <i @click="togglePasswordVisibility('password')" class="ti" :class="{
+                              'ti-eye': showPassword,
+                              'ti-eye-off': !showPassword,
+                            }" style="cursor: pointer;"></i>
                           </span>
                         </div>
                         <div class="invalid-feedback" v-if="v$.password.$error">
@@ -250,23 +237,14 @@ export default {
                       <div class="mb-3">
                         <label class="form-label">Confirm Password</label>
                         <div class="input-group" :class="{ 'is-invalid': v$.password_confirmation.$error }">
-                          <input
-                            :type="showPasswordConfirm ? 'text' : 'password'"
-                            v-model="formData.password_confirmation"
-                            class="form-control"
-                            :class="{ 'is-invalid': v$.password_confirmation.$error }"
-                            :disabled="loading"
-                          />
+                          <input :type="showPasswordConfirm ? 'text' : 'password'"
+                            v-model="formData.password_confirmation" class="form-control"
+                            :class="{ 'is-invalid': v$.password_confirmation.$error }" :disabled="loading" />
                           <span class="input-group-text">
-                            <i 
-                              @click="togglePasswordVisibility('confirm')"
-                              class="ti"
-                              :class="{
-                                'ti-eye': showPasswordConfirm,
-                                'ti-eye-off': !showPasswordConfirm,
-                              }"
-                              style="cursor: pointer;"
-                            ></i>
+                            <i @click="togglePasswordVisibility('confirm')" class="ti" :class="{
+                              'ti-eye': showPasswordConfirm,
+                              'ti-eye-off': !showPasswordConfirm,
+                            }" style="cursor: pointer;"></i>
                           </span>
                         </div>
                         <div class="invalid-feedback" v-if="v$.password_confirmation.$error">
@@ -275,11 +253,7 @@ export default {
                       </div>
 
                       <div class="mb-3">
-                        <button 
-                          type="submit" 
-                          class="btn btn-primary w-100"
-                          :disabled="loading"
-                        >
+                        <button type="submit" class="btn btn-primary w-100" :disabled="loading">
                           <span v-if="loading" class="spinner-border spinner-border-sm me-2"></span>
                           {{ loading ? 'Resetting Password...' : 'Reset Password' }}
                         </button>
@@ -288,7 +262,7 @@ export default {
                   </div>
                   <div class="mt-5 text-center">
                     <p class="mb-0 text-gray-9">
-                      Copyright &copy; {{ new Date().getFullYear() }} - Smarthr
+                      Copyright &copy; {{ new Date().getFullYear() }} - AronHR
                     </p>
                   </div>
                 </div>

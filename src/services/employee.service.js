@@ -42,7 +42,7 @@ class EmployeeService {
     formatEmployeeData(data) {
         return {
             staff_id: data.staff_id,
-            subsidiary: data.subsidiary || 'SMRU',
+            subsidiary: data.subsidiary || 'ARON',
             first_name: data.first_name,
             middle_name: data.middle_name,
             last_name: data.last_name,

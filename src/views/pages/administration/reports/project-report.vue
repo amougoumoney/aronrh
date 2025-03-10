@@ -30,40 +30,40 @@ export default {
 
         // Move the function declaration outside of the onMounted callback
         function booking_range(start, end) {
-        return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+            return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
         }
 
         onMounted(() => {
-        if (dateRangeInput.value) {
-            const start = moment().subtract(6, "days");
-            const end = moment();
+            if (dateRangeInput.value) {
+                const start = moment().subtract(6, "days");
+                const end = moment();
 
-            new DateRangePicker(
-            dateRangeInput.value,
-            {
-                startDate: start,
-                endDate: end,
-                ranges: {
-                Today: [moment(), moment()],
-                Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-                "Last 7 Days": [moment().subtract(6, "days"), moment()],
-                "Last 30 Days": [moment().subtract(29, "days"), moment()],
-                "This Month": [moment().startOf("month"), moment().endOf("month")],
-                "Last Month": [
-                    moment().subtract(1, "month").startOf("month"),
-                    moment().subtract(1, "month").endOf("month"),
-                ],
-                },
-            },
-            booking_range
-            );
+                new DateRangePicker(
+                    dateRangeInput.value,
+                    {
+                        startDate: start,
+                        endDate: end,
+                        ranges: {
+                            Today: [moment(), moment()],
+                            Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+                            "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                            "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                            "This Month": [moment().startOf("month"), moment().endOf("month")],
+                            "Last Month": [
+                                moment().subtract(1, "month").startOf("month"),
+                                moment().subtract(1, "month").endOf("month"),
+                            ],
+                        },
+                    },
+                    booking_range
+                );
 
-            booking_range(start, end);
-        }
+                booking_range(start, end);
+            }
         });
 
         return {
-        dateRangeInput,
+            dateRangeInput,
         };
     },
 }
@@ -83,22 +83,27 @@ export default {
                 <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
                     <div class="mb-2">
                         <div class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);"
+                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                                data-bs-toggle="dropdown">
                                 <i class="ti ti-file-export me-1"></i>Export
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                            class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                            class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
                     <div class="head-icons ms-2">
-                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                             <i class="ti ti-chevrons-up"></i>
                         </a>
                     </div>
@@ -115,16 +120,21 @@ export default {
                             <div class="card flex-fill">
                                 <div class="card-body ">
                                     <div>
-                                            <div class="mb-2">
-                                                <span class="fs-14 fw-normal text-truncate mb-1">Total Projects</span>
-                                                <h5>300</h5>
-                                            </div>
-                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%;height: 5px;">
-                                                <div class="progress-bar bg-pink" style="width: 70%"></div>
-                                            </div>
+                                        <div class="mb-2">
+                                            <span class="fs-14 fw-normal text-truncate mb-1">Total Projects</span>
+                                            <h5>300</h5>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 100%;height: 5px;">
+                                            <div class="progress-bar bg-pink" style="width: 70%"></div>
+                                        </div>
                                     </div>
                                     <div class="d-flex mt-2">
-                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span class="text-success fs-12 d-flex align-items-center me-1"><i class="ti ti-arrow-wave-right-up me-1"></i>+10.54%</span>from last month</p>
+                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span
+                                                class="text-success fs-12 d-flex align-items-center me-1"><i
+                                                    class="ti ti-arrow-wave-right-up me-1"></i>+10.54%</span>from last
+                                            month</p>
                                     </div>
                                 </div>
                             </div>
@@ -133,16 +143,21 @@ export default {
                             <div class="card flex-fill">
                                 <div class="card-body ">
                                     <div>
-                                            <div class="mb-2">
-                                                <span class="fs-14 fw-normal text-truncate mb-1">Completed Projects</span>
-                                                <h5>250</h5>
-                                            </div>
-                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%;height: 5px;">
-                                                <div class="progress-bar bg-success" style="width: 80%"></div>
-                                            </div>
+                                        <div class="mb-2">
+                                            <span class="fs-14 fw-normal text-truncate mb-1">Completed Projects</span>
+                                            <h5>250</h5>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 100%;height: 5px;">
+                                            <div class="progress-bar bg-success" style="width: 80%"></div>
+                                        </div>
                                     </div>
                                     <div class="d-flex mt-2">
-                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span class="text-success fs-12 d-flex align-items-center me-1"><i class="ti ti-arrow-wave-right-up me-1"></i>+12.84%</span>from last month</p>
+                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span
+                                                class="text-success fs-12 d-flex align-items-center me-1"><i
+                                                    class="ti ti-arrow-wave-right-up me-1"></i>+12.84%</span>from last
+                                            month</p>
                                     </div>
                                 </div>
                             </div>
@@ -151,16 +166,21 @@ export default {
                             <div class="card flex-fill">
                                 <div class="card-body ">
                                     <div>
-                                            <div class="mb-2">
-                                                <span class="fs-14 fw-normal text-truncate mb-1">Pending Projects</span>
-                                                <h5>50</h5>
-                                            </div>
-                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%;height: 5px;">
-                                                <div class="progress-bar bg-danger" style="width: 20%"></div>
-                                            </div>
+                                        <div class="mb-2">
+                                            <span class="fs-14 fw-normal text-truncate mb-1">Pending Projects</span>
+                                            <h5>50</h5>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 100%;height: 5px;">
+                                            <div class="progress-bar bg-danger" style="width: 20%"></div>
+                                        </div>
                                     </div>
                                     <div class="d-flex mt-2">
-                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span class="text-danger fs-12 d-flex align-items-center me-1"><i class="ti ti-arrow-wave-right-up me-1"></i>-10.75%</span>from last month</p>
+                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span
+                                                class="text-danger fs-12 d-flex align-items-center me-1"><i
+                                                    class="ti ti-arrow-wave-right-up me-1"></i>-10.75%</span>from last
+                                            month</p>
                                     </div>
                                 </div>
                             </div>
@@ -169,16 +189,21 @@ export default {
                             <div class="card flex-fill">
                                 <div class="card-body ">
                                     <div>
-                                            <div class="mb-2">
-                                                <span class="fs-14 fw-normal text-truncate mb-1">New Projects</span>
-                                                <h5>30</h5>
-                                            </div>
-                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%;height: 5px;">
-                                                <div class="progress-bar bg-purple" style="width: 60%"></div>
-                                            </div>
+                                        <div class="mb-2">
+                                            <span class="fs-14 fw-normal text-truncate mb-1">New Projects</span>
+                                            <h5>30</h5>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 100%;height: 5px;">
+                                            <div class="progress-bar bg-purple" style="width: 60%"></div>
+                                        </div>
                                     </div>
                                     <div class="d-flex mt-2">
-                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span class="text-success fs-12 d-flex align-items-center me-1"><i class="ti ti-arrow-wave-right-up me-1"></i>+15.74%</span>from last month</p>
+                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span
+                                                class="text-success fs-12 d-flex align-items-center me-1"><i
+                                                    class="ti ti-arrow-wave-right-up me-1"></i>+15.74%</span>from last
+                                            month</p>
                                     </div>
                                 </div>
                             </div>
@@ -221,36 +246,36 @@ export default {
                             <div class="row align-items-center">
                                 <div class="col-md-6 d-flex justify-content-center">
                                     <div id="project-report">
-                                        <apexchart
-                                            type="pie"
-                                            height="190"
-                                            :options="projectReport.sline"
-                                            :series="projectReport.series"
-                                        ></apexchart>
+                                        <apexchart type="pie" height="190" :options="projectReport.sline"
+                                            :series="projectReport.series"></apexchart>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="row gy-4">
                                         <div class="col-md-6">
-                                            <p class="fs-16 project-report-badge-blue fw-normal mb-0 text-gray-5">Pending </p>
+                                            <p class="fs-16 project-report-badge-blue fw-normal mb-0 text-gray-5">
+                                                Pending </p>
                                             <p class="fs-20 fw-bold text-dark ">30%</p>
                                         </div>
                                         <div class="col-md-6">
-                                            <p class="fs-16 project-report-badge-purple mb-0  fw-normal text-gray-5">On Hold</p>
+                                            <p class="fs-16 project-report-badge-purple mb-0  fw-normal text-gray-5">On
+                                                Hold</p>
                                             <p class="fs-20 fw-bold text-dark ">10%</p>
                                         </div>
                                         <div class="col-md-6">
-                                            <p class="fs-16 project-report-badge-warning  mb-0 fw-normal text-gray-5">Inprogress </p>
+                                            <p class="fs-16 project-report-badge-warning  mb-0 fw-normal text-gray-5">
+                                                Inprogress </p>
                                             <p class="fs-20 fw-bold text-dark ">20%</p>
                                         </div>
                                         <div class="col-md-6">
-                                            <p class="fs-16 project-report-badge-success  mb-0 fw-normal text-gray-5">Completed</p>
+                                            <p class="fs-16 project-report-badge-success  mb-0 fw-normal text-gray-5">
+                                                Completed</p>
                                             <p class="fs-20 fw-bold text-dark ">40%</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -342,7 +367,7 @@ export default {
         </div>
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
-            <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+            <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
             <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
         </div>
 

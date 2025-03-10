@@ -6,33 +6,19 @@
     <div class="content">
       <!-- Breadcrumb -->
       <div class="row align-items-center mb-4">
-        <div
-          class="d-md-flex d-sm-block justify-content-between align-items-center flex-wrap"
-        >
+        <div class="d-md-flex d-sm-block justify-content-between align-items-center flex-wrap">
           <h6 class="fw-medium d-inline-flex align-items-center mb-3 mb-sm-0">
             <router-link to="/projects/tasks">
-              <i class="ti ti-arrow-left me-2"></i>Back to List</router-link
-            >
+              <i class="ti ti-arrow-left me-2"></i>Back to List</router-link>
           </h6>
           <div class="d-flex">
             <div class="text-end">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#edit_task"
-                ><i class="ti ti-edit me-1"></i>Edit Task</a
-              >
+              <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#edit_task"><i class="ti ti-edit me-1"></i>Edit Task</a>
             </div>
             <div class="head-icons ms-2 text-end">
-              <a
-                href="javascript:void(0);"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                data-bs-original-title="Collapse"
-                id="collapse-header"
-                @click="toggleHeader"
-              >
+              <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                 <i class="ti ti-chevrons-up"></i>
               </a>
             </div>
@@ -45,71 +31,41 @@
         <div class="col-xl-8">
           <div class="card">
             <div class="card-body pb-1">
-              <div
-                class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-4"
-              >
+              <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-4">
                 <div>
                   <h4 class="mb-1">
                     Patient and Doctor video conferencing Module
                   </h4>
                   <p>
                     Priority :
-                    <span class="badge badge-danger"
-                      ><i class="ti ti-point-filled me-1"></i>High</span
-                    >
+                    <span class="badge badge-danger"><i class="ti ti-point-filled me-1"></i>High</span>
                   </p>
                 </div>
                 <div class="dropdown">
-                  <a
-                    href="javascript:void(0);"
+                  <a href="javascript:void(0);"
                     class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
-                    data-bs-toggle="dropdown"
-                  >
+                    data-bs-toggle="dropdown">
                     <i class="ti ti-file-export me-1"></i>
                     Mark All as Completed
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a
-                        href="javascript:void(0);"
-                        class="dropdown-item rounded-1"
-                        >All Tags</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">All Tags</a>
                     </li>
                     <li>
-                      <a
-                        href="javascript:void(0);"
-                        class="dropdown-item rounded-1"
-                        >Internal</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Internal</a>
                     </li>
                     <li>
-                      <a
-                        href="javascript:void(0);"
-                        class="dropdown-item rounded-1"
-                        >Projects</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Projects</a>
                     </li>
                     <li>
-                      <a
-                        href="javascript:void(0);"
-                        class="dropdown-item rounded-1"
-                        >Meetings</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Meetings</a>
                     </li>
                     <li>
-                      <a
-                        href="javascript:void(0);"
-                        class="dropdown-item rounded-1"
-                        >Reminder</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Reminder</a>
                     </li>
                     <li>
-                      <a
-                        href="javascript:void(0);"
-                        class="dropdown-item rounded-1"
-                        >Research</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Research</a>
                     </li>
                   </ul>
                 </div>
@@ -135,55 +91,36 @@
                 </div>
                 <div class="col-sm-9">
                   <div class="d-flex align-items-center mb-3">
-                    <div
-                      class="bg-gray-100 p-1 rounded d-flex align-items-center me-2"
-                    >
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2"
-                      >
-                        <img
-                          src="@/assets/img/profiles/avatar-12.jpg"
-                          alt="Img"
-                        />
+                    <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
+                      <a href="javascript:void(0);"
+                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
+                        <img src="@/assets/img/profiles/avatar-12.jpg" alt="Img" />
                       </a>
                       <h6 class="fs-12">
                         <a href="javascript:void(0);">Lewis</a>
                       </h6>
                     </div>
-                    <div
-                      class="bg-gray-100 p-1 rounded d-flex align-items-center me-2"
-                    >
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2"
-                      >
+                    <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
+                      <a href="javascript:void(0);"
+                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-19.jpg" alt="Img" />
                       </a>
                       <h6 class="fs-12">
                         <a href="javascript:void(0);">Leona</a>
                       </h6>
                     </div>
-                    <div
-                      class="bg-gray-100 p-1 rounded d-flex align-items-center me-2"
-                    >
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2"
-                      >
+                    <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
+                      <a href="javascript:void(0);"
+                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-33.jpg" alt="Img" />
                       </a>
                       <h6 class="fs-12">
                         <a href="javascript:void(0);">Pineiro</a>
                       </h6>
                     </div>
-                    <div
-                      class="bg-gray-100 p-1 rounded d-flex align-items-center me-2"
-                    >
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2"
-                      >
+                    <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
+                      <a href="javascript:void(0);"
+                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-37.jpg" alt="Img" />
                       </a>
                       <h6 class="fs-12">
@@ -191,11 +128,8 @@
                       </h6>
                     </div>
                     <div>
-                      <a
-                        href="javascript:void(0);"
-                        class="d-flex align-items-center fs-12"
-                        ><i class="ti ti-circle-plus me-1"></i>Add New</a
-                      >
+                      <a href="javascript:void(0);" class="d-flex align-items-center fs-12"><i
+                          class="ti ti-circle-plus me-1"></i>Add New</a>
                     </div>
                   </div>
                 </div>
@@ -206,13 +140,9 @@
                 </div>
                 <div class="col-sm-9">
                   <div class="d-flex align-items-center mb-3">
-                    <div
-                      class="bg-gray-100 p-1 rounded d-flex align-items-center me-2"
-                    >
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2"
-                      >
+                    <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
+                      <a href="javascript:void(0);"
+                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-42.jpg" alt="Img" />
                       </a>
                       <h6 class="fs-12">
@@ -220,11 +150,8 @@
                       </h6>
                     </div>
                     <div>
-                      <a
-                        href="javascript:void(0);"
-                        class="d-flex align-items-center fs-12"
-                        ><i class="ti ti-circle-plus me-1"></i>Add New</a
-                      >
+                      <a href="javascript:void(0);" class="d-flex align-items-center fs-12"><i
+                          class="ti ti-circle-plus me-1"></i>Add New</a>
                     </div>
                   </div>
                 </div>
@@ -235,9 +162,7 @@
                 </div>
                 <div class="col-sm-9">
                   <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-pink rounded-pill me-2"
-                      >Admin Panel</span
-                    >
+                    <span class="badge bg-pink rounded-pill me-2">Admin Panel</span>
                     <span class="badge badge-info rounded-pill">High Tech</span>
                   </div>
                 </div>
@@ -252,56 +177,49 @@
                     <div class="d-flex align-items-center flex-fill">
                       <h5>Files</h5>
                       <div class="ms-auto d-flex align-items-center">
-                        <a
-                          href="javascript:void(0);"
-                          class="btn btn-primary btn-xs d-inline-flex align-items-center me-3"
-                          ><i class="ti ti-square-rounded-plus-filled me-1"></i
-                          >Add New</a
-                        >
-                        <a
-                          href="javascript:void(0);"
-                          class="d-flex align-items-center collapse-arrow"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#primaryBorderFour"
-                          aria-expanded="true"
-                          aria-controls="primaryBorderFour"
-                        >
+                        <a href="javascript:void(0);"
+                          class="btn btn-primary btn-xs d-inline-flex align-items-center me-3"><i
+                            class="ti ti-square-rounded-plus-filled me-1"></i>Add New</a>
+                        <a href="javascript:void(0);" class="d-flex align-items-center collapse-arrow"
+                          data-bs-toggle="collapse" data-bs-target="#primaryBorderFour" aria-expanded="true"
+                          aria-controls="primaryBorderFour">
                           <i class="ti ti-chevron-down fs-18"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  id="primaryBorderFour"
-                  class="accordion-collapse collapse show border-top"
-                  aria-labelledby="headingFour"
-                >
+                <div id="primaryBorderFour" class="accordion-collapse collapse show border-top"
+                  aria-labelledby="headingFour">
                   <div class="accordion-body">
                     <div class="files-carousel owl-carousel">
                       <Carousel :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
                         <Slide v-for="item in TaskDetailsCarousel" :key="item.id">
                           <div class="card shadow-none mb-0">
                             <div class="card-body">
-                                <div class="d-flex align-items-center justify-content-between mb-2 pb-2 border-bottom">
-                                    <div class="d-flex align-items-center overflow-hidden">
-                                        <a href="javascript:void(0);" class="avatar avatar-md bg-light me-2">
-                                            <img :src="require(`@/assets/img/icons/${item.Logo}`)" class="w-auto h-auto" alt="img">
-                                        </a>
-                                        <div class="overflow-hidden">
-                                            <h6 class="mb-1 text-truncate">{{item.File_type}}</h6>
-                                            <span>{{item.Size}}</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-download"></i></a>
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
-                                    </div>
+                              <div class="d-flex align-items-center justify-content-between mb-2 pb-2 border-bottom">
+                                <div class="d-flex align-items-center overflow-hidden">
+                                  <a href="javascript:void(0);" class="avatar avatar-md bg-light me-2">
+                                    <img :src="require(`@/assets/img/icons/${item.Logo}`)" class="w-auto h-auto"
+                                      alt="img">
+                                  </a>
+                                  <div class="overflow-hidden">
+                                    <h6 class="mb-1 text-truncate">{{ item.File_type }}</h6>
+                                    <span>{{ item.Size }}</span>
+                                  </div>
                                 </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <p class="fw-medium mb-0">{{ item.Day }}</p>
-                                    <span class="avatar avatar-sm avatar-rounded"><img :src="require(`@/assets/img/users/${item.Image}`)" alt="Img"></span>
+                                <div class="d-flex align-items-center">
+                                  <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i
+                                      class="ti ti-download"></i></a>
+                                  <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i
+                                      class="ti ti-trash"></i></a>
                                 </div>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between">
+                                <p class="fw-medium mb-0">{{ item.Day }}</p>
+                                <span class="avatar avatar-sm avatar-rounded"><img
+                                    :src="require(`@/assets/img/users/${item.Image}`)" alt="Img"></span>
+                              </div>
                             </div>
                           </div>
                         </Slide>
@@ -320,27 +238,19 @@
           <div class="card">
             <div class="card-body p-0">
               <div class="d-flex flex-column">
-                <div
-                  class="d-flex align-items-center justify-content-between border-bottom p-3"
-                >
+                <div class="d-flex align-items-center justify-content-between border-bottom p-3">
                   <p class="mb-0">Project</p>
                   <h6 class="fw-normal">Hospital Administration</h6>
                 </div>
-                <div
-                  class="d-flex align-items-center justify-content-between border-bottom p-3"
-                >
+                <div class="d-flex align-items-center justify-content-between border-bottom p-3">
                   <p class="mb-0">Created on</p>
                   <h6 class="fw-normal">14 Nov 2026</h6>
                 </div>
-                <div
-                  class="d-flex align-items-center justify-content-between border-bottom p-3"
-                >
+                <div class="d-flex align-items-center justify-content-between border-bottom p-3">
                   <p class="mb-0">Started on</p>
                   <h6 class="fw-normal">15 Jan 2026</h6>
                 </div>
-                <div
-                  class="d-flex align-items-center justify-content-between p-3"
-                >
+                <div class="d-flex align-items-center justify-content-between p-3">
                   <p class="mb-0">Due Date</p>
                   <h6 class="fw-normal">15 Nov 2026</h6>
                 </div>
@@ -355,56 +265,35 @@
                     <div class="d-flex align-items-center flex-fill">
                       <h5>Activity</h5>
                       <div class="d-flex align-items-center ms-auto">
-                        <a
-                          href="javascript:void(0);"
-                          class="btn btn-primary btn-xs d-inline-flex align-items-center me-3"
-                          ><i class="ti ti-square-rounded-plus-filled me-1"></i
-                          >Add New</a
-                        >
-                        <a
-                          href="javascript:void(0);"
-                          class="d-flex align-items-center collapse-arrow"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#primaryBorderSix"
-                          aria-expanded="true"
-                          aria-controls="primaryBorderSix"
-                        >
+                        <a href="javascript:void(0);"
+                          class="btn btn-primary btn-xs d-inline-flex align-items-center me-3"><i
+                            class="ti ti-square-rounded-plus-filled me-1"></i>Add New</a>
+                        <a href="javascript:void(0);" class="d-flex align-items-center collapse-arrow"
+                          data-bs-toggle="collapse" data-bs-target="#primaryBorderSix" aria-expanded="true"
+                          aria-controls="primaryBorderSix">
                           <i class="ti ti-chevron-down fs-18"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  id="primaryBorderSix"
-                  class="accordion-collapse collapse show border-top"
-                  aria-labelledby="headingSix"
-                >
+                <div id="primaryBorderSix" class="accordion-collapse collapse show border-top"
+                  aria-labelledby="headingSix">
                   <div class="accordion-body">
                     <div class="notice-widget">
-                      <div
-                        class="d-flex align-items-center justify-content-between mb-4"
-                      >
+                      <div class="d-flex align-items-center justify-content-between mb-4">
                         <div class="d-flex overflow-hidden">
-                          <span
-                            class="bg-info avatar avatar-md me-3 rounded-circle flex-shrink-0"
-                          >
+                          <span class="bg-info avatar avatar-md me-3 rounded-circle flex-shrink-0">
                             <i class="ti ti-checkup-list fs-16"></i>
                           </span>
                           <div class="overflow-hidden">
                             <p class="text-truncate mb-1">
-                              <span class="text-gray-9 fw-medium">Andrew </span
-                              >added a New Task
+                              <span class="text-gray-9 fw-medium">Andrew </span>added a New Task
                             </p>
                             <p class="mb-1">15 May 2024, 6:53 PM</p>
-                            <div
-                              class="todo-inbox-check d-flex align-items-center"
-                            >
+                            <div class="todo-inbox-check d-flex align-items-center">
                               <div class="form-check form-check-md me-2">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                />
+                                <input class="form-check-input" type="checkbox" />
                               </div>
                               <div class="strike-info">
                                 <h4 class="fs-14 fw-medium text-truncate">
@@ -415,66 +304,42 @@
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="d-flex align-items-center justify-content-between mb-4"
-                      >
+                      <div class="d-flex align-items-center justify-content-between mb-4">
                         <div class="d-flex overflow-hidden me-2">
-                          <span
-                            class="bg-warning avatar avatar-md me-3 rounded-circle flex-shrink-0"
-                          >
+                          <span class="bg-warning avatar avatar-md me-3 rounded-circle flex-shrink-0">
                             <i class="ti ti-circle-dot fs-16"></i>
                           </span>
                           <div class="overflow-hidden">
                             <p class="text-truncate mb-1">
-                              <span class="text-gray-9 fw-medium">Jermai </span
-                              >Moved task
+                              <span class="text-gray-9 fw-medium">Jermai </span>Moved task
                               <span class="text-gray-9 fw-medium">
-                                “Private chat module”</span
-                              >
+                                “Private chat module”</span>
                             </p>
                             <p class="mb-1">15 May 2024, 6:53 PM</p>
                             <div class="d-flex align-items-center">
-                              <span class="badge badge-success me-2"
-                                ><i class="ti ti-point-filled me-1"></i
-                                >Completed</span
-                              >
-                              <span
-                                ><i class="ti ti-arrows-left-right me-2"></i
-                              ></span>
-                              <span class="badge badge-purple"
-                                ><i class="ti ti-point-filled me-1"></i
-                                >Inprogress</span
-                              >
+                              <span class="badge badge-success me-2"><i
+                                  class="ti ti-point-filled me-1"></i>Completed</span>
+                              <span><i class="ti ti-arrows-left-right me-2"></i></span>
+                              <span class="badge badge-purple"><i class="ti ti-point-filled me-1"></i>Inprogress</span>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="d-flex align-items-center justify-content-between mb-4"
-                      >
+                      <div class="d-flex align-items-center justify-content-between mb-4">
                         <div class="d-flex overflow-hidden me-2">
-                          <span
-                            class="bg-purple avatar avatar-md me-3 rounded-circle flex-shrink-0"
-                          >
+                          <span class="bg-purple avatar avatar-md me-3 rounded-circle flex-shrink-0">
                             <i class="ti ti-checkup-list fs-16"></i>
                           </span>
                           <div class="overflow-hidden">
                             <p class="text-truncate mb-1">
-                              <span class="text-gray-9 fw-medium">Jermai </span
-                              >Created task
+                              <span class="text-gray-9 fw-medium">Jermai </span>Created task
                               <span class="text-gray-9 fw-medium">
-                                “Private chat module”</span
-                              >
+                                “Private chat module”</span>
                             </p>
                             <p class="mb-1">15 May 2024, 6:53 PM</p>
-                            <div
-                              class="todo-inbox-check d-flex align-items-center"
-                            >
+                            <div class="todo-inbox-check d-flex align-items-center">
                               <div class="form-check form-check-md me-2">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                />
+                                <input class="form-check-input" type="checkbox" />
                               </div>
                               <div class="strike-info">
                                 <h4 class="fs-14 fw-medium text-truncate">
@@ -485,13 +350,9 @@
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="d-flex align-items-center justify-content-between"
-                      >
+                      <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex overflow-hidden">
-                          <span
-                            class="bg-secondary avatar avatar-md me-3 rounded-circle flex-shrink-0"
-                          >
+                          <span class="bg-secondary avatar avatar-md me-3 rounded-circle flex-shrink-0">
                             <i class="ti ti-photo fs-16"></i>
                           </span>
                           <div class="overflow-hidden">
@@ -503,14 +364,9 @@
                               </span>
                             </p>
                             <p class="mb-1">15 May 2024, 6:53 PM</p>
-                            <div
-                              class="todo-inbox-check d-flex align-items-center"
-                            >
+                            <div class="todo-inbox-check d-flex align-items-center">
                               <div class="form-check form-check-md me-2">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                />
+                                <input class="form-check-input" type="checkbox" />
                               </div>
                               <div class="strike-info">
                                 <h4 class="fs-14 fw-medium text-truncate">
@@ -530,10 +386,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

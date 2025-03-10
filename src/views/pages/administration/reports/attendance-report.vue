@@ -30,40 +30,40 @@ export default {
 
         // Move the function declaration outside of the onMounted callback
         function booking_range(start, end) {
-        return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+            return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
         }
 
         onMounted(() => {
-        if (dateRangeInput.value) {
-            const start = moment().subtract(6, "days");
-            const end = moment();
+            if (dateRangeInput.value) {
+                const start = moment().subtract(6, "days");
+                const end = moment();
 
-            new DateRangePicker(
-            dateRangeInput.value,
-            {
-                startDate: start,
-                endDate: end,
-                ranges: {
-                Today: [moment(), moment()],
-                Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-                "Last 7 Days": [moment().subtract(6, "days"), moment()],
-                "Last 30 Days": [moment().subtract(29, "days"), moment()],
-                "This Month": [moment().startOf("month"), moment().endOf("month")],
-                "Last Month": [
-                    moment().subtract(1, "month").startOf("month"),
-                    moment().subtract(1, "month").endOf("month"),
-                ],
-                },
-            },
-            booking_range
-            );
+                new DateRangePicker(
+                    dateRangeInput.value,
+                    {
+                        startDate: start,
+                        endDate: end,
+                        ranges: {
+                            Today: [moment(), moment()],
+                            Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+                            "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                            "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                            "This Month": [moment().startOf("month"), moment().endOf("month")],
+                            "Last Month": [
+                                moment().subtract(1, "month").startOf("month"),
+                                moment().subtract(1, "month").endOf("month"),
+                            ],
+                        },
+                    },
+                    booking_range
+                );
 
-            booking_range(start, end);
-        }
+                booking_range(start, end);
+            }
         });
 
         return {
-        dateRangeInput,
+            dateRangeInput,
         };
     },
 }
@@ -83,22 +83,27 @@ export default {
                 <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
                     <div class="mb-2">
                         <div class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);"
+                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                                data-bs-toggle="dropdown">
                                 <i class="ti ti-file-export me-1"></i>Export
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                            class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                            class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
                     <div class="head-icons ms-2">
-                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                             <i class="ti ti-chevrons-up"></i>
                         </a>
                     </div>
@@ -122,20 +127,25 @@ export default {
                                         </div>
                                     </div>
                                     <div class="attendance-report-bar mb-2">
-                                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+                                        <div class="progress" role="progressbar" aria-label="Success example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 5px;">
                                             <div class="progress-bar bg-success" style="width: 85%"></div>
-                                            </div>
+                                        </div>
                                     </div>
                                     <div>
-                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span class="text-success fs-12 d-flex align-items-center me-1"><i class="ti ti-arrow-wave-right-up me-1"></i>+20.01%</span>from last month</p>
+                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span
+                                                class="text-success fs-12 d-flex align-items-center me-1"><i
+                                                    class="ti ti-arrow-wave-right-up me-1"></i>+20.01%</span>from last
+                                            month</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- /Total Companies -->
 
-                            <!-- Total Companies -->
-                            <div class="col-lg-6 col-md-6 d-flex">
+                        <!-- Total Companies -->
+                        <div class="col-lg-6 col-md-6 d-flex">
                             <div class="card flex-fill">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center overflow-hidden mb-2">
@@ -148,12 +158,17 @@ export default {
                                         </div>
                                     </div>
                                     <div class="attendance-report-bar mb-2">
-                                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+                                        <div class="progress" role="progressbar" aria-label="Success example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 5px;">
                                             <div class="progress-bar bg-success" style="width: 85%"></div>
-                                            </div>
+                                        </div>
                                     </div>
                                     <div>
-                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span class="text-success fs-12 d-flex align-items-center me-1"><i class="ti ti-arrow-wave-right-up me-1"></i>+20.01%</span>from last month</p>
+                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span
+                                                class="text-success fs-12 d-flex align-items-center me-1"><i
+                                                    class="ti ti-arrow-wave-right-up me-1"></i>+20.01%</span>from last
+                                            month</p>
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +176,7 @@ export default {
                         <!-- /Total Companies -->
 
                         <!-- Inactive Companies -->
-                            <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="col-lg-6 col-md-6 d-flex">
                             <div class="card flex-fill">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center overflow-hidden mb-2">
@@ -174,12 +189,17 @@ export default {
                                         </div>
                                     </div>
                                     <div class="attendance-report-bar mb-2">
-                                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+                                        <div class="progress" role="progressbar" aria-label="Success example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 5px;">
                                             <div class="progress-bar bg-success" style="width: 85%"></div>
-                                            </div>
+                                        </div>
                                     </div>
                                     <div>
-                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span class="text-success fs-12 d-flex align-items-center me-1"><i class="ti ti-arrow-wave-right-up me-1"></i>+20.01%</span>from last month</p>
+                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span
+                                                class="text-success fs-12 d-flex align-items-center me-1"><i
+                                                    class="ti ti-arrow-wave-right-up me-1"></i>+20.01%</span>from last
+                                            month</p>
                                     </div>
                                 </div>
                             </div>
@@ -200,12 +220,17 @@ export default {
                                         </div>
                                     </div>
                                     <div class="attendance-report-bar mb-2">
-                                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+                                        <div class="progress" role="progressbar" aria-label="Success example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 5px;">
                                             <div class="progress-bar bg-success" style="width: 85%"></div>
-                                            </div>
+                                        </div>
                                     </div>
                                     <div>
-                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span class="text-success fs-12 d-flex align-items-center me-1"><i class="ti ti-arrow-wave-right-up me-1"></i>+20.01%</span>from last month</p>
+                                        <p class="fs-12 fw-normal d-flex align-items-center text-truncate"><span
+                                                class="text-success fs-12 d-flex align-items-center me-1"><i
+                                                    class="ti ti-arrow-wave-right-up me-1"></i>+20.01%</span>from last
+                                            month</p>
                                     </div>
                                 </div>
                             </div>
@@ -219,10 +244,12 @@ export default {
                             <div class="d-flex flex-wrap justify-content-between align-items-center">
                                 <div class="d-flex align-items-center ">
                                     <span class="me-2"><i class="ti ti-chart-line text-danger"></i></span>
-                                    <h5>Attendance  </h5>
+                                    <h5>Attendance </h5>
                                 </div>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle btn btn-sm fs-12 btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                                    <a href="javascript:void(0);"
+                                        class="dropdown-toggle btn btn-sm fs-12 btn-white d-inline-flex align-items-center"
+                                        data-bs-toggle="dropdown">
                                         This Year
                                     </a>
                                     <ul class="dropdown-menu  dropdown-menu-end p-2">
@@ -240,17 +267,13 @@ export default {
                             </div>
                         </div>
                         <div class="card-body py-0 px-2">
-                            <div id="attendance-report"> 
-                                <apexchart
-                                    type="line"
-                                    height="200"
-                                    :options="attendanceReport.sline"
-                                    :series="attendanceReport.series"
-                                ></apexchart>
+                            <div id="attendance-report">
+                                <apexchart type="line" height="200" :options="attendanceReport.sline"
+                                    :series="attendanceReport.series"></apexchart>
                             </div>
                         </div>
                     </div>
-                </div>					
+                </div>
             </div>
 
             <div class="card">
@@ -259,14 +282,17 @@ export default {
                     <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
                         <div class="me-3">
                             <div class="input-icon-end position-relative">
-                                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput" placeholder="dd/mm/yyyy - dd/mm/yyyy">
+                                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
+                                    placeholder="dd/mm/yyyy - dd/mm/yyyy">
                                 <span class="input-icon-addon">
                                     <i class="ti ti-chevron-down"></i>
                                 </span>
                             </div>
                         </div>
                         <div class="dropdown me-3">
-                            <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);"
+                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                                data-bs-toggle="dropdown">
                                 Select Status
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
@@ -279,7 +305,9 @@ export default {
                             </ul>
                         </div>
                         <div class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);"
+                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                                data-bs-toggle="dropdown">
                                 Sort By : Last 7 Days
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
@@ -312,7 +340,7 @@ export default {
         </div>
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
-            <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+            <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
             <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
         </div>
 

@@ -5,53 +5,35 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a
-              href="javascript:void(0);"
-              data-bs-toggle="modal"
-              data-bs-target="#add_role"
-              class="btn btn-primary d-flex align-items-center"
-              ><i class="ti ti-circle-plus me-2"></i>Add Roles</a
-            >
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_role"
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Roles</a>
           </div>
           <div class="head-icons ms-2">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -61,9 +43,7 @@
 
       <!-- Assets Lists -->
       <div class="card">
-        <div
-          class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-        >
+        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
           <h5>Permissions</h5>
           <p>Role Name : <span class="text-gray-9 fw-medium">Admin</span></p>
         </div>
@@ -470,10 +450,8 @@
       </div>
     </div>
 
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

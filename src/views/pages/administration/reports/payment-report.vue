@@ -30,40 +30,40 @@ export default {
 
         // Move the function declaration outside of the onMounted callback
         function booking_range(start, end) {
-        return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+            return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
         }
 
         onMounted(() => {
-        if (dateRangeInput.value) {
-            const start = moment().subtract(6, "days");
-            const end = moment();
+            if (dateRangeInput.value) {
+                const start = moment().subtract(6, "days");
+                const end = moment();
 
-            new DateRangePicker(
-            dateRangeInput.value,
-            {
-                startDate: start,
-                endDate: end,
-                ranges: {
-                Today: [moment(), moment()],
-                Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-                "Last 7 Days": [moment().subtract(6, "days"), moment()],
-                "Last 30 Days": [moment().subtract(29, "days"), moment()],
-                "This Month": [moment().startOf("month"), moment().endOf("month")],
-                "Last Month": [
-                    moment().subtract(1, "month").startOf("month"),
-                    moment().subtract(1, "month").endOf("month"),
-                ],
-                },
-            },
-            booking_range
-            );
+                new DateRangePicker(
+                    dateRangeInput.value,
+                    {
+                        startDate: start,
+                        endDate: end,
+                        ranges: {
+                            Today: [moment(), moment()],
+                            Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+                            "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                            "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                            "This Month": [moment().startOf("month"), moment().endOf("month")],
+                            "Last Month": [
+                                moment().subtract(1, "month").startOf("month"),
+                                moment().subtract(1, "month").endOf("month"),
+                            ],
+                        },
+                    },
+                    booking_range
+                );
 
-            booking_range(start, end);
-        }
+                booking_range(start, end);
+            }
         });
 
         return {
-        dateRangeInput,
+            dateRangeInput,
         };
     },
 }
@@ -83,26 +83,31 @@ export default {
                 <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
                     <div class="mb-2">
                         <div class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);"
+                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                                data-bs-toggle="dropdown">
                                 <i class="ti ti-file-export me-1"></i>Export
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                            class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                            class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
                     <div class="head-icons ms-2">
-                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                             <i class="ti ti-chevrons-up"></i>
                         </a>
                     </div>
-                </div>	
+                </div>
             </div>
             <!-- /Breadcrumb -->
 
@@ -128,8 +133,7 @@ export default {
                                         <div class="d-flex justify-content-between align-items-center flex-wrap">
                                             <a href="javascript:void(0);"
                                                 class="avatar avatar-md br-5 payment-report-icon  bg-transparent-primary border border-primary">
-                                                <span class="text-primary"><i
-                                                        class="ti ti-currency-dollar"></i></span>
+                                                <span class="text-primary"><i class="ti ti-currency-dollar"></i></span>
                                             </a>
 
                                         </div>
@@ -160,8 +164,7 @@ export default {
                                         <div class="d-flex justify-content-between align-items-center flex-wrap">
                                             <a href="javascript:void(0);"
                                                 class="avatar avatar-md br-5 payment-report-icon  bg-transparent-skyblue border border-skyblue">
-                                                <span class="text-skyblue"><i
-                                                        class="ti ti-currency-dollar"></i></span>
+                                                <span class="text-skyblue"><i class="ti ti-currency-dollar"></i></span>
                                             </a>
 
                                         </div>
@@ -192,8 +195,7 @@ export default {
                                         <div class="d-flex justify-content-between align-items-center flex-wrap">
                                             <a href="javascript:void(0);"
                                                 class="avatar avatar-md br-5 payment-report-icon  bg-transparent-danger border border-danger">
-                                                <span class="text-danger"><i
-                                                        class="ti ti-currency-dollar"></i></span>
+                                                <span class="text-danger"><i class="ti ti-currency-dollar"></i></span>
                                             </a>
 
                                         </div>
@@ -276,18 +278,14 @@ export default {
                             <div class="row align-items-center">
                                 <div class="col-md-6">
                                     <div class="position-relative payment-total">
-                                        <div id="payment-report" >
-                                            <apexchart
-                                                type="donut"
-                                                height="190"
-                                                :options="paymentReport.sline"
-                                                :series="paymentReport.series"
-                                            ></apexchart>
+                                        <div id="payment-report">
+                                            <apexchart type="donut" height="190" :options="paymentReport.sline"
+                                                :series="paymentReport.series"></apexchart>
                                         </div>
-                                    <div class="payment-total-content ">
-                                        <span class="display-3 fs-24 fw-bold text-skyblue">+14%</span>
-                                        <p class="fs-16 fw-normal">vs last year</p>
-                                    </div>
+                                        <div class="payment-total-content ">
+                                            <span class="display-3 fs-24 fw-bold text-skyblue">+14%</span>
+                                            <p class="fs-16 fw-normal">vs last year</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -297,21 +295,24 @@ export default {
                                             <h5 class="fs-20 fw-bold">$54,071 </h5>
                                         </div>
                                         <div class="col-md-6">
-                                            <h6 class="fs-16 text-gray-5 fw-normal side-badge-pink mb-1"> Debit Card</h6>
+                                            <h6 class="fs-16 text-gray-5 fw-normal side-badge-pink mb-1"> Debit Card
+                                            </h6>
                                             <h5 class="fs-20 fw-bold">$54,071 </h5>
                                         </div>
                                         <div class="col-md-6">
-                                            <h6 class="fs-16 text-gray-5 fw-normal side-badge-purple mb-1"> Bank Transfer</h6>
-                                            <h5 class="fs-20 fw-bold">$32,210  </h5>
+                                            <h6 class="fs-16 text-gray-5 fw-normal side-badge-purple mb-1"> Bank
+                                                Transfer</h6>
+                                            <h5 class="fs-20 fw-bold">$32,210 </h5>
                                         </div>
                                         <div class="col-md-6">
-                                            <h6 class="fs-16 text-gray-5 fw-normal side-badge-warning mb-1"> Credit Card</h6>
+                                            <h6 class="fs-16 text-gray-5 fw-normal side-badge-warning mb-1"> Credit Card
+                                            </h6>
                                             <h5 class="fs-20 fw-bold">$32,210 </h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -403,7 +404,7 @@ export default {
         </div>
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
-            <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+            <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
             <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
         </div>
 

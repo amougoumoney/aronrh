@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Blog Tag</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -20,15 +15,8 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Tag</label>
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="tags"
-                  />
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="tags" />
                 </div>
               </div>
               <div class="col-md-12">
@@ -40,11 +28,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-white border me-2"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Add Tag</button>
@@ -61,12 +45,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Blog Tag</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -76,35 +55,20 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Tag</label>
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="tags"
-                  />
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="tags" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="EditBlogtags"
-                    id="editblogtags"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="EditBlogtags" id="editblogtags" placeholder="Active" />
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-white border me-2"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -128,15 +92,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/blog/blog-tags" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/blog/blog-tags" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>
@@ -151,7 +108,7 @@ export default {
     return {
       Blogtags: ["Active", "Inactive"],
       EditBlogtags: ["Active", "Inactive"],
-      tags: ["HRMS", "Recruitment", "HRTech"],
+      tags: ["ARONHR", "Recruitment", "HRTech"],
     };
   },
   components: {

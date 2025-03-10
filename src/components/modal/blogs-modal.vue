@@ -12,7 +12,7 @@ export default {
       editorConfig: {},
       Category: ["Select", "Evlovution", "Guide", "Security"],
       Status: ["Select", "Active", "Inactive"],
-      tagsOne: ["HRMS", "Recruitment", "HRTech"],
+      tagsOne: ["ARONHR", "Recruitment", "HRTech"],
     };
   },
   methods: {
@@ -30,12 +30,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Blog</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -43,17 +38,10 @@ export default {
           <div class="modal-body pb-0">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                >
+                <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                   <div
-                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                  >
-                    <img
-                      src="@/assets/img/profiles/avatar-30.jpg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
+                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
+                    <img src="@/assets/img/profiles/avatar-30.jpg" alt="img" class="rounded-circle" />
                   </div>
                   <div class="profile-upload">
                     <div class="mb-2">
@@ -65,43 +53,28 @@ export default {
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                        >Cancel</a
-                      >
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Blog Title <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Blog Title <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Category <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Category <span class="text-danger"> *</span></label>
                   <vue-select :options="Category" id="evlovution" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Tags <span class="text-danger"> *</span></label
-                  >
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="tagsOne"
-                  />
+                  <label class="form-label">Tags <span class="text-danger"> *</span></label>
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="tagsOne" />
                 </div>
               </div>
               <div class="col-md-4">
@@ -113,11 +86,7 @@ export default {
               <div class="col-lg-12">
                 <div class="mb-3">
                   <label class="form-label">Description</label>
-                  <ckeditor
-                    :editor="editor"
-                    v-model="editorData"
-                    :config="editorConfig"
-                  ></ckeditor>
+                  <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                 </div>
               </div>
             </div>
@@ -140,12 +109,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Blog</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -153,17 +117,10 @@ export default {
           <div class="modal-body pb-0">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                >
+                <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                   <div
-                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                  >
-                    <img
-                      src="@/assets/img/profiles/avatar-30.jpg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
+                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
+                    <img src="@/assets/img/profiles/avatar-30.jpg" alt="img" class="rounded-circle" />
                   </div>
                   <div class="profile-upload">
                     <div class="mb-2">
@@ -175,67 +132,40 @@ export default {
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                        >Cancel</a
-                      >
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Blog Title <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Blog Title <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Category <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="Category"
-                    id="evlovution-one"
-                    placeholder="Evlovution"
-                  />
+                  <label class="form-label">Category <span class="text-danger"> *</span></label>
+                  <vue-select :options="Category" id="evlovution-one" placeholder="Evlovution" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Tags <span class="text-danger"> *</span></label
-                  >
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="tagsOne"
-                  />
+                  <label class="form-label">Tags <span class="text-danger"> *</span></label>
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="tagsOne" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="Status"
-                    id="blog-status-one"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="Status" id="blog-status-one" placeholder="Active" />
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="mb-3">
                   <label class="form-label">Description</label>
-                  <ckeditor
-                    :editor="editor"
-                    v-model="editorData"
-                    :config="editorConfig"
-                  ></ckeditor>
+                  <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                 </div>
               </div>
             </div>
@@ -265,12 +195,7 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/blog/blogs" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>

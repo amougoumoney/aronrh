@@ -5,31 +5,17 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2"></div>
           <div class="mb-2">
-            <a
-              href="javascript:void(0);"
-              data-bs-toggle="modal"
-              data-bs-target="#add_assets"
-              class="btn btn-primary d-flex align-items-center"
-              ><i class="ti ti-circle-plus me-2"></i>Add Category</a
-            >
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_assets"
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Category</a>
           </div>
           <div class="ms-2 head-icons">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -39,55 +25,38 @@
 
       <!-- Assets Lists -->
       <div class="card">
-        <div
-          class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-        >
+        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
           <h5>Asset Category List</h5>
         </div>
         <div class="card-body p-0">
           <div class="custom-datatable-filter table-responsive">
-            <a-table
-              class="table datatable thead-light"
-              :columns="columns"
-              :data-source="data"
-              :row-selection="rowSelection"
-            >
+            <a-table class="table datatable thead-light" :columns="columns" :data-source="data"
+              :row-selection="rowSelection">
               <template #bodyCell="{ column, record }">
-                <template v-if="column.key === 'CategoryName'"
-                  ><h6 class="fs-14 fw-medium">{{ record.CategoryName }}</h6></template
-                >
+                <template v-if="column.key === 'CategoryName'">
+                  <h6 class="fs-14 fw-medium">{{ record.CategoryName }}</h6>
+                </template>
                 <template v-if="column.key === 'Status'">
-                  <span
-                    :class="[
-                      'badge',
-                      record.Status === 'Active'
-                        ? 'badge-success'
-                        : record.Status === 'Inactive'
+                  <span :class="[
+                    'badge',
+                    record.Status === 'Active'
+                      ? 'badge-success'
+                      : record.Status === 'Inactive'
                         ? 'badge-danger'
                         : 'd-inline-flex',
-                      'align-items-center',
-                      'badge-xs',
-                    ]"
-                  >
+                    'align-items-center',
+                    'badge-xs',
+                  ]">
                     <i class="ti ti-point-filled me-1"></i>
                     {{ record.Status }}
                   </span>
                 </template>
                 <template v-if="column.key === 'action'">
                   <div class="action-icon d-inline-flex">
-                    <a
-                      href="javascript:void(0);"
-                      class="me-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_assets"
-                      ><i class="ti ti-edit"></i
-                    ></a>
-                    <a
-                      href="javascript:void(0);"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_modal"
-                      ><i class="ti ti-trash"></i
-                    ></a>
+                    <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_assets"><i
+                        class="ti ti-edit"></i></a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                        class="ti ti-trash"></i></a>
                   </div>
                 </template>
               </template>
@@ -97,10 +66,8 @@
       </div>
     </div>
 
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>
@@ -114,12 +81,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Category</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -135,11 +97,7 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="AddAssetSat"
-                    id="addassetsat"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="AddAssetSat" id="addassetsat" placeholder="Select" />
                 </div>
               </div>
             </div>
@@ -162,12 +120,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Category</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -215,15 +168,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/asset/asset-categories" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/asset/asset-categories" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>
@@ -315,9 +261,9 @@ const data = [
   },
 ];
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 export default {
   setup() {

@@ -5,65 +5,44 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="d-flex align-items-center border bg-white rounded p-1 me-2">
-              <router-link
-                to="/employee/employee-list"
-                class="btn btn-icon btn-sm active bg-primary text-white me-1"
-                ><i class="ti ti-list-tree"></i
-              ></router-link>
-              <router-link to="/employee/employee-grid" class="btn btn-icon btn-sm"
-                ><i class="ti ti-layout-grid"></i
-              ></router-link>
+              <router-link to="/employee/employee-list" class="btn btn-icon btn-sm active bg-primary text-white me-1"><i
+                  class="ti ti-list-tree"></i></router-link>
+              <router-link to="/employee/employee-grid" class="btn btn-icon btn-sm"><i
+                  class="ti ti-layout-grid"></i></router-link>
             </div>
           </div>
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a
-              href="javascript:void(0);"
-              data-bs-toggle="modal"
-              data-bs-target="#add_employee"
-              class="btn btn-primary d-flex align-items-center"
-              ><i class="ti ti-circle-plus me-2"></i>Add New Employee</a
-            >
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_employee"
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add New
+              Employee</a>
           </div>
           <div class="head-icons ms-2">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -78,9 +57,7 @@
             <div class="card-body d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center overflow-hidden">
                 <div>
-                  <span class="avatar avatar-lg bg-dark rounded-circle"
-                    ><i class="ti ti-users"></i
-                  ></span>
+                  <span class="avatar avatar-lg bg-dark rounded-circle"><i class="ti ti-users"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
                   <p class="fs-12 fw-medium mb-1 text-truncate">Total Employee</p>
@@ -104,9 +81,7 @@
             <div class="card-body d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center overflow-hidden">
                 <div>
-                  <span class="avatar avatar-lg bg-success rounded-circle"
-                    ><i class="ti ti-user-share"></i
-                  ></span>
+                  <span class="avatar avatar-lg bg-success rounded-circle"><i class="ti ti-user-share"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
                   <p class="fs-12 fw-medium mb-1 text-truncate">Active</p>
@@ -130,9 +105,7 @@
             <div class="card-body d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center overflow-hidden">
                 <div>
-                  <span class="avatar avatar-lg bg-danger rounded-circle"
-                    ><i class="ti ti-user-pause"></i
-                  ></span>
+                  <span class="avatar avatar-lg bg-danger rounded-circle"><i class="ti ti-user-pause"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
                   <p class="fs-12 fw-medium mb-1 text-truncate">InActive</p>
@@ -156,9 +129,7 @@
             <div class="card-body d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center overflow-hidden">
                 <div>
-                  <span class="avatar avatar-lg bg-info rounded-circle"
-                    ><i class="ti ti-user-plus"></i
-                  ></span>
+                  <span class="avatar avatar-lg bg-info rounded-circle"><i class="ti ti-user-plus"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
                   <p class="fs-12 fw-medium mb-1 text-truncate">New Joiners</p>
@@ -178,58 +149,38 @@
       </div>
 
       <div class="card">
-        <div
-          class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-        >
+        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
           <h5>Plan List</h5>
-          <div
-            class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3"
-          >
+          <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
             <div class="me-3">
               <div class="input-icon-end position-relative">
-                <input
-                  type="text"
-                  class="form-control date-range bookingrange"
-                  ref="dateRangeInput"
-                  placeholder="dd/mm/yyyy - dd/mm/yyyy"
-                />
+                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
+                  placeholder="dd/mm/yyyy - dd/mm/yyyy" />
                 <span class="input-icon-addon">
                   <i class="ti ti-chevron-down"></i>
                 </span>
               </div>
             </div>
             <div class="dropdown me-3">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Designation
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Finance</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Finance</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Developer</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Developer</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Executive</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Executive</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown me-3">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Select Status
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
@@ -237,25 +188,18 @@
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Active</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Inactive</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Inactive</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Sort By : Last 7 Days
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Ascending</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                 </li>
               </ul>
             </div>
@@ -263,12 +207,8 @@
         </div>
         <div class="card-body p-0">
           <div class="custom-datatable-filter table-responsive">
-            <a-table
-              class="table datatable thead-light"
-              :columns="columns"
-              :data-source="data"
-              :row-selection="rowSelection"
-            >
+            <a-table class="table datatable thead-light" :columns="columns" :data-source="data"
+              :row-selection="rowSelection">
               <template #bodyCell="{ column, record }">
                 <template v-if="column.key === 'Name'">
                   <div class="d-flex align-items-center file-name-icon">
@@ -286,55 +226,34 @@
                 </template>
                 <template v-if="column.key === 'Designation'">
                   <div class="dropdown">
-                    <a
-                      href="javascript:void(0);"
-                      class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                      data-bs-toggle="dropdown"
-                    >
+                    <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                      data-bs-toggle="dropdown">
                       <span
-                        class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"
-                      ></span>
+                        class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>
                       {{ record.Designation }}
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end p-3">
                       <li>
-                        <a
-                          href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"
-                          ><span
-                            class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"
-                          ></span
-                          >Finance</a
-                        >
+                        <a href="javascript:void(0);"
+                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+                            class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>Finance</a>
                       </li>
                       <li>
-                        <a
-                          href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"
-                          ><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"
-                          ></span
-                          >Developer
+                        <a href="javascript:void(0);"
+                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>Developer
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"
-                          ><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"
-                          ></span
-                          >Executive
+                        <a href="javascript:void(0);"
+                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>Executive
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"
-                          ><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"
-                          ></span
-                          >Manager
+                        <a href="javascript:void(0);"
+                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>Manager
                         </a>
                       </li>
                     </ul>
@@ -342,37 +261,26 @@
                 </template>
 
                 <template v-if="column.key === 'Status'">
-                  <span
-                    :class="[
-                      'badge',
-                      record.Status === 'Active'
-                        ? 'badge-success'
-                        : record.Status === 'Inactive'
+                  <span :class="[
+                    'badge',
+                    record.Status === 'Active'
+                      ? 'badge-success'
+                      : record.Status === 'Inactive'
                         ? 'badge-danger'
                         : 'd-inline-flex',
-                      'align-items-center',
-                      'badge-xs',
-                    ]"
-                  >
+                    'align-items-center',
+                    'badge-xs',
+                  ]">
                     <i class="ti ti-point-filled me-1"></i>
                     {{ record.Status }}
                   </span>
                 </template>
                 <template v-if="column.key === 'action'">
                   <div class="action-icon d-inline-flex">
-                    <a
-                      href="javascript:void(0);"
-                      class="me-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit-employee-salary"
-                      ><i class="ti ti-edit"></i
-                    ></a>
-                    <a
-                      href="javascript:void(0);"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_modal"
-                      ><i class="ti ti-trash"></i
-                    ></a>
+                    <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
+                      data-bs-target="#edit-employee-salary"><i class="ti ti-edit"></i></a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                        class="ti ti-trash"></i></a>
                   </div>
                 </template>
               </template>
@@ -382,10 +290,8 @@
       </div>
     </div>
 
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>
@@ -617,9 +523,9 @@ const data = [
   },
 ];
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 export default {
   data() {

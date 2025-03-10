@@ -5,20 +5,11 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -36,15 +27,9 @@
                   <h4>Language</h4>
                 </div>
                 <div class="col-md-6 col-sm-8">
-                  <div
-                    class="d-flex justify-content-sm-end align-items-center flex-wrap row-gap-2"
-                  >
+                  <div class="d-flex justify-content-sm-end align-items-center flex-wrap row-gap-2">
                     <div class="me-3">
-                      <vue-select
-                        :options="WerSel"
-                        id="wersel"
-                        placeholder="Select Language"
-                      />
+                      <vue-select :options="WerSel" id="wersel" placeholder="Select Language" />
                     </div>
                     <a href="javascript:void(0);" class="btn btn-primary">Add Language</a>
                   </div>
@@ -75,11 +60,7 @@
                         <tr>
                           <th class="no-sort">
                             <div class="form-check form-check-md">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                id="select-all"
-                              />
+                              <input class="form-check-input" type="checkbox" id="select-all" />
                             </div>
                           </th>
                           <th>Language</th>
@@ -102,32 +83,20 @@
                           </td>
                           <td>
                             <h6 class="d-flex align-items-center fw-medium">
-                              <img
-                                src="@/assets/img/flags/us.png"
-                                class="me-2 avatar avatar-sm avatar-rounded"
-                                alt="Img"
-                              />
+                              <img src="@/assets/img/flags/us.png" class="me-2 avatar avatar-sm avatar-rounded"
+                                alt="Img" />
                               English
                             </h6>
                           </td>
                           <td>en</td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                                checked
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" checked />
                             </div>
                           </td>
                           <td>1620</td>
@@ -147,36 +116,20 @@
                           </td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <a
-                                href="javascript:void(0);"
-                                class="btn btn-sm btn-icon btn-light border me-2"
-                              >
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border me-2">
                                 <i class="ti ti-download"></i>
                               </a>
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >Web</router-link
-                              >
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >App</router-link
-                              >
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >Admin</router-link
-                              >
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">Web</router-link>
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">App</router-link>
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">Admin</router-link>
                               <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border">
                                 <i class="ti ti-trash"></i>
                               </a>
@@ -191,31 +144,20 @@
                           </td>
                           <td>
                             <h6 class="d-flex align-items-center fw-medium">
-                              <img
-                                src="@/assets/img/flags/ae.png"
-                                class="me-2 avatar avatar-sm avatar-rounded"
-                                alt="Img"
-                              />
+                              <img src="@/assets/img/flags/ae.png" class="me-2 avatar avatar-sm avatar-rounded"
+                                alt="Img" />
                               Arabic
                             </h6>
                           </td>
                           <td>ar</td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>1620</td>
@@ -235,36 +177,20 @@
                           </td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <a
-                                href="javascript:void(0);"
-                                class="btn btn-sm btn-icon btn-light border me-2"
-                              >
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border me-2">
                                 <i class="ti ti-download"></i>
                               </a>
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >Web</router-link
-                              >
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >App</router-link
-                              >
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >Admin</router-link
-                              >
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">Web</router-link>
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">App</router-link>
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">Admin</router-link>
                               <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border">
                                 <i class="ti ti-trash"></i>
                               </a>
@@ -279,31 +205,20 @@
                           </td>
                           <td>
                             <h6 class="d-flex align-items-center fw-medium">
-                              <img
-                                src="@/assets/img/flags/de.png"
-                                class="me-2 avatar avatar-sm avatar-rounded"
-                                alt="Img"
-                              />
+                              <img src="@/assets/img/flags/de.png" class="me-2 avatar avatar-sm avatar-rounded"
+                                alt="Img" />
                               German
                             </h6>
                           </td>
                           <td>de</td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>1620</td>
@@ -323,36 +238,20 @@
                           </td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <a
-                                href="javascript:void(0);"
-                                class="btn btn-sm btn-icon btn-light border me-2"
-                              >
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border me-2">
                                 <i class="ti ti-download"></i>
                               </a>
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >Web</router-link
-                              >
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >App</router-link
-                              >
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >Admin</router-link
-                              >
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">Web</router-link>
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">App</router-link>
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">Admin</router-link>
                               <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border">
                                 <i class="ti ti-trash"></i>
                               </a>
@@ -367,31 +266,20 @@
                           </td>
                           <td>
                             <h6 class="d-flex align-items-center fw-medium">
-                              <img
-                                src="@/assets/img/flags/fr.png"
-                                class="me-2 avatar avatar-sm avatar-rounded"
-                                alt="Img"
-                              />
+                              <img src="@/assets/img/flags/fr.png" class="me-2 avatar avatar-sm avatar-rounded"
+                                alt="Img" />
                               French
                             </h6>
                           </td>
                           <td>fr</td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>1620</td>
@@ -411,36 +299,20 @@
                           </td>
                           <td>
                             <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input" type="checkbox" role="switch" />
                             </div>
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <a
-                                href="javascript:void(0);"
-                                class="btn btn-sm btn-icon btn-light border me-2"
-                              >
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border me-2">
                                 <i class="ti ti-download"></i>
                               </a>
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >Web</router-link
-                              >
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >App</router-link
-                              >
-                              <router-link
-                                to="/website-settings/language-web"
-                                class="btn btn-sm border me-2"
-                                >Admin</router-link
-                              >
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">Web</router-link>
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">App</router-link>
+                              <router-link to="/website-settings/language-web"
+                                class="btn btn-sm border me-2">Admin</router-link>
                               <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border">
                                 <i class="ti ti-trash"></i>
                               </a>
@@ -457,10 +329,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

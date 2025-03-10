@@ -5,53 +5,35 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a
-              href="javascript:void(0);"
-              data-bs-toggle="modal"
-              data-bs-target="#add_users"
-              class="btn btn-primary d-flex align-items-center"
-              ><i class="ti ti-circle-plus me-2"></i>Add User</a
-            >
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_users"
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add User</a>
           </div>
           <div class="head-icons ms-2">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -61,39 +43,26 @@
 
       <!-- Performance Indicator list -->
       <div class="card">
-        <div
-          class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-        >
+        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
           <h5>Users List</h5>
-          <div
-            class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3"
-          >
+          <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
             <div class="me-3">
               <div class="input-icon-end position-relative">
-                <input
-                  type="text"
-                  class="form-control date-range bookingrange"
-                  ref="dateRangeInput"
-                  placeholder="dd/mm/yyyy - dd/mm/yyyy"
-                />
+                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
+                  placeholder="dd/mm/yyyy - dd/mm/yyyy" />
                 <span class="input-icon-addon">
                   <i class="ti ti-chevron-down"></i>
                 </span>
               </div>
             </div>
             <div class="dropdown me-3">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Role
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Employee</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Employee</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Client</a>
@@ -101,11 +70,8 @@
               </ul>
             </div>
             <div class="dropdown me-3">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Status
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
@@ -113,45 +79,30 @@
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Active</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Inactive</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Inactive</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Sort By : Last 7 Days
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Recently Added</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Ascending</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Desending</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last Month</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last 7 Days</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                 </li>
               </ul>
             </div>
@@ -159,21 +110,13 @@
         </div>
         <div class="card-body p-0">
           <div class="custom-datatable-filter table-responsive">
-            <a-table
-              class="table datatable thead-light"
-              :columns="columns"
-              :data-source="data"
-              :row-selection="rowSelection"
-            >
+            <a-table class="table datatable thead-light" :columns="columns" :data-source="data"
+              :row-selection="rowSelection">
               <template #bodyCell="{ column, record }">
                 <template v-if="column.key === 'Name'">
                   <div class="d-flex align-items-center file-name-icon">
                     <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded">
-                      <img
-                        :src="`@/assets/img/users/${record.Image}`"
-                        class="img-fluid"
-                        alt="img"
-                      />
+                      <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid" alt="img" />
                     </a>
                     <div class="ms-2">
                       <h6 class="fw-medium">
@@ -183,55 +126,40 @@
                   </div>
                 </template>
                 <template v-if="column.key === 'Role'">
-                  <span
-                    :class="[
-                      'badge',
-                      record.Role === 'Employee'
-                        ? 'badge-pink-transparent'
-                        : record.Role === 'Client'
+                  <span :class="[
+                    'badge',
+                    record.Role === 'Employee'
+                      ? 'badge-pink-transparent'
+                      : record.Role === 'Client'
                         ? 'badge-soft-purple'
                         : 'badge-md',
-                      'p-2 fs-10',
-                    ]"
-                  >
+                    'p-2 fs-10',
+                  ]">
                     {{ record.Role }}
                   </span>
                 </template>
                 <template v-if="column.key === 'Status'">
-                  <span
-                    :class="[
-                      'badge',
-                      record.Status === 'Active'
-                        ? 'badge-success'
-                        : record.Status === 'Inactive'
+                  <span :class="[
+                    'badge',
+                    record.Status === 'Active'
+                      ? 'badge-success'
+                      : record.Status === 'Inactive'
                         ? 'badge-danger'
                         : 'd-inline-flex',
-                      'align-items-center',
-                      'badge-xs',
-                    ]"
-                  >
+                    'align-items-center',
+                    'badge-xs',
+                  ]">
                     <i class="ti ti-point-filled me-1"></i>
                     {{ record.Status }}
                   </span>
                 </template>
                 <template v-if="column.key === 'action'">
                   <div class="action-icon d-inline-flex">
-                    <a href="javascript:void(0);" class="me-2"
-                      ><i class="ti ti-shield"></i
-                    ></a>
-                    <a
-                      href="javascript:void(0);"
-                      class="me-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_user"
-                      ><i class="ti ti-edit"></i
-                    ></a>
-                    <a
-                      href="javascript:void(0);"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_modal"
-                      ><i class="ti ti-trash"></i
-                    ></a>
+                    <a href="javascript:void(0);" class="me-2"><i class="ti ti-shield"></i></a>
+                    <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_user"><i
+                        class="ti ti-edit"></i></a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                        class="ti ti-trash"></i></a>
                   </div>
                 </template>
               </template>
@@ -242,10 +170,8 @@
       <!-- /Performance Indicator list -->
     </div>
 
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>
@@ -407,9 +333,9 @@ const data = [
   },
 ];
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 import "daterangepicker/daterangepicker.css";
 import "daterangepicker/daterangepicker.js";

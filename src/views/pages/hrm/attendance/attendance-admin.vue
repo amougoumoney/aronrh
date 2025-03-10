@@ -37,7 +37,8 @@ export default {
                         <div class="d-flex align-items-center border bg-white rounded p-1 me-2">
                             <router-link to="/attendance/attendance-employee" class="btn btn-icon btn-sm me-1"><i
                                     class="ti ti-brand-days-counter"></i></router-link>
-                            <router-link to="/attendance/attendance-admin" class="btn btn-icon btn-sm active bg-primary text-white"><i
+                            <router-link to="/attendance/attendance-admin"
+                                class="btn btn-icon btn-sm active bg-primary text-white"><i
                                     class="ti ti-calendar-event"></i></router-link>
                         </div>
                     </div>
@@ -66,7 +67,8 @@ export default {
                                 class="ti ti-file-analytics me-2"></i>Report</a>
                     </div>
                     <div class="ms-2 head-icons">
-                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                             <i class="ti ti-chevrons-up"></i>
                         </a>
                     </div>
@@ -191,14 +193,9 @@ export default {
                                 <span class="input-icon-addon">
                                     <i class="ti ti-calendar"></i>
                                 </span>
-                                <date-picker
-                                    v-model="startdate"
-                                    class="form-control datetimepicker"
-                                    placeholder="dd/mm/yyyy"
-                                    :editable="true"
-                                    :clearable="false"
-                                    :input-format="dateFormat"
-                                />
+                                <date-picker v-model="startdate" class="form-control datetimepicker"
+                                    placeholder="dd/mm/yyyy" :editable="true" :clearable="false"
+                                    :input-format="dateFormat" />
                             </div>
                         </div>
                         <div class="dropdown me-3">
@@ -271,7 +268,7 @@ export default {
         </div>
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
-            <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+            <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
             <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
         </div>
 

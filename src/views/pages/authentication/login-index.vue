@@ -94,7 +94,7 @@ const login = async () => {
 
     localStorage.setItem('token', 'fake-jwt-token');
     localStorage.setItem('user', JSON.stringify(userL));
-    localStorage.setItem('userRole', userL.roles[0].toLowerCase()); 
+    localStorage.setItem('userRole', userL.roles[0].toLowerCase());
     localStorage.setItem('permissions', userL.permissions[0].toLowerCase());
     redirectBasedOnRole();
   } catch (err) {
@@ -126,8 +126,7 @@ const login = async () => {
               <div class="mx-auto mb-5 text-center">
                 <!-- Custom Logo Box -->
                 <div class="login-logo-box">
-                  <h1 class="login-logo-title">HRMS</h1>
-                  <span class="login-logo-tagline">SMRU / BHF</span>
+                  <h1 class="login-logo-title">AR HR</h1>
                 </div>
               </div>
 
@@ -198,12 +197,8 @@ const login = async () => {
 
             <!-- Footer with logos -->
             <div class="footer mt-4">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="@/assets/img/smru-logo.png" alt="SMRU Logo" class="me-4" style="max-height: 50px;" />
-                <img src="@/assets/img/bhf-logo.png" alt="BHF Logo" style="max-height: 50px;" />
-              </div>
               <div class="text-center mt-2">
-                <small class="text-muted">&copy; 2025 SMRU/BHF HR Management System</small>
+                <small class="text-muted">&copy; 2025 ARONHR/ HR Management System</small>
               </div>
             </div>
           </div>

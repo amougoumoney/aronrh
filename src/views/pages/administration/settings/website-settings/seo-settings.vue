@@ -5,20 +5,11 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -102,12 +93,9 @@
                         <label class="form-label mb-md-0">Og Image</label>
                       </div>
                       <div class="col-xxl-10 col-md-9">
-                        <div
-                          class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                        >
+                        <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                           <div
-                            class="d-flex align-items-center justify-content-center og-upload bg-white rounded border border-dashed me-2 flex-shrink-0 text-dark frames"
-                          >
+                            class="d-flex align-items-center justify-content-center og-upload bg-white rounded border border-dashed me-2 flex-shrink-0 text-dark frames">
                             <i class="ti ti-photo text-gray-3 fs-16"></i>
                           </div>
                           <div class="profile-upload">
@@ -118,15 +106,9 @@
                             <div class="profile-uploader d-flex align-items-center">
                               <div class="drag-upload-btn btn btn-sm btn-primary me-2">
                                 Upload
-                                <input
-                                  type="file"
-                                  class="form-control image-sign"
-                                  multiple=""
-                                />
+                                <input type="file" class="form-control image-sign" multiple="" />
                               </div>
-                              <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                                >Cancel</a
-                              >
+                              <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                             </div>
                           </div>
                         </div>
@@ -146,10 +128,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

@@ -5,15 +5,12 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a href="javascript:void(0);" class="btn btn-dark d-flex align-items-center"
-              ><i class="ti ti-download me-2"></i>Download</a
-            >
+            <a href="javascript:void(0);" class="btn btn-dark d-flex align-items-center"><i
+                class="ti ti-download me-2"></i>Download</a>
           </div>
         </div>
       </div>
@@ -23,22 +20,16 @@
       <div>
         <div class="row">
           <div class="col-sm-10 mx-auto">
-            <router-link
-              to="/applications/invoices"
-              class="back-icon d-flex align-items-center fs-12 fw-medium mb-3 d-inline-flex"
-            >
-              <span
-                class="d-flex justify-content-center align-items-center rounded-circle me-2"
-              >
+            <router-link to="/applications/invoices"
+              class="back-icon d-flex align-items-center fs-12 fw-medium mb-3 d-inline-flex">
+              <span class="d-flex justify-content-center align-items-center rounded-circle me-2">
                 <i class="ti ti-arrow-left"></i>
               </span>
               Back to List
             </router-link>
             <div class="card">
               <div class="card-body">
-                <div
-                  class="row justify-content-between align-items-center border-bottom mb-3"
-                >
+                <div class="row justify-content-between align-items-center border-bottom mb-3">
                   <div class="col-md-6">
                     <div class="mb-2">
                       <img src="@/assets/img/logo.svg" class="img-fluid" alt="logo" />
@@ -85,9 +76,8 @@
                   <div class="col-md-2">
                     <div class="mb-3">
                       <p class="text-title mb-2 fw-medium">Payment Status</p>
-                      <span class="badge badge-danger align-items-center mb-3"
-                        ><i class="ti ti-point-filled"></i>Due in 10 Days</span
-                      >
+                      <span class="badge badge-danger align-items-center mb-3"><i class="ti ti-point-filled"></i>Due in
+                        10 Days</span>
                       <div>
                         <img src="@/assets/img/qr.svg" class="img-fluid" alt="QR" />
                       </div>
@@ -97,9 +87,7 @@
                 <div>
                   <p class="fw-medium">
                     Invoice For :
-                    <span class="text-dark fw-medium"
-                      >Design & development of Website</span
-                    >
+                    <span class="text-dark fw-medium">Design & development of Website</span>
                   </p>
                   <div class="table-responsive mb-3">
                     <table class="table">
@@ -114,28 +102,36 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td><h6>UX Strategy</h6></td>
+                          <td>
+                            <h6>UX Strategy</h6>
+                          </td>
                           <td class="text-gray-9 fw-medium text-end">1</td>
                           <td class="text-gray-9 fw-medium text-end">$500</td>
                           <td class="text-gray-9 fw-medium text-end">$100</td>
                           <td class="text-gray-9 fw-medium text-end">$500</td>
                         </tr>
                         <tr>
-                          <td><h6>Design System</h6></td>
+                          <td>
+                            <h6>Design System</h6>
+                          </td>
                           <td class="text-gray-9 fw-medium text-end">1</td>
                           <td class="text-gray-9 fw-medium text-end">$5000</td>
                           <td class="text-gray-9 fw-medium text-end">$100</td>
                           <td class="text-gray-9 fw-medium text-end">$5000</td>
                         </tr>
                         <tr>
-                          <td><h6>Brand Guidellines</h6></td>
+                          <td>
+                            <h6>Brand Guidellines</h6>
+                          </td>
                           <td class="text-gray-9 fw-medium text-end">1</td>
                           <td class="text-gray-9 fw-medium text-end">$5000</td>
                           <td class="text-gray-9 fw-medium text-end">$100</td>
                           <td class="text-gray-9 fw-medium text-end">$5000</td>
                         </tr>
                         <tr>
-                          <td><h6>Social Media Template</h6></td>
+                          <td>
+                            <h6>Social Media Template</h6>
+                          </td>
                           <td class="text-gray-9 fw-medium text-end">1</td>
                           <td class="text-gray-9 fw-medium text-end">$5000</td>
                           <td class="text-gray-9 fw-medium text-end">$100</td>
@@ -162,27 +158,19 @@
                     </div>
                   </div>
                   <div class="col-md-5">
-                    <div
-                      class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3">
                       <p class="mb-0">Sub Total</p>
                       <p class="text-dark fw-medium mb-2">$5500</p>
                     </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3">
                       <p class="mb-0">Discount(0%)</p>
                       <p class="text-dark fw-medium mb-2">$400</p>
                     </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-2 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center mb-2 pe-3">
                       <p class="mb-0">VAT(5%)</p>
                       <p class="text-dark fw-medium mb-2">$54</p>
                     </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-2 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center mb-2 pe-3">
                       <h5>Total Amount</h5>
                       <h5>$5775</h5>
                     </div>
@@ -191,9 +179,7 @@
                     </p>
                   </div>
                 </div>
-                <div
-                  class="row justify-content-end align-items-end text-end border-bottom mb-3"
-                >
+                <div class="row justify-content-end align-items-end text-end border-bottom mb-3">
                   <div class="col-md-3">
                     <div class="text-end">
                       <img src="@/assets/img/sign.svg" class="img-fluid" alt="sign" />
@@ -229,24 +215,16 @@
       <!-- /Invoices -->
 
       <div class="d-flex justify-content-center align-items-center mb-4">
-        <a
-          href="javascript:void(0);"
-          class="btn btn-primary d-flex justify-content-center align-items-center me-2"
-          ><i class="ti ti-printer me-2"></i>Print Invoice</a
-        >
-        <a
-          href="javascript:void(0);"
-          class="btn btn-white d-flex justify-content-center align-items-center border"
-          ><i class="ti ti-copy me-2"></i>Clone Invoice</a
-        >
+        <a href="javascript:void(0);" class="btn btn-primary d-flex justify-content-center align-items-center me-2"><i
+            class="ti ti-printer me-2"></i>Print Invoice</a>
+        <a href="javascript:void(0);" class="btn btn-white d-flex justify-content-center align-items-center border"><i
+            class="ti ti-copy me-2"></i>Clone Invoice</a>
       </div>
     </div>
 
     <!-- Footer -->
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>Designed & Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
     </div>
     <!-- /Footer -->

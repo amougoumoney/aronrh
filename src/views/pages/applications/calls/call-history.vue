@@ -7,15 +7,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -23,85 +16,55 @@
       <!-- /Breadcrumb -->
 
       <div class="card">
-        <div
-          class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-        >
+        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
           <h5>Call History List</h5>
-          <div
-            class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3"
-          >
+          <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
             <div class="me-3">
               <div class="input-icon-end position-relative">
-                <input
-                  type="text"
-                  class="form-control date-range bookingrange"
-                  ref="dateRangeInput"
-                  placeholder="dd/mm/yyyy - dd/mm/yyyy"
-                />
+                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
+                  placeholder="dd/mm/yyyy - dd/mm/yyyy" />
                 <span class="input-icon-addon">
                   <i class="ti ti-chevron-down"></i>
                 </span>
               </div>
             </div>
             <div class="dropdown me-3">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Call Type
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Incoming</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Incoming</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Outgoing</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Outgoing</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Missed Call</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Missed Call</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Sort By : Last 7 Days
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Recently Added</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Ascending</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Desending</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last Month</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last 7 Days</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                 </li>
               </ul>
             </div>
@@ -109,35 +72,19 @@
         </div>
         <div class="card-body p-0">
           <div class="custom-datatable-filter table-responsive">
-            <a-table
-              class="table datatable"
-              :columns="columns"
-              :data-source="data"
-              :row-selection="rowSelection"
-            >
+            <a-table class="table datatable" :columns="columns" :data-source="data" :row-selection="rowSelection">
               <template #bodyCell="{ column, record }">
                 <template v-if="column.key === 'Name'">
                   <div class="d-flex align-items-center">
-                    <a
-                      href="javascript:void(0);"
-                      class="avatar avatar-md"
-                      data-bs-toggle="modal"
-                      data-bs-target="#view_details"
-                    >
-                      <img
-                        :src="require(`@/assets/img/users/${record.Image}`)"
-                        class="img-fluid rounded-circle"
-                        alt="img"
-                      />
+                    <a href="javascript:void(0);" class="avatar avatar-md" data-bs-toggle="modal"
+                      data-bs-target="#view_details">
+                      <img :src="require(`@/assets/img/users/${record.Image}`)" class="img-fluid rounded-circle"
+                        alt="img" />
                     </a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#view_details"
-                          >{{ record.Name }}</a
-                        >
+                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#view_details">{{
+                          record.Name }}</a>
                       </p>
                       <span class="fs-12">{{ record.Email }}</span>
                     </div>
@@ -150,19 +97,10 @@
                 </template>
                 <template v-if="column.key === 'action'">
                   <div class="action-icon d-inline-flex">
-                    <a
-                      href="javascript:void(0);"
-                      class="me-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#call_history"
-                      ><i class="ti ti-eye"></i
-                    ></a>
-                    <a
-                      href="javascript:void(0);"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_modal"
-                      ><i class="ti ti-trash"></i
-                    ></a>
+                    <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#call_history"><i
+                        class="ti ti-eye"></i></a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                        class="ti ti-trash"></i></a>
                   </div>
                 </template>
               </template>
@@ -172,10 +110,8 @@
       </div>
     </div>
 
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014-2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014-2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>
@@ -361,9 +297,9 @@ const data = [
   },
 ];
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 export default {
   data() {

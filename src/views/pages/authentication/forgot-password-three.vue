@@ -27,9 +27,7 @@ export default {
 <template>
   <div class="container-fuild">
     <div class="w-100 overflow-hidden position-relative flex-wrap d-block vh-100">
-      <div
-        class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap"
-      >
+      <div class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap">
         <div class="col-md-4 mx-auto p-4">
           <form @submit.prevent="submitForm">
             <div>
@@ -65,7 +63,7 @@ export default {
               </div>
               <div class="mt-5 text-center">
                 <p class="mb-0 text-gray-9">
-                  Copyright &copy; {{ new Date().getFullYear() }} - Smarthr
+                  Copyright &copy; {{ new Date().getFullYear() }} - AronHR
                 </p>
               </div>
             </div>

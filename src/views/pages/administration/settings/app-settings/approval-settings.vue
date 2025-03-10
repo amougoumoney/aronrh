@@ -5,20 +5,11 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -40,32 +31,19 @@
                     <div class="col-md-12 d-flex">
                       <div class="flex-fill">
                         <h6 class="mb-3">Expense Approval</h6>
-                        <div
-                          class="d-flex justify align-items-start flex-wrap row-gap-3 pb-2 mb-2"
-                        >
+                        <div class="d-flex justify align-items-start flex-wrap row-gap-3 pb-2 mb-2">
                           <h5>Default Expense Approval</h5>
 
                           <div class="form-check ms-3">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="exampleRadios"
-                              id="exampleRadios1"
-                              value="option1"
-                              checked
-                            />
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                              value="option1" checked />
                             <label class="form-check-label" for="exampleRadios1">
                               Sequence Approval (Chain)
                             </label>
                           </div>
                           <div class="form-check ms-3">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="exampleRadios"
-                              id="exampleRadios2"
-                              value="option1"
-                            />
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                              value="option1" />
                             <label class="form-check-label" for="exampleRadios2">
                               Simultaneous Approval
                             </label>
@@ -77,11 +55,7 @@
                               <label class="form-label mb-0">Expense Approvers</label>
                             </div>
                             <div class="flex-fill">
-                              <vue-select
-                                :options="LeadSele"
-                                id="leadsele"
-                                placeholder="Select"
-                              />
+                              <vue-select :options="LeadSele" id="leadsele" placeholder="Select" />
                             </div>
                           </div>
                         </div>
@@ -94,31 +68,18 @@
                     <div class="col-md-12 d-flex">
                       <div class="flex-fill">
                         <h6 class="mb-3">Leave Approval</h6>
-                        <div
-                          class="d-flex justify align-items-start flex-wrap row-gap-3 pb-2 mb-2"
-                        >
+                        <div class="d-flex justify align-items-start flex-wrap row-gap-3 pb-2 mb-2">
                           <h5>Default Expense Approval</h5>
                           <div class="form-check ms-3">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="exampleRadioss"
-                              id="sequence"
-                              value="option1"
-                              checked
-                            />
+                            <input class="form-check-input" type="radio" name="exampleRadioss" id="sequence"
+                              value="option1" checked />
                             <label class="form-check-label" for="sequence">
                               Sequence Approval (Chain)
                             </label>
                           </div>
                           <div class="form-check ms-3">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="exampleRadioss"
-                              id="sequence1"
-                              value="option1"
-                            />
+                            <input class="form-check-input" type="radio" name="exampleRadioss" id="sequence1"
+                              value="option1" />
                             <label class="form-check-label" for="sequence1">
                               Simultaneous Approval
                             </label>
@@ -130,11 +91,7 @@
                               <label class="form-label mb-0">Leave Approvers</label>
                             </div>
                             <div class="flex-fill">
-                              <vue-select
-                                :options="ManageLea"
-                                id="managle"
-                                placeholder="Select"
-                              />
+                              <vue-select :options="ManageLea" id="managle" placeholder="Select" />
                             </div>
                           </div>
                         </div>
@@ -147,31 +104,18 @@
                     <div class="col-md-12 d-flex">
                       <div class="flex-fill">
                         <h6 class="mb-3">Offer Approval</h6>
-                        <div
-                          class="d-flex justify align-items-start flex-wrap row-gap-3 pb-2 mb-2"
-                        >
+                        <div class="d-flex justify align-items-start flex-wrap row-gap-3 pb-2 mb-2">
                           <h5>Default Expense Approval</h5>
                           <div class="form-check ms-3">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="exampleRadioss"
-                              id="sequence3"
-                              value="option1"
-                              checked
-                            />
+                            <input class="form-check-input" type="radio" name="exampleRadioss" id="sequence3"
+                              value="option1" checked />
                             <label class="form-check-label" for="sequence3">
                               Sequence Approval (Chain)
                             </label>
                           </div>
                           <div class="form-check ms-3">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="exampleRadioss"
-                              id="sequence4"
-                              value="option1"
-                            />
+                            <input class="form-check-input" type="radio" name="exampleRadioss" id="sequence4"
+                              value="option1" />
                             <label class="form-check-label" for="sequence4">
                               Simultaneous Approval
                             </label>
@@ -193,10 +137,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

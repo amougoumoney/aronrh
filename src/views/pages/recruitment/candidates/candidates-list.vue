@@ -25,40 +25,40 @@ export default {
 
         // Move the function declaration outside of the onMounted callback
         function booking_range(start, end) {
-        return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+            return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
         }
 
         onMounted(() => {
-        if (dateRangeInput.value) {
-            const start = moment().subtract(6, "days");
-            const end = moment();
+            if (dateRangeInput.value) {
+                const start = moment().subtract(6, "days");
+                const end = moment();
 
-            new DateRangePicker(
-            dateRangeInput.value,
-            {
-                startDate: start,
-                endDate: end,
-                ranges: {
-                Today: [moment(), moment()],
-                Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-                "Last 7 Days": [moment().subtract(6, "days"), moment()],
-                "Last 30 Days": [moment().subtract(29, "days"), moment()],
-                "This Month": [moment().startOf("month"), moment().endOf("month")],
-                "Last Month": [
-                    moment().subtract(1, "month").startOf("month"),
-                    moment().subtract(1, "month").endOf("month"),
-                ],
-                },
-            },
-            booking_range
-            );
+                new DateRangePicker(
+                    dateRangeInput.value,
+                    {
+                        startDate: start,
+                        endDate: end,
+                        ranges: {
+                            Today: [moment(), moment()],
+                            Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+                            "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                            "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                            "This Month": [moment().startOf("month"), moment().endOf("month")],
+                            "Last Month": [
+                                moment().subtract(1, "month").startOf("month"),
+                                moment().subtract(1, "month").endOf("month"),
+                            ],
+                        },
+                    },
+                    booking_range
+                );
 
-            booking_range(start, end);
-        }
+                booking_range(start, end);
+            }
         });
 
         return {
-        dateRangeInput,
+            dateRangeInput,
         };
     },
 }
@@ -68,19 +68,23 @@ export default {
     <layout-header></layout-header>
     <layout-sidebar></layout-sidebar>
 
-   <!-- Page Wrapper -->
+    <!-- Page Wrapper -->
     <div class="page-wrapper">
         <div class="content">
 
             <!-- Breadcrumb -->
             <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
-               <index-breadcrumb :title="title" :text="text" :text1="text1" />
+                <index-breadcrumb :title="title" :text="text" :text1="text1" />
                 <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
                     <div class="me-2 mb-2">
                         <div class="d-flex align-items-center border bg-white rounded p-1 me-2">
-                            <router-link to="/recuritment/candidates-kanban" class="btn btn-icon btn-sm me-1"><i class="ti ti-layout-kanban"></i></router-link>
-                            <router-link to="/recuritment/candidates" class="btn btn-icon btn-sm active bg-primary text-white me-1"><i class="ti ti-list-tree"></i></router-link>                                
-                            <router-link to="/recuritment/candidates-grid" class="btn btn-icon btn-sm"><i class="ti ti-layout-grid"></i></router-link>
+                            <router-link to="/recuritment/candidates-kanban" class="btn btn-icon btn-sm me-1"><i
+                                    class="ti ti-layout-kanban"></i></router-link>
+                            <router-link to="/recuritment/candidates"
+                                class="btn btn-icon btn-sm active bg-primary text-white me-1"><i
+                                    class="ti ti-list-tree"></i></router-link>
+                            <router-link to="/recuritment/candidates-grid" class="btn btn-icon btn-sm"><i
+                                    class="ti ti-layout-grid"></i></router-link>
                         </div>
                     </div>
                     <div class="me-2 mb-2">
@@ -103,7 +107,8 @@ export default {
                         </div>
                     </div>
                     <div class="head-icons ms-2">
-                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                             <i class="ti ti-chevrons-up"></i>
                         </a>
                     </div>
@@ -199,7 +204,7 @@ export default {
         </div>
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
-            <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+            <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
             <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
         </div>
 

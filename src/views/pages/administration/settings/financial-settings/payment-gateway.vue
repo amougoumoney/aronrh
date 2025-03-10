@@ -5,20 +5,11 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -38,15 +29,9 @@
                 <div class="row">
                   <div class="col-xxl-6 col-xl-6 d-flex">
                     <div class="card mb-3 flex-fill">
-                      <div
-                        class="card-header d-flex align-items-center justify-content-between border-0 mb-3 pb-0"
-                      >
-                        <span
-                          class="d-inline-flex align-items-center justify-content-center border rounded p-2"
-                          ><img
-                            src="@/assets/img/payment-gateway/payment-gateway-01.svg"
-                            alt="Img"
-                        /></span>
+                      <div class="card-header d-flex align-items-center justify-content-between border-0 mb-3 pb-0">
+                        <span class="d-inline-flex align-items-center justify-content-center border rounded p-2"><img
+                            src="@/assets/img/payment-gateway/payment-gateway-01.svg" alt="Img" /></span>
                         <div class="d-flex align-items-center">
                           <div class="status-toggle modal-status">
                             <input type="checkbox" id="user1" class="check" checked />
@@ -60,35 +45,19 @@
                           make an online payment.
                         </p>
                       </div>
-                      <div
-                        class="card-footer d-flex align-items-center justify-content-between"
-                      >
-                        <a
-                          href="javascript:void(0);"
-                          class="btn btn-sm btn-outline-dark rounded"
-                        >
-                          <i class="ti ti-checks me-2"></i>Connected</a
-                        >
-                        <a
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#connect_payment"
-                          ><i class="ti ti-settings fs-24 fw-normal"></i
-                        ></a>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a href="javascript:void(0);" class="btn btn-sm btn-outline-dark rounded">
+                          <i class="ti ti-checks me-2"></i>Connected</a>
+                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#connect_payment"><i
+                            class="ti ti-settings fs-24 fw-normal"></i></a>
                       </div>
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 d-flex">
                     <div class="card mb-3 flex-fill">
-                      <div
-                        class="card-header d-flex align-items-center justify-content-between border-0 mb-3 pb-0"
-                      >
-                        <span
-                          class="d-inline-flex align-items-center justify-content-center border rounded p-2"
-                          ><img
-                            src="@/assets/img/payment-gateway/payment-gateway-02.svg"
-                            alt="Img"
-                        /></span>
+                      <div class="card-header d-flex align-items-center justify-content-between border-0 mb-3 pb-0">
+                        <span class="d-inline-flex align-items-center justify-content-center border rounded p-2"><img
+                            src="@/assets/img/payment-gateway/payment-gateway-02.svg" alt="Img" /></span>
                         <div class="d-flex align-items-center">
                           <div class="status-toggle modal-status">
                             <input type="checkbox" id="user2" class="check" />
@@ -101,35 +70,19 @@
                           APIs to accept credit cards, manage subscriptions, send money.
                         </p>
                       </div>
-                      <div
-                        class="card-footer d-flex align-items-center justify-content-between"
-                      >
-                        <a
-                          href="javascript:void(0);"
-                          class="btn btn-sm btn-outline-dark rounded"
-                        >
-                          <i class="ti ti-checks me-2"></i>Connected</a
-                        >
-                        <a
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#connect_payment"
-                          ><i class="ti ti-settings fs-24 fw-normal"></i
-                        ></a>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a href="javascript:void(0);" class="btn btn-sm btn-outline-dark rounded">
+                          <i class="ti ti-checks me-2"></i>Connected</a>
+                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#connect_payment"><i
+                            class="ti ti-settings fs-24 fw-normal"></i></a>
                       </div>
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 d-flex">
                     <div class="card mb-3 flex-fill">
-                      <div
-                        class="card-header d-flex align-items-center justify-content-between border-0 mb-3 pb-0"
-                      >
-                        <span
-                          class="d-inline-flex align-items-center justify-content-center border rounded p-2"
-                          ><img
-                            src="@/assets/img/payment-gateway/payment-gateway-03.svg"
-                            alt="Img"
-                        /></span>
+                      <div class="card-header d-flex align-items-center justify-content-between border-0 mb-3 pb-0">
+                        <span class="d-inline-flex align-items-center justify-content-center border rounded p-2"><img
+                            src="@/assets/img/payment-gateway/payment-gateway-03.svg" alt="Img" /></span>
                         <div class="d-flex align-items-center">
                           <div class="status-toggle modal-status">
                             <input type="checkbox" id="user6" class="check" />
@@ -143,35 +96,19 @@
                           with low fees.
                         </p>
                       </div>
-                      <div
-                        class="card-footer d-flex align-items-center justify-content-between"
-                      >
-                        <a
-                          href="javascript:void(0);"
-                          class="btn btn-sm btn-outline-dark rounded"
-                        >
-                          <i class="ti ti-checks me-2"></i>Connected</a
-                        >
-                        <a
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#connect_payment"
-                          ><i class="ti ti-settings fs-24 fw-normal"></i
-                        ></a>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a href="javascript:void(0);" class="btn btn-sm btn-outline-dark rounded">
+                          <i class="ti ti-checks me-2"></i>Connected</a>
+                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#connect_payment"><i
+                            class="ti ti-settings fs-24 fw-normal"></i></a>
                       </div>
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 d-flex">
                     <div class="card mb-3 flex-fill">
-                      <div
-                        class="card-header d-flex align-items-center justify-content-between border-0 mb-3 pb-0"
-                      >
-                        <span
-                          class="d-inline-flex align-items-center justify-content-center border rounded p-2"
-                          ><img
-                            src="@/assets/img/payment-gateway/payment-gateway-04.svg"
-                            alt="Img"
-                        /></span>
+                      <div class="card-header d-flex align-items-center justify-content-between border-0 mb-3 pb-0">
+                        <span class="d-inline-flex align-items-center justify-content-center border rounded p-2"><img
+                            src="@/assets/img/payment-gateway/payment-gateway-04.svg" alt="Img" /></span>
                         <div class="d-flex align-items-center">
                           <div class="status-toggle modal-status">
                             <input type="checkbox" id="user10" class="check" />
@@ -185,21 +122,11 @@
                           mobile payments.
                         </p>
                       </div>
-                      <div
-                        class="card-footer d-flex align-items-center justify-content-between"
-                      >
-                        <a
-                          href="javascript:void(0);"
-                          class="btn btn-sm btn-outline-dark rounded"
-                        >
-                          <i class="ti ti-checks me-2"></i>Connected</a
-                        >
-                        <a
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#connect_payment"
-                          ><i class="ti ti-settings fs-24 fw-normal"></i
-                        ></a>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a href="javascript:void(0);" class="btn btn-sm btn-outline-dark rounded">
+                          <i class="ti ti-checks me-2"></i>Connected</a>
+                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#connect_payment"><i
+                            class="ti ti-settings fs-24 fw-normal"></i></a>
                       </div>
                     </div>
                   </div>
@@ -210,10 +137,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>
@@ -227,12 +152,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Paypal</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -242,11 +162,7 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Api Client ID</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter Email Address"
-                  />
+                  <input type="text" class="form-control" placeholder="Enter Email Address" />
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Api Client Secret</label>
@@ -256,12 +172,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-2"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>

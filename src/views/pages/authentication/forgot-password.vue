@@ -57,22 +57,22 @@ export default {
         this.error = '';
 
         const response = await authService.forgotPassword(this.formData.email);
-        
+
         this.message = response.message || 'Password reset link has been sent to your email';
         setTimeout(() => {
           this.$router.push('/login');
         }, 3000);
       } catch (err) {
         console.error('Forgot password error:', err);
-        
+
         // Bad request error
         if (err.response?.status === 400) {
           this.error = err.response.data.message || 'Unable to send reset link';
         }
         // Validation error
         else if (err.response?.status === 422) {
-          this.error = err.response.data.errors?.email?.[0] 
-            || err.response.data.message 
+          this.error = err.response.data.errors?.email?.[0]
+            || err.response.data.message
             || 'The email field is invalid.';
         }
         // Network or connection error
@@ -97,8 +97,7 @@ export default {
       <div class="row">
         <div class="col-lg-5">
           <div
-            class="login-background position-relative d-lg-flex align-items-center justify-content-center d-none flex-wrap vh-100"
-          >
+            class="login-background position-relative d-lg-flex align-items-center justify-content-center d-none flex-wrap vh-100">
             <div class="bg-overlay-img">
               <img src="@/assets/img/bg/bg-01.png" class="bg-1" alt="" />
               <img src="@/assets/img/bg/bg-02.png" class="bg-2" alt="" />
@@ -125,9 +124,7 @@ export default {
           </div>
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12">
-          <div
-            class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap"
-          >
+          <div class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap">
             <div class="col-md-7 mx-auto p-4">
               <form @submit.prevent="submitForm">
                 <div>
@@ -160,13 +157,8 @@ export default {
                     <div class="mb-3">
                       <label class="form-label">Email Address</label>
                       <div class="input-group" :class="{ 'is-invalid': v$.email.$error }">
-                        <input 
-                          type="email" 
-                          v-model="formData.email"
-                          class="form-control" 
-                          :class="{ 'is-invalid': v$.email.$error }"
-                          :disabled="loading"
-                        />
+                        <input type="email" v-model="formData.email" class="form-control"
+                          :class="{ 'is-invalid': v$.email.$error }" :disabled="loading" />
                         <span class="input-group-text">
                           <i class="ti ti-mail"></i>
                         </span>
@@ -177,11 +169,7 @@ export default {
                     </div>
 
                     <div class="mb-3">
-                      <button 
-                        type="submit" 
-                        class="btn btn-primary w-100"
-                        :disabled="loading || secondsRemaining > 0"
-                      >
+                      <button type="submit" class="btn btn-primary w-100" :disabled="loading || secondsRemaining > 0">
                         <span v-if="loading" class="spinner-border spinner-border-sm me-2"></span>
                         {{ loading ? 'Sending...' : 'Send Reset Link' }}
                       </button>
@@ -196,7 +184,7 @@ export default {
                   </div>
                   <div class="mt-5 text-center">
                     <p class="mb-0 text-gray-9">
-                      Copyright &copy; {{ new Date().getFullYear() }} - Smarthr
+                      Copyright &copy; {{ new Date().getFullYear() }} - AronHR
                     </p>
                   </div>
                 </div>

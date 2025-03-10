@@ -28,14 +28,16 @@ export default {
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <router-link to="/sales/invoices" class="back-icon align-items-center fs-14 d-inline-flex fw-medium">
+                                <router-link to="/sales/invoices"
+                                    class="back-icon align-items-center fs-14 d-inline-flex fw-medium">
                                     <span class=" d-flex justify-content-center align-items-center rounded-circle me-2">
                                         <i class="ti ti-arrow-left fs-12"></i>
                                     </span>
                                     Back to List
                                 </router-link>
-                                <a href="javascript:void(0);" class="text-primary text-decoration-underline" data-bs-toggle="modal" data-bs-target="#invoice_preview">
-                                    Preview 
+                                <a href="javascript:void(0);" class="text-primary text-decoration-underline"
+                                    data-bs-toggle="modal" data-bs-target="#invoice_preview">
+                                    Preview
                                 </a>
                             </div>
 
@@ -43,7 +45,8 @@ export default {
                             <div class="bg-light p-3 rounded mb-3">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <h5>From</h5>
-                                    <a href="javascript:void(0);" class="text-dark fw-medium"><span class="text-gray me-2"><i class="ti ti-edit"></i></span>Edit Details</a>
+                                    <a href="javascript:void(0);" class="text-dark fw-medium"><span
+                                            class="text-gray me-2"><i class="ti ti-edit"></i></span>Edit Details</a>
                                 </div>
                                 <div>
                                     <h4 class="mb-1">Thomas Lawler</h4>
@@ -75,14 +78,9 @@ export default {
                                                 <span class="input-icon-addon">
                                                     <i class="ti ti-calendar"></i>
                                                 </span>
-                                                <date-picker
-                                                    v-model="startdate"
-                                                    class="form-control datetimepicker"
-                                                    placeholder="dd/mm/yyyy"
-                                                    :editable="true"
-                                                    :clearable="false"
-                                                    :input-format="dateFormat"
-                                                />
+                                                <date-picker v-model="startdate" class="form-control datetimepicker"
+                                                    placeholder="dd/mm/yyyy" :editable="true" :clearable="false"
+                                                    :input-format="dateFormat" />
                                             </div>
                                         </div>
                                     </div>
@@ -93,14 +91,9 @@ export default {
                                                 <span class="input-icon-addon">
                                                     <i class="ti ti-calendar"></i>
                                                 </span>
-                                                <date-picker
-                                                    v-model="startdateOne"
-                                                    class="form-control datetimepicker"
-                                                    placeholder="dd/mm/yyyy"
-                                                    :editable="true"
-                                                    :clearable="false"
-                                                    :input-format="dateFormat"
-                                                />
+                                                <date-picker v-model="startdateOne" class="form-control datetimepicker"
+                                                    placeholder="dd/mm/yyyy" :editable="true" :clearable="false"
+                                                    :input-format="dateFormat" />
                                             </div>
                                         </div>
                                     </div>
@@ -111,13 +104,15 @@ export default {
                             <!-- Payment Details-->
                             <div class="border-bottom mb-3">
                                 <h4 class="mb-2">Payment Details</h4>
-                                
+
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 col-sm-12">
                                         <div class="mb-3">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <label class="form-label">Customer</label>
-                                                <a href="javascript:void(0);" class="text-primary fw-medium d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#add_customer">
+                                                <a href="javascript:void(0);"
+                                                    class="text-primary fw-medium d-flex align-items-center"
+                                                    data-bs-toggle="modal" data-bs-target="#add_customer">
                                                     <i class="ti ti-plus me-2"></i>Add New
                                                 </a>
                                             </div>
@@ -133,21 +128,13 @@ export default {
                                     <div class="col-lg-3 col-md-6 col-sm-12">
                                         <div class="mb-3">
                                             <label class="form-label">Select Payment Type</label>
-                                            <vue-select 
-                                                :options="Paymenttype"
-                                                id="credit-card"
-                                                placeholder="Select"
-                                            />
+                                            <vue-select :options="Paymenttype" id="credit-card" placeholder="Select" />
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 col-sm-12">
                                         <div class="mb-3">
                                             <label class="form-label">Bank Details</label>
-                                            <vue-select 
-                                                :options="Bank"
-                                                id="bank-card"
-                                                placeholder="Bank of America"
-                                            />
+                                            <vue-select :options="Bank" id="bank-card" placeholder="Bank of America" />
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +145,7 @@ export default {
                             <div class="border-bottom mb-3">
                                 <h4 class="mb-2">Add Items</h4>
                                 <div class="border rounded p-3 mb-3">
-                                    <div class="add-description-info">									
+                                    <div class="add-description-info">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
@@ -190,7 +177,9 @@ export default {
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);" class="text-primary add-more-description fw-medium d-flex align-items-center"><i class="ti ti-plus me-2"></i>Add New</a>
+                                    <a href="javascript:void(0);"
+                                        class="text-primary add-more-description fw-medium d-flex align-items-center"><i
+                                            class="ti ti-plus me-2"></i>Add New</a>
                                 </div>
                             </div>
                             <!-- /Add Items-->
@@ -200,7 +189,7 @@ export default {
                                 <h4 class="mb-2">Additional Details</h4>
                                 <div class="mb-3">
                                     <label class="form-label"> Description</label>
-                                    <textarea class="form-control" rows="3" ></textarea>
+                                    <textarea class="form-control" rows="3"></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Notes</label>
@@ -210,8 +199,12 @@ export default {
                             <!-- Additional Details-->
 
                             <div class="d-flex justify-content-end align-items-center flex-wrap row-gap-3">
-                                <a href="javascript:void(0);" class="btn btn-dark d-flex justify-content-center align-items-center"><i class="ti ti-printer me-2"></i>Save as Draft</a>
-                                <a href="javascript:void(0);" class="btn btn-primary d-flex justify-content-center align-items-center  ms-2"><i class="ti ti-copy me-2"></i>Save & Send</a>
+                                <a href="javascript:void(0);"
+                                    class="btn btn-dark d-flex justify-content-center align-items-center"><i
+                                        class="ti ti-printer me-2"></i>Save as Draft</a>
+                                <a href="javascript:void(0);"
+                                    class="btn btn-primary d-flex justify-content-center align-items-center  ms-2"><i
+                                        class="ti ti-copy me-2"></i>Save & Send</a>
                             </div>
                         </div>
                     </div>
@@ -221,7 +214,7 @@ export default {
 
         <!-- Footer -->
         <div class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3">
-            <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+            <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
             <p>Designed & Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
         </div>
         <!-- /Footer -->

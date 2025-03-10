@@ -72,30 +72,16 @@ export default {
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-primary d-flex align-items-center"
-              data-bs-toggle="modal"
-              data-bs-target="#new_resignation"
-              ><i class="ti ti-circle-plus me-2"></i>Add Resignation</a
-            >
+            <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal"
+              data-bs-target="#new_resignation"><i class="ti ti-circle-plus me-2"></i>Add Resignation</a>
           </div>
           <div class="head-icons ms-2">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -107,46 +93,32 @@ export default {
       <div class="row">
         <div class="col-sm-12">
           <div class="card">
-            <div
-              class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-            >
+            <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
               <h5 class="d-flex align-items-center">Resignation List</h5>
               <div class="d-flex align-items-center flex-wrap row-gap-3">
                 <div class="input-icon position-relative me-2">
                   <span class="input-icon-addon">
                     <i class="ti ti-calendar"></i>
                   </span>
-                  <input
-                    type="text"
-                    class="form-control date-range bookingrange"
-                    ref="dateRangeInput"
-                    placeholder="dd/mm/yyyy - dd/mm/yyyy "
-                  />
+                  <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
+                    placeholder="dd/mm/yyyy - dd/mm/yyyy " />
                 </div>
                 <div class="dropdown">
-                  <a
-                    href="javascript:void(0);"
+                  <a href="javascript:void(0);"
                     class="dropdown-toggle btn btn-white d-inline-flex align-items-center fs-12"
-                    data-bs-toggle="dropdown"
-                  >
+                    data-bs-toggle="dropdown">
                     <p class="fs-12 d-inline-flex me-1">Sort By :</p>
                     Last 7 Days
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        >Last 7 Days</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        >Created Date</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Created Date</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                        >Due Date</a
-                      >
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Due Date</a>
                     </li>
                   </ul>
                 </div>
@@ -164,10 +136,8 @@ export default {
     </div>
 
     <!-- Footer -->
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

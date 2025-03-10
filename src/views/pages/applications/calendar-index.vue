@@ -9,12 +9,8 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="input-icon-end position-relative">
-              <input
-                type="text"
-                class="form-control date-range bookingrange"
-                placeholder="dd/mm/yyyy - dd/mm/yyyy"
-                ref="dateRangeInput"
-              />
+              <input type="text" class="form-control date-range bookingrange" placeholder="dd/mm/yyyy - dd/mm/yyyy"
+                ref="dateRangeInput" />
               <span class="input-icon-addon">
                 <i class="ti ti-chevron-down"></i>
               </span>
@@ -22,46 +18,30 @@
           </div>
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    ><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a
-              href="javascript:void(0);"
-              data-bs-toggle="modal"
-              data-bs-target="#add_event"
-              class="btn btn-primary d-flex align-items-center"
-              ><i class="ti ti-circle-plus me-2"></i>Create</a
-            >
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_event"
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Create</a>
           </div>
           <div class="ms-2 head-icons">
-            <a
-              href="javascript:void(0);"
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-original-title="Collapse"
-              id="collapse-header"
-              @click="toggleHeader"
-            >
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -83,58 +63,35 @@
               <div class="border-bottom pb-4 mb-4">
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <h5>Event</h5>
-                  <a
-                    href="javascript:void(0);"
-                    class="link-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#add_event"
-                    ><i class="ti ti-square-rounded-plus-filled fs-16"></i
-                  ></a>
+                  <a href="javascript:void(0);" class="link-primary" data-bs-toggle="modal"
+                    data-bs-target="#add_event"><i class="ti ti-square-rounded-plus-filled fs-16"></i></a>
                 </div>
                 <p class="fs-12 mb-2">
                   Drag and drop your event or click in the calendar
                 </p>
                 <div id="external-events">
-                  <div
-                    class="fc-event bg-transparent-success mb-1"
-                    data-event='{ "title": "Team Events" }'
-                    data-event-classname="bg-transparent-success"
-                  >
+                  <div class="fc-event bg-transparent-success mb-1" data-event='{ "title": "Team Events" }'
+                    data-event-classname="bg-transparent-success">
                     <i class="ti ti-square-rounded text-success me-2"></i>Team Events
                   </div>
-                  <div
-                    class="fc-event bg-transparent-warning mb-1"
-                    data-event='{ "title": "Team Events" }'
-                    data-event-classname="bg-transparent-warning"
-                  >
+                  <div class="fc-event bg-transparent-warning mb-1" data-event='{ "title": "Team Events" }'
+                    data-event-classname="bg-transparent-warning">
                     <i class="ti ti-square-rounded text-warning me-2"></i>Work
                   </div>
-                  <div
-                    class="fc-event bg-transparent-danger mb-1"
-                    data-event='{ "title": "External" }'
-                    data-event-classname="bg-transparent-danger"
-                  >
+                  <div class="fc-event bg-transparent-danger mb-1" data-event='{ "title": "External" }'
+                    data-event-classname="bg-transparent-danger">
                     <i class="ti ti-square-rounded text-danger me-2"></i>External
                   </div>
-                  <div
-                    class="fc-event bg-transparent-skyblue mb-1"
-                    data-event='{ "title": "Projects" }'
-                    data-event-classname="bg-transparent-skyblue"
-                  >
+                  <div class="fc-event bg-transparent-skyblue mb-1" data-event='{ "title": "Projects" }'
+                    data-event-classname="bg-transparent-skyblue">
                     <i class="ti ti-square-rounded text-skyblue me-2"></i>Projects
                   </div>
-                  <div
-                    class="fc-event bg-transparent-purple mb-1"
-                    data-event='{ "title": "Applications" }'
-                    data-event-classname="bg-transparent-purple"
-                  >
+                  <div class="fc-event bg-transparent-purple mb-1" data-event='{ "title": "Applications" }'
+                    data-event-classname="bg-transparent-purple">
                     <i class="ti ti-square-rounded text-purple me-2"></i>Applications
                   </div>
-                  <div
-                    class="fc-event bg-transparent-info mb-0"
-                    data-event='{ "title": "Desgin" }'
-                    data-event-classname="bg-transparent-info"
-                  >
+                  <div class="fc-event bg-transparent-info mb-0" data-event='{ "title": "Desgin" }'
+                    data-event-classname="bg-transparent-info">
                     <i class="ti ti-square-rounded text-info me-2"></i>Desgin
                   </div>
                 </div>
@@ -144,9 +101,7 @@
               <!-- Upcoming Event -->
               <div class="border-bottom pb-2 mb-4">
                 <h5 class="mb-2">
-                  Upcoming Event<span class="badge badge-success rounded-pill ms-2"
-                    >15</span
-                  >
+                  Upcoming Event<span class="badge badge-success rounded-pill ms-2">15</span>
                 </h5>
                 <div class="border-start border-purple border-3 mb-3">
                   <div class="ps-3">
@@ -183,16 +138,10 @@
                 <h6 class="text-white mb-3">
                   Enjoy Unlimited Access on a small price monthly.
                 </h6>
-                <a href="javascript:void(0);" class="btn btn-white"
-                  >Upgrade Now <i class="ti ti-arrow-right"></i
-                ></a>
+                <a href="javascript:void(0);" class="btn btn-white">Upgrade Now <i class="ti ti-arrow-right"></i></a>
                 <div class="box-bg">
-                  <span class="bg-right"
-                    ><img src="@/assets/img/bg/email-bg-01.png" alt=""
-                  /></span>
-                  <span class="bg-left"
-                    ><img src="@/assets/img/bg/email-bg-02.png" alt=""
-                  /></span>
+                  <span class="bg-right"><img src="@/assets/img/bg/email-bg-01.png" alt="" /></span>
+                  <span class="bg-left"><img src="@/assets/img/bg/email-bg-02.png" alt="" /></span>
                 </div>
               </div>
               <!-- /Upgrade Details -->
@@ -210,10 +159,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014-2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014-2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>

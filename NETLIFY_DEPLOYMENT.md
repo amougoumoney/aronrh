@@ -1,6 +1,6 @@
 # Netlify Deployment Guide
 
-This document provides instructions for deploying the HRMS frontend application to Netlify.
+This document provides instructions for deploying the ARONHR frontend application to Netlify.
 
 ## Prerequisites
 
@@ -11,10 +11,10 @@ This document provides instructions for deploying the HRMS frontend application 
 
 The application uses environment variables to configure API endpoints for different environments. When deploying to Netlify, you **MUST** set the following environment variables in the Netlify dashboard:
 
-| Variable | Description | Value for Production |
-|----------|-------------|---------------|
+| Variable               | Description                   | Value for Production                                           |
+| ---------------------- | ----------------------------- | -------------------------------------------------------------- |
 | `VUE_APP_API_BASE_URL` | The base URL for API requests | `https://hrms-backend-api-v1-main-wrhlmg.laravel.cloud/api/v1` |
-| `VUE_APP_ENV` | The environment name | `production` |
+| `VUE_APP_ENV`          | The environment name          | `production`                                                   |
 
 ### Important Note About Environment Variables
 
@@ -87,4 +87,4 @@ npm install -g serve
 
 # Serve the production build
 serve -s dist
-``` 
+```

@@ -5,20 +5,11 @@
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
-      <div
-        class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3"
-      >
+      <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a
-            href="javascript:void(0);"
-            class=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            data-bs-original-title="Collapse"
-            id="collapse-header"
-            @click="toggleHeader"
-          >
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -46,20 +37,15 @@
                         </div>
                         <div class="col-lg-8">
                           <div class="mb-3">
-                            <div
-                              class="d-flex align-items-center flex-wrap row-gap-3 w-100 rounded mb-4"
-                            >
+                            <div class="d-flex align-items-center flex-wrap row-gap-3 w-100 rounded mb-4">
                               <div
-                                class="d-flex align-items-center justify-content-center og-upload rounded border border-dashed me-2 flex-shrink-0 text-dark frames"
-                              >
+                                class="d-flex align-items-center justify-content-center og-upload rounded border border-dashed me-2 flex-shrink-0 text-dark frames">
                                 <i class="ti ti-photo text-gray-3 fs-16"></i>
                               </div>
                               <div class="input-block mb-3 row">
                                 <div class="col-lg-12">
                                   <input type="file" class="form-control" />
-                                  <span class="form-text text-muted"
-                                    >Recommended image size is 600px * 400px</span
-                                  >
+                                  <span class="form-text text-muted">Recommended image size is 600px * 400px</span>
                                 </div>
                               </div>
                             </div>
@@ -91,11 +77,7 @@
                         </div>
                         <div class="col-lg-3">
                           <div class="form-check form-switch mb-0">
-                            <input
-                              class="form-check-input mb-3"
-                              type="checkbox"
-                              role="switch"
-                            />
+                            <input class="form-check-input mb-3" type="checkbox" role="switch" />
                           </div>
                         </div>
                       </div>
@@ -114,10 +96,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3"
-    >
-      <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
         <a href="javascript:void(0);" class="text-primary">Dreams</a>
