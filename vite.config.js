@@ -8,6 +8,7 @@ export default defineConfig({
         inject({   // => that should be first under plugins array
             $: 'jquery',
             jQuery: 'jquery',
+            include: ['src/**/*.js'] // Restricts injection to files inside "src"
         }),
         vue()],
     resolve: {
