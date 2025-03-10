@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router';
 import { useVuelidate } from '@vuelidate/core';
 import { required, email, minLength } from '@vuelidate/validators';
 import { authService } from '@/services/auth.service';
+import { useUserStore } from '@/stores/users';
 
 export default {
   name: 'LoginIndex',
@@ -12,7 +13,7 @@ export default {
     const showPassword = ref(false);
     const isLoading = ref(false);
     const error = ref(null);
-
+    const userStore = useUserStore();
     const formData = reactive({
       email: '',
       password: '',
@@ -64,14 +65,22 @@ export default {
       showPassword.value = !showPassword.value;
     };
 
-    const redirectBasedOnRole = (user) => {
-      if (!user || !user.role) {
+    const redirectBasedOnRole = () => {
+      // Récupérer l'utilisateur depuis localStorage
+      const storedUser = localStorage.getItem('users');
+      if (!storedUser) {
+        router.push('/dashboard');
+        return;
+      }
+      const user = JSON.parse(storedUser);
+      // Vérifier si l'utilisateur a des rôles
+      if (!user.roles || user.roles.length === 0) {
         router.push('/dashboard');
         return;
       }
 
-      // Convert role to lowercase for case-insensitive comparison
-      const role = user.role.toLowerCase();
+      // Prendre le premier rôle (ou adapter si plusieurs rôles doivent être gérés)
+      const role = user.roles[0].toLowerCase();
 
       switch (role) {
         case 'admin':
@@ -85,7 +94,6 @@ export default {
           break;
         case 'manager':
           router.push('/dashboard/employee-dashboard');
-          break;
         case 'employee':
           router.push('/dashboard/employee-dashboard');
           break;
@@ -94,70 +102,98 @@ export default {
       }
     };
 
-    const handleLogin = async () => {
-      try {
-        error.value = null;
-        const result = await v$.value.$validate();
-        if (!result) return;
-        isLoading.value = true;
-        const response = await authService.login(formData);
-
-        if (response.access_token) {
-          // Get the redirect path based on user role
-          const userRole = authService.getCurrentRole();
-          if (userRole) {
-            console.log(userRole);
-            const redirectPath = authService.getRedirectPath(userRole);
-            router.push(redirectPath);
-          } else {
-            error.value = 'User role not found in response';
+    /*     const handleLogin = async () => {
+          try {
+            error.value = null;
+            const result = await v$.value.$validate();
+            if (!result) return;
+    
+    
+            isLoading.value = true;
+            const response = await authService.login(formData);
+    
+            if (response.access_token) {
+              // Get the redirect path based on user role
+              const userRole = authService.getCurrentRole();
+              if (userRole) {
+                console.log(userRole);
+                const redirectPath = authService.getRedirectPath(userRole);
+                router.push(redirectPath);
+              } else {
+                error.value = 'User role not found in response';
+              }
+            } else {
+              error.value = 'Login failed. Please try again.';
+            }
+          } catch (err) {
+            console.error('Login error:', err);
+    
+            // Handle error based on type
+            if (err.type === 'AUTH_ERROR') {
+              error.value = 'Invalid email or password';
+            } else if (err.type === 'VALIDATION_ERROR' && err.errors) {
+              error.value = Object.values(err.errors).flat().join(', ');
+            } else if (err.type === 'NETWORK_ERROR') {
+              error.value = 'Unable to connect to the server. Please check your connection.';
+            } else if (err.type === 'RATE_LIMIT_ERROR') {
+              error.value = 'Too many login attempts. Please try again later.';
+            } else if (err.response?.data?.message) {
+              error.value = err.response.data.message;
+            } else {
+              error.value = err.message || 'An unexpected error occurred';
+            }
+          } finally {
+            isLoading.value = false;
           }
-        } else {
-          error.value = 'Login failed. Please try again.';
-        }
-      } catch (err) {
-        console.error('Login error:', err);
+        }; */
+    const login = async () => {
+      error.value = null; // Réinitialisation des erreurs
 
-        // Handle error based on type
+      // Validation du formulaire avec Vuelidate
+      const result = await v$.value.$validate();
+      if (!result) {
+        error.value = 'Veuillez corriger les erreurs du formulaire.';
+        return;
+      }
+
+      try {
+        // Récupération des utilisateurs depuis le localStorage
+        const users = JSON.parse(localStorage.getItem('users'));
+
+        // Recherche de l'utilisateur correspondant
+        const userL = users.find((user) => user.email === formData.email && user.password === formData.password);
+
+        console.error('Erreur de connexion:', err);
+
+        // Gestion des erreurs selon leur type
         if (err.type === 'AUTH_ERROR') {
-          error.value = 'Invalid email or password';
+          error.value = 'Email ou mot de passe incorrect.';
         } else if (err.type === 'VALIDATION_ERROR' && err.errors) {
           error.value = Object.values(err.errors).flat().join(', ');
         } else if (err.type === 'NETWORK_ERROR') {
-          error.value = 'Unable to connect to the server. Please check your connection.';
+          error.value = 'Impossible de se connecter au serveur. Vérifiez votre connexion.';
         } else if (err.type === 'RATE_LIMIT_ERROR') {
-          error.value = 'Too many login attempts. Please try again later.';
+          error.value = 'Trop de tentatives de connexion. Réessayez plus tard.';
         } else if (err.response?.data?.message) {
           error.value = err.response.data.message;
         } else {
-          error.value = err.message || 'An unexpected error occurred';
+          error.value = err.message || 'Une erreur inattendue s’est produite.';
         }
-      } finally {
-        isLoading.value = false;
-      }
-    };
-    const login = () => {
-      const userL = JSON.parse(localStorage.getItem('users')).filter((e) => e.name === email.value && e.password == password.value);
-      console.log('User', userL);
-      if (userL && userL.length > 0) {
-        userStore.login(userL[0], '');
-        router.push('/');
+      } catch (error) {
 
-      } else {
-        error.value = 'Invalid email or password';
       }
+      return {
+        formData,
+        showPassword,
+        isLoading,
+        error,
+        v$,
+        login,
+        togglePassword
+      };
     }
-    return {
-      formData,
-      showPassword,
-      isLoading,
-      error,
-      v$,
-      handleLogin,
-      togglePassword
-    };
-  }
-};
+  },
+}
 </script>
 
 <template>
@@ -178,89 +214,87 @@ export default {
           <div class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap">
             <div class="col-md-7 mx-auto p-4 d-flex flex-column">
               <!-- Form with @submit.prevent -->
-              <div class="flex-grow-1 d-flex flex-column">
-                <div class="mx-auto mb-5 text-center">
-                  <!-- Custom Logo Box -->
-                  <div class="login-logo-box">
-                    <h1 class="login-logo-title">HRMS</h1>
-                    <span class="login-logo-tagline">SMRU / BHF</span>
-                  </div>
+              <div class="mx-auto mb-5 text-center">
+                <!-- Custom Logo Box -->
+                <div class="login-logo-box">
+                  <h1 class="login-logo-title">HRMS</h1>
+                  <span class="login-logo-tagline">SMRU / BHF</span>
                 </div>
-
-
-                <form @submit.prevent="handleLogin" class="flex-grow-1 d-flex flex-column">
-                  <div class="flex-grow-1">
-                    <div class="text-center mb-3">
-                      <h2 class="mb-2">Sign In</h2>
-                      <p class="mb-0">Please enter your details to sign in</p>
-                    </div>
-
-                    <!-- Error Alert -->
-                    <div v-if="error" class="alert alert-danger alert-dismissible fade show" role="alert">
-                      {{ error }}
-                      <button type="button" class="btn-close" @click="error = null"></button>
-                    </div>
-
-                    <!-- Email Input -->
-                    <div class="mb-3">
-                      <label class="form-label">Email Address</label>
-                      <div class="input-group" :class="{ 'is-invalid': v$.email.$error }">
-                        <input type="email" v-model="formData.email" class="form-control"
-                          :class="{ 'is-invalid': v$.email.$error }" />
-                        <span class="input-group-text">
-                          <i class="ti ti-mail"></i>
-                        </span>
-                      </div>
-                      <div class="invalid-feedback" v-if="v$.email.$error">
-                        {{ v$.email.$errors[0].$message }}
-                      </div>
-                    </div>
-
-                    <!-- Password Input -->
-                    <div class="mb-3">
-                      <label class="form-label">Password</label>
-                      <div class="input-group" :class="{ 'is-invalid': v$.password.$error }">
-                        <input :type="showPassword ? 'text' : 'password'" v-model="formData.password"
-                          class="form-control" :class="{ 'is-invalid': v$.password.$error }" />
-                        <span class="input-group-text">
-                          <i @click="togglePassword" class="ti" :class="{
-                            'ti-eye': showPassword,
-                            'ti-eye-off': !showPassword,
-                          }" style="cursor: pointer;"></i>
-                        </span>
-                      </div>
-                      <div class="invalid-feedback" v-if="v$.password.$error">
-                        {{ v$.password.$errors[0].$message }}
-                      </div>
-                    </div>
-
-                    <!-- Remember Me & Forgot Password -->
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="remember" v-model="formData.remember_me">
-                        <label class="form-check-label" for="remember">Remember me</label>
-                      </div>
-                      <router-link to="/forgot-password" class="text-primary">Forgot Password?</router-link>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn btn-primary w-100 mb-3">
-                      <span v-if="isLoading" class="spinner-border spinner-border-sm me-2"></span>
-                      {{ isLoading ? 'Signing in...' : 'Sign In' }}
-                    </button>
-                  </div>
-                </form>
               </div>
 
-              <!-- Footer with logos -->
-              <div class="footer mt-4">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="@/assets/img/smru-logo.png" alt="SMRU Logo" class="me-4" style="max-height: 50px;" />
-                  <img src="@/assets/img/bhf-logo.png" alt="BHF Logo" style="max-height: 50px;" />
+
+              <form @submit.prevent="login" class="flex-grow-1 d-flex flex-column">
+                <div class="flex-grow-1">
+                  <div class="text-center mb-3">
+                    <h2 class="mb-2">Sign In</h2>
+                    <p class="mb-0">Please enter your details to sign in</p>
+                  </div>
+
+                  <!-- Error Alert -->
+                  <div v-if="error" class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{ error }}
+                    <button type="button" class="btn-close" @click="error = null"></button>
+                  </div>
+
+                  <!-- Email Input -->
+                  <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <div class="input-group" :class="{ 'is-invalid': v$.email.$error }">
+                      <input type="email" v-model="formData.email" class="form-control"
+                        :class="{ 'is-invalid': v$.email.$error }" />
+                      <span class="input-group-text">
+                        <i class="ti ti-mail"></i>
+                      </span>
+                    </div>
+                    <div class="invalid-feedback" v-if="v$.email.$error">
+                      {{ v$.email.$errors[0].$message }}
+                    </div>
+                  </div>
+
+                  <!-- Password Input -->
+                  <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <div class="input-group" :class="{ 'is-invalid': v$.password.$error }">
+                      <input :type="showPassword ? 'text' : 'password'" v-model="formData.password" class="form-control"
+                        :class="{ 'is-invalid': v$.password.$error }" />
+                      <span class="input-group-text">
+                        <i @click="togglePassword" class="ti" :class="{
+                          'ti-eye': showPassword,
+                          'ti-eye-off': !showPassword,
+                        }" style="cursor: pointer;"></i>
+                      </span>
+                    </div>
+                    <div class="invalid-feedback" v-if="v$.password.$error">
+                      {{ v$.password.$errors[0].$message }}
+                    </div>
+                  </div>
+
+                  <!-- Remember Me & Forgot Password -->
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="remember" v-model="formData.remember_me">
+                      <label class="form-check-label" for="remember">Remember me</label>
+                    </div>
+                    <router-link to="/forgot-password" class="text-primary">Forgot Password?</router-link>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <button type="submit" class="btn btn-primary w-100 mb-3">
+                    <span v-if="isLoading" class="spinner-border spinner-border-sm me-2"></span>
+                    {{ isLoading ? 'Signing in...' : 'Sign In' }}
+                  </button>
                 </div>
-                <div class="text-center mt-2">
-                  <small class="text-muted">&copy; 2025 SMRU/BHF HR Management System</small>
-                </div>
+              </form>
+            </div>
+
+            <!-- Footer with logos -->
+            <div class="footer mt-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="@/assets/img/smru-logo.png" alt="SMRU Logo" class="me-4" style="max-height: 50px;" />
+                <img src="@/assets/img/bhf-logo.png" alt="BHF Logo" style="max-height: 50px;" />
+              </div>
+              <div class="text-center mt-2">
+                <small class="text-muted">&copy; 2025 SMRU/BHF HR Management System</small>
               </div>
             </div>
           </div>

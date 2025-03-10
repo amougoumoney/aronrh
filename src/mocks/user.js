@@ -1,4 +1,4 @@
-export const Users= [
+export const Users = [
     {
       "id": "1",
       "name": "Nelson Luther",
@@ -11,7 +11,7 @@ export const Users= [
     {
         "id": "2",
         "name": "Nehémie",
-        "email": "nehémie@gmail.com",
+        "email": "nehemie@gmail.com",
         "status": "active",
         "password": "password@123",
         "roles": ["hr-manager"],
