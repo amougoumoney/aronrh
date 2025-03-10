@@ -12,7 +12,6 @@ export default {
     const showPassword = ref(false);
     const isLoading = ref(false);
     const error = ref(null);
-    
     const formData = reactive({
       email: '',
       password: '',
@@ -99,6 +98,8 @@ export default {
         error.value = null;
         const result = await v$.value.$validate();
         if (!result) return;
+
+
         isLoading.value = true;
         const response = await authService.login(formData);
         
