@@ -12,7 +12,7 @@ export default {
     const showPassword = ref(false);
     const isLoading = ref(false);
     const error = ref(null);
-
+    
     const formData = reactive({
       email: '',
       password: '',
@@ -99,7 +99,6 @@ export default {
         error.value = null;
         const result = await v$.value.$validate();
         if (!result) return;
-
         isLoading.value = true;
         const response = await authService.login(formData);
         
@@ -137,7 +136,17 @@ export default {
         isLoading.value = false;
       }
     };
-
+    const login = () =>{
+      const userL = JSON.parse(localStorage.getItem('users')).filter((e) => e.name === email.value && e.password == password.value);
+    console.log('User', userL);
+    if (userL && userL.length > 0) {
+        userStore.login(userL[0], '');
+        router.push('/');
+        
+    } else {
+        error.value = 'Invalid email or password';
+    }
+  }
     return {
       formData,
       showPassword,
