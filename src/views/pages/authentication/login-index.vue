@@ -67,11 +67,12 @@ export default {
 
 const redirectBasedOnRole = () => {
   // Récupérer l'utilisateur depuis localStorage
-  const storedUser = localStorage.getItem('users');
+  const storedUser = localStorage.getItem('user');
   if (!storedUser) {
     router.push('/dashboard');
     return;
   }
+  const rolePriority = ['admin', 'hr-manager', 'hr-assistant', 'manager', 'employee'];
 
   const user = JSON.parse(storedUser);
 
@@ -81,8 +82,7 @@ const redirectBasedOnRole = () => {
     return;
   }
 
-  // Prendre le premier rôle (ou adapter si plusieurs rôles doivent être gérés)
-  const role = user.roles[0].toLowerCase();
+  const role = user.roles.find(r => rolePriority.includes(r.toLowerCase())) || 'employee';
 
   switch (role) {
     case 'admin':
@@ -96,6 +96,7 @@ const redirectBasedOnRole = () => {
       break;
     case 'manager':
     router.push('/dashboard/employee-dashboard');
+    break;
     case 'employee':
       router.push('/dashboard/employee-dashboard');
       break;
@@ -160,7 +161,7 @@ const redirectBasedOnRole = () => {
 
   try {
     // Récupération des utilisateurs depuis le localStorage
-    const users = JSON.parse(localStorage.getItem('users'));
+    const users = JSON.parse(localStorage.getItem('users')) || [];
 
     // Recherche de l'utilisateur correspondant
     const userL = users.find((user) => user.email === formData.email && user.password === formData.password);
@@ -172,9 +173,11 @@ const redirectBasedOnRole = () => {
     // Stockage du token et des informations de l'utilisateur
     localStorage.setItem('token', userL.token);
     localStorage.setItem('user', JSON.stringify(userL));
+    localStorage.setItem('userRole', userL.roles[0]?.toLowerCase());
+    localStorage.setItem('permissions', userL.permissions[0]?.toLowerCase());
 
     // Connexion via userStore
-    userStore.login(userL[0], userL.token);
+    userStore.login(userL, userL.token);
 
     // Redirection selon le rôle
     redirectBasedOnRole(userL);
