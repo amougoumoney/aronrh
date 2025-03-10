@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router';
 import { useVuelidate } from '@vuelidate/core';
 import { required, email, minLength } from '@vuelidate/validators';
 import { authService } from '@/services/auth.service';
+import { useUserStore } from '@/stores/users';
 
 export default {
   name: 'LoginIndex',
@@ -12,6 +13,7 @@ export default {
     const showPassword = ref(false);
     const isLoading = ref(false);
     const error = ref(null);
+    const userStore = useUserStore();
     const formData = reactive({
       email: '',
       password: '',
@@ -63,37 +65,46 @@ export default {
       showPassword.value = !showPassword.value;
     };
 
-    const redirectBasedOnRole = (user) => {
-      if (!user || !user.role) {
-        router.push('/dashboard');
-        return;
-      }
+const redirectBasedOnRole = () => {
+  // Récupérer l'utilisateur depuis localStorage
+  const storedUser = localStorage.getItem('users');
+  if (!storedUser) {
+    router.push('/dashboard');
+    return;
+  }
 
-      // Convert role to lowercase for case-insensitive comparison
-      const role = user.role.toLowerCase();
-      
-      switch (role) {
-        case 'admin':
-          router.push('/dashboard/admin-dashboard');
-          break;
-        case 'hr-manager':
-          router.push('/dashboard/hr-manager-dashboard');
-          break;
-        case 'hr-assistant':
-          router.push('/dashboard/hr-assistant-dashboard');
-          break;
-        case 'manager':
-          router.push('/dashboard/employee-dashboard');
-          break;
-        case 'employee':
-          router.push('/dashboard/employee-dashboard');
-          break;
-        default:
-          router.push('/dashboard');
-      }
-    };
+  const user = JSON.parse(storedUser);
 
-    const handleLogin = async () => {
+  // Vérifier si l'utilisateur a des rôles
+  if (!user.roles || user.roles.length === 0) {
+    router.push('/dashboard');
+    return;
+  }
+
+  // Prendre le premier rôle (ou adapter si plusieurs rôles doivent être gérés)
+  const role = user.roles[0].toLowerCase();
+
+  switch (role) {
+    case 'admin':
+      router.push('/dashboard/admin-dashboard');
+      break;
+    case 'hr-manager':
+      router.push('/dashboard/hr-manager-dashboard');
+      break;
+    case 'hr-assistant':
+      router.push('/dashboard/hr-assistant-dashboard');
+      break;
+    case 'manager':
+    router.push('/dashboard/employee-dashboard');
+    case 'employee':
+      router.push('/dashboard/employee-dashboard');
+      break;
+    default:
+      router.push('/dashboard');
+  }
+};
+
+/*     const handleLogin = async () => {
       try {
         error.value = null;
         const result = await v$.value.$validate();
@@ -136,25 +147,63 @@ export default {
       } finally {
         isLoading.value = false;
       }
-    };
-    const login = () =>{
-      const userL = JSON.parse(localStorage.getItem('users')).filter((e) => e.name === email.value && e.password == password.value);
-    console.log('User', userL);
-    if (userL && userL.length > 0) {
-        userStore.login(userL[0], '');
-        router.push('/');
-        
+    }; */
+  const login = async () => {
+  error.value = null; // Réinitialisation des erreurs
+
+  // Validation du formulaire avec Vuelidate
+  const result = await v$.value.$validate();
+  if (!result) {
+    error.value = 'Veuillez corriger les erreurs du formulaire.';
+    return;
+  }
+
+  try {
+    // Récupération des utilisateurs depuis le localStorage
+    const users = JSON.parse(localStorage.getItem('users'));
+
+    // Recherche de l'utilisateur correspondant
+    const userL = users.find((user) => user.email === formData.email && user.password === formData.password);
+
+    if (!userL) {
+      throw { type: 'AUTH_ERROR' };
+    }
+
+    // Stockage du token et des informations de l'utilisateur
+    localStorage.setItem('token', userL.token);
+    localStorage.setItem('user', JSON.stringify(userL));
+
+    // Connexion via userStore
+    userStore.login(userL[0], userL.token);
+
+    // Redirection selon le rôle
+    redirectBasedOnRole(userL);
+  } catch (err) {
+    console.error('Erreur de connexion:', err);
+
+    // Gestion des erreurs selon leur type
+    if (err.type === 'AUTH_ERROR') {
+      error.value = 'Email ou mot de passe incorrect.';
+    } else if (err.type === 'VALIDATION_ERROR' && err.errors) {
+      error.value = Object.values(err.errors).flat().join(', ');
+    } else if (err.type === 'NETWORK_ERROR') {
+      error.value = 'Impossible de se connecter au serveur. Vérifiez votre connexion.';
+    } else if (err.type === 'RATE_LIMIT_ERROR') {
+      error.value = 'Trop de tentatives de connexion. Réessayez plus tard.';
+    } else if (err.response?.data?.message) {
+      error.value = err.response.data.message;
     } else {
-        error.value = 'Invalid email or password';
+      error.value = err.message || 'Une erreur inattendue s’est produite.';
     }
   }
+};
     return {
       formData,
       showPassword,
       isLoading,
       error,
       v$,
-      handleLogin,
+      login,
       togglePassword
     };
   }
@@ -188,7 +237,7 @@ export default {
                 </div>
 
 
-                <form @submit.prevent="handleLogin" class="flex-grow-1 d-flex flex-column">
+                <form @submit.prevent="login" class="flex-grow-1 d-flex flex-column">
                   <div class="flex-grow-1">
                     <div class="text-center mb-3">
                       <h2 class="mb-2">Sign In</h2>
