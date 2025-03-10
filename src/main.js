@@ -1,5 +1,7 @@
+import { createPinia } from 'pinia';
 import { createApp } from 'vue';
 import { router } from './router';
+import { initData } from './mocks';
 import App from "./App.vue";
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/reset.css';
@@ -296,7 +298,8 @@ import '@/assets/scss/main.scss'
 
 import swal from 'sweetalert2';
 window.Swal = swal;
-
+const pinia = createPinia();
+const initDaya = initData();
 const app = createApp(App)
 /*Global Components */
 
@@ -565,5 +568,7 @@ app.use(VCalendar)
   .use(SimpleLineIcons)
 app.component('IconHome', IconHome);
 app.use(CKEditor);
+app.use(initData)
+app.use(pinia);
 app.use(router).mount('#app');
 
