@@ -7,9 +7,8 @@ export const initData = () => {
     } else {
         console.log("Utilisateurs déjà enregistrés :", localStorage.getItem('users'));
     }
-
     const keys = [
-        'tokens', 'refreshTokens', 'roles', 'permissions', 'grants', 'requests',
+        'tokens', 'refreshTokens', 'roles', 'grants', 'requests','user',
         'leaves', 'travel', 'assets', 'clients', 'projects', 'tickets', 'holidays',
         'attendance', 'performance', 'trainings', 'reports', 'modules'
     ];

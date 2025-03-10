@@ -23,12 +23,29 @@ class AuthService {
   // ----------------------
   getStorageItem(key, parse = false) {
     const value = localStorage.getItem(key);
-    return parse && value ? JSON.parse(value) : value;
-  }
+    if (!value) return null;
+    
+    if (parse) {
+        try {
+            return JSON.parse(value);
+        } catch (error) {
+            console.error(`Erreur lors du parsing JSON pour ${key}:`, error);
+            return null;
+        }
+    }
+    
+    return value;
+}
+
 
   setStorageItem(key, value) {
-    localStorage.setItem(key, typeof value === 'object' ? JSON.stringify(value) : value);
-  }
+    try {
+        const storedValue = typeof value === 'object' ? JSON.stringify(value) : value;
+        localStorage.setItem(key, storedValue);
+    } catch (error) {
+        console.error(`Erreur lors de l'enregistrement de ${key} :`, error);
+    }
+}
 
   removeStorageItem(key) {
     localStorage.removeItem(key);
@@ -234,10 +251,15 @@ class AuthService {
   // Utility Methods
   // -------------------------
   isAuthenticated() {
-    const token = this.getToken();
+   /*  const token = this.getToken();
     const expiration = this.getStorageItem(STORAGE_KEYS.TOKEN_EXPIRATION);
     if (!token || !expiration) return false;
-    return Date.now() < Number(expiration);
+    return Date.now() < Number(expiration); */
+    const user = localStorage.getItem('user');
+    const userRole = localStorage.getItem('userRole');
+    
+    // Si l'utilisateur et son rôle existent, l'utilisateur est authentifié
+    return user && userRole ? true : false;
   }
 
   getToken() {
