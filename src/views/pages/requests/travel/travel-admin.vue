@@ -237,7 +237,7 @@ export default {
         {
           id: 1,
           employeeName: "John Doe",
-          employeeImage: require("@/assets/img/profiles/avatar-02.jpg"),
+          employeeImage: "@/assets/img/profiles/avatar-02.jpg",
           department: "IT Department",
           requestId: "TR-001",
           purpose: "Client Meeting",
@@ -249,7 +249,7 @@ export default {
         {
           id: 2,
           employeeName: "Jane Smith",
-          employeeImage: require("@/assets/img/profiles/avatar-03.jpg"),
+          employeeImage: "@/assets/img/profiles/avatar-03.jpg",
           department: "HR Department",
           requestId: "TR-002",
           purpose: "Conference",

@@ -273,11 +273,8 @@
                 <template v-if="column.key === 'Name'">
                   <div class="d-flex align-items-center file-name-icon">
                     <a href="javascript:void(0);" class="avatar avatar-md">
-                      <img
-                        :src="require(`@/assets/img/users/${record.Image}`)"
-                        class="img-fluid rounded-circle"
-                        alt="img"
-                      />
+                      <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid rounded-circle" alt="img" />
+
                     </a>
                     <div class="ms-2">
                       <h6 class="fw-medium">

@@ -189,10 +189,10 @@ export default {
         <div class="d-flex align-items-center file-name-icon">
           <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
             <img
-              :src="require(`@/assets/img/users/${record.Image}`)"
+              :src="`@/assets/img/users/${record.Image}`"
               class="img-fluid"
               alt="img"
-            />
+            />s
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
