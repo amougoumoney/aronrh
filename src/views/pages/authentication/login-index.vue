@@ -94,6 +94,8 @@ const login = async () => {
 
     localStorage.setItem('token', 'fake-jwt-token');
     localStorage.setItem('user', JSON.stringify(userL));
+    localStorage.setItem('userRole', userL.roles[0].toLowerCase()); 
+    localStorage.setItem('permissions', userL.permissions[0].toLowerCase());
     redirectBasedOnRole();
   } catch (err) {
     error.value = 'Une erreur est survenue lors de la connexion.';
