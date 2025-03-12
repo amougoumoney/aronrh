@@ -18,6 +18,8 @@ export const authGuard = (to, from, next) => {
                 return next('/dashboard/hr-assistant-dashboard');
             case 'employee':
                 return next('/dashboard/employee-dashboard');
+            case 'superadmin':
+                return next('/super-admin/dashboard');
             default:
                 return next('/login');
         }
@@ -41,6 +43,8 @@ export const authGuard = (to, from, next) => {
                 return next('/dashboard/hr-assistant-dashboard');
             case 'employee':
                 return next('/dashboard/employee-dashboard');
+            case 'superadmin':
+                return next('/super-admin/dashboard');
             default:
                 return next('/dashboard/employee-dashboard');
         }

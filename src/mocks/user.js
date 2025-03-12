@@ -43,5 +43,14 @@ export const Users = [
         "password": "password@123",
         "roles": ["admin"],
         "permissions": ["user.create"]
+      },
+      {
+        "id": "6",
+        "name": "Super Admin",
+        "email": "ok@yop.com",
+        "status": "active",
+        "password": "password@123",
+        "roles": ["superadmin"],
+        "permissions": ["user.create"]
       }
 ]

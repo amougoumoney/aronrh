@@ -108,7 +108,7 @@ export default {
         isMenuActive() {
             return (menu) => {
                 if (menu.menuValue === 'Dashboard') {
-                    return this.$route.path.includes('/dashboard/');
+                    return this.$route.path.includes('/dashboard/') || this.$route.path.includes('/super-admin');
                 }
                 const currentPath = this.$route.path;
                 const pathSegments = currentPath.split('/').filter(part => part);
@@ -123,7 +123,7 @@ export default {
         isActive() {
             return (menu) => {
                 if (menu.menuValue === 'Dashboard') {
-                    return this.$route.path.includes('/dashboard/');
+                    return this.$route.path.includes('/dashboard/') || this.$route.path.includes('/super-admin');
                 }
                 const currentPath = this.$route.path;
                 const pathSegments = currentPath.split('/').filter(part => part);
@@ -155,7 +155,7 @@ export default {
     watch: {
         '$route': {
             handler(newRoute) {
-                if (newRoute.path.includes('/dashboard/')) {
+                if (newRoute.path.includes('/dashboard/') || newRoute.path.includes('/super-admin')) {
                     this.isDashboardOpen = true;
                 }
                 this.initializeActiveMenus();

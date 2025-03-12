@@ -13,7 +13,8 @@ export const DEFAULT_ROUTES = {
     'admin': '/dashboard/admin-dashboard',
     'hr-manager': '/dashboard/hr-manager-dashboard', 
     'hr-assistant': '/dashboard/hr-assistant-dashboard',
-    'employee': '/dashboard/employee-dashboard'
+    'employee': '/dashboard/employee-dashboard',
+    'superadmin':'/super-admin/dashboard'
 };
 
 // Role-based menu access configuration
@@ -163,8 +164,45 @@ export const ROLE_MENU_ACCESS = {
         ]
     }, 
     'superadmin':{
-        allowedMenus:[
-            
+        allowedMenus: [
+            'Dashboard',
+            'Recruitment',
+            'Clients',
+            'Projects',
+            'Employee',
+            'Tickets',
+            'Holidays',
+            'Attendance',
+            'Performance',
+            'Grants',
+            'Training',
+            'Reports',
+            'Requests',
+            'Leaves',
+            'Travel',
+            'Assets',
+            'User Management',
+            'Help & Supports',
+            'Accounting',
+            'Payroll',
+        ],
+        allowedSubMenus: {
+            'Dashboard': ['Admin Dashboard','Dashboard'],
+            'Leaves': ['Leaves (Admin)', 'Leave Settings'],
+            'Travel': ['Travel (Admin)'],
+            'Attendance': ['Attendance (Admin)', 'Timesheets', 'Schedule Timing', 'Overtime'],
+            'Recruitment': ['Interviews', 'References'],
+            'Employee': ['Employee Lists', 'Employee Details'],
+            'User Management': ['Users', 'Roles & Permissions']
+        },
+        permissions: [
+            'view_all',
+            'manage_all', 
+            'access_all_dashboards',
+            'manage_grants',
+            'manage_requests',
+            'manage_leave',
+            'manage_recruitment'
         ]
     }
 };

@@ -70,7 +70,8 @@ const redirectBasedOnRole = () => {
     'hr-manager': '/dashboard/hr-manager-dashboard',
     'hr-assistant': '/dashboard/hr-assistant-dashboard',
     manager: '/dashboard/employee-dashboard',
-    employee: '/dashboard/employee-dashboard'
+    employee: '/dashboard/employee-dashboard',
+    superadmin: '/super-admin/dashboard'
   };
   router.push(routes[role] || '/dashboard');
 };

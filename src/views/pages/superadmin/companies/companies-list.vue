@@ -209,7 +209,7 @@
                 <template v-if="column.key === 'CompanyName'">
                   <div class="d-flex align-items-center file-name-icon">
                     <a href="javascript:void(0);" class="avatar avatar-md border rounded-circle">
-                      <img :src="require(`@/assets/img/company/${record.Image}`)" class="img-fluid" alt="img" />
+                      <img :src="(`@/assets/img/company/${record.Image}`)" class="img-fluid" alt="img" />
                     </a>
                     <div class="ms-2">
                       <h6 class="fw-medium">

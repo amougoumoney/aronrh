@@ -32,8 +32,11 @@ export default {
 					return '/dashboard/hr-assistant-dashboard';
 				case 'manager':
 				case 'employee':
+				case 'superadmin':
+					return '/dashboard/superadmin-dashboard';
 				default:
 					return '/dashboard/employee-dashboard';
+
 			}
 		}
 	},

@@ -384,6 +384,16 @@ const routes = [
     }
   },
   {
+    path: '/super-admin/dashboard',
+    name: 'superadmin-dashboard',
+    component: superDashboard,
+    beforeEnter: roleGuard(['superadmin']),
+    meta: {
+      requiresAuth: true,
+      title: 'SuperAdmin Dashboard'
+    }
+  },
+  {
     path: '/dashboard/employee-dashboard',
     name: 'employee-dashboard',
     component: employeeDashboard,
