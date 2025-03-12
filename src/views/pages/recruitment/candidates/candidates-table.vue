@@ -223,7 +223,7 @@ export default {
         <div class="d-flex align-items-center file-name-icon">
           <a href="javascript:void(0);" class="avatar avatar-md">
             <img
-              :src="require(`@/assets/img/users/${record.Image}`)"
+              :src="(`@/assets/img/users/${record.Image}`)"
               class="img-fluid rounded-circle"
               alt="img"
             />

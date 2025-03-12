@@ -197,7 +197,7 @@ export default {
         <div class="d-flex align-items-center file-name-icon">
           <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
             <img
-              :src="require(`@/assets/img/users/${record.Image}`)"
+              :src="`@/assets/img/users/${record.Image}`"
               class="img-fluid"
               alt="img"
             />
@@ -213,35 +213,35 @@ export default {
         <div class="avatar-list-stacked avatar-group-sm">
           <span class="avatar border-0">
             <img
-              :src="require(`@/assets/img/users/${record.Img1}`)"
+              :src="`@/assets/img/users/${record.Img1}`"
               class="rounded-circle"
               alt="img"
             />
           </span>
           <span class="avatar border-0">
             <img
-              :src="require(`@/assets/img/users/${record.Img2}`)"
+              :src="`@/assets/img/users/${record.Img2}`"
               class="rounded-circle"
               alt="img"
             />
           </span>
           <span class="avatar border-0">
             <img
-              :src="require(`@/assets/img/users/${record.Img3}`)"
+              :src="`@/assets/img/users/${record.Img3}`"
               class="rounded-circle"
               alt="img"
             />
           </span>
           <span class="avatar border-0">
             <img
-              :src="require(`@/assets/img/users/${record.Img4}`)"
+              :src="`@/assets/img/users/${record.Img4}`"
               class="rounded-circle"
               alt="img"
             />
           </span>
           <span class="avatar border-0">
             <img
-              :src="require(`@/assets/img/users/${record.Img5}`)"
+              :src="`@/assets/img/users/${record.Img5}`"
               class="rounded-circle"
               alt="img"
             />

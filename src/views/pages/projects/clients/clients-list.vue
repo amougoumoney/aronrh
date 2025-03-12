@@ -217,7 +217,7 @@
                 <template v-if="column.key === 'ClientName'">
                   <div class="d-flex align-items-center file-name-icon">
                     <router-link to="/projects/clients-details" class="avatar avatar-md border avatar-rounded">
-                      <img :src="require(`@/assets/img/users/${record.Image}`)" class="img-fluid" alt="img" />
+                      <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid" alt="img" />
                     </router-link>
                     <div class="ms-2">
                       <h6 class="fw-medium">

@@ -281,7 +281,7 @@ export default {
                     data-bs-target="#candidate_details"
                   >
                     <img
-                      :src="require(`@/assets/img/users/${Card.Image}`)"
+                      :src="(`@/assets/img/users/${Card.Image}`)"
                       class="img-fluid h-auto w-auto"
                       alt="img"
                     />

@@ -200,7 +200,7 @@
                               <div class="d-flex align-items-center justify-content-between mb-2 pb-2 border-bottom">
                                 <div class="d-flex align-items-center overflow-hidden">
                                   <a href="javascript:void(0);" class="avatar avatar-md bg-light me-2">
-                                    <img :src="require(`@/assets/img/icons/${item.Logo}`)" class="w-auto h-auto"
+                                    <img :src="`@/assets/img/icons/${item.Logo}`" class="w-auto h-auto"
                                       alt="img">
                                   </a>
                                   <div class="overflow-hidden">
@@ -218,7 +218,7 @@
                               <div class="d-flex align-items-center justify-content-between">
                                 <p class="fw-medium mb-0">{{ item.Day }}</p>
                                 <span class="avatar avatar-sm avatar-rounded"><img
-                                    :src="require(`@/assets/img/users/${item.Image}`)" alt="Img"></span>
+                                    :src="`@/assets/img/users/${item.Image}`" alt="Img"></span>
                               </div>
                             </div>
                           </div>

@@ -404,7 +404,7 @@
             "menuValue": "Holidays",
             "route": "/hrm/holidays",
             "active_link": "/hrm/holidays",
-            "customSubmenuTwo": false
+            "customSubmenuTwo": true
           },
           {
             "menuValue": "Attendance",

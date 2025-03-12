@@ -42,6 +42,6 @@ export const Users = [
         "status": "active",
         "password": "password@123",
         "roles": ["admin"],
-        "permissions": ["user.read"]
+        "permissions": ["user.create"]
       }
 ]

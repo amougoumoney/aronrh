@@ -4,7 +4,8 @@ export const ROLE_HIERARCHY = {
     'hr-manager': 2, 
     'hr-assistant': 3,
     'manager': 4,
-    'employee': 5
+    'employee': 5,
+    'superadmin':6
 };
 
 // Default routes for each role
@@ -159,6 +160,11 @@ export const ROLE_MENU_ACCESS = {
             'view_requests',
             'manage_leave',
             'manage_travel'
+        ]
+    }, 
+    'superadmin':{
+        allowedMenus:[
+            
         ]
     }
 };

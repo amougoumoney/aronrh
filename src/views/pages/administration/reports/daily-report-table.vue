@@ -167,7 +167,7 @@ export default {
             data-bs-toggle="modal"
             data-bs-target="#view_details"
             ><img
-              :src="require(`@/assets/img/users/${record.Image}`)"
+              :src="`@/assets/img/users/${record.Image}`"
               class="img-fluid rounded-circle"
               alt="img"
             />
