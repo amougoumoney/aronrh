@@ -10,13 +10,13 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <button class="btn btn-primary" @click="openAddGrantModal">
-              <i class="ti ti-plus me-1"></i>Create Grant
+              <i class="ti ti-plus me-1"></i>{{$t('CreateGrant')}}
             </button>
           </div>
           <div class="me-2 mb-2">
                <!-- Create Grant Upload Modal button -->
                <button class="btn btn-primary" @click="openGrantUploadModal">
-              <i class="ti ti-upload me-1"></i>Upload Grant
+              <i class="ti ti-upload me-1"></i>{{$t('UploadGrant')}}
             </button> 
           </div>
         </div>
@@ -32,13 +32,13 @@
             <tr>
               <!-- Add a column for the expand/collapse button -->
               <th style="width: 40px;"></th>
-              <th>Grant Code</th>
-              <th>Grant Name</th>
-              <th>Amount</th>
-              <th>Start Date</th>
-              <th>End Date</th>
-              <th>Status</th>
-              <th class="text-end">Actions</th>
+              <th>{{$t('GrantCode')}}</th>
+              <th>{{$t('GrantName')}}</th>
+              <th>{{$t('Amount')}}</th>
+              <th>{{$t('StartDate')}}</th>
+              <th>{{$t('EndDate')}}</th>
+              <th>{{$t('Status')}}</th>
+              <th class="text-end">{{$t('Actions')}}</th>
             </tr>
           </thead>
           <tbody>
@@ -68,13 +68,13 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-end">
                       <router-link :to="'/grant/details/' + grant.id" class="dropdown-item">
-                        <i class="ti ti-eye me-2"></i>View
+                        <i class="ti ti-eye me-2"></i>{{$t('View')}}
                       </router-link>
                       <a href="javascript:void(0);" class="dropdown-item" @click="openEditGrantModal(grant)">
-                        <i class="ti ti-pencil me-2"></i>Edit
+                        <i class="ti ti-pencil me-2"></i>{{$t('Edit')}}
                       </a>
                       <a href="javascript:void(0);" class="dropdown-item" @click="deleteGrant(grant.id)">
-                        <i class="ti ti-trash me-2"></i>Delete
+                        <i class="ti ti-trash me-2"></i>{{$t('Delete')}}
                       </a>
                     </div>
                   </div>
@@ -88,17 +88,17 @@
                     <table class="table table-sm mb-0">
                       <thead>
                         <tr>
-                          <th>BG Line</th>
-                          <th>Position</th>
-                          <th>Salary</th>
-                          <th>Benefit</th>
-                          <th>Effort</th>
-                          <th>Position Number</th>
-                          <th>Cost Monthly</th>
-                          <th>Total Cost By Person</th>
-                          <th>Benefit FTE</th>
-                          <th>Position ID</th>
-                          <th>Total Amount</th>
+                          <th>{{$t('BGLine')}}</th>
+                          <th>{{$t('Position')}}</th>
+                          <th>{{$t('Salary')}}</th>
+                          <th>{{$t('Benefit')}}</th>
+                          <th>{{$t('Effort')}}</th>
+                          <th>{{$t('PositionNumber')}}</th>
+                          <th>{{$t('CostMonthly')}}</th>
+                          <th>{{$t('TotalCostByPerson')}}</th>
+                          <th>{{$t('BenefitFTE')}}</th>
+                          <th>{{$t('PositionID')}}</th>
+                          <th>{{$t('TotalAmount')}}</th>
                           <th></th>
                         </tr>
                       </thead>

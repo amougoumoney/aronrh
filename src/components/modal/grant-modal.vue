@@ -11,14 +11,14 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Name</label>
-                  <input type="text" v-model="formData.grantName" class="form-control" placeholder="e.g., UNICEF-EP" required>
+                  <label class="form-label">{{$t('GrantName')}}</label>
+                  <input type="text" v-model="formData.grantName" class="form-control" :placeholder= "$t('e.g.,UNICEF-EP')" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Code</label>
-                  <input type="text" v-model="formData.grantCode" class="form-control" placeholder="e.g., B-24004" required>
+                  <label class="form-label">{{$t('GrantCode')}}</label>
+                  <input type="text" v-model="formData.grantCode" class="form-control" :placeholder="$t('e.g.,B-24004')" required>
                 </div>
               </div>
             </div>
@@ -26,13 +26,13 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant BG Line</label>
+                  <label class="form-label">{{$t('GrantBGLine')}}</label>
                   <input type="text" v-model="formData.grantBGLine" class="form-control" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Position</label>
+                  <label class="form-label">{{$t('GrantPosition')}}</label>
                   <input type="text" v-model="formData.grantPosition" class="form-control" required>
                 </div>
               </div>
@@ -41,13 +41,13 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Salary</label>
+                  <label class="form-label">{{$t('GrantSalary')}}</label>
                   <input type="number" v-model="formData.grantSalary" class="form-control" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Benefit</label>
+                  <label class="form-label">{{$t('GrantBenefit')}}</label>
                   <input type="number" v-model="formData.grantBenefit" class="form-control" required>
                 </div>
               </div>
@@ -56,13 +56,13 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Level of Effort (%)</label>
+                  <label class="form-label">{{$t('GrantLevelofEffort')}} (%)</label>
                   <input type="number" v-model="formData.grantLevelOfEffort" class="form-control" min="0" max="100" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Position Number</label>
+                  <label class="form-label">{{$t('GrantPositionNumber')}}</label>
                   <input type="text" v-model="formData.grantPositionNumber" class="form-control" required>
                 </div>
               </div>
@@ -71,19 +71,19 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Cost by Monthly</label>
+                  <label class="form-label">{{$t('GrantCostbyMonthly')}}</label>
                   <input type="number" v-model="formData.grantCostMonthly" class="form-control" required>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Total Amount (Year)</label>
+                  <label class="form-label">{{$t('GrantTotalAmount(Year)')}}</label>
                   <input type="number" v-model="formData.grantTotalAmountYear" class="form-control" required>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Total Cost by Person</label>
+                  <label class="form-label">{{$t('GrantTotalCostbyPerson')}}</label>
                   <input type="number" v-model="formData.grantTotalCostByPerson" class="form-control" required>
                 </div>
               </div>
@@ -92,7 +92,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="input-block mb-3">
-                  <label class="form-label">Grant Position ID</label>
+                  <label class="form-label">{{$t('GrantPositionID')}}</label>
                   <input type="text" v-model="formData.grantPositionId" class="form-control" required>
                 </div>
               </div>
@@ -100,7 +100,7 @@
 
             <div class="submit-section">
               <button type="submit" class="btn btn-primary">
-                {{ isEditing ? 'Update Grant' : 'Add Grant' }}
+                {{ isEditing ? $t('UpdateGrant') : $t('AddGrant') }}
               </button>
             </div>
           </form>

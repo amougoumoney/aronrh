@@ -9,8 +9,8 @@
       class="offcanvas-header d-flex align-items-center justify-content-between bg-dark"
     >
       <div>
-        <h3 class="mb-1 text-white">Theme Customizer</h3>
-        <p class="text-light">Choose your themes & layouts etc.</p>
+        <h3 class="mb-1 text-white">{{ $t('ThemeCustomizer') }}</h3>
+        <p class="text-light">{{ $t('Chooseyourthemes&layoutsetc.') }}</p>
       </div>
       <a
         href="javascript:void(0);"
@@ -34,7 +34,7 @@
               aria-expanded="true"
               aria-controls="collapsecustomicon1One"
             >
-              Select Layouts
+              {{ $t('SelectLayouts') }}
             </button>
           </h2>
           <div id="layoutsetting" class="accordion-collapse collapse show">
@@ -53,7 +53,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/default.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Default</span>
+                      <span class="layout-type">{{ $t('Default') }}</span>
                     </label>
                   </div>
                 </div>
@@ -64,7 +64,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/mini.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Mini</span>
+                      <span class="layout-type">{{ $t('Mini') }}</span>
                     </label>
                   </div>
                 </div>
@@ -80,7 +80,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/horizontal.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Horizontal</span>
+                      <span class="layout-type">{{ $t('Horizontal') }}</span>
                     </label>
                   </div>
                 </div>
@@ -96,7 +96,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/horizontal-single.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Horizontal Single</span>
+                      <span class="layout-type">{{ $t('HorizontalSingle') }}</span>
                     </label>
                   </div>
                 </div>
@@ -112,7 +112,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/horizontal-single.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Detached</span>
+                      <span class="layout-type">{{ $t('Detached') }}</span>
                     </label>
                   </div>
                 </div>
@@ -128,7 +128,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/two-column.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Two Column</span>
+                      <span class="layout-type">{{ $t('TwoColumn') }}</span>
                     </label>
                   </div>
                 </div>
@@ -144,7 +144,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/without-header.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Without Header</span>
+                      <span class="layout-type">{{ $t('WithoutHeader') }}</span>
                     </label>
                   </div>
                 </div>
@@ -160,7 +160,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/overlay.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Overlay</span>
+                      <span class="layout-type">{{ $t('Overlay') }}</span>
                     </label>
                   </div>
                 </div>
@@ -176,7 +176,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/menu-aside.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Menu Aside</span>
+                      <span class="layout-type">{{ $t('MenuAside') }}</span>
                     </label>
                   </div>
                 </div>
@@ -192,7 +192,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/stacked.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Menu Stacked</span>
+                      <span class="layout-type">{{ $t('MenuStacked') }}</span>
                     </label>
                   </div>
                 </div>
@@ -208,7 +208,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/modern.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Modern</span>
+                      <span class="layout-type">{{ $t('Modern') }}</span>
                     </label>
                   </div>
                 </div>
@@ -224,7 +224,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/transparent.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Transparent</span>
+                      <span class="layout-type">{{ $t('Transparent') }}</span>
                     </label>
                   </div>
                 </div>
@@ -249,7 +249,7 @@
               data-bs-target="#sidebarsetting"
               aria-expanded="true"
             >
-              Layout Width
+              {{ $t('LayoutWidth') }}
             </button>
           </h2>
           <div id="sidebarsetting" class="accordion-collapse collapse show">
@@ -264,13 +264,13 @@
                     checked
                   />
                   <label for="fluidWidth" class="d-block rounded fs-12"
-                    >Fluid Layout
+                    >{{ $t('FluidLayout') }}
                   </label>
                 </div>
                 <div class="theme-width m-1">
                   <input type="radio" name="width" id="boxWidth" value="box" />
                   <label for="boxWidth" class="d-block rounded fs-12"
-                    >Boxed Layout
+                    >{{ $t('BoxedLayout') }}
                   </label>
                 </div>
               </div>
@@ -287,7 +287,7 @@
               aria-expanded="true"
               aria-controls="collapsecustomicon1One"
             >
-              Card Layout
+              {{ $t('CardLayout') }}
             </button>
           </h2>
           <div id="cardsetting" class="accordion-collapse collapse show">
@@ -306,7 +306,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/bordered.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Bordered</span>
+                      <span class="layout-type">{{ $t('Bordered') }}</span>
                     </label>
                   </div>
                 </div>
@@ -322,7 +322,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/borderless.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Borderless</span>
+                      <span class="layout-type">{{ $t('Borderless') }}</span>
                     </label>
                   </div>
                 </div>
@@ -333,7 +333,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/shadow.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Only Shadow</span>
+                      <span class="layout-type">{{ $t('OnlyShadow') }}</span>
                     </label>
                   </div>
                 </div>
@@ -350,7 +350,7 @@
               data-bs-target="#sidebarsetting"
               aria-expanded="true"
             >
-              Sidebar Color
+              {{ $t('SidebarColor') }}
             </button>
           </h2>
           <div id="sidebarsetting" class="accordion-collapse collapse show">
@@ -428,7 +428,7 @@
               data-bs-target="#modesetting"
               aria-expanded="true"
             >
-              Color Mode
+              {{ $t('ColorMode') }}
             </button>
           </h2>
           <div id="modesetting" class="accordion-collapse collapse show">
@@ -446,7 +446,7 @@
                     <label for="lightTheme" class="p-2 rounded fw-medium w-100">
                       <span class="avatar avatar-md d-inline-flex rounded me-2"
                         ><i class="ti ti-sun-filled"></i></span
-                      >Light Mode
+                      >{{ $t('LightMode') }}
                     </label>
                   </div>
                 </div>
@@ -456,7 +456,7 @@
                     <label for="darkTheme" class="p-2 rounded fw-medium w-100">
                       <span class="avatar avatar-md d-inline-flex rounded me-2"
                         ><i class="ti ti-moon-filled"></i></span
-                      >Dark Mode
+                      >{{ $t('DarkMode') }}
                     </label>
                   </div>
                 </div>
@@ -474,7 +474,7 @@
               aria-expanded="true"
               aria-controls="collapsecustomicon1One"
             >
-              Sidebar Size
+              {{ $t('SidebarSize') }}
             </button>
           </h2>
           <div id="sizesetting" class="accordion-collapse collapse show">
@@ -493,7 +493,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/default.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Default</span>
+                      <span class="layout-type">{{ $t('Default') }}</span>
                     </label>
                   </div>
                 </div>
@@ -504,7 +504,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/compact.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Compact</span>
+                      <span class="layout-type">{{ $t('Compact') }}</span>
                     </label>
                   </div>
                 </div>
@@ -520,7 +520,7 @@
                       <span class="d-block mb-2 layout-img">
                         <img src="@/assets/img/theme/hoverview.svg" alt="img" />
                       </span>
-                      <span class="layout-type">Hover View</span>
+                      <span class="layout-type">{{ $t('HoverView') }}</span>
                     </label>
                   </div>
                 </div>
@@ -537,7 +537,7 @@
               data-bs-target="#colorsetting"
               aria-expanded="true"
             >
-              Top Bar Color
+              {{ $t('TopBarColor') }}
             </button>
           </h2>
           <div id="colorsetting" class="accordion-collapse collapse show">
@@ -651,12 +651,12 @@
               data-bs-target="#topcolorsetting"
               aria-expanded="true"
             >
-              Top Bar Background
+              {{ $t('TopBarBackground') }}
             </button>
           </h2>
           <div id="topcolorsetting" class="accordion-collapse collapse show">
             <div class="accordion-body">
-              <h6 class="mb-1 fw-medium">Pattern</h6>
+              <h6 class="mb-1 fw-medium">{{ $t('Pattern') }}</h6>
               <div class="d-flex align-items-center">
                 <div class="theme-topbarbg me-3 mb-2">
                   <input
@@ -695,7 +695,7 @@
                   </label>
                 </div>
               </div>
-              <h6 class="mb-1 fw-medium">Colors</h6>
+              <h6 class="mb-1 fw-medium">{{ $t('Colors') }}</h6>
               <div class="d-flex align-items-center">
                 <div class="theme-colorselect m-1 me-3">
                   <input
@@ -769,7 +769,7 @@
               data-bs-target="#sidebarbgsetting"
               aria-expanded="true"
             >
-              Sidebar Background
+             {{ $t('SidebarBackground') }}
             </button>
           </h2>
           <div id="sidebarbgsetting" class="accordion-collapse collapse show">
@@ -878,7 +878,7 @@
               data-bs-target="#sidebarcolor"
               aria-expanded="true"
             >
-              Theme Colors
+              {{ $t('ThemeColors') }}
             </button>
           </h2>
           <div id="sidebarcolor" class="accordion-collapse collapse show">
@@ -953,7 +953,7 @@
               data-bs-target="#loadersetting"
               aria-expanded="true"
             >
-              Preloader
+             {{ $t('Preloader') }}
             </button>
           </h2>
           <div id="loadersetting" class="accordion-collapse collapse show">
@@ -968,13 +968,13 @@
                     checked
                   />
                   <label for="enableLoader" class="d-block rounded fs-12"
-                    >With Preloader
+                    >{{ $t('WithPreloader') }}
                   </label>
                 </div>
                 <div class="theme-width">
                   <input type="radio" name="loader" id="disableLoader" value="disable" />
                   <label for="disableLoader" class="d-block rounded fs-12"
-                    >Without Preloader
+                    >{{ $t('WithoutPreloader') }}
                   </label>
                 </div>
               </div>
@@ -987,12 +987,12 @@
       <div class="row gx-3">
         <div class="col-6">
           <a href="javascript:void(0);" id="resetbutton" class="btn btn-light close-theme w-100"
-            ><i class="ti ti-restore me-1"></i>Reset</a
+            ><i class="ti ti-restore me-1"></i>{{ $t('Reset') }}</a
           >
         </div>
         <div class="col-6">
           <a href="javascript:void(0);" class="btn btn-primary w-100" data-bs-dismiss="offcanvas"
-            ><i class="ti ti-shopping-cart-plus me-1"></i>Buy Product</a
+            ><i class="ti ti-shopping-cart-plus me-1"></i>{{ $t('BuyProduct') }}</a
           >
         </div>
       </div>

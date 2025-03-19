@@ -11,17 +11,17 @@
           <div class="me-2 mb-2">
             <div class="dropdown">
               <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>Export
+                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">
-                    <i class="ti ti-file-type-pdf me-1"></i>Export as PDF
+                    <i class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}
                   </a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">
-                    <i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                    <i class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}}
                   </a>
                 </li>
               </ul>
@@ -51,15 +51,15 @@
                 <table class="table table-striped custom-table mb-0 datatable">
                   <thead>
                     <tr>
-                      <th>ID</th>
-                      <th>Job Position</th>
-                      <th>Interview Date</th>
-                      <th>Time</th>
-                      <th>Interviewer</th>
-                      <th>Mode</th>
-                      <th>Status</th>
-                      <th>Score</th>
-                      <th class="text-end">Actions</th>
+                      <th>{{$t('id')}}</th>
+                      <th>{{$t('JobPosition')}}</th>
+                      <th>{{$t('InterviewDate')}}</th>
+                      <th>{{$t('Time')}}</th>
+                      <th>{{$t('Interviewer')}}</th>
+                      <th>{{$t('Mode')}}</th>
+                      <th>{{$t('Status')}}</th>
+                      <th>{{$t('Score')}}</th>
+                      <th class="text-end">{{$t('Actions')}}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -83,16 +83,16 @@
                           </a>
                           <div class="dropdown-menu dropdown-menu-end">
                             <a href="javascript:void(0);" class="dropdown-item" @click="viewInterviewDetails(interview.id)">
-                              <i class="ti ti-eye me-2"></i>View Details
+                              <i class="ti ti-eye me-2"></i>{{$t('viewDetails')}}
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item" @click="editInterviewDetails(interview.id)">
-                              <i class="ti ti-pencil me-2"></i>Edit
+                              <i class="ti ti-pencil me-2"></i>{{$t('Edit')}}
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item" @click="addFeedback(interview.id)">
-                              <i class="ti ti-message me-2"></i>Add Feedback
+                              <i class="ti ti-message me-2"></i>{{$t('AddFeedback')}}
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item" @click="deleteInterviewRecord(interview.id)">
-                              <i class="ti ti-trash me-2"></i>Delete
+                              <i class="ti ti-trash me-2"></i>{{$t('Delete')}}
                             </a>
                           </div>
                         </div>
