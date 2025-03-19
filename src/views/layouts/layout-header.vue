@@ -47,7 +47,7 @@
 
           <div class="d-flex align-items-center">
             <div class="">
-              <language-switcher/>
+              <language-switcher />
             </div>
 
             <div class="me-1">
@@ -64,12 +64,12 @@
               </a>
               <div class="dropdown-menu dropdown-menu-end notification-dropdown p-4">
                 <div class="d-flex align-items-center justify-content-between border-bottom p-0 pb-3 mb-3">
-                  <h4 class="notification-title">{{$t('notifications')}} (2)</h4>
+                  <h4 class="notification-title">{{ $t('notifications') }} (2)</h4>
                   <div class="d-flex align-items-center">
                     <a href="javascript:void(0);" class="text-primary fs-15 me-3 lh-1">{{ $t('markAllAsRead') }}</a>
                     <div class="dropdown">
                       <a href="javascript:void(0);" class="bg-white dropdown-toggle" data-bs-toggle="dropdown">
-                        <i class="ti ti-calendar-due me-1"></i>{{$t('today')}}
+                        <i class="ti ti-calendar-due me-1"></i>{{ $t('today') }}
                       </a>
                       <ul class="dropdown-menu mt-2 p-3">
                         <li>
@@ -101,8 +101,8 @@
                           </span>
                           <div class="flex-grow-1">
                             <p class="mb-1">
-                              <span class="text-dark fw-semibold">Shawn</span> 
-                                {{ $t('performanceInMathIsBelowTheThreshold') }}
+                              <span class="text-dark fw-semibold">Shawn</span>
+                              {{ $t('performanceInMathIsBelowTheThreshold') }}
                             </p>
                             <span>{{ $t('justNow') }}</span>
                           </div>
@@ -117,10 +117,10 @@
                           </span>
                           <div class="flex-grow-1">
                             <p class="mb-1">
-                              <span class="text-dark fw-semibold">Sylvia</span> 
+                              <span class="text-dark fw-semibold">Sylvia</span>
                               {{ $t('addAppointmentOn02PM') }}
                             </p>
-                            <span>{{$t('10MinsAgo') }}</span>
+                            <span>{{ $t('10MinsAgo') }}</span>
                             <div class="d-flex justify-content-start align-items-center mt-1">
                               <span class="btn btn-light btn-sm me-2">{{ $t('deny') }}</span>
                               <span class="btn btn-primary btn-sm">{{ $t('approve') }}</span>
@@ -138,7 +138,7 @@
                           <div class="flex-grow-1">
                             <p class="mb-1">
                               {{ $t('newStudentRecord') }}
-                              <span class="text-dark fw-semibold"> George</span> 
+                              <span class="text-dark fw-semibold"> George</span>
                               {{ $t('isCreatedBy') }}
                               <span class="text-dark fw-semibold">Teressa</span>
                             </p>
@@ -236,205 +236,142 @@
   <theme-settings></theme-settings>
 
 </template>
-<script>
+<script setup>
+import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
+import { useRouter } from 'vue-router';
 import { authService } from '@/services/auth.service';
 import sideBarData from "@/assets/json/sidebar-menuone.json";
 import Swal from 'sweetalert2';
 
+const router = useRouter();
 
-export default {
-  data() {
-    return {
-      notificationClass: "pe-1",
-      sideBarData: sideBarData,
-      openMenuItem: null,
-      openSubmenuOneItem: null,
-      route_array: [],
-      username: null,
-      email: null
-    };
-  },
+const notificationClass = ref("pe-1");
+const openMenuItem = ref(null);
+const openSubmenuOneItem = ref(null);
+const route_array = ref([]);
+const username = ref(null);
+const email = ref(null);
 
-  mounted() {
-    this.initMouseoverListener();
-    this.handleOutsideClick = this.handleOutsideClick.bind(this);
-    this.fetchUserDetails(); // Call fetchUserDetails when component is mounted
-  },
-  methods: {
-
-    fetchUserDetails() {
-      const userStr = localStorage.getItem('user');
-      if (userStr) {
-        try {
-          const userData = JSON.parse(userStr);
-          this.username = userData.name || 'User';
-          this.email = userData.email || 'user@example.com';
-        } catch (e) {
-          this.username = 'User';
-          this.email = 'user@example.com';
-        }
-      } else {
-        this.username = 'User';
-        this.email = 'user@example.com';
-      }
-      return {
-        username: this.username,
-        email: this.email
-      };
-    },
-
-    handleClick(event) {
-      event.stopPropagation();
-
-      if (this.notificationClass === "pe-1 notification-item-show") {
-        // If the class is already present, remove it
-        this.notificationClass = "";
-        document.removeEventListener("click", this.handleOutsideClick);
-      } else {
-        // If the class is not present, add it
-        this.notificationClass = "pe-1 notification-item-show";
-        document.addEventListener("click", this.handleOutsideClick);
-      }
-    },
-    handleOutsideClick(event) {
-      // Check if the click was outside the notification item
-      const notificationItem = event.target.closest(".notification-item");
-      if (!notificationItem) {
-        this.notificationClass = "";
-        // Remove the event listener
-        document.removeEventListener("click", this.handleOutsideClick);
-      }
-    },
-    toggleSidebar1() {
-      const body = document.body;
-      body.classList.toggle("slide-nav");
-    },
-    toggleSidebar() {
-      const body = document.body;
-      body.classList.toggle("mini-sidebar");
-    },
-
-    initFullScreen() {
-      document.body.classList.toggle("fullscreen-enable");
-      if (
-        !document.fullscreenElement &&
-        /* alternative standard method */
-        !document.mozFullScreenElement &&
-        !document.webkitFullscreenElement
-      ) {
-        // current working methods
-        if (document.documentElement.requestFullscreen) {
-          document.documentElement.requestFullscreen();
-        } else if (document.documentElement.mozRequestFullScreen) {
-          document.documentElement.mozRequestFullScreen();
-        } else if (document.documentElement.webkitRequestFullscreen) {
-          document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-        }
-      } else {
-        if (document.cancelFullScreen) {
-          document.cancelFullScreen();
-        } else if (document.mozCancelFullScreen) {
-          document.mozCancelFullScreen();
-        } else if (document.webkitCancelFullScreen) {
-          document.webkitCancelFullScreen();
-        }
-      }
-    },
-
-    initMouseoverListener() {
-      document.addEventListener("mouseover", this.handleMouseover);
-    },
-    handleMouseover(e) {
-      e.stopPropagation();
-
-      const body = document.body;
-      const toggleBtn = document.getElementById("toggle_btn");
-
-      if (body.classList.contains("mini-sidebar") && this.isElementVisible(toggleBtn)) {
-        const target = e.target.closest(".sidebar, .header-left");
-
-        if (target) {
-          body.classList.add("expand-menu");
-          this.slideDownSubmenu();
-        } else {
-          body.classList.remove("expand-menu");
-          this.slideUpSubmenu();
-        }
-
-        e.preventDefault();
-      }
-    },
-    isElementVisible(element) {
-      return element.offsetWidth > 0 || element.offsetHeight > 0;
-    },
-    slideDownSubmenu() {
-      const subdropPlusUl = document.getElementsByClassName("subdrop");
-      for (let i = 0; i < subdropPlusUl.length; i++) {
-        const submenu = subdropPlusUl[i].nextElementSibling;
-        if (submenu && submenu.tagName.toLowerCase() === "ul") {
-          submenu.style.display = "block";
-        }
-      }
-    },
-    slideUpSubmenu() {
-      const subdropPlusUl = document.getElementsByClassName("subdrop");
-      for (let i = 0; i < subdropPlusUl.length; i++) {
-        const submenu = subdropPlusUl[i].nextElementSibling;
-        if (submenu && submenu.tagName.toLowerCase() === "ul") {
-          submenu.style.display = "none";
-        }
-      }
-    },
-    expandSubMenus(menu) {
-      this.sideBarData.forEach((item) => {
-        item.menu.forEach((subMenu) => {
-          if (subMenu !== menu) {
-            subMenu.showSubRoute = false;
-          }
-        });
-      });
-      menu.showSubRoute = !menu.showSubRoute;
-    },
-    openMenu(menu) {
-      this.openMenuItem = this.openMenuItem === menu ? null : menu;
-    },
-    openSubmenuOne(subMenus) {
-      this.openSubmenuOneItem = this.openSubmenuOneItem === subMenus ? null : subMenus;
-    },
-    async handleLogout() {
-      try {
-        const result = await Swal.fire({
-          title: 'Are you sure?',
-          text: "You will be logged out of the system",
-          icon: 'warning',
-          showCancelButton: true,
-          confirmButtonColor: '#3085d6',
-          cancelButtonColor: '#d33',
-          confirmButtonText: 'Yes, logout',
-          cancelButtonText: 'Cancel'
-        });
-
-        if (result.isConfirmed) {
-          const logoutResult = await authService.logout();
-          if (logoutResult.success) {
-            this.$router.push('/login');
-          }
-        }
-      } catch (error) {
-        console.error('Logout failed:', error);
-        // Still redirect to login page even if API call fails
-        this.$router.push('/login');
-      }
+const fetchUserDetails = () => {
+  const userStr = localStorage.getItem('user');
+  if (userStr) {
+    try {
+      const userData = JSON.parse(userStr);
+      username.value = userData.name || 'User';
+      email.value = userData.email || 'user@example.com';
+    } catch (e) {
+      username.value = 'User';
+      email.value = 'user@example.com';
     }
-  },
-  beforeUnmount() {
-    document.removeEventListener("mouseover", this.handleMouseover);
-    document.removeEventListener("click", this.handleOutsideClick);
-  },
-  computed: {
-    dashboardRoute() {
-      return '/dashboard/';
-    }
-  },
+  } else {
+    username.value = 'User';
+    email.value = 'user@example.com';
+  }
 };
+
+const handleClick = (event) => {
+  event.stopPropagation();
+  if (notificationClass.value === "pe-1 notification-item-show") {
+    notificationClass.value = "";
+    document.removeEventListener("click", handleOutsideClick);
+  } else {
+    notificationClass.value = "pe-1 notification-item-show";
+    document.addEventListener("click", handleOutsideClick);
+  }
+};
+
+const handleOutsideClick = (event) => {
+  const notificationItem = event.target.closest(".notification-item");
+  if (!notificationItem) {
+    notificationClass.value = "";
+    document.removeEventListener("click", handleOutsideClick);
+  }
+};
+
+const toggleSidebar1 = () => {
+  document.body.classList.toggle("slide-nav");
+};
+
+const toggleSidebar = () => {
+  document.body.classList.toggle("mini-sidebar");
+};
+
+const initFullScreen = () => {
+  document.body.classList.toggle("fullscreen-enable");
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen?.();
+  } else {
+    document.exitFullscreen?.();
+  }
+};
+
+const handleMouseover = (e) => {
+  e.stopPropagation();
+  const body = document.body;
+  const toggleBtn = document.getElementById("toggle_btn");
+  if (body.classList.contains("mini-sidebar") && toggleBtn?.offsetWidth > 0) {
+    const target = e.target.closest(".sidebar, .header-left");
+    if (target) {
+      body.classList.add("expand-menu");
+    } else {
+      body.classList.remove("expand-menu");
+    }
+  }
+};
+
+const expandSubMenus = (menu) => {
+  sideBarData.forEach((item) => {
+    item.menu.forEach((subMenu) => {
+      if (subMenu !== menu) {
+        subMenu.showSubRoute = false;
+      }
+    });
+  });
+  menu.showSubRoute = !menu.showSubRoute;
+};
+
+const openMenu = (menu) => {
+  openMenuItem.value = openMenuItem.value === menu ? null : menu;
+};
+
+const openSubmenuOne = (subMenus) => {
+  openSubmenuOneItem.value = openSubmenuOneItem.value === subMenus ? null : subMenus;
+};
+
+const handleLogout = async () => {
+  try {
+    const result = await Swal.fire({
+      title: 'Are you sure?',
+      text: "You will be logged out of the system",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, logout',
+      cancelButtonText: 'Cancel'
+    });
+
+    if (result.isConfirmed) {
+      const logoutResult = await authService.logout();
+      if (logoutResult.success) {
+        router.push('/login');
+      }
+    }
+  } catch (error) {
+    console.error('Logout failed:', error);
+    router.push('/login');
+  }
+};
+
+const dashboardRoute = computed(() => '/dashboard/');
+
+onMounted(() => {
+  fetchUserDetails();
+  document.addEventListener("mouseover", handleMouseover);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener("mouseover", handleMouseover);
+  document.removeEventListener("click", handleOutsideClick);
+});
 </script>

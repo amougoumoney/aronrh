@@ -1,47 +1,42 @@
-<script>
+<script setup>
+import { ref, computed } from "vue";
 import { PerfectScrollbar } from "vue3-perfect-scrollbar";
-import 'vue3-perfect-scrollbar/style.css';
+import "vue3-perfect-scrollbar/style.css";
+import SidebarMenu from "./sidebar-menu.vue";
+import horizontalHeader from "./horizontal-header.vue";
+import twoSidebar from "./two-sidebar.vue";
+import StackedSidebar from "./stacked-sidebar.vue";
 
-export default {
-	components: {
-		PerfectScrollbar,
-	},
-	data() {
-		return {
-			settings: {
-				suppressScrollX: true,
-			},
-			activeClass: "active",
-		};
-	},
-	methods: {
-		scrollHanle() { },
-	},
-	computed: {
-		currentPath() {
-			return this.$route.name;
-		},
-		dashboardRoute() {
-			const userRole = localStorage.getItem('userRole')?.toLowerCase();
-			switch (userRole) {
-				case 'admin':
-					return '/dashboard/admin-dashboard';
-				case 'hr-manager':
-					return '/dashboard/hr-manager-dashboard';
-				case 'hr-assistant':
-					return '/dashboard/hr-assistant-dashboard';
-				case 'manager':
-				case 'employee':
-				case 'superadmin':
-					return '/dashboard/superadmin-dashboard';
-				default:
-					return '/dashboard/employee-dashboard';
+const settings = ref({
+	suppressScrollX: true,
+});
+const activeClass = ref("active");
 
-			}
-		}
-	},
-};
+const scrollHandle = () => { };
+
+const currentPath = computed(() => {
+	return useRoute().name;
+});
+
+const dashboardRoute = computed(() => {
+	const userRole = localStorage.getItem("userRole")?.toLowerCase();
+	switch (userRole) {
+		case "admin":
+			return "/dashboard/admin-dashboard";
+		case "hr-manager":
+			return "/dashboard/hr-manager-dashboard";
+		case "hr-assistant":
+			return "/dashboard/hr-assistant-dashboard";
+		case "manager":
+		case "employee":
+		case "superadmin":
+			return "/dashboard/superadmin-dashboard";
+		default:
+			return "/dashboard/employee-dashboard";
+	}
+});
 </script>
+
 
 <template>
 	<!-- Sidebar -->
@@ -79,7 +74,8 @@ export default {
 			</div>
 			<div class="sidebar-nav mb-3">
 				<ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified bg-transparent" role="tablist">
-					<li class="nav-item"><a class="nav-link active border-0" href="javascript:void(0);">{{ $t('menu') }}</a></li>
+					<li class="nav-item"><a class="nav-link active border-0" href="javascript:void(0);">{{ $t('menu')
+					}}</a></li>
 					<li class="nav-item">
 						<router-link class="nav-link border-0" to="/applications/chat">{{ $t('chats') }}</router-link>
 					</li>
@@ -143,11 +139,11 @@ export default {
 			</div>
 		</div>
 		<div class="sidebar-inner slimscroll">
-			<perfect-scrollbar class="scroll-area" :settings="settings" @ps-scroll-y="scrollHanle">
+			<PerfectScrollbar class="scroll-area" :settings="settings" @ps-scroll-y="scrollHanle">
 				<div id="sidebar-menu" class="sidebar-menu">
-					<sidebar-menu></sidebar-menu>
+					<SidebarMenu></SidebarMenu>
 				</div>
-			</perfect-scrollbar>
+			</PerfectScrollbar>
 		</div>
 	</div>
 	<!-- /Sidebar -->

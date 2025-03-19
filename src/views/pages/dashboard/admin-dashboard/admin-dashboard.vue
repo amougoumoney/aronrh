@@ -1,6 +1,6 @@
 <template>
-  <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar>
+  <LayoutHeader></LayoutHeader>
+  <LayoutSidebar></LayoutSidebar>
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
@@ -67,31 +67,29 @@
   </div>
   <admin-dashboard-modal></admin-dashboard-modal>
 </template>
-<script>
+<script setup>
 import { ref } from "vue";
+import LayoutHeader from "../../../layouts/layout-header.vue";
+import LayoutSidebar from "../../../layouts/layout-sidebar.vue";
+import welcomeWrap from "./welcome-wrap.vue";
+import employeeStatus from "./employee-status.vue";
+import jobApplicants from "./job-applicants.vue";
+import salesOverview from "./sales-overview.vue";
+import projectTable from "./project-table.vue";
+import schedulesIndex from "./schedules-index.vue";
+const title = ref("Admin Dashboard");
+const text = ref("Dashboard");
+const text1 = ref("Admin Dashboard");
 const value5 = ref();
-export default {
-  data() {
-    return {
-      title: "Admin Dashboard",
-      text: "Dashboard",
-      text1: "Admin Dashboard",
-      value5,
-      isCollapsed: false,
-    };
-  },
-  methods: {
-    toggleCollapse() {
-      // Toggle the collapsed state
-      this.isCollapsed = !this.isCollapsed;
+const isCollapsed = ref(false);
 
-      // Optionally add/remove class on body to collapse header globally
-      if (this.isCollapsed) {
-        document.body.classList.add("header-collapse");
-      } else {
-        document.body.classList.remove("header-collapse");
-      }
-    },
-  },
+const toggleCollapse = () => {
+  isCollapsed.value = !isCollapsed.value;
+
+  if (isCollapsed.value) {
+    document.body.classList.add("header-collapse");
+  } else {
+    document.body.classList.remove("header-collapse");
+  }
 };
 </script>

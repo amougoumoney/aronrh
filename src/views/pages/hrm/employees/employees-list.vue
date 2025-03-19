@@ -1,6 +1,4 @@
 <template>
-  <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar>
   <!-- Page Wrapper -->
   <div class="page-wrapper">
     <div class="content">
@@ -301,98 +299,54 @@
   <!-- /Page Wrapper -->
   <employee-list-modal></employee-list-modal>
 </template>
-<script>
-import "daterangepicker/daterangepicker.css";
-import "daterangepicker/daterangepicker.js";
-import { ref } from "vue";
-import { onMounted } from "vue";
+<script setup>
+import { ref, onMounted } from "vue";
 import moment from "moment";
 import DateRangePicker from "daterangepicker";
+import "daterangepicker/daterangepicker.css";
+import "daterangepicker/daterangepicker.js";
 
+// Data
 const columns = [
-  {
-    sorter: false,
-  },
+  { sorter: false },
   {
     title: "Emp ID",
     dataIndex: "EmpID",
-    sorter: {
-      compare: (a, b) => {
-        a = a.EmpID.toLowerCase();
-        b = b.EmpID.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
+    sorter: (a, b) => (a.EmpID.toLowerCase() > b.EmpID.toLowerCase() ? -1 : 1),
   },
   {
     title: "Name",
     dataIndex: "Name",
     key: "Name",
-    sorter: {
-      compare: (a, b) => {
-        a = a.Name.toLowerCase();
-        b = b.Name.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
+    sorter: (a, b) => (a.Name.toLowerCase() > b.Name.toLowerCase() ? -1 : 1),
   },
   {
     title: "Email",
     dataIndex: "Email",
-    sorter: {
-      compare: (a, b) => {
-        a = a.Email.toLowerCase();
-        b = b.Email.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
+    sorter: (a, b) => (a.Email.toLowerCase() > b.Email.toLowerCase() ? -1 : 1),
   },
   {
     title: "Phone",
     dataIndex: "Phone",
-    sorter: {
-      compare: (a, b) => {
-        a = a.Phone.toLowerCase();
-        b = b.Phone.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
+    sorter: (a, b) => (a.Phone.toLowerCase() > b.Phone.toLowerCase() ? -1 : 1),
   },
   {
     title: "Designation",
     dataIndex: "Designation",
     key: "Designation",
-    sorter: {
-      compare: (a, b) => {
-        a = a.Designation.toLowerCase();
-        b = b.Designation.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
+    sorter: (a, b) => (a.Designation.toLowerCase() > b.Designation.toLowerCase() ? -1 : 1),
   },
   {
     title: "Joining Date",
     dataIndex: "JoiningDate",
     key: "JoiningDate",
-    sorter: {
-      compare: (a, b) => {
-        a = a.JoiningDate.toLowerCase();
-        b = b.JoiningDate.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
+    sorter: (a, b) => (a.JoiningDate.toLowerCase() > b.JoiningDate.toLowerCase() ? -1 : 1),
   },
   {
     title: "Status",
     dataIndex: "Status",
     key: "Status",
-    sorter: {
-      compare: (a, b) => {
-        a = a.Status.toLowerCase();
-        b = b.Status.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
+    sorter: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
   },
   {
     title: "",
@@ -400,190 +354,60 @@ const columns = [
     sorter: false,
   },
 ];
+
 const data = [
-  {
-    EmpID: "Emp-001",
-    Name: "Anthony Lewis",
-    Work: "Finance",
-    Email: "anthony@example.com",
-    Phone: "(123) 4567 890",
-    Designation: "Finance",
-    JoiningDate: "12 Sep 2024",
-    Salary: "$40000",
-    Status: "Active",
-    Image: "user-32.jpg",
-  },
-  {
-    EmpID: "Emp-002",
-    Name: "Brian Villalobos",
-    Work: "Developer",
-    Email: "brian@example.com",
-    Phone: "(179) 7382 829",
-    Designation: "Developer",
-    JoiningDate: "24 Oct 2024",
-    Salary: "$35000",
-    Status: "Active",
-    Image: "user-09.jpg",
-  },
-  {
-    EmpID: "Emp-003",
-    Name: "Harvey Smith",
-    Work: "Developer",
-    Email: "harvey@example.com",
-    Phone: "(184) 2719 738",
-    Designation: "Executive",
-    JoiningDate: "18 Feb 2024",
-    Salary: "$20000",
-    Status: "Active",
-    Image: "user-01.jpg",
-  },
-  {
-    EmpID: "Emp-004",
-    Name: "Stephan Peralt",
-    Work: "Executive Officer",
-    Email: "peral@example.com",
-    Phone: "(193) 7839 748",
-    Designation: "Executive ",
-    JoiningDate: "17 Oct 2024",
-    Salary: "$$22000",
-    Status: "Active",
-    Image: "user-33.jpg",
-  },
-  {
-    EmpID: "Emp-005",
-    Name: "Doglas Martini",
-    Work: "Manager",
-    Email: "martniwr@example.com",
-    Phone: "(183) 9302 890",
-    Designation: "Manager",
-    JoiningDate: "20 Jun 2024",
-    Salary: "$25000",
-    Status: "Active",
-    Image: "user-34.jpg",
-  },
-  {
-    EmpID: "Emp-006",
-    Name: "Linda Ray",
-    Work: "Finance",
-    Email: "ray456@example.com",
-    Phone: "(120) 3728 039",
-    Designation: "Finance",
-    JoiningDate: "10 Apr 2024",
-    Salary: "$30000",
-    Status: "Active",
-    Image: "user-02.jpg",
-  },
-  {
-    EmpID: "Emp-007",
-    Name: "Elliot Murray",
-    Work: "Developer",
-    Email: "murray@example.com",
-    Phone: "(102) 8480 832",
-    Designation: "Finance",
-    JoiningDate: "29 Aug 2024",
-    Salary: "$35000",
-    Status: "Active",
-    Image: "user-35.jpg",
-  },
-  {
-    EmpID: "Emp-008",
-    Name: "Rebecca Smtih",
-    Work: "Executive",
-    Email: "smtih@example.com",
-    Phone: "(162) 8920 713",
-    Designation: "Executive",
-    JoiningDate: "22 Feb 2024",
-    Salary: "$45000",
-    Status: "Inactive",
-    Image: "user-36.jpg",
-  },
-  {
-    EmpID: "Emp-009",
-    Name: "Connie Waters",
-    Work: "Developer",
-    Email: "connie@example.com",
-    Phone: "(189) 0920 723",
-    Designation: "Developer",
-    JoiningDate: "03 Nov 2024",
-    Salary: "$50000",
-    Status: "Active",
-    Image: "user-37.jpg",
-  },
-  {
-    EmpID: "Emp-010",
-    Name: "Lori Broaddus",
-    Work: "Finance",
-    Email: "broaddus@example.com",
-    Phone: "(168) 8392 823",
-    Designation: "Finance ",
-    JoiningDate: "17 Dec 2024",
-    Salary: "$25000",
-    Status: "Active",
-    Image: "user-38.jpg",
-  },
+  { EmpID: "Emp-001", Name: "Anthony Lewis", Email: "anthony@example.com", Phone: "(123) 4567 890", Designation: "Finance", JoiningDate: "12 Sep 2024", Status: "Active" },
+  { EmpID: "Emp-002", Name: "Brian Villalobos", Email: "brian@example.com", Phone: "(179) 7382 829", Designation: "Developer", JoiningDate: "24 Oct 2024", Status: "Active" },
+  { EmpID: "Emp-003", Name: "Harvey Smith", Email: "harvey@example.com", Phone: "(184) 2719 738", Designation: "Executive", JoiningDate: "18 Feb 2024", Status: "Active" },
+  { EmpID: "Emp-004", Name: "Stephan Peralt", Email: "peral@example.com", Phone: "(193) 7839 748", Designation: "Executive", JoiningDate: "17 Oct 2024", Status: "Active" },
+  { EmpID: "Emp-005", Name: "Doglas Martini", Email: "martniwr@example.com", Phone: "(183) 9302 890", Designation: "Manager", JoiningDate: "20 Jun 2024", Status: "Active" },
+  { EmpID: "Emp-006", Name: "Linda Ray", Email: "ray456@example.com", Phone: "(120) 3728 039", Designation: "Finance", JoiningDate: "10 Apr 2024", Status: "Active" },
+  { EmpID: "Emp-007", Name: "Elliot Murray", Email: "murray@example.com", Phone: "(102) 8480 832", Designation: "Finance", JoiningDate: "29 Aug 2024", Status: "Active" },
+  { EmpID: "Emp-008", Name: "Rebecca Smtih", Email: "smtih@example.com", Phone: "(162) 8920 713", Designation: "Executive", JoiningDate: "22 Feb 2024", Status: "Inactive" },
+  { EmpID: "Emp-009", Name: "Connie Waters", Email: "connie@example.com", Phone: "(189) 0920 723", Designation: "Developer", JoiningDate: "03 Nov 2024", Status: "Active" },
+  { EmpID: "Emp-010", Name: "Lori Broaddus", Email: "broaddus@example.com", Phone: "(168) 8392 823", Designation: "Finance", JoiningDate: "17 Dec 2024", Status: "Active" },
 ];
+
 const rowSelection = {
   onChange: () => { },
   onSelect: () => { },
   onSelectAll: () => { },
 };
-export default {
-  data() {
-    return {
-      data,
-      columns,
-      rowSelection,
-      title: "Employees",
-      text: "Employee",
-      text1: "Employee List",
-    };
-  },
-  setup() {
-    const dateRangeInput = ref(null);
 
-    // Move the function declaration outside of the onMounted callback
-    function booking_range(start, end) {
-      return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
-    }
+// Reactive variables
+const dateRangeInput = ref(null);
 
-    onMounted(() => {
-      if (dateRangeInput.value) {
-        const start = moment().subtract(6, "days");
-        const end = moment();
-
-        new DateRangePicker(
-          dateRangeInput.value,
-          {
-            startDate: start,
-            endDate: end,
-            ranges: {
-              Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-              "Last 7 Days": [moment().subtract(6, "days"), moment()],
-              "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
-              "Last Month": [
-                moment().subtract(1, "month").startOf("month"),
-                moment().subtract(1, "month").endOf("month"),
-              ],
-            },
-          },
-          booking_range
-        );
-
-        booking_range(start, end);
-      }
-    });
-
-    return {
-      dateRangeInput,
-    };
-  },
-  methods: {
-    toggleHeader() {
-      document.getElementById("collapse-header").classList.toggle("active");
-      document.body.classList.toggle("header-collapse");
-    },
-  },
+// DateRangePicker initialization
+const booking_range = (start, end) => {
+  return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
 };
+
+onMounted(() => {
+  if (dateRangeInput.value) {
+    const start = moment().subtract(6, "days");
+    const end = moment();
+
+    new DateRangePicker(
+      dateRangeInput.value,
+      {
+        startDate: start,
+        endDate: end,
+        ranges: {
+          Today: [moment(), moment()],
+          Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+          "Last 7 Days": [moment().subtract(6, "days"), moment()],
+          "Last 30 Days": [moment().subtract(29, "days"), moment()],
+          "This Month": [moment().startOf("month"), moment().endOf("month")],
+          "Last Month": [
+            moment().subtract(1, "month").startOf("month"),
+            moment().subtract(1, "month").endOf("month"),
+          ],
+        },
+      },
+      booking_range
+    );
+
+    booking_range(start, end);
+  }
+});
 </script>

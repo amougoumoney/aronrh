@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import { authGuard, roleGuard } from './guards';
-import UnauthorizedPage from '@/views/pages/authentication/unauthorized.vue';
 
 // Grant components
 import grantIndex from '@/views/pages/grant/grant-index.vue';
@@ -15,12 +14,8 @@ import travelRequestIndex from '@/views/pages/requests/travel/travel-index.vue';
 import travelRequestList from '@/views/pages/requests/travel/travel-list.vue';
 import travelRequestDetails from '@/views/pages/requests/travel/travel-details.vue';
 
-import dashboardIndex from '@/views/pages/dashboard/dashboard-index.vue';
-import adminDashboard from '@/views/pages/dashboard/admin-dashboard/admin-dashboard.vue';
-import employeeDashboard from '@/views/pages/dashboard/employee-dashboard/employee-dashboard.vue';
 import hrManagerDashboard from '@/views/pages/dashboard/hr-manager-dashboard/hr-manager-dashboard.vue';
 import hrAssistantDashboard from '@/views/pages/dashboard/hr-assistant-dashboard/hr-assistant-dashboard.vue';
-import dealsDashboard from '@/views/pages/dashboard/deals-dashboard/deals-dashboard.vue';
 import leadsDashboard from '@/views/pages/dashboard/leads-dashboard/leads-dashboard.vue';
 import applicationIndex from '@/views/pages/applications/application-index.vue';
 import chatIndex from '@/views/pages/applications/chat-index.vue';
@@ -245,11 +240,6 @@ import UI_Iconweather from "@/views/pages/uiinterface/icons/icon-weather.vue";
 import UI_Icontypicon from "@/views/pages/uiinterface/icons/icon-typicon.vue";
 import UI_Iconflag from "@/views/pages/uiinterface/icons/icon-flag.vue";
 
-// Authentication component
-import LoginIndex from '@/views/pages/authentication/login-index.vue';
-import forgotPassword from '@/views/pages/authentication/forgot-password.vue';
-import resetPassword from '@/views/pages/authentication/reset-password.vue';
-
 import FormLayouts from '@/views/pages/uiinterface/forms/layouts/form-layouts.vue';
 
 import packagesList from '@/views/pages/superadmin/packages/packages-list.vue';
@@ -342,7 +332,7 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: LoginIndex,
+    component: () => import('@/views/pages/authentication/login-index.vue'),
     meta: {
       title: 'Login'
     }
@@ -350,7 +340,7 @@ const routes = [
   {
     path: '/forgot-password',
     name: 'forgot-password',
-    component: forgotPassword,
+    component: () => import('@/views/pages/authentication/forgot-password.vue'),
     meta: {
       title: 'Forgot Password'
     }
@@ -358,7 +348,7 @@ const routes = [
   {
     path: '/reset-password',
     name: 'reset-password',
-    component: resetPassword,
+    component: () => import("@/views/pages/authentication/reset-password.vue"),
     meta: {
       title: 'Reset Password'
     }
@@ -366,7 +356,7 @@ const routes = [
   {
     path: '/unauthorized',
     name: 'unauthorized',
-    component: UnauthorizedPage,
+    component: () => import('@/views/pages/authentication/unauthorized.vue'),
     meta: {
       title: 'Unauthorized Access'
     }
@@ -376,7 +366,7 @@ const routes = [
   {
     path: '/dashboard/admin-dashboard',
     name: 'admin-dashboard',
-    component: adminDashboard,
+    component: () => import('@/views/pages/dashboard/admin-dashboard/admin-dashboard.vue'),
     beforeEnter: roleGuard(['admin']),
     meta: {
       requiresAuth: true,
@@ -396,7 +386,7 @@ const routes = [
   {
     path: '/dashboard/employee-dashboard',
     name: 'employee-dashboard',
-    component: employeeDashboard,
+    component: () => import('@/views/pages/dashboard/employee-dashboard/employee-dashboard.vue'),
     beforeEnter: roleGuard(['employee', 'hr-manager', 'admin', 'hr-assistant']),
     meta: {
       requiresAuth: true,
@@ -407,7 +397,7 @@ const routes = [
   {
     path: '/dashboard/deals-dashboard',
     name: 'deals-dashboard',
-    component: dealsDashboard,
+    component: () => import('@/views/pages/dashboard/deals-dashboard/deals-dashboard.vue'),
     beforeEnter: roleGuard(['hr-manager', 'admin']),
     meta: {
       requiresAuth: true,
@@ -911,13 +901,13 @@ const routes = [
   },
   {
     path: '/dashboard',
-    component: dashboardIndex,
+    component: () => import('@/views/pages/dashboard/dashboard-index.vue'),
     children: [
       { path: '', redirect: '/dashboard/admin-dashboard' },
-      { path: "admin-dashboard", component: adminDashboard },
-      { path: "employee-dashboard", component: employeeDashboard },
-      { path: "deals-dashboard", component: dealsDashboard },
-      { path: "leads-dashboard", component: leadsDashboard },
+      { path: "admin-dashboard", component: () => import('@/views/pages/dashboard/admin-dashboard/admin-dashboard.vue'), },
+      { path: "employee-dashboard", component: () => import('@/views/pages/dashboard/employee-dashboard/employee-dashboard.vue'), },
+      { path: "deals-dashboard", component: () => import('@/views/pages/dashboard/deals-dashboard/deals-dashboard.vue'), },
+      { path: "leads-dashboard", component: () => import('@/views/pages/dashboard/leads-dashboard/leads-dashboard.vue'), },
     ]
   },
   {

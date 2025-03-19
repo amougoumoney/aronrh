@@ -82,138 +82,138 @@
 </template>
 </ul>
 </template>
-
-<script>
-import sideBarData from "@/assets/json/sidebar-data.json";
+<script setup>
+import { ref, computed, watch, onMounted } from 'vue';
+import sideBarData1 from "@/assets/json/sidebar-data.json";
 import { menuService } from '@/services/menu.service';
+import router from '../../router';
 
-export default {
-    data() {
-        return {
-            sideBarData: sideBarData,
-            openMenuItem: null,
-            openSubmenuOneItem: null,
-            route_array: [],
-            multilevel: [false, false, false],
-            isDashboardOpen: false
-        };
-    },
-    computed: {
-        userRole() {
-            return localStorage.getItem('userRole')?.toLowerCase() || 'employee';
-        },
-        currentPath() {
-            return this.$route.path;
-        },
-        isMenuActive() {
-            return (menu) => {
-                if (menu.menuValue === 'Dashboard') {
-                    return this.$route.path.includes('/dashboard/') || this.$route.path.includes('/super-admin');
-                }
-                const currentPath = this.$route.path;
-                const pathSegments = currentPath.split('/').filter(part => part);
-                const menuPath = menu.route?.split('/').filter(part => part) || [];
+const sideBarData = ref(sideBarData1);
+const openMenuItem = ref(null);
+const openSubmenuOneItem = ref(null);
+const isDashboardOpen = ref(false);
 
-                return currentPath === menu.route ||
-                    currentPath === menu.active_link ||
-                    currentPath === menu.active_link1 ||
-                    (pathSegments[0] === menuPath[0]);
-            };
-        },
-        isActive() {
-            return (menu) => {
-                if (menu.menuValue === 'Dashboard') {
-                    return this.$route.path.includes('/dashboard/') || this.$route.path.includes('/super-admin');
-                }
-                const currentPath = this.$route.path;
-                const pathSegments = currentPath.split('/').filter(part => part);
-                const base = pathSegments[0];
+const route_array = ref([]);
+const multilevel = ref([false, false, false]);
 
-                return base === menu.active_link ||
-                    base === menu.active_link1 ||
-                    (menu.route && currentPath.startsWith(menu.route));
-            };
-        },
-        isSubActive() {
-            return (menu) => {
-                const currentPath = this.$route.path;
-                const pathSegments = currentPath.split('/').filter(part => part);
-                const base = pathSegments[0];
-                const subPath = pathSegments[1];
+// Computed properties
+const userRole = computed(() => {
+    return localStorage.getItem('userRole')?.toLowerCase() || 'employee';
+});
 
-                if (base === 'dashboard') {
-                    const dashboardType = subPath?.replace('-dashboard', '');
-                    const menuValue = menu.menuValue.toLowerCase();
-                    return menuValue.includes(dashboardType);
-                }
+const currentPath = computed(() => {
+    return router.currentRoute.value.path; // You can replace `route()` with `$route` if not using Composition API
+});
 
-                return base === menu.active_link ||
-                    (menu.route && currentPath.startsWith(menu.route));
-            };
+const isMenuActive = computed(() => {
+    return (menu) => {
+        if (menu.menuValue === 'Dashboard') {
+            return currentPath.value.includes('/dashboard/') || currentPath.value.includes('/super-admin');
         }
-    },
-    watch: {
-        '$route': {
-            handler(newRoute) {
-                if (newRoute.path.includes('/dashboard/') || newRoute.path.includes('/super-admin')) {
-                    this.isDashboardOpen = true;
-                }
-                this.initializeActiveMenus();
-            },
-            immediate: true
-        }
-    },
-    created() {
-        this.sideBarData = menuService.filterSidebarData(JSON.parse(JSON.stringify(sideBarData)));
-    },
-    methods: {
-        isSubMenuActive(subMenu) {
-            const currentPath = this.$route.path;
-            return currentPath === subMenu.route ||
-                currentPath === subMenu.active_link;
-        },
-        hasActiveSubMenu(menu) {
-            return menu.subMenus?.some(subMenu => this.isSubMenuActive(subMenu)) || false;
-        },
-        hasActiveSubMenuTwo(subMenus) {
-            return subMenus.subMenusTwo?.some(subMenu => this.isSubMenuActive(subMenu)) || false;
-        },
-        toggleDashboard() {
-            this.isDashboardOpen = !this.isDashboardOpen;
-        },
-        initializeActiveMenus() {
-            const currentPath = this.$route.path;
+        const pathSegments = currentPath.value.split('/').filter(part => part);
+        const menuPath = menu.route?.split('/').filter(part => part) || [];
 
-            // Handle dashboard routes
-            if (currentPath.startsWith('/dashboard/')) {
-                this.isDashboardOpen = true;
-            }
+        return currentPath === menu.route ||
+            currentPath === menu.active_link ||
+            currentPath === menu.active_link1 ||
+            (pathSegments[0] === menuPath[0]);
+    };
+});
 
-            // Close other menus when navigating to a new route
-            this.sideBarData.forEach(section => {
-                section.menu.forEach(menuItem => {
-                    if (menuItem.menuValue !== 'Dashboard') {
-                        menuItem.showSubRoute = this.isMenuActive(menuItem);
-                    }
-                });
-            });
-        },
-        expandSubMenus(menu) {
-            this.sideBarData.forEach((item) => {
-                item.menu.forEach((subMenu) => {
-                    if (subMenu !== menu) {
-                        subMenu.showSubRoute = false;
-                    }
-                });
-            });
-            menu.showSubRoute = !menu.showSubRoute;
-        },
-        OpenMenu(menu) {
-            this.openMenuItem = this.openMenuItem === menu ? null : menu;
-        },
-        openSubmenuOne(subMenus) {
-            this.openSubmenuOneItem = this.openSubmenuOneItem === subMenus ? null : subMenus;
+const isActive = computed(() => {
+    return (menu) => {
+        if (menu.menuValue === 'Dashboard') {
+            return currentPath.value.includes('/dashboard/') || currentPath.value.includes('/super-admin');
         }
+        const pathSegments = currentPath.value.split('/').filter(part => part);
+        const base = pathSegments[0];
+
+        return base === menu.active_link ||
+            base === menu.active_link1 ||
+            (menu.route && currentPath.value.startsWith(menu.route));
+    };
+});
+
+const initializeActiveMenus = () => {
+    // Handle dashboard routes
+    if (currentPath.value.startsWith('/dashboard/')) {
+        isDashboardOpen.value = true;
     }
+
+    // Close other menus when navigating to a new route
+    sideBarData.value.forEach(section => {
+        section.menu.forEach(menuItem => {
+            if (menuItem.menuValue !== 'Dashboard') {
+                menuItem.showSubRoute = isMenuActive.value(menuItem);
+            }
+        });
+    });
+};
+const isSubActive = computed(() => {
+    return (menu) => {
+        const pathSegments = currentPath.value.split('/').filter(part => part);
+        const base = pathSegments[0];
+        const subPath = pathSegments[1];
+
+        if (base === 'dashboard') {
+            const dashboardType = subPath?.replace('-dashboard', '');
+            const menuValue = menu.menuValue.toLowerCase();
+            return menuValue.includes(dashboardType);
+        }
+
+        return base === menu.active_link ||
+            (menu.route && currentPath.value.startsWith(menu.route));
+    };
+});
+
+// Watch for route changes
+watch(() => router.currentRoute.value.path, (newRoute) => {
+    if (newRoute)
+        if (newRoute.includes('/dashboard/') || newRoute.includes('/super-admin')) {
+            isDashboardOpen.value = true;
+        }
+    initializeActiveMenus();
+}, { immediate: true });
+
+// Lifecycle hook for setup
+onMounted(() => {
+    sideBarData.value = menuService.filterSidebarData(JSON.parse(JSON.stringify(sideBarData.value)));
+});
+
+// Methods
+const isSubMenuActive = (subMenu) => {
+    return currentPath === subMenu.route || currentPath === subMenu.active_link;
+};
+
+const hasActiveSubMenu = (menu) => {
+    return menu.subMenus?.some(subMenu => isSubMenuActive(subMenu)) || false;
+};
+
+const hasActiveSubMenuTwo = (subMenus) => {
+    return subMenus.subMenusTwo?.some(subMenu => isSubMenuActive(subMenu)) || false;
+};
+
+const toggleDashboard = () => {
+    isDashboardOpen.value = !isDashboardOpen.value;
+};
+
+
+const expandSubMenus = (menu) => {
+    sideBarData.value.forEach((item) => {
+        item.menu.forEach((subMenu) => {
+            if (subMenu !== menu) {
+                subMenu.showSubRoute = false;
+            }
+        });
+    });
+    menu.showSubRoute = !menu.showSubRoute;
+};
+
+const OpenMenu = (menu) => {
+    openMenuItem.value = openMenuItem.value === menu ? null : menu;
+};
+
+const openSubmenuOne = (subMenus) => {
+    openSubmenuOneItem.value = openSubmenuOneItem.value === subMenus ? null : subMenus;
 };
 </script>
