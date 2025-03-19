@@ -22,35 +22,35 @@ export default {
         <div
           class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap"
         >
-          <h5 class="mb-2">Employee Status</h5>
+          <h5 class="mb-2">{{ $t('employeeStatus') }}</h5>
           <div class="dropdown mb-2">
             <a
               href="javascript:void(0);"
               class="btn btn-white border btn-sm d-inline-flex align-items-center"
               data-bs-toggle="dropdown"
             >
-              <i class="ti ti-calendar me-1"></i>This Week
+              <i class="ti ti-calendar me-1"></i>{{$t('thisWeek')}}
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
                 <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                  >This Month</a
+                  >{{$t('thisMonth')}}</a
                 >
               </li>
               <li>
                 <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                  >This Week</a
+                  >{{$t('thisWeek')}}</a
                 >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('today')}}</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="card-body">
           <div class="d-flex align-items-center justify-content-between mb-1">
-            <p class="fs-13 mb-3">Total Employee</p>
+            <p class="fs-13 mb-3">{{ $t('totalEmployee') }}</p>
             <h3 class="mb-3">154</h3>
           </div>
           <div class="progress-stacked emp-stack mb-3">
@@ -104,7 +104,7 @@ export default {
               <div class="col-6">
                 <div class="p-2 flex-fill border-end border-bottom">
                   <p class="fs-13 mb-2">
-                    <i class="ti ti-square-filled text-primary fs-12 me-2"></i>Fulltime
+                    <i class="ti ti-square-filled text-primary fs-12 me-2"></i>{{ $t('fullTime') }}
                     <span class="text-gray-9">(48%)</span>
                   </p>
                   <h2 class="display-1">112</h2>
@@ -113,7 +113,7 @@ export default {
               <div class="col-6">
                 <div class="p-2 flex-fill border-bottom text-end">
                   <p class="fs-13 mb-2">
-                    <i class="ti ti-square-filled me-2 text-secondary fs-12"></i>Contract
+                    <i class="ti ti-square-filled me-2 text-secondary fs-12"></i>{{ $t('contract') }}
                     <span class="text-gray-9">(20%)</span>
                   </p>
                   <h2 class="display-1">112</h2>
@@ -122,7 +122,7 @@ export default {
               <div class="col-6">
                 <div class="p-2 flex-fill border-end">
                   <p class="fs-13 mb-2">
-                    <i class="ti ti-square-filled me-2 text-danger fs-12"></i>Probation
+                    <i class="ti ti-square-filled me-2 text-danger fs-12"></i>{{ $t('probation') }}
                     <span class="text-gray-9">(22%)</span>
                   </p>
                   <h2 class="display-1">12</h2>
@@ -131,7 +131,7 @@ export default {
               <div class="col-6">
                 <div class="p-2 flex-fill text-end">
                   <p class="fs-13 mb-2">
-                    <i class="ti ti-square-filled text-pink me-2 fs-12"></i>WFH
+                    <i class="ti ti-square-filled text-pink me-2 fs-12"></i>{{ $t('wfh') }}
                     <span class="text-gray-9">(20%)</span>
                   </p>
                   <h2 class="display-1">04</h2>
@@ -139,7 +139,7 @@ export default {
               </div>
             </div>
           </div>
-          <h6 class="mb-2">Top Performer</h6>
+          <h6 class="mb-2">{{ $t('topPerformer') }}</h6>
           <div
             class="p-2 d-flex align-items-center justify-content-between border border-primary bg-primary-100 br-5 mb-4"
           >
@@ -160,16 +160,16 @@ export default {
                     >Daniel Esbella</router-link
                   >
                 </h6>
-                <p class="fs-13">IOS Developer</p>
+                <p class="fs-13">{{ $t('IOSDeveloper') }}</p>
               </div>
             </div>
             <div class="text-end">
-              <p class="fs-13 mb-1">Performance</p>
+              <p class="fs-13 mb-1">{{ $t('performance') }}</p>
               <h5 class="text-primary">99%</h5>
             </div>
           </div>
           <router-link to="/employee/employee-list" class="btn btn-light btn-md w-100"
-            >View All Employees</router-link
+            >{{ $t('viewAllEmployees') }}</router-link
           >
         </div>
       </div>
@@ -182,28 +182,28 @@ export default {
         <div
           class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap"
         >
-          <h5 class="mb-2">Attendance Overview</h5>
+          <h5 class="mb-2">{{ $t('attendanceOverview') }}</h5>
           <div class="dropdown mb-2">
             <a
               href="javascript:void(0);"
               class="btn btn-white border btn-sm d-inline-flex align-items-center"
               data-bs-toggle="dropdown"
             >
-              <i class="ti ti-calendar me-1"></i>Today
+              <i class="ti ti-calendar me-1"></i>{{$t('today')}}
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
                 <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                  >This Month</a
+                  >{{$t('thisMonth')}}</a
                 >
               </li>
               <li>
                 <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                  >This Week</a
+                  >{{$t('thisWeek')}}</a
                 >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('today')}}</a>
               </li>
             </ul>
           </div>
@@ -217,32 +217,32 @@ export default {
               v-bind="{ ...attendancejs }"
             ></vue3-chart-js>
             <div class="position-absolute text-center attendance-canvas">
-              <p class="fs-13 mb-1">Total Attendance</p>
+              <p class="fs-13 mb-1">{{ $t('totalAttendance') }}</p>
               <h3>120</h3>
             </div>
           </div>
           <h6 class="mb-3">Status</h6>
           <div class="d-flex align-items-center justify-content-between">
             <p class="f-13 mb-2">
-              <i class="ti ti-circle-filled text-success me-1"></i>Present
+              <i class="ti ti-circle-filled text-success me-1"></i>{{ $t('present') }}
             </p>
             <p class="f-13 fw-medium text-gray-9 mb-2">59%</p>
           </div>
           <div class="d-flex align-items-center justify-content-between">
             <p class="f-13 mb-2">
-              <i class="ti ti-circle-filled text-secondary me-1"></i>Late
+              <i class="ti ti-circle-filled text-secondary me-1"></i>{{ $t('late') }}
             </p>
             <p class="f-13 fw-medium text-gray-9 mb-2">21%</p>
           </div>
           <div class="d-flex align-items-center justify-content-between">
             <p class="f-13 mb-2">
-              <i class="ti ti-circle-filled text-warning me-1"></i>Permission
+              <i class="ti ti-circle-filled text-warning me-1"></i>{{ $t('permission') }}
             </p>
             <p class="f-13 fw-medium text-gray-9 mb-2">2%</p>
           </div>
           <div class="d-flex align-items-center justify-content-between mb-2">
             <p class="f-13 mb-2">
-              <i class="ti ti-circle-filled text-danger me-1"></i>Absent
+              <i class="ti ti-circle-filled text-danger me-1"></i>{{ $t('absent') }}
             </p>
             <p class="f-13 fw-medium text-gray-9 mb-2">15%</p>
           </div>
@@ -250,7 +250,7 @@ export default {
             class="bg-light br-5 box-shadow-xs p-2 pb-0 d-flex align-items-center justify-content-between flex-wrap"
           >
             <div class="d-flex align-items-center">
-              <p class="mb-2 me-2">Total Absenties</p>
+              <p class="mb-2 me-2">{{ $t('totalAbsenties') }}</p>
               <div class="avatar-list-stacked avatar-group-sm mb-2">
                 <span class="avatar avatar-rounded">
                   <img
@@ -283,7 +283,7 @@ export default {
             <router-link
               to="/leave/leaves-admin"
               class="fs-13 link-primary text-decoration-underline mb-2"
-              >View Details</router-link
+              >{{$t('viewDetails')}}</router-link
             >
           </div>
         </div>
@@ -297,7 +297,7 @@ export default {
         <div
           class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap"
         >
-          <h5 class="mb-2">Clock-In/Out</h5>
+          <h5 class="mb-2">{{ $t('clock-In/Out') }}</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
               <a
@@ -305,22 +305,22 @@ export default {
                 class="dropdown-toggle btn btn-white btn-sm d-inline-flex align-items-center border-0 fs-13 me-2"
                 data-bs-toggle="dropdown"
               >
-                All Departments
+                {{ $t('allDepartments') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Finance</a
+                    >{{ $t('finance') }}</a
                   >
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Development</a
+                    >{{ $t('development') }}</a
                   >
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Marketing</a
+                    >{{ $t('marketing') }}</a
                   >
                 </li>
               </ul>
@@ -331,21 +331,21 @@ export default {
                 class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown"
               >
-                <i class="ti ti-calendar me-1"></i>Today
+                <i class="ti ti-calendar me-1"></i>{{ $t('today') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Month</a
+                    >{{ $t('thisMonth') }}</a
                   >
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Week</a
+                    >{{$t('thisWeek')}}</a
                   >
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('today') }}</a>
                 </li>
               </ul>
             </div>
@@ -366,7 +366,7 @@ export default {
                 </a>
                 <div class="ms-2">
                   <h6 class="fs-14 fw-medium text-truncate">Daniel Esbella</h6>
-                  <p class="fs-13">UI/UX Designer</p>
+                  <p class="fs-13">{{ $t('UI/UXDesigner') }}</p>
                 </div>
               </div>
               <div class="d-flex align-items-center">
@@ -392,7 +392,7 @@ export default {
                 </a>
                 <div class="ms-2">
                   <h6 class="fs-14 fw-medium">Doglas Martini</h6>
-                  <p class="fs-13">Project Manager</p>
+                  <p class="fs-13">{{ $t('projectManager') }}</p>
                 </div>
               </div>
               <div class="d-flex align-items-center">
@@ -417,7 +417,7 @@ export default {
                   </a>
                   <div class="ms-2">
                     <h6 class="fs-14 fw-medium text-truncate">Brian Villalobos</h6>
-                    <p class="fs-13">PHP Developer</p>
+                    <p class="fs-13">{{$t('PHPDeveloper')}}</p>
                   </div>
                 </div>
                 <div class="d-flex align-items-center">
@@ -435,26 +435,26 @@ export default {
               >
                 <div>
                   <p class="mb-1 d-inline-flex align-items-center">
-                    <i class="ti ti-circle-filled text-success fs-5 me-1"></i>Clock In
+                    <i class="ti ti-circle-filled text-success fs-5 me-1"></i>{{ $t('clockIn') }}
                   </p>
-                  <h6 class="fs-13 fw-normal mb-2">10:30 AM</h6>
+                  <h6 class="fs-13 fw-normal mb-2">{{ $t('10:30AM') }}</h6>
                 </div>
                 <div>
                   <p class="mb-1 d-inline-flex align-items-center">
-                    <i class="ti ti-circle-filled text-danger fs-5 me-1"></i>Clock Out
+                    <i class="ti ti-circle-filled text-danger fs-5 me-1"></i>{{ $t('clockOut') }}
                   </p>
-                  <h6 class="fs-13 fw-normal mb-2">09:45 AM</h6>
+                  <h6 class="fs-13 fw-normal mb-2">{{ $t('09:45AM') }}</h6>
                 </div>
                 <div>
                   <p class="mb-1 d-inline-flex align-items-center">
-                    <i class="ti ti-circle-filled text-warning fs-5 me-1"></i>Production
+                    <i class="ti ti-circle-filled text-warning fs-5 me-1"></i>{{ $t('production') }}
                   </p>
                   <h6 class="fs-13 fw-normal mb-2">09:21 Hrs</h6>
                 </div>
               </div>
             </div>
           </div>
-          <h6 class="mb-2">Late</h6>
+          <h6 class="mb-2">{{ $t('late') }}</h6>
           <div
             class="d-flex align-items-center justify-content-between mb-3 p-2 border border-dashed br-5"
           >
@@ -474,7 +474,7 @@ export default {
                     ><i class="ti ti-clock-hour-11 me-1"></i>30 Min</span
                   >
                 </h6>
-                <p class="fs-13">Marketing Head</p>
+                <p class="fs-13">{{ $t('marketingHead') }}</p>
               </div>
             </div>
             <div class="d-flex align-items-center">
@@ -488,7 +488,7 @@ export default {
             </div>
           </div>
           <router-link to="/reports/attendance-report" class="btn btn-light btn-md w-100"
-            >View All Attendance</router-link
+            >{{ $t('viewAllAttendance') }}</router-link
           >
         </div>
       </div>

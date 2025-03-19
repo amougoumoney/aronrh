@@ -11,16 +11,16 @@
             <div class="dropdown">
               <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>Export
+                <i class="ti ti-file-export me-1"></i>{{ $t('dashboard.export') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                      class="ti ti-file-type-pdf me-1"></i>{{ $t('dashboard.exportPDF') }}</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>Export as Excel
+                      class="ti ti-file-type-xls me-1"></i>{{ $t('dashboard.exportEXCEL') }}
                   </a>
                 </li>
               </ul>
@@ -60,8 +60,8 @@
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        {{ $t('designed') }} &amp; {{ $t('developedBy') }}
+        <a href="javascript:void(0);" class="text-primary">{{ $t('dreams') }}</a>
       </p>
     </div>
   </div>

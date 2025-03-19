@@ -6,9 +6,9 @@
         <div
           class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap"
         >
-          <h5 class="mb-2">Jobs Applicants</h5>
+          <h5 class="mb-2">{{ $t('jobApplicants') }}</h5>
           <router-link to="/recuritment/job-list" class="btn btn-light btn-md mb-2"
-            >View All</router-link
+            >{{ $t('viewAll') }}</router-link
           >
         </div>
         <div class="card-body">
@@ -25,7 +25,7 @@
                 href="#openings"
                 aria-selected="true"
                 role="tab"
-                >Openings</a
+                >{{ $t('openings') }}</a
               >
             </li>
             <li class="nav-item" role="presentation">
@@ -37,7 +37,7 @@
                 aria-selected="false"
                 tabindex="-1"
                 role="tab"
-                >Applicants</a
+                >{{ $t('applicants') }}</a
               >
             </li>
           </ul>
@@ -57,9 +57,9 @@
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="javascript:void(0);">Senior IOS Developer</a>
+                      <a href="javascript:void(0);">{{ $t('seniorIOSDeveloper') }}</a>
                     </p>
-                    <span class="fs-12">No of Openings : 25 </span>
+                    <span class="fs-12">{{ $t('noOfOpenings') }} : 25 </span>
                   </div>
                 </div>
                 <a
@@ -82,9 +82,9 @@
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="javascript:void(0);">Junior PHP Developer</a>
+                      <a href="javascript:void(0);">{{ $t('juniorPHPDeveloper') }}</a>
                     </p>
-                    <span class="fs-12">No of Openings : 20 </span>
+                    <span class="fs-12">{{ $t('noOfOpenings') }} : 20 </span>
                   </div>
                 </div>
                 <a
@@ -107,9 +107,9 @@
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="javascript:void(0);">Junior React Developer </a>
+                      <a href="javascript:void(0);">{{ $t('juniorReactDeveloper') }} </a>
                     </p>
-                    <span class="fs-12">No of Openings : 30 </span>
+                    <span class="fs-12">{{ $t('noOfOpenings') }} : 30 </span>
                   </div>
                 </div>
                 <a
@@ -132,9 +132,9 @@
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="javascript:void(0);">Senior Laravel Developer</a>
+                      <a href="javascript:void(0);">{{ $t('seniorLaravelDeveloper') }}</a>
                     </p>
-                    <span class="fs-12">No of Openings : 40 </span>
+                    <span class="fs-12">{{ $t('noOfOpenings') }} : 40 </span>
                   </div>
                 </div>
                 <a
@@ -162,14 +162,14 @@
                       <a href="javascript:void(0);">Brian Villalobos</a>
                     </p>
                     <span class="fs-13 d-inline-flex align-items-center"
-                      >Exp : 5+ Years<i
+                      >Exp : 5+ {{ $t('years') }}<i
                         class="ti ti-circle-filled fs-4 mx-2 text-primary"
                       ></i
                       >USA</span
                     >
                   </div>
                 </div>
-                <span class="badge badge-secondary badge-xs">UI/UX Designer</span>
+                <span class="badge badge-secondary badge-xs">{{ $t('UI/UXDesigner') }}</span>
               </div>
               <div class="d-flex align-items-center justify-content-between mb-4">
                 <div class="d-flex align-items-center">
@@ -188,14 +188,14 @@
                       <a href="javascript:void(0);">Anthony Lewis</a>
                     </p>
                     <span class="fs-13 d-inline-flex align-items-center"
-                      >Exp : 4+ Years<i
+                      >Exp : 4+ {{ $t('years') }}<i
                         class="ti ti-circle-filled fs-4 mx-2 text-primary"
                       ></i
                       >USA</span
                     >
                   </div>
                 </div>
-                <span class="badge badge-info badge-xs">Python Developer</span>
+                <span class="badge badge-info badge-xs">{{ $t('pythonDeveloper') }}</span>
               </div>
               <div class="d-flex align-items-center justify-content-between mb-4">
                 <div class="d-flex align-items-center">
@@ -214,14 +214,14 @@
                       <a href="javascript:void(0);">Stephan Peralt</a>
                     </p>
                     <span class="fs-13 d-inline-flex align-items-center"
-                      >Exp : 6+ Years<i
+                      >Exp : 6+ {{ $t('years') }}<i
                         class="ti ti-circle-filled fs-4 mx-2 text-primary"
                       ></i
                       >USA</span
                     >
                   </div>
                 </div>
-                <span class="badge badge-pink badge-xs">Android Developer</span>
+                <span class="badge badge-pink badge-xs">{{ $t('androidDeveloper') }}</span>
               </div>
               <div class="d-flex align-items-center justify-content-between mb-0">
                 <div class="d-flex align-items-center">
@@ -240,14 +240,14 @@
                       <a href="javascript:void(0);">Doglas Martini</a>
                     </p>
                     <span class="fs-13 d-inline-flex align-items-center"
-                      >Exp : 2+ Years<i
+                      >Exp : 2+ {{ $t('years') }}<i
                         class="ti ti-circle-filled fs-4 mx-2 text-primary"
                       ></i
                       >USA</span
                     >
                   </div>
                 </div>
-                <span class="badge badge-purple badge-xs">React Developer</span>
+                <span class="badge badge-purple badge-xs">{{ $t('reactDeveloper') }}</span>
               </div>
             </div>
           </div>
@@ -262,9 +262,9 @@
         <div
           class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap"
         >
-          <h5 class="mb-2">Employees</h5>
+          <h5 class="mb-2">{{ $t('employees') }}</h5>
           <router-link to="/employee/employee-list" class="btn btn-light btn-md mb-2"
-            >View All</router-link
+            >{{ $t('viewAll') }}</router-link
           >
         </div>
         <div class="card-body p-0">
@@ -272,8 +272,8 @@
             <table class="table table-nowrap mb-0">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Department</th>
+                  <th>{{ $t('name') }}</th>
+                  <th>{{ $t('department') }}</th>
                 </tr>
               </thead>
               <tbody>
@@ -291,13 +291,13 @@
                         <h6 class="fw-medium">
                           <a href="javascript:void(0);">Anthony Lewis</a>
                         </h6>
-                        <span class="fs-12">Finance</span>
+                        <span class="fs-12">{{ $t('finance') }}</span>
                       </div>
                     </div>
                   </td>
                   <td>
                     <span class="badge badge-secondary-transparent badge-xs">
-                      Finance
+                      {{ $t('finance') }}
                     </span>
                   </td>
                 </tr>
@@ -315,13 +315,13 @@
                         <h6 class="fw-medium">
                           <a href="javascript:void(0);">Brian Villalobos</a>
                         </h6>
-                        <span class="fs-12">PHP Developer</span>
+                        <span class="fs-12">{{ $t('PHPDeveloper') }}</span>
                       </div>
                     </div>
                   </td>
                   <td>
                     <span class="badge badge-danger-transparent badge-xs"
-                      >Development</span
+                      >{{ $t('development') }}</span
                     >
                   </td>
                 </tr>
@@ -339,12 +339,12 @@
                         <h6 class="fw-medium">
                           <a href="javascript:void(0);">Stephan Peralt</a>
                         </h6>
-                        <span class="fs-12">Executive</span>
+                        <span class="fs-12">{{ $t('executive') }}</span>
                       </div>
                     </div>
                   </td>
                   <td>
-                    <span class="badge badge-info-transparent badge-xs">Marketing</span>
+                    <span class="badge badge-info-transparent badge-xs">{{ $t('marketing') }}</span>
                   </td>
                 </tr>
                 <tr>
@@ -361,12 +361,12 @@
                         <h6 class="fw-medium">
                           <a href="javascript:void(0);">Doglas Martini</a>
                         </h6>
-                        <span class="fs-12">Project Manager</span>
+                        <span class="fs-12">{{ $t('projectManager') }}</span>
                       </div>
                     </div>
                   </td>
                   <td>
-                    <span class="badge badge-purple-transparent badge-xs">Manager</span>
+                    <span class="badge badge-purple-transparent badge-xs">{{ $t('manager') }}</span>
                   </td>
                 </tr>
                 <tr>
@@ -383,13 +383,13 @@
                         <h6 class="fw-medium">
                           <a href="javascript:void(0);">Anthony Lewis</a>
                         </h6>
-                        <span class="fs-12">UI/UX Designer</span>
+                        <span class="fs-12">{{ $t('UI/UXDesigner') }}</span>
                       </div>
                     </div>
                   </td>
                   <td class="border-0">
                     <span class="badge badge-pink-transparent badge-xs"
-                      >UI/UX Design</span
+                      >{{ $t('UI/UXDesigner') }}</span
                     >
                   </td>
                 </tr>
@@ -407,7 +407,7 @@
         <div
           class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap"
         >
-          <h5 class="mb-2">Todo</h5>
+          <h5 class="mb-2">{{ $t('todo') }}</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2 me-2">
               <a
@@ -415,21 +415,21 @@
                 class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown"
               >
-                <i class="ti ti-calendar me-1"></i>Today
+                <i class="ti ti-calendar me-1"></i>{{ $t('today') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Month</a
+                    >{{ $t('thisMonth') }}</a
                   >
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Week</a
+                    >{{ $t('thisWeek') }}</a
                   >
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('today') }}</a>
                 </li>
               </ul>
             </div>
@@ -451,7 +451,7 @@
             <i class="ti ti-grid-dots me-2"></i>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="todo1" />
-              <label class="form-check-label fw-medium" for="todo1">Add Holidays</label>
+              <label class="form-check-label fw-medium" for="todo1">{{ $t('addHolidays') }}</label>
             </div>
           </div>
           <div
@@ -463,7 +463,7 @@
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="todo2" />
               <label class="form-check-label fw-medium" for="todo2"
-                >Add Meeting to Client</label
+                >{{ $t('addMeetingtoClient') }}</label
               >
             </div>
           </div>
@@ -476,7 +476,7 @@
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="todo3" />
               <label class="form-check-label fw-medium" for="todo3"
-                >Chat with Adrian</label
+                >{{ $t('chatWith') }} Adrian</label
               >
             </div>
           </div>
@@ -489,7 +489,7 @@
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="todo4" />
               <label class="form-check-label fw-medium" for="todo4"
-                >Management Call</label
+                >{{ $t('managementCall') }}</label
               >
             </div>
           </div>
@@ -501,7 +501,7 @@
             <i class="ti ti-grid-dots me-2"></i>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="todo5" />
-              <label class="form-check-label fw-medium" for="todo5">Add Payroll</label>
+              <label class="form-check-label fw-medium" for="todo5">{{ $t('addPayroll') }}</label>
             </div>
           </div>
           <div
@@ -513,7 +513,7 @@
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="todo6" />
               <label class="form-check-label fw-medium" for="todo6"
-                >Add Policy for Increment
+                >{{ $t('addPolicyforIncrement') }}
               </label>
             </div>
           </div>

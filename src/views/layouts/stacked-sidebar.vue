@@ -48,13 +48,13 @@
       </div>
       <div class="sidebar-right d-flex justify-content-between flex-column">
         <div class="sidebar-scroll">
-          <h6 class="mb-3">Welcome to AronHR</h6>
+          <h6 class="mb-3">{{ $t('welcometoAronHR') }}</h6>
           <div class="sidebar-profile text-center rounded bg-light p-3 mb-4">
             <div class="avatar avatar-lg online mb-3">
               <img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" class="img-fluid rounded-circle" />
             </div>
             <h6 class="fs-12 fw-normal mb-1">Adrian Herman</h6>
-            <p class="fs-10">System Admin</p>
+            <p class="fs-10">{{ $t('SystemAdmin') }}</p>
           </div>
           <div class="stack-menu">
             <div class="nav flex-column align-items-center nav-pills" role="tablist" aria-orientation="vertical">
@@ -63,35 +63,35 @@
                   <a href="javascript:void(0);" role="tab" class="nav-link active" title="Dashboard"
                     data-bs-toggle="tab" data-bs-target="#menu-dashboard" aria-selected="true">
                     <span><i class="ti ti-smart-home"></i></span>
-                    <p>Dashboard</p>
+                    <p>{{ $t('Dashboard') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Apps" data-bs-toggle="tab"
                     data-bs-target="#menu-application" aria-selected="false">
                     <span><i class="ti ti-layout-grid-add"></i></span>
-                    <p>Applications</p>
+                    <p>{{ $t('Applications') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Apps" data-bs-toggle="tab"
                     data-bs-target="#menu-superadmin" aria-selected="false">
                     <span><i class="ti ti-user-star"></i></span>
-                    <p>Super Admin</p>
+                    <p>{{ $t('superAdmin') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Layout" data-bs-toggle="tab"
                     data-bs-target="#menu-layout" aria-selected="false">
                     <span><i class="ti ti-layout-board-split"></i></span>
-                    <p>Layouts</p>
+                    <p>{{ $t('layouts') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Projects" data-bs-toggle="tab"
                     data-bs-target="#menu-project" aria-selected="false">
                     <span><i class="ti ti-folder"></i></span>
-                    <p>Projects</p>
+                    <p>{{ $t('projects') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
@@ -112,21 +112,21 @@
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Finance & Accounts"
                     data-bs-toggle="tab" data-bs-target="#menu-finance" aria-selected="false">
                     <span><i class="ti ti-shopping-cart-dollar"></i></span>
-                    <p>Finance & Accounts</p>
+                    <p>{{ $t('Finance&Accounts') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Administration" data-bs-toggle="tab"
                     data-bs-target="#menu-administration" aria-selected="false">
                     <span><i class="ti ti-cash"></i></span>
-                    <p>Administration</p>
+                    <p>{{ $t('administration') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Content" data-bs-toggle="tab"
                     data-bs-target="#menu-content" aria-selected="false">
                     <span><i class="ti ti-license"></i></span>
-                    <p>Contents</p>
+                    <p>{{ $t('contents') }}</p>
                   </a>
                 </div>
                 <div class="col-6">

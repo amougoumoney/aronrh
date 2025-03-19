@@ -75,16 +75,16 @@ export default {
 					<img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" class="img-fluid rounded-circle">
 				</div>
 				<h6 class="fs-12 fw-normal mb-1">Adrian Herman</h6>
-				<p class="fs-10">System Admin</p>
+				<p class="fs-10">{{ $t('SystemAdmin') }}</p>
 			</div>
 			<div class="sidebar-nav mb-3">
 				<ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified bg-transparent" role="tablist">
-					<li class="nav-item"><a class="nav-link active border-0" href="javascript:void(0);">Menu</a></li>
+					<li class="nav-item"><a class="nav-link active border-0" href="javascript:void(0);">{{ $t('menu') }}</a></li>
 					<li class="nav-item">
-						<router-link class="nav-link border-0" to="/applications/chat">Chats</router-link>
+						<router-link class="nav-link border-0" to="/applications/chat">{{ $t('chats') }}</router-link>
 					</li>
 					<li class="nav-item">
-						<router-link class="nav-link border-0" to="/applications/email">Inbox</router-link>
+						<router-link class="nav-link border-0" to="/applications/email">{{ $t('inbox') }}</router-link>
 					</li>
 				</ul>
 			</div>
@@ -97,7 +97,7 @@ export default {
 				</div>
 				<div class="text-start sidebar-profile-info ms-2">
 					<h6 class="fs-12 fw-normal mb-1">Adrian Herman</h6>
-					<p class="fs-10">System Admin</p>
+					<p class="fs-10">{{ $t('SystemAdmin') }}</p>
 				</div>
 			</div>
 			<div class="input-group input-group-flat d-inline-flex mb-4">

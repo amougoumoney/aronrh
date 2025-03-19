@@ -22,7 +22,7 @@ export default {
         <div
           class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap"
         >
-          <h5 class="mb-2">Projects</h5>
+          <h5 class="mb-2">{{ $t('projects') }}</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
               <a
@@ -30,21 +30,21 @@ export default {
                 class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown"
               >
-                <i class="ti ti-calendar me-1"></i>This Week
+                <i class="ti ti-calendar me-1"></i>{{ $t('thisWeek') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Month</a
+                    >{{ $t('thisMonth') }}</a
                   >
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Week</a
+                    >{{ $t('thisWeek') }}</a
                   >
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('today') }}</a>
                 </li>
               </ul>
             </div>
@@ -55,12 +55,12 @@ export default {
             <table class="table table-nowrap mb-0">
               <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Team</th>
-                  <th>Hours</th>
-                  <th>Deadline</th>
-                  <th>Priority</th>
+                  <th>{{ $t('id') }}</th>
+                  <th>{{ $t('name') }}</th>
+                  <th>{{ $t('team') }}</th>
+                  <th>{{ $t('hours') }}</th>
+                  <th>{{ $t('deadline') }}</th>
+                  <th>{{ $t('priority') }}</th>
                 </tr>
               </thead>
               <tbody>
@@ -73,7 +73,7 @@ export default {
                   <td>
                     <h6 class="fw-medium">
                       <router-link to="/projects/projects-details"
-                        >Office Management App</router-link
+                        >{{ $t('officeManagementApp') }}</router-link
                       >
                     </h6>
                   </td>
@@ -119,7 +119,7 @@ export default {
                     <span
                       class="badge badge-danger d-inline-flex align-items-center badge-xs"
                     >
-                      <i class="ti ti-point-filled me-1"></i>High
+                      <i class="ti ti-point-filled me-1"></i>{{ $t('high') }}
                     </span>
                   </td>
                 </tr>
@@ -132,7 +132,7 @@ export default {
                   <td>
                     <h6 class="fw-medium">
                       <router-link to="/projects/projects-details"
-                        >Clinic Management
+                        >{{ $t('clinicManagement') }}
                       </router-link>
                     </h6>
                   </td>
@@ -184,7 +184,7 @@ export default {
                     <span
                       class="badge badge-success d-inline-flex align-items-center badge-xs"
                     >
-                      <i class="ti ti-point-filled me-1"></i>Low
+                      <i class="ti ti-point-filled me-1"></i>{{ $t('low') }}
                     </span>
                   </td>
                 </tr>
@@ -197,7 +197,7 @@ export default {
                   <td>
                     <h6 class="fw-medium">
                       <router-link to="/projects/projects-details"
-                        >Educational Platform</router-link
+                        >{{ $t('educationalPlatform') }}</router-link
                       >
                     </h6>
                   </td>
@@ -243,7 +243,7 @@ export default {
                     <span
                       class="badge badge-pink d-inline-flex align-items-center badge-xs"
                     >
-                      <i class="ti ti-point-filled me-1"></i>Medium
+                      <i class="ti ti-point-filled me-1"></i>{{ $t('medium') }}
                     </span>
                   </td>
                 </tr>
@@ -256,7 +256,7 @@ export default {
                   <td>
                     <h6 class="fw-medium">
                       <router-link to="/projects/projects-details"
-                        >Chat & Call Mobile App</router-link
+                        >{{ $t('chatCallMobileApp') }}</router-link
                       >
                     </h6>
                   </td>
@@ -302,7 +302,7 @@ export default {
                     <span
                       class="badge badge-danger d-inline-flex align-items-center badge-xs"
                     >
-                      <i class="ti ti-point-filled me-1"></i>High
+                      <i class="ti ti-point-filled me-1"></i>{{ $t('high') }}
                     </span>
                   </td>
                 </tr>
@@ -315,7 +315,7 @@ export default {
                   <td>
                     <h6 class="fw-medium">
                       <router-link to="/projects/projects-details"
-                        >Travel Planning Website</router-link
+                        >{{ $t('travelPlanningWebsite') }}</router-link
                       >
                     </h6>
                   </td>
@@ -361,7 +361,7 @@ export default {
                     <span
                       class="badge badge-pink d-inline-flex align-items-center badge-xs"
                     >
-                      <i class="ti ti-point-filled me-1"></i>Medium
+                      <i class="ti ti-point-filled me-1"></i>{{ $t('medium') }}
                     </span>
                   </td>
                 </tr>
@@ -374,7 +374,7 @@ export default {
                   <td>
                     <h6 class="fw-medium">
                       <router-link to="/projects/projects-details"
-                        >Service Booking Software</router-link
+                        >{{ $t('serviceBookingSoftware') }}</router-link
                       >
                     </h6>
                   </td>
@@ -420,7 +420,7 @@ export default {
                     <span
                       class="badge badge-success d-inline-flex align-items-center badge-xs"
                     >
-                      <i class="ti ti-point-filled me-1"></i>Low
+                      <i class="ti ti-point-filled me-1"></i>{{ $t('low') }}
                     </span>
                   </td>
                 </tr>
@@ -433,7 +433,7 @@ export default {
                   <td class="border-0">
                     <h6 class="fw-medium">
                       <router-link to="/projects/projects-details"
-                        >Travel Planning Website</router-link
+                        >{{ $t('travelPlanningWebsite') }}</router-link
                       >
                     </h6>
                   </td>
@@ -485,7 +485,7 @@ export default {
                     <span
                       class="badge badge-pink d-inline-flex align-items-center badge-xs"
                     >
-                      <i class="ti ti-point-filled me-1"></i>Medium
+                      <i class="ti ti-point-filled me-1"></i>{{ $t('medium') }}
                     </span>
                   </td>
                 </tr>
@@ -503,7 +503,7 @@ export default {
         <div
           class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap"
         >
-          <h5 class="mb-2">Tasks Statistics</h5>
+          <h5 class="mb-2">{{ $t('tasksStatistics') }}</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
               <a
@@ -511,21 +511,21 @@ export default {
                 class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown"
               >
-                <i class="ti ti-calendar me-1"></i>This Week
+                <i class="ti ti-calendar me-1"></i>{{ $t('thisWeek') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Month</a
+                    >{{ $t('thisMonth') }}</a
                   >
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Week</a
+                    >{{ $t('thisWeek') }}</a
                   >
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('today') }}</a>
                 </li>
               </ul>
             </div>
@@ -540,32 +540,32 @@ export default {
               v-bind="{ ...mySemiDonutChartjs }"
             ></vue3-chart-js>
             <div class="position-absolute text-center attendance-canvas">
-              <p class="fs-13 mb-1">Total Tasks</p>
+              <p class="fs-13 mb-1">{{ $t('totalTasks') }}</p>
               <h3>124/165</h3>
             </div>
           </div>
           <div class="d-flex align-items-center flex-wrap">
             <div class="border-end text-center me-2 pe-2 mb-3">
               <p class="fs-13 d-inline-flex align-items-center mb-1">
-                <i class="ti ti-circle-filled fs-10 me-1 text-warning"></i>Ongoing
+                <i class="ti ti-circle-filled fs-10 me-1 text-warning"></i>{{ $t('ongoing') }}
               </p>
               <h5>24%</h5>
             </div>
             <div class="border-end text-center me-2 pe-2 mb-3">
               <p class="fs-13 d-inline-flex align-items-center mb-1">
-                <i class="ti ti-circle-filled fs-10 me-1 text-info"></i>On Hold
+                <i class="ti ti-circle-filled fs-10 me-1 text-info"></i>{{ $t('onHold') }}
               </p>
               <h5>10%</h5>
             </div>
             <div class="border-end text-center me-2 pe-2 mb-3">
               <p class="fs-13 d-inline-flex align-items-center mb-1">
-                <i class="ti ti-circle-filled fs-10 me-1 text-danger"></i>Overdue
+                <i class="ti ti-circle-filled fs-10 me-1 text-danger"></i>{{ $t('overdue') }}
               </p>
               <h5>16%</h5>
             </div>
             <div class="text-center me-2 pe-2 mb-3">
               <p class="fs-13 d-inline-flex align-items-center mb-1">
-                <i class="ti ti-circle-filled fs-10 me-1 text-success"></i>Ongoing
+                <i class="ti ti-circle-filled fs-10 me-1 text-success"></i>{{ $t('ongoing') }}
               </p>
               <h5>40%</h5>
             </div>
@@ -575,12 +575,12 @@ export default {
           >
             <div class="mb-2">
               <h4 class="text-success">389/689 hrs</h4>
-              <p class="fs-13 mb-0">Spent on Overall Tasks This Week</p>
+              <p class="fs-13 mb-0">{{ $t('spentOnOverallTasksThisWeek') }}</p>
             </div>
             <router-link
               to="/projects/tasks"
               class="btn btn-sm btn-light mb-2 text-nowrap"
-              >View All</router-link
+              >{{ $t('viewAll') }}</router-link
             >
           </div>
         </div>

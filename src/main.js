@@ -24,6 +24,7 @@ import CKEditor from '@ckeditor/ckeditor5-vue';
 import SimpleLineIcons from "vue-simple-line";
 import CircleProgress from "vue3-circle-progress";
 import "vue3-circle-progress/dist/circle-progress.css";
+import i18n from './lang/index'
 
 /***********Layout Components **********/
 import Layout_Header from '@/views/layouts/layout-header.vue';
@@ -38,6 +39,9 @@ import themeColor from '@/views/layouts/theme-color.vue';
 /************Breadcrumb********************/
 
 import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
+
+/************LanguageSwitcher********************/
+import languageSwitcher from '@/components/button/language-switcher.vue';
 
 
 /************Page Components********************/
@@ -296,11 +300,14 @@ import "boxicons/css/boxicons.min.css";
 import "v-calendar/dist/style.css";
 import '@/assets/scss/main.scss'
 
+
 import swal from 'sweetalert2';
 window.Swal = swal;
 const pinia = createPinia();
 const initDaya = initData();
 const app = createApp(App)
+
+
 /*Global Components */
 
 /*************Layout *****************/
@@ -316,6 +323,9 @@ app.component('theme-color', themeColor)
 
 /*************Breadcrumb *****************/
 app.component('index-breadcrumb', indexBreadcrumb)
+
+/************LanguageSwitcher********************/
+app.component('language-switcher', languageSwitcher)
 
 /************Page Components********************/
 app.component('employee-top', employeeTop)
@@ -570,5 +580,6 @@ app.component('IconHome', IconHome);
 app.use(CKEditor);
 app.use(initData)
 app.use(pinia);
+app.use(i18n)
 app.use(router).mount('#app');
 
