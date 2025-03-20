@@ -37,30 +37,28 @@ export default {
           </div>
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_contact"
+            <a href="#" data-bs-toggle="modal" data-bs-target="#add_contact"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Contact</a>
           </div>
           <div class="head-icons ms-2">
-            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+              id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -74,25 +72,25 @@ export default {
           <div class="d-flex align-items-center justify-content-between">
             <h5>Contact Grid</h5>
             <div class="dropdown">
-              <a href="javascript:void(0);"
-                class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+              <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 Sort By : Last 7 Days
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
+                  <a href="#" class="dropdown-item rounded-1">Recently Added</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                  <a href="#" class="dropdown-item rounded-1">Ascending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                  <a href="#" class="dropdown-item rounded-1">Desending</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                  <a href="#" class="dropdown-item rounded-1">Last Month</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                  <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
                 </li>
               </ul>
             </div>
@@ -121,11 +119,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -153,16 +151,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>4.2</span>
@@ -190,11 +183,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -222,16 +215,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>5.0</span>
@@ -259,11 +247,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -291,16 +279,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>3.5</span>
@@ -328,11 +311,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -360,16 +343,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>4.5</span>
@@ -397,11 +375,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -429,16 +407,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>3.5</span>
@@ -466,11 +439,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -498,16 +471,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>3.5</span>
@@ -535,11 +503,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -567,16 +535,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>3.1</span>
@@ -604,11 +567,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -636,16 +599,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>5.0</span>
@@ -673,11 +631,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -705,16 +663,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>2.7</span>
@@ -742,11 +695,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -774,16 +727,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>3.0</span>
@@ -811,11 +759,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -843,16 +791,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>4.6</span>
@@ -880,11 +823,11 @@ export default {
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#edit_contact"><i class="ti ti-edit me-1"></i>Edit</a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -912,16 +855,11 @@ export default {
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div class="icons-social d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-mail"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-phone-call"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-message-2"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm me-1"><i
-                      class="ti ti-brand-skype"></i></a>
-                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm"><i
-                      class="ti ti-brand-facebook"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-mail"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-phone-call"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-message-2"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm me-1"><i class="ti ti-brand-skype"></i></a>
+                  <a href="#" class="avatar avatar-rounded avatar-sm"><i class="ti ti-brand-facebook"></i></a>
                 </div>
                 <span class="d-inline-flex align-items-center"><i
                     class="ti ti-star-filled text-warning me-1"></i>4.1</span>
@@ -937,7 +875,7 @@ export default {
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

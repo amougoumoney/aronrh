@@ -25,7 +25,7 @@ export default {
                 <breadcrumb :title="title" :text="text" :text1="text1" />
                 <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
                     <div class="mb-2">
-                        <a href="javascript:void(0);" class="btn btn-dark d-flex align-items-center"><i
+                        <a href="#" class="btn btn-dark d-flex align-items-center"><i
                                 class="ti ti-download me-2"></i>Download</a>
                     </div>
                 </div>
@@ -221,11 +221,9 @@ export default {
             <!-- /Invoices -->
 
             <div class="d-flex justify-content-center align-items-center mb-4">
-                <a href="javascript:void(0);"
-                    class="btn btn-primary d-flex justify-content-center align-items-center me-2"><i
+                <a href="#" class="btn btn-primary d-flex justify-content-center align-items-center me-2"><i
                         class="ti ti-printer me-2"></i>Print Invoice</a>
-                <a href="javascript:void(0);"
-                    class="btn btn-white d-flex justify-content-center align-items-center border"><i
+                <a href="#" class="btn btn-white d-flex justify-content-center align-items-center border"><i
                         class="ti ti-copy me-2"></i>Clone Invoice</a>
             </div>
         </div>
@@ -233,7 +231,7 @@ export default {
         <!-- Footer -->
         <div class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3">
             <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
-            <p>Designed & Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
+            <p>Designed & Developed By <a href="#" class="text-primary">Dreams</a></p>
         </div>
         <!-- /Footer -->
     </div>

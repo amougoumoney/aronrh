@@ -188,19 +188,15 @@ export default {
     };
   },
   methods: {
-    onDragEnd() {},
-    onModuleDragEnd() {},
+    onDragEnd() { },
+    onModuleDragEnd() { },
   },
 };
 </script>
 
 <template>
   <div class="d-flex align-items-start overflow-auto project-status pb-4">
-    <div
-      class="p-3 rounded bg-transparent-secondary w-100 me-3"
-      v-for="(module, color) in modules"
-      :key="color"
-    >
+    <div class="p-3 rounded bg-transparent-secondary w-100 me-3" v-for="(module, color) in modules" :key="color">
       <div class="bg-white p-2 rounded mb-2">
         <div class="d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center">
@@ -211,90 +207,51 @@ export default {
             <span class="badge bg-light rounded-pill">{{ module.Count }}</span>
           </div>
           <div class="dropdown">
-            <a
-              href="javascript:void(0);"
-              class="d-inline-flex align-items-center"
-              data-bs-toggle="dropdown"
-            >
+            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
               <i class="ti ti-dots-vertical"></i>
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                  ><i class="ti ti-edit me-2"></i>Edit</a
-                >
+                <a href="#" class="dropdown-item rounded-1"><i class="ti ti-edit me-2"></i>Edit</a>
               </li>
               <li>
-                <a
-                  href="javascript:void(0);"
-                  class="dropdown-item rounded-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#delete_modal"
-                  ><i class="ti ti-trash me-2"></i>Delete</a
-                >
+                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                    class="ti ti-trash me-2"></i>Delete</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="kanban-drag-wrap">
-        <draggable
-          :list="module.Cards"
-          :group="{ name: 'kanban', pull: true, put: true }"
-          @end="onDragEnd(color)"
-        >
+        <draggable :list="module.Cards" :group="{ name: 'kanban', pull: true, put: true }" @end="onDragEnd(color)">
           <div v-for="Card in module.Cards" :key="Card.id">
             <div class="card kanban-card mb-2">
               <div class="card-body">
-                <div
-                  class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3"
-                >
+                <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
                   <div class="d-flex align-items-center flex-shrink-0">
                     <span :class="Card.BadgeClass">{{ Card.BadgeNo }}</span>
                   </div>
                   <div class="dropdown">
-                    <a
-                      href="javascript:void(0);"
-                      class="d-inline-flex align-items-center"
-                      data-bs-toggle="dropdown"
-                    >
+                    <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                       <i class="ti ti-dots-vertical"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end p-3">
                       <li>
-                        <a
-                          href="javascript:void(0);"
-                          class="dropdown-item rounded-1"
-                          data-bs-toggle="modal"
-                          data-bs-target="#delete_modal"
-                          ><i class="ti ti-trash me-2"></i>Delete</a
-                        >
+                        <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                          data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div class="d-flex align-items-center flex-shrink-0 mb-3">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar avatar-lg avatar rounded-circle me-2"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details"
-                  >
-                    <img
-                      :src="(`@/assets/img/users/${Card.Image}`)"
-                      class="img-fluid h-auto w-auto"
-                      alt="img"
-                    />
+                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
+                    data-bs-target="#candidate_details">
+                    <img :src="(`@/assets/img/users/${Card.Image}`)" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap">
                       <h6 class="text-dark fs-16 fw-semibold">
-                        <a
-                          href="javascript:void(0);"
-                          data-bs-toggle="offcanvas"
-                          data-bs-target="#candidate_details"
-                          >{{ Card.Name }}</a
-                        >
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">{{ Card.Name }}</a>
                       </h6>
                     </div>
                     <p class="text-gray fs-13 fw-normal">{{ Card.Email }}</p>
@@ -317,10 +274,7 @@ export default {
         </draggable>
       </div>
       <div class="pt-2">
-        <a
-          href="javascript:void(0);"
-          class="btn btn-white border border-dashed d-flex align-items-center justify-content-center"
-        >
+        <a href="#" class="btn btn-white border border-dashed d-flex align-items-center justify-content-center">
           <i class="ti ti-plus me-2"></i>
           New Project
         </a>

@@ -221,9 +221,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -238,28 +238,19 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Project_Name'">
         <div class="d-flex align-items-center file-name-icon">
           <h6 class="fw-medium">
-            <a href="javascript:void(0);">{{ record.Project_Name }}</a>
+            <a href="#">{{ record.Project_Name }}</a>
           </h6>
         </div>
       </template>
       <template v-if="column.key === 'Leader'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
-            <img
-              :src="`@/assets/img/users/${record.Image}`"
-              class="img-fluid"
-              alt="img"
-            />
+          <a href="#" class="avatar avatar-md border avatar-rounded">
+            <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-normal fs-14 text-gray-5">{{ record.Leader }}</h6>
@@ -269,25 +260,13 @@ export default {
       <template v-if="column.key === 'Team'">
         <div class="avatar-list-stacked avatar-group-sm">
           <span class="avatar border-0">
-            <img
-              :src="`@/assets/img/users/${record.Img}`"
-              class="rounded-circle"
-              alt="img"
-            />
+            <img :src="`@/assets/img/users/${record.Img}`" class="rounded-circle" alt="img" />
           </span>
           <span class="avatar border-0">
-            <img
-              :src="`@/assets/img/users/${record.Img1}`"
-              class="rounded-circle"
-              alt="img"
-            />
+            <img :src="`@/assets/img/users/${record.Img1}`" class="rounded-circle" alt="img" />
           </span>
           <span class="avatar border-0">
-            <img
-              :src="`@/assets/img/users/${record.Img2}`"
-              class="rounded-circle"
-              alt="img"
-            />
+            <img :src="`@/assets/img/users/${record.Img2}`" class="rounded-circle" alt="img" />
           </span>
           <span class="avatar group-counts bg-primary rounded-circle border-0 fs-10">
             +{{ record.Team }}
@@ -295,26 +274,19 @@ export default {
         </div>
       </template>
       <template v-if="column.key === 'Priority'">
-        <span
-          class="badge"
-          :class="[
-            record.Priority === 'Low'
-              ? 'badge-success-transparent'
-              : record.Priority === 'Medium'
+        <span class="badge" :class="[
+          record.Priority === 'Low'
+            ? 'badge-success-transparent'
+            : record.Priority === 'Medium'
               ? 'badge-warning-transparent'
               : 'badge-danger-transparent',
-          ]"
-          ><i class="ti ti-point-filled me-1"></i>{{ record.Priority }}</span
-        >
+        ]"><i class="ti ti-point-filled me-1"></i>{{ record.Priority }}</span>
       </template>
       <template v-if="column.key === 'Status'">
-        <span
-          class="d-inline-flex align-items-center badge-xs"
-          :class="[
-            'badge',
-            record.Status === 'Active' ? 'badge-success' : 'badge-danger',
-          ]"
-        >
+        <span class="d-inline-flex align-items-center badge-xs" :class="[
+          'badge',
+          record.Status === 'Active' ? 'badge-success' : 'badge-danger',
+        ]">
           <i class="ti ti-point-filled me-1"></i>{{ record.Status }}
         </span>
       </template>

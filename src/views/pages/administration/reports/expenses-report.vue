@@ -83,18 +83,17 @@ export default {
                 <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
                     <div class="mb-2">
                         <div class="dropdown">
-                            <a href="javascript:void(0);"
-                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                            <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
                                 <i class="ti ti-file-export me-1"></i>Export
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                    <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                    <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
                                 </li>
                             </ul>
@@ -102,7 +101,7 @@ export default {
 
                     </div>
                     <div class="head-icons ms-2">
-                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                        <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top"
                             data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                             <i class="ti ti-chevrons-up"></i>
                         </a>
@@ -126,7 +125,7 @@ export default {
                                             <span class="fs-14 fw-normal text-truncate mb-1">Total Expense</span>
                                             <h5>$45,221</h5>
                                         </div>
-                                        <a href="javascript:void(0);"
+                                        <a href="#"
                                             class="avatar avatar-md avatar-rounded bg-transparent-primary border border-primary">
                                             <span class="text-primary"><i class="ti ti-brand-shopee"></i></span>
                                         </a>
@@ -151,7 +150,7 @@ export default {
                                             <span class="fs-14 fw-normal text-truncate mb-1">Approved Expense</span>
                                             <h5>$45,221</h5>
                                         </div>
-                                        <a href="javascript:void(0);"
+                                        <a href="#"
                                             class="avatar avatar-md avatar-rounded bg-transparent-success border border-success">
                                             <span class="text-success"><i class="ti ti-brand-shopee"></i></span>
                                         </a>
@@ -175,7 +174,7 @@ export default {
                                             <span class="fs-14 fw-normal text-truncate mb-1">Net Pay</span>
                                             <h5>$45,221,45</h5>
                                         </div>
-                                        <a href="javascript:void(0);"
+                                        <a href="#"
                                             class="avatar avatar-md avatar-rounded bg-transparent-skyblue border border-skyblue">
                                             <span class="text-skyblue"><i class="ti ti-brand-shopee"></i></span>
                                         </a>
@@ -199,7 +198,7 @@ export default {
                                             <span class="fs-14 fw-normal text-truncate mb-1">Allowances</span>
                                             <h5>$45,221,45</h5>
                                         </div>
-                                        <a href="javascript:void(0);"
+                                        <a href="#"
                                             class="avatar avatar-md avatar-rounded bg-transparent-danger border border-danger">
                                             <span class="text-danger"><i class="ti ti-brand-shopee"></i></span>
                                         </a>
@@ -226,20 +225,20 @@ export default {
                                     <h5>Expense </h5>
                                 </div>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);"
+                                    <a href="#"
                                         class="dropdown-toggle btn btn-sm fs-12 btn-white d-inline-flex align-items-center"
                                         data-bs-toggle="dropdown">
                                         This Year
                                     </a>
                                     <ul class="dropdown-menu  dropdown-menu-end p-2">
                                         <li>
-                                            <a href="javascript:void(0);" class="dropdown-item rounded-1">2024</a>
+                                            <a href="#" class="dropdown-item rounded-1">2024</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);" class="dropdown-item rounded-1">2023</a>
+                                            <a href="#" class="dropdown-item rounded-1">2023</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);" class="dropdown-item rounded-1">2022</a>
+                                            <a href="#" class="dropdown-item rounded-1">2022</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -270,59 +269,56 @@ export default {
                             </div>
                         </div>
                         <div class="dropdown me-3">
-                            <a href="javascript:void(0);"
-                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                            <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
                                 $0.00 - $00
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">$3800</a>
+                                    <a href="#" class="dropdown-item rounded-1">$3800</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">$4500</a>
+                                    <a href="#" class="dropdown-item rounded-1">$4500</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">$3400</a>
+                                    <a href="#" class="dropdown-item rounded-1">$3400</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="dropdown me-3">
-                            <a href="javascript:void(0);"
-                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                            <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
                                 Payment Type
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Cash</a>
+                                    <a href="#" class="dropdown-item rounded-1">Cash</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Cheque</a>
+                                    <a href="#" class="dropdown-item rounded-1">Cheque</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="dropdown">
-                            <a href="javascript:void(0);"
-                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                            <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
                                 Sort By : Last 7 Days
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
+                                    <a href="#" class="dropdown-item rounded-1">Recently Added</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                                    <a href="#" class="dropdown-item rounded-1">Ascending</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                                    <a href="#" class="dropdown-item rounded-1">Desending</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                                    <a href="#" class="dropdown-item rounded-1">Last Month</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                                    <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
                                 </li>
                             </ul>
                         </div>
@@ -339,7 +335,7 @@ export default {
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
             <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
-            <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
+            <p>Designed &amp; Developed By <a href="#" class="text-primary">Dreams</a></p>
         </div>
 
     </div>

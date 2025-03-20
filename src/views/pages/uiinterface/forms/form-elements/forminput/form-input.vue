@@ -28,13 +28,8 @@
                   <div class="col-lg-10 mb-3">
                     <div class="input-group">
                       <span class="input-group-text" id="basic-addon1">@</span>
-                      <b-form-input
-                        type="text"
-                        class="form-control"
-                        placeholder="Username"
-                        aria-label="Username"
-                        aria-describedby="basic-addon1"
-                      ></b-form-input>
+                      <b-form-input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1"></b-form-input>
                     </div>
                   </div>
                 </div>
@@ -42,13 +37,8 @@
                   <label class="col-form-label col-lg-2">Group Right</label>
                   <div class="col-lg-10 mb-3">
                     <div class="input-group">
-                      <b-form-input
-                        type="text"
-                        class="form-control"
-                        placeholder="Recipient's username"
-                        aria-label="Recipient's username"
-                        aria-describedby="basic-addon2"
-                      ></b-form-input>
+                      <b-form-input type="text" class="form-control" placeholder="Recipient's username"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2"></b-form-input>
                       <span class="input-group-text" id="basic-addon2">@example.com</span>
                     </div>
                   </div>
@@ -98,12 +88,8 @@
                   <div class="col-lg-10 mb-3">
                     <div class="input-group input-group-lg">
                       <span class="input-group-text" id="sizing-addon1">Large</span>
-                      <b-form-input
-                        type="text"
-                        class="form-control input-height"
-                        placeholder="Username"
-                        aria-describedby="sizing-addon1"
-                      ></b-form-input>
+                      <b-form-input type="text" class="form-control input-height" placeholder="Username"
+                        aria-describedby="sizing-addon1"></b-form-input>
                     </div>
                   </div>
                 </div>
@@ -112,12 +98,8 @@
                   <div class="col-lg-10 mb-3">
                     <div class="input-group">
                       <span class="input-group-text" id="sizing-addon2">Default</span>
-                      <b-form-input
-                        type="text"
-                        class="form-control"
-                        placeholder="Username"
-                        aria-describedby="sizing-addon2"
-                      ></b-form-input>
+                      <b-form-input type="text" class="form-control" placeholder="Username"
+                        aria-describedby="sizing-addon2"></b-form-input>
                     </div>
                   </div>
                 </div>
@@ -126,12 +108,8 @@
                   <div class="col-lg-10">
                     <div class="input-group input-group-sm">
                       <span class="input-group-text" id="sizing-addon3">Small</span>
-                      <b-form-input
-                        type="text"
-                        class="form-control"
-                        placeholder="Username"
-                        aria-describedby="sizing-addon3"
-                      ></b-form-input>
+                      <b-form-input type="text" class="form-control" placeholder="Username"
+                        aria-describedby="sizing-addon3"></b-form-input>
                     </div>
                   </div>
                 </div>
@@ -214,11 +192,11 @@
                         Dropdown
                       </button>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="javascript:void(0);">Action</a>
-                        <a class="dropdown-item" href="javascript:void(0);">Another action</a>
-                        <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
                         <div role="separator" class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+                        <a class="dropdown-item" href="#">Separated link</a>
                       </div>
                       <b-form-input type="text" class="form-control" placeholder="Left dropdown"></b-form-input>
                     </div>
@@ -234,11 +212,11 @@
                             Dropdown
                           </button>
                           <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="javascript:void(0);">Action</a>
-                            <a class="dropdown-item" href="javascript:void(0);">Another action</a>
-                            <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
                             <div role="separator" class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+                            <a class="dropdown-item" href="#">Separated link</a>
                           </div>
                         </div>
                       </div>
@@ -257,86 +235,56 @@
                   <label class="col-form-label col-lg-2">Left Dropdown Text Addons</label>
                   <div class="col-lg-10">
                     <div class="input-group">
-                      <button
-                        class="btn btn-primary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
+                      <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Dropdown
                       </button>
                       <ul class="dropdown-menu">
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);">Action</a>
+                          <a class="dropdown-item" href="#">Action</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Another action</a
-                          >
+                          <a class="dropdown-item" href="#">Another action</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Something else here</a
-                          >
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </li>
                         <li>
                           <hr class="dropdown-divider" />
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Separated link</a
-                          >
+                          <a class="dropdown-item" href="#">Separated link</a>
                         </li>
                       </ul>
-                      <input
-                        type="text"
-                        class="form-control"
-                        aria-label="Text input with dropdown button"
-                      />
+                      <input type="text" class="form-control" aria-label="Text input with dropdown button" />
                     </div>
                   </div>
                 </div>
 
                 <div class="mb-3 row mb-0">
-                  <label class="col-form-label col-lg-2"
-                    >Right Dropdown Text Addons</label
-                  >
+                  <label class="col-form-label col-lg-2">Right Dropdown Text Addons</label>
                   <div class="col-lg-10">
                     <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        aria-label="Text input with dropdown button"
-                      />
-                      <button
-                        class="btn btn-outline-primary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
+                      <input type="text" class="form-control" aria-label="Text input with dropdown button" />
+                      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Dropdown
                       </button>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);">Action</a>
+                          <a class="dropdown-item" href="#">Action</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Another action</a
-                          >
+                          <a class="dropdown-item" href="#">Another action</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Something else here</a
-                          >
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </li>
                         <li>
                           <hr class="dropdown-divider" />
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Separated link</a
-                          >
+                          <a class="dropdown-item" href="#">Separated link</a>
                         </li>
                       </ul>
                     </div>
@@ -344,78 +292,50 @@
                 </div>
 
                 <div class="mb-3 row mb-0">
-                  <label class="col-form-label col-lg-2"
-                    >Right Dropdown Text Addons</label
-                  >
+                  <label class="col-form-label col-lg-2">Right Dropdown Text Addons</label>
                   <div class="col-lg-10">
                     <div class="input-group">
-                      <button
-                        class="btn btn-soft-primary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
+                      <button class="btn btn-soft-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Dropdown
                       </button>
                       <ul class="dropdown-menu">
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Action before</a
-                          >
+                          <a class="dropdown-item" href="#">Action before</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Another action before</a
-                          >
+                          <a class="dropdown-item" href="#">Another action before</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Something else here</a
-                          >
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </li>
                         <li>
                           <hr class="dropdown-divider" />
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Separated link</a
-                          >
+                          <a class="dropdown-item" href="#">Separated link</a>
                         </li>
                       </ul>
-                      <input
-                        type="text"
-                        class="form-control"
-                        aria-label="Text input with 2 dropdown buttons"
-                      />
-                      <button
-                        class="btn btn-soft-primary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
+                      <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons" />
+                      <button class="btn btn-soft-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Dropdown
                       </button>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);">Action</a>
+                          <a class="dropdown-item" href="#">Action</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Another action</a
-                          >
+                          <a class="dropdown-item" href="#">Another action</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Something else here</a
-                          >
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </li>
                         <li>
                           <hr class="dropdown-divider" />
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            >Separated link</a
-                          >
+                          <a class="dropdown-item" href="#">Separated link</a>
                         </li>
                       </ul>
                     </div>

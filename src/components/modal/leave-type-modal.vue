@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Leave Type</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -19,17 +14,13 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Leave Type <span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Leave Type <span class="text-danger">*</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Number of days <span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Number of days <span class="text-danger">*</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -53,12 +44,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Leave Type</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -67,17 +53,13 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Leave Type <span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Leave Type <span class="text-danger">*</span></label>
                   <input type="text" class="form-control" value="Casual Leave" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Number of days <span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Number of days <span class="text-danger">*</span></label>
                   <input type="text" class="form-control" value="12" />
                 </div>
               </div>
@@ -108,15 +90,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/app-settings/leave-type" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/app-settings/leave-type" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

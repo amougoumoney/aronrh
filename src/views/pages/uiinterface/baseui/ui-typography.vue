@@ -76,10 +76,8 @@
                 <s>This line of text is meant to be treated as no longer accurate.</s>
               </p>
               <p>
-                <ins
-                  >This line of text is meant to be treated as an addition to the
-                  document.</ins
-                >
+                <ins>This line of text is meant to be treated as an addition to the
+                  document.</ins>
               </p>
               <p><u>This line of text will render as underlined</u></p>
               <p>
@@ -100,16 +98,16 @@
               <h5 class="card-title">Coloured Link</h5>
             </div>
             <div class="card-body">
-              <p><a href="javascript:void(0);" class="text-primary">Primary link</a></p>
-              <p><a href="javascript:void(0);" class="text-secondary">Secondary link</a></p>
-              <p><a href="javascript:void(0);" class="text-success">Success link</a></p>
-              <p><a href="javascript:void(0);" class="text-danger">Danger link</a></p>
-              <p><a href="javascript:void(0);" class="text-warning">Warning link</a></p>
-              <p><a href="javascript:void(0);" class="text-info">Info link</a></p>
-              <p><a href="javascript:void(0);" class="text-light bg-dark">Light link</a></p>
-              <p><a href="javascript:void(0);" class="text-dark">Dark link</a></p>
-              <p><a href="javascript:void(0);" class="text-muted">Muted link</a></p>
-              <p><a href="javascript:void(0);" class="text-white bg-dark mb-0">White link</a></p>
+              <p><a href="#" class="text-primary">Primary link</a></p>
+              <p><a href="#" class="text-secondary">Secondary link</a></p>
+              <p><a href="#" class="text-success">Success link</a></p>
+              <p><a href="#" class="text-danger">Danger link</a></p>
+              <p><a href="#" class="text-warning">Warning link</a></p>
+              <p><a href="#" class="text-info">Info link</a></p>
+              <p><a href="#" class="text-light bg-dark">Light link</a></p>
+              <p><a href="#" class="text-dark">Dark link</a></p>
+              <p><a href="#" class="text-muted">Muted link</a></p>
+              <p><a href="#" class="text-white bg-dark mb-0">White link</a></p>
             </div>
           </div>
         </div>
@@ -200,8 +198,8 @@
             </div>
             <div class="card-body">
               <p class="lead mb-0">
-                <b>This is a lead paragraph. It stands out from regular paragraphs</b
-                >.There are many variations of passages of Lorem Ipsum available, but the
+                <b>This is a lead paragraph. It stands out from regular paragraphs</b>.There are many variations of
+                passages of Lorem Ipsum available, but the
                 majority have suffered alteration in some form, by injected humour, or
                 randomised words which don't look even slightly believable. If you are
                 going to use a passage of Lorem Ipsum, you need to be sure there isn't
@@ -267,9 +265,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-xl-4">
-                  <blockquote
-                    class="blockquote custom-blockquote primary mb-3 text-center"
-                  >
+                  <blockquote class="blockquote custom-blockquote primary mb-3 text-center">
                     <h6>
                       The future belongs to those who believe in the beauty of their
                       dreams..
@@ -281,9 +277,7 @@
                   </blockquote>
                 </div>
                 <div class="col-xl-4">
-                  <blockquote
-                    class="blockquote custom-blockquote secondary mb-3 text-center"
-                  >
+                  <blockquote class="blockquote custom-blockquote secondary mb-3 text-center">
                     <h6>
                       The future belongs to those who believe in the beauty of their
                       dreams..
@@ -307,9 +301,7 @@
                   </blockquote>
                 </div>
                 <div class="col-xl-4">
-                  <blockquote
-                    class="blockquote custom-blockquote warning mb-3 text-center"
-                  >
+                  <blockquote class="blockquote custom-blockquote warning mb-3 text-center">
                     <h6>
                       The future belongs to those who believe in the beauty of their
                       dreams..
@@ -321,9 +313,7 @@
                   </blockquote>
                 </div>
                 <div class="col-xl-4">
-                  <blockquote
-                    class="blockquote custom-blockquote success mb-3 text-center"
-                  >
+                  <blockquote class="blockquote custom-blockquote success mb-3 text-center">
                     <h6>
                       The future belongs to those who believe in the beauty of their
                       dreams..
@@ -335,9 +325,7 @@
                   </blockquote>
                 </div>
                 <div class="col-xl-4">
-                  <blockquote
-                    class="blockquote custom-blockquote danger mb-3 text-center"
-                  >
+                  <blockquote class="blockquote custom-blockquote danger mb-3 text-center">
                     <h6>
                       The future belongs to those who believe in the beauty of their
                       dreams..
@@ -524,8 +512,7 @@
               <p class="text-decoration-line-through">
                 This text has a line going through it.
               </p>
-              <a href="javascript:void(0);" class="text-decoration-none"
-                >This link has its text decoration removed
+              <a href="#" class="text-decoration-none">This link has its text decoration removed
               </a>
             </div>
           </div>
@@ -614,9 +601,7 @@
             <div class="card-body">
               <p class="text-muted mb-0">
                 Muted text with a
-                <a href="javascript:void(0);" class="text-reset text-decoration-underline text-dark"
-                  >reset link</a
-                >.
+                <a href="#" class="text-reset text-decoration-underline text-dark">reset link</a>.
               </p>
             </div>
           </div>

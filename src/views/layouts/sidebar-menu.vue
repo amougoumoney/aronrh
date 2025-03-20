@@ -15,7 +15,7 @@
                             </router-link>
                         </li>
                         <li v-else-if="menu.menuValue === 'Dashboard'" class="submenu">
-                            <a href="javascript:void(0);" @click="toggleDashboard"
+                            <a href="#" @click="toggleDashboard"
                                 :class="{ subdrop: isDashboardOpen || hasActiveSubMenu(menu), 'active': isActive(menu) }">
                                 <i :class="'ti ti-' + menu.icon"></i><span>{{ menu.menuValue }}</span>
                                 <span class="menu-arrow"></span>
@@ -30,7 +30,7 @@
                         </li>
 
                         <li v-else class="submenu">
-                            <a href="javascript:void(0);" @click="expandSubMenus(menu)"
+                            <a href="#" @click="expandSubMenus(menu)"
                                 :class="{ subdrop: menu.showSubRoute || hasActiveSubMenu(menu), 'active': isActive(menu) }">
                                 <i :class="'ti ti-' + menu.icon"></i><span>{{ menu.menuValue }}</span>
                                 <span class="menu-arrow"></span>
@@ -45,7 +45,7 @@
                         </li>
 
                         <li v-if="menu.hasSubRouteTwo" class="submenu">
-                            <a href="javascript:void(0);" @click="OpenMenu(menu)"
+                            <a href="#" @click="OpenMenu(menu)"
                                 :class="{ subdrop: openMenuItem === menu || hasActiveSubMenu(menu), 'active': isActive(menu) }">
                                 <i :class="'ti ti-' + menu.icon"></i><span>{{ menu.menuValue }}</span>
                                 <span class="menu-arrow"></span>
@@ -61,7 +61,7 @@
                                     </template>
                                     <template v-else-if="subMenus.customSubmenuTwo">
                                 <li class="submenu submenu-two">
-                                    <a href="javascript:void(0);" @click="openSubmenuOne(subMenus)"
+                                    <a href="#" @click="openSubmenuOne(subMenus)"
                                         :class="{ subdrop: openSubmenuOneItem === subMenus || hasActiveSubMenuTwo(subMenus), 'active': isSubActive(subMenus) }">
                                         {{ subMenus.menuValue }}<span class="menu-arrow inside-submenu"></span>
                                     </a>

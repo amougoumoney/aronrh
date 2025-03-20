@@ -182,9 +182,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -199,60 +199,36 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Client_Name'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded">
-            <img
-              :src="require(`@/assets/img/users/${record.Image}`)"
-              class="img-fluid"
-              alt="img"
-            />
+          <a href="#" class="avatar avatar-md avatar-rounded">
+            <img :src="require(`@/assets/img/users/${record.Image}`)" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
-              <a href="javascript:void(0);">{{ record.Client_Name }}</a>
+              <a href="#">{{ record.Client_Name }}</a>
             </h6>
             <span class="d-block mt-1">{{ record.Roll }}</span>
           </div>
         </div>
       </template>
       <template v-if="column.key === 'Status'">
-        <span
-          class="badge"
-          :class="[
-            record.Status === 'Accepted'
-              ? 'badge-soft-success'
-              : record.Status === 'Sent'
+        <span class="badge" :class="[
+          record.Status === 'Accepted'
+            ? 'badge-soft-success'
+            : record.Status === 'Sent'
               ? 'badge-soft-purple'
               : record.Status === 'Expired'
-              ? 'badge-soft-warning'
-              : 'badge-soft-danger',
-          ]"
-          >{{ record.Status }}</span
-        >
+                ? 'badge-soft-warning'
+                : 'badge-soft-danger',
+        ]">{{ record.Status }}</span>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#edit_estimate"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_estimate"><i class="ti ti-edit"></i></a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

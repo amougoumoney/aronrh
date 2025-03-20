@@ -10,18 +10,19 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
+                <i class="ti ti-file-export me-1"></i>{{ $t('dashboard.export') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">
-                    <i class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}
+                  <a href="#" class="dropdown-item rounded-1">
+                    <i class="ti ti-file-type-pdf me-1"></i>{{ $t('dashboard.exportPDF') }}
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">
-                    <i class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}}
+                  <a href="#" class="dropdown-item rounded-1">
+                    <i class="ti ti-file-type-xls me-1"></i>{{ $t('dashboard.exportEXCEL') }}
                   </a>
                 </li>
               </ul>
@@ -29,7 +30,7 @@
           </div>
           <div class="mb-2">
             <router-link to="/recruitment/references/add" class="btn btn-primary d-flex align-items-center">
-              <i class="ti ti-circle-plus me-2"></i>{{$t('AddReference')}}
+              <i class="ti ti-circle-plus me-2"></i>{{ $t('AddReference') }}
             </router-link>
           </div>
         </div>
@@ -38,42 +39,45 @@
 
       <div class="card">
         <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-          <h5>{{$t('ReferencesList')}}</h5>
+          <h5>{{ $t('ReferencesList') }}</h5>
           <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
             <div class="me-3">
               <div class="input-icon-end position-relative">
-                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput" :placeholder="$t('dd/mm/yyyy - dd/mm/yyyy')" />
+                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
+                  :placeholder="$t('dd/mm/yyyy - dd/mm/yyyy')" />
                 <span class="input-icon-addon">
                   <i class="ti ti-chevron-down"></i>
                 </span>
               </div>
             </div>
             <div class="dropdown me-3">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
-                {{$t('Status')}}
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
+                {{ $t('Status') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Completed')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Completed') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Pending')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Pending') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Declined')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Declined') }}</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
-                {{$t('SortBy:Last7Days')}}
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
+                {{ $t('SortBy:Last7Days') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Ascending') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Descending')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Descending') }}</a>
                 </li>
               </ul>
             </div>
@@ -81,7 +85,8 @@
         </div>
         <div class="card-body p-0">
           <div class="custom-datatable-filter table-responsive">
-            <a-table class="table datatable thead-light" :columns="columns" :data-source="references" :row-selection="rowSelection">
+            <a-table class="table datatable thead-light" :columns="columns" :data-source="references"
+              :row-selection="rowSelection">
               <template #bodyCell="{ column, record }">
                 <template v-if="column.key === 'status'">
                   <span :class="['badge', getStatusClass(record.status), 'align-items-center', 'badge-xs']">
@@ -91,13 +96,13 @@
                 </template>
                 <template v-if="column.key === 'action'">
                   <div class="action-icon d-inline-flex">
-                    <a href="javascript:void(0);" class="me-2" @click="viewReferenceDetails(record.id)">
+                    <a href="#" class="me-2" @click="viewReferenceDetails(record.id)">
                       <i class="ti ti-eye"></i>
                     </a>
                     <router-link :to="`/recruitment/references/edit/${record.id}`" class="me-2">
                       <i class="ti ti-edit"></i>
                     </router-link>
-                    <a href="javascript:void(0);" @click="deleteReference(record.id)">
+                    <a href="#" @click="deleteReference(record.id)">
                       <i class="ti ti-trash"></i>
                     </a>
                   </div>
@@ -186,9 +191,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {}
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { }
 };
 
 export default {

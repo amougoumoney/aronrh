@@ -12,8 +12,8 @@
                 <i class="ti ti-arrow-left me-2"></i>Clients</router-link>
             </h6>
             <div class="ms-2 head-icons">
-              <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-                data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+              <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+                id="collapse-header" @click="toggleHeader">
                 <i class="ti ti-chevrons-up"></i>
               </a>
             </div>
@@ -69,8 +69,8 @@
               <div class="p-3 border-bottom">
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <h6>Basic information</h6>
-                  <a href="javascript:void(0);" class="btn btn-icon btn-sm" data-bs-toggle="modal"
-                    data-bs-target="#edit_client"><i class="ti ti-edit"></i></a>
+                  <a href="#" class="btn btn-icon btn-sm" data-bs-toggle="modal" data-bs-target="#edit_client"><i
+                      class="ti ti-edit"></i></a>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <span class="d-inline-flex align-items-center">
@@ -84,8 +84,7 @@
                     <i class="ti ti-mail-check me-2"></i>
                     Email
                   </span>
-                  <a href="javascript:void(0);"
-                    class="text-info d-inline-flex align-items-center">perralt12@example.com<i
+                  <a href="#" class="text-info d-inline-flex align-items-center">perralt12@example.com<i
                       class="ti ti-copy text-dark ms-2"></i></a>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
@@ -102,21 +101,15 @@
               <div class="p-3">
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <h6>Social Links</h6>
-                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="me-2"><img src="@/assets/img/social/social-01.svg"
-                      alt="Img" /></a>
-                  <a href="javascript:void(0);" class="me-2"><img src="@/assets/img/social/social-06.svg"
-                      alt="Img" /></a>
-                  <a href="javascript:void(0);" class="me-2"><img src="@/assets/img/social/social-02.svg"
-                      alt="Img" /></a>
-                  <a href="javascript:void(0);" class="me-2"><img src="@/assets/img/social/social-03.svg"
-                      alt="Img" /></a>
-                  <a href="javascript:void(0);" class="me-2"><img src="@/assets/img/social/social-04.svg"
-                      alt="Img" /></a>
-                  <a href="javascript:void(0);" class="me-2"><img src="@/assets/img/social/social-05.svg"
-                      alt="Img" /></a>
+                  <a href="#" class="me-2"><img src="@/assets/img/social/social-01.svg" alt="Img" /></a>
+                  <a href="#" class="me-2"><img src="@/assets/img/social/social-06.svg" alt="Img" /></a>
+                  <a href="#" class="me-2"><img src="@/assets/img/social/social-02.svg" alt="Img" /></a>
+                  <a href="#" class="me-2"><img src="@/assets/img/social/social-03.svg" alt="Img" /></a>
+                  <a href="#" class="me-2"><img src="@/assets/img/social/social-04.svg" alt="Img" /></a>
+                  <a href="#" class="me-2"><img src="@/assets/img/social/social-05.svg" alt="Img" /></a>
                 </div>
               </div>
             </div>
@@ -374,25 +367,21 @@
                                       </span>
                                     </div>
                                     <div class="dropdown ms-2">
-                                      <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                        data-bs-toggle="dropdown">
+                                      <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                                         <i class="ti ti-dots-vertical"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-end p-3">
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#edit_todo"><i
-                                              class="ti ti-edit me-2"></i>Edit</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#edit_todo"><i class="ti ti-edit me-2"></i>Edit</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                                              class="ti ti-trash me-2"></i>Delete</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#view_todo"><i
-                                              class="ti ti-eye me-2"></i>View</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -438,25 +427,21 @@
                                       </span>
                                     </div>
                                     <div class="dropdown ms-2">
-                                      <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                        data-bs-toggle="dropdown">
+                                      <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                                         <i class="ti ti-dots-vertical"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-end p-3">
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#edit_todo"><i
-                                              class="ti ti-edit me-2"></i>Edit</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#edit_todo"><i class="ti ti-edit me-2"></i>Edit</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                                              class="ti ti-trash me-2"></i>Delete</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#view_todo"><i
-                                              class="ti ti-eye me-2"></i>View</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -502,25 +487,21 @@
                                       </span>
                                     </div>
                                     <div class="dropdown ms-2">
-                                      <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                        data-bs-toggle="dropdown">
+                                      <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                                         <i class="ti ti-dots-vertical"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-end p-3">
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#edit_todo"><i
-                                              class="ti ti-edit me-2"></i>Edit</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#edit_todo"><i class="ti ti-edit me-2"></i>Edit</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                                              class="ti ti-trash me-2"></i>Delete</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#view_todo"><i
-                                              class="ti ti-eye me-2"></i>View</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -564,25 +545,21 @@
                                       </span>
                                     </div>
                                     <div class="dropdown ms-2">
-                                      <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                        data-bs-toggle="dropdown">
+                                      <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                                         <i class="ti ti-dots-vertical"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-end p-3">
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#edit_todo"><i
-                                              class="ti ti-edit me-2"></i>Edit</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#edit_todo"><i class="ti ti-edit me-2"></i>Edit</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                                              class="ti ti-trash me-2"></i>Delete</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#view_todo"><i
-                                              class="ti ti-eye me-2"></i>View</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -628,7 +605,7 @@
                                   <div>
                                     <h6 class="fw-medium mb-1">Phase 2 Completion</h6>
                                     <p>
-                                      <a href="javascript:void(0);" class="text-info">#INV-123
+                                      <a href="#" class="text-info">#INV-123
                                       </a>
                                       11 Sep 2025, 05:35 pm
                                     </p>
@@ -645,10 +622,8 @@
                                 <div class="d-flex align-items-center justify-content-sm-end">
                                   <span class="badge badge-soft-success d-inline-flex align-items-center me-4"><i
                                       class="ti ti-point-filled me-1"></i>Paid</span>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-edit"></i></a>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-trash"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -662,7 +637,7 @@
                                   <div>
                                     <h6 class="fw-medium mb-1">Advance for Project</h6>
                                     <p>
-                                      <a href="javascript:void(0);" class="text-info">#INV-124
+                                      <a href="#" class="text-info">#INV-124
                                       </a>
                                       14 Sep 2025, 05:35 pm
                                     </p>
@@ -679,10 +654,8 @@
                                 <div class="d-flex align-items-center justify-content-sm-end">
                                   <span class="badge badge-soft-success d-inline-flex align-items-center me-4"><i
                                       class="ti ti-point-filled me-1"></i>Hold</span>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-edit"></i></a>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-trash"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -698,7 +671,7 @@
                                       Changes & design Alignments
                                     </h6>
                                     <p>
-                                      <a href="javascript:void(0);" class="text-info">#INV-125
+                                      <a href="#" class="text-info">#INV-125
                                       </a>
                                       15 Sep 2025, 05:35 pm
                                     </p>
@@ -715,10 +688,8 @@
                                 <div class="d-flex align-items-center justify-content-sm-end">
                                   <span class="badge badge-soft-success d-inline-flex align-items-center me-4"><i
                                       class="ti ti-point-filled me-1"></i>Paid</span>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-edit"></i></a>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-trash"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -734,7 +705,7 @@
                                       Added New Functionality
                                     </h6>
                                     <p>
-                                      <a href="javascript:void(0);" class="text-info">#INV-126
+                                      <a href="#" class="text-info">#INV-126
                                       </a>
                                       16 Sep 2025, 05:35 pm
                                     </p>
@@ -751,10 +722,8 @@
                                 <div class="d-flex align-items-center justify-content-sm-end">
                                   <span class="badge badge-soft-success d-inline-flex align-items-center me-4"><i
                                       class="ti ti-point-filled me-1"></i>Paid</span>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-edit"></i></a>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-trash"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -768,7 +737,7 @@
                                   <div>
                                     <h6 class="fw-medium mb-1">Phase 1 Completion</h6>
                                     <p>
-                                      <a href="javascript:void(0);" class="text-info">#INV-127
+                                      <a href="#" class="text-info">#INV-127
                                       </a>
                                       17 Sep 2025, 05:35 pm
                                     </p>
@@ -785,17 +754,15 @@
                                 <div class="d-flex align-items-center justify-content-sm-end">
                                   <span class="badge badge-soft-danger d-inline-flex align-items-center me-4"><i
                                       class="ti ti-point-filled me-1"></i>unpaid</span>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-edit"></i></a>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-trash"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="text-center">
-                          <a href="javascript:void(0);" class="btn btn-primary btn-sm">Load More</a>
+                          <a href="#" class="btn btn-primary btn-sm">Load More</a>
                         </div>
                       </div>
                     </div>
@@ -830,17 +797,17 @@
                                 <div class="d-flex align-items-center justify-content-between mb-2">
                                   <h6 class="text-gray-5 fw-medium">15 May 2025</h6>
                                   <div class="dropdown">
-                                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                                      aria-expanded="false">
                                       <i class="ti ti-dots-vertical"></i>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end p-3">
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-edit me-2"></i>Edit</a>
                                       </li>
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-trash me-1"></i>Delete</a>
                                       </li>
                                     </ul>
@@ -864,17 +831,17 @@
                                 <div class="d-flex align-items-center justify-content-between mb-2">
                                   <h6 class="text-gray-5 fw-medium">16 May 2025</h6>
                                   <div class="dropdown">
-                                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                                      aria-expanded="false">
                                       <i class="ti ti-dots-vertical"></i>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end p-3">
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-edit me-2"></i>Edit</a>
                                       </li>
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-trash me-1"></i>Delete</a>
                                       </li>
                                     </ul>
@@ -898,17 +865,17 @@
                                 <div class="d-flex align-items-center justify-content-between mb-2">
                                   <h6 class="text-gray-5 fw-medium">17 May 2025</h6>
                                   <div class="dropdown">
-                                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                                      aria-expanded="false">
                                       <i class="ti ti-dots-vertical"></i>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end p-3">
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-edit me-2"></i>Edit</a>
                                       </li>
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-trash me-1"></i>Delete</a>
                                       </li>
                                     </ul>
@@ -929,7 +896,7 @@
                           </div>
                           <div class="col-md-12">
                             <div class="text-center">
-                              <a href="javascript:void(0);" class="btn btn-primary btn-sm">Load More</a>
+                              <a href="#" class="btn btn-primary btn-sm">Load More</a>
                             </div>
                           </div>
                         </div>
@@ -953,25 +920,25 @@
                           <div class="col-sm-8">
                             <div class="d-flex align-items-center">
                               <div class="dropdown me-2">
-                                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white"
-                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href="#" class="dropdown-toggle btn btn-white" data-bs-toggle="dropdown"
+                                  aria-expanded="false">
                                   Sort By : Docs Type
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end p-3">
                                   <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Docs</a>
+                                    <a href="#" class="dropdown-item rounded-1">Docs</a>
                                   </li>
                                   <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Pdf</a>
+                                    <a href="#" class="dropdown-item rounded-1">Pdf</a>
                                   </li>
                                   <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Image</a>
+                                    <a href="#" class="dropdown-item rounded-1">Image</a>
                                   </li>
                                   <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Folder</a>
+                                    <a href="#" class="dropdown-item rounded-1">Folder</a>
                                   </li>
                                   <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Xml</a>
+                                    <a href="#" class="dropdown-item rounded-1">Xml</a>
                                   </li>
                                 </ul>
                               </div>
@@ -1196,25 +1163,21 @@
                                       </span>
                                     </div>
                                     <div class="dropdown ms-2">
-                                      <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                        data-bs-toggle="dropdown">
+                                      <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                                         <i class="ti ti-dots-vertical"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-end p-3">
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#edit_todo"><i
-                                              class="ti ti-edit me-2"></i>Edit</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#edit_todo"><i class="ti ti-edit me-2"></i>Edit</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                                              class="ti ti-trash me-2"></i>Delete</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#view_todo"><i
-                                              class="ti ti-eye me-2"></i>View</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -1260,25 +1223,21 @@
                                       </span>
                                     </div>
                                     <div class="dropdown ms-2">
-                                      <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                        data-bs-toggle="dropdown">
+                                      <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                                         <i class="ti ti-dots-vertical"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-end p-3">
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#edit_todo"><i
-                                              class="ti ti-edit me-2"></i>Edit</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#edit_todo"><i class="ti ti-edit me-2"></i>Edit</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                                              class="ti ti-trash me-2"></i>Delete</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#view_todo"><i
-                                              class="ti ti-eye me-2"></i>View</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -1324,25 +1283,21 @@
                                       </span>
                                     </div>
                                     <div class="dropdown ms-2">
-                                      <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                        data-bs-toggle="dropdown">
+                                      <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                                         <i class="ti ti-dots-vertical"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-end p-3">
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#edit_todo"><i
-                                              class="ti ti-edit me-2"></i>Edit</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#edit_todo"><i class="ti ti-edit me-2"></i>Edit</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                                              class="ti ti-trash me-2"></i>Delete</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#view_todo"><i
-                                              class="ti ti-eye me-2"></i>View</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -1386,25 +1341,21 @@
                                       </span>
                                     </div>
                                     <div class="dropdown ms-2">
-                                      <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                        data-bs-toggle="dropdown">
+                                      <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                                         <i class="ti ti-dots-vertical"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-end p-3">
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#edit_todo"><i
-                                              class="ti ti-edit me-2"></i>Edit</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#edit_todo"><i class="ti ti-edit me-2"></i>Edit</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                                              class="ti ti-trash me-2"></i>Delete</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                                         </li>
                                         <li>
-                                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                                            data-bs-toggle="modal" data-bs-target="#view_todo"><i
-                                              class="ti ti-eye me-2"></i>View</a>
+                                          <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                            data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -1454,7 +1405,7 @@
                                   <div>
                                     <h6 class="fw-medium mb-1">Phase 2 Completion</h6>
                                     <p>
-                                      <a href="javascript:void(0);" class="text-info">#INV-123
+                                      <a href="#" class="text-info">#INV-123
                                       </a>
                                       11 Sep 2025, 05:35 pm
                                     </p>
@@ -1471,10 +1422,8 @@
                                 <div class="d-flex align-items-center justify-content-sm-end">
                                   <span class="badge badge-soft-success d-inline-flex align-items-center me-4"><i
                                       class="ti ti-point-filled me-1"></i>Paid</span>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-edit"></i></a>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-trash"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -1488,7 +1437,7 @@
                                   <div>
                                     <h6 class="fw-medium mb-1">Advance for Project</h6>
                                     <p>
-                                      <a href="javascript:void(0);" class="text-info">#INV-124
+                                      <a href="#" class="text-info">#INV-124
                                       </a>
                                       14 Sep 2025, 05:35 pm
                                     </p>
@@ -1505,10 +1454,8 @@
                                 <div class="d-flex align-items-center justify-content-sm-end">
                                   <span class="badge badge-soft-success d-inline-flex align-items-center me-4"><i
                                       class="ti ti-point-filled me-1"></i>Hold</span>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-edit"></i></a>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-trash"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -1524,7 +1471,7 @@
                                       Changes & design Alignments
                                     </h6>
                                     <p>
-                                      <a href="javascript:void(0);" class="text-info">#INV-125
+                                      <a href="#" class="text-info">#INV-125
                                       </a>
                                       15 Sep 2025, 05:35 pm
                                     </p>
@@ -1541,10 +1488,8 @@
                                 <div class="d-flex align-items-center justify-content-sm-end">
                                   <span class="badge badge-soft-success d-inline-flex align-items-center me-4"><i
                                       class="ti ti-point-filled me-1"></i>Paid</span>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-edit"></i></a>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-trash"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -1560,7 +1505,7 @@
                                       Added New Functionality
                                     </h6>
                                     <p>
-                                      <a href="javascript:void(0);" class="text-info">#INV-126
+                                      <a href="#" class="text-info">#INV-126
                                       </a>
                                       16 Sep 2025, 05:35 pm
                                     </p>
@@ -1577,10 +1522,8 @@
                                 <div class="d-flex align-items-center justify-content-sm-end">
                                   <span class="badge badge-soft-success d-inline-flex align-items-center me-4"><i
                                       class="ti ti-point-filled me-1"></i>Paid</span>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-edit"></i></a>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-trash"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -1594,7 +1537,7 @@
                                   <div>
                                     <h6 class="fw-medium mb-1">Phase 1 Completion</h6>
                                     <p>
-                                      <a href="javascript:void(0);" class="text-info">#INV-127
+                                      <a href="#" class="text-info">#INV-127
                                       </a>
                                       17 Sep 2025, 05:35 pm
                                     </p>
@@ -1611,17 +1554,15 @@
                                 <div class="d-flex align-items-center justify-content-sm-end">
                                   <span class="badge badge-soft-danger d-inline-flex align-items-center me-4"><i
                                       class="ti ti-point-filled me-1"></i>unpaid</span>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-edit"></i></a>
-                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i
-                                      class="ti ti-trash"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="text-center">
-                          <a href="javascript:void(0);" class="btn btn-primary btn-sm">Load More</a>
+                          <a href="#" class="btn btn-primary btn-sm">Load More</a>
                         </div>
                       </div>
                     </div>
@@ -1660,17 +1601,17 @@
                                 <div class="d-flex align-items-center justify-content-between mb-2">
                                   <h6 class="text-gray-5 fw-medium">15 May 2025</h6>
                                   <div class="dropdown">
-                                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                                      aria-expanded="false">
                                       <i class="ti ti-dots-vertical"></i>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end p-3">
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-edit me-2"></i>Edit</a>
                                       </li>
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-trash me-1"></i>Delete</a>
                                       </li>
                                     </ul>
@@ -1694,17 +1635,17 @@
                                 <div class="d-flex align-items-center justify-content-between mb-2">
                                   <h6 class="text-gray-5 fw-medium">16 May 2025</h6>
                                   <div class="dropdown">
-                                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                                      aria-expanded="false">
                                       <i class="ti ti-dots-vertical"></i>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end p-3">
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-edit me-2"></i>Edit</a>
                                       </li>
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-trash me-1"></i>Delete</a>
                                       </li>
                                     </ul>
@@ -1728,17 +1669,17 @@
                                 <div class="d-flex align-items-center justify-content-between mb-2">
                                   <h6 class="text-gray-5 fw-medium">17 May 2025</h6>
                                   <div class="dropdown">
-                                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"
-                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                                      aria-expanded="false">
                                       <i class="ti ti-dots-vertical"></i>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end p-3">
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-edit me-2"></i>Edit</a>
                                       </li>
                                       <li>
-                                        <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                        <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-trash me-1"></i>Delete</a>
                                       </li>
                                     </ul>
@@ -1759,7 +1700,7 @@
                           </div>
                           <div class="col-md-12">
                             <div class="text-center">
-                              <a href="javascript:void(0);" class="btn btn-primary btn-sm">Load More</a>
+                              <a href="#" class="btn btn-primary btn-sm">Load More</a>
                             </div>
                           </div>
                         </div>
@@ -1787,25 +1728,25 @@
                           <div class="col-sm-8">
                             <div class="d-flex align-items-center">
                               <div class="dropdown me-2">
-                                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white"
-                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href="#" class="dropdown-toggle btn btn-white" data-bs-toggle="dropdown"
+                                  aria-expanded="false">
                                   Sort By : Docs Type
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end p-3">
                                   <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Docs</a>
+                                    <a href="#" class="dropdown-item rounded-1">Docs</a>
                                   </li>
                                   <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Pdf</a>
+                                    <a href="#" class="dropdown-item rounded-1">Pdf</a>
                                   </li>
                                   <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Image</a>
+                                    <a href="#" class="dropdown-item rounded-1">Image</a>
                                   </li>
                                   <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Folder</a>
+                                    <a href="#" class="dropdown-item rounded-1">Folder</a>
                                   </li>
                                   <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Xml</a>
+                                    <a href="#" class="dropdown-item rounded-1">Xml</a>
                                   </li>
                                 </ul>
                               </div>
@@ -1834,13 +1775,12 @@
                               <tr>
                                 <td>
                                   <div class="d-flex align-items-center file-name-icon">
-                                    <a href="javascript:void(0);" class="avatar avatar-md bg-light"
-                                      data-bs-toggle="offcanvas" data-bs-target="#preview">
+                                    <a href="#" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas"
+                                      data-bs-target="#preview">
                                       <img src="@/assets/img/icons/file-01.svg" class="img-fluid" alt="img" /></a>
                                     <div class="ms-2">
                                       <p class="text-title fw-medium mb-0">
-                                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
-                                          data-bs-target="#preview">Secret</a>
+                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview">Secret</a>
                                       </p>
                                     </div>
                                   </div>
@@ -1870,23 +1810,22 @@
                                 <td>
                                   <div class="d-flex align-items-center">
                                     <div class="rating-select me-2">
-                                      <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+                                      <a href="#"><i class="ti ti-star"></i></a>
                                     </div>
                                     <div class="dropdown">
-                                      <a href="javascript:void(0);"
-                                        class="d-flex align-items-center justify-content-center"
+                                      <a href="#" class="d-flex align-items-center justify-content-center"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="ti ti-dots fs-14"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-right p-3">
                                         <li>
-                                          <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                                          <a class="dropdown-item rounded-1" href="#">
                                             <i class="ti ti-trash me-2"></i>Permanent
                                             Delete
                                           </a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                                          <a class="dropdown-item rounded-1" href="#">
                                             <i class="ti ti-edit-circle me-2"></i>Restore
                                             File
                                           </a>
@@ -1899,13 +1838,13 @@
                               <tr>
                                 <td>
                                   <div class="d-flex align-items-center file-name-icon">
-                                    <a href="javascript:void(0);" class="avatar avatar-md bg-light"
-                                      data-bs-toggle="offcanvas" data-bs-target="#preview">
+                                    <a href="#" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas"
+                                      data-bs-target="#preview">
                                       <img src="@/assets/img/icons/file-02.svg" class="img-fluid" alt="img" /></a>
                                     <div class="ms-2">
                                       <p class="text-title fw-medium mb-0">
-                                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
-                                          data-bs-target="#preview">Sophie Headrick</a>
+                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview">Sophie
+                                          Headrick</a>
                                       </p>
                                     </div>
                                   </div>
@@ -1931,23 +1870,22 @@
                                 <td>
                                   <div class="d-flex align-items-center">
                                     <div class="rating-select me-2">
-                                      <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+                                      <a href="#"><i class="ti ti-star"></i></a>
                                     </div>
                                     <div class="dropdown">
-                                      <a href="javascript:void(0);"
-                                        class="d-flex align-items-center justify-content-center"
+                                      <a href="#" class="d-flex align-items-center justify-content-center"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="ti ti-dots fs-14"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-right p-3">
                                         <li>
-                                          <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                                          <a class="dropdown-item rounded-1" href="#">
                                             <i class="ti ti-trash me-2"></i>Permanent
                                             Delete
                                           </a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                                          <a class="dropdown-item rounded-1" href="#">
                                             <i class="ti ti-edit-circle me-2"></i>Restore
                                             File
                                           </a>
@@ -1960,13 +1898,12 @@
                               <tr>
                                 <td>
                                   <div class="d-flex align-items-center file-name-icon">
-                                    <a href="javascript:void(0);" class="avatar avatar-md bg-light"
-                                      data-bs-toggle="offcanvas" data-bs-target="#preview">
+                                    <a href="#" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas"
+                                      data-bs-target="#preview">
                                       <img src="@/assets/img/icons/file-03.svg" class="img-fluid" alt="img" /></a>
                                     <div class="ms-2">
                                       <p class="text-title fw-medium mb-0">
-                                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
-                                          data-bs-target="#preview">Gallery</a>
+                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview">Gallery</a>
                                       </p>
                                     </div>
                                   </div>
@@ -1995,8 +1932,7 @@
                                       <img class="border border-white" src="@/assets/img/profiles/avatar-06.jpg"
                                         alt="img" />
                                     </span>
-                                    <a class="avatar bg-primary avatar-rounded text-fixed-white"
-                                      href="javascript:void(0);">
+                                    <a class="avatar bg-primary avatar-rounded text-fixed-white" href="#">
                                       +1
                                     </a>
                                   </div>
@@ -2004,23 +1940,22 @@
                                 <td>
                                   <div class="d-flex align-items-center">
                                     <div class="rating-select me-2">
-                                      <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+                                      <a href="#"><i class="ti ti-star"></i></a>
                                     </div>
                                     <div class="dropdown">
-                                      <a href="javascript:void(0);"
-                                        class="d-flex align-items-center justify-content-center"
+                                      <a href="#" class="d-flex align-items-center justify-content-center"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="ti ti-dots fs-14"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-right p-3">
                                         <li>
-                                          <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                                          <a class="dropdown-item rounded-1" href="#">
                                             <i class="ti ti-trash me-2"></i>Permanent
                                             Delete
                                           </a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                                          <a class="dropdown-item rounded-1" href="#">
                                             <i class="ti ti-edit-circle me-2"></i>Restore
                                             File
                                           </a>
@@ -2033,13 +1968,13 @@
                               <tr>
                                 <td>
                                   <div class="d-flex align-items-center file-name-icon">
-                                    <a href="javascript:void(0);" class="avatar avatar-md bg-light"
-                                      data-bs-toggle="offcanvas" data-bs-target="#preview">
+                                    <a href="#" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas"
+                                      data-bs-target="#preview">
                                       <img src="@/assets/img/icons/file-04.svg" class="img-fluid" alt="img" /></a>
                                     <div class="ms-2">
                                       <p class="text-title fw-medium mb-0">
-                                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
-                                          data-bs-target="#preview">Doris Crowley</a>
+                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview">Doris
+                                          Crowley</a>
                                       </p>
                                     </div>
                                   </div>
@@ -2069,23 +2004,22 @@
                                 <td>
                                   <div class="d-flex align-items-center">
                                     <div class="rating-select me-2">
-                                      <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+                                      <a href="#"><i class="ti ti-star"></i></a>
                                     </div>
                                     <div class="dropdown">
-                                      <a href="javascript:void(0);"
-                                        class="d-flex align-items-center justify-content-center"
+                                      <a href="#" class="d-flex align-items-center justify-content-center"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="ti ti-dots fs-14"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-right p-3">
                                         <li>
-                                          <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                                          <a class="dropdown-item rounded-1" href="#">
                                             <i class="ti ti-trash me-2"></i>Permanent
                                             Delete
                                           </a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                                          <a class="dropdown-item rounded-1" href="#">
                                             <i class="ti ti-edit-circle me-2"></i>Restore
                                             File
                                           </a>
@@ -2098,13 +2032,12 @@
                               <tr>
                                 <td>
                                   <div class="d-flex align-items-center file-name-icon">
-                                    <a href="javascript:void(0);" class="avatar avatar-md bg-light"
-                                      data-bs-toggle="offcanvas" data-bs-target="#preview">
+                                    <a href="#" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas"
+                                      data-bs-target="#preview">
                                       <img src="@/assets/img/icons/file-05.svg" class="img-fluid" alt="img" /></a>
                                     <div class="ms-2">
                                       <p class="text-title fw-medium mb-0">
-                                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
-                                          data-bs-target="#preview">Cheat_codez</a>
+                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview">Cheat_codez</a>
                                       </p>
                                     </div>
                                   </div>
@@ -2138,23 +2071,22 @@
                                 <td>
                                   <div class="d-flex align-items-center">
                                     <div class="rating-select me-2">
-                                      <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+                                      <a href="#"><i class="ti ti-star"></i></a>
                                     </div>
                                     <div class="dropdown">
-                                      <a href="javascript:void(0);"
-                                        class="d-flex align-items-center justify-content-center"
+                                      <a href="#" class="d-flex align-items-center justify-content-center"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="ti ti-dots fs-14"></i>
                                       </a>
                                       <ul class="dropdown-menu dropdown-menu-right p-3">
                                         <li>
-                                          <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                                          <a class="dropdown-item rounded-1" href="#">
                                             <i class="ti ti-trash me-2"></i>Permanent
                                             Delete
                                           </a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                                          <a class="dropdown-item rounded-1" href="#">
                                             <i class="ti ti-edit-circle me-2"></i>Restore
                                             File
                                           </a>
@@ -2175,14 +2107,13 @@
             </div>
             <div class="text-end mb-4">
               <div class="dropdown">
-                <a href="javascript:void(0);"
-                  class="d-inline-flex align-items-center avatar avatar-lg avatar-rounded bg-primary"
+                <a href="#" class="d-inline-flex align-items-center avatar avatar-lg avatar-rounded bg-primary"
                   data-bs-toggle="dropdown">
                   <i class="ti ti-plus fs-24 text-white"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end bg-gray-900 dropdown-menu-md dropdown-menu-dark p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1 d-flex align-items-center">
+                    <a href="#" class="dropdown-item rounded-1 d-flex align-items-center">
                       <span class="avatar avatar-md bg-gray-800 flex-shrink-0 me-2"><i
                           class="ti ti-basket-code"></i></span>
                       <div>
@@ -2192,7 +2123,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1 d-flex align-items-center">
+                    <a href="#" class="dropdown-item rounded-1 d-flex align-items-center">
                       <span class="avatar avatar-md bg-gray-800 flex-shrink-0 me-2"><i
                           class="ti ti-file-invoice"></i></span>
                       <div>
@@ -2202,7 +2133,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1 d-flex align-items-center">
+                    <a href="#" class="dropdown-item rounded-1 d-flex align-items-center">
                       <span class="avatar avatar-md bg-gray-800 flex-shrink-0 me-2"><i
                           class="ti ti-file-description"></i></span>
                       <div>
@@ -2212,7 +2143,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1 d-flex align-items-center">
+                    <a href="#" class="dropdown-item rounded-1 d-flex align-items-center">
                       <span class="avatar avatar-md bg-gray-800 flex-shrink-0 me-2"><i
                           class="ti ti-folder-open"></i></span>
                       <div>
@@ -2232,7 +2163,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

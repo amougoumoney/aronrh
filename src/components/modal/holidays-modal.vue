@@ -25,12 +25,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Holiday</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -47,14 +42,8 @@ export default {
                 <div class="mb-3">
                   <label class="form-label">Date</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -93,12 +82,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Holiday</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -115,14 +99,8 @@ export default {
                 <div class="mb-3">
                   <label class="form-label">Date</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -133,18 +111,13 @@ export default {
                 <div class="mb-3">
                   <label class="form-label">Description</label>
                   <textarea class="form-control" rows="3">
-First day of the new year</textarea
-                  >
+First day of the new year</textarea>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="Status"
-                    id="holidaystatusone"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="Status" id="holidaystatusone" placeholder="Active" />
                 </div>
               </div>
             </div>
@@ -174,15 +147,8 @@ First day of the new year</textarea
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/hrm/holidays" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/hrm/holidays" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

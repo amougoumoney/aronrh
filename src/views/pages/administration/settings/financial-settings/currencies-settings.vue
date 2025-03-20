@@ -8,8 +8,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+          <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+            id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -28,8 +28,8 @@
                 </div>
                 <div class="col-md-6 col-sm-8">
                   <div class="d-flex justify-content-sm-end align-items-center flex-wrap row-gap-2">
-                    <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal"
-                      data-bs-target="#add_new_currency"><i class="ti ti-circle-plus me-2"></i>Add Currency</a>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_new_currency"><i
+                        class="ti ti-circle-plus me-2"></i>Add Currency</a>
                   </div>
                 </div>
               </div>
@@ -77,9 +77,9 @@
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
-                              <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
-                                data-bs-target="#edit_new_currency"><i class="ti ti-edit"></i></a>
-                              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                              <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_new_currency"><i
+                                  class="ti ti-edit"></i></a>
+                              <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                   class="ti ti-trash"></i></a>
                             </div>
                           </td>
@@ -103,9 +103,9 @@
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
-                              <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
-                                data-bs-target="#edit_new_currency"><i class="ti ti-edit"></i></a>
-                              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                              <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_new_currency"><i
+                                  class="ti ti-edit"></i></a>
+                              <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                   class="ti ti-trash"></i></a>
                             </div>
                           </td>
@@ -124,7 +124,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

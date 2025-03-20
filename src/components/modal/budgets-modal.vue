@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Budget</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -28,21 +23,11 @@
                   <label class="form-label">Choose Budget respect type</label>
                   <div class="d-flex align-items-center">
                     <div class="form-check me-2">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadio"
-                        id="budget"
-                      />
+                      <input class="form-check-input" type="radio" name="flexRadio" id="budget" />
                       <label class="form-label" for="budget"> Project </label>
                     </div>
                     <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadio"
-                        id="budget1"
-                      />
+                      <input class="form-check-input" type="radio" name="flexRadio" id="budget1" />
                       <label class="form-label" for="budget1"> Category </label>
                     </div>
                   </div>
@@ -52,14 +37,8 @@
                 <div class="mb-3">
                   <label class="form-label">Start Date </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -70,14 +49,8 @@
                 <div class="mb-3">
                   <label class="form-label">End Date </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -102,11 +75,8 @@
                         <div class="d-flex align-items-center">
                           <input type="text" class="form-control" />
                           <div class="ms-2">
-                            <a
-                              href="javascript:void(0);"
-                              class="btn btn-icon add-revenue btn-sm btn-primary rounded-circle"
-                              ><i class="ti ti-plus"></i
-                            ></a>
+                            <a href="#" class="btn btn-icon add-revenue btn-sm btn-primary rounded-circle"><i
+                                class="ti ti-plus"></i></a>
                           </div>
                         </div>
                       </div>
@@ -138,11 +108,8 @@
                         <div class="d-flex align-items-center">
                           <input type="text" class="form-control" />
                           <div class="ms-2">
-                            <a
-                              href="javascript:void(0);"
-                              class="btn btn-icon add-expenses btn-sm btn-primary rounded-circle"
-                              ><i class="ti ti-plus"></i
-                            ></a>
+                            <a href="#" class="btn btn-icon add-expenses btn-sm btn-primary rounded-circle"><i
+                                class="ti ti-plus"></i></a>
                           </div>
                         </div>
                       </div>
@@ -194,12 +161,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Budget</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -217,22 +179,11 @@
                   <label class="form-label">Choose Budget respect type</label>
                   <div class="d-flex align-items-center">
                     <div class="form-check me-2">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadio"
-                        id="budget3"
-                      />
+                      <input class="form-check-input" type="radio" name="flexRadio" id="budget3" />
                       <label class="form-label" for="budget3"> Project </label>
                     </div>
                     <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadio"
-                        id="budget2"
-                        checked
-                      />
+                      <input class="form-check-input" type="radio" name="flexRadio" id="budget2" checked />
                       <label class="form-label" for="budget2"> Category </label>
                     </div>
                   </div>
@@ -242,14 +193,8 @@
                 <div class="mb-3">
                   <label class="form-label">Start Date </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateTwo"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateTwo" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -260,14 +205,8 @@
                 <div class="mb-3">
                   <label class="form-label">End Date </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateThree"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateThree" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -292,11 +231,8 @@
                         <div class="d-flex align-items-center">
                           <input type="text" class="form-control" value="250000" />
                           <div class="ms-2">
-                            <a
-                              href="javascript:void(0);"
-                              class="btn btn-icon add-revenue btn-sm btn-primary rounded-circle"
-                              ><i class="ti ti-plus"></i
-                            ></a>
+                            <a href="#" class="btn btn-icon add-revenue btn-sm btn-primary rounded-circle"><i
+                                class="ti ti-plus"></i></a>
                           </div>
                         </div>
                       </div>
@@ -328,11 +264,8 @@
                         <div class="d-flex align-items-center">
                           <input type="text" class="form-control" />
                           <div class="ms-2">
-                            <a
-                              href="javascript:void(0);"
-                              class="btn btn-icon add-expenses btn-sm btn-primary rounded-circle"
-                              ><i class="ti ti-plus"></i
-                            ></a>
+                            <a href="#" class="btn btn-icon add-expenses btn-sm btn-primary rounded-circle"><i
+                                class="ti ti-plus"></i></a>
                           </div>
                         </div>
                       </div>
@@ -391,15 +324,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/accounting/budgets" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/accounting/budgets" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

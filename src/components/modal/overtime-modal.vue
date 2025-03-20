@@ -26,12 +26,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Overtime</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -40,26 +35,16 @@ export default {
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Employee<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Employee<span class="text-danger"> *</span></label>
                   <vue-select :options="Employee" id="empid" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Overtime date <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Overtime date <span class="text-danger"> *</span></label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -68,17 +53,13 @@ export default {
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Overtime<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Overtime<span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Remaining Hours<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Remaining Hours<span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -90,9 +71,7 @@ export default {
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Status<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Status<span class="text-danger"> *</span></label>
                   <vue-select :options="Status" id="statusid" placeholder="Select" />
                 </div>
               </div>
@@ -116,12 +95,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Overtime</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -130,31 +104,16 @@ export default {
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Employee * <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="Employee"
-                    id="employeeid"
-                    placeholder="Anthony Lewis"
-                  />
+                  <label class="form-label">Employee * <span class="text-danger"> *</span></label>
+                  <vue-select :options="Employee" id="employeeid" placeholder="Anthony Lewis" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Overtime date <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Overtime date <span class="text-danger"> *</span></label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      value="17-10-2024"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" value="17-10-2024"
+                      placeholder="dd/mm/yyyy" :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -163,17 +122,13 @@ export default {
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Overtime<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Overtime<span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" value="8" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Remaining Hours<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Remaining Hours<span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" value="2" />
                 </div>
               </div>
@@ -185,9 +140,7 @@ export default {
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Status<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Status<span class="text-danger"> *</span></label>
                   <vue-select :options="Status" id="acceptedid" placeholder="Accepted" />
                 </div>
               </div>
@@ -211,12 +164,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Overtime Details</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -229,19 +177,12 @@ export default {
                     <div class="row">
                       <div class="col-md-4">
                         <div class="d-flex align-items-center file-name-icon">
-                          <a
-                            href="javascript:void(0);"
-                            class="avatar avatar-md border avatar-rounded"
-                          >
-                            <img
-                              src="@/assets/img/users/user-32.jpg"
-                              class="img-fluid"
-                              alt="img"
-                            />
+                          <a href="#" class="avatar avatar-md border avatar-rounded">
+                            <img src="@/assets/img/users/user-32.jpg" class="img-fluid" alt="img" />
                           </a>
                           <div class="ms-2">
                             <h6 class="fw-medium fs-14">
-                              <a href="javascript:void(0);">Anthony Lewis</a>
+                              <a href="#">Anthony Lewis</a>
                             </h6>
                             <span class="fs-12 fw-normal">UI/UX Team</span>
                           </div>
@@ -273,9 +214,7 @@ export default {
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Select Status <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Select Status <span class="text-danger"> *</span></label>
                   <vue-select :options="Status" id="selectid" placeholder="Select" />
                 </div>
               </div>
@@ -306,15 +245,8 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/attendance/overtime" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/attendance/overtime" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

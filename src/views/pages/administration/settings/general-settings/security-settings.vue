@@ -8,8 +8,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+          <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+            id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -37,7 +37,7 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                    <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="modal"
                       data-bs-target="#change-password">Change Pasword</a>
                   </div>
                 </div>
@@ -47,7 +47,7 @@
                     <p>Receive codes via SMS or email every time you login</p>
                   </div>
                   <div class="mb-3">
-                    <a href="javascript:void(0);" class="btn btn-dark btn-sm">Enable</a>
+                    <a href="#" class="btn btn-dark btn-sm">Enable</a>
                   </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center flex-wrap border-bottom mb-3">
@@ -80,9 +80,8 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <a href="javascript:void(0);" class="btn btn-outline-light btn-sm border me-2">Remove</a>
-                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
-                      data-bs-target="#change-phone">Change
+                    <a href="#" class="btn btn-outline-light btn-sm border me-2">Remove</a>
+                    <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#change-phone">Change
                     </a>
                   </div>
                 </div>
@@ -100,9 +99,8 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <a href="javascript:void(0);" class="btn btn-outline-light btn-sm border me-2">Remove</a>
-                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
-                      data-bs-target="#change-email">Change
+                    <a href="#" class="btn btn-outline-light btn-sm border me-2">Remove</a>
+                    <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#change-email">Change
                     </a>
                   </div>
                 </div>
@@ -112,7 +110,7 @@
                     <p>The devices associated with the account</p>
                   </div>
                   <div class="mb-3">
-                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                    <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="modal"
                       data-bs-target="#device_management">Manage</a>
                   </div>
                 </div>
@@ -122,7 +120,7 @@
                     <p>The activities of the account</p>
                   </div>
                   <div class="mb-3">
-                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                    <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="modal"
                       data-bs-target="#account_activity">View</a>
                   </div>
                 </div>
@@ -135,7 +133,7 @@
                     </p>
                   </div>
                   <div class="mb-3">
-                    <a href="javascript:void(0);" class="btn btn-dark btn-sm">Deactivate</a>
+                    <a href="#" class="btn btn-dark btn-sm">Deactivate</a>
                   </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center flex-wrap row-gap-3">
@@ -144,7 +142,7 @@
                     <p>Your account will be permanently deleted</p>
                   </div>
                   <div>
-                    <a href="javascript:void(0);" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                    <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="modal"
                       data-bs-target="#del-account">Delete</a>
                   </div>
                 </div>
@@ -158,7 +156,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>
@@ -169,8 +167,7 @@
       <div class="modal-content doctor-profile">
         <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Change Password</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
-              class="ti ti-circle-x-filled fs-20"></i></a>
+          <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <div class="modal-body p-4">
           <form @submit.prevent="submitForm">
@@ -199,7 +196,7 @@
         </div>
         <div class="modal-footer border-top">
           <div class="acc-submit">
-            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
+            <a href="#" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button class="btn btn-primary" type="submit">Save</button>
           </div>
         </div>
@@ -214,8 +211,7 @@
       <div class="modal-content doctor-profile">
         <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Change Email</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
-              class="ti ti-circle-x-filled fs-20"></i></a>
+          <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <div class="modal-body p-4">
           <form>
@@ -240,7 +236,7 @@
         </div>
         <div class="modal-footer border-top">
           <div class="acc-submit">
-            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
+            <a href="#" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button class="btn btn-primary" type="button" data-bs-dismiss="modal">
               Save Change
             </button>
@@ -257,8 +253,7 @@
       <div class="modal-content doctor-profile">
         <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Change Phone Number</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
-              class="ti ti-circle-x-filled fs-20"></i></a>
+          <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <div class="modal-body p-4">
           <form>
@@ -285,7 +280,7 @@
         </div>
         <div class="modal-footer border-top">
           <div class="acc-submit">
-            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
+            <a href="#" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button class="btn btn-dark" type="button" data-bs-dismiss="modal">
               Change Number
             </button>
@@ -302,8 +297,7 @@
       <div class="modal-content">
         <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Device Management</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
-              class="ti ti-circle-x-filled fs-20"></i></a>
+          <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <div class="modal-body">
           <div class="table">
@@ -369,8 +363,7 @@
       <div class="modal-content">
         <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Account Activity</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
-              class="ti ti-circle-x-filled fs-20"></i></a>
+          <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <div class="modal-body">
           <div class="table">
@@ -436,8 +429,7 @@
       <div class="modal-content">
         <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
           <h5 class="modal-title">Delete Account</h5>
-          <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
-              class="ti ti-circle-x-filled fs-20"></i></a>
+          <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-circle-x-filled fs-20"></i></a>
         </div>
         <form @submit.prevent="submitFormOne">
           <div class="modal-body">
@@ -454,7 +446,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
+            <a href="#" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button type="button" data-bs-dismiss="modal" class="btn btn-primary">Delete Account</button>
           </div>
         </form>

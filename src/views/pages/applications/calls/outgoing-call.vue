@@ -6,8 +6,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons">
-          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+          <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+            id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -24,20 +24,16 @@
               <h4 class="display-4">Anthony Lewis</h4>
               <p>Calling...</p>
               <div class="d-flex align-items-center justify-content-center">
-                <a href="javascript:void(0);"
-                  class="btn btn-light call-item p-0 d-flex align-items-center justify-content-center me-3"><i
+                <a href="#" class="btn btn-light call-item p-0 d-flex align-items-center justify-content-center me-3"><i
                     class="ti ti-video fs-20"></i></a>
-                <a href="javascript:void(0);"
-                  class="btn btn-light call-item p-0 d-flex align-items-center justify-content-center me-3"><i
+                <a href="#" class="btn btn-light call-item p-0 d-flex align-items-center justify-content-center me-3"><i
                     class="ti ti-microphone fs-20"></i></a>
-                <a href="javascript:void(0);"
+                <a href="#"
                   class="btn btn-danger call-item p-0 d-flex align-items-center justify-content-center me-3"><i
                     class="ti ti-phone-off fs-20"></i></a>
-                <a href="javascript:void(0);"
-                  class="btn btn-light call-item p-0 d-flex align-items-center justify-content-center me-3"><i
+                <a href="#" class="btn btn-light call-item p-0 d-flex align-items-center justify-content-center me-3"><i
                     class="ti ti-user-plus fs-20"></i></a>
-                <a href="javascript:void(0);"
-                  class="btn btn-light call-item p-0 d-flex align-items-center justify-content-center"><i
+                <a href="#" class="btn btn-light call-item p-0 d-flex align-items-center justify-content-center"><i
                     class="ti ti-volume fs-20"></i></a>
               </div>
             </div>
@@ -51,7 +47,7 @@
       <p class="mb-0">2014-2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

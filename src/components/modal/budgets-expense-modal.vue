@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Budget Expense</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -45,14 +40,8 @@
                 <div class="mb-3">
                   <label class="form-label">Expense Date </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -62,16 +51,11 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <div
-                    class="d-flex align-items-center justify-content-center border border-dashed rounded p-3 flex-column"
-                  >
-                    <span
-                      class="avatar avatar-lg avatar-rounded bg-primary-transparent mb-2"
-                      ><i class="ti ti-folder-open fs-24"></i
-                    ></span>
+                    class="d-flex align-items-center justify-content-center border border-dashed rounded p-3 flex-column">
+                    <span class="avatar avatar-lg avatar-rounded bg-primary-transparent mb-2"><i
+                        class="ti ti-folder-open fs-24"></i></span>
                     <p class="fs-14 text-center mb-2">Drag and drop your files</p>
-                    <div
-                      class="file-upload position-relative btn btn-sm btn-primary px-3 mb-2"
-                    >
+                    <div class="file-upload position-relative btn btn-sm btn-primary px-3 mb-2">
                       <i class="ti ti-upload me-1"></i>Upload
                       <input type="file" accept="video/image" />
                     </div>
@@ -98,12 +82,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Budget Expense</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -138,14 +117,8 @@
                 <div class="mb-3">
                   <label class="form-label">Expense Date </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -155,16 +128,11 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <div
-                    class="d-flex align-items-center justify-content-center border border-dashed rounded p-3 flex-column"
-                  >
-                    <span
-                      class="avatar avatar-lg avatar-rounded bg-primary-transparent mb-2"
-                      ><i class="ti ti-folder-open fs-24"></i
-                    ></span>
+                    class="d-flex align-items-center justify-content-center border border-dashed rounded p-3 flex-column">
+                    <span class="avatar avatar-lg avatar-rounded bg-primary-transparent mb-2"><i
+                        class="ti ti-folder-open fs-24"></i></span>
                     <p class="fs-14 text-center mb-2">Drag and drop your files</p>
-                    <div
-                      class="file-upload position-relative btn btn-sm btn-primary px-3 mb-2"
-                    >
+                    <div class="file-upload position-relative btn btn-sm btn-primary px-3 mb-2">
                       <i class="ti ti-upload me-1"></i>Upload
                       <input type="file" accept="video/image" />
                     </div>
@@ -198,15 +166,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/accounting/budget-expenses" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/accounting/budget-expenses" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

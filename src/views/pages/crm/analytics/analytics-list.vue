@@ -38,18 +38,16 @@ export default {
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
@@ -63,8 +61,8 @@ export default {
               :clearable="false" :input-format="dateFormat" />
           </div>
           <div class="head-icons ms-2">
-            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+              id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -79,19 +77,19 @@ export default {
               <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
                 <h5>Recently Created Contacts</h5>
                 <div class="dropdown mb-2">
-                  <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                  <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     <i class="ti ti-calendar me-1"></i>This Week
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
+                      <a href="#" class="dropdown-item rounded-1">This Month</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
+                      <a href="#" class="dropdown-item rounded-1">This Week</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
+                      <a href="#" class="dropdown-item rounded-1">Last Week</a>
                     </li>
                   </ul>
                 </div>
@@ -209,20 +207,19 @@ export default {
               <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
                 <h6>Won Deals Stage</h6>
                 <div class="dropdown">
-                  <a href="javascript:void(0);"
-                    class="btn btn-white border-0 dropdown-toggle btn-sm d-inline-flex align-items-center"
+                  <a href="#" class="btn btn-white border-0 dropdown-toggle btn-sm d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     Sales Pipeline
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
+                      <a href="#" class="dropdown-item rounded-1">This Month</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
+                      <a href="#" class="dropdown-item rounded-1">This Week</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
+                      <a href="#" class="dropdown-item rounded-1">Last Week</a>
                     </li>
                   </ul>
                 </div>
@@ -294,10 +291,10 @@ export default {
                       <td>$4,50,000</td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2">
+                          <a href="#" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-32.jpg" alt="Img" />
                           </a>
-                          <h6><a href="javascript:void(0);">Anthony Lewis</a></h6>
+                          <h6><a href="#">Anthony Lewis</a></h6>
                         </div>
                       </td>
                       <td>14 Jan 2024</td>
@@ -312,10 +309,10 @@ export default {
                       <td>$3,15,000</td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2">
+                          <a href="#" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-09.jpg" alt="Img" />
                           </a>
-                          <h6><a href="javascript:void(0);">Brian Villalobos</a></h6>
+                          <h6><a href="#">Brian Villalobos</a></h6>
                         </div>
                       </td>
                       <td>21 Jan 2024</td>
@@ -328,10 +325,10 @@ export default {
                       <td>$8,40,000</td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2">
+                          <a href="#" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-01.jpg" alt="Img" />
                           </a>
-                          <h6><a href="javascript:void(0);">Harvey Smith</a></h6>
+                          <h6><a href="#">Harvey Smith</a></h6>
                         </div>
                       </td>
                       <td>20 Feb 2024</td>
@@ -344,10 +341,10 @@ export default {
                       <td>$6,10,000</td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2">
+                          <a href="#" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-33.jpg" alt="Img" />
                           </a>
-                          <h6><a href="javascript:void(0);">Stephan Peralt</a></h6>
+                          <h6><a href="#">Stephan Peralt</a></h6>
                         </div>
                       </td>
                       <td>15 Mar 2024</td>
@@ -360,10 +357,10 @@ export default {
                       <td>$4,70,000</td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2">
+                          <a href="#" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-34.jpg" alt="Img" />
                           </a>
-                          <h6><a href="javascript:void(0);">Doglas Martini</a></h6>
+                          <h6><a href="#">Doglas Martini</a></h6>
                         </div>
                       </td>
                       <td>12 Apr 2024</td>
@@ -534,19 +531,19 @@ export default {
               <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
                 <h6>Deals by Stage</h6>
                 <div class="dropdown">
-                  <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                  <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     <i class="ti ti-calendar me-1"></i>This Week
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
+                      <a href="#" class="dropdown-item rounded-1">This Month</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
+                      <a href="#" class="dropdown-item rounded-1">This Week</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
+                      <a href="#" class="dropdown-item rounded-1">Last Week</a>
                     </li>
                   </ul>
                 </div>
@@ -630,19 +627,19 @@ export default {
               <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
                 <h6>Leads by Source</h6>
                 <div class="dropdown">
-                  <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                  <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     <i class="ti ti-calendar me-1"></i>This Week
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
+                      <a href="#" class="dropdown-item rounded-1">This Month</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
+                      <a href="#" class="dropdown-item rounded-1">This Week</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
+                      <a href="#" class="dropdown-item rounded-1">Last Week</a>
                     </li>
                   </ul>
                 </div>
@@ -687,19 +684,19 @@ export default {
               <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
                 <h5>Recently Created Companies</h5>
                 <div class="dropdown mb-2">
-                  <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                  <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     <i class="ti ti-calendar me-1"></i>This Week
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
+                      <a href="#" class="dropdown-item rounded-1">This Month</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
+                      <a href="#" class="dropdown-item rounded-1">This Week</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
+                      <a href="#" class="dropdown-item rounded-1">Last Week</a>
                     </li>
                   </ul>
                 </div>
@@ -781,7 +778,7 @@ export default {
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

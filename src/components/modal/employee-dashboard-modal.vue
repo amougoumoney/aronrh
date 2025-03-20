@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Leave</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -33,14 +28,8 @@
                 <div class="mb-3">
                   <label class="form-label">From </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -51,14 +40,8 @@
                 <div class="mb-3">
                   <label class="form-label">To </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateTwo"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateTwo" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -103,12 +86,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Task</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -118,25 +96,15 @@
               <div class="col-12">
                 <div class="mb-3">
                   <label class="form-label">Todo Title</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Patient appointment booking"
-                  />
+                  <input type="text" class="form-control" value="Patient appointment booking" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Due Date</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -146,25 +114,14 @@
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Project</label>
-                  <vue-select
-                    :options="OffDash"
-                    id="offdash"
-                    placeholder="Office Management"
-                  />
+                  <vue-select :options="OffDash" id="offdash" placeholder="Office Management" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label me-2">Team Members</label>
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="tags"
-                  />
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="tags" />
                 </div>
               </div>
               <div class="col-md-6">
@@ -176,11 +133,7 @@
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="InproDash"
-                    id="inprodash"
-                    placeholder="Inprogress"
-                  />
+                  <vue-select :options="InproDash" id="inprodash" placeholder="Inprogress" />
                 </div>
               </div>
               <div class="col-md-12">
@@ -193,35 +146,20 @@
                 <label class="form-label">Who Can See this Task?</label>
                 <div class="d-flex align-items-center">
                   <div class="form-check me-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault4"
-                    />
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" />
                     <label class="form-check-label text-dark" for="flexRadioDefault4">
                       Public
                     </label>
                   </div>
                   <div class="form-check me-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault5"
-                      checked
-                    />
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"
+                      checked />
                     <label class="form-check-label text-dark" for="flexRadioDefault5">
                       Private
                     </label>
                   </div>
                   <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault6"
-                    />
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" />
                     <label class="form-check-label text-dark" for="flexRadioDefault6">
                       Admin Only
                     </label>
@@ -231,11 +169,7 @@
               <div class="col-lg-12">
                 <div class="mb-3">
                   <label class="form-label">Descriptions</label>
-                  <ckeditor
-                    :editor="editor"
-                    v-model="editorData"
-                    :config="editorConfig"
-                  ></ckeditor>
+                  <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                 </div>
               </div>
               <div class="col-md-12">
@@ -247,25 +181,19 @@
                       <input type="file" class="form-control image-sign" multiple="" />
                     </div>
                   </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between border-bottom mb-2 pb-2"
-                  >
+                  <div class="d-flex align-items-center justify-content-between border-bottom mb-2 pb-2">
                     <div class="d-flex align-items-center">
                       <h6 class="fs-12 fw-medium me-1">Logo.zip</h6>
                       <span class="badge badge-soft-info">21MB </span>
                     </div>
-                    <a href="javascript:void(0);" class="btn btn-sm btn-icon"
-                      ><i class="ti ti-trash"></i
-                    ></a>
+                    <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
                   </div>
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
                       <h6 class="fs-12 fw-medium me-1">Files.zip</h6>
                       <span class="badge badge-soft-info">25MB </span>
                     </div>
-                    <a href="javascript:void(0);" class="btn btn-sm btn-icon"
-                      ><i class="ti ti-trash"></i
-                    ></a>
+                    <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
                   </div>
                 </div>
               </div>
@@ -296,15 +224,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/dashboard/employee-dashboard" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/dashboard/employee-dashboard" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

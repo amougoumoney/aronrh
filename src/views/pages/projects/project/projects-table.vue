@@ -227,9 +227,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -244,12 +244,7 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Project_ID'">
         <router-link to="/projects/projects-details">{{ record.Project_ID }}</router-link>
@@ -259,16 +254,12 @@ export default {
       </template>
       <template v-if="column.key === 'Leader'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="javascript:void(0);" class="avatar avatar-sm border avatar-rounded">
-            <img
-              :src="require(`@/assets/img/users/${record.Image}`)"
-              class="img-fluid"
-              alt="img"
-            />
+          <a href="#" class="avatar avatar-sm border avatar-rounded">
+            <img :src="require(`@/assets/img/users/${record.Image}`)" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-normal">
-              <a href="javascript:void(0);">{{ record.Leader }}</a>
+              <a href="#">{{ record.Leader }}</a>
             </h6>
           </div>
         </div>
@@ -276,117 +267,71 @@ export default {
       <template v-if="column.key === 'Team'">
         <div class="avatar-list-stacked avatar-group-sm">
           <span class="avatar avatar-rounded">
-            <img
-              class="border border-white"
-              :src="require(`@/assets/img/profiles/${record.Img}`)"
-              alt="img"
-            />
+            <img class="border border-white" :src="require(`@/assets/img/profiles/${record.Img}`)" alt="img" />
           </span>
           <span class="avatar avatar-rounded">
-            <img
-              class="border border-white"
-              :src="require(`@/assets/img/profiles/${record.Img1}`)"
-              alt="img"
-            />
+            <img class="border border-white" :src="require(`@/assets/img/profiles/${record.Img1}`)" alt="img" />
           </span>
           <span class="avatar avatar-rounded">
-            <img
-              class="border border-white"
-              :src="require(`@/assets/img/profiles/${record.Img2}`)"
-              alt="img"
-            />
+            <img class="border border-white" :src="require(`@/assets/img/profiles/${record.Img2}`)" alt="img" />
           </span>
-          <a
-            class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
-            href="javascript:void(0);"
-          >
+          <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
             +{{ record.Team }}
           </a>
         </div>
       </template>
       <template v-if="column.key === 'Priority'">
         <div class="dropdown">
-          <a
-            href="javascript:void(0);"
-            class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
-            data-bs-toggle="dropdown"
-          >
-            <span
-              class="rounded-circle d-flex justify-content-center align-items-center me-2"
-              :class="[
-                record.Priority === 'High'
-                  ? 'bg-transparent-danger'
-                  : record.Priority === 'Low'
+          <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+            data-bs-toggle="dropdown">
+            <span class="rounded-circle d-flex justify-content-center align-items-center me-2" :class="[
+              record.Priority === 'High'
+                ? 'bg-transparent-danger'
+                : record.Priority === 'Low'
                   ? 'bg-transparent-success'
                   : 'bg-transparent-warning',
-              ]"
-            >
-              <i
-                class="ti ti-point-filled"
-                :class="[
-                  record.Priority === 'High'
-                    ? 'text-danger'
-                    : record.Priority === 'Low'
+            ]">
+              <i class="ti ti-point-filled" :class="[
+                record.Priority === 'High'
+                  ? 'text-danger'
+                  : record.Priority === 'Low'
                     ? 'text-success'
                     : 'text-warning',
-                ]"
-              ></i>
+              ]"></i>
             </span>
             {{ record.Priority }}
           </a>
           <ul class="dropdown-menu dropdown-menu-end p-3">
             <li>
-              <a
-                href="javascript:void(0);"
-                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"
-                ><span
-                  class="rounded-circle bg-transparent-danger d-flex justify-content-center align-items-center me-2"
-                  ><i class="ti ti-point-filled text-danger"></i></span
-                >High</a
-              >
+              <a href="#" class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+                  class="rounded-circle bg-transparent-danger d-flex justify-content-center align-items-center me-2"><i
+                    class="ti ti-point-filled text-danger"></i></span>High</a>
             </li>
             <li>
-              <a
-                href="javascript:void(0);"
-                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"
-                ><span
-                  class="rounded-circle bg-transparent-warning d-flex justify-content-center align-items-center me-2"
-                  ><i class="ti ti-point-filled text-warning"></i></span
-                >Medium</a
-              >
+              <a href="#" class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+                  class="rounded-circle bg-transparent-warning d-flex justify-content-center align-items-center me-2"><i
+                    class="ti ti-point-filled text-warning"></i></span>Medium</a>
             </li>
             <li>
-              <a
-                href="javascript:void(0);"
-                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"
-                ><span
-                  class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"
-                  ><i class="ti ti-point-filled text-success"></i></span
-                >Low</a
-              >
+              <a href="#" class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+                  class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"><i
+                    class="ti ti-point-filled text-success"></i></span>Low</a>
             </li>
           </ul>
         </div>
       </template>
       <template v-if="column.key === 'Status'">
-        <span
-          class="d-inline-flex align-items-center badge-xs"
-          :class="[
-            'badge',
-            record.Status === 'Active' ? 'badge-success' : 'badge-danger',
-          ]"
-        >
+        <span class="d-inline-flex align-items-center badge-xs" :class="[
+          'badge',
+          record.Status === 'Active' ? 'badge-success' : 'badge-danger',
+        ]">
           <i class="ti ti-point-filled me-1"></i>{{ record.Status }}
         </span>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_project"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_project"><i class="ti ti-edit"></i></a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

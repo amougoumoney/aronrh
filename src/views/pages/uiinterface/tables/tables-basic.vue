@@ -439,11 +439,8 @@
                       <td>27-010-2022</td>
                       <td>Moracco</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-success btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-download align-middle me-2 d-inline-block"></i
-                          >Download
+                        <button class="btn btn-sm btn-success btn-wave waves-effect waves-light">
+                          <i class="feather-download align-middle me-2 d-inline-block"></i>Download
                         </button>
                       </td>
                     </tr>
@@ -452,11 +449,8 @@
                       <td>28-10-2022</td>
                       <td>Thornton</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-success btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-download align-middle me-2 d-inline-block"></i
-                          >Download
+                        <button class="btn btn-sm btn-success btn-wave waves-effect waves-light">
+                          <i class="feather-download align-middle me-2 d-inline-block"></i>Download
                         </button>
                       </td>
                     </tr>
@@ -465,11 +459,8 @@
                       <td>22-10-2022</td>
                       <td>Larry Bird</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-success btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-download align-middle me-2 d-inline-block"></i
-                          >Download
+                        <button class="btn btn-sm btn-success btn-wave waves-effect waves-light">
+                          <i class="feather-download align-middle me-2 d-inline-block"></i>Download
                         </button>
                       </td>
                     </tr>
@@ -478,11 +469,8 @@
                       <td>29-09-2022</td>
                       <td>Erica Sean</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-success btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-download align-middle me-2 d-inline-block"></i
-                          >Download
+                        <button class="btn btn-sm btn-success btn-wave waves-effect waves-light">
+                          <i class="feather-download align-middle me-2 d-inline-block"></i>Download
                         </button>
                       </td>
                     </tr>
@@ -515,11 +503,8 @@
                       <td>27-010-2022</td>
                       <td>Moracco</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-danger btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-trash align-middle me-2 d-inline-block"></i
-                          >Delete
+                        <button class="btn btn-sm btn-danger btn-wave waves-effect waves-light">
+                          <i class="feather-trash align-middle me-2 d-inline-block"></i>Delete
                         </button>
                       </td>
                     </tr>
@@ -528,11 +513,8 @@
                       <td>28-10-2022</td>
                       <td>Thornton</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-danger btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-trash align-middle me-2 d-inline-block"></i
-                          >Delete
+                        <button class="btn btn-sm btn-danger btn-wave waves-effect waves-light">
+                          <i class="feather-trash align-middle me-2 d-inline-block"></i>Delete
                         </button>
                       </td>
                     </tr>
@@ -541,11 +523,8 @@
                       <td>22-10-2022</td>
                       <td>Larry Bird</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-danger btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-trash align-middle me-2 d-inline-block"></i
-                          >Delete
+                        <button class="btn btn-sm btn-danger btn-wave waves-effect waves-light">
+                          <i class="feather-trash align-middle me-2 d-inline-block"></i>Delete
                         </button>
                       </td>
                     </tr>
@@ -554,11 +533,8 @@
                       <td>29-09-2022</td>
                       <td>Erica Sean</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-danger btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-trash align-middle me-2 d-inline-block"></i
-                          >Delete
+                        <button class="btn btn-sm btn-danger btn-wave waves-effect waves-light">
+                          <i class="feather-trash align-middle me-2 d-inline-block"></i>Delete
                         </button>
                       </td>
                     </tr>
@@ -588,13 +564,7 @@
                     <tr>
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="checkebox-sm"
-                            checked=""
-                          />
+                          <input class="form-check-input" type="checkbox" value="" id="checkebox-sm" checked="" />
                           <label class="form-check-label" for="checkebox-sm">
                             Zelensky
                           </label>
@@ -604,28 +574,15 @@
                       <td><span class="badge bg-soft-success">Paid</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="checkebox-sm1"
-                          />
+                          <input class="form-check-input" type="checkbox" value="" id="checkebox-sm1" />
                           <label class="form-check-label" for="checkebox-sm1">
                             Kim Jong
                           </label>
@@ -635,28 +592,15 @@
                       <td><span class="badge bg-soft-danger">Pending</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="checkebox-sm2"
-                          />
+                          <input class="form-check-input" type="checkbox" value="" id="checkebox-sm2" />
                           <label class="form-check-label" for="checkebox-sm2">
                             Obana
                           </label>
@@ -666,28 +610,15 @@
                       <td><span class="badge bg-soft-success">Paid</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="checkebox-sm3"
-                          />
+                          <input class="form-check-input" type="checkbox" value="" id="checkebox-sm3" />
                           <label class="form-check-label" for="checkebox-sm3">
                             Sean Paul
                           </label>
@@ -697,28 +628,15 @@
                       <td><span class="badge bg-soft-success">Paid</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="checkebox-sm4"
-                          />
+                          <input class="form-check-input" type="checkbox" value="" id="checkebox-sm4" />
                           <label class="form-check-label" for="checkebox-sm4">
                             Karizma
                           </label>
@@ -728,16 +646,8 @@
                       <td><span class="badge bg-soft-danger">Pending</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -770,21 +680,12 @@
                       <td>24 May 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-success rounded-pill"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-info rounded-pill"
-                            ><i class="feather-edit"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-danger rounded-pill"
-                            ><i class="feather-trash"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                              class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                              class="feather-edit"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                              class="feather-trash"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -794,21 +695,12 @@
                       <td>02 July 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-success rounded-pill"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-info rounded-pill"
-                            ><i class="feather-edit"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-danger rounded-pill"
-                            ><i class="feather-trash"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                              class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                              class="feather-edit"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                              class="feather-trash"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -818,21 +710,12 @@
                       <td>15 April 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-success rounded-pill"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-info rounded-pill"
-                            ><i class="feather-edit"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-danger rounded-pill"
-                            ><i class="feather-trash"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                              class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                              class="feather-edit"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                              class="feather-trash"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -842,21 +725,12 @@
                       <td>17 March 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-success rounded-pill"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-info rounded-pill"
-                            ><i class="feather-edit"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-danger rounded-pill"
-                            ><i class="feather-trash"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                              class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                              class="feather-edit"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                              class="feather-trash"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -895,9 +769,7 @@
                               <span>Joanna Smith</span>
                             </div>
                             <div class="lh-1">
-                              <span class="fs-11 text-muted"
-                                >joannasmith14@gmail.com</span
-                              >
+                              <span class="fs-11 text-muted">joannasmith14@gmail.com</span>
                             </div>
                           </div>
                         </div>
@@ -914,24 +786,15 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
                             +5
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 52%"
-                            aria-valuenow="52"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 52%" aria-valuenow="52"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                     </tr>
@@ -960,24 +823,15 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
                             +6
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 40%"
-                            aria-valuenow="40"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                     </tr>
@@ -1009,24 +863,15 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-15.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
                             +2
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 17%"
-                            aria-valuenow="17"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 17%" aria-valuenow="17"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                     </tr>
@@ -1055,24 +900,15 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
                             +5
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 72%"
-                            aria-valuenow="72"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                     </tr>
@@ -1117,9 +953,7 @@
                         </div>
                       </td>
                       <td>
-                        <span class="badge bg-soft-success"
-                          ><i class="ri-check-fill align-middle me-1"></i>Paid</span
-                        >
+                        <span class="badge bg-soft-success"><i class="ri-check-fill align-middle me-1"></i>Paid</span>
                       </td>
                       <td>Jul 26,2022</td>
                     </tr>
@@ -1141,9 +975,7 @@
                         </div>
                       </td>
                       <td>
-                        <span class="badge bg-soft-success"
-                          ><i class="ri-check-fill align-middle me-1"></i>Paid</span
-                        >
+                        <span class="badge bg-soft-success"><i class="ri-check-fill align-middle me-1"></i>Paid</span>
                       </td>
                       <td>Mar 14,2022</td>
                     </tr>
@@ -1165,9 +997,8 @@
                         </div>
                       </td>
                       <td>
-                        <span class="badge bg-soft-danger"
-                          ><i class="ri-close-fill align-middle me-1"></i>Cancelled</span
-                        >
+                        <span class="badge bg-soft-danger"><i
+                            class="ri-close-fill align-middle me-1"></i>Cancelled</span>
                       </td>
                       <td>Feb 1,2022</td>
                     </tr>
@@ -1189,9 +1020,8 @@
                         </div>
                       </td>
                       <td>
-                        <span class="badge bg-light text-dark"
-                          ><i class="ri-reply-line align-middle me-1"></i>Refunded</span
-                        >
+                        <span class="badge bg-light text-dark"><i
+                            class="ri-reply-line align-middle me-1"></i>Refunded</span>
                       </td>
                       <td>Apr 24,2022</td>
                     </tr>
@@ -1230,11 +1060,7 @@
                       <td>
                         <div class="d-flex align-items-center">
                           <span class="avatar avatar-xs me-2 online avatar-rounded">
-                            <img
-                              src="@/assets/img/profiles/avatar-03.jpg"
-                              alt="img"
-                            /> </span
-                          >Mayor Kelly
+                            <img src="@/assets/img/profiles/avatar-03.jpg" alt="img" /> </span>Mayor Kelly
                         </div>
                       </td>
                       <td>Manufacturer</td>
@@ -1251,39 +1077,22 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
                             +4
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 52%"
-                            aria-valuenow="52"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 52%" aria-valuenow="52"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                       <td>$10,984.29</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-success"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-info"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-success"><i class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-info"><i class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -1291,11 +1100,7 @@
                       <td>
                         <div class="d-flex align-items-center">
                           <span class="avatar avatar-xs me-2 online avatar-rounded">
-                            <img
-                              src="@/assets/img/profiles/avatar-12.jpg"
-                              alt="img"
-                            /> </span
-                          >Andrew Garfield
+                            <img src="@/assets/img/profiles/avatar-12.jpg" alt="img" /> </span>Andrew Garfield
                         </div>
                       </td>
                       <td>Managing Director</td>
@@ -1315,39 +1120,22 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-15.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
                             +4
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 91%"
-                            aria-valuenow="91"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 91%" aria-valuenow="91"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                       <td>$1.4billion</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-success"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-info"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-success"><i class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-info"><i class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -1355,11 +1143,7 @@
                       <td>
                         <div class="d-flex align-items-center">
                           <span class="avatar avatar-xs me-2 online avatar-rounded">
-                            <img
-                              src="@/assets/img/profiles/avatar-14.jpg"
-                              alt="img"
-                            /> </span
-                          >Simon Cowel
+                            <img src="@/assets/img/profiles/avatar-14.jpg" alt="img" /> </span>Simon Cowel
                         </div>
                       </td>
                       <td>Service Manager</td>
@@ -1373,39 +1157,22 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-16.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
                             +10
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 45%"
-                            aria-valuenow="45"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 45%" aria-valuenow="45"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                       <td>$7,123.21</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-success"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-info"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-success"><i class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-info"><i class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -1413,11 +1180,7 @@
                       <td>
                         <div class="d-flex align-items-center">
                           <span class="avatar avatar-xs me-2 online avatar-rounded">
-                            <img
-                              src="@/assets/img/profiles/avatar-05.jpg"
-                              alt="img"
-                            /> </span
-                          >Mirinda Hers
+                            <img src="@/assets/img/profiles/avatar-05.jpg" alt="img" /> </span>Mirinda Hers
                         </div>
                       </td>
                       <td>Recruiter</td>
@@ -1434,39 +1197,22 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-14.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
                             +6
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 21%"
-                            aria-valuenow="21"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 21%" aria-valuenow="21"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                       <td>$2,325.45</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-success"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-info"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-success"><i class="feather-download"></i></a>
+                          <a href="#" class="btn btn-icon btn-sm btn-info"><i class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>

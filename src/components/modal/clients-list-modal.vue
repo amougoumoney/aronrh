@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Client</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -18,50 +13,28 @@
           <div class="contact-grids-tab">
             <ul class="nav nav-underline" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="info-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#basic-info"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
+                <button class="nav-link active" id="info-tab" data-bs-toggle="tab" data-bs-target="#basic-info"
+                  type="button" role="tab" aria-selected="true">
                   Basic Information
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="address-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#address"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                >
+                <button class="nav-link" id="address-tab" data-bs-toggle="tab" data-bs-target="#address" type="button"
+                  role="tab" aria-selected="false">
                   Permissions
                 </button>
               </li>
             </ul>
           </div>
           <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="basic-info"
-              role="tabpanel"
-              aria-labelledby="info-tab"
-              tabindex="0"
-            >
+            <div class="tab-pane fade show active" id="basic-info" role="tabpanel" aria-labelledby="info-tab"
+              tabindex="0">
               <div class="modal-body pb-0">
                 <div class="row">
                   <div class="col-md-12">
-                    <div
-                      class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                    >
+                    <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                       <div
-                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                      >
+                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
                         <i class="ti ti-photo"></i>
                       </div>
                       <div class="profile-upload">
@@ -74,18 +47,14 @@
                             Upload
                             <input type="file" class="form-control image-sign" multiple />
                           </div>
-                          <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                            >Cancel</a
-                          >
+                          <a href="#" class="btn btn-light btn-sm">Cancel</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >First Name <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">First Name <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" />
                     </div>
                   </div>
@@ -97,9 +66,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Username <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Username <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" />
                     </div>
                   </div>
@@ -111,9 +78,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Password <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Password <span class="text-danger"> *</span></label>
                       <div class="pass-group">
                         <input type="password" class="pass-input form-control" />
                         <span class="ti toggle-password ti-eye-off"></span>
@@ -122,9 +87,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Confirm Password <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Confirm Password <span class="text-danger"> *</span></label>
                       <div class="pass-group">
                         <input type="password" class="pass-inputs form-control" />
                         <span class="ti toggle-passwords ti-eye-off"></span>
@@ -133,9 +96,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Phone Number <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Phone Number <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" />
                     </div>
                   </div>
@@ -148,11 +109,7 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-outline-light border me-2"
-                  data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-light border me-2" data-bs-dismiss="modal">
                   Cancel
                 </button>
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
@@ -160,27 +117,15 @@
                 </button>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="address"
-              role="tabpanel"
-              aria-labelledby="address-tab"
-              tabindex="0"
-            >
+            <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab" tabindex="0">
               <div class="modal-body pb-0">
                 <div class="card bg-light-500 shadow-none">
-                  <div
-                    class="card-body d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-                  >
+                  <div class="card-body d-flex align-items-center justify-content-between flex-wrap row-gap-3">
                     <h6>Enable Options</h6>
                     <div class="d-flex align-items-center justify-content-end">
                       <div class="form-check form-check-md form-switch me-2">
                         <label class="form-check-label mt-0">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" />
                           Enable all Module
                         </label>
                       </div>
@@ -200,12 +145,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                                checked
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                               Holidays
                             </label>
                           </div>
@@ -213,11 +153,7 @@
                         <td>
                           <div class="form-check form-check-md d-flex align-items-center">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                checked=""
-                              />
+                              <input class="form-check-input" type="checkbox" checked="" />
                               Read
                             </label>
                           </div>
@@ -267,11 +203,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Leaves
                             </label>
                           </div>
@@ -329,11 +261,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Clients
                             </label>
                           </div>
@@ -391,11 +319,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Projects
                             </label>
                           </div>
@@ -453,11 +377,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Tasks
                             </label>
                           </div>
@@ -515,11 +435,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Chats
                             </label>
                           </div>
@@ -577,11 +493,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Assets
                             </label>
                           </div>
@@ -639,11 +551,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Timing Sheets
                             </label>
                           </div>
@@ -702,19 +610,10 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-outline-light border me-2"
-                  data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-light border me-2" data-bs-dismiss="modal">
                   Cancel
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#success_modal"
-                >
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#success_modal">
                   Save
                 </button>
               </div>
@@ -732,12 +631,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Client</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -745,50 +639,28 @@
           <div class="contact-grids-tab">
             <ul class="nav nav-underline" id="myTab2" role="tablist">
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="info-tab2"
-                  data-bs-toggle="tab"
-                  data-bs-target="#basic-info2"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
+                <button class="nav-link active" id="info-tab2" data-bs-toggle="tab" data-bs-target="#basic-info2"
+                  type="button" role="tab" aria-selected="true">
                   Basic Information
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="address-tab2"
-                  data-bs-toggle="tab"
-                  data-bs-target="#address2"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                >
+                <button class="nav-link" id="address-tab2" data-bs-toggle="tab" data-bs-target="#address2" type="button"
+                  role="tab" aria-selected="false">
                   Permissions
                 </button>
               </li>
             </ul>
           </div>
           <div class="tab-content" id="myTabContent2">
-            <div
-              class="tab-pane fade show active"
-              id="basic-info2"
-              role="tabpanel"
-              aria-labelledby="info-tab2"
-              tabindex="0"
-            >
+            <div class="tab-pane fade show active" id="basic-info2" role="tabpanel" aria-labelledby="info-tab2"
+              tabindex="0">
               <div class="modal-body pb-0">
                 <div class="row">
                   <div class="col-md-12">
-                    <div
-                      class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                    >
+                    <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                       <div
-                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                      >
+                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
                         <i class="ti ti-photo"></i>
                       </div>
                       <div class="profile-upload">
@@ -801,18 +673,14 @@
                             Upload
                             <input type="file" class="form-control image-sign" multiple />
                           </div>
-                          <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                            >Cancel</a
-                          >
+                          <a href="#" class="btn btn-light btn-sm">Cancel</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >First Name <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">First Name <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" value="Michael" />
                     </div>
                   </div>
@@ -824,112 +692,70 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Username <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Username <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" value="Michael Walker" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Email</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        value="michael@example.com"
-                      />
+                      <input type="text" class="form-control" value="michael@example.com" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Password <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Password <span class="text-danger"> *</span></label>
                       <div class="pass-group">
-                        <input
-                          type="password"
-                          class="pass-input form-control"
-                          value="1234"
-                        />
+                        <input type="password" class="pass-input form-control" value="1234" />
                         <span class="ti toggle-password ti-eye-off"></span>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Confirm Password <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Confirm Password <span class="text-danger"> *</span></label>
                       <div class="pass-group">
-                        <input
-                          type="password"
-                          class="pass-inputs form-control"
-                          value="1234"
-                        />
+                        <input type="password" class="pass-inputs form-control" value="1234" />
                         <span class="ti toggle-passwords ti-eye-off"></span>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Phone Number <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Phone Number <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" value="(163) 2459 315" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Company</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        value="BrightWave Innovations"
-                      />
+                      <input type="text" class="form-control" value="BrightWave Innovations" />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Address <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Address <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" value="" />
                     </div>
                   </div>
                 </div>
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-outline-light border me-2"
-                  data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-light border me-2" data-bs-dismiss="modal">
                   Cancel
                 </button>
                 <button type="submit" class="btn btn-primary">Save</button>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="address2"
-              role="tabpanel"
-              aria-labelledby="address-tab2"
-              tabindex="0"
-            >
+            <div class="tab-pane fade" id="address2" role="tabpanel" aria-labelledby="address-tab2" tabindex="0">
               <div class="modal-body pb-0">
                 <div class="card bg-light-500 shadow-none">
-                  <div
-                    class="card-body d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-                  >
+                  <div class="card-body d-flex align-items-center justify-content-between flex-wrap row-gap-3">
                     <h6>Enable Options</h6>
                     <div class="d-flex align-items-center justify-content-end">
                       <div class="form-check form-switch me-2">
                         <label class="form-check-label mt-0">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" />
                           Enable all Module
                         </label>
                       </div>
@@ -949,12 +775,7 @@
                         <td>
                           <div class="form-check form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                                checked
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                               Holidays
                             </label>
                           </div>
@@ -1012,11 +833,7 @@
                         <td>
                           <div class="form-check form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Leaves
                             </label>
                           </div>
@@ -1074,11 +891,7 @@
                         <td>
                           <div class="form-check form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Clients
                             </label>
                           </div>
@@ -1136,11 +949,7 @@
                         <td>
                           <div class="form-check form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Projects
                             </label>
                           </div>
@@ -1198,11 +1007,7 @@
                         <td>
                           <div class="form-check form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Tasks
                             </label>
                           </div>
@@ -1260,11 +1065,7 @@
                         <td>
                           <div class="form-check form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Chats
                             </label>
                           </div>
@@ -1322,11 +1123,7 @@
                         <td>
                           <div class="form-check form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Assets
                             </label>
                           </div>
@@ -1384,11 +1181,7 @@
                         <td>
                           <div class="form-check form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Timing Sheets
                             </label>
                           </div>
@@ -1447,11 +1240,7 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-outline-light border me-2"
-                  data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-light border me-2" data-bs-dismiss="modal">
                   Cancel
                 </button>
                 <button type="submit" class="btn btn-primary">Save</button>
@@ -1470,9 +1259,7 @@
       <div class="modal-content">
         <div class="modal-body">
           <div class="text-center p-3">
-            <span class="avatar avatar-lg avatar-rounded bg-success mb-3"
-              ><i class="ti ti-check fs-24"></i
-            ></span>
+            <span class="avatar avatar-lg avatar-rounded bg-success mb-3"><i class="ti ti-check fs-24"></i></span>
             <h5 class="mb-2">Client Added Successfully</h5>
             <p class="mb-3">
               Stephan Peralt has been added with Client ID :
@@ -1481,16 +1268,10 @@
             <div>
               <div class="row g-2">
                 <div class="col-6">
-                  <router-link to="/projects/clients" class="btn btn-dark w-100"
-                    >Back to List</router-link
-                  >
+                  <router-link to="/projects/clients" class="btn btn-dark w-100">Back to List</router-link>
                 </div>
                 <div class="col-6">
-                  <router-link
-                    to="/projects/clients-details"
-                    class="btn btn-primary w-100"
-                    >Detail Page</router-link
-                  >
+                  <router-link to="/projects/clients-details" class="btn btn-primary w-100">Detail Page</router-link>
                 </div>
               </div>
             </div>
@@ -1514,15 +1295,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/projects/clients" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/projects/clients" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

@@ -8,8 +8,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+          <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+            id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -30,8 +30,8 @@
                   <div class="d-flex justify-content-sm-end align-items-center flex-wrap row-gap-2">
                     <router-link to="/others-settings/cronjob-schedule" class="btn btn-dark me-2"><i
                         class="ti ti-clock-hour-4 me-2"></i>Cron Schedule</router-link>
-                    <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal"
-                      data-bs-target="#add_cronjob"><i class="ti ti-circle-plus me-2"></i>Add Cronjob</a>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_cronjob"><i
+                        class="ti ti-circle-plus me-2"></i>Add Cronjob</a>
                   </div>
                 </div>
               </div>
@@ -89,10 +89,10 @@
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
-                              <a href="javascript:void(0);" class="me-2"><i class="ti ti-player-pause"></i></a>
-                              <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
-                                data-bs-target="#edit_cronjob"><i class="ti ti-edit"></i></a>
-                              <a href="javascript:void(0);" class=""><i class="ti ti-clock-bolt"></i></a>
+                              <a href="#" class="me-2"><i class="ti ti-player-pause"></i></a>
+                              <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_cronjob"><i
+                                  class="ti ti-edit"></i></a>
+                              <a href="#" class=""><i class="ti ti-clock-bolt"></i></a>
                             </div>
                           </td>
                         </tr>
@@ -125,10 +125,10 @@
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
-                              <a href="javascript:void(0);" class="me-2"><i class="ti ti-player-pause"></i></a>
-                              <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
-                                data-bs-target="#edit_cronjob"><i class="ti ti-edit"></i></a>
-                              <a href="javascript:void(0);" class=""><i class="ti ti-clock-bolt"></i></a>
+                              <a href="#" class="me-2"><i class="ti ti-player-pause"></i></a>
+                              <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_cronjob"><i
+                                  class="ti ti-edit"></i></a>
+                              <a href="#" class=""><i class="ti ti-clock-bolt"></i></a>
                             </div>
                           </td>
                         </tr>
@@ -146,7 +146,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

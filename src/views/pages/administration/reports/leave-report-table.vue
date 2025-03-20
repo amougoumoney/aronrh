@@ -199,9 +199,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -216,12 +216,7 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Invoice_ID'">
         <router-link to="/sales/invoice-details" class="link-default">{{
@@ -230,41 +225,25 @@ export default {
       </template>
       <template v-if="column.key === 'Client_Name'">
         <div class="d-flex align-items-center">
-          <a
-            href="javascript:void(0);"
-            class="avatar avatar-md"
-            data-bs-toggle="modal"
-            data-bs-target="#view_details"
-            ><img
-              :src="`@/assets/img/reports/${record.Image}`"
-              class="img-fluid rounded-circle"
-              alt="img"
-          /></a>
+          <a href="#" class="avatar avatar-md" data-bs-toggle="modal" data-bs-target="#view_details"><img
+              :src="`@/assets/img/reports/${record.Image}`" class="img-fluid rounded-circle" alt="img" /></a>
           <div class="ms-2">
             <p class="text-dark mb-0">
-              <a
-                href="javascript:void(0);"
-                data-bs-toggle="modal"
-                data-bs-target="#view_details"
-                >{{ record.Client_Name }}</a
-              >
+              <a href="#" data-bs-toggle="modal" data-bs-target="#view_details">{{ record.Client_Name }}</a>
             </p>
             <span class="fs-12">{{ record.Role }}</span>
           </div>
         </div>
       </template>
       <template v-if="column.key === 'Status'">
-        <span
-          class="d-inline-flex align-items-center badge-xs"
-          :class="[
-            'badge',
-            record.Status === 'Paid'
-              ? 'badge-soft-success'
-              : record.Status === 'Sent'
+        <span class="d-inline-flex align-items-center badge-xs" :class="[
+          'badge',
+          record.Status === 'Paid'
+            ? 'badge-soft-success'
+            : record.Status === 'Sent'
               ? 'badge-soft-purple'
               : 'badge-soft-warning',
-          ]"
-        >
+        ]">
           {{ record.Status }}
         </span>
       </template>

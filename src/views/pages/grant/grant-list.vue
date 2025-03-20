@@ -6,128 +6,128 @@
     <div class="content">
       <!-- Breadcrumb -->
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
-        <index-breadcrumb :title="title" :text="text" :text1="text1" /> 
+        <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <button class="btn btn-primary" @click="openAddGrantModal">
-              <i class="ti ti-plus me-1"></i>{{$t('CreateGrant')}}
+              <i class="ti ti-plus me-1"></i>{{ $t('CreateGrant') }}
             </button>
           </div>
           <div class="me-2 mb-2">
-               <!-- Create Grant Upload Modal button -->
-               <button class="btn btn-primary" @click="openGrantUploadModal">
-              <i class="ti ti-upload me-1"></i>{{$t('UploadGrant')}}
-            </button> 
+            <!-- Create Grant Upload Modal button -->
+            <button class="btn btn-primary" @click="openGrantUploadModal">
+              <i class="ti ti-upload me-1"></i>{{ $t('UploadGrant') }}
+            </button>
           </div>
         </div>
       </div>
       <!-- /Breadcrumb -->
 
-       <!-- Grant List Table -->
-  <div class="card">
-    <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-striped custom-table mb-0">
-          <thead>
-            <tr>
-              <!-- Add a column for the expand/collapse button -->
-              <th style="width: 40px;"></th>
-              <th>{{$t('GrantCode')}}</th>
-              <th>{{$t('GrantName')}}</th>
-              <th>{{$t('Amount')}}</th>
-              <th>{{$t('StartDate')}}</th>
-              <th>{{$t('EndDate')}}</th>
-              <th>{{$t('Status')}}</th>
-              <th class="text-end">{{$t('Actions')}}</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Loop over each grant -->
-            <template v-for="grant in grants" :key="grant.id">
-              <tr>
-                <!-- Expand/collapse toggle button -->
-                <td>
-                  <button class="btn btn-link btn-sm" @click="toggleGrant(grant)">
-                    <i :class="grant.expanded ? 'ti ti-chevron-down' : 'ti ti-chevron-right'"></i>
-                  </button>
-                </td>
-                <td>{{ grant.code }}</td>
-                <td>{{ grant.name }}</td>
-                <td>{{ grant.amount }}</td>
-                <td>{{ grant.startDate }}</td>
-                <td>{{ grant.endDate }}</td>
-                <td>
-                  <span :class="'badge ' + getStatusClass(grant.status)">
-                    {{ grant.status }}
-                  </span>
-                </td>
-                <td class="text-end">
-                  <div class="dropdown dropdown-action">
-                    <a href="javascript:void(0);" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="ti ti-dots-vertical"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                      <router-link :to="'/grant/details/' + grant.id" class="dropdown-item">
-                        <i class="ti ti-eye me-2"></i>{{$t('View')}}
-                      </router-link>
-                      <a href="javascript:void(0);" class="dropdown-item" @click="openEditGrantModal(grant)">
-                        <i class="ti ti-pencil me-2"></i>{{$t('Edit')}}
-                      </a>
-                      <a href="javascript:void(0);" class="dropdown-item" @click="deleteGrant(grant.id)">
-                        <i class="ti ti-trash me-2"></i>{{$t('Delete')}}
-                      </a>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <!-- Expandable sub-row for grant items -->
-              <tr v-if="grant.expanded">
-                <td colspan="7" class="p-0">
-                  <div class="p-2 bg-light">
-                    <!-- Sub-table for grant items -->
-                    <table class="table table-sm mb-0">
-                      <thead>
-                        <tr>
-                          <th>{{$t('BGLine')}}</th>
-                          <th>{{$t('Position')}}</th>
-                          <th>{{$t('Salary')}}</th>
-                          <th>{{$t('Benefit')}}</th>
-                          <th>{{$t('Effort')}}</th>
-                          <th>{{$t('PositionNumber')}}</th>
-                          <th>{{$t('CostMonthly')}}</th>
-                          <th>{{$t('TotalCostByPerson')}}</th>
-                          <th>{{$t('BenefitFTE')}}</th>
-                          <th>{{$t('PositionID')}}</th>
-                          <th>{{$t('TotalAmount')}}</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr v-for="item in grant.items" :key="item.id">
-                          <td>{{ item.bg_line }}</td>
-                          <td>{{ item.grant_position }}</td>
-                          <td>{{ item.grant_salary }}</td>
-                          <td>{{ item.grant_benefit }}</td>
-                          <td>{{ item.grant_level_of_effort }}</td>
-                          <td>{{ item.grant_position_number }}</td>
-                          <td>{{ item.grant_cost_by_monthly }}</td>
-                          <td>{{ item.grant_total_cost_by_person }}</td>
-                          <td>{{ item.grant_benefit_fte }}</td>
-                          <td>{{ item.position_id }}</td>
-                          <td>{{ item.grant_total_amount }}</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </td>
-              </tr>
-            </template>
-          </tbody>
-        </table>
+      <!-- Grant List Table -->
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-striped custom-table mb-0">
+              <thead>
+                <tr>
+                  <!-- Add a column for the expand/collapse button -->
+                  <th style="width: 40px;"></th>
+                  <th>{{ $t('GrantCode') }}</th>
+                  <th>{{ $t('GrantName') }}</th>
+                  <th>{{ $t('Amount') }}</th>
+                  <th>{{ $t('StartDate') }}</th>
+                  <th>{{ $t('EndDate') }}</th>
+                  <th>{{ $t('Status') }}</th>
+                  <th class="text-end">{{ $t('Actions') }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Loop over each grant -->
+                <template v-for="grant in grants" :key="grant.id">
+                  <tr>
+                    <!-- Expand/collapse toggle button -->
+                    <td>
+                      <button class="btn btn-link btn-sm" @click="toggleGrant(grant)">
+                        <i :class="grant.expanded ? 'ti ti-chevron-down' : 'ti ti-chevron-right'"></i>
+                      </button>
+                    </td>
+                    <td>{{ grant.code }}</td>
+                    <td>{{ grant.name }}</td>
+                    <td>{{ grant.amount }}</td>
+                    <td>{{ grant.startDate }}</td>
+                    <td>{{ grant.endDate }}</td>
+                    <td>
+                      <span :class="'badge ' + getStatusClass(grant.status)">
+                        {{ grant.status }}
+                      </span>
+                    </td>
+                    <td class="text-end">
+                      <div class="dropdown dropdown-action">
+                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="ti ti-dots-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <router-link :to="'/grant/details/' + grant.id" class="dropdown-item">
+                            <i class="ti ti-eye me-2"></i>{{ $t('View') }}
+                          </router-link>
+                          <a href="#" class="dropdown-item" @click="openEditGrantModal(grant)">
+                            <i class="ti ti-pencil me-2"></i>{{ $t('Edit') }}
+                          </a>
+                          <a href="#" class="dropdown-item" @click="deleteGrant(grant.id)">
+                            <i class="ti ti-trash me-2"></i>{{ $t('Delete') }}
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- Expandable sub-row for grant items -->
+                  <tr v-if="grant.expanded">
+                    <td colspan="7" class="p-0">
+                      <div class="p-2 bg-light">
+                        <!-- Sub-table for grant items -->
+                        <table class="table table-sm mb-0">
+                          <thead>
+                            <tr>
+                              <th>{{ $t('BGLine') }}</th>
+                              <th>{{ $t('Position') }}</th>
+                              <th>{{ $t('Salary') }}</th>
+                              <th>{{ $t('Benefit') }}</th>
+                              <th>{{ $t('Effort') }}</th>
+                              <th>{{ $t('PositionNumber') }}</th>
+                              <th>{{ $t('CostMonthly') }}</th>
+                              <th>{{ $t('TotalCostByPerson') }}</th>
+                              <th>{{ $t('BenefitFTE') }}</th>
+                              <th>{{ $t('PositionID') }}</th>
+                              <th>{{ $t('TotalAmount') }}</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr v-for="item in grant.items" :key="item.id">
+                              <td>{{ item.bg_line }}</td>
+                              <td>{{ item.grant_position }}</td>
+                              <td>{{ item.grant_salary }}</td>
+                              <td>{{ item.grant_benefit }}</td>
+                              <td>{{ item.grant_level_of_effort }}</td>
+                              <td>{{ item.grant_position_number }}</td>
+                              <td>{{ item.grant_cost_by_monthly }}</td>
+                              <td>{{ item.grant_total_cost_by_person }}</td>
+                              <td>{{ item.grant_benefit_fte }}</td>
+                              <td>{{ item.position_id }}</td>
+                              <td>{{ item.grant_total_amount }}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </template>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- /Grant List Table -->
+      <!-- /Grant List Table -->
     </div>
   </div>
 
@@ -186,9 +186,9 @@ export default {
         const grantsData = Array.isArray(response.data)
           ? response.data
           : Array.isArray(response)
-          ? response
-          : [];
-        
+            ? response
+            : [];
+
         this.grants = grantsData.map(grant => ({
           id: grant.id,
           code: grant.code,
@@ -252,7 +252,7 @@ export default {
     },
 
     openGrantUploadModal() {
-      
+
       new Modal(document.getElementById('grantUploadModal')).show();
     },
 
@@ -304,4 +304,4 @@ export default {
     }
   }
 };
-</script> 
+</script>

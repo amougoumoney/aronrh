@@ -18,30 +18,28 @@
           </div>
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_event"
+            <a href="#" data-bs-toggle="modal" data-bs-target="#add_event"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Create</a>
           </div>
           <div class="ms-2 head-icons">
-            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+              id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -63,8 +61,8 @@
               <div class="border-bottom pb-4 mb-4">
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <h5>Event</h5>
-                  <a href="javascript:void(0);" class="link-primary" data-bs-toggle="modal"
-                    data-bs-target="#add_event"><i class="ti ti-square-rounded-plus-filled fs-16"></i></a>
+                  <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#add_event"><i
+                      class="ti ti-square-rounded-plus-filled fs-16"></i></a>
                 </div>
                 <p class="fs-12 mb-2">
                   Drag and drop your event or click in the calendar
@@ -138,7 +136,7 @@
                 <h6 class="text-white mb-3">
                   Enjoy Unlimited Access on a small price monthly.
                 </h6>
-                <a href="javascript:void(0);" class="btn btn-white">Upgrade Now <i class="ti ti-arrow-right"></i></a>
+                <a href="#" class="btn btn-white">Upgrade Now <i class="ti ti-arrow-right"></i></a>
                 <div class="box-bg">
                   <span class="bg-right"><img src="@/assets/img/bg/email-bg-01.png" alt="" /></span>
                   <span class="bg-left"><img src="@/assets/img/bg/email-bg-02.png" alt="" /></span>
@@ -163,7 +161,7 @@
       <p class="mb-0">2014-2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

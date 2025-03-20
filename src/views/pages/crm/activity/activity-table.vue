@@ -148,9 +148,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -165,62 +165,40 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Title'">
         <p class="fs-14 text-dark fw-medium">{{ record.Title }}</p>
       </template>
       <template v-if="column.key === 'Activity_Type'">
-        <span
-          class="badge badge-pink-transparent"
-          :class="[
-            'badge',
-            record.Activity_Type === 'Meeting'
-              ? 'badge-pink-transparent'
-              : record.Activity_Type === 'Calls'
+        <span class="badge badge-pink-transparent" :class="[
+          'badge',
+          record.Activity_Type === 'Meeting'
+            ? 'badge-pink-transparent'
+            : record.Activity_Type === 'Calls'
               ? 'badge-purple-transparent'
               : record.Activity_Type === 'Tasks'
-              ? 'badge-info-transparent'
-              : 'badge-warning-transparent',
-          ]"
-        >
-          <i
-            class="ti ti-device-computer-camera me-1"
-            :class="[
-              'ti',
-              record.Activity_Type === 'Meeting'
-                ? 'ti-device-computer-camera'
-                : record.Activity_Type === 'Calls'
+                ? 'badge-info-transparent'
+                : 'badge-warning-transparent',
+        ]">
+          <i class="ti ti-device-computer-camera me-1" :class="[
+            'ti',
+            record.Activity_Type === 'Meeting'
+              ? 'ti-device-computer-camera'
+              : record.Activity_Type === 'Calls'
                 ? 'ti-phone'
                 : record.Activity_Type === 'Tasks'
-                ? 'ti-subtask'
-                : 'ti-mail',
-              'me-1',
-            ]"
-          ></i>
+                  ? 'ti-subtask'
+                  : 'ti-mail',
+            'me-1',
+          ]"></i>
           {{ record.Activity_Type }}
         </span>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#edit_activity"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_activity"><i class="ti ti-edit"></i></a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

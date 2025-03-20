@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Todo</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -26,11 +21,7 @@
               <div class="col-6">
                 <div class="mb-3">
                   <label class="form-label">Tag</label>
-                  <vue-select
-                    :options="InterNalTa"
-                    id="internalta"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="InterNalTa" id="internalta" placeholder="Select" />
                 </div>
               </div>
               <div class="col-6">
@@ -42,11 +33,7 @@
               <div class="col-lg-12">
                 <div class="mb-3">
                   <label class="form-label">Descriptions</label>
-                  <ckeditor
-                    :editor="editor"
-                    v-model="editorData"
-                    :config="editorConfig"
-                  ></ckeditor>
+                  <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                 </div>
               </div>
               <div class="col-12">
@@ -58,11 +45,7 @@
               <div class="col-12">
                 <div class="mb-0">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="CompletPend"
-                    id="completpend"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="CompletPend" id="completpend" placeholder="Select" />
                 </div>
               </div>
             </div>
@@ -85,12 +68,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Todo</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -100,61 +78,37 @@
               <div class="col-12">
                 <div class="mb-3">
                   <label class="form-label">Todo Title</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Update calendar and schedule"
-                  />
+                  <input type="text" class="form-control" value="Update calendar and schedule" />
                 </div>
               </div>
               <div class="col-6">
                 <div class="mb-3">
                   <label class="form-label">Tag</label>
-                  <vue-select
-                    :options="EditInterNalTa"
-                    id="editinternalta"
-                    placeholder="Internal"
-                  />
+                  <vue-select :options="EditInterNalTa" id="editinternalta" placeholder="Internal" />
                 </div>
               </div>
               <div class="col-6">
                 <div class="mb-3">
                   <label class="form-label">Priority</label>
-                  <vue-select
-                    :options="EditProHighme"
-                    id="editgjsej"
-                    placeholder="Medium"
-                  />
+                  <vue-select :options="EditProHighme" id="editgjsej" placeholder="Medium" />
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="mb-3">
                   <label class="form-label">Descriptions</label>
-                  <ckeditor
-                    :editor="editor"
-                    v-model="editorData"
-                    :config="editorConfig"
-                  ></ckeditor>
+                  <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                 </div>
               </div>
               <div class="col-12">
                 <div class="mb-3">
                   <label class="form-label">Add Assignee</label>
-                  <vue-select
-                    :options="EditAssDesig"
-                    id="editassdeig"
-                    placeholder="Sophie"
-                  />
+                  <vue-select :options="EditAssDesig" id="editassdeig" placeholder="Sophie" />
                 </div>
               </div>
               <div class="col-12">
                 <div class="mb-0">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="EditCompletPend"
-                    id="editcompletpend"
-                    placeholder="Completed"
-                  />
+                  <vue-select :options="EditCompletPend" id="editcompletpend" placeholder="Completed" />
                 </div>
               </div>
             </div>
@@ -177,17 +131,12 @@
       <div class="modal-content">
         <div class="modal-header bg-dark">
           <h4 class="modal-title text-white">Respond to any pending messages</h4>
-          <span class="badge badge-danger d-inline-flex align-items-center"
-            ><i class="ti ti-square me-1"></i>Urgent</span
-          >
+          <span class="badge badge-danger d-inline-flex align-items-center"><i
+              class="ti ti-square me-1"></i>Urgent</span>
           <span><i class="ti ti-star-filled text-warning"></i></span>
-          <a href="javascript:void(0);"><i class="ti ti-trash text-white"></i></a>
-          <button
-            type="button"
-            class="btn-close custom-btn-close bg-transparent fs-16 text-white position-static"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <a href="#"><i class="ti ti-trash text-white"></i></a>
+          <button type="button" class="btn-close custom-btn-close bg-transparent fs-16 text-white position-static"
+            data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -239,25 +188,13 @@
             <h5 class="mb-2">Assignee</h5>
             <div class="avatar-list-stacked avatar-group-sm">
               <span class="avatar avatar-rounded">
-                <img
-                  class="border border-white"
-                  src="@/assets/img/profiles/avatar-23.jpg"
-                  alt="img"
-                />
+                <img class="border border-white" src="@/assets/img/profiles/avatar-23.jpg" alt="img" />
               </span>
               <span class="avatar avatar-rounded">
-                <img
-                  class="border border-white"
-                  src="@/assets/img/profiles/avatar-24.jpg"
-                  alt="img"
-                />
+                <img class="border border-white" src="@/assets/img/profiles/avatar-24.jpg" alt="img" />
               </span>
               <span class="avatar avatar-rounded">
-                <img
-                  class="border border-white"
-                  src="@/assets/img/profiles/avatar-25.jpg"
-                  alt="img"
-                />
+                <img class="border border-white" src="@/assets/img/profiles/avatar-25.jpg" alt="img" />
               </span>
             </div>
           </div>
@@ -280,15 +217,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/applications/todo" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/applications/todo" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

@@ -31,7 +31,7 @@
                         Some quick example text to build on the card title and make up the
                         bulk of the card's content.
                       </p>
-                      <a href="javascript:void(0);" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
                 </div>
@@ -49,11 +49,7 @@
                         <span class="placeholder col-6"></span>
                         <span class="placeholder col-8"></span>
                       </p>
-                      <a
-                        href="javascript:void(0);"
-                        tabindex="-1"
-                        class="btn btn-primary disabled placeholder col-6"
-                      ></a>
+                      <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
                     </div>
                   </div>
                 </div>
@@ -126,11 +122,7 @@
               <p aria-hidden="true">
                 <span class="placeholder col-6"></span>
               </p>
-              <a
-                href="javascript:void(0);"
-                class="btn btn-primary disabled placeholder col-4"
-                aria-hidden="true"
-              ></a>
+              <a href="#" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
             </div>
           </div>
           <div class="card">

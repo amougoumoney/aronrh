@@ -3,29 +3,19 @@
     <div class="col-xl-5 d-flex">
       <div class="card flex-fill">
         <div class="card-header">
-          <div
-            class="d-flex align-items-center justify-content-between flex-wrap row-gap-2"
-          >
+          <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Top Countries</h5>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-white border-0 dropdown-toggle btn-sm d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a href="#" class="btn btn-white border-0 dropdown-toggle btn-sm d-inline-flex align-items-center"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Referrals
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Referrals</a
-                  >
+                  <a href="#" class="dropdown-item rounded-1">Referrals</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Sales Pipeline</a
-                  >
+                  <a href="#" class="dropdown-item rounded-1">Sales Pipeline</a>
                 </li>
               </ul>
             </div>
@@ -36,18 +26,9 @@
             <div class="col-xxl-5 col-sm-6">
               <div class="pe-3 border-end">
                 <div class="d-flex align-items-center mb-4">
-                  <span class="me-2"
-                    ><i class="ti ti-point-filled text-primary fs-16"></i
-                  ></span>
-                  <router-link
-                    to="/location/countries"
-                    class="avatar rounded-circle flex-shrink-0 border border-2"
-                  >
-                    <img
-                      src="@/assets/img/payment-gateway/country-03.svg"
-                      class="img-fluid rounded-circle"
-                      alt="img"
-                    />
+                  <span class="me-2"><i class="ti ti-point-filled text-primary fs-16"></i></span>
+                  <router-link to="/location/countries" class="avatar rounded-circle flex-shrink-0 border border-2">
+                    <img src="@/assets/img/payment-gateway/country-03.svg" class="img-fluid rounded-circle" alt="img" />
                   </router-link>
                   <div class="ms-2">
                     <h6 class="fw-medium text-truncate mb-1">
@@ -57,18 +38,9 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center mb-4">
-                  <span class="me-2"
-                    ><i class="ti ti-point-filled text-secondary fs-16"></i
-                  ></span>
-                  <router-link
-                    to="/location/countries"
-                    class="avatar rounded-circle flex-shrink-0 border border-2"
-                  >
-                    <img
-                      src="@/assets/img/payment-gateway/country-04.svg"
-                      class="img-fluid rounded-circle"
-                      alt="img"
-                    />
+                  <span class="me-2"><i class="ti ti-point-filled text-secondary fs-16"></i></span>
+                  <router-link to="/location/countries" class="avatar rounded-circle flex-shrink-0 border border-2">
+                    <img src="@/assets/img/payment-gateway/country-04.svg" class="img-fluid rounded-circle" alt="img" />
                   </router-link>
                   <div class="ms-2">
                     <h6 class="fw-medium text-truncate mb-1">
@@ -78,18 +50,9 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center mb-4">
-                  <span class="me-2"
-                    ><i class="ti ti-point-filled text-info fs-16"></i
-                  ></span>
-                  <router-link
-                    to="/location/countries"
-                    class="avatar rounded-circle flex-shrink-0 border border-2"
-                  >
-                    <img
-                      src="@/assets/img/payment-gateway/country-05.svg"
-                      class="img-fluid rounded-circle"
-                      alt="img"
-                    />
+                  <span class="me-2"><i class="ti ti-point-filled text-info fs-16"></i></span>
+                  <router-link to="/location/countries" class="avatar rounded-circle flex-shrink-0 border border-2">
+                    <img src="@/assets/img/payment-gateway/country-05.svg" class="img-fluid rounded-circle" alt="img" />
                   </router-link>
                   <div class="ms-2">
                     <h6 class="fw-medium text-truncate mb-1">
@@ -99,18 +62,9 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center mb-4">
-                  <span class="me-2"
-                    ><i class="ti ti-point-filled text-danger fs-16"></i
-                  ></span>
-                  <router-link
-                    to="/location/countries"
-                    class="avatar rounded-circle flex-shrink-0 border border-2"
-                  >
-                    <img
-                      src="@/assets/img/payment-gateway/country-01.svg"
-                      class="img-fluid rounded-circle"
-                      alt="img"
-                    />
+                  <span class="me-2"><i class="ti ti-point-filled text-danger fs-16"></i></span>
+                  <router-link to="/location/countries" class="avatar rounded-circle flex-shrink-0 border border-2">
+                    <img src="@/assets/img/payment-gateway/country-01.svg" class="img-fluid rounded-circle" alt="img" />
                   </router-link>
                   <div class="ms-2">
                     <h6 class="fw-medium text-truncate mb-1">
@@ -120,18 +74,9 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center">
-                  <span class="me-2"
-                    ><i class="ti ti-point-filled text-warning fs-16"></i
-                  ></span>
-                  <router-link
-                    to="/location/countries"
-                    class="avatar rounded-circle flex-shrink-0 border border-2"
-                  >
-                    <img
-                      src="@/assets/img/payment-gateway/country-02.svg"
-                      class="img-fluid rounded-circle"
-                      alt="img"
-                    />
+                  <span class="me-2"><i class="ti ti-point-filled text-warning fs-16"></i></span>
+                  <router-link to="/location/countries" class="avatar rounded-circle flex-shrink-0 border border-2">
+                    <img src="@/assets/img/payment-gateway/country-02.svg" class="img-fluid rounded-circle" alt="img" />
                   </router-link>
                   <div class="ms-2">
                     <h6 class="fw-medium text-truncate mb-1">
@@ -144,12 +89,8 @@
             </div>
             <div class="col-xxl-7 col-sm-6">
               <div id="donut-chart-3">
-                <apexchart
-                  type="donut"
-                  height="250"
-                  :options="donutChart3.dount3"
-                  :series="donutChart3.series"
-                ></apexchart>
+                <apexchart type="donut" height="250" :options="donutChart3.dount3" :series="donutChart3.series">
+                </apexchart>
               </div>
             </div>
           </div>
@@ -158,15 +99,11 @@
     </div>
     <div class="col-xl-7 d-flex">
       <div class="card flex-fill">
-        <div
-          class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-2"
-        >
+        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-2">
           <h5>Recent Leads</h5>
           <div class="d-flex align-items-center">
             <div>
-              <router-link to="/crm/leads-list" class="btn btn-sm btn-light px-3"
-                >View All</router-link
-              >
+              <router-link to="/crm/leads-list" class="btn btn-sm btn-light px-3">View All</router-link>
             </div>
           </div>
         </div>
@@ -191,21 +128,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center file-name-icon">
-                      <router-link
-                        to="/crm/companies-details"
-                        class="avatar border rounded-circle"
-                      >
-                        <img
-                          src="@/assets/img/company/company-01.svg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <router-link to="/crm/companies-details" class="avatar border rounded-circle">
+                        <img src="@/assets/img/company/company-01.svg" class="img-fluid" alt="img" />
                       </router-link>
                       <div class="ms-2">
                         <h6 class="fw-medium">
-                          <router-link to="/crm/companies-details"
-                            >BrightWave Innovations</router-link
-                          >
+                          <router-link to="/crm/companies-details">BrightWave Innovations</router-link>
                         </h6>
                       </div>
                     </div>
@@ -227,21 +155,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center file-name-icon">
-                      <router-link
-                        to="/crm/companies-details"
-                        class="avatar border rounded-circle"
-                      >
-                        <img
-                          src="@/assets/img/company/company-02.svg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <router-link to="/crm/companies-details" class="avatar border rounded-circle">
+                        <img src="@/assets/img/company/company-02.svg" class="img-fluid" alt="img" />
                       </router-link>
                       <div class="ms-2">
                         <h6 class="fw-medium">
-                          <router-link to="/crm/companies-details"
-                            >Stellar Dynamics</router-link
-                          >
+                          <router-link to="/crm/companies-details">Stellar Dynamics</router-link>
                         </h6>
                       </div>
                     </div>
@@ -263,21 +182,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center file-name-icon">
-                      <router-link
-                        to="/crm/companies-details"
-                        class="avatar border rounded-circle"
-                      >
-                        <img
-                          src="@/assets/img/company/company-03.svg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <router-link to="/crm/companies-details" class="avatar border rounded-circle">
+                        <img src="@/assets/img/company/company-03.svg" class="img-fluid" alt="img" />
                       </router-link>
                       <div class="ms-2">
                         <h6 class="fw-medium">
-                          <router-link to="/crm/companies-details"
-                            >Quantum Nexus</router-link
-                          >
+                          <router-link to="/crm/companies-details">Quantum Nexus</router-link>
                         </h6>
                       </div>
                     </div>
@@ -299,21 +209,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center file-name-icon">
-                      <router-link
-                        to="/crm/companies-details"
-                        class="avatar border rounded-circle"
-                      >
-                        <img
-                          src="@/assets/img/company/company-04.svg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <router-link to="/crm/companies-details" class="avatar border rounded-circle">
+                        <img src="@/assets/img/company/company-04.svg" class="img-fluid" alt="img" />
                       </router-link>
                       <div class="ms-2">
                         <h6 class="fw-medium">
-                          <router-link to="/crm/companies-details"
-                            >EcoVision Enterprises</router-link
-                          >
+                          <router-link to="/crm/companies-details">EcoVision Enterprises</router-link>
                         </h6>
                       </div>
                     </div>
@@ -335,21 +236,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center file-name-icon">
-                      <router-link
-                        to="/crm/companies-details"
-                        class="avatar border rounded-circle"
-                      >
-                        <img
-                          src="@/assets/img/company/company-05.svg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <router-link to="/crm/companies-details" class="avatar border rounded-circle">
+                        <img src="@/assets/img/company/company-05.svg" class="img-fluid" alt="img" />
                       </router-link>
                       <div class="ms-2">
                         <h6 class="fw-medium">
-                          <router-link to="/crm/companies-details"
-                            >Aurora Technologies</router-link
-                          >
+                          <router-link to="/crm/companies-details">Aurora Technologies</router-link>
                         </h6>
                       </div>
                     </div>

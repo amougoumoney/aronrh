@@ -1,21 +1,12 @@
 <template>
   <!-- Candidate Details -->
-  <div
-    class="offcanvas offcanvas-end offcanvas-large"
-    tabindex="-1"
-    id="candidate_details"
-  >
+  <div class="offcanvas offcanvas-end offcanvas-large" tabindex="-1" id="candidate_details">
     <div class="offcanvas-header border-bottom">
       <h4 class="d-flex align-items-center">
         Candidate Details
         <span class="badge bg-primary-transparent fw-medium ms-2">Cand-001</span>
       </h4>
-      <button
-        type="button"
-        class="btn-close custom-btn-close"
-        data-bs-dismiss="offcanvas"
-        aria-label="Close"
-      >
+      <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
         <i class="ti ti-x"></i>
       </button>
     </div>
@@ -66,9 +57,8 @@
                 <div class="col-md-4">
                   <div class="mb-3">
                     <p class="mb-1">Recruiter</p>
-                    <span class="badge badge-purple d-inline-flex align-items-center"
-                      ><i class="ti ti-point-filled me-1"></i>New</span
-                    >
+                    <span class="badge badge-purple d-inline-flex align-items-center"><i
+                        class="ti ti-point-filled me-1"></i>New</span>
                   </div>
                 </div>
               </div>
@@ -79,54 +69,27 @@
       <div class="contact-grids-tab p-0 mb-3">
         <ul class="nav nav-underline" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active pt-0"
-              id="info-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#basic-info"
-              type="button"
-              role="tab"
-              aria-selected="true"
-            >
+            <button class="nav-link active pt-0" id="info-tab" data-bs-toggle="tab" data-bs-target="#basic-info"
+              type="button" role="tab" aria-selected="true">
               Profile
             </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button
-              class="nav-link pt-0"
-              id="address-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#address"
-              type="button"
-              role="tab"
-              aria-selected="false"
-            >
+            <button class="nav-link pt-0" id="address-tab" data-bs-toggle="tab" data-bs-target="#address" type="button"
+              role="tab" aria-selected="false">
               Hiring Pipeline
             </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button
-              class="nav-link pt-0"
-              id="address-tab2"
-              data-bs-toggle="tab"
-              data-bs-target="#address2"
-              type="button"
-              role="tab"
-              aria-selected="false"
-            >
+            <button class="nav-link pt-0" id="address-tab2" data-bs-toggle="tab" data-bs-target="#address2"
+              type="button" role="tab" aria-selected="false">
               Notes
             </button>
           </li>
         </ul>
       </div>
       <div class="tab-content" id="myTabContent">
-        <div
-          class="tab-pane fade show active"
-          id="basic-info"
-          role="tabpanel"
-          aria-labelledby="info-tab"
-          tabindex="0"
-        >
+        <div class="tab-pane fade show active" id="basic-info" role="tabpanel" aria-labelledby="info-tab" tabindex="0">
           <div class="card">
             <div class="card-header">
               <h5>Personal Information</h5>
@@ -225,9 +188,8 @@
               <div class="row align-items-center">
                 <div class="col-md-6">
                   <div class="d-flex align-items-center mb-3">
-                    <span class="avatar avatar-lg bg-light-500 border text-dark me-2"
-                      ><i class="ti ti-file-description fs-24"></i
-                    ></span>
+                    <span class="avatar avatar-lg bg-light-500 border text-dark me-2"><i
+                        class="ti ti-file-description fs-24"></i></span>
                     <div>
                       <h6 class="fw-medium">Resume.doc</h6>
                       <span>120 KB</span>
@@ -236,37 +198,28 @@
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3 text-md-end">
-                    <a
-                      href="javascript:void(0);"
-                      class="btn btn-dark d-inline-flex align-items-center"
-                      ><i class="ti ti-download me-1"></i>Download</a
-                    >
+                    <a href="#" class="btn btn-dark d-inline-flex align-items-center"><i
+                        class="ti ti-download me-1"></i>Download</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="tab-pane fade"
-          id="address"
-          role="tabpanel"
-          aria-labelledby="address-tab"
-          tabindex="0"
-        >
+        <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab" tabindex="0">
           <div class="card">
             <div class="card-body">
               <h5 class="fw-medium mb-2">Candidate Pipeline Stage</h5>
               <div class="pipeline-list candidates border-0 mb-0">
                 <ul class="mb-0">
-                  <li><a href="javascript:void(0);" class="bg-purple">New</a></li>
-                  <li><a href="javascript:void(0);" class="bg-gray-100">Scheduled</a></li>
+                  <li><a href="#" class="bg-purple">New</a></li>
+                  <li><a href="#" class="bg-gray-100">Scheduled</a></li>
                   <li>
-                    <a href="javascript:void(0);" class="bg-grat-100">Interviewed</a>
+                    <a href="#" class="bg-grat-100">Interviewed</a>
                   </li>
-                  <li><a href="javascript:void(0);" class="bg-gray-100">Offered</a></li>
+                  <li><a href="#" class="bg-gray-100">Offered</a></li>
                   <li>
-                    <a href="javascript:void(0);" class="bg-gray-100">Hired / Rejected</a>
+                    <a href="#" class="bg-gray-100">Hired / Rejected</a>
                   </li>
                 </ul>
               </div>
@@ -281,9 +234,8 @@
                 <div class="col-md-3">
                   <div class="mb-3">
                     <p class="mb-1">Current Status</p>
-                    <span class="badge badge-soft-purple d-inline-flex align-items-center"
-                      ><i class="ti ti-point-filled me-1"></i>New</span
-                    >
+                    <span class="badge badge-soft-purple d-inline-flex align-items-center"><i
+                        class="ti ti-point-filled me-1"></i>New</span>
                   </div>
                 </div>
                 <div class="col-md-3">
@@ -302,13 +254,10 @@
                   <div class="mb-3">
                     <p class="mb-1">Recruiter</p>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-sm avatar-rounded me-2"
-                      >
+                      <a href="#" class="avatar avatar-sm avatar-rounded me-2">
                         <img src="@/assets/img/users/user-01.jpg" alt="Img" />
                       </a>
-                      <h6><a href="javascript:void(0);">Anthony Lewis</a></h6>
+                      <h6><a href="#">Anthony Lewis</a></h6>
                     </div>
                   </div>
                 </div>
@@ -316,21 +265,13 @@
             </div>
             <div class="card-footer">
               <div class="d-flex align-items-center justify-content-end">
-                <a href="javascript:void(0);" class="btn btn-dark me-3">Reject</a>
-                <a href="javascript:void(0);" class="btn btn-primary"
-                  >Move to Next Stage</a
-                >
+                <a href="#" class="btn btn-dark me-3">Reject</a>
+                <a href="#" class="btn btn-primary">Move to Next Stage</a>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="tab-pane fade"
-          id="address2"
-          role="tabpanel"
-          aria-labelledby="address-tab2"
-          tabindex="0"
-        >
+        <div class="tab-pane fade" id="address2" role="tabpanel" aria-labelledby="address-tab2" tabindex="0">
           <div class="card">
             <div class="card-header">
               <h5>Notes</h5>
@@ -361,15 +302,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/recuritment/candidates-kanban" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/recuritment/candidates-kanban" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

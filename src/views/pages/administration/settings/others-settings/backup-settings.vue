@@ -8,8 +8,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+          <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+            id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -34,7 +34,7 @@
                   <a class="flex-sm-fill text-sm-center nav-link tab-dark" data-bs-toggle="tab" role="tab"
                     aria-current="page" href="#database-backup" aria-selected="false">Database Backup</a>
                 </nav>
-                <a href="javascript:void(0);" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal"
                   data-bs-target="#generate_backup">Generate Backup</a>
               </div>
               <div class="tab-content mt-3">
@@ -73,8 +73,8 @@
                               <td>11 Sep 2024</td>
                               <td>
                                 <div class="action-icon d-inline-flex">
-                                  <a href="javascript:void(0);" class="me-2"><i class="ti ti-download"></i></a>
-                                  <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                                  <a href="#" class="me-2"><i class="ti ti-download"></i></a>
+                                  <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                       class="ti ti-trash"></i></a>
                                 </div>
                               </td>
@@ -93,8 +93,8 @@
                               <td>11 Sep 2024</td>
                               <td>
                                 <div class="action-icon d-inline-flex">
-                                  <a href="javascript:void(0);" class="me-2"><i class="ti ti-download"></i></a>
-                                  <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                                  <a href="#" class="me-2"><i class="ti ti-download"></i></a>
+                                  <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                       class="ti ti-trash"></i></a>
                                 </div>
                               </td>
@@ -113,8 +113,8 @@
                               <td>11 Sep 2024</td>
                               <td>
                                 <div class="action-icon d-inline-flex">
-                                  <a href="javascript:void(0);" class="me-2"><i class="ti ti-download"></i></a>
-                                  <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                                  <a href="#" class="me-2"><i class="ti ti-download"></i></a>
+                                  <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                       class="ti ti-trash"></i></a>
                                 </div>
                               </td>
@@ -160,8 +160,8 @@
                               <td>11 Sep 2024</td>
                               <td>
                                 <div class="action-icon d-inline-flex">
-                                  <a href="javascript:void(0);" class="me-2"><i class="ti ti-download"></i></a>
-                                  <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                                  <a href="#" class="me-2"><i class="ti ti-download"></i></a>
+                                  <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                       class="ti ti-trash"></i></a>
                                 </div>
                               </td>
@@ -180,8 +180,8 @@
                               <td>11 Sep 2024</td>
                               <td>
                                 <div class="action-icon d-inline-flex">
-                                  <a href="javascript:void(0);" class="me-2"><i class="ti ti-download"></i></a>
-                                  <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                                  <a href="#" class="me-2"><i class="ti ti-download"></i></a>
+                                  <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                       class="ti ti-trash"></i></a>
                                 </div>
                               </td>
@@ -200,8 +200,8 @@
                               <td>11 Sep 2024</td>
                               <td>
                                 <div class="action-icon d-inline-flex">
-                                  <a href="javascript:void(0);" class="me-2"><i class="ti ti-download"></i></a>
-                                  <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                                  <a href="#" class="me-2"><i class="ti ti-download"></i></a>
+                                  <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                       class="ti ti-trash"></i></a>
                                 </div>
                               </td>
@@ -222,7 +222,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

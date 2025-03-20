@@ -69,9 +69,9 @@ export default {
             </div>
             <div class="p-4 text-center">
               <div class="d-flex justify-content-center">
-                <a href="javascript:void(0);" class="me-3 text-gray-9">Terms & Condition</a>
-                <a href="javascript:void(0);" class="me-3 text-gray-9">Privacy</a>
-                <a href="javascript:void(0);" class="me-3 text-gray-9">Help</a>
+                <a href="#" class="me-3 text-gray-9">Terms & Condition</a>
+                <a href="#" class="me-3 text-gray-9">Privacy</a>
+                <a href="#" class="me-3 text-gray-9">Help</a>
               </div>
               <div class="p-2 text-center">
                 <p class="mb-0 text-gray-9">

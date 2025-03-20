@@ -81,30 +81,31 @@ export default {
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
+                <i class="ti ti-file-export me-1"></i>{{ $t('dashboard.export') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}</a>
+                  <a href="#" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>{{ $t('dashboard.exportPDF') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}}
+                  <a href="#" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>{{ $t('dashboard.exportEXCEL') }}
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_leaves"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddLeave')}}</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#add_leaves"
+              class="btn btn-primary d-flex align-items-center"><i
+                class="ti ti-circle-plus me-2"></i>{{ $t('AddLeave') }}</a>
           </div>
           <div class="head-icons ms-2">
-            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+              id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -127,7 +128,7 @@ export default {
                   </div>
                 </div>
                 <div class="text-end">
-                  <p class="mb-1">{{$t('TotalPresent')}}</p>
+                  <p class="mb-1">{{ $t('TotalPresent') }}</p>
                   <h4>180/200</h4>
                 </div>
               </div>
@@ -147,7 +148,7 @@ export default {
                   </div>
                 </div>
                 <div class="text-end">
-                  <p class="mb-1">{{$t('PlannedLeaves')}}</p>
+                  <p class="mb-1">{{ $t('PlannedLeaves') }}</p>
                   <h4>10</h4>
                 </div>
               </div>
@@ -167,7 +168,7 @@ export default {
                   </div>
                 </div>
                 <div class="text-end">
-                  <p class="mb-1">{{$t('UnplannedLeaves')}}</p>
+                  <p class="mb-1">{{ $t('UnplannedLeaves') }}</p>
                   <h4>10</h4>
                 </div>
               </div>
@@ -187,7 +188,7 @@ export default {
                   </div>
                 </div>
                 <div class="text-end">
-                  <p class="mb-1">{{$t('PendingRequests')}}</p>
+                  <p class="mb-1">{{ $t('PendingRequests') }}</p>
                   <h4>15</h4>
                 </div>
               </div>
@@ -200,7 +201,7 @@ export default {
       <!-- Leaves list -->
       <div class="card">
         <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-          <h5>{{$t('LeaveList')}}</h5>
+          <h5>{{ $t('LeaveList') }}</h5>
           <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
             <div class="me-3">
               <div class="input-icon-end position-relative">
@@ -212,42 +213,42 @@ export default {
               </div>
             </div>
             <div class="dropdown me-3">
-              <a href="javascript:void(0);"
-                class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
-                {{$t('LeaveType')}}
+              <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
+                {{ $t('LeaveType') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('MedicalLeave')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('MedicalLeave') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('CasualLeave')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('CasualLeave') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('AnnualLeave')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('AnnualLeave') }}</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown">
-              <a href="javascript:void(0);"
-                class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
-                {{$t('SortBy:Last7Days')}}
+              <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
+                {{ $t('SortBy:Last7Days') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('RecentlyAdded')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('RecentlyAdded') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Ascending') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Descending')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Descending') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('lastMonth')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('lastMonth') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Last7Days')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Last7Days') }}</a>
                 </li>
               </ul>
             </div>
@@ -264,8 +265,8 @@ export default {
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        {{$t('designed')}} &amp; {{$t('developedBy')}}
-        <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a>
+        {{ $t('designed') }} &amp; {{ $t('developedBy') }}
+        <a href="#" class="text-primary">{{ $t('dreams') }}</a>
       </p>
     </div>
   </div>

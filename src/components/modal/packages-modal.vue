@@ -26,12 +26,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Plan</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -39,17 +34,10 @@ export default {
           <div class="modal-body pb-0">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                >
+                <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                   <div
-                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                  >
-                    <img
-                      src="@/assets/img/profiles/avatar-30.jpg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
+                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
+                    <img src="@/assets/img/profiles/avatar-30.jpg" alt="img" class="rounded-circle" />
                   </div>
                   <div class="profile-upload">
                     <div class="mb-2">
@@ -61,84 +49,54 @@ export default {
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                        >Cancel</a
-                      >
+                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Name<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Plan Name<span class="text-danger"> *</span></label>
                   <vue-select :options="PlanName" id="planname" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Type<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Plan Type<span class="text-danger"> *</span></label>
                   <vue-select :options="PlanType" id="plantype" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Position<span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="PlanPosition"
-                    id="planposition"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Plan Position<span class="text-danger"> *</span></label>
+                  <vue-select :options="PlanPosition" id="planposition" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Currency<span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="PlanCurrency"
-                    id="plancurrency"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Plan Currency<span class="text-danger"> *</span></label>
+                  <vue-select :options="PlanCurrency" id="plancurrency" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <div class="d-flex justify-content-between">
-                    <label class="form-label"
-                      >Plan Currency<span class="text-danger"> *</span></label
-                    >
-                    <span class="text-primary"
-                      ><i class="fa-solid fa-circle-exclamation me-2"></i>Set 0 for
-                      free</span
-                    >
+                    <label class="form-label">Plan Currency<span class="text-danger"> *</span></label>
+                    <span class="text-primary"><i class="fa-solid fa-circle-exclamation me-2"></i>Set 0 for
+                      free</span>
                   </div>
                   <vue-select :options="PlanFree" id="planfree" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Discount Type<span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="DiscountType"
-                    id="discounttype"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Discount Type<span class="text-danger"> *</span></label>
+                  <vue-select :options="DiscountType" id="discounttype" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Discount<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Discount<span class="text-danger"> *</span></label>
                   <div class="pass-group">
                     <input type="text" class="form-control" />
                   </div>
@@ -314,11 +272,7 @@ export default {
                       Access Trial
                     </label>
                     <div class="form-check form-switch me-2">
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        role="switch"
-                      />
+                      <input class="form-check-input me-2" type="checkbox" role="switch" />
                     </div>
                   </div>
                 </div>
@@ -338,24 +292,14 @@ export default {
                       Is Recommended
                     </label>
                     <div class="form-check form-switch me-2">
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        role="switch"
-                      />
+                      <input class="form-check-input me-2" type="checkbox" role="switch" />
                     </div>
                   </div>
                 </div>
                 <div class="col-md-5">
                   <div class="mb-3">
-                    <label class="form-label"
-                      >Status<span class="text-danger"> *</span></label
-                    >
-                    <vue-select
-                      :options="PackStatus"
-                      id="packstatus"
-                      placeholder="Select"
-                    />
+                    <label class="form-label">Status<span class="text-danger"> *</span></label>
+                    <vue-select :options="PackStatus" id="packstatus" placeholder="Select" />
                   </div>
                 </div>
               </div>
@@ -385,12 +329,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Plan</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -398,17 +337,10 @@ export default {
           <div class="modal-body pb-0">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                >
+                <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                   <div
-                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                  >
-                    <img
-                      src="@/assets/img/profiles/avatar-30.jpg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
+                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
+                    <img src="@/assets/img/profiles/avatar-30.jpg" alt="img" class="rounded-circle" />
                   </div>
                   <div class="profile-upload">
                     <div class="mb-2">
@@ -420,94 +352,56 @@ export default {
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                        >Cancel</a
-                      >
+                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Name<span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="PlanName"
-                    id="plannameone"
-                    placeholder="Advanced"
-                  />
+                  <label class="form-label">Plan Name<span class="text-danger"> *</span></label>
+                  <vue-select :options="PlanName" id="plannameone" placeholder="Advanced" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Type<span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="PlanType"
-                    id="plantypeOne"
-                    placeholder="Monthky"
-                  />
+                  <label class="form-label">Plan Type<span class="text-danger"> *</span></label>
+                  <vue-select :options="PlanType" id="plantypeOne" placeholder="Monthky" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Position<span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="PlanPosition"
-                    id="planpositionone"
-                    placeholder="2"
-                  />
+                  <label class="form-label">Plan Position<span class="text-danger"> *</span></label>
+                  <vue-select :options="PlanPosition" id="planpositionone" placeholder="2" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Currency<span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="PlanCurrency"
-                    id="plancurrencyone"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Plan Currency<span class="text-danger"> *</span></label>
+                  <vue-select :options="PlanCurrency" id="plancurrencyone" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <div class="d-flex justify-content-between">
-                    <label class="form-label"
-                      >Plan Currency<span class="text-danger"> *</span></label
-                    >
-                    <span class="text-primary"
-                      ><i class="fa-solid fa-circle-exclamation me-2"></i>Set 0 for
-                      free</span
-                    >
+                    <label class="form-label">Plan Currency<span class="text-danger"> *</span></label>
+                    <span class="text-primary"><i class="fa-solid fa-circle-exclamation me-2"></i>Set 0 for
+                      free</span>
                   </div>
                   <vue-select :options="PlanFree" id="planfreeone" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Discount Type<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Discount Type<span class="text-danger"> *</span></label>
                   <div class="pass-group">
-                    <vue-select
-                      :options="DiscountType"
-                      id="discounttypeone"
-                      placeholder="Select"
-                    />
+                    <vue-select :options="DiscountType" id="discounttypeone" placeholder="Select" />
                   </div>
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Discount<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Discount<span class="text-danger"> *</span></label>
                   <div class="pass-group">
                     <input type="text" class="form-control" />
                   </div>
@@ -683,11 +577,7 @@ export default {
                       Access Trial
                     </label>
                     <div class="form-check form-switch me-2">
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        role="switch"
-                      />
+                      <input class="form-check-input me-2" type="checkbox" role="switch" />
                     </div>
                   </div>
                 </div>
@@ -707,24 +597,14 @@ export default {
                       Is Recommended
                     </label>
                     <div class="form-check form-switch me-2">
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        role="switch"
-                      />
+                      <input class="form-check-input me-2" type="checkbox" role="switch" />
                     </div>
                   </div>
                 </div>
                 <div class="col-md-5">
                   <div class="mb-3">
-                    <label class="form-label"
-                      >Status<span class="text-danger"> *</span></label
-                    >
-                    <vue-select
-                      :options="PackStatus"
-                      id="packstatusone"
-                      placeholder="Select"
-                    />
+                    <label class="form-label">Status<span class="text-danger"> *</span></label>
+                    <vue-select :options="PackStatus" id="packstatusone" placeholder="Select" />
                   </div>
                 </div>
               </div>
@@ -761,15 +641,8 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/super-admin/packages" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/super-admin/packages" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

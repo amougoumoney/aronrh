@@ -77,7 +77,7 @@
                             <h6 class="mb-0">{{ doc.name }}</h6>
                             <small>{{ doc.size }}</small>
                           </div>
-                          <a href="javascript:void(0);" class="ms-auto">
+                          <a href="#" class="ms-auto">
                             <i class="ti ti-download"></i>
                           </a>
                         </div>
@@ -161,24 +161,29 @@ export default {
 .project-info {
   margin-bottom: 1rem;
 }
+
 .project-info label {
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
+
 .activity-feed {
   padding: 1rem 0;
 }
+
 .feed-item {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #eee;
 }
+
 .feed-date {
   color: #888;
   font-size: 0.875rem;
   margin-bottom: 0.25rem;
 }
+
 .file-card {
   margin-bottom: 1rem;
 }
-</style> 
+</style>

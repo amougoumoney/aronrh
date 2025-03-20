@@ -30,12 +30,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Training</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -45,11 +40,7 @@ export default {
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Training Type</label>
-                  <vue-select
-                    :options="Trainingtype"
-                    id="training-type"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="Trainingtype" id="training-type" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
@@ -61,11 +52,7 @@ export default {
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Employees</label>
-                  <vue-select
-                    :options="Employees"
-                    id="employees-type"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="Employees" id="employees-type" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
@@ -78,14 +65,8 @@ export default {
                 <div class="mb-3">
                   <label class="form-label">Start Date</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -96,14 +77,8 @@ export default {
                 <div class="mb-3">
                   <label class="form-label">End Date</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -142,12 +117,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Training</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -157,31 +127,19 @@ export default {
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Training Type</label>
-                  <vue-select
-                    :options="Trainingtype"
-                    id="training-type-one"
-                    placeholder="Git Training"
-                  />
+                  <vue-select :options="Trainingtype" id="training-type-one" placeholder="Git Training" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Trainer</label>
-                  <vue-select
-                    :options="Trainer"
-                    id="trainer-type-one"
-                    placeholder="Anthony Lewis"
-                  />
+                  <vue-select :options="Trainer" id="trainer-type-one" placeholder="Anthony Lewis" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Employees</label>
-                  <vue-select
-                    :options="Employees"
-                    id="employees-type-one"
-                    placeholder="Bernardo Galaviz"
-                  />
+                  <vue-select :options="Employees" id="employees-type-one" placeholder="Bernardo Galaviz" />
                 </div>
               </div>
               <div class="col-md-6">
@@ -194,15 +152,8 @@ export default {
                 <div class="mb-3">
                   <label class="form-label">Start Date</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      value="12/01/2024"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" value="12/01/2024"
+                      placeholder="dd/mm/yyyy" :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -213,15 +164,8 @@ export default {
                 <div class="mb-3">
                   <label class="form-label">End Date</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      value="12/02/2024"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" value="12/02/2024"
+                      placeholder="dd/mm/yyyy" :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -232,18 +176,13 @@ export default {
                 <div class="mb-3">
                   <label class="form-label">Description</label>
                   <textarea class="form-control">
-Version control and code collaboration.</textarea
-                  >
+Version control and code collaboration.</textarea>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="Status"
-                    id="status-type-one"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="Status" id="status-type-one" placeholder="Active" />
                 </div>
               </div>
             </div>
@@ -273,12 +212,7 @@ Version control and code collaboration.</textarea
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <a href="/training/training-list" class="btn btn-danger">Yes, Delete</a>
           </div>
         </div>

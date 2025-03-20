@@ -1,33 +1,14 @@
 <template>
   <div class="custom-datatable-filter table-responsive no-datatable-length border">
-    <a-table
-      class="table datatable thead-light"
-      :columns="columns"
-      :data-source="data"
-      :row-selection="rowSelection"
-    >
+    <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
       <template #bodyCell="{ column, record }">
         <template v-if="column.key === 'Name'">
           <div class="d-flex align-items-center file-name-icon">
-            <a
-              href="javascript:void(0);"
-              class="avatar avatar-md bg-light"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#preview"
-            >
-              <img
-                :src="require(`@/assets/img/icons/${record.Image}`)"
-                class="img-fluid"
-                alt="img"
-            /></a>
+            <a href="#" class="avatar avatar-md bg-light" data-bs-toggle="offcanvas" data-bs-target="#preview">
+              <img :src="require(`@/assets/img/icons/${record.Image}`)" class="img-fluid" alt="img" /></a>
             <div class="ms-2">
               <p class="text-title fw-medium mb-0">
-                <a
-                  href="javascript:void(0);"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#preview"
-                  >{{ record.Name }}</a
-                >
+                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview">{{ record.Name }}</a>
               </p>
             </div>
           </div>
@@ -39,37 +20,18 @@
         <template v-if="column.key === 'Share'">
           <div class="avatar-list-stacked avatar-group-sm">
             <span class="avatar avatar-rounded">
-              <img
-                class="border border-white"
-                :src="require(`@/assets/img/profiles/${record.ImageOne}`)"
-                alt="img"
-              />
+              <img class="border border-white" :src="require(`@/assets/img/profiles/${record.ImageOne}`)" alt="img" />
             </span>
             <span class="avatar avatar-rounded">
-              <img
-                class="border border-white"
-                :src="require(`@/assets/img/profiles/${record.ImageTwo}`)"
-                alt="img"
-              />
+              <img class="border border-white" :src="require(`@/assets/img/profiles/${record.ImageTwo}`)" alt="img" />
             </span>
             <span class="avatar avatar-rounded">
-              <img
-                class="border border-white"
-                :src="require(`@/assets/img/profiles/${record.ImageThree}`)"
-                alt="img"
-              />
+              <img class="border border-white" :src="require(`@/assets/img/profiles/${record.ImageThree}`)" alt="img" />
             </span>
             <span class="avatar avatar-rounded">
-              <img
-                class="border border-white"
-                :src="require(`@/assets/img/profiles/${record.ImageFOur}`)"
-                alt="img"
-              />
+              <img class="border border-white" :src="require(`@/assets/img/profiles/${record.ImageFOur}`)" alt="img" />
             </span>
-            <a
-              class="avatar bg-primary avatar-rounded text-fixed-white"
-              href="javascript:void(0);"
-            >
+            <a class="avatar bg-primary avatar-rounded text-fixed-white" href="#">
               +1
             </a>
           </div>
@@ -77,25 +39,21 @@
         <template v-if="column.key === 'action'">
           <div class="d-flex align-items-center">
             <div class="rating-select me-2">
-              <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+              <a href="#"><i class="ti ti-star"></i></a>
             </div>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="d-flex align-items-center justify-content-center"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a href="#" class="d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 <i class="ti ti-dots fs-14"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-right p-3">
                 <li>
-                  <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                  <a class="dropdown-item rounded-1" href="#">
                     <i class="ti ti-trash me-2"></i>Permanent Delete
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item rounded-1" href="javascript:void(0);">
+                  <a class="dropdown-item rounded-1" href="#">
                     <i class="ti ti-edit-circle me-2"></i>Restore File
                   </a>
                 </li>
@@ -239,9 +197,9 @@ const data = [
   },
 ];
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 export default {
   data() {

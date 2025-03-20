@@ -78,30 +78,29 @@ export default {
                 <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
                     <div class="me-2 mb-2">
                         <div class="dropdown">
-                            <a href="javascript:void(0);"
-                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                            <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
                                 <i class="ti ti-file-export me-1"></i>Export
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                    <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                                    <a href="#" class="dropdown-item rounded-1"><i
                                             class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="mb-2">
-                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_pipeline"
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#add_pipeline"
                             class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add
                             New Pipeline</a>
                     </div>
                     <div class="head-icons ms-2">
-                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                        <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top"
                             data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                             <i class="ti ti-chevrons-up"></i>
                         </a>
@@ -125,83 +124,79 @@ export default {
                             </div>
                         </div>
                         <div class="dropdown me-3">
-                            <a href="javascript:void(0);"
-                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                            <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
                                 Stage
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Won</a>
+                                    <a href="#" class="dropdown-item rounded-1">Won</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">In Pipeline</a>
+                                    <a href="#" class="dropdown-item rounded-1">In Pipeline</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Conversation</a>
+                                    <a href="#" class="dropdown-item rounded-1">Conversation</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Follow Up</a>
+                                    <a href="#" class="dropdown-item rounded-1">Follow Up</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="dropdown me-3">
-                            <a href="javascript:void(0);"
-                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                            <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
                                 $0.00 - $0.00
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">$10 - $20</a>
+                                    <a href="#" class="dropdown-item rounded-1">$10 - $20</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">$20 - $30</a>
+                                    <a href="#" class="dropdown-item rounded-1">$20 - $30</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">$40 - $50</a>
+                                    <a href="#" class="dropdown-item rounded-1">$40 - $50</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="dropdown me-3">
-                            <a href="javascript:void(0);"
-                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                            <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
                                 Select Status
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">$10 - $20</a>
+                                    <a href="#" class="dropdown-item rounded-1">$10 - $20</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">$20 - $30</a>
+                                    <a href="#" class="dropdown-item rounded-1">$20 - $30</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">$40 - $50</a>
+                                    <a href="#" class="dropdown-item rounded-1">$40 - $50</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="dropdown">
-                            <a href="javascript:void(0);"
-                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                            <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
                                 Sort By : Last 7 Days
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
+                                    <a href="#" class="dropdown-item rounded-1">Recently Added</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                                    <a href="#" class="dropdown-item rounded-1">Ascending</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                                    <a href="#" class="dropdown-item rounded-1">Desending</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                                    <a href="#" class="dropdown-item rounded-1">Last Month</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                                    <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
                                 </li>
                             </ul>
                         </div>
@@ -219,7 +214,7 @@ export default {
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
             <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
-            <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
+            <p>Designed &amp; Developed By <a href="#" class="text-primary">Dreams</a></p>
         </div>
 
     </div>

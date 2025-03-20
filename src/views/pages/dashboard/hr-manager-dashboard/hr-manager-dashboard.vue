@@ -9,18 +9,18 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>{{ $t('dashboard.export') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>{{ $t('dashboard.exportPDF') }}</a>
+                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>{{
+                    $t('dashboard.exportPDF') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>{{ $t('dashboard.exportEXCEL') }}
+                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>{{
+                    $t('dashboard.exportEXCEL') }}
                   </a>
                 </li>
               </ul>
@@ -36,8 +36,8 @@
             </div>
           </div>
           <div class="ms-2 head-icons">
-            <a href="javascript:void(0);" :class="{ active: isCollapsed }" @click="toggleCollapse"
-              data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse" id="collapse-header">
+            <a href="#" :class="{ active: isCollapsed }" @click="toggleCollapse" data-bs-toggle="tooltip"
+              data-bs-placement="top" data-bs-original-title="Collapse" id="collapse-header">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -61,7 +61,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         {{ $t('designed') }} &amp; {{ $t('developedBy') }}
-        <a href="javascript:void(0);" class="text-primary">{{ $t('dreams') }}</a>
+        <a href="#" class="text-primary">{{ $t('dreams') }}</a>
       </p>
     </div>
   </div>

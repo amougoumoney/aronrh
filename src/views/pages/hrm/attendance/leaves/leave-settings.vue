@@ -33,13 +33,14 @@ export default {
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#new_custom_policy"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddCustomPolicy')}}
-              </a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#new_custom_policy"
+              class="btn btn-primary d-flex align-items-center"><i
+                class="ti ti-circle-plus me-2"></i>{{ $t('AddCustomPolicy') }}
+            </a>
           </div>
           <div class="head-icons ms-2">
-            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+              id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -58,12 +59,12 @@ export default {
                     <input class="form-check-input" type="checkbox" role="switch" checked />
                   </label>
                 </div>
-                <h6 class="d-flex align-items-center">{{$t('AnnualLeave')}}</h6>
+                <h6 class="d-flex align-items-center">{{ $t('AnnualLeave') }}</h6>
               </div>
               <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{$t('CustomPolicy')}}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#annual_leave_settings">
+                <a href="#" class="text-decoration-underline me-2" data-bs-toggle="modal"
+                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#annual_leave_settings">
                   <i class="ti ti-settings"></i>
                 </a>
               </div>
@@ -79,12 +80,12 @@ export default {
                     <input class="form-check-input" type="checkbox" role="switch" />
                   </label>
                 </div>
-                <h6 class="d-flex align-items-center">{{$t('SickLeave')}}</h6>
+                <h6 class="d-flex align-items-center">{{ $t('SickLeave') }}</h6>
               </div>
               <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{$t('CustomPolicy')}}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#sick_leave_settings">
+                <a href="#" class="text-decoration-underline me-2" data-bs-toggle="modal"
+                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#sick_leave_settings">
                   <i class="ti ti-settings"></i>
                 </a>
               </div>
@@ -100,12 +101,12 @@ export default {
                     <input class="form-check-input" type="checkbox" role="switch" checked />
                   </label>
                 </div>
-                <h6 class="d-flex align-items-center">{{$t('Hospitalisation')}}</h6>
+                <h6 class="d-flex align-items-center">{{ $t('Hospitalisation') }}</h6>
               </div>
               <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{$t('CustomPolicy')}}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#hospitalisation_settings"><i
+                <a href="#" class="text-decoration-underline me-2" data-bs-toggle="modal"
+                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#hospitalisation_settings"><i
                     class="ti ti-settings"></i>
                 </a>
               </div>
@@ -121,12 +122,12 @@ export default {
                     <input class="form-check-input" type="checkbox" role="switch" checked />
                   </label>
                 </div>
-                <h6 class="d-flex align-items-center">{{$t('Maternity')}}</h6>
+                <h6 class="d-flex align-items-center">{{ $t('Maternity') }}</h6>
               </div>
               <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{$t('CustomPolicy')}}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#maternity_settings">
+                <a href="#" class="text-decoration-underline me-2" data-bs-toggle="modal"
+                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#maternity_settings">
                   <i class="ti ti-settings"></i>
                 </a>
               </div>
@@ -142,12 +143,12 @@ export default {
                     <input class="form-check-input" type="checkbox" role="switch" />
                   </label>
                 </div>
-                <h6 class="d-flex align-items-center">{{$t('Paternity')}}</h6>
+                <h6 class="d-flex align-items-center">{{ $t('Paternity') }}</h6>
               </div>
               <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{$t('CustomPolicy')}}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#paternity_settings">
+                <a href="#" class="text-decoration-underline me-2" data-bs-toggle="modal"
+                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#paternity_settings">
                   <i class="ti ti-settings"></i>
                 </a>
               </div>
@@ -166,9 +167,9 @@ export default {
                 <h6 class="d-flex align-items-center">LOP</h6>
               </div>
               <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{$t('CustomPolicy')}}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#lop_settings">
+                <a href="#" class="text-decoration-underline me-2" data-bs-toggle="modal"
+                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#lop_settings">
                   <i class="ti ti-settings"></i>
                 </a>
               </div>
@@ -181,8 +182,8 @@ export default {
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        {{$t('designed')}} &amp; {{$t('developedBy')}}
-        <a href="javascript:void(0);" class="text-primary">{{$t('Dreams')}}</a>
+        {{ $t('designed') }} &amp; {{ $t('developedBy') }}
+        <a href="#" class="text-primary">{{ $t('Dreams') }}</a>
       </p>
     </div>
   </div>

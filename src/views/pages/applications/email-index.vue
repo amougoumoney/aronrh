@@ -10,61 +10,57 @@
               <div class="p-3">
                 <div class="shadow-md bg-white rounded p-2 mb-4">
                   <div class="d-flex align-items-center">
-                    <a href="javascript:void(0);" class="avatar avatar-md flex-shrink-0 me-2">
+                    <a href="#" class="avatar avatar-md flex-shrink-0 me-2">
                       <img src="@/assets/img/profiles/avatar-02.jpg" class="rounded-circle" alt="" />
                     </a>
                     <div>
-                      <h6 class="mb-1"><a href="javascript:void(0);">James Hong</a></h6>
+                      <h6 class="mb-1"><a href="#">James Hong</a></h6>
                       <p>Jnh343@example.com</p>
                     </div>
                   </div>
                 </div>
-                <a href="javascript:void(0);" class="btn btn-primary w-100" id="compose_mail"><i
-                    class="ti ti-edit me-2"></i>Compose</a>
+                <a href="#" class="btn btn-primary w-100" id="compose_mail"><i class="ti ti-edit me-2"></i>Compose</a>
                 <div class="mt-4">
                   <h5 class="mb-2">Emails</h5>
                   <div class="d-block mb-4 pb-4 border-bottom email-tags">
-                    <a href="javascript:void(0);"
-                      class="d-flex align-items-center justify-content-between p-2 rounded active">
+                    <a href="#" class="d-flex align-items-center justify-content-between p-2 rounded active">
                       <span class="d-flex align-items-center fw-medium"><i
                           class="ti ti-inbox text-gray me-2"></i>Inbox</span>
                       <span class="badge badge-danger rounded-pill badge-xs">56</span>
                     </a>
-                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between p-2 rounded">
+                    <a href="#" class="d-flex align-items-center justify-content-between p-2 rounded">
                       <span class="d-flex align-items-center fw-medium"><i
                           class="ti ti-star text-gray me-2"></i>Starred</span>
                       <span class="fw-semibold fs-12 badge text-gray rounded-pill">46</span>
                     </a>
-                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between p-2 rounded">
+                    <a href="#" class="d-flex align-items-center justify-content-between p-2 rounded">
                       <span class="d-flex align-items-center fw-medium"><i
                           class="ti ti-rocket text-gray me-2"></i>Sent</span>
                       <span class="badge text-gray rounded-pill">14</span>
                     </a>
-                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between p-2 rounded">
+                    <a href="#" class="d-flex align-items-center justify-content-between p-2 rounded">
                       <span class="d-flex align-items-center fw-medium"><i
                           class="ti ti-file text-gray me-2"></i>Drafts</span>
                       <span class="badge text-gray rounded-pill">12</span>
                     </a>
-                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between p-2 rounded">
+                    <a href="#" class="d-flex align-items-center justify-content-between p-2 rounded">
                       <span class="d-flex align-items-center fw-medium"><i
                           class="ti ti-trash text-gray me-2"></i>Deleted</span>
                       <span class="badge text-gray rounded-pill">08</span>
                     </a>
-                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between p-2 rounded">
+                    <a href="#" class="d-flex align-items-center justify-content-between p-2 rounded">
                       <span class="d-flex align-items-center fw-medium"><i
                           class="ti ti-info-octagon text-gray me-2"></i>Spam</span>
                       <span class="badge text-gray rounded-pill">0</span>
                     </a>
                     <div>
                       <div class="more-menu">
-                        <a href="javascript:void(0);"
-                          class="d-flex align-items-center justify-content-between p-2 rounded">
+                        <a href="#" class="d-flex align-items-center justify-content-between p-2 rounded">
                           <span class="d-flex align-items-center fw-medium"><i
                               class="ti ti-location-up text-gray me-2"></i>Important</span>
                           <span class="badge text-gray rounded-pill">12</span>
                         </a>
-                        <a href="javascript:void(0);"
-                          class="d-flex align-items-center justify-content-between p-2 rounded">
+                        <a href="#" class="d-flex align-items-center justify-content-between p-2 rounded">
                           <span class="d-flex align-items-center fw-medium"><i
                               class="ti ti-transition-top text-gray me-2"></i>All
                             Emails</span>
@@ -72,7 +68,7 @@
                         </a>
                       </div>
                       <div class="view-all mt-2">
-                        <a href="javascript:void(0);" class="viewall-button fw-medium"><span>Show More</span><i
+                        <a href="#" class="viewall-button fw-medium"><span>Show More</span><i
                             class="fa fa-chevron-down fs-10 ms-2"></i></a>
                       </div>
                     </div>
@@ -81,39 +77,38 @@
                 <div class="border-bottom mb-4 pb-4">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5>Labels</h5>
-                    <a href="javascript:void(0);"><i
-                        class="ti ti-square-rounded-plus-filled text-primary fs-16"></i></a>
+                    <a href="#"><i class="ti ti-square-rounded-plus-filled text-primary fs-16"></i></a>
                   </div>
                   <div>
-                    <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                    <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                       <i class="ti ti-square-rounded text-success me-2"></i>
                       Team Events
                     </a>
-                    <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                    <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                       <i class="ti ti-square-rounded text-warning me-2"></i>
                       Work
                     </a>
-                    <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                    <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                       <i class="ti ti-square-rounded text-danger me-2"></i>
                       External
                     </a>
-                    <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                    <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                       <i class="ti ti-square-rounded text-skyblue me-2"></i>
                       Projects
                     </a>
                     <div>
                       <div class="more-menu-2">
-                        <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                        <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                           <i class="ti ti-square-rounded text-purple me-2"></i>
                           Applications
                         </a>
-                        <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                        <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                           <i class="ti ti-square-rounded text-info me-2"></i>
                           Desgin
                         </a>
                       </div>
                       <div class="view-all mt-2">
-                        <a href="javascript:void(0);" class="viewall-button-2 fw-medium"><span>Show More</span><i
+                        <a href="#" class="viewall-button-2 fw-medium"><span>Show More</span><i
                             class="fa fa-chevron-down fs-10 ms-2"></i></a>
                       </div>
                     </div>
@@ -122,35 +117,34 @@
                 <div class="border-bottom mb-4 pb-4">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5>Folders</h5>
-                    <a href="javascript:void(0);"><i
-                        class="ti ti-square-rounded-plus-filled text-primary fs-16"></i></a>
+                    <a href="#"><i class="ti ti-square-rounded-plus-filled text-primary fs-16"></i></a>
                   </div>
                   <div>
-                    <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                    <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                       <i class="ti ti-folder-filled text-danger me-2"></i>
                       Projects
                     </a>
-                    <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                    <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                       <i class="ti ti-folder-filled text-warning me-2"></i>
                       Personal
                     </a>
-                    <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                    <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                       <i class="ti ti-folder-filled text-success me-2"></i>
                       Finance
                     </a>
                     <div>
                       <div class="more-menu-3">
-                        <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                        <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                           <i class="ti ti-folder-filled text-info me-2"></i>
                           Projects
                         </a>
-                        <a href="javascript:void(0);" class="fw-medium d-flex align-items-center text-dark py-1">
+                        <a href="#" class="fw-medium d-flex align-items-center text-dark py-1">
                           <i class="ti ti-folder-filled text-primary me-2"></i>
                           Personal
                         </a>
                       </div>
                       <div class="view-all mt-2">
-                        <a href="javascript:void(0);" class="viewall-button-3 fw-medium"><span>Show More</span><i
+                        <a href="#" class="viewall-button-3 fw-medium"><span>Show More</span><i
                             class="fa fa-chevron-down fs-10 ms-2"></i></a>
                       </div>
                     </div>
@@ -163,7 +157,7 @@
                   <h6 class="text-white mb-3">
                     Enjoy Unlimited Access on a small price monthly.
                   </h6>
-                  <a href="javascript:void(0);" class="btn btn-white">Upgrade Now <i class="ti ti-arrow-right"></i></a>
+                  <a href="#" class="btn btn-white">Upgrade Now <i class="ti ti-arrow-right"></i></a>
                   <div class="box-bg">
                     <span class="bg-right"><img src="@/assets/img/bg/email-bg-01.png" alt="" /></span>
                     <span class="bg-left"><img src="@/assets/img/bg/email-bg-02.png" alt="" /></span>
@@ -194,12 +188,9 @@
                       <input type="text" class="form-control" placeholder="Search Email" />
                     </div>
                     <div class="d-flex align-items-center">
-                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
-                          class="ti ti-filter-edit"></i></a>
-                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
-                          class="ti ti-settings"></i></a>
-                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
-                          class="ti ti-refresh"></i></a>
+                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-filter-edit"></i></a>
+                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-settings"></i></a>
+                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-refresh"></i></a>
                     </div>
                   </div>
                 </div>
@@ -234,35 +225,35 @@
                                     Email</router-link>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply All</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply All</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward</a>
+                                  <a class="dropdown-item rounded-1" href="#">Forward</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward As
+                                  <a class="dropdown-item rounded-1" href="#">Forward As
                                     Attachment</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mark As Unread</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mark As Unread</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move to Junk</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move to Junk</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mute</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mute</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Delete</a>
+                                  <a class="dropdown-item rounded-1" href="#">Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Archive</a>
+                                  <a class="dropdown-item rounded-1" href="#">Archive</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move To</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move To</a>
                                 </li>
                               </ul>
                             </div>
@@ -284,7 +275,7 @@
                     <div class="d-flex align-items-center">
                       <span><i class="ti ti-star-filled text-warning"></i></span>
                       <span class="badge badge-soft-info mx-2"><i class="ti ti-square me-1"></i>Projects</span>
-                      <a href="javascript:void(0);" class="badge badge-dark rounded-pill badge-xs">+1</a>
+                      <a href="#" class="badge badge-dark rounded-pill badge-xs">+1</a>
                     </div>
                   </div>
                 </div>
@@ -317,35 +308,35 @@
                                     Email</router-link>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply All</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply All</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward</a>
+                                  <a class="dropdown-item rounded-1" href="#">Forward</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward As
+                                  <a class="dropdown-item rounded-1" href="#">Forward As
                                     Attachment</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mark As Unread</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mark As Unread</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move to Junk</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move to Junk</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mute</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mute</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Delete</a>
+                                  <a class="dropdown-item rounded-1" href="#">Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Archive</a>
+                                  <a class="dropdown-item rounded-1" href="#">Archive</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move To</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move To</a>
                                 </li>
                               </ul>
                             </div>
@@ -357,11 +348,11 @@
                     </div>
                   </div>
                   <div class="d-flex align-items-center justify-content-between">
-                    <a href="javascript:void(0);"><img src="@/assets/img/icons/google-meet.svg" alt="" /></a>
+                    <a href="#"><img src="@/assets/img/icons/google-meet.svg" alt="" /></a>
                     <div class="d-flex align-items-center">
                       <span><i class="ti ti-star-filled text-warning"></i></span>
                       <span class="badge badge-soft-purple mx-2"><i class="ti ti-square me-1"></i>Applications</span>
-                      <a href="javascript:void(0);" class="badge badge-dark rounded-pill badge-xs">+1</a>
+                      <a href="#" class="badge badge-dark rounded-pill badge-xs">+1</a>
                     </div>
                   </div>
                 </div>
@@ -394,35 +385,35 @@
                                     Email</router-link>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply All</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply All</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward</a>
+                                  <a class="dropdown-item rounded-1" href="#">Forward</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward As
+                                  <a class="dropdown-item rounded-1" href="#">Forward As
                                     Attachment</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mark As Unread</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mark As Unread</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move to Junk</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move to Junk</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mute</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mute</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Delete</a>
+                                  <a class="dropdown-item rounded-1" href="#">Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Archive</a>
+                                  <a class="dropdown-item rounded-1" href="#">Archive</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move To</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move To</a>
                                 </li>
                               </ul>
                             </div>
@@ -441,7 +432,7 @@
                     <div class="d-flex align-items-center">
                       <span><i class="ti ti-star-filled text-warning"></i></span>
                       <span class="badge badge-soft-danger mx-2"><i class="ti ti-square me-1"></i>External</span>
-                      <a href="javascript:void(0);" class="badge badge-dark rounded-pill badge-xs">+1</a>
+                      <a href="#" class="badge badge-dark rounded-pill badge-xs">+1</a>
                     </div>
                   </div>
                 </div>
@@ -474,35 +465,35 @@
                                     Email</router-link>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply All</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply All</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward</a>
+                                  <a class="dropdown-item rounded-1" href="#">Forward</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward As
+                                  <a class="dropdown-item rounded-1" href="#">Forward As
                                     Attachment</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mark As Unread</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mark As Unread</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move to Junk</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move to Junk</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mute</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mute</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Delete</a>
+                                  <a class="dropdown-item rounded-1" href="#">Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Archive</a>
+                                  <a class="dropdown-item rounded-1" href="#">Archive</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move To</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move To</a>
                                 </li>
                               </ul>
                             </div>
@@ -552,35 +543,35 @@
                                     Email</router-link>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply All</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply All</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward</a>
+                                  <a class="dropdown-item rounded-1" href="#">Forward</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward As
+                                  <a class="dropdown-item rounded-1" href="#">Forward As
                                     Attachment</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mark As Unread</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mark As Unread</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move to Junk</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move to Junk</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mute</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mute</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Delete</a>
+                                  <a class="dropdown-item rounded-1" href="#">Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Archive</a>
+                                  <a class="dropdown-item rounded-1" href="#">Archive</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move To</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move To</a>
                                 </li>
                               </ul>
                             </div>
@@ -598,7 +589,7 @@
                     </div>
                     <div class="d-flex align-items-center">
                       <span class="badge badge-soft-danger me-2"><i class="ti ti-square me-1"></i>External</span>
-                      <a href="javascript:void(0);" class="badge badge-dark rounded-pill badge-xs">+1</a>
+                      <a href="#" class="badge badge-dark rounded-pill badge-xs">+1</a>
                     </div>
                   </div>
                 </div>
@@ -631,35 +622,35 @@
                                     Email</router-link>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply All</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply All</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward</a>
+                                  <a class="dropdown-item rounded-1" href="#">Forward</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward As
+                                  <a class="dropdown-item rounded-1" href="#">Forward As
                                     Attachment</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mark As Unread</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mark As Unread</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move to Junk</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move to Junk</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mute</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mute</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Delete</a>
+                                  <a class="dropdown-item rounded-1" href="#">Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Archive</a>
+                                  <a class="dropdown-item rounded-1" href="#">Archive</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move To</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move To</a>
                                 </li>
                               </ul>
                             </div>
@@ -677,7 +668,7 @@
                     </div>
                     <div class="d-flex align-items-center">
                       <span class="badge badge-soft-warning me-2"><i class="ti ti-square me-1"></i>Work</span>
-                      <a href="javascript:void(0);" class="badge badge-dark rounded-pill badge-xs">+1</a>
+                      <a href="#" class="badge badge-dark rounded-pill badge-xs">+1</a>
                     </div>
                   </div>
                 </div>
@@ -710,35 +701,35 @@
                                     Email</router-link>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply All</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply All</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward</a>
+                                  <a class="dropdown-item rounded-1" href="#">Forward</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward As
+                                  <a class="dropdown-item rounded-1" href="#">Forward As
                                     Attachment</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mark As Unread</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mark As Unread</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move to Junk</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move to Junk</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mute</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mute</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Delete</a>
+                                  <a class="dropdown-item rounded-1" href="#">Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Archive</a>
+                                  <a class="dropdown-item rounded-1" href="#">Archive</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move To</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move To</a>
                                 </li>
                               </ul>
                             </div>
@@ -788,35 +779,35 @@
                                     Email</router-link>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Reply All</a>
+                                  <a class="dropdown-item rounded-1" href="#">Reply All</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward</a>
+                                  <a class="dropdown-item rounded-1" href="#">Forward</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Forward As
+                                  <a class="dropdown-item rounded-1" href="#">Forward As
                                     Attachment</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mark As Unread</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mark As Unread</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move to Junk</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move to Junk</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Mute</a>
+                                  <a class="dropdown-item rounded-1" href="#">Mute</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Delete</a>
+                                  <a class="dropdown-item rounded-1" href="#">Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Archive</a>
+                                  <a class="dropdown-item rounded-1" href="#">Archive</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item rounded-1" href="javascript:void(0);">Move To</a>
+                                  <a class="dropdown-item rounded-1" href="#">Move To</a>
                                 </li>
                               </ul>
                             </div>
@@ -837,7 +828,7 @@
                     <div class="d-flex align-items-center">
                       <span><i class="ti ti-star-filled text-warning"></i></span>
                       <span class="badge badge-soft-info mx-2"><i class="ti ti-square me-1"></i>Applications</span>
-                      <a href="javascript:void(0);" class="badge badge-dark rounded-pill badge-xs">+1</a>
+                      <a href="#" class="badge badge-dark rounded-pill badge-xs">+1</a>
                     </div>
                   </div>
                 </div>
@@ -850,7 +841,7 @@
         <p class="mb-0">2014-2025 &copy; AronHR.</p>
         <p>
           Designed & Developed By
-          <a href="javascript:void(0);" class="text-primary">Dreams</a>
+          <a href="#" class="text-primary">Dreams</a>
         </p>
       </div>
     </div>

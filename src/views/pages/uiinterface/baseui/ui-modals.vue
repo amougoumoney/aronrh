@@ -17,24 +17,13 @@
               <h5 class="card-title">Basic Modal</h5>
             </div>
             <div class="card-body">
-              <div
-                id="standard-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="standard-modalLabel"
-                aria-hidden="true"
-              >
+              <div id="standard-modal" class="modal fade" tabindex="-1" role="dialog"
+                aria-labelledby="standard-modalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="standard-modalLabel">Modal Heading</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <h6>Text in a modal</h6>
@@ -60,11 +49,7 @@
                       </p>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-cancel"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">
                         Close
                       </button>
                       <button type="button" class="btn btn-primary">Save changes</button>
@@ -75,12 +60,8 @@
 
               <div class="button-list">
                 <!-- Standard  modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary mt-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#standard-modal"
-                >
+                <button type="button" class="btn btn-primary mt-1" data-bs-toggle="modal"
+                  data-bs-target="#standard-modal">
                   Launch Demo Modal
                 </button>
               </div>
@@ -96,35 +77,18 @@
               <h5 class="card-title">Static Backdrop</h5>
             </div>
             <div class="card-body card-buttons">
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"
-              >
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Launch static backdrop modal
               </button>
 
               <!-- Modal -->
-              <div
-                class="modal fade"
-                id="staticBackdrop"
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-                tabindex="-1"
-                aria-labelledby="staticBackdropLabel"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
@@ -134,11 +98,7 @@
                       single-origin coffee nulla assumenda shoreditch et.
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-cancel"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">
                         Close
                       </button>
                       <button type="button" class="btn btn-primary">Understood</button>
@@ -158,34 +118,18 @@
               <h5 class="card-title">Scrolling Long Content</h5>
             </div>
             <div class="card-body card-buttons">
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#scrollable-modal"
-              >
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scrollable-modal">
                 Scrolling Long Content
               </button>
 
               <!-- Long Content Scroll Modal -->
-              <div
-                class="modal fade"
-                id="scrollable-modal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="scrollableModalTitle"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="scrollable-modal" tabindex="-1" role="dialog"
+                aria-labelledby="scrollableModalTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="scrollableModalTitle">Modal title</h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <p>
@@ -280,11 +224,7 @@
                       </p>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-cancel"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">
                         Close
                       </button>
                       <button type="button" class="btn btn-primary">Save changes</button>
@@ -309,32 +249,17 @@
               </div>
             </div>
             <div class="card-body">
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModalScrollable5"
-              >
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModalScrollable5">
                 Launch demo modal
               </button>
-              <div
-                class="modal fade"
-                id="exampleModalScrollable5"
-                tabindex="-1"
-                aria-labelledby="exampleModalScrollable5"
-                data-bs-keyboard="false"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="exampleModalScrollable5" tabindex="-1"
+                aria-labelledby="exampleModalScrollable5" data-bs-keyboard="false" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="staticBackdropLabel5">Modal title</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <div class="container-fluid">
@@ -373,11 +298,7 @@
                       </div>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-cancel"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">
                         Close
                       </button>
                       <button type="button" class="btn btn-primary">Save Changes</button>
@@ -398,34 +319,20 @@
             </div>
             <div class="card-body">
               <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModalToggle"
-                aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel"
-                tabindex="-1"
-              >
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalToggleLabel">Modal 1</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       Show a second modal and hide this one with the button below.
                     </div>
                     <div class="modal-footer">
-                      <button
-                        class="btn btn-primary"
-                        data-bs-target="#exampleModalToggle2"
-                        data-bs-toggle="modal"
-                        data-bs-dismiss="modal"
-                      >
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">
                         Open second modal
                       </button>
                     </div>
@@ -435,34 +342,20 @@
               <!-- /Modal -->
 
               <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModalToggle2"
-                aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel2"
-                tabindex="-1"
-              >
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       Hide this modal and show the first with the button below.
                     </div>
                     <div class="modal-footer">
-                      <button
-                        class="btn btn-primary"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                        data-bs-dismiss="modal"
-                      >
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">
                         Back to first
                       </button>
                     </div>
@@ -471,13 +364,8 @@
               </div>
               <!-- /Modal -->
 
-              <a
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                href="#exampleModalToggle"
-                role="button"
-                >Open first modal</a
-              >
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first
+                modal</a>
             </div>
           </div>
         </div>
@@ -491,24 +379,13 @@
             </div>
             <div class="card-body">
               <!--  Modal -->
-              <div
-                class="modal fade"
-                id="bs-example-modal-lg"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myLargeModalLabel"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog"
+                aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">...</div>
                   </div>
@@ -516,24 +393,13 @@
               </div>
               <!-- /Modal -->
 
-              <div
-                class="modal fade"
-                id="bs-example-modal-sm"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="mySmallModalLabel"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="bs-example-modal-sm" tabindex="-1" role="dialog"
+                aria-labelledby="mySmallModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">...</div>
                   </div>
@@ -542,25 +408,15 @@
               <!-- /Modal -->
 
               <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModalLg"
-                tabindex="-1"
-                aria-labelledby="exampleModalLgLabel"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLgLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalLgLabel">
                         Extra Large Modal
                       </h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">...</div>
                   </div>
@@ -569,28 +425,16 @@
               <!-- /Modal -->
 
               <div class="button-list">
-                <button
-                  type="button"
-                  class="btn btn-primary mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalLg"
-                >
+                <button type="button" class="btn btn-primary mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#exampleModalLg">
                   Extra Large Modal
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-primary mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#bs-example-modal-lg"
-                >
+                <button type="button" class="btn btn-primary mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#bs-example-modal-lg">
                   Large Modal
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-primary mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#bs-example-modal-sm"
-                >
+                <button type="button" class="btn btn-primary mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#bs-example-modal-sm">
                   Small Modal
                 </button>
               </div>
@@ -609,13 +453,7 @@
             </div>
             <div class="card-body card-buttons">
               <!-- Modal -->
-              <div
-                id="signup-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
+              <div id="signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-body">
@@ -632,49 +470,27 @@
                       <form class="px-3" action="#">
                         <div class="mb-3">
                           <label for="username" class="form-label">Name</label>
-                          <input
-                            class="form-control"
-                            type="email"
-                            id="username"
-                            required=""
-                            placeholder="Michael Zenaty"
-                          />
+                          <input class="form-control" type="email" id="username" required=""
+                            placeholder="Michael Zenaty" />
                         </div>
 
                         <div class="mb-3">
-                          <label for="emailaddress" class="form-label"
-                            >Email address</label
-                          >
-                          <input
-                            class="form-control"
-                            type="email"
-                            id="emailaddress"
-                            required=""
-                            placeholder="john@deo.com"
-                          />
+                          <label for="emailaddress" class="form-label">Email address</label>
+                          <input class="form-control" type="email" id="emailaddress" required=""
+                            placeholder="john@deo.com" />
                         </div>
 
                         <div class="mb-3">
                           <label for="password" class="form-label">Password</label>
-                          <input
-                            class="form-control"
-                            type="password"
-                            required=""
-                            id="password"
-                            placeholder="Enter your password"
-                          />
+                          <input class="form-control" type="password" required="" id="password"
+                            placeholder="Enter your password" />
                         </div>
 
                         <div class="mb-3">
                           <div class="form-check">
-                            <input
-                              type="checkbox"
-                              class="form-check-input"
-                              id="customCheck1"
-                            />
-                            <label class="form-check-label" for="customCheck1"
-                              >I accept <a href="javascript:void(0);">Terms and Conditions</a></label
-                            >
+                            <input type="checkbox" class="form-check-input" id="customCheck1" />
+                            <label class="form-check-label" for="customCheck1">I accept <a href="#">Terms and
+                                Conditions</a></label>
                           </div>
                         </div>
 
@@ -691,13 +507,7 @@
               <!-- /Modal -->
 
               <!-- Modal -->
-              <div
-                id="login-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
+              <div id="login-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-body">
@@ -713,39 +523,21 @@
 
                       <form action="#" class="px-3">
                         <div class="mb-3">
-                          <label for="emailaddress1" class="form-label"
-                            >Email address</label
-                          >
-                          <input
-                            class="form-control"
-                            type="email"
-                            id="emailaddress1"
-                            required=""
-                            placeholder="john@deo.com"
-                          />
+                          <label for="emailaddress1" class="form-label">Email address</label>
+                          <input class="form-control" type="email" id="emailaddress1" required=""
+                            placeholder="john@deo.com" />
                         </div>
 
                         <div class="mb-3">
                           <label for="password1" class="form-label">Password</label>
-                          <input
-                            class="form-control"
-                            type="password"
-                            required=""
-                            id="password1"
-                            placeholder="Enter your password"
-                          />
+                          <input class="form-control" type="password" required="" id="password1"
+                            placeholder="Enter your password" />
                         </div>
 
                         <div class="mb-3">
                           <div class="form-check">
-                            <input
-                              type="checkbox"
-                              class="form-check-input"
-                              id="customCheck2"
-                            />
-                            <label class="form-check-label" for="customCheck2"
-                              >Remember me</label
-                            >
+                            <input type="checkbox" class="form-check-input" id="customCheck2" />
+                            <label class="form-check-label" for="customCheck2">Remember me</label>
                           </div>
                         </div>
 
@@ -763,21 +555,12 @@
 
               <div class="button-list">
                 <!-- Sign Up modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#signup-modal"
-                >
+                <button type="button" class="btn btn-primary mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#signup-modal">
                   Sign Up Modal
                 </button>
                 <!-- Log In modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary mt-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#login-modal"
-                >
+                <button type="button" class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#login-modal">
                   Log In Modal
                 </button>
               </div>
@@ -794,47 +577,26 @@
             </div>
             <div class="card-body">
               <!-- sample modal content -->
-              <div
-                id="con-close-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-                style="display: none"
-              >
+              <div id="con-close-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
+                style="display: none">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title">Modal Content is Responsive</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body p-4">
                       <div class="row">
                         <div class="col-md-6">
                           <div class="mb-3">
                             <label for="field-1" class="form-label">Name</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="field-1"
-                              placeholder="John"
-                            />
+                            <input type="text" class="form-control" id="field-1" placeholder="John" />
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="mb-3">
                             <label for="field-2" class="form-label">Surname</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="field-2"
-                              placeholder="Doe"
-                            />
+                            <input type="text" class="form-control" id="field-2" placeholder="Doe" />
                           </div>
                         </div>
                       </div>
@@ -842,12 +604,7 @@
                         <div class="col-md-12">
                           <div class="mb-3">
                             <label for="field-3" class="form-label">Address</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="field-3"
-                              placeholder="Address"
-                            />
+                            <input type="text" class="form-control" id="field-3" placeholder="Address" />
                           </div>
                         </div>
                       </div>
@@ -855,34 +612,19 @@
                         <div class="col-md-4">
                           <div class="mb-3">
                             <label for="field-4" class="form-label">City</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="field-4"
-                              placeholder="Boston"
-                            />
+                            <input type="text" class="form-control" id="field-4" placeholder="Boston" />
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="mb-3">
                             <label for="field-5" class="form-label">Country</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="field-5"
-                              placeholder="United States"
-                            />
+                            <input type="text" class="form-control" id="field-5" placeholder="United States" />
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="mb-3">
                             <label for="field-6" class="form-label">Zip</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="field-6"
-                              placeholder="123456"
-                            />
+                            <input type="text" class="form-control" id="field-6" placeholder="123456" />
                           </div>
                         </div>
                       </div>
@@ -890,27 +632,17 @@
                         <div class="col-md-12">
                           <div class="">
                             <label for="field-7" class="form-label">Personal Info</label>
-                            <textarea
-                              class="form-control"
-                              id="field-7"
-                              placeholder="Write something about yourself"
-                            ></textarea>
+                            <textarea class="form-control" id="field-7"
+                              placeholder="Write something about yourself"></textarea>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-cancel waves-effect"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel waves-effect" data-bs-dismiss="modal">
                         Close
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-primary waves-effect waves-light"
-                      >
+                      <button type="button" class="btn btn-primary waves-effect waves-light">
                         Save changes
                       </button>
                     </div>
@@ -919,38 +651,23 @@
               </div>
               <!-- /Modal -->
 
-              <div
-                id="accordion-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-                style="display: none"
-              >
+              <div id="accordion-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
+                style="display: none">
                 <div class="modal-dialog">
                   <div class="modal-content p-0">
                     <div id="accordion">
                       <div class="card mb-0">
                         <div class="card-header" id="headingOne">
                           <h5 class="m-0">
-                            <a
-                              href="#collapseOne"
-                              class="text-dark"
-                              data-bs-toggle="collapse"
-                              aria-expanded="true"
-                              aria-controls="collapseOne"
-                            >
+                            <a href="#collapseOne" class="text-dark" data-bs-toggle="collapse" aria-expanded="true"
+                              aria-controls="collapseOne">
                               Collapsible Group Item #1
                             </a>
                           </h5>
                         </div>
 
-                        <div
-                          id="collapseOne"
-                          class="collapse show"
-                          aria-labelledby="headingOne"
-                          data-bs-parent="#accordion"
-                        >
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                          data-bs-parent="#accordion">
                           <div class="card-body">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life
                             accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -969,23 +686,13 @@
                       <div class="card mb-0">
                         <div class="card-header" id="headingTwo">
                           <h5 class="m-0">
-                            <a
-                              href="#collapseTwo"
-                              class="collapsed text-dark"
-                              data-bs-toggle="collapse"
-                              aria-expanded="false"
-                              aria-controls="collapseTwo"
-                            >
+                            <a href="#collapseTwo" class="collapsed text-dark" data-bs-toggle="collapse"
+                              aria-expanded="false" aria-controls="collapseTwo">
                               Collapsible Group Item #2
                             </a>
                           </h5>
                         </div>
-                        <div
-                          id="collapseTwo"
-                          class="collapse"
-                          aria-labelledby="headingTwo"
-                          data-bs-parent="#accordion"
-                        >
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
                           <div class="card-body">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life
                             accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -1004,23 +711,14 @@
                       <div class="card mb-0">
                         <div class="card-header" id="headingThree">
                           <h5 class="m-0">
-                            <a
-                              href="#collapseThree"
-                              class="collapsed text-dark"
-                              data-bs-toggle="collapse"
-                              aria-expanded="false"
-                              aria-controls="collapseThree"
-                            >
+                            <a href="#collapseThree" class="collapsed text-dark" data-bs-toggle="collapse"
+                              aria-expanded="false" aria-controls="collapseThree">
                               Collapsible Group Item #3
                             </a>
                           </h5>
                         </div>
-                        <div
-                          id="collapseThree"
-                          class="collapse"
-                          aria-labelledby="headingThree"
-                          data-bs-parent="#accordion"
-                        >
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                          data-bs-parent="#accordion">
                           <div class="card-body">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life
                             accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -1044,21 +742,13 @@
 
               <div class="button-list">
                 <!-- Responsive modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary waves-effect waves-light mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#con-close-modal"
-                >
+                <button type="button" class="btn btn-primary waves-effect waves-light mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#con-close-modal">
                   Responsive Modal
                 </button>
                 <!-- Accordion modal -->
-                <button
-                  type="button"
-                  class="btn btn-secondary waves-effect waves-light mt-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#accordion-modal"
-                >
+                <button type="button" class="btn btn-secondary waves-effect waves-light mt-1" data-bs-toggle="modal"
+                  data-bs-target="#accordion-modal">
                   Accordion in Modal
                 </button>
               </div>
@@ -1078,33 +768,18 @@
               </div>
             </div>
             <div class="card-body">
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModalScrollable2"
-              >
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModalScrollable2">
                 Vertically centered modal
               </button>
-              <div
-                class="modal fade"
-                id="exampleModalScrollable2"
-                tabindex="-1"
-                aria-labelledby="exampleModalScrollable2"
-                data-bs-keyboard="false"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="exampleModalScrollable2" tabindex="-1"
+                aria-labelledby="exampleModalScrollable2" data-bs-keyboard="false" aria-hidden="true">
                 <!-- Scrollable modal -->
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="staticBackdropLabel2">Modal title</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <p>
@@ -1114,11 +789,7 @@
                       </p>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-cancel"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">
                         Close
                       </button>
                       <button type="button" class="btn btn-primary">Save Changes</button>
@@ -1140,33 +811,18 @@
               </div>
             </div>
             <div class="card-body">
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModalScrollable3"
-              >
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModalScrollable3">
                 Vertically centered scrollable modal
               </button>
-              <div
-                class="modal fade"
-                id="exampleModalScrollable3"
-                tabindex="-1"
-                aria-labelledby="exampleModalScrollable3"
-                data-bs-keyboard="false"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="exampleModalScrollable3" tabindex="-1"
+                aria-labelledby="exampleModalScrollable3" data-bs-keyboard="false" aria-hidden="true">
                 <!-- Scrollable modal -->
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="staticBackdropLabel3">Modal title</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <p>
@@ -1196,11 +852,7 @@
                       <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-cancel"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">
                         Close
                       </button>
                       <button type="button" class="btn btn-primary">Save Changes</button>
@@ -1222,76 +874,39 @@
               </div>
             </div>
             <div class="card-body">
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModalScrollable4"
-              >
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModalScrollable4">
                 Launch demo modal
               </button>
-              <div
-                class="modal fade"
-                id="exampleModalScrollable4"
-                tabindex="-1"
-                aria-labelledby="exampleModalScrollable4"
-                data-bs-keyboard="false"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="exampleModalScrollable4" tabindex="-1"
+                aria-labelledby="exampleModalScrollable4" data-bs-keyboard="false" aria-hidden="true">
                 <!-- Scrollable modal -->
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="staticBackdropLabel4">Modal title</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <h5>Popover in a modal</h5>
                       <p>
                         This
-                        <a
-                          href="javascript:void(0);"
-                          role="button"
-                          class="btn btn-secondary"
-                          data-bs-toggle="popover"
+                        <a href="#" role="button" class="btn btn-secondary" data-bs-toggle="popover"
                           title="Popover title"
-                          data-bs-content="Popover body content is set in this attribute."
-                          >button</a
-                        >
+                          data-bs-content="Popover body content is set in this attribute.">button</a>
                         triggers a popover on click.
                       </p>
                       <hr />
                       <h5>Tooltips in a modal</h5>
                       <p>
-                        <a
-                          href="javascript:void(0);"
-                          class="text-primary"
-                          data-bs-toggle="tooltip"
-                          title="Tooltip"
-                          >This link</a
-                        >
+                        <a href="#" class="text-primary" data-bs-toggle="tooltip" title="Tooltip">This link</a>
                         and
-                        <a
-                          href="javascript:void(0);"
-                          class="text-primary"
-                          data-bs-toggle="tooltip"
-                          title="Tooltip"
-                          >that link</a
-                        >
+                        <a href="#" class="text-primary" data-bs-toggle="tooltip" title="Tooltip">that link</a>
                         have tooltips on hover.
                       </p>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-cancel"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">
                         Close
                       </button>
                       <button type="button" class="btn btn-primary">Save Changes</button>
@@ -1316,253 +931,139 @@
             </div>
             <div class="card-body">
               <div class="bd-example">
-                <button
-                  type="button"
-                  class="btn btn-primary mb-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalFullscreen"
-                >
+                <button type="button" class="btn btn-primary mb-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#exampleModalFullscreen">
                   Full screen
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-secondary mb-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalFullscreenSm"
-                >
+                <button type="button" class="btn btn-secondary mb-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#exampleModalFullscreenSm">
                   Full screen below sm
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-warning mb-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalFullscreenMd"
-                >
+                <button type="button" class="btn btn-warning mb-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#exampleModalFullscreenMd">
                   Full screen below md
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-info mb-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalFullscreenLg"
-                >
+                <button type="button" class="btn btn-info mb-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#exampleModalFullscreenLg">
                   Full screen below lg
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-success mb-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalFullscreenXl"
-                >
+                <button type="button" class="btn btn-success mb-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#exampleModalFullscreenXl">
                   Full screen below xl
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-danger mb-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalFullscreenXxl"
-                >
+                <button type="button" class="btn btn-danger mb-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#exampleModalFullscreenXxl">
                   Full screen below xxl
                 </button>
               </div>
-              <div
-                class="modal fade"
-                id="exampleModalFullscreen"
-                tabindex="-1"
-                aria-labelledby="exampleModalFullscreenLabel"
-                aria-hidden="true"
-                style="display: none"
-              >
+              <div class="modal fade" id="exampleModalFullscreen" tabindex="-1"
+                aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true" style="display: none">
                 <div class="modal-dialog modal-fullscreen">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalFullscreenLabel">
                         Full screen modal
                       </h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">...</div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Close
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="modal fade"
-                id="exampleModalFullscreenSm"
-                tabindex="-1"
-                aria-labelledby="exampleModalFullscreenSmLabel"
-                aria-hidden="true"
-                style="display: none"
-              >
+              <div class="modal fade" id="exampleModalFullscreenSm" tabindex="-1"
+                aria-labelledby="exampleModalFullscreenSmLabel" aria-hidden="true" style="display: none">
                 <div class="modal-dialog modal-fullscreen-sm-down">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalFullscreenSmLabel">
                         Full screen below sm
                       </h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">...</div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Close
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="modal fade"
-                id="exampleModalFullscreenMd"
-                tabindex="-1"
-                aria-labelledby="exampleModalFullscreenMdLabel"
-                aria-hidden="true"
-                style="display: none"
-              >
+              <div class="modal fade" id="exampleModalFullscreenMd" tabindex="-1"
+                aria-labelledby="exampleModalFullscreenMdLabel" aria-hidden="true" style="display: none">
                 <div class="modal-dialog modal-fullscreen-md-down">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalFullscreenMdLabel">
                         Full screen below md
                       </h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">...</div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Close
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="modal fade"
-                id="exampleModalFullscreenLg"
-                tabindex="-1"
-                aria-labelledby="exampleModalFullscreenLgLabel"
-                aria-hidden="true"
-                style="display: none"
-              >
+              <div class="modal fade" id="exampleModalFullscreenLg" tabindex="-1"
+                aria-labelledby="exampleModalFullscreenLgLabel" aria-hidden="true" style="display: none">
                 <div class="modal-dialog modal-fullscreen-lg-down">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalFullscreenLgLabel">
                         Full screen below lg
                       </h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">...</div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Close
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="modal fade"
-                id="exampleModalFullscreenXl"
-                tabindex="-1"
-                aria-labelledby="exampleModalFullscreenXlLabel"
-                aria-hidden="true"
-                style="display: none"
-              >
+              <div class="modal fade" id="exampleModalFullscreenXl" tabindex="-1"
+                aria-labelledby="exampleModalFullscreenXlLabel" aria-hidden="true" style="display: none">
                 <div class="modal-dialog modal-fullscreen-xl-down">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalFullscreenXlLabel">
                         Full screen below xl
                       </h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">...</div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Close
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="modal fade"
-                id="exampleModalFullscreenXxl"
-                tabindex="-1"
-                aria-labelledby="exampleModalFullscreenXxlLabel"
-                aria-hidden="true"
-                style="display: none"
-              >
+              <div class="modal fade" id="exampleModalFullscreenXxl" tabindex="-1"
+                aria-labelledby="exampleModalFullscreenXxlLabel" aria-hidden="true" style="display: none">
                 <div class="modal-dialog modal-fullscreen-xxl-down">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalFullscreenXxlLabel">
                         Full screen below xxl
                       </h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">...</div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Close
                       </button>
                     </div>
@@ -1585,73 +1086,40 @@
               </div>
             </div>
             <div class="card-body">
-              <button
-                type="button"
-                class="btn btn-primary mb-1 me-1"
-                data-bs-toggle="modal"
-                data-bs-target="#formmodal"
-                data-bs-whatever="@mdo"
-              >
+              <button type="button" class="btn btn-primary mb-1 me-1" data-bs-toggle="modal" data-bs-target="#formmodal"
+                data-bs-whatever="@mdo">
                 Open modal for @mdo
               </button>
-              <button
-                type="button"
-                class="btn btn-secondary mb-1 me-1"
-                data-bs-toggle="modal"
-                data-bs-target="#formmodal"
-                data-bs-whatever="@fat"
-              >
+              <button type="button" class="btn btn-secondary mb-1 me-1" data-bs-toggle="modal"
+                data-bs-target="#formmodal" data-bs-whatever="@fat">
                 Open modal for @fat
               </button>
-              <button
-                type="button"
-                class="btn btn-light mb-1"
-                data-bs-toggle="modal"
-                data-bs-target="#formmodal"
-                data-bs-whatever="@getbootstrap"
-              >
+              <button type="button" class="btn btn-light mb-1" data-bs-toggle="modal" data-bs-target="#formmodal"
+                data-bs-whatever="@getbootstrap">
                 Open modal for @getbootstrap
               </button>
-              <div
-                class="modal fade"
-                id="formmodal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="formmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="exampleModalLabel">New message</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <form>
                         <div class="mb-3">
-                          <label for="recipient-name" class="col-form-label"
-                            >Recipient:</label
-                          >
+                          <label for="recipient-name" class="col-form-label">Recipient:</label>
                           <input type="text" class="form-control" id="recipient-name" />
                         </div>
                         <div class="mb-3">
-                          <label for="message-text" class="col-form-label"
-                            >Message:</label
-                          >
+                          <label for="message-text" class="col-form-label">Message:</label>
                           <textarea class="form-control" id="message-text"></textarea>
                         </div>
                       </form>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Close
                       </button>
                       <button type="button" class="btn btn-primary">Send message</button>
@@ -1677,118 +1145,56 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-scale"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Scale</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-scale"
+                    data-bs-toggle="modal" href="#modaldemo8">Scale</a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-slide-in-right"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Slide In Right</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-slide-in-right"
+                    data-bs-toggle="modal" href="#modaldemo8">Slide In Right</a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-slide-in-bottom"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Slide In Bottom</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-slide-in-bottom"
+                    data-bs-toggle="modal" href="#modaldemo8">Slide In Bottom</a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-newspaper"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Newspaper</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-newspaper"
+                    data-bs-toggle="modal" href="#modaldemo8">Newspaper</a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-fall"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Fall</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-fall"
+                    data-bs-toggle="modal" href="#modaldemo8">Fall</a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-flip-horizontal"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Flip Horizontal</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-flip-horizontal"
+                    data-bs-toggle="modal" href="#modaldemo8">Flip Horizontal</a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-flip-vertical"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Flip Vertical</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-flip-vertical"
+                    data-bs-toggle="modal" href="#modaldemo8">Flip Vertical</a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-super-scaled"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Super Scaled</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-super-scaled"
+                    data-bs-toggle="modal" href="#modaldemo8">Super Scaled</a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-sign"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Sign</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-sign"
+                    data-bs-toggle="modal" href="#modaldemo8">Sign</a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-rotate-bottom"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Rotate Bottom</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-rotate-bottom"
+                    data-bs-toggle="modal" href="#modaldemo8">Rotate Bottom</a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3">
-                  <a
-                    class="modal-effect btn btn-primary d-grid mb-3"
-                    data-bs-effect="effect-rotate-left"
-                    data-bs-toggle="modal"
-                    href="#modaldemo8"
-                    >Rotate Left</a
-                  >
+                  <a class="modal-effect btn btn-primary d-grid mb-3" data-bs-effect="effect-rotate-left"
+                    data-bs-toggle="modal" href="#modaldemo8">Rotate Left</a>
                 </div>
               </div>
               <div class="modal fade" id="modaldemo8">
-                <div
-                  class="modal-dialog modal-dialog-centered text-center"
-                  role="document"
-                >
+                <div class="modal-dialog modal-dialog-centered text-center" role="document">
                   <div class="modal-content modal-content-demo">
                     <div class="modal-header">
                       <h4 class="modal-title">Message Preview</h4>
-                      <button
-                        aria-label="Close"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                      ></button>
+                      <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body text-start">
                       <h6>Why We Use Electoral College, Not Popular Vote</h6>
@@ -1838,12 +1244,7 @@
               </div>
             </div>
             <div class="card-body">
-              <button
-                type="button"
-                class="btn-close"
-                disabled
-                aria-label="Close"
-              ></button>
+              <button type="button" class="btn-close" disabled aria-label="Close"></button>
             </div>
           </div>
         </div>
@@ -1855,17 +1256,8 @@
               </div>
             </div>
             <div class="card-body bg-black">
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                aria-label="Close"
-              ></button>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                disabled
-                aria-label="Close"
-              ></button>
+              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+              <button type="button" class="btn-close btn-close-white" disabled aria-label="Close"></button>
             </div>
           </div>
         </div>
@@ -1881,23 +1273,12 @@
             </div>
             <div class="card-body">
               <!-- Modal	 -->
-              <div
-                id="top-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
+              <div id="top-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-top">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="topModalLabel">Modal Heading</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <h5>Text in a modal</h5>
@@ -1906,11 +1287,7 @@
                       </p>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-cancel"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">
                         Close
                       </button>
                       <button type="button" class="btn btn-primary">Save changes</button>
@@ -1921,22 +1298,11 @@
               <!-- /Modal -->
 
               <!-- Modal -->
-              <div
-                id="right-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
+              <div id="right-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-sm modal-right">
                   <div class="modal-content">
                     <div class="modal-header border-0">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <div class="text-center">
@@ -1944,11 +1310,7 @@
                         <p>
                           Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
                         </p>
-                        <button
-                          type="button"
-                          class="btn btn-danger btn-sm"
-                          data-bs-dismiss="modal"
-                        >
+                        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">
                           Close
                         </button>
                       </div>
@@ -1959,23 +1321,12 @@
               <!-- /Modal -->
 
               <!-- Modal -->
-              <div
-                id="bottom-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
+              <div id="bottom-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-sm modal-bottom">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="bottomModalLabel">Modal Heading</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <h5>Text in a modal</h5>
@@ -1984,11 +1335,7 @@
                       </p>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-cancel"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">
                         Close
                       </button>
                       <button type="button" class="btn btn-primary">Save changes</button>
@@ -1999,23 +1346,12 @@
               <!-- /Modal -->
 
               <!-- Modal -->
-              <div
-                class="modal fade"
-                id="centermodal"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h4 class="modal-title" id="myCenterModalLabel">Center Modal</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <h5>Overflowing text to show scroll behavior</h5>
@@ -2037,39 +1373,22 @@
 
               <div class="button-list">
                 <!-- Top modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#top-modal"
-                >
+                <button type="button" class="btn btn-primary mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#top-modal">
                   Top Modal
                 </button>
                 <!-- Bottom modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#bottom-modal"
-                >
+                <button type="button" class="btn btn-primary mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#bottom-modal">
                   Bottom Modal
                 </button>
                 <!-- Center modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#centermodal"
-                >
+                <button type="button" class="btn btn-primary mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#centermodal">
                   Center modal
                 </button>
                 <!-- Right modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary mt-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#right-modal"
-                >
+                <button type="button" class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#right-modal">
                   Rightbar Modal
                 </button>
               </div>
@@ -2084,13 +1403,7 @@
             </div>
             <div class="card-body">
               <!-- Success Alert Modal -->
-              <div
-                id="success-alert-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
+              <div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content modal-filled bg-success">
                     <div class="modal-body p-4">
@@ -2101,11 +1414,7 @@
                           Cras mattis consectetur purus sit amet fermentum. Cras justo
                           odio, dapibus ac facilisis in, egestas eget quam.
                         </p>
-                        <button
-                          type="button"
-                          class="btn btn-cancel my-2"
-                          data-bs-dismiss="modal"
-                        >
+                        <button type="button" class="btn btn-cancel my-2" data-bs-dismiss="modal">
                           Continue
                         </button>
                       </div>
@@ -2116,13 +1425,7 @@
               <!-- /Modal -->
 
               <!-- Info Alert Modal -->
-              <div
-                id="info-alert-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
+              <div id="info-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content">
                     <div class="modal-body p-4">
@@ -2133,11 +1436,7 @@
                           Cras mattis consectetur purus sit amet fermentum. Cras justo
                           odio, dapibus ac facilisis in, egestas eget quam.
                         </p>
-                        <button
-                          type="button"
-                          class="btn btn-info my-2"
-                          data-bs-dismiss="modal"
-                        >
+                        <button type="button" class="btn btn-info my-2" data-bs-dismiss="modal">
                           Continue
                         </button>
                       </div>
@@ -2148,13 +1447,7 @@
               <!-- /Modal -->
 
               <!-- Warning Alert Modal -->
-              <div
-                id="warning-alert-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
+              <div id="warning-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content">
                     <div class="modal-body p-4">
@@ -2165,11 +1458,7 @@
                           Cras mattis consectetur purus sit amet fermentum. Cras justo
                           odio, dapibus ac facilisis in, egestas eget quam.
                         </p>
-                        <button
-                          type="button"
-                          class="btn btn-warning my-2"
-                          data-bs-dismiss="modal"
-                        >
+                        <button type="button" class="btn btn-warning my-2" data-bs-dismiss="modal">
                           Continue
                         </button>
                       </div>
@@ -2180,13 +1469,7 @@
               <!-- /Modal -->
 
               <!-- Danger Alert Modal -->
-              <div
-                id="danger-alert-modal"
-                class="modal fade"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
+              <div id="danger-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content modal-filled bg-danger">
                     <div class="modal-body p-4">
@@ -2197,11 +1480,7 @@
                           Cras mattis consectetur purus sit amet fermentum. Cras justo
                           odio, dapibus ac facilisis in, egestas eget quam.
                         </p>
-                        <button
-                          type="button"
-                          class="btn btn-cancel my-2"
-                          data-bs-dismiss="modal"
-                        >
+                        <button type="button" class="btn btn-cancel my-2" data-bs-dismiss="modal">
                           Continue
                         </button>
                       </div>
@@ -2213,39 +1492,23 @@
 
               <div class="button-list">
                 <!-- Success Alert modal -->
-                <button
-                  type="button"
-                  class="btn btn-success mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#success-alert-modal"
-                >
+                <button type="button" class="btn btn-success mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#success-alert-modal">
                   Success Alert
                 </button>
                 <!-- Info Alert modal -->
-                <button
-                  type="button"
-                  class="btn btn-info mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#info-alert-modal"
-                >
+                <button type="button" class="btn btn-info mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#info-alert-modal">
                   Info Alert
                 </button>
                 <!-- Warning Alert modal -->
-                <button
-                  type="button"
-                  class="btn btn-warning mt-1 me-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#warning-alert-modal"
-                >
+                <button type="button" class="btn btn-warning mt-1 me-1" data-bs-toggle="modal"
+                  data-bs-target="#warning-alert-modal">
                   Warning Alert
                 </button>
                 <!-- Danger Alert modal -->
-                <button
-                  type="button"
-                  class="btn btn-danger mt-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#danger-alert-modal"
-                >
+                <button type="button" class="btn btn-danger mt-1" data-bs-toggle="modal"
+                  data-bs-target="#danger-alert-modal">
                   Danger Alert
                 </button>
               </div>

@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Overtime</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -38,11 +33,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-white border me-2"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Add Overtime</button>
@@ -59,12 +50,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Overtime</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -80,11 +66,7 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Rate Type</label>
-                  <vue-select
-                    :options="EditTyperat"
-                    id="edittyperat"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="EditTyperat" id="edittyperat" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-12">
@@ -96,11 +78,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-white border me-2"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -124,15 +102,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/payroll/payroll-overtime" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/payroll/payroll-overtime" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

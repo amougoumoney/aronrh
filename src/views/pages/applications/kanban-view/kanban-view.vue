@@ -9,26 +9,24 @@
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="dropdown">
-            <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+            <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
               data-bs-toggle="dropdown">
               <i class="ti ti-file-export me-2"></i>
               Export
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                    class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                    class="ti ti-file-type-xls me-1"></i>Export as Excel
+                <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel
                 </a>
               </li>
             </ul>
           </div>
           <div class="ms-2 mb-0 head-icons">
-            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+              id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -110,22 +108,22 @@
             <div class="col-lg-8">
               <div class="d-flex align-items-center justify-content-lg-end flex-wrap row-gap-3 mb-3">
                 <div class="dropdown me-2">
-                  <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                  <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     Clients
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Clients</a>
+                      <a href="#" class="dropdown-item rounded-1">Clients</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Sophie</a>
+                      <a href="#" class="dropdown-item rounded-1">Sophie</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Cameron</a>
+                      <a href="#" class="dropdown-item rounded-1">Cameron</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Doris</a>
+                      <a href="#" class="dropdown-item rounded-1">Doris</a>
                     </li>
                   </ul>
                 </div>
@@ -144,39 +142,39 @@
                     :editable="true" :clearable="false" :input-format="dateFormat" />
                 </div>
                 <div class="dropdown me-2">
-                  <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                  <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     Select Status
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Inprogress</a>
+                      <a href="#" class="dropdown-item rounded-1">Inprogress</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">On-hold</a>
+                      <a href="#" class="dropdown-item rounded-1">On-hold</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Completed</a>
+                      <a href="#" class="dropdown-item rounded-1">Completed</a>
                     </li>
                   </ul>
                 </div>
                 <div class="d-flex align-items-center border p-2 rounded">
                   <span class="d-inline-flex me-2">Sort By : </span>
                   <div class="dropdown">
-                    <a href="javascript:void(0);"
+                    <a href="#"
                       class="dropdown-toggle btn btn-white d-inline-flex align-items-center border-0 bg-transparent p-0 text-dark"
                       data-bs-toggle="dropdown">
                       Created Date
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end p-3">
                       <li>
-                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Created Date</a>
+                        <a href="#" class="dropdown-item rounded-1">Created Date</a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                        <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Due Date</a>
+                        <a href="#" class="dropdown-item rounded-1">Due Date</a>
                       </li>
                     </ul>
                   </div>
@@ -200,7 +198,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

@@ -62,7 +62,7 @@ export default {
                     <div class="mb-3 d-flex justify-content-center">
                       <p class="text-gray-9">
                         Didn't get the OTP?
-                        <a href="javascript:void(0);" class="text-primary">Resend OTP</a>
+                        <a href="#" class="text-primary">Resend OTP</a>
                       </p>
                     </div>
                   </div>

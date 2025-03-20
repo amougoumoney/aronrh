@@ -161,9 +161,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -178,25 +178,16 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Employee'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
-            <img
-              :src="`@/assets/img/users/${record.Image}`"
-              class="img-fluid"
-              alt="img"
-            />s
+          <a href="#" class="avatar avatar-md border avatar-rounded">
+            <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid" alt="img" />s
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
-              <a href="javascript:void(0);">{{ record.Employee }}</a>
+              <a href="#">{{ record.Employee }}</a>
             </h6>
             <span class="fs-12 fw-normal">{{ record.Roll }}</span>
           </div>
@@ -205,32 +196,15 @@ export default {
       <template v-if="column.key === 'Project'">
         <p class="fs-14 fw-medium text-gray-9 d-flex align-items-center">
           {{ record.Project }}
-          <a
-            href="javascript:void(0);"
-            class="ms-1"
-            data-bs-toggle="tooltip"
-            data-bs-placement="right"
-            data-bs-title="Worked on the Management
-                    design & Development"
-            ><i class="ti ti-info-circle text-info"></i
-          ></a>
+          <a href="#" class="ms-1" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Worked on the Management
+                    design & Development"><i class="ti ti-info-circle text-info"></i></a>
         </p>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#edit_timesheet"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_timesheet"><i
+              class="ti ti-edit"></i></a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

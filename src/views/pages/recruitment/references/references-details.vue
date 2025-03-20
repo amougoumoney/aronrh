@@ -9,7 +9,8 @@
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a href="javascript:void(0);" @click="$router.push('/recruitment/references')" class="btn btn-secondary d-flex align-items-center">
+            <a href="#" @click="$router.push('/recruitment/references')"
+              class="btn btn-secondary d-flex align-items-center">
               <i class="ti ti-arrow-left me-2"></i>Back to List
             </a>
           </div>

@@ -146,9 +146,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -163,16 +163,11 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Plan_Name'">
         <h6 class="fw-medium">
-          <a href="javascript:void(0);">{{ record.Plan_Name }}</a>
+          <a href="#">{{ record.Plan_Name }}</a>
         </h6>
       </template>
       <template v-else-if="column.key === 'Status'">
@@ -182,19 +177,8 @@ export default {
       </template>
       <template v-else-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#edit_plans"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_plans"><i class="ti ti-edit"></i></a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

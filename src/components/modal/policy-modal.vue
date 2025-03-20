@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Policy</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -32,11 +27,7 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Department</label>
-                  <vue-select
-                    :options="DevePolicy"
-                    id="devepolicy"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="DevePolicy" id="devepolicy" placeholder="Select" />
                 </div>
               </div>
 
@@ -45,14 +36,8 @@
                   <label class="form-label">Upload Policy</label>
                   <div class="policy-upload d-flex flex-column align-items-center">
                     <div
-                      class="policy-upload-bg mb-2 rounded-circle d-flex align-items-center justify-content-center bg-primary-transparent"
-                    >
-                      <span
-                        ><img
-                          src="@/assets/img/folder-open.svg"
-                          alt="Img"
-                          class="img-fluid"
-                      /></span>
+                      class="policy-upload-bg mb-2 rounded-circle d-flex align-items-center justify-content-center bg-primary-transparent">
+                      <span><img src="@/assets/img/folder-open.svg" alt="Img" class="img-fluid" /></span>
                     </div>
                     <h6 class="fs-12 fw-normal mb-2">Drag and drop your files</h6>
                     <div class="drag-upload-btn bg-primary mb-0">
@@ -65,11 +50,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-white border me-2"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Add Policy</button>
@@ -86,12 +67,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Policy</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -108,18 +84,13 @@
                 <div class="mb-3">
                   <label class="form-label">Appraisal Date</label>
                   <textarea class="form-control">
-Guidelines regarding employee absences from work</textarea
-                  >
+Guidelines regarding employee absences from work</textarea>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Department</label>
-                  <vue-select
-                    :options="EditDevePolicy"
-                    id="editdevepolicy"
-                    placeholder="All Department"
-                  />
+                  <vue-select :options="EditDevePolicy" id="editdevepolicy" placeholder="All Department" />
                 </div>
               </div>
 
@@ -128,14 +99,8 @@ Guidelines regarding employee absences from work</textarea
                   <label class="form-label">Upload Policy</label>
                   <div class="policy-upload d-flex flex-column align-items-center">
                     <div
-                      class="policy-upload-bg mb-2 rounded-circle d-flex align-items-center justify-content-center bg-primary-transparent"
-                    >
-                      <span
-                        ><img
-                          src="@/assets/img/folder-open.svg"
-                          alt="Img"
-                          class="img-fluid"
-                      /></span>
+                      class="policy-upload-bg mb-2 rounded-circle d-flex align-items-center justify-content-center bg-primary-transparent">
+                      <span><img src="@/assets/img/folder-open.svg" alt="Img" class="img-fluid" /></span>
                     </div>
                     <h6 class="fs-12 fw-normal mb-2">Drag and drop your files</h6>
                     <div class="drag-upload-btn bg-primary mb-0">
@@ -148,11 +113,7 @@ Guidelines regarding employee absences from work</textarea
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-white border me-2"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Add Policy</button>
@@ -176,15 +137,8 @@ Guidelines regarding employee absences from work</textarea
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/employee/policy" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/employee/policy" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

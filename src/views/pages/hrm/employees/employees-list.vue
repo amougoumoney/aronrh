@@ -16,31 +16,32 @@
           </div>
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
+                <i class="ti ti-file-export me-1"></i>{{ $t('dashboard.export') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}</a>
+                  <a href="#" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>{{ $t('dashboard.exportPDF') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}}
+                  <a href="#" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>{{ $t('dashboard.exportEXCEL') }}
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_employee"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddNewEmployee')}}
-              </a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#add_employee"
+              class="btn btn-primary d-flex align-items-center"><i
+                class="ti ti-circle-plus me-2"></i>{{ $t('AddNewEmployee') }}
+            </a>
           </div>
           <div class="head-icons ms-2">
-            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+              id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -58,7 +59,7 @@
                   <span class="avatar avatar-lg bg-dark rounded-circle"><i class="ti ti-users"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
-                  <p class="fs-12 fw-medium mb-1 text-truncate">{{$t('TotalEmployee')}}</p>
+                  <p class="fs-12 fw-medium mb-1 text-truncate">{{ $t('TotalEmployee') }}</p>
                   <h4>1007</h4>
                 </div>
               </div>
@@ -82,7 +83,7 @@
                   <span class="avatar avatar-lg bg-success rounded-circle"><i class="ti ti-user-share"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
-                  <p class="fs-12 fw-medium mb-1 text-truncate">{{$t('Active')}}</p>
+                  <p class="fs-12 fw-medium mb-1 text-truncate">{{ $t('Active') }}</p>
                   <h4>1007</h4>
                 </div>
               </div>
@@ -106,7 +107,7 @@
                   <span class="avatar avatar-lg bg-danger rounded-circle"><i class="ti ti-user-pause"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
-                  <p class="fs-12 fw-medium mb-1 text-truncate">{{$t('Inactive')}}</p>
+                  <p class="fs-12 fw-medium mb-1 text-truncate">{{ $t('Inactive') }}</p>
                   <h4>1007</h4>
                 </div>
               </div>
@@ -130,7 +131,7 @@
                   <span class="avatar avatar-lg bg-info rounded-circle"><i class="ti ti-user-plus"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
-                  <p class="fs-12 fw-medium mb-1 text-truncate">{{$t('NewJoiners')}}</p>
+                  <p class="fs-12 fw-medium mb-1 text-truncate">{{ $t('NewJoiners') }}</p>
                   <h4>67</h4>
                 </div>
               </div>
@@ -148,7 +149,7 @@
 
       <div class="card">
         <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-          <h5>{{$t('PlanList')}}</h5>
+          <h5>{{ $t('PlanList') }}</h5>
           <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
             <div class="me-3">
               <div class="input-icon-end position-relative">
@@ -160,44 +161,44 @@
               </div>
             </div>
             <div class="dropdown me-3">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                {{$t('Designation')}}
+                {{ $t('Designation') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('finance')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('finance') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Developer')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Developer') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('executive')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('executive') }}</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown me-3">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                {{$t('SelectStatus')}}
+                {{ $t('SelectStatus') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Active')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Active') }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Inactive')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Inactive') }}</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                {{$t('SortBy:Last7Days')}}
+                {{ $t('SortBy:Last7Days') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
+                  <a href="#" class="dropdown-item rounded-1">{{ $t('Ascending') }}</a>
                 </li>
               </ul>
             </div>
@@ -210,13 +211,13 @@
               <template #bodyCell="{ column, record }">
                 <template v-if="column.key === 'Name'">
                   <div class="d-flex align-items-center file-name-icon">
-                    <a href="javascript:void(0);" class="avatar avatar-md">
+                    <a href="#" class="avatar avatar-md">
                       <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid rounded-circle" alt="img" />
 
                     </a>
                     <div class="ms-2">
                       <h6 class="fw-medium">
-                        <a href="javascript:void(0);">{{ record.Name }}</a>
+                        <a href="#">{{ record.Name }}</a>
                       </h6>
                       <span class="d-block mt-1">{{ record.Work }}</span>
                     </div>
@@ -224,7 +225,7 @@
                 </template>
                 <template v-if="column.key === 'Designation'">
                   <div class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                    <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                       data-bs-toggle="dropdown">
                       <span
                         class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>
@@ -232,26 +233,26 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end p-3">
                       <li>
-                        <a href="javascript:void(0);"
+                        <a href="#"
                           class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>{{$t('finance')}}</a>
+                            class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>{{ $t('finance') }}</a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);"
+                        <a href="#"
                           class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{$t('Developer')}}
+                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{ $t('Developer') }}
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);"
+                        <a href="#"
                           class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{$t('executive')}}
+                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{ $t('executive') }}
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);"
+                        <a href="#"
                           class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{$t('manager')}}
+                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{ $t('manager') }}
                         </a>
                       </li>
                     </ul>
@@ -275,10 +276,9 @@
                 </template>
                 <template v-if="column.key === 'action'">
                   <div class="action-icon d-inline-flex">
-                    <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
-                      data-bs-target="#edit-employee-salary"><i class="ti ti-edit"></i></a>
-                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                        class="ti ti-trash"></i></a>
+                    <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit-employee-salary"><i
+                        class="ti ti-edit"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
                   </div>
                 </template>
               </template>
@@ -291,8 +291,8 @@
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        {{$t('designed')}} &amp; {{$t('developedBy')}}
-        <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a>
+        {{ $t('designed') }} &amp; {{ $t('developedBy') }}
+        <a href="#" class="text-primary">{{ $t('dreams') }}</a>
       </p>
     </div>
   </div>

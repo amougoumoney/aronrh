@@ -8,8 +8,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+          <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+            id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -106,7 +106,7 @@
                               Change
                               <input type="file" class="form-control image-sign" multiple="" />
                             </div>
-                            <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
+                            <a href="#" class="btn btn-light btn-sm">Cancel</a>
                           </div>
                         </div>
                       </div>
@@ -127,7 +127,7 @@
                               Change
                               <input type="file" class="form-control image-sign" multiple="" />
                             </div>
-                            <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
+                            <a href="#" class="btn btn-light btn-sm">Cancel</a>
                           </div>
                         </div>
                       </div>
@@ -148,7 +148,7 @@
                               Change
                               <input type="file" class="form-control image-sign" multiple="" />
                             </div>
-                            <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
+                            <a href="#" class="btn btn-light btn-sm">Cancel</a>
                           </div>
                         </div>
                       </div>
@@ -169,7 +169,7 @@
                               Upload
                               <input type="file" class="form-control image-sign" multiple="" />
                             </div>
-                            <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
+                            <a href="#" class="btn btn-light btn-sm">Cancel</a>
                           </div>
                         </div>
                       </div>
@@ -190,7 +190,7 @@
                               Change
                               <input type="file" class="form-control image-sign" multiple="" />
                             </div>
-                            <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
+                            <a href="#" class="btn btn-light btn-sm">Cancel</a>
                           </div>
                         </div>
                       </div>
@@ -211,7 +211,7 @@
                               Change
                               <input type="file" class="form-control image-sign" multiple="" />
                             </div>
-                            <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
+                            <a href="#" class="btn btn-light btn-sm">Cancel</a>
                           </div>
                         </div>
                       </div>
@@ -311,7 +311,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

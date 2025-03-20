@@ -169,9 +169,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -186,25 +186,16 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Trainer'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
-            <img
-              :src="`@/assets/img/users/${record.Image}`"
-              class="img-fluid"
-              alt="img"
-            />
+          <a href="#" class="avatar avatar-md border avatar-rounded">
+            <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
-              <a href="javascript:void(0);">{{ record.Trainer }}</a>
+              <a href="#">{{ record.Trainer }}</a>
             </h6>
           </div>
         </div>
@@ -212,39 +203,19 @@ export default {
       <template v-if="column.key === 'Employee'">
         <div class="avatar-list-stacked avatar-group-sm">
           <span class="avatar border-0">
-            <img
-              :src="`@/assets/img/users/${record.Img1}`"
-              class="rounded-circle"
-              alt="img"
-            />
+            <img :src="`@/assets/img/users/${record.Img1}`" class="rounded-circle" alt="img" />
           </span>
           <span class="avatar border-0">
-            <img
-              :src="`@/assets/img/users/${record.Img2}`"
-              class="rounded-circle"
-              alt="img"
-            />
+            <img :src="`@/assets/img/users/${record.Img2}`" class="rounded-circle" alt="img" />
           </span>
           <span class="avatar border-0">
-            <img
-              :src="`@/assets/img/users/${record.Img3}`"
-              class="rounded-circle"
-              alt="img"
-            />
+            <img :src="`@/assets/img/users/${record.Img3}`" class="rounded-circle" alt="img" />
           </span>
           <span class="avatar border-0">
-            <img
-              :src="`@/assets/img/users/${record.Img4}`"
-              class="rounded-circle"
-              alt="img"
-            />
+            <img :src="`@/assets/img/users/${record.Img4}`" class="rounded-circle" alt="img" />
           </span>
           <span class="avatar border-0">
-            <img
-              :src="`@/assets/img/users/${record.Img5}`"
-              class="rounded-circle"
-              alt="img"
-            />
+            <img :src="`@/assets/img/users/${record.Img5}`" class="rounded-circle" alt="img" />
           </span>
           <span class="avatar group-counts bg-primary rounded-circle border-0 fs-10">
             +{{ record.Employee }}
@@ -258,19 +229,8 @@ export default {
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#edit_training"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_training"><i class="ti ti-edit"></i></a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

@@ -21,12 +21,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add State</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -42,11 +37,7 @@ export default {
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Country Name</label>
-                  <vue-select
-                    :options="Countryname"
-                    id="country-state"
-                    placeholder="Selact"
-                  />
+                  <vue-select :options="Countryname" id="country-state" placeholder="Selact" />
                 </div>
               </div>
               <div class="col-md-12">
@@ -75,12 +66,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit State</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -96,21 +82,13 @@ export default {
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Country Name</label>
-                  <vue-select
-                    :options="Countryname"
-                    id="country-state-one"
-                    placeholder="United States"
-                  />
+                  <vue-select :options="Countryname" id="country-state-one" placeholder="United States" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="Status"
-                    id="status-state-one"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="Status" id="status-state-one" placeholder="Active" />
                 </div>
               </div>
             </div>
@@ -140,15 +118,8 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/location/states" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/location/states" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

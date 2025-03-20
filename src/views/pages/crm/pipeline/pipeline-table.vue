@@ -163,9 +163,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -180,76 +180,48 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Pipeline_Name'">
         <h6 class="fs-14 fw-medium">{{ record.Pipeline_Name }}</h6>
       </template>
       <template v-if="column.key === 'Stages'">
         <div class="d-flex align-items-center">
-          <div
-            class="progress me-2"
-            role="progressbar"
-            aria-label="Basic example"
-            aria-valuenow="0"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="height: 5px; min-width: 80px"
-          >
-            <div
-              :class="[
-                'progress-bar',
-                record.Stages === 'Won'
-                  ? 'bg-success'
-                  : record.Stages === 'In Pipeline'
+          <div class="progress me-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+            aria-valuemax="100" style="height: 5px; min-width: 80px">
+            <div :class="[
+              'progress-bar',
+              record.Stages === 'Won'
+                ? 'bg-success'
+                : record.Stages === 'In Pipeline'
                   ? 'bg-purple'
                   : record.Stages === 'Conversation'
-                  ? 'bg-skyblue'
-                  : record.Stages === 'Follow Up'
-                  ? 'bg-warning'
-                  : record.Stages === 'Schedule servise'
-                  ? 'bg-pink'
-                  : 'bg-danger',
-              ]"
-              style="width: 100%"
-            ></div>
+                    ? 'bg-skyblue'
+                    : record.Stages === 'Follow Up'
+                      ? 'bg-warning'
+                      : record.Stages === 'Schedule servise'
+                        ? 'bg-pink'
+                        : 'bg-danger',
+            ]" style="width: 100%"></div>
           </div>
           <span class="fs-14 fw-normal">{{ record.Stages }}</span>
         </div>
       </template>
       <template v-if="column.key === 'Status'">
-        <span
-          :class="[
-            'badge',
-            record.Status === 'Active' ? 'badge-success' : 'badge-danger',
-            'd-inline-flex',
-            'align-items-center',
-            'badge-xs',
-          ]"
-        >
+        <span :class="[
+          'badge',
+          record.Status === 'Active' ? 'badge-success' : 'badge-danger',
+          'd-inline-flex',
+          'align-items-center',
+          'badge-xs',
+        ]">
           <i class="ti ti-point-filled me-1"></i>{{ record.Status }}
         </span>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#edit_pipeline"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_pipeline"><i class="ti ti-edit"></i></a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

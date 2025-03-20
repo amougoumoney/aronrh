@@ -8,8 +8,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+          <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+            id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -42,9 +42,8 @@
                                 <input class="form-check-input" type="checkbox" role="switch"
                                   id="flexSwitchCheckDefault" />
                               </div>
-                              <a href="javascript:void(0);" class="btn btn-icon btn-sm text-gray-5 fs-20"
-                                data-bs-toggle="modal" data-bs-target="#nexmosettings"><i
-                                  class="ti ti-settings"></i></a>
+                              <a href="#" class="btn btn-icon btn-sm text-gray-5 fs-20" data-bs-toggle="modal"
+                                data-bs-target="#nexmosettings"><i class="ti ti-settings"></i></a>
                             </div>
                           </div>
                         </div>
@@ -64,8 +63,8 @@
                                 <input class="form-check-input" type="checkbox" role="switch"
                                   id="flexSwitchCheckDefault2" />
                               </div>
-                              <a href="javascript:void(0);" class="btn btn-icon btn-sm text-gray-5 fs-20"
-                                data-bs-toggle="modal" data-bs-target="#smssettings"><i class="ti ti-settings"></i></a>
+                              <a href="#" class="btn btn-icon btn-sm text-gray-5 fs-20" data-bs-toggle="modal"
+                                data-bs-target="#smssettings"><i class="ti ti-settings"></i></a>
                             </div>
                           </div>
                         </div>
@@ -85,9 +84,8 @@
                                 <input class="form-check-input" type="checkbox" role="switch"
                                   id="flexSwitchCheckDefault3" />
                               </div>
-                              <a href="javascript:void(0);" class="btn btn-icon btn-sm text-gray-5 fs-20"
-                                data-bs-toggle="modal" data-bs-target="#twiliosettings"><i
-                                  class="ti ti-settings"></i></a>
+                              <a href="#" class="btn btn-icon btn-sm text-gray-5 fs-20" data-bs-toggle="modal"
+                                data-bs-target="#twiliosettings"><i class="ti ti-settings"></i></a>
                             </div>
                           </div>
                         </div>
@@ -111,7 +109,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

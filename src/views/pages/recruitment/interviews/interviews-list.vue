@@ -10,34 +10,31 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
+              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
+                <i class="ti ti-file-export me-1"></i>{{ $t('dashboard.export') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">
-                    <i class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}
+                  <a href="#" class="dropdown-item rounded-1">
+                    <i class="ti ti-file-type-pdf me-1"></i>{{ $t('dashboard.exportPDF') }}
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">
-                    <i class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}}
+                  <a href="#" class="dropdown-item rounded-1">
+                    <i class="ti ti-file-type-xls me-1"></i>{{ $t('dashboard.exportEXCEL') }}
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-        <div class="mb-2">
+          <div class="mb-2">
             <!-- Use data attributes for the modal -->
-            <a
-              href="javascript:void(0);"
-              data-bs-toggle="modal"
-              data-bs-target="#add_interview"
-              class="btn btn-primary d-flex align-items-center"
-            >
+            <a href="#" data-bs-toggle="modal" data-bs-target="#add_interview"
+              class="btn btn-primary d-flex align-items-center">
               <i class="ti ti-circle-plus me-2"></i>Add Interview
             </a>
-        </div>
+          </div>
         </div>
       </div>
       <!-- /Breadcrumb -->
@@ -51,15 +48,15 @@
                 <table class="table table-striped custom-table mb-0 datatable">
                   <thead>
                     <tr>
-                      <th>{{$t('id')}}</th>
-                      <th>{{$t('JobPosition')}}</th>
-                      <th>{{$t('InterviewDate')}}</th>
-                      <th>{{$t('Time')}}</th>
-                      <th>{{$t('Interviewer')}}</th>
-                      <th>{{$t('Mode')}}</th>
-                      <th>{{$t('Status')}}</th>
-                      <th>{{$t('Score')}}</th>
-                      <th class="text-end">{{$t('Actions')}}</th>
+                      <th>{{ $t('id') }}</th>
+                      <th>{{ $t('JobPosition') }}</th>
+                      <th>{{ $t('InterviewDate') }}</th>
+                      <th>{{ $t('Time') }}</th>
+                      <th>{{ $t('Interviewer') }}</th>
+                      <th>{{ $t('Mode') }}</th>
+                      <th>{{ $t('Status') }}</th>
+                      <th>{{ $t('Score') }}</th>
+                      <th class="text-end">{{ $t('Actions') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -78,21 +75,22 @@
                       <td>{{ interview.score || 'N/A' }}</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
-                          <a href="javascript:void(0);" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <i class="ti ti-dots-vertical"></i>
                           </a>
                           <div class="dropdown-menu dropdown-menu-end">
-                            <a href="javascript:void(0);" class="dropdown-item" @click="viewInterviewDetails(interview.id)">
-                              <i class="ti ti-eye me-2"></i>{{$t('viewDetails')}}
+                            <a href="#" class="dropdown-item" @click="viewInterviewDetails(interview.id)">
+                              <i class="ti ti-eye me-2"></i>{{ $t('viewDetails') }}
                             </a>
-                            <a href="javascript:void(0);" class="dropdown-item" @click="editInterviewDetails(interview.id)">
-                              <i class="ti ti-pencil me-2"></i>{{$t('Edit')}}
+                            <a href="#" class="dropdown-item" @click="editInterviewDetails(interview.id)">
+                              <i class="ti ti-pencil me-2"></i>{{ $t('Edit') }}
                             </a>
-                            <a href="javascript:void(0);" class="dropdown-item" @click="addFeedback(interview.id)">
-                              <i class="ti ti-message me-2"></i>{{$t('AddFeedback')}}
+                            <a href="#" class="dropdown-item" @click="addFeedback(interview.id)">
+                              <i class="ti ti-message me-2"></i>{{ $t('AddFeedback') }}
                             </a>
-                            <a href="javascript:void(0);" class="dropdown-item" @click="deleteInterviewRecord(interview.id)">
-                              <i class="ti ti-trash me-2"></i>{{$t('Delete')}}
+                            <a href="#" class="dropdown-item" @click="deleteInterviewRecord(interview.id)">
+                              <i class="ti ti-trash me-2"></i>{{ $t('Delete') }}
                             </a>
                           </div>
                         </div>
@@ -110,7 +108,7 @@
   </div>
 
   <!-- Interview Modal -->
-  <interview-modal ref="interviewModal" @interview-added="onInterviewAdded"/>
+  <interview-modal ref="interviewModal" @interview-added="onInterviewAdded" />
 </template>
 
 <script>
@@ -121,7 +119,7 @@ export default {
   name: 'InterviewsList',
   components: {
     indexBreadcrumb,
-   
+
   },
   data() {
     return {
@@ -154,14 +152,14 @@ export default {
         console.error('Error fetching interviews:', error);
       }
     },
-    
+
     onInterviewAdded(interview) {
       this.interviews.push({
         id: this.interviews.length + 1,
         ...interview
       });
     },
-    
+
     getStatusClass(status) {
       const statusClasses = {
         'Scheduled': 'bg-warning-light',
@@ -195,7 +193,7 @@ export default {
       }
     },
   },
-  
+
   mounted() {
     this.fetchInterviews();
   }

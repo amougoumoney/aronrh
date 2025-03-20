@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Company</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -18,17 +13,10 @@
           <div class="modal-body pb-0">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                >
+                <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                   <div
-                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                  >
-                    <img
-                      src="@/assets/img/profiles/avatar-30.jpg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
+                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
+                    <img src="@/assets/img/profiles/avatar-30.jpg" alt="img" class="rounded-circle" />
                   </div>
                   <div class="profile-upload">
                     <div class="mb-2">
@@ -40,18 +28,14 @@
                         Upload
                         <input type="file" class="form-control image-sign" multiple />
                       </div>
-                      <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                        >Cancel</a
-                      >
+                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -69,9 +53,7 @@
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Phone Number <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Phone Number <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -83,43 +65,25 @@
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Password <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Password <span class="text-danger"> *</span></label>
                   <div class="pass-group">
-                    <input
-                      :type="showPassword ? 'text' : 'password'"
-                      class="pass-input form-control"
-                    />
-                    <span
-                      @click="toggleShow"
-                      class="ti toggle-password"
-                      :class="{
-                        'ti-eye': showPassword,
-                        'ti-eye-off': !showPassword,
-                      }"
-                    ></span>
+                    <input :type="showPassword ? 'text' : 'password'" class="pass-input form-control" />
+                    <span @click="toggleShow" class="ti toggle-password" :class="{
+                      'ti-eye': showPassword,
+                      'ti-eye-off': !showPassword,
+                    }"></span>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Confirm Password <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Confirm Password <span class="text-danger"> *</span></label>
                   <div class="pass-group">
-                    <input
-                      :type="showPassword1 ? 'text' : 'password'"
-                      class="pass-inputs form-control"
-                    />
-                    <span
-                      @click="toggleShow1"
-                      class="ti toggle-passwords"
-                      :class="{
-                        'ti-eye': showPassword1,
-                        'ti-eye-off': !showPassword1,
-                      }"
-                    ></span>
+                    <input :type="showPassword1 ? 'text' : 'password'" class="pass-inputs form-control" />
+                    <span @click="toggleShow1" class="ti toggle-passwords" :class="{
+                      'ti-eye': showPassword1,
+                      'ti-eye-off': !showPassword1,
+                    }"></span>
                   </div>
                 </div>
               </div>
@@ -131,48 +95,32 @@
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Plan Name <span class="text-danger"> *</span></label>
                   <vue-select :options="AdvanSelc" id="advanselc" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Type <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Plan Type <span class="text-danger"> *</span></label>
                   <vue-select :options="SelMonth" id="selmonth" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Currency <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Currency <span class="text-danger"> *</span></label>
                   <vue-select :options="DollarSel" id="dollarsel" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Language <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="EnglishSele"
-                    id="englishsele"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Language <span class="text-danger"> *</span></label>
+                  <vue-select :options="EnglishSele" id="englishsele" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="InActiveSele"
-                    id="inactivesele"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="InActiveSele" id="inactivesele" placeholder="Select" />
                 </div>
               </div>
             </div>
@@ -195,12 +143,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Company</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -208,17 +151,10 @@
           <div class="modal-body pb-0">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                >
+                <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                   <div
-                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                  >
-                    <img
-                      src="@/assets/img/profiles/avatar-30.jpg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
+                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
+                    <img src="@/assets/img/profiles/avatar-30.jpg" alt="img" class="rounded-circle" />
                   </div>
                   <div class="profile-upload">
                     <div class="mb-2">
@@ -230,18 +166,14 @@
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                        >Cancel</a
-                      >
+                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" value="Stellar Dynamics" />
                 </div>
               </div>
@@ -259,9 +191,7 @@
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Phone Number <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Phone Number <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" value="+1 895455450" />
                 </div>
               </div>
@@ -273,43 +203,25 @@
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Password <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Password <span class="text-danger"> *</span></label>
                   <div class="pass-group">
-                    <input
-                      :type="showPassword ? 'text' : 'password'"
-                      class="pass-input form-control"
-                    />
-                    <span
-                      @click="toggleShow"
-                      class="ti toggle-password"
-                      :class="{
-                        'ti-eye': showPassword,
-                        'ti-eye-off': !showPassword,
-                      }"
-                    ></span>
+                    <input :type="showPassword ? 'text' : 'password'" class="pass-input form-control" />
+                    <span @click="toggleShow" class="ti toggle-password" :class="{
+                      'ti-eye': showPassword,
+                      'ti-eye-off': !showPassword,
+                    }"></span>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Confirm Password <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Confirm Password <span class="text-danger"> *</span></label>
                   <div class="pass-group">
-                    <input
-                      :type="showPassword1 ? 'text' : 'password'"
-                      class="pass-inputs form-control"
-                    />
-                    <span
-                      @click="toggleShow1"
-                      class="ti toggle-passwords"
-                      :class="{
-                        'ti-eye': showPassword1,
-                        'ti-eye-off': !showPassword1,
-                      }"
-                    ></span>
+                    <input :type="showPassword1 ? 'text' : 'password'" class="pass-inputs form-control" />
+                    <span @click="toggleShow1" class="ti toggle-passwords" :class="{
+                      'ti-eye': showPassword1,
+                      'ti-eye-off': !showPassword1,
+                    }"></span>
                   </div>
                 </div>
               </div>
@@ -321,60 +233,32 @@
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Name <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="EditAdvanSelc"
-                    id="editadvanselc"
-                    placeholder="Advanced"
-                  />
+                  <label class="form-label">Plan Name <span class="text-danger"> *</span></label>
+                  <vue-select :options="EditAdvanSelc" id="editadvanselc" placeholder="Advanced" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Type <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="EditSelMonth"
-                    id="editselmonth"
-                    placeholder="Monthly"
-                  />
+                  <label class="form-label">Plan Type <span class="text-danger"> *</span></label>
+                  <vue-select :options="EditSelMonth" id="editselmonth" placeholder="Monthly" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Currency <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="EditDollarSel"
-                    id="editdollarsel"
-                    placeholder="Dollar"
-                  />
+                  <label class="form-label">Currency <span class="text-danger"> *</span></label>
+                  <vue-select :options="EditDollarSel" id="editdollarsel" placeholder="Dollar" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Language <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="EditEnglishSele"
-                    id="editenglishsele"
-                    placeholder="English"
-                  />
+                  <label class="form-label">Language <span class="text-danger"> *</span></label>
+                  <vue-select :options="EditEnglishSele" id="editenglishsele" placeholder="English" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="EditInActiveSele"
-                    id="editinactivesele"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="EditInActiveSele" id="editinactivesele" placeholder="Active" />
                 </div>
               </div>
             </div>
@@ -397,12 +281,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Upgrade Package</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -458,50 +337,28 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Name <span class="text-danger">*</span></label
-                  >
-                  <vue-select
-                    :options="OneAdvanSelc"
-                    id="oneadvanselc"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Plan Name <span class="text-danger">*</span></label>
+                  <vue-select :options="OneAdvanSelc" id="oneadvanselc" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Plan Type <span class="text-danger">*</span></label
-                  >
-                  <vue-select
-                    :options="OneSelMonth"
-                    id="Oneselmonth"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Plan Type <span class="text-danger">*</span></label>
+                  <vue-select :options="OneSelMonth" id="Oneselmonth" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Ammount<span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Ammount<span class="text-danger">*</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Payment Date <span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Payment Date <span class="text-danger">*</span></label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -510,18 +367,10 @@
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Next Payment Date <span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Next Payment Date <span class="text-danger">*</span></label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -530,18 +379,10 @@
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Expiring On <span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Expiring On <span class="text-danger">*</span></label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateTwo"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateTwo" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -568,39 +409,23 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Company Detail</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
         <div class="moday-body">
           <div class="p-3">
-            <div
-              class="d-flex justify-content-between align-items-center rounded bg-light p-3"
-            >
+            <div class="d-flex justify-content-between align-items-center rounded bg-light p-3">
               <div class="file-name-icon d-flex align-items-center">
-                <a
-                  href="javascript:void(0);"
-                  class="avatar avatar-md border rounded-circle flex-shrink-0 me-2"
-                >
-                  <img
-                    src="@/assets/img/company/company-01.svg"
-                    class="img-fluid"
-                    alt="img"
-                  />
+                <a href="#" class="avatar avatar-md border rounded-circle flex-shrink-0 me-2">
+                  <img src="@/assets/img/company/company-01.svg" class="img-fluid" alt="img" />
                 </a>
                 <div>
                   <p class="text-gray-9 fw-medium mb-0">BrightWave Innovations</p>
                   <p>michael@example.com</p>
                 </div>
               </div>
-              <span class="badge badge-success"
-                ><i class="ti ti-point-filled"></i>Active</span
-              >
+              <span class="badge badge-success"><i class="ti ti-point-filled"></i>Active</span>
             </div>
           </div>
           <div class="p-3">
@@ -704,15 +529,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/super-admin/companies" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/super-admin/companies" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

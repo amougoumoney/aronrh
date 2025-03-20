@@ -27,12 +27,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Pages</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -66,25 +61,14 @@ export default {
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Location</label>
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="tags"
-                  />
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="tags" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Visibility</label>
-                  <vue-select
-                    :options="Visibility"
-                    id="visibilitys"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="Visibility" id="visibilitys" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-12">
@@ -119,12 +103,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Pages</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -158,25 +137,14 @@ export default {
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Location</label>
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="tagsOne"
-                  />
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="tagsOne" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Visibility</label>
-                  <vue-select
-                    :options="Visibility"
-                    id="visibilitys-one"
-                    placeholder="Show"
-                  />
+                  <vue-select :options="Visibility" id="visibilitys-one" placeholder="Show" />
                 </div>
               </div>
               <div class="col-md-12">
@@ -188,11 +156,7 @@ export default {
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="Status"
-                    id="pages-status-one"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="Status" id="pages-status-one" placeholder="Active" />
                 </div>
               </div>
             </div>
@@ -222,15 +186,8 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/content/pages" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/content/pages" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

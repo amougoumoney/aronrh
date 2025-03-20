@@ -15,8 +15,8 @@
             <input type="text" class="form-control date-range bookingrange" placeholder="dd/mm/yyyy - dd/mm/yyyy" />
           </div>
           <div class="ms-2 head-icons">
-            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
+              id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -153,19 +153,19 @@
             <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
               <h5 class="mb-2">Companies</h5>
               <div class="dropdown mb-2">
-                <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   <i class="ti ti-calendar me-1"></i>This Week
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
+                    <a href="#" class="dropdown-item rounded-1">This Month</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
+                    <a href="#" class="dropdown-item rounded-1">This Week</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
+                    <a href="#" class="dropdown-item rounded-1">Today</a>
                   </li>
                 </ul>
               </div>
@@ -190,19 +190,19 @@
             <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
               <h5 class="mb-2">Revenue</h5>
               <div class="dropdown mb-2">
-                <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   <i class="ti ti-calendar me-1"></i>2025
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">2024</a>
+                    <a href="#" class="dropdown-item rounded-1">2024</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">2025</a>
+                    <a href="#" class="dropdown-item rounded-1">2025</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">2023</a>
+                    <a href="#" class="dropdown-item rounded-1">2023</a>
                   </li>
                 </ul>
               </div>
@@ -235,19 +235,19 @@
             <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
               <h5 class="mb-2">Top Plans</h5>
               <div class="dropdown mb-2">
-                <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   <i class="ti ti-calendar me-1"></i>This Month
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
+                    <a href="#" class="dropdown-item rounded-1">This Month</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
+                    <a href="#" class="dropdown-item rounded-1">This Week</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
+                    <a href="#" class="dropdown-item rounded-1">Today</a>
                   </li>
                 </ul>
               </div>
@@ -506,19 +506,18 @@
             <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
               <h5 class="mb-2">Recent Plan Expired</h5>
               <div class="dropdown mb-2">
-                <a href="javascript:void(0);"
-                  class="dropdown-toggle btn btn-white border-0 btn-sm d-inline-flex align-items-center fs-13"
+                <a href="#" class="dropdown-toggle btn btn-white border-0 btn-sm d-inline-flex align-items-center fs-13"
                   data-bs-toggle="dropdown">
                   Expired
                 </a>
                 <div class="dropdown-menu dropdown-menu-end p-3">
                   <ul class="nav d-block">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item d-block rounded-1" data-bs-toggle="tab"
+                      <a href="#" class="dropdown-item d-block rounded-1" data-bs-toggle="tab"
                         data-bs-target="#expired">Expired</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item d-block rounded-1" data-bs-toggle="tab"
+                      <a href="#" class="dropdown-item d-block rounded-1" data-bs-toggle="tab"
                         data-bs-target="#request">Request</a>
                     </li>
                   </ul>
@@ -541,7 +540,7 @@
                       </div>
                     </div>
                     <div class="text-sm-end mb-2">
-                      <a href="javascript:void(0);" class="link-info text-decoration-underline d-block mb-1">Send
+                      <a href="#" class="link-info text-decoration-underline d-block mb-1">Send
                         Reminder</a>
                       <p class="fs-13">Basic (Monthly)</p>
                     </div>
@@ -559,7 +558,7 @@
                       </div>
                     </div>
                     <div class="text-sm-end mb-2">
-                      <a href="javascript:void(0);" class="link-info text-decoration-underline d-block mb-1">Send
+                      <a href="#" class="link-info text-decoration-underline d-block mb-1">Send
                         Reminder</a>
                       <p class="fs-13">Enterprise (Yearly)</p>
                     </div>
@@ -577,7 +576,7 @@
                       </div>
                     </div>
                     <div class="text-sm-end mb-2">
-                      <a href="javascript:void(0);" class="link-info text-decoration-underline d-block mb-1">Send
+                      <a href="#" class="link-info text-decoration-underline d-block mb-1">Send
                         Reminder</a>
                       <p class="fs-13">Advanced (Monthly)</p>
                     </div>
@@ -595,7 +594,7 @@
                       </div>
                     </div>
                     <div class="text-sm-end mb-2">
-                      <a href="javascript:void(0);" class="link-info text-decoration-underline d-block mb-1">Send
+                      <a href="#" class="link-info text-decoration-underline d-block mb-1">Send
                         Reminder</a>
                       <p class="fs-13">Enterprise (Monthly)</p>
                     </div>
@@ -613,7 +612,7 @@
                       </div>
                     </div>
                     <div class="text-sm-end mb-2">
-                      <a href="javascript:void(0);" class="link-info text-decoration-underline d-block mb-1">Send
+                      <a href="#" class="link-info text-decoration-underline d-block mb-1">Send
                         Reminder</a>
                       <p class="fs-13">Premium (Yearly)</p>
                     </div>
@@ -633,10 +632,8 @@
                       </div>
                     </div>
                     <div class="d-flex align-items-center">
-                      <a href="javascript:void(0);"
-                        class="link-success text-decoration-underline fs-13 fw-medium me-3">Approve</a>
-                      <a href="javascript:void(0);"
-                        class="link-danger text-decoration-underline fs-13 fw-medium">Reject</a>
+                      <a href="#" class="link-success text-decoration-underline fs-13 fw-medium me-3">Approve</a>
+                      <a href="#" class="link-danger text-decoration-underline fs-13 fw-medium">Reject</a>
                     </div>
                   </div>
                   <div class="d-flex justify-content-between mb-4">
@@ -652,10 +649,8 @@
                       </div>
                     </div>
                     <div class="d-flex align-items-center">
-                      <a href="javascript:void(0);"
-                        class="link-success text-decoration-underline fs-13 fw-medium me-3">Approve</a>
-                      <a href="javascript:void(0);"
-                        class="link-danger text-decoration-underline fs-13 fw-medium">Reject</a>
+                      <a href="#" class="link-success text-decoration-underline fs-13 fw-medium me-3">Approve</a>
+                      <a href="#" class="link-danger text-decoration-underline fs-13 fw-medium">Reject</a>
                     </div>
                   </div>
                   <div class="d-flex justify-content-between mb-4">
@@ -671,10 +666,8 @@
                       </div>
                     </div>
                     <div class="d-flex align-items-center">
-                      <a href="javascript:void(0);"
-                        class="link-success text-decoration-underline fs-13 fw-medium me-3">Approve</a>
-                      <a href="javascript:void(0);"
-                        class="link-danger text-decoration-underline fs-13 fw-medium">Reject</a>
+                      <a href="#" class="link-success text-decoration-underline fs-13 fw-medium me-3">Approve</a>
+                      <a href="#" class="link-danger text-decoration-underline fs-13 fw-medium">Reject</a>
                     </div>
                   </div>
                   <div class="d-flex justify-content-between mb-4">
@@ -690,10 +683,8 @@
                       </div>
                     </div>
                     <div class="d-flex align-items-center">
-                      <a href="javascript:void(0);"
-                        class="link-success text-decoration-underline fs-13 fw-medium me-3">Approve</a>
-                      <a href="javascript:void(0);"
-                        class="link-danger text-decoration-underline fs-13 fw-medium">Reject</a>
+                      <a href="#" class="link-success text-decoration-underline fs-13 fw-medium me-3">Approve</a>
+                      <a href="#" class="link-danger text-decoration-underline fs-13 fw-medium">Reject</a>
                     </div>
                   </div>
                   <div class="d-flex justify-content-between mb-0">
@@ -709,10 +700,8 @@
                       </div>
                     </div>
                     <div class="d-flex align-items-center">
-                      <a href="javascript:void(0);"
-                        class="link-success text-decoration-underline fs-13 fw-medium me-3">Approve</a>
-                      <a href="javascript:void(0);"
-                        class="link-danger text-decoration-underline fs-13 fw-medium">Reject</a>
+                      <a href="#" class="link-success text-decoration-underline fs-13 fw-medium me-3">Approve</a>
+                      <a href="#" class="link-danger text-decoration-underline fs-13 fw-medium">Reject</a>
                     </div>
                   </div>
                 </div>
@@ -728,7 +717,7 @@
       <p class="mb-0">2014-2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        <a href="#" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Client</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -18,50 +13,28 @@
           <div class="contact-grids-tab">
             <ul class="nav nav-underline" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="info-tab2"
-                  data-bs-toggle="tab"
-                  data-bs-target="#basic-info2"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
+                <button class="nav-link active" id="info-tab2" data-bs-toggle="tab" data-bs-target="#basic-info2"
+                  type="button" role="tab" aria-selected="true">
                   Basic Information
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="address-tab2"
-                  data-bs-toggle="tab"
-                  data-bs-target="#address2"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                >
+                <button class="nav-link" id="address-tab2" data-bs-toggle="tab" data-bs-target="#address2" type="button"
+                  role="tab" aria-selected="false">
                   Permissions
                 </button>
               </li>
             </ul>
           </div>
           <div class="tab-content" id="myTabContent2">
-            <div
-              class="tab-pane fade show active"
-              id="basic-info2"
-              role="tabpanel"
-              aria-labelledby="info-tab2"
-              tabindex="0"
-            >
+            <div class="tab-pane fade show active" id="basic-info2" role="tabpanel" aria-labelledby="info-tab2"
+              tabindex="0">
               <div class="modal-body pb-0">
                 <div class="row">
                   <div class="col-md-12">
-                    <div
-                      class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                    >
+                    <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                       <div
-                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                      >
+                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
                         <i class="ti ti-photo"></i>
                       </div>
                       <div class="profile-upload">
@@ -74,18 +47,14 @@
                             Upload
                             <input type="file" class="form-control image-sign" multiple />
                           </div>
-                          <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                            >Cancel</a
-                          >
+                          <a href="#" class="btn btn-light btn-sm">Cancel</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >First Name <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">First Name <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" value="Michael" />
                     </div>
                   </div>
@@ -97,126 +66,78 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Username <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Username <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" value="Michael Walker" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Email</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        value="michael@example.com"
-                      />
+                      <input type="text" class="form-control" value="michael@example.com" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Password <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Password <span class="text-danger"> *</span></label>
                       <div class="pass-group">
-                        <input
-                          :type="showPassword ? 'text' : 'password'"
-                          class="pass-input form-control"
-                          value="1234"
-                        />
-                        <span
-                          @click="toggleShow"
-                          class="ti toggle-password"
-                          :class="{
-                            'ti-eye': showPassword,
-                            'ti-eye-off': !showPassword,
-                          }"
-                        ></span>
+                        <input :type="showPassword ? 'text' : 'password'" class="pass-input form-control"
+                          value="1234" />
+                        <span @click="toggleShow" class="ti toggle-password" :class="{
+                          'ti-eye': showPassword,
+                          'ti-eye-off': !showPassword,
+                        }"></span>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Confirm Password <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Confirm Password <span class="text-danger"> *</span></label>
                       <div class="pass-group">
-                        <input
-                          :type="showPassword1 ? 'text' : 'password'"
-                          class="pass-inputs form-control"
-                          value="1234"
-                        />
-                        <span
-                          @click="toggleShow1"
-                          class="ti toggle-passwords"
-                          :class="{
-                            'ti-eye': showPassword1,
-                            'ti-eye-off': !showPassword1,
-                          }"
-                        ></span>
+                        <input :type="showPassword1 ? 'text' : 'password'" class="pass-inputs form-control"
+                          value="1234" />
+                        <span @click="toggleShow1" class="ti toggle-passwords" :class="{
+                          'ti-eye': showPassword1,
+                          'ti-eye-off': !showPassword1,
+                        }"></span>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Phone Number <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Phone Number <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" value="(163) 2459 315" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Company</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        value="BrightWave Innovations"
-                      />
+                      <input type="text" class="form-control" value="BrightWave Innovations" />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Address <span class="text-danger"> *</span></label
-                      >
+                      <label class="form-label">Address <span class="text-danger"> *</span></label>
                       <input type="text" class="form-control" value="" />
                     </div>
                   </div>
                 </div>
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-outline-light border me-2"
-                  data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-light border me-2" data-bs-dismiss="modal">
                   Cancel
                 </button>
                 <button type="submit" class="btn btn-primary">Save</button>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="address2"
-              role="tabpanel"
-              aria-labelledby="address-tab2"
-              tabindex="0"
-            >
+            <div class="tab-pane fade" id="address2" role="tabpanel" aria-labelledby="address-tab2" tabindex="0">
               <div class="modal-body pb-0">
                 <div class="card bg-light-500 shadow-none">
-                  <div
-                    class="card-body d-flex align-items-center justify-content-between flex-wrap row-gap-3"
-                  >
+                  <div class="card-body d-flex align-items-center justify-content-between flex-wrap row-gap-3">
                     <h6>Enable Options</h6>
                     <div class="d-flex align-items-center justify-content-end">
                       <div class="form-check form-check-md form-switch me-2">
                         <label class="form-check-label mt-0">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            role="switch"
-                          />
+                          <input class="form-check-input me-2" type="checkbox" role="switch" />
                           Enable all Module
                         </label>
                       </div>
@@ -236,12 +157,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                                checked
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" checked />
                               Holidays
                             </label>
                           </div>
@@ -299,11 +215,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Leaves
                             </label>
                           </div>
@@ -361,11 +273,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Clients
                             </label>
                           </div>
@@ -423,11 +331,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Projects
                             </label>
                           </div>
@@ -485,11 +389,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Tasks
                             </label>
                           </div>
@@ -547,11 +447,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Chats
                             </label>
                           </div>
@@ -609,11 +505,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Assets
                             </label>
                           </div>
@@ -671,11 +563,7 @@
                         <td>
                           <div class="form-check form-check-md form-switch me-2">
                             <label class="form-check-label mt-0">
-                              <input
-                                class="form-check-input me-2"
-                                type="checkbox"
-                                role="switch"
-                              />
+                              <input class="form-check-input me-2" type="checkbox" role="switch" />
                               Timing Sheets
                             </label>
                           </div>
@@ -734,11 +622,7 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-outline-light border me-2"
-                  data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-light border me-2" data-bs-dismiss="modal">
                   Cancel
                 </button>
                 <button type="submit" class="btn btn-primary">Save</button>
@@ -757,12 +641,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Todo</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -772,41 +651,25 @@
               <div class="col-12">
                 <div class="mb-3">
                   <label class="form-label">Todo Title</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Update calendar and schedule"
-                  />
+                  <input type="text" class="form-control" value="Update calendar and schedule" />
                 </div>
               </div>
               <div class="col-6">
                 <div class="mb-3">
                   <label class="form-label">Tag</label>
-                  <vue-select
-                    :options="InternalSel"
-                    id="internalsel"
-                    placeholder="Internal"
-                  />
+                  <vue-select :options="InternalSel" id="internalsel" placeholder="Internal" />
                 </div>
               </div>
               <div class="col-6">
                 <div class="mb-3">
                   <label class="form-label">Priority</label>
-                  <vue-select
-                    :options="MediumSelec"
-                    id="mediumselec"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="MediumSelec" id="mediumselec" placeholder="Select" />
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="mb-3">
                   <label class="form-label">Descriptions</label>
-                  <ckeditor
-                    :editor="editor"
-                    v-model="editorData"
-                    :config="editorConfig"
-                  ></ckeditor>
+                  <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                 </div>
               </div>
               <div class="col-12">
@@ -841,17 +704,12 @@
       <div class="modal-content">
         <div class="modal-header bg-dark">
           <h4 class="modal-title text-white">Respond to any pending messages</h4>
-          <span class="badge badge-danger d-inline-flex align-items-center"
-            ><i class="ti ti-square me-1"></i>Urgent</span
-          >
+          <span class="badge badge-danger d-inline-flex align-items-center"><i
+              class="ti ti-square me-1"></i>Urgent</span>
           <span><i class="ti ti-star-filled text-warning"></i></span>
-          <a href="javascript:void(0);"><i class="ti ti-trash text-white"></i></a>
-          <button
-            type="button"
-            class="btn-close custom-btn-close bg-transparent fs-16 text-white position-static"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <a href="#"><i class="ti ti-trash text-white"></i></a>
+          <button type="button" class="btn-close custom-btn-close bg-transparent fs-16 text-white position-static"
+            data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -903,25 +761,13 @@
             <h5 class="mb-2">Assignee</h5>
             <div class="avatar-list-stacked avatar-group-sm">
               <span class="avatar avatar-rounded">
-                <img
-                  class="border border-white"
-                  src="@/assets/img/profiles/avatar-23.jpg"
-                  alt="img"
-                />
+                <img class="border border-white" src="@/assets/img/profiles/avatar-23.jpg" alt="img" />
               </span>
               <span class="avatar avatar-rounded">
-                <img
-                  class="border border-white"
-                  src="@/assets/img/profiles/avatar-24.jpg"
-                  alt="img"
-                />
+                <img class="border border-white" src="@/assets/img/profiles/avatar-24.jpg" alt="img" />
               </span>
               <span class="avatar avatar-rounded">
-                <img
-                  class="border border-white"
-                  src="@/assets/img/profiles/avatar-25.jpg"
-                  alt="img"
-                />
+                <img class="border border-white" src="@/assets/img/profiles/avatar-25.jpg" alt="img" />
               </span>
             </div>
           </div>
@@ -935,16 +781,9 @@
   <div class="modal fade" id="add_notes" role="dialog">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div
-          class="modal-header header-border align-items-center justify-content-between"
-        >
+        <div class="modal-header header-border align-items-center justify-content-between">
           <h5 class="modal-title">Add New Note</h5>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -959,19 +798,13 @@
               <textarea class="form-control" rows="4"></textarea>
             </div>
             <div class="mb-3">
-              <label class="form-label"
-                >Attachment <span class="text-danger"> *</span></label
-              >
+              <label class="form-label">Attachment <span class="text-danger"> *</span></label>
               <div
-                class="d-flex align-items-center justify-content-center border border-dashed rounded p-3 flex-column"
-              >
-                <span class="avatar avatar-lg avatar-rounded bg-primary-transparent mb-2"
-                  ><i class="ti ti-folder-open fs-24"></i
-                ></span>
+                class="d-flex align-items-center justify-content-center border border-dashed rounded p-3 flex-column">
+                <span class="avatar avatar-lg avatar-rounded bg-primary-transparent mb-2"><i
+                    class="ti ti-folder-open fs-24"></i></span>
                 <p class="fs-14 text-center mb-2">Drag and drop your files</p>
-                <div
-                  class="file-upload position-relative btn btn-sm btn-primary px-3 mb-2"
-                >
+                <div class="file-upload position-relative btn btn-sm btn-primary px-3 mb-2">
                   <i class="ti ti-upload me-1"></i>Upload
                   <input type="file" accept="video/image" />
                 </div>
@@ -983,27 +816,17 @@
                 <h6 class="fw-medium mb-1">Projectneonals teyys.xls</h6>
                 <p class="mb-2">4.25 MB</p>
                 <div class="progress progress-xs mb-2">
-                  <div
-                    class="progress-bar bg-success"
-                    role="progressbar"
-                    style="width: 45%"
-                    aria-valuenow="25"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p>45%</p>
               </div>
-              <div
-                class="d-flex align-items-center justify-content-between bg-light-500 rounded p-3"
-              >
+              <div class="d-flex align-items-center justify-content-between bg-light-500 rounded p-3">
                 <div>
                   <h6 class="fw-medium mb-1">tes.txt</h6>
                   <p>1.2 MB</p>
                 </div>
-                <a href="javascript:void(0);" class="btn btn-sm btn-icon text-danger"
-                  ><i class="ti ti-trash fs-20"></i
-                ></a>
+                <a href="#" class="btn btn-sm btn-icon text-danger"><i class="ti ti-trash fs-20"></i></a>
               </div>
             </div>
           </div>
@@ -1034,15 +857,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/projects/clients-details" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/projects/clients-details" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>
