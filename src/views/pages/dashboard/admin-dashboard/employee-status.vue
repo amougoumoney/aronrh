@@ -1,17 +1,9 @@
-<script>
+<script setup>
+import { ref } from "vue";
 import Vue3ChartJs from "@j-t-mcc/vue3-chartjs";
 import { attendancejs } from "./data";
 
-export default {
-  data() {
-    return {
-      attendancejs: attendancejs,
-    };
-  },
-  components: {
-    Vue3ChartJs,
-  },
-};
+const attendanceData = ref(attendancejs);
 </script>
 
 <template>
@@ -157,7 +149,7 @@ export default {
         <div class="card-body">
           <div class="chartjs-wrapper-demo position-relative mb-4">
             <vue3-chart-js id="attendance" height="200" class="chartjs-chart"
-              v-bind="{ ...attendancejs }"></vue3-chart-js>
+              v-bind="{ ...attendanceData }"></vue3-chart-js>
             <div class="position-absolute text-center attendance-canvas">
               <p class="fs-13 mb-1">{{ $t('totalAttendance') }}</p>
               <h3>120</h3>

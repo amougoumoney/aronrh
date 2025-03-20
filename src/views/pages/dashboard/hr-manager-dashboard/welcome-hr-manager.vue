@@ -195,14 +195,6 @@
     <!-- /Employees By Department -->
   </div>
 </template>
-<script>
+<script setup>
 import { empDepartment } from "./data";
-
-export default {
-  data() {
-    return {
-      empDepartment: empDepartment,
-    };
-  },
-};
 </script>

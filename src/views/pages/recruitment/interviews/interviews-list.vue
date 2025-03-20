@@ -1,6 +1,4 @@
 <template>
-  <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar>
   <!-- Page Wrapper -->
   <div class="page-wrapper">
     <div class="content">
@@ -114,91 +112,85 @@
   <interview-modal ref="interviewModal" @interview-added="onInterviewAdded" />
 </template>
 
-<script>
-import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
-import { interviewService } from '@/services/interview.service';
+<script setup>
+import { ref, computed, onMounted } from "vue";
+import router from "../../../../router";
+import indexBreadcrumb from "@/components/breadcrumb/index-breadcrumb.vue";
+import { interviewService } from "@/services/interview.service";
+import interviewModal from "../../../../components/modal/interview-modal.vue";
+const title = ref("Interviews");
+const text = ref("Recruitment");
+const text1 = ref("Interviews List");
 
-export default {
-  name: 'InterviewsList',
-  components: {
-    indexBreadcrumb,
+const interviews = ref([]);
+const currentPage = ref(1);
+const pageSize = ref(10);
+const totalInterviews = ref(0);
+const searchTerm = ref("");
 
-  },
-  data() {
-    return {
-      title: 'Interviews',
-      text: 'Recruitment',
-      text1: 'Interviews List',
-      interviews: [],
-      currentPage: 1,
-      pageSize: 10,
-      totalInterviews: 0,
-      searchTerm: ''
-    };
-  },
-  methods: {
-    async fetchInterviews() {
-      try {
-        const response = await interviewService.getAllInterviews();
-        this.interviews = response.data.map(interview => ({
-          id: interview.id,
-          candidateName: interview.candidateName,
-          position: interview.job_position,
-          interviewDate: interview.interview_date,
-          interviewTime: interview.start_time,
-          interviewType: interview.interview_mode,
-          status: interview.interview_status,
-          feedback: interview.feedback,
-          score: interview.score
-        }));
-      } catch (error) {
-        console.error('Error fetching interviews:', error);
-      }
-    },
-
-    onInterviewAdded(interview) {
-      this.interviews.push({
-        id: this.interviews.length + 1,
-        ...interview
-      });
-    },
-
-    getStatusClass(status) {
-      const statusClasses = {
-        'Scheduled': 'bg-warning-light',
-        'Completed': 'bg-success-light',
-        'Cancelled': 'bg-danger-light',
-        'In Progress': 'bg-info-light'
-      };
-      return statusClasses[status] || 'bg-secondary-light';
-    },
-    formatDate(date) {
-      if (!date) return '';
-      return new Date(date).toLocaleDateString();
-    },
-    viewInterviewDetails(interviewId) {
-      this.$router.push(`/interviews/details/${interviewId}`);
-    },
-    editInterviewDetails(interviewId) {
-      this.$router.push(`/interviews/edit/${interviewId}`);
-    },
-    addFeedback(interviewId) {
-      this.$router.push(`/interviews/feedback/${interviewId}`);
-    },
-    async deleteInterviewRecord(interviewId) {
-      if (confirm('Are you sure you want to delete this interview record?')) {
-        try {
-          await interviewService.deleteInterview(interviewId);
-          this.interviews = this.interviews.filter(interview => interview.id !== interviewId);
-        } catch (error) {
-          console.error('Error deleting interview:', error);
-        }
-      }
-    },
-  },
-
-  mounted() {
-    this.fetchInterviews();
+const fetchInterviews = async () => {
+  try {
+    const response = await interviewService.getAllInterviews();
+    interviews.value = response.data.map((interview) => ({
+      id: interview.id,
+      candidateName: interview.candidateName,
+      position: interview.job_position,
+      interviewDate: interview.interview_date,
+      interviewTime: interview.start_time,
+      interviewType: interview.interview_mode,
+      status: interview.interview_status,
+      feedback: interview.feedback,
+      score: interview.score,
+    }));
+  } catch (error) {
+    console.error("Error fetching interviews:", error);
   }
 };
+
+const onInterviewAdded = (interview) => {
+  interviews.value.push({
+    id: interviews.value.length + 1,
+    ...interview,
+  });
+};
+
+const getStatusClass = (status) => {
+  const statusClasses = {
+    Scheduled: "bg-warning-light",
+    Completed: "bg-success-light",
+    Cancelled: "bg-danger-light",
+    "In Progress": "bg-info-light",
+  };
+  return statusClasses[status] || "bg-secondary-light";
+};
+
+const formatDate = (date) => {
+  if (!date) return "";
+  return new Date(date).toLocaleDateString();
+};
+
+const viewInterviewDetails = (interviewId) => {
+  router.push(`/interviews/details/${interviewId}`);
+};
+
+const editInterviewDetails = (interviewId) => {
+  router.push(`/interviews/edit/${interviewId}`);
+};
+
+const addFeedback = (interviewId) => {
+  router.push(`/interviews/feedback/${interviewId}`);
+};
+
+const deleteInterviewRecord = async (interviewId) => {
+  if (confirm("Are you sure you want to delete this interview record?")) {
+    try {
+      await interviewService.deleteInterview(interviewId);
+      interviews.value = interviews.value.filter((interview) => interview.id !== interviewId);
+    } catch (error) {
+      console.error("Error deleting interview:", error);
+    }
+  }
+};
+
+onMounted(fetchInterviews);
 </script>

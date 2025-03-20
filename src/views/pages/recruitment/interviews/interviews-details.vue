@@ -1,6 +1,5 @@
 <template>
-  <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar>
+
   <!-- Page Wrapper -->
   <div class="page-wrapper">
     <div class="content">
@@ -109,66 +108,61 @@
   </div>
 </template>
 
-<script>
-import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
+<script setup>
+import { ref, onMounted, computed } from "vue";
+import indexBreadcrumb from "@/components/breadcrumb/index-breadcrumb.vue";
+import router from "../../../../router";
 
-export default {
-  name: 'InterviewsDetails',
-  components: {
-    indexBreadcrumb
-  },
-  data() {
-    return {
-      title: 'Interview Details',
-      text: 'Recruitment',
-      text1: 'Interview Details',
-      interview: {
-        id: '',
-        job_position: '',
-        interview_date: '',
-        start_time: '',
-        end_time: '',
-        interviewer_name: '',
-        interview_mode: '',
-        interview_status: '',
-        score: '',
-        candidate_name: '',
-        candidate_email: '',
-        candidate_phone: '',
-        feedback: ''
-      }
-    };
-  },
-  methods: {
-    getStatusClass(status) {
-      const statusClasses = {
-        'Scheduled': 'bg-warning-light',
-        'Completed': 'bg-success-light',
-        'Cancelled': 'bg-danger-light',
-        'In Progress': 'bg-info-light'
-      };
-      return statusClasses[status] || 'bg-secondary-light';
-    },
-    formatDate(date) {
-      return date ? new Date(date).toLocaleDateString() : 'N/A';
-    },
-    formatTime(time) {
-      return time ? time.substring(0, 5) : 'N/A'; // Format HH:mm
-    },
-    async fetchInterviewDetails() {
-      try {
-        const interviewId = this.$route.params.id;
-        console.log(interviewId);
-        // Implement API call to fetch interview details
-        // const response = await interviewService.getInterviewDetails(interviewId);
-        // this.interview = response.data;
-      } catch (error) {
-        console.error('Error fetching interview details:', error);
-      }
-    }
-  },
-  mounted() {
-    this.fetchInterviewDetails();
+const interviewId = computed(() => router.currentRoute.value.params.id);
+
+const title = ref("Interview Details");
+const text = ref("Recruitment");
+const text1 = ref("Interview Details");
+
+const interview = ref({
+  id: "",
+  job_position: "",
+  interview_date: "",
+  start_time: "",
+  end_time: "",
+  interviewer_name: "",
+  interview_mode: "",
+  interview_status: "",
+  score: "",
+  candidate_name: "",
+  candidate_email: "",
+  candidate_phone: "",
+  feedback: "",
+});
+
+const getStatusClass = (status) => {
+  const statusClasses = {
+    Scheduled: "bg-warning-light",
+    Completed: "bg-success-light",
+    Cancelled: "bg-danger-light",
+    "In Progress": "bg-info-light",
+  };
+  return statusClasses[status] || "bg-secondary-light";
+};
+
+const formatDate = (date) => {
+  return date ? new Date(date).toLocaleDateString() : "N/A";
+};
+
+const formatTime = (time) => {
+  return time ? time.substring(0, 5) : "N/A"; // Format HH:mm
+};
+
+const fetchInterviewDetails = async () => {
+  try {
+    console.log(interviewId.value);
+    // Implement API call to fetch interview details
+    // const response = await interviewService.getInterviewDetails(interviewId.value);
+    // interview.value = response.data;
+  } catch (error) {
+    console.error("Error fetching interview details:", error);
   }
 };
+
+onMounted(fetchInterviewDetails);
 </script>

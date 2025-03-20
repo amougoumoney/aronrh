@@ -1,6 +1,5 @@
 <template>
-  <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar>
+
 
   <div class="page-wrapper">
     <div class="content">
@@ -109,53 +108,51 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'GrantDetails',
-  data() {
-    return {
-      title: 'Grant Details',
-      text: 'Grant',
-      text1: 'Grant Details',
-      grantId: this.$route.params.id,
-      grant: {
-        name: 'Research Grant 2024',
-        amount: '$50,000',
-        startDate: '01/01/2024',
-        endDate: '12/31/2024',
-        status: 'Active',
-        department: 'Research & Development',
-        investigator: 'Dr. John Smith',
-        description: 'This grant is focused on advancing research in artificial intelligence and its applications in healthcare.',
-        documents: [
-          { id: 1, name: 'Grant Proposal.pdf', size: '2.5 MB' },
-          { id: 2, name: 'Budget Plan.xlsx', size: '1.8 MB' }
-        ],
-        activities: [
-          { id: 1, date: '01/01/2024', description: 'Grant approved and initiated' },
-          { id: 2, date: '01/15/2024', description: 'First milestone completed' }
-        ]
-      }
-    };
-  },
-  methods: {
-    getStatusClass(status) {
-      switch (status.toLowerCase()) {
-        case 'active':
-          return 'bg-success';
-        case 'pending':
-          return 'bg-warning';
-        case 'completed':
-          return 'bg-info';
-        case 'cancelled':
-          return 'bg-danger';
-        default:
-          return 'bg-secondary';
-      }
-    }
+<script setup>
+import { ref, computed } from "vue";
+import router from "../../../router";
+const grantId = computed(() => router.currentRoute.value.params.id);
+
+const title = ref("Grant Details");
+const text = ref("Grant");
+const text1 = ref("Grant Details");
+
+const grant = ref({
+  name: "Research Grant 2024",
+  amount: "$50,000",
+  startDate: "01/01/2024",
+  endDate: "12/31/2024",
+  status: "Active",
+  department: "Research & Development",
+  investigator: "Dr. John Smith",
+  description:
+    "This grant is focused on advancing research in artificial intelligence and its applications in healthcare.",
+  documents: [
+    { id: 1, name: "Grant Proposal.pdf", size: "2.5 MB" },
+    { id: 2, name: "Budget Plan.xlsx", size: "1.8 MB" },
+  ],
+  activities: [
+    { id: 1, date: "01/01/2024", description: "Grant approved and initiated" },
+    { id: 2, date: "01/15/2024", description: "First milestone completed" },
+  ],
+});
+
+const getStatusClass = (status) => {
+  switch (status.toLowerCase()) {
+    case "active":
+      return "bg-success";
+    case "pending":
+      return "bg-warning";
+    case "completed":
+      return "bg-info";
+    case "cancelled":
+      return "bg-danger";
+    default:
+      return "bg-secondary";
   }
 };
 </script>
+
 
 <style scoped>
 .project-info {

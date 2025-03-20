@@ -138,171 +138,149 @@
   <grant-upload-modal ref="grantUploadModal" @submit="handleGrantUploadSubmit" />
 </template>
 
-<script>
-import GrantModal from '@/components/modal/grant-modal.vue';
-import GrantUploadModal from '@/components/modal/grant-upload-modal.vue';
-import { Modal } from 'bootstrap';
-import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
-import { grantService } from '@/services/grant.service';
+<script setup>
+import { ref, computed, onMounted } from "vue";
+import GrantModal from "@/components/modal/grant-modal.vue";
+import GrantUploadModal from "@/components/modal/grant-upload-modal.vue";
+import indexBreadcrumb from "@/components/breadcrumb/index-breadcrumb.vue";
+import { grantService } from "@/services/grant.service";
+import { Modal } from "bootstrap";
 
-export default {
-  name: 'GrantList',
-  components: {
-    GrantModal,
-    GrantUploadModal,
-    indexBreadcrumb
-  },
-  data() {
-    return {
-      title: 'Grants',
-      text: 'Grants',
-      text1: 'Grant List',
-      grants: [],
-      currentPage: 1,
-      pageSize: 10,
-      totalGrants: 0,
-      searchTerm: ''
-    };
-  },
+const title = ref("Grants");
+const text = ref("Grants");
+const text1 = ref("Grant List");
+const grants = ref([]);
+const currentPage = ref(1);
+const pageSize = ref(10);
+const totalGrants = ref(0);
+const searchTerm = ref("");
 
-  computed: {
-    totalPages() {
-      return Math.ceil(this.totalGrants / this.pageSize);
-    },
-    paginatedGrants() {
-      const start = (this.currentPage - 1) * this.pageSize;
-      const end = start + this.pageSize;
-      return this.grants.slice(start, end);
-    }
-  },
+const totalPages = computed(() => Math.ceil(totalGrants.value / pageSize.value));
 
-  mounted() {
-    this.fetchGrants();
-  },
-  methods: {
-    async fetchGrants() {
-      try {
-        const response = await grantService.getGrants();
-        // Check if response.data exists and is an array; if not, assume response is the array
-        const grantsData = Array.isArray(response.data)
-          ? response.data
-          : Array.isArray(response)
-            ? response
-            : [];
+const paginatedGrants = computed(() => {
+  const start = (currentPage.value - 1) * pageSize.value;
+  const end = start + pageSize.value;
+  return grants.value.slice(start, end);
+});
 
-        this.grants = grantsData.map(grant => ({
-          id: grant.id,
-          code: grant.code,
-          name: grant.name,
-          amount: grant.amount || this.calculateTotalAmount(grant.grant_items),
-          startDate: grant.startDate || new Date().toLocaleDateString(),
-          endDate:
-            grant.endDate ||
-            new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toLocaleDateString(),
-          status: grant.status || 'Pending',
-          items: (grant.grant_items || []).map(item => ({
-            id: item.id,
-            bg_line: item.bg_line,
-            grant_position: item.grant_position,
-            grant_salary: item.grant_salary,
-            grant_benefit: item.grant_benefit,
-            grant_level_of_effort: item.grant_level_of_effort,
-            grant_position_number: item.grant_position_number,
-            grant_cost_by_monthly: item.grant_cost_by_monthly,
-            grant_total_cost_by_person: item.grant_total_cost_by_person,
-            grant_total_amount: item.grant_total_amount
-          })),
-          expanded: false
-        }));
+const fetchGrants = async () => {
+  try {
+    const response = await grantService.getGrants();
+    const grantsData = Array.isArray(response.data)
+      ? response.data
+      : Array.isArray(response)
+        ? response
+        : [];
 
-        this.totalGrants = this.grants.length;
-      } catch (error) {
-        console.error('Error fetching grants:', error);
-      }
-    },
+    grants.value = grantsData.map((grant) => ({
+      id: grant.id,
+      code: grant.code,
+      name: grant.name,
+      amount: grant.amount || calculateTotalAmount(grant.grant_items),
+      startDate: grant.startDate || new Date().toLocaleDateString(),
+      endDate:
+        grant.endDate ||
+        new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toLocaleDateString(),
+      status: grant.status || "Pending",
+      items: (grant.grant_items || []).map((item) => ({
+        id: item.id,
+        bg_line: item.bg_line,
+        grant_position: item.grant_position,
+        grant_salary: item.grant_salary,
+        grant_benefit: item.grant_benefit,
+        grant_level_of_effort: item.grant_level_of_effort,
+        grant_position_number: item.grant_position_number,
+        grant_cost_by_monthly: item.grant_cost_by_monthly,
+        grant_total_cost_by_person: item.grant_total_cost_by_person,
+        grant_total_amount: item.grant_total_amount,
+      })),
+      expanded: false,
+    }));
 
-    calculateTotalAmount(items) {
-      if (!items || !items.length) return '0';
-      const total = items.reduce((sum, item) => sum + Number(item.grant_total_amount || 0), 0);
-      return `${total.toFixed(2)}`;
-    },
-
-
-    toggleGrant(grant) {
-      // Toggle the expanded property for the selected grant.
-      grant.expanded = !grant.expanded;
-    },
-
-    getStatusClass(status) {
-      switch (status.toLowerCase()) {
-        case 'active':
-          return 'bg-success';
-        case 'pending':
-          return 'bg-warning';
-        case 'completed':
-          return 'bg-info';
-        case 'cancelled':
-          return 'bg-danger';
-        default:
-          return 'bg-secondary';
-      }
-    },
-    openAddGrantModal() {
-      this.$refs.grantModal.resetForm();
-      new Modal(document.getElementById('grant_modal')).show();
-    },
-
-    openGrantUploadModal() {
-
-      new Modal(document.getElementById('grantUploadModal')).show();
-    },
-
-    openEditGrantModal(grant) {
-      const grantData = {
-        grantName: grant.name,
-        grantCode: grant.code || '',
-        grantBGLine: grant.bgLine || '',
-        grantPosition: grant.position || '',
-        grantSalary: grant.salary || null,
-        grantBenefit: grant.benefit || null,
-        grantLevelOfEffort: grant.levelOfEffort || null,
-        grantPositionNumber: grant.positionNumber || '',
-        grantCostMonthly: grant.costMonthly || null,
-        grantTotalAmountYear: grant.totalAmountYear || null,
-        grantTotalCostByPerson: grant.totalCostByPerson || null,
-        grantPositionId: grant.positionId || ''
-      };
-      this.$refs.grantModal.setEditData(grantData);
-      new Modal(document.getElementById('grant_modal')).show();
-    },
-    handleGrantSubmit(formData) {
-      // Handle the submitted form data
-      console.log('Submitted grant data:', formData);
-      // TODO: Add API call to save/update grant data
-      // For now, just add to the local array
-      if (formData.id) {
-        // Update existing grant
-        const index = this.grants.findIndex(g => g.id === formData.id);
-        if (index !== -1) {
-          this.grants[index] = { ...this.grants[index], ...formData };
-        }
-      } else {
-        // Add new grant
-        this.grants.push({
-          id: this.grants.length + 1,
-          name: formData.grantName,
-          amount: `$${formData.grantTotalAmountYear}`,
-          startDate: new Date().toLocaleDateString(),
-          endDate: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toLocaleDateString(),
-          status: 'Pending'
-        });
-      }
-    },
-    deleteGrant(id) {
-      // TODO: Add confirmation dialog and API call
-      console.log('Delete grant:', id);
-      this.grants = this.grants.filter(grant => grant.id !== id);
-    }
+    totalGrants.value = grants.value.length;
+  } catch (error) {
+    console.error("Error fetching grants:", error);
   }
 };
+
+const calculateTotalAmount = (items) => {
+  if (!items || !items.length) return "0";
+  const total = items.reduce((sum, item) => sum + Number(item.grant_total_amount || 0), 0);
+  return `${total.toFixed(2)}`;
+};
+
+const toggleGrant = (grant) => {
+  grant.expanded = !grant.expanded;
+};
+
+const getStatusClass = (status) => {
+  switch (status.toLowerCase()) {
+    case "active":
+      return "bg-success";
+    case "pending":
+      return "bg-warning";
+    case "completed":
+      return "bg-info";
+    case "cancelled":
+      return "bg-danger";
+    default:
+      return "bg-secondary";
+  }
+};
+
+const openAddGrantModal = (grantModalRef) => {
+  grantModalRef.value?.resetForm();
+  new Modal(document.getElementById("grant_modal")).show();
+};
+
+const openGrantUploadModal = () => {
+  new Modal(document.getElementById("grantUploadModal")).show();
+};
+
+const openEditGrantModal = (grant, grantModalRef) => {
+  const grantData = {
+    grantName: grant.name,
+    grantCode: grant.code || "",
+    grantBGLine: grant.bgLine || "",
+    grantPosition: grant.position || "",
+    grantSalary: grant.salary || null,
+    grantBenefit: grant.benefit || null,
+    grantLevelOfEffort: grant.levelOfEffort || null,
+    grantPositionNumber: grant.positionNumber || "",
+    grantCostMonthly: grant.costMonthly || null,
+    grantTotalAmountYear: grant.totalAmountYear || null,
+    grantTotalCostByPerson: grant.totalCostByPerson || null,
+    grantPositionId: grant.positionId || "",
+  };
+  grantModalRef.value?.setEditData(grantData);
+  new Modal(document.getElementById("grant_modal")).show();
+};
+
+const handleGrantSubmit = (formData) => {
+  console.log("Submitted grant data:", formData);
+  if (formData.id) {
+    const index = grants.value.findIndex((g) => g.id === formData.id);
+    if (index !== -1) {
+      grants.value[index] = { ...grants.value[index], ...formData };
+    }
+  } else {
+    grants.value.push({
+      id: grants.value.length + 1,
+      name: formData.grantName,
+      amount: `$${formData.grantTotalAmountYear}`,
+      startDate: new Date().toLocaleDateString(),
+      endDate: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toLocaleDateString(),
+      status: "Pending",
+    });
+  }
+};
+
+const deleteGrant = (id) => {
+  console.log("Delete grant:", id);
+  grants.value = grants.value.filter((grant) => grant.id !== id);
+};
+
+onMounted(() => {
+  fetchGrants();
+});
 </script>

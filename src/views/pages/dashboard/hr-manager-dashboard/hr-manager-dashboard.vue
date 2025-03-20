@@ -49,7 +49,7 @@
 
       <welcome-wrap></welcome-wrap>
 
-      <employee-status></employee-status>
+      <EmployeeStatus></EmployeeStatus>
 
       <job-applicants></job-applicants>
 
@@ -69,28 +69,28 @@
   </div>
   <hr-manager-dashboard-modal></hr-manager-dashboard-modal>
 </template>
-<script>
+<script setup>
 import { ref } from "vue";
+import LayoutHeader from "../../../layouts/layout-header.vue";
+import layoutSidebar from "../../../layouts/layout-sidebar.vue";
+import welcomeWrap from "../admin-dashboard/welcome-wrap.vue";
+import EmployeeStatus from "../admin-dashboard/employee-status.vue";
+import jobApplicants from "../admin-dashboard/job-applicants.vue";
+import salesOverview from "../admin-dashboard/sales-overview.vue";
+import projectTable from "../admin-dashboard/project-table.vue";
+import schedulesIndex from "../admin-dashboard/schedules-index.vue";
+const title = ref("HR Manager Dashboard");
+const text = ref("Dashboard");
+const text1 = ref("HR Manager Dashboard");
 const value5 = ref();
-export default {
-  data() {
-    return {
-      title: "HR Manager Dashboard",
-      text: "Dashboard",
-      text1: "HR Manager Dashboard",
-      value5,
-      isCollapsed: false,
-    };
-  },
-  methods: {
-    toggleCollapse() {
-      this.isCollapsed = !this.isCollapsed;
-      if (this.isCollapsed) {
-        document.body.classList.add("header-collapse");
-      } else {
-        document.body.classList.remove("header-collapse");
-      }
-    },
-  },
+const isCollapsed = ref(false);
+
+const toggleCollapse = () => {
+  isCollapsed.value = !isCollapsed.value;
+  if (isCollapsed.value) {
+    document.body.classList.add("header-collapse");
+  } else {
+    document.body.classList.remove("header-collapse");
+  }
 };
 </script>

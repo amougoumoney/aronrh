@@ -179,8 +179,8 @@
         </div>
         <div class="card-body">
           <div id="emp-department">
-            <apexchart type="bar" height="220" :options="empDepartment.department" :series="empDepartment.series">
-            </apexchart>
+            <VueApexCharts type="bar" height="220" :options="empDepartment.department" :series="empDepartment.series">
+            </VueApexCharts>
           </div>
           <p class="fs-13">
             <i class="ti ti-circle-filled me-2 fs-8 text-primary"></i>
@@ -192,33 +192,30 @@
     <!-- /Employees By Department -->
   </div>
 </template>
-<script>
+<script setup>
+import { ref, onMounted } from "vue";
 import { empDepartment } from "./data";
+import VueApexCharts from "vue3-apexcharts";
 
-export default {
-  data() {
-    return {
-      empDepartment: empDepartment,
-      username: '',
-    };
-  },
-  created() {
-    this.getUserDetails(); // Call getUserDetails when component is created
-  },
-  methods: {
-    getUserDetails() {
-      const userStr = localStorage.getItem('user');
-      if (userStr) {
-        try {
-          const userData = JSON.parse(userStr);
-          this.username = userData.name || 'User';
-        } catch (e) {
-          this.username = 'User';
-        }
-      } else {
-        this.username = 'User';
-      }
-    },
-  },
+const empDepartmentRef = ref(empDepartment);
+const username = ref("");
+
+const getUserDetails = () => {
+  const userStr = localStorage.getItem("user");
+  if (userStr) {
+    try {
+      const userData = JSON.parse(userStr);
+      username.value = userData.name || "User";
+    } catch (e) {
+      username.value = "User";
+    }
+  } else {
+    username.value = "User";
+  }
 };
+
+// Call getUserDetails when component is mounted
+onMounted(() => {
+  getUserDetails();
+});
 </script>

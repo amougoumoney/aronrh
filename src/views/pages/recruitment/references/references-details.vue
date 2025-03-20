@@ -1,6 +1,4 @@
 <template>
-  <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar>
   <!-- Page Wrapper -->
   <div class="page-wrapper">
     <div class="content">
@@ -63,56 +61,46 @@
     </div>
   </div>
 </template>
+<script setup>
+import { ref, onMounted } from "vue";
+import indexBreadcrumb from "@/components/breadcrumb/index-breadcrumb.vue";
 
-<script>
-import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
+import router from "../../../../router";
+const title = ref("Reference Details");
+const text = ref("Recruitment");
+const text1 = ref("Reference Details");
 
-export default {
-  name: 'ReferencesDetails',
-  components: {
-    indexBreadcrumb
-  },
-  data() {
-    return {
-      title: 'Reference Details',
-      text: 'Recruitment',
-      text1: 'Reference Details',
-      reference: {
-        id: '',
-        name: '',
-        jobTitle: '',
-        candidateName: '',
-        status: '',
-        dateAdded: ''
-      }
-    };
-  },
-  methods: {
-    getStatusClass(status) {
-      const statusClasses = {
-        'Completed': 'bg-success-light',
-        'Pending': 'bg-warning-light',
-        'Declined': 'bg-danger-light'
-      };
-      return statusClasses[status] || 'bg-secondary-light';
-    },
-    formatDate(date) {
-      return date ? new Date(date).toLocaleDateString() : 'N/A';
-    },
-    async fetchReferenceDetails() {
-      try {
-        const referenceId = this.$route.params.id;
-        console.log(referenceId);
-        // Implement API call to fetch reference details
-        // const response = await referenceService.getReferenceDetails(referenceId);
-        // this.reference = response.data;
-      } catch (error) {
-        console.error('Error fetching reference details:', error);
-      }
-    }
-  },
-  mounted() {
-    this.fetchReferenceDetails();
+const reference = ref({
+  id: "",
+  name: "",
+  jobTitle: "",
+  candidateName: "",
+  status: "",
+  dateAdded: "",
+});
+
+const getStatusClass = (status) => {
+  const statusClasses = {
+    Completed: "bg-success-light",
+    Pending: "bg-warning-light",
+    Declined: "bg-danger-light",
+  };
+  return statusClasses[status] || "bg-secondary-light";
+};
+
+const formatDate = (date) => (date ? new Date(date).toLocaleDateString() : "N/A");
+
+const fetchReferenceDetails = async () => {
+  try {
+    const referenceId = router.currentRoute.value.params.id;
+    console.log(referenceId);
+    // Implement API call to fetch reference details
+    // const response = await referenceService.getReferenceDetails(referenceId);
+    // reference.value = response.data;
+  } catch (error) {
+    console.error("Error fetching reference details:", error);
   }
 };
+
+onMounted(fetchReferenceDetails);
 </script>
