@@ -23,17 +23,17 @@
           <div class="card">
             <div class="card-body">
               <div class="border-bottom d-flex align-items-center justify-content-between pb-3 mb-3">
-                <h4>Leave Type</h4>
+                <h4>{{$t('LeaveType')}}</h4>
                 <div>
                   <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_leaves"
-                    class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Leave
-                    Type</a>
+                    class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddLeaveType')}}
+                   </a>
                 </div>
               </div>
               <div class="card-body p-0">
                 <div class="card mb-0">
                   <div class="card-header d-flex align-items-center justify-content-between">
-                    <h6>Leave Type List</h6>
+                    <h6>{{$t('LeaveTypeList')}}</h6>
                   </div>
                   <div class="table-responsive">
                     <table class="table">
@@ -44,8 +44,8 @@
                               <input class="form-check-input" type="checkbox" id="select-all" />
                             </div>
                           </th>
-                          <th>Leave Type</th>
-                          <th>Leave Days</th>
+                          <th>{{$t('LeaveType')}}</th>
+                          <th>{{$t('LeaveDays')}}</th>
                           <th>Status</th>
                           <th></th>
                         </tr>
@@ -57,11 +57,11 @@
                               <input class="form-check-input" type="checkbox" />
                             </div>
                           </td>
-                          <td class="text-dark">Annual Leave</td>
+                          <td class="text-dark">{{$t('AnnualLeave')}}</td>
                           <td>12</td>
 
                           <td>
-                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>Active</span>
+                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{$t('Active')}}</span>
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
@@ -78,11 +78,11 @@
                               <input class="form-check-input" type="checkbox" />
                             </div>
                           </td>
-                          <td class="text-dark">Medical Leave</td>
+                          <td class="text-dark">{{$t('MedicalLeave')}}</td>
                           <td>12</td>
 
                           <td>
-                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>Active</span>
+                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{$t('Active')}}</span>
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
@@ -99,11 +99,11 @@
                               <input class="form-check-input" type="checkbox" />
                             </div>
                           </td>
-                          <td class="text-dark">Casual Leave</td>
+                          <td class="text-dark">{{$t('CasualLeave')}}</td>
                           <td>12</td>
 
                           <td>
-                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>Active</span>
+                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{$t('Active')}}</span>
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
@@ -120,11 +120,11 @@
                               <input class="form-check-input" type="checkbox" />
                             </div>
                           </td>
-                          <td class="text-dark">Other Leave</td>
+                          <td class="text-dark">{{$t('OtherLeave')}}</td>
                           <td>12</td>
 
                           <td>
-                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>Active</span>
+                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{$t('Active')}}</span>
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
@@ -148,8 +148,8 @@
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        {{$t('designed')}} &amp; {{$t('developedBy')}}
+        <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a>
       </p>
     </div>
   </div>

@@ -1,12 +1,12 @@
 <template>
-  <!-- Add Employee -->
+  <!-- Add Employee --> 
   <div class="modal fade" id="add_employee">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <div class="d-flex align-items-center">
-            <h4 class="modal-title me-2">Add New Employee</h4>
-            <span>Employee ID : EMP -0024</span>
+            <h4 class="modal-title me-2">{{$t('AddNewEmployee')}}</h4>
+            <span>{{$t('EmployeeID:EMP-0024')}}</span>
           </div>
           <button
             type="button"
@@ -30,7 +30,7 @@
                   role="tab"
                   aria-selected="true"
                 >
-                  Basic Information
+                  {{$t('BasicInformation')}}
                 </button>
               </li>
               <li class="nav-item" role="presentation">
@@ -43,7 +43,7 @@
                   role="tab"
                   aria-selected="false"
                 >
-                  Permissions
+                  {{$t('Permissions')}}
                 </button>
               </li>
             </ul>
@@ -69,12 +69,12 @@
                       </div>
                       <div class="profile-upload">
                         <div class="mb-2">
-                          <h6 class="mb-1">Upload Profile Image</h6>
-                          <p class="fs-12">Image should be below 4 mb</p>
+                          <h6 class="mb-1">{{$t('UploadProfileImage')}}</h6>
+                          <p class="fs-12">{{$t('Imageshouldbebelow4mb')}}</p>
                         </div>
                         <div class="profile-uploader d-flex align-items-center">
                           <div class="drag-upload-btn btn btn-sm btn-primary me-2">
-                            Upload
+                            {{$t('Upload')}}
                             <input
                               type="file"
                               class="form-control image-sign"
@@ -82,7 +82,7 @@
                             />
                           </div>
                           <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                            >Cancel</a
+                            >{{$t('cancel')}}</a
                           >
                         </div>
                       </div>
@@ -91,21 +91,21 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >First Name <span class="text-danger"> *</span></label
+                        >{{$t('FirstName')}} <span class="text-danger"> *</span></label
                       >
                       <input type="text" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label">Last Name</label>
+                      <label class="form-label">{{$t('LastName')}}</label>
                       <input type="email" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Employee ID <span class="text-danger"> *</span></label
+                        >{{$t('EmployeeID')}} <span class="text-danger"> *</span></label
                       >
                       <input type="text" class="form-control" />
                     </div>
@@ -113,7 +113,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Joining Date <span class="text-danger"> *</span></label
+                        >{{$t('JoiningDate')}} <span class="text-danger"> *</span></label
                       >
                       <div class="input-icon-end position-relative">
                         <date-picker
@@ -133,7 +133,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Username <span class="text-danger"> *</span></label
+                        >{{$t('Username')}} <span class="text-danger"> *</span></label
                       >
                       <input type="text" class="form-control" />
                     </div>
@@ -141,7 +141,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Email <span class="text-danger"> *</span></label
+                        >{{$t('email')}} <span class="text-danger"> *</span></label
                       >
                       <input type="email" class="form-control" />
                     </div>
@@ -149,7 +149,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Password <span class="text-danger"> *</span></label
+                        >{{$t('Password')}} <span class="text-danger"> *</span></label
                       >
                       <div class="pass-group">
                         <input
@@ -170,7 +170,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Confirm Password <span class="text-danger"> *</span></label
+                        >{{$t('ConfirmPassword')}} <span class="text-danger"> *</span></label
                       >
                       <div class="pass-group">
                         <input
@@ -191,7 +191,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Phone Number <span class="text-danger"> *</span></label
+                        >{{$t('PhoneNumber')}} <span class="text-danger"> *</span></label
                       >
                       <input type="text" class="form-control" />
                     </div>
@@ -199,27 +199,27 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Company<span class="text-danger"> *</span></label
+                        >{{$t('Company')}}<span class="text-danger"> *</span></label
                       >
                       <input type="text" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label">Department</label>
+                      <label class="form-label">{{$t('department')}}</label>
                       <vue-select :options="DepartM" id="departm" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label">Designation</label>
+                      <label class="form-label">{{$t('Designation')}}</label>
                       <vue-select :options="Desig" id="desigOne" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
                       <label class="form-label"
-                        >About <span class="text-danger"> *</span></label
+                        >{{$t('About')}} <span class="text-danger"> *</span></label
                       >
                       <textarea class="form-control" rows="3"></textarea>
                     </div>
@@ -232,9 +232,9 @@
                   class="btn btn-outline-light border me-2"
                   data-bs-dismiss="modal"
                 >
-                  Cancel
+                  {{$t('cancel')}}
                 </button>
-                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="submit" class="btn btn-primary">{{$t('save')}}</button>
               </div>
             </div>
             <div
@@ -249,7 +249,7 @@
                   <div
                     class="card-body d-flex align-items-center justify-content-between flex-wrap row-gap-3"
                   >
-                    <h6>Enable Options</h6>
+                    <h6>{{$t('EnableOptions')}}</h6>
                     <div class="d-flex align-items-center justify-content-end">
                       <div class="form-check form-switch me-2">
                         <label class="form-check-label mt-0">
@@ -258,13 +258,13 @@
                             type="checkbox"
                             role="switch"
                           />
-                          Enable all Module
+                          {{$t('EnableallModule')}}
                         </label>
                       </div>
                       <div class="form-check d-flex align-items-center">
                         <label class="form-check-label mt-0">
                           <input class="form-check-input" type="checkbox" checked="" />
-                          Select All
+                          {{$t('SelectAll')}}
                         </label>
                       </div>
                     </div>
@@ -283,7 +283,7 @@
                                 role="switch"
                                 checked
                               />
-                              Holidays
+                            {{$t('Holidays')}}
                             </label>
                           </div>
                         </td>
@@ -295,7 +295,7 @@
                                 type="checkbox"
                                 checked=""
                               />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -303,7 +303,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -311,7 +311,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -323,7 +323,7 @@
                                 type="checkbox"
                                 checked=""
                               />
-                              Delete
+                              {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -331,7 +331,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                              {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -339,7 +339,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                              {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -353,7 +353,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Leaves
+                              {{$t('Leaves')}}
                             </label>
                           </div>
                         </td>
@@ -361,7 +361,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -369,7 +369,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -377,7 +377,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -385,7 +385,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                              {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -393,7 +393,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                              {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -401,7 +401,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                              {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -415,7 +415,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Clients
+                              {{$t('Clients')}}
                             </label>
                           </div>
                         </td>
@@ -423,7 +423,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -431,7 +431,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -439,7 +439,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -447,7 +447,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -455,7 +455,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -463,7 +463,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -477,7 +477,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Projects
+                              {{$t('projects')}}
                             </label>
                           </div>
                         </td>
@@ -485,7 +485,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -493,7 +493,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -501,7 +501,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -509,7 +509,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -517,7 +517,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -525,7 +525,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -539,7 +539,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Tasks
+                              {{$t('Tasks')}}
                             </label>
                           </div>
                         </td>
@@ -547,7 +547,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -555,7 +555,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -563,7 +563,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -571,7 +571,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -579,7 +579,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -587,7 +587,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -601,7 +601,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Chats
+                              {{$t('Chats')}}
                             </label>
                           </div>
                         </td>
@@ -609,7 +609,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -617,7 +617,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -625,7 +625,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -633,7 +633,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -641,7 +641,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -649,7 +649,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -664,7 +664,7 @@
                                 role="switch"
                                 checked
                               />
-                              Assets
+                              {{$t('Assets')}}
                             </label>
                           </div>
                         </td>
@@ -672,7 +672,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -680,7 +680,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -692,7 +692,7 @@
                                 type="checkbox"
                                 checked=""
                               />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -700,7 +700,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -712,7 +712,7 @@
                                 type="checkbox"
                                 checked=""
                               />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -720,7 +720,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -734,7 +734,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Timing Sheets
+                              {{$t('TimingSheets')}}
                             </label>
                           </div>
                         </td>
@@ -742,7 +742,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -750,7 +750,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -758,7 +758,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -766,7 +766,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -774,7 +774,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -782,7 +782,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -797,7 +797,7 @@
                   class="btn btn-outline-light border me-2"
                   data-bs-dismiss="modal"
                 >
-                  Cancel
+                  {{$t('cancel')}}
                 </button>
                 <button
                   type="button"
@@ -805,7 +805,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#success_modal"
                 >
-                  Save
+                  {{$t('save')}}
                 </button>
               </div>
             </div>
@@ -822,8 +822,8 @@
       <div class="modal-content">
         <div class="modal-header">
           <div class="d-flex align-items-center">
-            <h4 class="modal-title me-2">Edit Employee</h4>
-            <span>Employee ID : EMP -0024</span>
+            <h4 class="modal-title me-2">{{$t('EditEmployee')}}</h4>
+            <span>{{$t('EmployeeID ')}}: EMP -0024</span>
           </div>
           <button
             type="button"
@@ -847,7 +847,7 @@
                   role="tab"
                   aria-selected="true"
                 >
-                  Basic Information
+                  {{$t('BasicInformation')}}
                 </button>
               </li>
               <li class="nav-item" role="presentation">
@@ -860,7 +860,7 @@
                   role="tab"
                   aria-selected="false"
                 >
-                  Permissions
+                  {{$t('Permissions')}}
                 </button>
               </li>
             </ul>
@@ -890,12 +890,12 @@
                       </div>
                       <div class="profile-upload">
                         <div class="mb-2">
-                          <h6 class="mb-1">Upload Profile Image</h6>
-                          <p class="fs-12">Image should be below 4 mb</p>
+                          <h6 class="mb-1">{{$t('UploadProfileImage')}}</h6>
+                          <p class="fs-12">{{$t('Imageshouldbebelow4mb')}}</p>
                         </div>
                         <div class="profile-uploader d-flex align-items-center">
                           <div class="drag-upload-btn btn btn-sm btn-primary me-2">
-                            Upload
+                            {{$t('Upload')}}
                             <input
                               type="file"
                               class="form-control image-sign"
@@ -903,7 +903,7 @@
                             />
                           </div>
                           <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                            >Cancel</a
+                            >{{$t('cancel')}}</a
                           >
                         </div>
                       </div>
@@ -912,21 +912,21 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >First Name <span class="text-danger"> *</span></label
+                        >{{$t('FirstName')}} <span class="text-danger"> *</span></label
                       >
                       <input type="text" class="form-control" value="Anthony" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label">Last Name</label>
+                      <label class="form-label">{{$t('LastName')}}</label>
                       <input type="email" class="form-control" value="Lewis" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Employee ID <span class="text-danger"> *</span></label
+                        >{{$t('EmployeeID')}}<span class="text-danger"> *</span></label
                       >
                       <input type="text" class="form-control" value="Emp-001" />
                     </div>
@@ -934,7 +934,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Joining Date <span class="text-danger"> *</span></label
+                        >{{$t('JoiningDate')}} <span class="text-danger"> *</span></label
                       >
                       <div class="input-icon-end position-relative">
                         <date-picker
@@ -954,7 +954,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Username <span class="text-danger"> *</span></label
+                        >{{$t('Username')}} <span class="text-danger"> *</span></label
                       >
                       <input type="text" class="form-control" value="Anthony" />
                     </div>
@@ -962,7 +962,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Email <span class="text-danger"> *</span></label
+                        >{{$t('Email')}}<span class="text-danger"> *</span></label
                       >
                       <input
                         type="email"
@@ -974,7 +974,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Password <span class="text-danger"> *</span></label
+                        >{{$t('Password')}}<span class="text-danger"> *</span></label
                       >
                       <div class="pass-group">
                         <input
@@ -995,7 +995,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Confirm Password <span class="text-danger"> *</span></label
+                        >{{$t('ConfirmPassword')}} <span class="text-danger"> *</span></label
                       >
                       <div class="pass-group">
                         <input
@@ -1016,7 +1016,7 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Phone Number <span class="text-danger"> *</span></label
+                        >{{$t('PhoneNumber')}} <span class="text-danger"> *</span></label
                       >
                       <input type="text" class="form-control" value="(123) 4567 890" />
                     </div>
@@ -1024,14 +1024,14 @@
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label"
-                        >Company<span class="text-danger"> *</span></label
+                        >{{$t('Company')}}<span class="text-danger"> *</span></label
                       >
                       <input type="text" class="form-control" value="Abac Company" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label">Department</label>
+                      <label class="form-label">{{$t('Department')}}</label>
                       <vue-select
                         :options="EditDepartM"
                         id="editdepartm"
@@ -1041,7 +1041,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label">Designation</label>
+                      <label class="form-label">{{$t('Designation')}}</label>
                       <vue-select
                         :options="EditDesig"
                         id="editdesig"
@@ -1065,9 +1065,9 @@
                   class="btn btn-outline-light border me-2"
                   data-bs-dismiss="modal"
                 >
-                  Cancel
+                  {{$t('cancel')}}
                 </button>
-                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="submit" class="btn btn-primary">{{$t('save')}}</button>
               </div>
             </div>
             <div
@@ -1082,7 +1082,7 @@
                   <div
                     class="card-body d-flex align-items-center justify-content-between flex-wrap row-gap-3"
                   >
-                    <h6>Enable Options</h6>
+                    <h6>{{$t('EnableOptions')}}</h6>
                     <div class="d-flex align-items-center justify-content-end">
                       <div class="form-check form-switch me-2">
                         <label class="form-check-label mt-0">
@@ -1091,13 +1091,13 @@
                             type="checkbox"
                             role="switch"
                           />
-                          Enable all Module
+                          {{$t('EnableallModule')}}
                         </label>
                       </div>
                       <div class="form-check d-flex align-items-center">
                         <label class="form-check-label mt-0">
                           <input class="form-check-input" type="checkbox" checked="" />
-                          Select All
+                          {{$t('SelectAll')}}
                         </label>
                       </div>
                     </div>
@@ -1116,7 +1116,7 @@
                                 role="switch"
                                 checked
                               />
-                              Holidays
+                              {{$t('Holidays')}}
                             </label>
                           </div>
                         </td>
@@ -1128,7 +1128,7 @@
                                 type="checkbox"
                                 checked=""
                               />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -1136,7 +1136,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -1144,7 +1144,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -1156,7 +1156,7 @@
                                 type="checkbox"
                                 checked=""
                               />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -1164,7 +1164,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -1172,7 +1172,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -1186,7 +1186,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Leaves
+                              {{$t('Leaves')}}
                             </label>
                           </div>
                         </td>
@@ -1194,7 +1194,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -1202,7 +1202,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -1210,7 +1210,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -1218,7 +1218,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -1226,7 +1226,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -1234,7 +1234,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -1248,7 +1248,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Clients
+                              {{$t('Clients')}}
                             </label>
                           </div>
                         </td>
@@ -1256,7 +1256,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -1264,7 +1264,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -1272,7 +1272,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -1280,7 +1280,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -1288,7 +1288,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -1296,7 +1296,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -1310,7 +1310,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Projects
+                              {{$t('projects')}}
                             </label>
                           </div>
                         </td>
@@ -1318,7 +1318,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -1326,7 +1326,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -1334,7 +1334,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -1342,7 +1342,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -1350,7 +1350,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -1358,7 +1358,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -1372,7 +1372,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Tasks
+                              {{$t('Tasks')}}
                             </label>
                           </div>
                         </td>
@@ -1380,7 +1380,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -1388,7 +1388,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -1396,7 +1396,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -1404,7 +1404,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -1412,7 +1412,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -1420,7 +1420,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -1434,7 +1434,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Chats
+                              {{$t('Chats')}}
                             </label>
                           </div>
                         </td>
@@ -1442,7 +1442,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -1450,7 +1450,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -1458,7 +1458,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -1466,7 +1466,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -1474,7 +1474,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -1482,7 +1482,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -1497,7 +1497,7 @@
                                 role="switch"
                                 checked
                               />
-                              Assets
+                              {{$t('Assets')}}
                             </label>
                           </div>
                         </td>
@@ -1505,7 +1505,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -1513,7 +1513,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -1525,7 +1525,7 @@
                                 type="checkbox"
                                 checked=""
                               />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -1533,7 +1533,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -1545,7 +1545,7 @@
                                 type="checkbox"
                                 checked=""
                               />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -1553,7 +1553,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -1567,7 +1567,7 @@
                                 type="checkbox"
                                 role="switch"
                               />
-                              Timing Sheets
+                              {{$t('TimingSheets')}}
                             </label>
                           </div>
                         </td>
@@ -1575,7 +1575,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Read
+                              {{$t('Read')}}
                             </label>
                           </div>
                         </td>
@@ -1583,7 +1583,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Write
+                              {{$t('Write')}}
                             </label>
                           </div>
                         </td>
@@ -1591,7 +1591,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Create
+                              {{$t('Create')}}
                             </label>
                           </div>
                         </td>
@@ -1599,7 +1599,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Delete
+                             {{$t('Delete')}}
                             </label>
                           </div>
                         </td>
@@ -1607,7 +1607,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Import
+                            {{$t('Import')}}
                             </label>
                           </div>
                         </td>
@@ -1615,7 +1615,7 @@
                           <div class="form-check d-flex align-items-center">
                             <label class="form-check-label mt-0">
                               <input class="form-check-input" type="checkbox" />
-                              Export
+                            {{$t('export')}}
                             </label>
                           </div>
                         </td>
@@ -1630,7 +1630,7 @@
                   class="btn btn-outline-light border me-2"
                   data-bs-dismiss="modal"
                 >
-                  Cancel
+                  {{$t('cancel')}}
                 </button>
                 <button
                   type="button"
@@ -1638,7 +1638,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#success_modal"
                 >
-                  Save
+                  {{$t('save')}}
                 </button>
               </div>
             </div>
@@ -1658,23 +1658,23 @@
             <span class="avatar avatar-lg avatar-rounded bg-success mb-3"
               ><i class="ti ti-check fs-24"></i
             ></span>
-            <h5 class="mb-2">Employee Added Successfully</h5>
+            <h5 class="mb-2">{{$t('EmployeeAddedSuccessfully')}}</h5>
             <p class="mb-3">
-              Stephan Peralt has been added with Client ID :
+              Stephan Peralt {{$t('hasbeenaddedwithClientID:')}}
               <span class="text-primary">#EMP - 0001</span>
             </p>
             <div>
               <div class="row g-2">
                 <div class="col-6">
                   <router-link to="/employee/employee-list" class="btn btn-dark w-100"
-                    >Back to List</router-link
+                    >{{$t('BacktoList')}}</router-link
                   >
                 </div>
                 <div class="col-6">
                   <router-link
                     to="/employee/employee-details"
                     class="btn btn-primary w-100"
-                    >Detail Page</router-link
+                    >{{$t('DetailPage')}}</router-link
                   >
                 </div>
               </div>
@@ -1694,19 +1694,19 @@
           <span class="avatar avatar-xl bg-transparent-danger text-danger mb-3">
             <i class="ti ti-trash-x fs-36"></i>
           </span>
-          <h4 class="mb-1">Confirm Delete</h4>
+          <h4 class="mb-1">{{$t('ConfirmDelete')}}</h4>
           <p class="mb-3">
-            You want to delete all the marked items, this cant be undone once you delete.
+            {{$t('Youwanttodeleteallthemarkeditems,thiscantbeundoneonceyoudelete.')}}
           </p>
           <div class="d-flex justify-content-center">
             <a
               href="javascript:void(0);"
               class="btn btn-light me-3"
               data-bs-dismiss="modal"
-              >Cancel</a
+              >{{$t('cancel')}}</a
             >
             <router-link to="/employee/employee-list" class="btn btn-danger"
-              >Yes, Delete</router-link
+              >{{$t('Yes,Delete')}}</router-link
             >
           </div>
         </div>
