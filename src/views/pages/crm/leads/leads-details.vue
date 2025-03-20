@@ -13,17 +13,17 @@
               <span class="text-gray d-inline-flex ms-2">/ Tremblay and Rath</span>
             </h6>
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown">
+              <a href="javascript:void(0);"
+                class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
                 <i class="ti ti-git-branch me-1"></i>
                 Marketing Pipeline
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Marketing Pipeline</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Marketing Pipeline</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Deal Pipeline</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Deal Pipeline</a>
                 </li>
               </ul>
             </div>
@@ -32,8 +32,8 @@
         <div class="col-sm-6">
           <div class="d-flex justify-content-sm-end">
             <div class="head-icons ms-2">
-              <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-                id="collapse-header" @click="toggleHeader">
+              <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                 <i class="ti ti-chevrons-up"></i>
               </a>
             </div>
@@ -65,8 +65,8 @@
               <div class="p-3 border-bottom">
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <h6>Lead information</h6>
-                  <a href="#" class="btn btn-icon btn-sm" data-bs-toggle="modal" data-bs-target="#edit_company"><i
-                      class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="btn btn-icon btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#edit_company"><i class="ti ti-edit"></i></a>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <span class="d-inline-flex align-items-center">
@@ -107,7 +107,7 @@
               <div class="p-3 border-bottom">
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <h6>Owner</h6>
-                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
                 </div>
                 <div class="d-flex align-items-center">
                   <span class="avatar avatar-md avatar-rounded me-2">
@@ -133,7 +133,8 @@
               <div class="p-3 border-bottom">
                 <h5 class="mb-3">Priority</h5>
                 <div class="dropdown">
-                  <a href="#" class="dropdown-toggle btn-sm btn btn-white d-inline-flex align-items-center"
+                  <a href="javascript:void(0);"
+                    class="dropdown-toggle btn-sm btn btn-white d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     <span
                       class="border border-purple rounded-circle bg-soft-danger d-flex justify-content-center align-items-center me-1">
@@ -143,13 +144,13 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">High</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">High</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Medium</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Medium</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Low</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Low</a>
                     </li>
                   </ul>
                 </div>
@@ -157,8 +158,8 @@
               <div class="p-3 border-bottom">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <h5>Contacts</h5>
-                  <a href="#" class="text-primary d-inline-flex align-items-center" data-bs-toggle="modal"
-                    data-bs-target="#add_company">
+                  <a href="javascript:void(0);" class="text-primary d-inline-flex align-items-center"
+                    data-bs-toggle="modal" data-bs-target="#add_company">
                     <i class="ti ti-circle-plus me-1"></i>Add New
                   </a>
                 </div>
@@ -172,7 +173,7 @@
               <div class="p-3">
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <h6>Other information</h6>
-                  <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <span class="d-inline-flex align-items-center">
@@ -203,11 +204,11 @@
               <div class="pipeline-list pipeline-list-two">
                 <ul>
                   <li>
-                    <a href="#" class="bg-purple">Not Contacted</a>
+                    <a href="javascript:void(0);" class="bg-purple">Not Contacted</a>
                   </li>
-                  <li><a href="#" class="bg-info">Contacted</a></li>
-                  <li><a href="#" class="bg-warning">Closed</a></li>
-                  <li><a href="#" class="bg-danger">Lost</a></li>
+                  <li><a href="javascript:void(0);" class="bg-info">Contacted</a></li>
+                  <li><a href="javascript:void(0);" class="bg-warning">Closed</a></li>
+                  <li><a href="javascript:void(0);" class="bg-danger">Lost</a></li>
                 </ul>
               </div>
               <ul class="nav nav-tabs nav-tabs-bottom nav-justified flex-wrap" role="tablist">
@@ -255,25 +256,26 @@
                     <div class="d-flex align-items-center justify-content-between">
                       <h5>Activities</h5>
                       <div class="dropdown">
-                        <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                        <a href="javascript:void(0);"
+                          class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                           data-bs-toggle="dropdown">
                           Sort By : Last 7 Days
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end p-3">
                           <li>
-                            <a href="#" class="dropdown-item rounded-1">Recently Added</a>
+                            <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                           </li>
                           <li>
-                            <a href="#" class="dropdown-item rounded-1">Ascending</a>
+                            <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                           </li>
                           <li>
-                            <a href="#" class="dropdown-item rounded-1">Desending</a>
+                            <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                           </li>
                           <li>
-                            <a href="#" class="dropdown-item rounded-1">Last Month</a>
+                            <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                           </li>
                           <li>
-                            <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
+                            <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                           </li>
                         </ul>
                       </div>
@@ -379,7 +381,7 @@
                             <div>
                               <h6 class="fs-12 fw-medium mb-2">Reminder</h6>
                               <div class="dropdown">
-                                <a href="#"
+                                <a href="javascript:void(0);"
                                   class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                                   data-bs-toggle="dropdown">
                                   <i class="clock-hour-3 me-1"></i>
@@ -387,13 +389,13 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end p-3">
                                   <li>
-                                    <a href="#" class="dropdown-item rounded-1">Reminder</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Reminder</a>
                                   </li>
                                   <li>
-                                    <a href="#" class="dropdown-item rounded-1">1 Hr</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">1 Hr</a>
                                   </li>
                                   <li>
-                                    <a href="#" class="dropdown-item rounded-1">10 Hr</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">10 Hr</a>
                                   </li>
                                 </ul>
                               </div>
@@ -403,7 +405,7 @@
                             <div>
                               <h6 class="fs-12 fw-medium mb-2">Task Priority</h6>
                               <div class="dropdown">
-                                <a href="#"
+                                <a href="javascript:void(0);"
                                   class="dropdown-toggle btn-sm btn btn-white d-inline-flex align-items-center"
                                   data-bs-toggle="dropdown">
                                   <span
@@ -414,13 +416,13 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end p-3">
                                   <li>
-                                    <a href="#" class="dropdown-item rounded-1">High</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">High</a>
                                   </li>
                                   <li>
-                                    <a href="#" class="dropdown-item rounded-1">Medium</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Medium</a>
                                   </li>
                                   <li>
-                                    <a href="#" class="dropdown-item rounded-1">Low</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Low</a>
                                   </li>
                                 </ul>
                               </div>
@@ -430,7 +432,7 @@
                             <div>
                               <h6 class="fs-12 fw-medium mb-2">Assigned to</h6>
                               <div class="dropdown">
-                                <a href="#"
+                                <a href="javascript:void(0);"
                                   class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                                   data-bs-toggle="dropdown">
                                   <span class="avatar avatar-xs avatar-rounded me-1">
@@ -440,7 +442,8 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end p-3">
                                   <li>
-                                    <a href="#" class="dropdown-item rounded-1 d-flex align-items-center">
+                                    <a href="javascript:void(0);"
+                                      class="dropdown-item rounded-1 d-flex align-items-center">
                                       <span class="avatar avatar-xs avatar-rounded me-1">
                                         <img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" />
                                       </span>
@@ -448,7 +451,8 @@
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#" class="dropdown-item rounded-1 d-flex align-items-center">
+                                    <a href="javascript:void(0);"
+                                      class="dropdown-item rounded-1 d-flex align-items-center">
                                       <span class="avatar avatar-xs avatar-rounded me-1">
                                         <img src="@/assets/img/profiles/avatar-01.jpg" alt="Img" />
                                       </span>
@@ -456,7 +460,8 @@
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#" class="dropdown-item rounded-1 d-flex align-items-center">
+                                    <a href="javascript:void(0);"
+                                      class="dropdown-item rounded-1 d-flex align-items-center">
                                       <span class="avatar avatar-xs avatar-rounded me-1">
                                         <img src="@/assets/img/profiles/avatar-03.jpg" alt="Img" />
                                       </span>
@@ -480,29 +485,30 @@
                       <h5>Notes</h5>
                       <div class="d-flex align-items-center">
                         <div class="dropdown me-2">
-                          <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                          <a href="javascript:void(0);"
+                            class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                             data-bs-toggle="dropdown">
                             Sort By : Last 7 Days
                           </a>
                           <ul class="dropdown-menu dropdown-menu-end p-3">
                             <li>
-                              <a href="#" class="dropdown-item rounded-1">Recently Added</a>
+                              <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                             </li>
                             <li>
-                              <a href="#" class="dropdown-item rounded-1">Ascending</a>
+                              <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                             </li>
                             <li>
-                              <a href="#" class="dropdown-item rounded-1">Desending</a>
+                              <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                             </li>
                             <li>
-                              <a href="#" class="dropdown-item rounded-1">Last Month</a>
+                              <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                             </li>
                             <li>
-                              <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
+                              <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="d-inline-flex align-items-center text-primary fw-medium"
+                        <a href="javascript:void(0);" class="d-inline-flex align-items-center text-primary fw-medium"
                           data-bs-toggle="modal" data-bs-target="#add_notes">
                           <i class="ti ti-circle-plus me-1"></i>
                           Add Note
@@ -523,8 +529,8 @@
                           </div>
                         </div>
                         <div class="d-flex align-items-center">
-                          <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                         </div>
                       </div>
                       <div>
@@ -547,7 +553,8 @@
                                 <span>365 KB</span>
                               </div>
                             </div>
-                            <a href="#" class="btn btn-icon btn-sm fs-16"><i class="ti ti-download"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-16"><i
+                                class="ti ti-download"></i></a>
                           </div>
                           <div
                             class="border rounded d-flex align-items-center justify-content-between hover-border p-3">
@@ -560,7 +567,8 @@
                                 <span>365 KB</span>
                               </div>
                             </div>
-                            <a href="#" class="btn btn-icon btn-sm fs-16"><i class="ti ti-download"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-16"><i
+                                class="ti ti-download"></i></a>
                           </div>
                         </div>
                         <div class="notes-editor">
@@ -569,12 +577,13 @@
                               <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                             </div>
                             <div class="d-flex align-items-center justify-content-end mb-3">
-                              <a href="#" class="btn btn-outline-light border add-cancel me-3">Cancel</a>
-                              <a href="#" class="btn btn-primary">Save</a>
+                              <a href="javascript:void(0);"
+                                class="btn btn-outline-light border add-cancel me-3">Cancel</a>
+                              <a href="javascript:void(0);" class="btn btn-primary">Save</a>
                             </div>
                           </div>
                           <div>
-                            <a href="#"
+                            <a href="javascript:void(0);"
                               class="d-flex align-items-center justify-content-end text-primary fw-medium add-comment">
                               <i class="ti ti-circle-plus me-1"></i>
                               Add Comment
@@ -595,8 +604,8 @@
                           </div>
                         </div>
                         <div class="d-flex align-items-center">
-                          <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                         </div>
                       </div>
                       <div>
@@ -619,7 +628,8 @@
                                 <span>365 KB</span>
                               </div>
                             </div>
-                            <a href="#" class="btn btn-icon btn-sm fs-16"><i class="ti ti-download"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-16"><i
+                                class="ti ti-download"></i></a>
                           </div>
                         </div>
                         <div class="bg-light-500 rounded p-3 mb-3">
@@ -633,7 +643,7 @@
                             Commented by <span class="text-primary"> Aeron</span> on 15
                             Sep 2023, 11:15 pm
                           </p>
-                          <a href="#" class="btn btn-dark d-inline-flex align-items-center"><i
+                          <a href="javascript:void(0);" class="btn btn-dark d-inline-flex align-items-center"><i
                               class="ti ti-arrow-back-up me-1"></i>Reply</a>
                         </div>
                         <div class="notes-editor">
@@ -642,12 +652,13 @@
                               <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                             </div>
                             <div class="d-flex align-items-center justify-content-end mb-3">
-                              <a href="#" class="btn btn-outline-light border add-cancel me-3">Cancel</a>
-                              <a href="#" class="btn btn-primary">Save</a>
+                              <a href="javascript:void(0);"
+                                class="btn btn-outline-light border add-cancel me-3">Cancel</a>
+                              <a href="javascript:void(0);" class="btn btn-primary">Save</a>
                             </div>
                           </div>
                           <div>
-                            <a href="#"
+                            <a href="javascript:void(0);"
                               class="d-flex align-items-center justify-content-end text-primary fw-medium add-comment">
                               <i class="ti ti-circle-plus me-1"></i>
                               Add Comment
@@ -668,8 +679,8 @@
                           </div>
                         </div>
                         <div class="d-flex align-items-center">
-                          <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="ti ti-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="ti ti-trash"></i></a>
                         </div>
                       </div>
                       <div>
@@ -685,12 +696,13 @@
                               <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                             </div>
                             <div class="d-flex align-items-center justify-content-end mb-3">
-                              <a href="#" class="btn btn-outline-light border add-cancel me-3">Cancel</a>
-                              <a href="#" class="btn btn-primary">Save</a>
+                              <a href="javascript:void(0);"
+                                class="btn btn-outline-light border add-cancel me-3">Cancel</a>
+                              <a href="javascript:void(0);" class="btn btn-primary">Save</a>
                             </div>
                           </div>
                           <div>
-                            <a href="#"
+                            <a href="javascript:void(0);"
                               class="d-flex align-items-center justify-content-end text-primary fw-medium add-comment">
                               <i class="ti ti-circle-plus me-1"></i>
                               Add Comment
@@ -707,8 +719,8 @@
                   <div class="card-header">
                     <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
                       <h5>Calls</h5>
-                      <a href="#" class="d-inline-flex align-items-center text-primary fw-medium" data-bs-toggle="modal"
-                        data-bs-target="#add_call">
+                      <a href="javascript:void(0);" class="d-inline-flex align-items-center text-primary fw-medium"
+                        data-bs-toggle="modal" data-bs-target="#add_call">
                         <i class="ti ti-circle-plus me-1"></i>
                         Add New
                       </a>
@@ -730,19 +742,21 @@
                         </div>
                         <div class="d-flex align-items-center">
                           <div class="dropdown me-2">
-                            <a href="#" class="dropdown-toggle btn btn-sm bg-danger-transparent border-0"
+                            <a href="javascript:void(0);"
+                              class="dropdown-toggle btn btn-sm bg-danger-transparent border-0"
                               data-bs-toggle="dropdown" aria-expanded="false">Busy<i
                                 class="las la-angle-down ms-1"></i></a>
                             <div class="dropdown-menu dropdown-menu-end p-3">
-                              <a class="dropdown-item rounded-1" href="#">Busy</a>
-                              <a class="dropdown-item rounded-1" href="#">No Answer</a>
-                              <a class="dropdown-item rounded-1" href="#">Unavailable</a>
-                              <a class="dropdown-item rounded-1" href="#">Wrong Number</a>
-                              <a class="dropdown-item rounded-1" href="#">Left Voice Message</a>
-                              <a class="dropdown-item rounded-1" href="#">Moving Forward</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Busy</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">No Answer</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Unavailable</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Wrong Number</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Left Voice Message</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Moving Forward</a>
                             </div>
                           </div>
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-trash"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i
+                              class="ti ti-trash"></i></a>
                         </div>
                       </div>
                       <div>
@@ -769,19 +783,21 @@
                         </div>
                         <div class="d-flex align-items-center">
                           <div class="dropdown me-2">
-                            <a href="#" class="dropdown-toggle btn btn-sm bg-transparent-purple border-0"
+                            <a href="javascript:void(0);"
+                              class="dropdown-toggle btn btn-sm bg-transparent-purple border-0"
                               data-bs-toggle="dropdown" aria-expanded="false">No Answer<i
                                 class="las la-angle-down ms-1"></i></a>
                             <div class="dropdown-menu dropdown-menu-end p-3">
-                              <a class="dropdown-item rounded-1" href="#">Busy</a>
-                              <a class="dropdown-item rounded-1" href="#">No Answer</a>
-                              <a class="dropdown-item rounded-1" href="#">Unavailable</a>
-                              <a class="dropdown-item rounded-1" href="#">Wrong Number</a>
-                              <a class="dropdown-item rounded-1" href="#">Left Voice Message</a>
-                              <a class="dropdown-item rounded-1" href="#">Moving Forward</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Busy</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">No Answer</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Unavailable</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Wrong Number</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Left Voice Message</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Moving Forward</a>
                             </div>
                           </div>
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-trash"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i
+                              class="ti ti-trash"></i></a>
                         </div>
                       </div>
                       <div>
@@ -808,19 +824,21 @@
                         </div>
                         <div class="d-flex align-items-center">
                           <div class="dropdown me-2">
-                            <a href="#" class="dropdown-toggle btn btn-sm bg-transparent-purple border-0"
+                            <a href="javascript:void(0);"
+                              class="dropdown-toggle btn btn-sm bg-transparent-purple border-0"
                               data-bs-toggle="dropdown" aria-expanded="false">No Answer<i
                                 class="las la-angle-down ms-1"></i></a>
                             <div class="dropdown-menu dropdown-menu-end p-3">
-                              <a class="dropdown-item rounded-1" href="#">Busy</a>
-                              <a class="dropdown-item rounded-1" href="#">No Answer</a>
-                              <a class="dropdown-item rounded-1" href="#">Unavailable</a>
-                              <a class="dropdown-item rounded-1" href="#">Wrong Number</a>
-                              <a class="dropdown-item rounded-1" href="#">Left Voice Message</a>
-                              <a class="dropdown-item rounded-1" href="#">Moving Forward</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Busy</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">No Answer</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Unavailable</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Wrong Number</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Left Voice Message</a>
+                              <a class="dropdown-item rounded-1" href="javascript:void(0);">Moving Forward</a>
                             </div>
                           </div>
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-trash"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i
+                              class="ti ti-trash"></i></a>
                         </div>
                       </div>
                       <div>
@@ -852,7 +870,7 @@
                           </p>
                         </div>
                         <div>
-                          <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                          <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#create_file">Create Document</a>
                         </div>
                       </div>
@@ -867,9 +885,11 @@
                           </p>
                         </div>
                         <div class="d-flex align-items-center">
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-edit"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-trash"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i
+                              class="ti ti-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i class="ti ti-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i
+                              class="ti ti-trash"></i></a>
                         </div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
@@ -898,9 +918,11 @@
                           </p>
                         </div>
                         <div class="d-flex align-items-center">
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-edit"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-trash"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i
+                              class="ti ti-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i class="ti ti-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i
+                              class="ti ti-trash"></i></a>
                         </div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
@@ -929,9 +951,11 @@
                           </p>
                         </div>
                         <div class="d-flex align-items-center">
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-edit"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm fs-20"><i class="ti ti-trash"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i
+                              class="ti ti-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i class="ti ti-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm fs-20"><i
+                              class="ti ti-trash"></i></a>
                         </div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
@@ -970,7 +994,7 @@
                           </p>
                         </div>
                         <div>
-                          <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                          <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#connect_account">Connect Account</a>
                         </div>
                       </div>
@@ -988,7 +1012,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

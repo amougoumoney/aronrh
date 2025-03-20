@@ -76,12 +76,12 @@ export default {
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#add_blog"
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_blog"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Blog</a>
           </div>
           <div class="ms-2 head-icons">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -104,19 +104,19 @@ export default {
                 </div>
               </div>
               <div class="dropdown">
-                <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Sort By : Last 7 Days
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Recently Added</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Ascending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Desending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                   </li>
                 </ul>
               </div>
@@ -141,15 +141,16 @@ export default {
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="d-flex align-items-center">
                   <span class="me-2 d-flex align-items-center"><i class="ti ti-calendar me-1"></i> 05 Oct 2024</span>
-                  <a href="#" class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
+                  <a href="javascript:void(0);"
+                    class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
                       src="@/assets/img/users/user-02.jpg" class="avatar avatar-xs rounded-circle me-2 flex-shrink-0"
                       alt="Img" />Gertrude Bowie</a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default me-2" data-bs-toggle="modal" data-bs-target="#edit_blog"><i
-                      class="ti ti-edit"></i></a>
-                  <a href="#" class="link-default" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                      class="ti ti-trash"></i></a>
+                  <a href="javascript:void(0);" class="link-default me-2" data-bs-toggle="modal"
+                    data-bs-target="#edit_blog"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="link-default" data-bs-toggle="modal"
+                    data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
                 </div>
               </div>
               <div class="border-bottom mb-3">
@@ -194,15 +195,16 @@ export default {
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="d-flex align-items-center">
                   <span class="me-2 d-flex align-items-center"><i class="ti ti-calendar me-1"></i> 05 Oct 2024</span>
-                  <a href="#" class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
+                  <a href="javascript:void(0);"
+                    class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
                       src="@/assets/img/users/user-03.jpg" class="avatar avatar-xs rounded-circle me-2 flex-shrink-0"
                       alt="Img" />Edward Marcus</a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default me-2" data-bs-toggle="modal" data-bs-target="#edit_blog"><i
-                      class="ti ti-edit"></i></a>
-                  <a href="#" class="link-default" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                      class="ti ti-trash"></i></a>
+                  <a href="javascript:void(0);" class="link-default me-2" data-bs-toggle="modal"
+                    data-bs-target="#edit_blog"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="link-default" data-bs-toggle="modal"
+                    data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
                 </div>
               </div>
               <div class="border-bottom mb-3">
@@ -247,15 +249,16 @@ export default {
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="d-flex align-items-center">
                   <span class="me-2 d-flex align-items-center"><i class="ti ti-calendar me-1"></i> 05 Oct 2024</span>
-                  <a href="#" class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
+                  <a href="javascript:void(0);"
+                    class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
                       src="@/assets/img/users/user-05.jpg" class="avatar avatar-xs rounded-circle me-2 flex-shrink-0"
                       alt="Img" />Mark Phillips</a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default me-2" data-bs-toggle="modal" data-bs-target="#edit_blog"><i
-                      class="ti ti-edit"></i></a>
-                  <a href="#" class="link-default" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                      class="ti ti-trash"></i></a>
+                  <a href="javascript:void(0);" class="link-default me-2" data-bs-toggle="modal"
+                    data-bs-target="#edit_blog"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="link-default" data-bs-toggle="modal"
+                    data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
                 </div>
               </div>
               <div class="border-bottom mb-3">
@@ -300,15 +303,16 @@ export default {
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="d-flex align-items-center">
                   <span class="me-2 d-flex align-items-center"><i class="ti ti-calendar me-1"></i> 05 Oct 2024</span>
-                  <a href="#" class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
+                  <a href="javascript:void(0);"
+                    class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
                       src="@/assets/img/users/user-04.jpg" class="avatar avatar-xs rounded-circle me-2 flex-shrink-0"
                       alt="Img" />Nidia Hale</a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default me-2" data-bs-toggle="modal" data-bs-target="#edit_blog"><i
-                      class="ti ti-edit"></i></a>
-                  <a href="#" class="link-default" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                      class="ti ti-trash"></i></a>
+                  <a href="javascript:void(0);" class="link-default me-2" data-bs-toggle="modal"
+                    data-bs-target="#edit_blog"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="link-default" data-bs-toggle="modal"
+                    data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
                 </div>
               </div>
               <div class="border-bottom mb-3">
@@ -353,15 +357,16 @@ export default {
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="d-flex align-items-center">
                   <span class="me-2 d-flex align-items-center"><i class="ti ti-calendar me-1"></i> 05 Oct 2024</span>
-                  <a href="#" class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
+                  <a href="javascript:void(0);"
+                    class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
                       src="@/assets/img/users/user-06.jpg" class="avatar avatar-xs rounded-circle me-2 flex-shrink-0"
                       alt="Img" />Rebecca Dale</a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default me-2" data-bs-toggle="modal" data-bs-target="#edit_blog"><i
-                      class="ti ti-edit"></i></a>
-                  <a href="#" class="link-default" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                      class="ti ti-trash"></i></a>
+                  <a href="javascript:void(0);" class="link-default me-2" data-bs-toggle="modal"
+                    data-bs-target="#edit_blog"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="link-default" data-bs-toggle="modal"
+                    data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
                 </div>
               </div>
               <div class="border-bottom mb-3">
@@ -406,15 +411,16 @@ export default {
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="d-flex align-items-center">
                   <span class="me-2 d-flex align-items-center"><i class="ti ti-calendar me-1"></i> 05 Oct 2024</span>
-                  <a href="#" class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
+                  <a href="javascript:void(0);"
+                    class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
                       src="@/assets/img/users/user-08.jpg" class="avatar avatar-xs rounded-circle me-2 flex-shrink-0"
                       alt="Img" />Jimmy Johnson</a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default me-2" data-bs-toggle="modal" data-bs-target="#edit_blog"><i
-                      class="ti ti-edit"></i></a>
-                  <a href="#" class="link-default" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                      class="ti ti-trash"></i></a>
+                  <a href="javascript:void(0);" class="link-default me-2" data-bs-toggle="modal"
+                    data-bs-target="#edit_blog"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="link-default" data-bs-toggle="modal"
+                    data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
                 </div>
               </div>
               <div class="border-bottom mb-3">
@@ -459,15 +465,16 @@ export default {
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="d-flex align-items-center">
                   <span class="me-2 d-flex align-items-center"><i class="ti ti-calendar me-1"></i> 05 Oct 2024</span>
-                  <a href="#" class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
+                  <a href="javascript:void(0);"
+                    class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
                       src="@/assets/img/users/user-07.jpg" class="avatar avatar-xs rounded-circle me-2 flex-shrink-0"
                       alt="Img" />Stanley Pierre</a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default me-2" data-bs-toggle="modal" data-bs-target="#edit_blog"><i
-                      class="ti ti-edit"></i></a>
-                  <a href="#" class="link-default" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                      class="ti ti-trash"></i></a>
+                  <a href="javascript:void(0);" class="link-default me-2" data-bs-toggle="modal"
+                    data-bs-target="#edit_blog"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="link-default" data-bs-toggle="modal"
+                    data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
                 </div>
               </div>
               <div class="border-bottom mb-3">
@@ -512,15 +519,16 @@ export default {
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="d-flex align-items-center">
                   <span class="me-2 d-flex align-items-center"><i class="ti ti-calendar me-1"></i> 05 Oct 2024</span>
-                  <a href="#" class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
+                  <a href="javascript:void(0);"
+                    class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
                       src="@/assets/img/users/user-10.jpg" class="avatar avatar-xs rounded-circle me-2 flex-shrink-0"
                       alt="Img" />Alice Garcia</a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default me-2" data-bs-toggle="modal" data-bs-target="#edit_blog"><i
-                      class="ti ti-edit"></i></a>
-                  <a href="#" class="link-default" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                      class="ti ti-trash"></i></a>
+                  <a href="javascript:void(0);" class="link-default me-2" data-bs-toggle="modal"
+                    data-bs-target="#edit_blog"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="link-default" data-bs-toggle="modal"
+                    data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
                 </div>
               </div>
               <div class="border-bottom mb-3">
@@ -565,15 +573,16 @@ export default {
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="d-flex align-items-center">
                   <span class="me-2 d-flex align-items-center"><i class="ti ti-calendar me-1"></i> 05 Oct 2024</span>
-                  <a href="#" class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
+                  <a href="javascript:void(0);"
+                    class="border-start link-default fs-14 fw-normal ps-2 me-2 text-truncate"><img
                       src="@/assets/img/users/user-09.jpg" class="avatar avatar-xs rounded-circle me-2 flex-shrink-0"
                       alt="Img" />James Currier</a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default me-2" data-bs-toggle="modal" data-bs-target="#edit_blog"><i
-                      class="ti ti-edit"></i></a>
-                  <a href="#" class="link-default" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                      class="ti ti-trash"></i></a>
+                  <a href="javascript:void(0);" class="link-default me-2" data-bs-toggle="modal"
+                    data-bs-target="#edit_blog"><i class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="link-default" data-bs-toggle="modal"
+                    data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
                 </div>
               </div>
               <div class="border-bottom mb-3">
@@ -605,7 +614,7 @@ export default {
         </div>
       </div>
       <div class="text-center mb-4">
-        <a href="#" class="btn btn-white border"><i class="ti ti-loader-3 text-primary me-2"></i>Load
+        <a href="javascript:void(0);" class="btn btn-white border"><i class="ti ti-loader-3 text-primary me-2"></i>Load
           More</a>
       </div>
     </div>
@@ -614,7 +623,7 @@ export default {
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

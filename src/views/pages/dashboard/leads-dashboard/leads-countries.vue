@@ -6,16 +6,17 @@
           <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Top Countries</h5>
             <div class="dropdown">
-              <a href="#" class="btn btn-white border-0 dropdown-toggle btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);"
+                class="btn btn-white border-0 dropdown-toggle btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Referrals
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Referrals</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Referrals</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Sales Pipeline</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Sales Pipeline</a>
                 </li>
               </ul>
             </div>

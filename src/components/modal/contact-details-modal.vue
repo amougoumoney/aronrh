@@ -112,7 +112,7 @@ export default {
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ export default {
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
@@ -408,7 +408,8 @@ export default {
                   <h6 class="fw-medium mb-1">tes.txt</h6>
                   <p>1.2 MB</p>
                 </div>
-                <a href="#" class="btn btn-sm btn-icon text-danger"><i class="ti ti-trash fs-20"></i></a>
+                <a href="javascript:void(0);" class="btn btn-sm btn-icon text-danger"><i
+                    class="ti ti-trash fs-20"></i></a>
               </div>
             </div>
           </div>
@@ -631,7 +632,7 @@ export default {
                                     <input class="form-control" type="text" />
                                   </div>
                                   <div>
-                                    <a href="#" class="btn btn-icon btn-sm add-sign text-primary"><i
+                                    <a href="javascript:void(0);" class="btn btn-icon btn-sm add-sign text-primary"><i
                                         class="ti ti-circle-plus"></i></a>
                                   </div>
                                 </div>
@@ -707,7 +708,7 @@ export default {
                                     <input class="form-control" type="text" />
                                   </div>
                                   <div>
-                                    <a href="#" class="btn btn-icon btn-sm add-sign text-primary"><i
+                                    <a href="javascript:void(0);" class="btn btn-icon btn-sm add-sign text-primary"><i
                                         class="ti ti-circle-plus"></i></a>
                                   </div>
                                 </div>
@@ -894,7 +895,7 @@ export default {
                             Upload
                             <input type="file" class="form-control image-sign" multiple="" />
                           </div>
-                          <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                          <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                         </div>
                       </div>
                     </div>
@@ -951,7 +952,8 @@ export default {
                     <div class="input-block mb-3">
                       <div class="d-flex justify-content-between align-items-center">
                         <label class="col-form-label">Deals <span class="text-danger"> *</span></label>
-                        <a href="#" class="add-new text-primary"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
+                        <a href="javascript:void(0);" class="add-new text-primary"><i
+                            class="ti ti-plus text-primary me-1"></i>Add New</a>
                       </div>
                       <vue-select :options="Deals" id="collins" placeholder="Collins" />
                     </div>
@@ -1104,7 +1106,8 @@ export default {
                       <input type="email" class="form-control" value="Darlee Robertson" />
                     </div>
                   </div>
-                  <a href="#" class="add-new text-primary mb-3"><i class="ti ti-circle-plus text-primary me-1"></i>Add
+                  <a href="javascript:void(0);" class="add-new text-primary mb-3"><i
+                      class="ti ti-circle-plus text-primary me-1"></i>Add
                     New</a>
                 </div>
               </div>
@@ -1146,12 +1149,12 @@ export default {
                   <div class="d-flex align-items-center mb-3">
                     <input class="form-check-input me-1" type="checkbox" value="" id="user-1" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a href="#" class="avatar avatar-md border avatar-rounded">
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
                         <img src="@/assets/img/reports/user-01.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
-                          <a href="#">Michael Walker</a>
+                          <a href="javascript:void(0);">Michael Walker</a>
                         </h6>
                       </div>
                     </div>
@@ -1159,12 +1162,12 @@ export default {
                   <div class="d-flex align-items-center mb-3">
                     <input class="form-check-input me-1" type="checkbox" value="" id="user-2" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a href="#" class="avatar avatar-md border avatar-rounded">
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
                         <img src="@/assets/img/reports/user-02.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
-                          <a href="#">Sophie Headrick</a>
+                          <a href="javascript:void(0);">Sophie Headrick</a>
                         </h6>
                       </div>
                     </div>
@@ -1172,12 +1175,12 @@ export default {
                   <div class="d-flex align-items-center mb-3">
                     <input class="form-check-input me-1" type="checkbox" value="" id="user-3" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a href="#" class="avatar avatar-md border avatar-rounded">
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
                         <img src="@/assets/img/reports/user-03.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
-                          <a href="#">Cameron Drake</a>
+                          <a href="javascript:void(0);">Cameron Drake</a>
                         </h6>
                       </div>
                     </div>
@@ -1185,12 +1188,12 @@ export default {
                   <div class="d-flex align-items-center mb-3">
                     <input class="form-check-input me-1" type="checkbox" value="" id="user-4" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a href="#" class="avatar avatar-md border avatar-rounded">
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
                         <img src="@/assets/img/reports/user-04.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
-                          <a href="#">Doris Crowley</a>
+                          <a href="javascript:void(0);">Doris Crowley</a>
                         </h6>
                       </div>
                     </div>
@@ -1198,18 +1201,18 @@ export default {
                   <div class="d-flex align-items-center mb-3">
                     <input class="form-check-input me-1" type="checkbox" value="" id="user-5" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a href="#" class="avatar avatar-md border avatar-rounded">
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
                         <img src="@/assets/img/profiles/avatar-12.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
-                          <a href="#">Thomas Bordelon</a>
+                          <a href="javascript:void(0);">Thomas Bordelon</a>
                         </h6>
                       </div>
                     </div>
                   </div>
                   <div class="d-flex align-items-center justify-content-center">
-                    <a href="#" class="btn btn-primary">Confirm</a>
+                    <a href="javascript:void(0);" class="btn btn-primary">Confirm</a>
                   </div>
                 </div>
                 <div class="mb-3">
@@ -1256,7 +1259,8 @@ export default {
                 <div class="input-block mb-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <label class="form-label">Pipeline <span class="text-danger"> *</span></label>
-                    <a href="#" class="add-new text-primary"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
+                    <a href="javascript:void(0);" class="add-new text-primary"><i
+                        class="ti ti-plus text-primary me-1"></i>Add New</a>
                   </div>
                   <vue-select :options="Pipeline" id="sales" placeholder="Select" />
                 </div>

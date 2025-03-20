@@ -75,7 +75,8 @@
                         <div class="d-flex align-items-center">
                           <input type="text" class="form-control" />
                           <div class="ms-2">
-                            <a href="#" class="btn btn-icon add-revenue btn-sm btn-primary rounded-circle"><i
+                            <a href="javascript:void(0);"
+                              class="btn btn-icon add-revenue btn-sm btn-primary rounded-circle"><i
                                 class="ti ti-plus"></i></a>
                           </div>
                         </div>
@@ -108,7 +109,8 @@
                         <div class="d-flex align-items-center">
                           <input type="text" class="form-control" />
                           <div class="ms-2">
-                            <a href="#" class="btn btn-icon add-expenses btn-sm btn-primary rounded-circle"><i
+                            <a href="javascript:void(0);"
+                              class="btn btn-icon add-expenses btn-sm btn-primary rounded-circle"><i
                                 class="ti ti-plus"></i></a>
                           </div>
                         </div>
@@ -231,7 +233,8 @@
                         <div class="d-flex align-items-center">
                           <input type="text" class="form-control" value="250000" />
                           <div class="ms-2">
-                            <a href="#" class="btn btn-icon add-revenue btn-sm btn-primary rounded-circle"><i
+                            <a href="javascript:void(0);"
+                              class="btn btn-icon add-revenue btn-sm btn-primary rounded-circle"><i
                                 class="ti ti-plus"></i></a>
                           </div>
                         </div>
@@ -264,7 +267,8 @@
                         <div class="d-flex align-items-center">
                           <input type="text" class="form-control" />
                           <div class="ms-2">
-                            <a href="#" class="btn btn-icon add-expenses btn-sm btn-primary rounded-circle"><i
+                            <a href="javascript:void(0);"
+                              class="btn btn-icon add-expenses btn-sm btn-primary rounded-circle"><i
                                 class="ti ti-plus"></i></a>
                           </div>
                         </div>
@@ -324,7 +328,7 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/accounting/budgets" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>

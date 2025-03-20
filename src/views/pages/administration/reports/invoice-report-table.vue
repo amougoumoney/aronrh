@@ -219,12 +219,12 @@ export default {
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Client_Name'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="#" class="avatar avatar-md border avatar-rounded">
+          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
             <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
-              <a href="#">{{ record.Client_Name }}</a>
+              <a href="javascript:void(0);">{{ record.Client_Name }}</a>
             </h6>
             <span class="fs-12 fw-normal">{{ record.Role }}</span>
           </div>

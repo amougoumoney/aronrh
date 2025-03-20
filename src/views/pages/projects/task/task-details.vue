@@ -13,12 +13,12 @@
           </h6>
           <div class="d-flex">
             <div class="text-end">
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit_task"><i
-                  class="ti ti-edit me-1"></i>Edit Task</a>
+              <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#edit_task"><i class="ti ti-edit me-1"></i>Edit Task</a>
             </div>
             <div class="head-icons ms-2 text-end">
-              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-                id="collapse-header" @click="toggleHeader">
+              <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                 <i class="ti ti-chevrons-up"></i>
               </a>
             </div>
@@ -42,29 +42,30 @@
                   </p>
                 </div>
                 <div class="dropdown">
-                  <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                  <a href="javascript:void(0);"
+                    class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     <i class="ti ti-file-export me-1"></i>
                     Mark All as Completed
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">All Tags</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">All Tags</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Internal</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Internal</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Projects</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Projects</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Meetings</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Meetings</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Reminder</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Reminder</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Research</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Research</a>
                     </li>
                   </ul>
                 </div>
@@ -91,39 +92,44 @@
                 <div class="col-sm-9">
                   <div class="d-flex align-items-center mb-3">
                     <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
-                      <a href="#" class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
+                      <a href="javascript:void(0);"
+                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
                         <img src="@/assets/img/profiles/avatar-12.jpg" alt="Img" />
                       </a>
                       <h6 class="fs-12">
-                        <a href="#">Lewis</a>
+                        <a href="javascript:void(0);">Lewis</a>
                       </h6>
                     </div>
                     <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
-                      <a href="#" class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
+                      <a href="javascript:void(0);"
+                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-19.jpg" alt="Img" />
                       </a>
                       <h6 class="fs-12">
-                        <a href="#">Leona</a>
+                        <a href="javascript:void(0);">Leona</a>
                       </h6>
                     </div>
                     <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
-                      <a href="#" class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
+                      <a href="javascript:void(0);"
+                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-33.jpg" alt="Img" />
                       </a>
                       <h6 class="fs-12">
-                        <a href="#">Pineiro</a>
+                        <a href="javascript:void(0);">Pineiro</a>
                       </h6>
                     </div>
                     <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
-                      <a href="#" class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
+                      <a href="javascript:void(0);"
+                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-37.jpg" alt="Img" />
                       </a>
                       <h6 class="fs-12">
-                        <a href="#">Moseley</a>
+                        <a href="javascript:void(0);">Moseley</a>
                       </h6>
                     </div>
                     <div>
-                      <a href="#" class="d-flex align-items-center fs-12"><i class="ti ti-circle-plus me-1"></i>Add
+                      <a href="javascript:void(0);" class="d-flex align-items-center fs-12"><i
+                          class="ti ti-circle-plus me-1"></i>Add
                         New</a>
                     </div>
                   </div>
@@ -136,15 +142,17 @@
                 <div class="col-sm-9">
                   <div class="d-flex align-items-center mb-3">
                     <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
-                      <a href="#" class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
+                      <a href="javascript:void(0);"
+                        class="avatar avatar-sm avatar-rounded border border-white flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-42.jpg" alt="Img" />
                       </a>
                       <h6 class="fs-12">
-                        <a href="#">Ruth</a>
+                        <a href="javascript:void(0);">Ruth</a>
                       </h6>
                     </div>
                     <div>
-                      <a href="#" class="d-flex align-items-center fs-12"><i class="ti ti-circle-plus me-1"></i>Add
+                      <a href="javascript:void(0);" class="d-flex align-items-center fs-12"><i
+                          class="ti ti-circle-plus me-1"></i>Add
                         New</a>
                     </div>
                   </div>
@@ -171,10 +179,12 @@
                     <div class="d-flex align-items-center flex-fill">
                       <h5>Files</h5>
                       <div class="ms-auto d-flex align-items-center">
-                        <a href="#" class="btn btn-primary btn-xs d-inline-flex align-items-center me-3"><i
+                        <a href="javascript:void(0);"
+                          class="btn btn-primary btn-xs d-inline-flex align-items-center me-3"><i
                             class="ti ti-square-rounded-plus-filled me-1"></i>Add New</a>
-                        <a href="#" class="d-flex align-items-center collapse-arrow" data-bs-toggle="collapse"
-                          data-bs-target="#primaryBorderFour" aria-expanded="true" aria-controls="primaryBorderFour">
+                        <a href="javascript:void(0);" class="d-flex align-items-center collapse-arrow"
+                          data-bs-toggle="collapse" data-bs-target="#primaryBorderFour" aria-expanded="true"
+                          aria-controls="primaryBorderFour">
                           <i class="ti ti-chevron-down fs-18"></i>
                         </a>
                       </div>
@@ -191,7 +201,7 @@
                             <div class="card-body">
                               <div class="d-flex align-items-center justify-content-between mb-2 pb-2 border-bottom">
                                 <div class="d-flex align-items-center overflow-hidden">
-                                  <a href="#" class="avatar avatar-md bg-light me-2">
+                                  <a href="javascript:void(0);" class="avatar avatar-md bg-light me-2">
                                     <img :src="`@/assets/img/icons/${item.Logo}`" class="w-auto h-auto" alt="img">
                                   </a>
                                   <div class="overflow-hidden">
@@ -200,8 +210,10 @@
                                   </div>
                                 </div>
                                 <div class="d-flex align-items-center">
-                                  <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-download"></i></a>
-                                  <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
+                                  <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i
+                                      class="ti ti-download"></i></a>
+                                  <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i
+                                      class="ti ti-trash"></i></a>
                                 </div>
                               </div>
                               <div class="d-flex align-items-center justify-content-between">
@@ -254,10 +266,12 @@
                     <div class="d-flex align-items-center flex-fill">
                       <h5>Activity</h5>
                       <div class="d-flex align-items-center ms-auto">
-                        <a href="#" class="btn btn-primary btn-xs d-inline-flex align-items-center me-3"><i
+                        <a href="javascript:void(0);"
+                          class="btn btn-primary btn-xs d-inline-flex align-items-center me-3"><i
                             class="ti ti-square-rounded-plus-filled me-1"></i>Add New</a>
-                        <a href="#" class="d-flex align-items-center collapse-arrow" data-bs-toggle="collapse"
-                          data-bs-target="#primaryBorderSix" aria-expanded="true" aria-controls="primaryBorderSix">
+                        <a href="javascript:void(0);" class="d-flex align-items-center collapse-arrow"
+                          data-bs-toggle="collapse" data-bs-target="#primaryBorderSix" aria-expanded="true"
+                          aria-controls="primaryBorderSix">
                           <i class="ti ti-chevron-down fs-18"></i>
                         </a>
                       </div>
@@ -377,7 +391,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

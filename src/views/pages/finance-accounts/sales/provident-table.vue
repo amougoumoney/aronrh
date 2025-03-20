@@ -182,18 +182,18 @@ export default {
         <template #bodyCell="{ column, record }">
             <template v-if="column.key === 'Employee_Name'">
                 <div class="d-flex align-items-center file-name-icon">
-                    <a href="#" class="avatar avatar-md avatar-rounded">
+                    <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded">
                         <img :src="require(`@/assets/img/users/${record.Image}`)" class="img-fluid" alt="img">
                     </a>
                     <div class="ms-2">
-                        <h6 class="fw-medium"><a href="#">{{ record.Employee_Name }}</a></h6>
+                        <h6 class="fw-medium"><a href="javascript:void(0);">{{ record.Employee_Name }}</a></h6>
                         <span class="d-block mt-1">{{ record.Roll }}</span>
                     </div>
                 </div>
             </template>
             <template v-if="column.key === 'Status'">
                 <div class="dropdown">
-                    <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                    <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                         data-bs-toggle="dropdown">
                         <span class="rounded-circle d-flex justify-content-center align-items-center me-2"
                             :class="[record.Status === 'Approved' ? 'bg-transparent-success' : 'bg-transparent-info']">
@@ -203,13 +203,13 @@ export default {
                     </a>
                     <ul class="dropdown-menu  dropdown-menu-end p-3">
                         <li>
-                            <a href="#"
+                            <a href="javascript:void(0);"
                                 class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
                                     class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"><i
                                         class="ti ti-point-filled text-success"></i></span>Approved</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="javascript:void(0);"
                                 class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
                                     class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"><i
                                         class="ti ti-point-filled text-skyblue"></i></span>Pending </a>
@@ -219,9 +219,10 @@ export default {
             </template>
             <template v-if="column.key === 'action'">
                 <div class="action-icon d-inline-flex">
-                    <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_provident-fund"><i
-                            class="ti ti-edit"></i></a>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+                    <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
+                        data-bs-target="#edit_provident-fund"><i class="ti ti-edit"></i></a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            class="ti ti-trash"></i></a>
                 </div>
             </template>
         </template>

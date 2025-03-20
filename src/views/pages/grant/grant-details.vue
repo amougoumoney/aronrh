@@ -77,7 +77,7 @@
                             <h6 class="mb-0">{{ doc.name }}</h6>
                             <small>{{ doc.size }}</small>
                           </div>
-                          <a href="#" class="ms-auto">
+                          <a href="javascript:void(0);" class="ms-auto">
                             <i class="ti ti-download"></i>
                           </a>
                         </div>

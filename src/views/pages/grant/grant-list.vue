@@ -63,17 +63,18 @@
                     </td>
                     <td class="text-end">
                       <div class="dropdown dropdown-action">
-                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="javascript:void(0);" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                          aria-expanded="false">
                           <i class="ti ti-dots-vertical"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <router-link :to="'/grant/details/' + grant.id" class="dropdown-item">
                             <i class="ti ti-eye me-2"></i>{{ $t('View') }}
                           </router-link>
-                          <a href="#" class="dropdown-item" @click="openEditGrantModal(grant)">
+                          <a href="javascript:void(0);" class="dropdown-item" @click="openEditGrantModal(grant)">
                             <i class="ti ti-pencil me-2"></i>{{ $t('Edit') }}
                           </a>
-                          <a href="#" class="dropdown-item" @click="deleteGrant(grant.id)">
+                          <a href="javascript:void(0);" class="dropdown-item" @click="deleteGrant(grant.id)">
                             <i class="ti ti-trash me-2"></i>{{ $t('Delete') }}
                           </a>
                         </div>

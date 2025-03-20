@@ -574,8 +574,10 @@
                       <td><span class="badge bg-soft-success">Paid</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -592,8 +594,10 @@
                       <td><span class="badge bg-soft-danger">Pending</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -610,8 +614,10 @@
                       <td><span class="badge bg-soft-success">Paid</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -628,8 +634,10 @@
                       <td><span class="badge bg-soft-success">Paid</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -646,8 +654,10 @@
                       <td><span class="badge bg-soft-danger">Pending</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-light"><i class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -680,11 +690,11 @@
                       <td>24 May 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
                               class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
                               class="feather-edit"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
                               class="feather-trash"></i></a>
                         </div>
                       </td>
@@ -695,11 +705,11 @@
                       <td>02 July 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
                               class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
                               class="feather-edit"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
                               class="feather-trash"></i></a>
                         </div>
                       </td>
@@ -710,11 +720,11 @@
                       <td>15 April 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
                               class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
                               class="feather-edit"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
                               class="feather-trash"></i></a>
                         </div>
                       </td>
@@ -725,11 +735,11 @@
                       <td>17 March 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
                               class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
                               class="feather-edit"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
                               class="feather-trash"></i></a>
                         </div>
                       </td>
@@ -786,7 +796,8 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                           </span>
-                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +5
                           </a>
                         </div>
@@ -823,7 +834,8 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                           </span>
-                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +6
                           </a>
                         </div>
@@ -863,7 +875,8 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-15.jpg" alt="img" />
                           </span>
-                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +2
                           </a>
                         </div>
@@ -900,7 +913,8 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                           </span>
-                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +5
                           </a>
                         </div>
@@ -1077,7 +1091,8 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                           </span>
-                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +4
                           </a>
                         </div>
@@ -1091,8 +1106,10 @@
                       <td>$10,984.29</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-success"><i class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-info"><i class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -1120,7 +1137,8 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-15.jpg" alt="img" />
                           </span>
-                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +4
                           </a>
                         </div>
@@ -1134,8 +1152,10 @@
                       <td>$1.4billion</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-success"><i class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-info"><i class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -1157,7 +1177,8 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-16.jpg" alt="img" />
                           </span>
-                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +10
                           </a>
                         </div>
@@ -1171,8 +1192,10 @@
                       <td>$7,123.21</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-success"><i class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-info"><i class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -1197,7 +1220,8 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-14.jpg" alt="img" />
                           </span>
-                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded" href="#">
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +6
                           </a>
                         </div>
@@ -1211,8 +1235,10 @@
                       <td>$2,325.45</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a href="#" class="btn btn-icon btn-sm btn-success"><i class="feather-download"></i></a>
-                          <a href="#" class="btn btn-icon btn-sm btn-info"><i class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>

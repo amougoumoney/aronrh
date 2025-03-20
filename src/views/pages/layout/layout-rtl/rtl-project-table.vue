@@ -23,19 +23,19 @@ export default {
           <h5 class="mb-2">Projects</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar ms-1"></i>This Week
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Month</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Week</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Today</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
                 </li>
               </ul>
             </div>
@@ -112,7 +112,8 @@ export default {
                       <span class="avatar avatar-rounded">
                         <img class="border border-white" src="@/assets/img/profiles/avatar-08.jpg" alt="img" />
                       </span>
-                      <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium" href="#">
+                      <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium"
+                        href="javascript:void(0);">
                         +1
                       </a>
                     </div>
@@ -295,7 +296,8 @@ export default {
                       <span class="avatar avatar-rounded">
                         <img class="border border-white" src="@/assets/img/profiles/avatar-17.jpg" alt="img" />
                       </span>
-                      <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium" href="#">
+                      <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium"
+                        href="javascript:void(0);">
                         +2
                       </a>
                     </div>
@@ -329,19 +331,19 @@ export default {
           <h5 class="mb-2">Tasks Statistics</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar ms-1"></i>This Week
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Month</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Week</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Today</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
                 </li>
               </ul>
             </div>

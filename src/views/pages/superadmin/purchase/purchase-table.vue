@@ -214,16 +214,16 @@ export default {
   <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Invoice_ID'">
-        <a href="#" class="link-default">{{ record.Invoice_ID }}</a>
+        <a href="javascript:void(0);" class="link-default">{{ record.Invoice_ID }}</a>
       </template>
       <template v-if="column.key === 'Customer'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="#" class="avatar avatar-md border rounded-circle">
+          <a href="javascript:void(0);" class="avatar avatar-md border rounded-circle">
             <img :src="(`@/assets/img/company/${record.Image}`)" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
-              <a href="#">{{ record.Customer }}</a>
+              <a href="javascript:void(0);">{{ record.Customer }}</a>
             </h6>
           </div>
         </div>
@@ -241,10 +241,11 @@ export default {
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#view_invoice"><i
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#view_invoice"><i
               class="ti ti-file-invoice"></i></a>
-          <a href="#" class="me-2"><i class="ti ti-download"></i></a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+          <a href="javascript:void(0);" class="me-2"><i class="ti ti-download"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

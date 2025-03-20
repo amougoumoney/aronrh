@@ -22,18 +22,19 @@ export default {
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
           <h5 class="mb-2">Employee Status</h5>
           <div class="dropdown mb-2">
-            <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center" data-bs-toggle="dropdown">
+            <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              data-bs-toggle="dropdown">
               <i class="ti ti-calendar ms-1"></i>This Week
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
-                <a href="#" class="dropdown-item rounded-1">This Month</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">This Week</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">Today</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
               </li>
             </ul>
           </div>
@@ -135,18 +136,19 @@ export default {
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
           <h5 class="mb-2">Attendance Overview</h5>
           <div class="dropdown mb-2">
-            <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center" data-bs-toggle="dropdown">
+            <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              data-bs-toggle="dropdown">
               <i class="ti ti-calendar ms-1"></i>Today
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
-                <a href="#" class="dropdown-item rounded-1">This Month</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">This Week</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">Today</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
               </li>
             </ul>
           </div>
@@ -201,7 +203,7 @@ export default {
                 <span class="avatar avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-29.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10" href="#">
+                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10" href="javascript:void(0);">
                   +1
                 </a>
               </div>
@@ -221,37 +223,37 @@ export default {
           <h5 class="mb-2">Clock-In/Out</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
-              <a href="#"
+              <a href="javascript:void(0);"
                 class="dropdown-toggle btn btn-white btn-sm d-inline-flex align-items-center border-0 fs-13 ms-2"
                 data-bs-toggle="dropdown">
                 All Departments
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Finance</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Finance</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Development</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Development</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Marketing</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Marketing</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown mb-2">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar ms-1"></i>Today
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Month</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Week</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Today</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
                 </li>
               </ul>
             </div>
@@ -261,7 +263,7 @@ export default {
           <div>
             <div class="d-flex align-items-center justify-content-between mb-3 p-2 border border-dashed br-5">
               <div class="d-flex align-items-center">
-                <a href="#" class="avatar flex-shrink-0">
+                <a href="javascript:void(0);" class="avatar flex-shrink-0">
                   <img src="@/assets/img/profiles/avatar-24.jpg" class="rounded-circle border border-2" alt="img" />
                 </a>
                 <div class="me-2">
@@ -270,14 +272,14 @@ export default {
                 </div>
               </div>
               <div class="d-flex align-items-center">
-                <a href="#" class="link-default ms-2"><i class="ti ti-clock-share"></i></a>
+                <a href="javascript:void(0);" class="link-default ms-2"><i class="ti ti-clock-share"></i></a>
                 <span class="fs-10 fw-medium d-inline-flex align-items-center badge badge-success"><i
                     class="ti ti-circle-filled fs-5 ms-1"></i>09:15</span>
               </div>
             </div>
             <div class="d-flex align-items-center justify-content-between mb-3 p-2 border br-5">
               <div class="d-flex align-items-center">
-                <a href="#" class="avatar flex-shrink-0">
+                <a href="javascript:void(0);" class="avatar flex-shrink-0">
                   <img src="@/assets/img/profiles/avatar-23.jpg" class="rounded-circle border border-2" alt="img" />
                 </a>
                 <div class="me-2">
@@ -286,7 +288,7 @@ export default {
                 </div>
               </div>
               <div class="d-flex align-items-center">
-                <a href="#" class="link-default ms-2"><i class="ti ti-clock-share"></i></a>
+                <a href="javascript:void(0);" class="link-default ms-2"><i class="ti ti-clock-share"></i></a>
                 <span class="fs-10 fw-medium d-inline-flex align-items-center badge badge-success"><i
                     class="ti ti-circle-filled fs-5 ms-1"></i>09:36</span>
               </div>
@@ -294,7 +296,7 @@ export default {
             <div class="mb-3 p-2 border br-5">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
-                  <a href="#" class="avatar flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar flex-shrink-0">
                     <img src="@/assets/img/profiles/avatar-27.jpg" class="rounded-circle border border-2" alt="img" />
                   </a>
                   <div class="me-2">
@@ -303,7 +305,7 @@ export default {
                   </div>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default ms-2"><i class="ti ti-clock-share"></i></a>
+                  <a href="javascript:void(0);" class="link-default ms-2"><i class="ti ti-clock-share"></i></a>
                   <span class="fs-10 fw-medium d-inline-flex align-items-center badge badge-success"><i
                       class="ti ti-circle-filled fs-5 ms-1"></i>09:15</span>
                 </div>
@@ -346,7 +348,7 @@ export default {
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="#" class="link-default ms-2"><i class="ti ti-clock-share"></i></a>
+              <a href="javascript:void(0);" class="link-default ms-2"><i class="ti ti-clock-share"></i></a>
               <span class="fs-10 fw-medium d-inline-flex align-items-center badge badge-danger"><i
                   class="ti ti-circle-filled fs-5 ms-1"></i>08:35</span>
             </div>

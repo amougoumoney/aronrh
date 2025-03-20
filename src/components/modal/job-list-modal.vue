@@ -78,7 +78,7 @@ export default {
                               Upload
                               <input type="file" class="form-control image-sign" multiple="" />
                             </div>
-                            <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                            <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                           </div>
                         </div>
                       </div>
@@ -303,7 +303,7 @@ export default {
                               Upload
                               <input type="file" class="form-control image-sign" multiple="" />
                             </div>
-                            <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                            <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                           </div>
                         </div>
                       </div>
@@ -471,7 +471,7 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/recuritment/job-list" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>

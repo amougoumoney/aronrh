@@ -112,12 +112,12 @@ export default {
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="my-xl-auto right-content d-flex">
           <div class="mb-2">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#add_task"
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_task"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Tasks</a>
           </div>
           <div class="head-icons ms-2 mb-0">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -430,48 +430,48 @@ export default {
                     :editable="true" :clearable="false" :input-format="dateFormat" />
                 </div>
                 <div class="dropdown me-2">
-                  <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                  <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     All Tags
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">All Tags</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">All Tags</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Internal</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Internal</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Projects</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Projects</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Meetings</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Meetings</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Reminder</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Reminder</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Research</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Research</a>
                     </li>
                   </ul>
                 </div>
                 <div class="d-flex align-items-center">
                   <span class="d-inline-flex me-2">Sort By : </span>
                   <div class="dropdown">
-                    <a href="#"
+                    <a href="javascript:void(0);"
                       class="dropdown-toggle btn btn-white d-inline-flex align-items-center border-0 bg-transparent p-0 text-dark"
                       data-bs-toggle="dropdown">
                       Created Date
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end p-3">
                       <li>
-                        <a href="#" class="dropdown-item rounded-1">Created Date</a>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Created Date</a>
                       </li>
                       <li>
-                        <a href="#" class="dropdown-item rounded-1">Priority</a>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Priority</a>
                       </li>
                       <li>
-                        <a href="#" class="dropdown-item rounded-1">Due Date</a>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Due Date</a>
                       </li>
                     </ul>
                   </div>
@@ -496,29 +496,29 @@ export default {
               </div>
               <div class="text-end mb-3 pb-3 border-bottom">
                 <div class="dropdown">
-                  <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                  <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     <i class="ti ti-file-export me-1"></i>
                     Mark All as Completed
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">All Tags</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">All Tags</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Internal</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Internal</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Projects</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Projects</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Meetings</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Meetings</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Reminder</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Reminder</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Research</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Research</a>
                     </li>
                   </ul>
                 </div>
@@ -560,20 +560,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -620,20 +621,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -678,20 +680,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -736,20 +739,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -796,20 +800,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -837,29 +842,29 @@ export default {
               </div>
               <div class="text-end mb-3 pb-3 border-bottom">
                 <div class="dropdown">
-                  <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                  <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     <i class="ti ti-file-export me-1"></i>
                     Mark All as Completed
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">All Tags</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">All Tags</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Internal</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Internal</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Projects</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Projects</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Meetings</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Meetings</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Reminder</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Reminder</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Research</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Research</a>
                     </li>
                   </ul>
                 </div>
@@ -901,20 +906,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -961,20 +967,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1019,20 +1026,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1077,20 +1085,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1137,20 +1146,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1178,29 +1188,29 @@ export default {
               </div>
               <div class="text-end mb-3 pb-3 border-bottom">
                 <div class="dropdown">
-                  <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                  <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     <i class="ti ti-file-export me-1"></i>
                     Mark All as Completed
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">All Tags</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">All Tags</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Internal</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Internal</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Projects</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Projects</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Meetings</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Meetings</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Reminder</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Reminder</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Research</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Research</a>
                     </li>
                   </ul>
                 </div>
@@ -1242,20 +1252,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1302,20 +1313,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1360,20 +1372,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1418,20 +1431,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1478,20 +1492,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1519,29 +1534,29 @@ export default {
               </div>
               <div class="text-end mb-3 pb-3 border-bottom">
                 <div class="dropdown">
-                  <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                  <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                     data-bs-toggle="dropdown">
                     <i class="ti ti-file-export me-1"></i>
                     Mark All as Completed
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">All Tags</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">All Tags</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Internal</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Internal</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Projects</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Projects</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Meetings</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Meetings</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Reminder</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Reminder</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1">Research</a>
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1">Research</a>
                     </li>
                   </ul>
                 </div>
@@ -1583,20 +1598,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1643,20 +1659,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1701,20 +1718,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1759,20 +1777,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1819,20 +1838,21 @@ export default {
                             </span>
                           </div>
                           <div class="dropdown ms-2">
-                            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                            <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                              data-bs-toggle="dropdown">
                               <i class="ti ti-dots-vertical"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3">
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                               </li>
                               <li>
-                                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                                   data-bs-target="#view_todo"><i class="ti ti-eye me-2"></i>View</a>
                               </li>
                             </ul>
@@ -1846,7 +1866,7 @@ export default {
             </div>
           </div>
           <div class="text-center mb-4">
-            <a href="#" class="btn btn-primary"><i class="ti ti-loader me-1"></i>Load More</a>
+            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader me-1"></i>Load More</a>
           </div>
         </div>
       </div>
@@ -1855,7 +1875,7 @@ export default {
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

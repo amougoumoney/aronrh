@@ -159,9 +159,10 @@ export default {
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_termination"><i
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_termination"><i
               class="ti ti-edit"></i></a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

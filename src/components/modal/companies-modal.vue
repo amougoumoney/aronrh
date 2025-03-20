@@ -28,7 +28,7 @@
                         Upload
                         <input type="file" class="form-control image-sign" multiple />
                       </div>
-                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
@@ -166,7 +166,7 @@
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
@@ -417,7 +417,7 @@
           <div class="p-3">
             <div class="d-flex justify-content-between align-items-center rounded bg-light p-3">
               <div class="file-name-icon d-flex align-items-center">
-                <a href="#" class="avatar avatar-md border rounded-circle flex-shrink-0 me-2">
+                <a href="javascript:void(0);" class="avatar avatar-md border rounded-circle flex-shrink-0 me-2">
                   <img src="@/assets/img/company/company-01.svg" class="img-fluid" alt="img" />
                 </a>
                 <div>
@@ -529,7 +529,7 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/super-admin/companies" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>

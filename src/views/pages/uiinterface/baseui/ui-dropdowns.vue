@@ -22,20 +22,20 @@
                   Dropdown Button
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Another action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Something else here</a></li>
                 </ul>
               </div>
               <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                <a class="btn btn-secondary dropdown-toggle" href="javascript:void(0);" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown Link
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Another action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Something else here</a></li>
                 </ul>
               </div>
             </div>
@@ -58,19 +58,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -81,19 +81,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -104,19 +104,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -127,19 +127,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -150,19 +150,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -173,19 +173,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -210,19 +210,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -233,19 +233,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -256,19 +256,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -279,19 +279,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -302,19 +302,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -325,19 +325,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -362,19 +362,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -385,19 +385,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -408,19 +408,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -431,19 +431,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -454,19 +454,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -477,19 +477,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -514,19 +514,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -537,19 +537,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -560,19 +560,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -583,19 +583,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -606,19 +606,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -629,19 +629,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -665,18 +665,18 @@
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -687,18 +687,18 @@
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -709,18 +709,18 @@
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -731,18 +731,18 @@
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -753,18 +753,18 @@
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -775,18 +775,18 @@
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -805,18 +805,18 @@
                   Large button
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -829,18 +829,18 @@
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -851,18 +851,18 @@
                   Small button
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -875,18 +875,18 @@
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -908,18 +908,18 @@
                   Dropup
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -930,18 +930,18 @@
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -963,18 +963,18 @@
                   Dropright
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -985,18 +985,18 @@
                   <span class="visually-hidden">Toggle Dropright</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -1018,18 +1018,18 @@
                   Dropstart
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>
@@ -1041,19 +1041,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -1077,13 +1077,13 @@
               </button>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Regular link</a>
+                  <a class="dropdown-item" href="javascript:void(0);">Regular link</a>
                 </li>
                 <li>
-                  <a class="dropdown-item active" href="#" aria-current="true">Active link</a>
+                  <a class="dropdown-item active" href="javascript:void(0);" aria-current="true">Active link</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Another link</a>
+                  <a class="dropdown-item" href="javascript:void(0);">Another link</a>
                 </li>
               </ul>
             </div>
@@ -1104,13 +1104,13 @@
               </button>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Regular link</a>
+                  <a class="dropdown-item" href="javascript:void(0);">Regular link</a>
                 </li>
                 <li>
-                  <a class="dropdown-item disabled" href="#" aria-current="true">Active link</a>
+                  <a class="dropdown-item disabled" href="javascript:void(0);" aria-current="true">Active link</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Another link</a>
+                  <a class="dropdown-item" href="javascript:void(0);">Another link</a>
                 </li>
               </ul>
             </div>
@@ -1152,8 +1152,8 @@
                   <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Sign in</button>
                 </form>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">New around here? Sign up</a>
-                <a class="dropdown-item" href="#">Forgot password?</a>
+                <a class="dropdown-item" href="javascript:void(0);">New around here? Sign up</a>
+                <a class="dropdown-item" href="javascript:void(0);">Forgot password?</a>
               </div>
             </div>
           </div>
@@ -1175,13 +1175,13 @@
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1192,13 +1192,13 @@
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1209,13 +1209,13 @@
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1226,13 +1226,13 @@
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInsise">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1258,12 +1258,12 @@
                   Centered dropdown
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Action two</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Action two</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Action three</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Action three</a>
                   </li>
                 </ul>
               </div>
@@ -1289,12 +1289,12 @@
                   Centered dropup
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropupCenterBtn">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Action two</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Action two</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Action three</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Action three</a>
                   </li>
                 </ul>
               </div>
@@ -1352,13 +1352,13 @@
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
@@ -1371,19 +1371,19 @@
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -1408,13 +1408,13 @@
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1425,13 +1425,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1442,13 +1442,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-lg-end">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1459,13 +1459,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1476,13 +1476,13 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1493,13 +1493,13 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1510,13 +1510,13 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Menu item</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
                   </ul>
                 </div>
@@ -1539,12 +1539,12 @@
                   Dropdown button
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                 </ul>
               </div>
@@ -1654,13 +1654,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-primary">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
@@ -1671,13 +1671,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-secondary">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
@@ -1688,16 +1688,16 @@
                   </button>
                   <ul class="dropdown-menu dropmenu-item-warning">
                     <li>
-                      <a class="dropdown-item active" href="#">Active</a>
+                      <a class="dropdown-item active" href="javascript:void(0);">Active</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
@@ -1708,16 +1708,16 @@
                   </button>
                   <ul class="dropdown-menu dropmenu-item-info">
                     <li>
-                      <a class="dropdown-item active" href="#">Active</a>
+                      <a class="dropdown-item active" href="javascript:void(0);">Active</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
@@ -1728,16 +1728,16 @@
                   </button>
                   <ul class="dropdown-menu dropmenu-light-success">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item active" href="#">Active</a>
+                      <a class="dropdown-item active" href="javascript:void(0);">Active</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
@@ -1748,16 +1748,16 @@
                   </button>
                   <ul class="dropdown-menu dropmenu-light-danger">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item active" href="#">Active</a>
+                      <a class="dropdown-item active" href="javascript:void(0);">Active</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
@@ -1782,19 +1782,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -1805,19 +1805,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -1828,19 +1828,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -1851,19 +1851,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -1874,19 +1874,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -1897,19 +1897,19 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -1933,12 +1933,12 @@
               <div class="bd-example">
                 <ul class="dropdown-menu">
                   <li><span class="dropdown-item-text">Dropdown item text</span></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                 </ul>
               </div>
@@ -1963,12 +1963,12 @@
                   <li>
                     <h6 class="dropdown-header">Dropdown header</h6>
                   </li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                 </ul>
               </div>
@@ -1987,20 +1987,20 @@
               <div class="bd-example">
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-header" href="#">Heading</a>
+                    <a class="dropdown-header" href="javascript:void(0);">Heading</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                   </li>
                 </ul>
               </div>

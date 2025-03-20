@@ -10,23 +10,25 @@
         <div class="mb-2">
           <div class="d-flex align-items-center">
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
             <div class="head-icons ms-2 mb-0">
-              <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-                id="collapse-header" @click="toggleHeader">
+              <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                 <i class="ti ti-chevrons-up"></i>
               </a>
             </div>
@@ -50,25 +52,26 @@
                 </div>
               </div>
               <div class="dropdown">
-                <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);"
+                  class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Sort By : Last 7 Days
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Recently Added</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Ascending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Desending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last Month</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                   </li>
                 </ul>
               </div>
@@ -83,7 +86,7 @@
             <div class="card-body pb-1">
               <div class="d-flex align-items-center mb-3">
                 <i class="ti ti-folder text-primary fs-24 me-1"></i>
-                <a href="#" class="text-dark fs-16 fw-medium text-truncate">Introduction to ARONHR
+                <a href="javascript:void(0);" class="text-dark fs-16 fw-medium text-truncate">Introduction to ARONHR
                   <span class="text-primary">( 06 )</span></a>
               </div>
               <div class="col-xl-12">
@@ -91,7 +94,7 @@
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-2 pb-1">
                       <i class="ti ti-file me-1"></i>
-                      <a href="#" class="text-dark fs-14 fw-medium text-truncate">What is an ARONHR
+                      <a href="javascript:void(0);" class="text-dark fs-14 fw-medium text-truncate">What is an ARONHR
                         and
                         Why is it Important?
                       </a>
@@ -114,7 +117,7 @@
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-2 pb-1">
                       <i class="ti ti-file me-1"></i>
-                      <a href="#" class="text-dark fs-14 fw-medium text-truncate">The Key Features of
+                      <a href="javascript:void(0);" class="text-dark fs-14 fw-medium text-truncate">The Key Features of
                         an ARONHR Explained
                       </a>
                     </div>
@@ -135,7 +138,7 @@
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-2 pb-1">
                       <i class="ti ti-file me-1"></i>
-                      <a href="#" class="text-dark fs-14 fw-medium text-truncate">How ARONHR Helps
+                      <a href="javascript:void(0);" class="text-dark fs-14 fw-medium text-truncate">How ARONHR Helps
                         Automate HR Tasks
                       </a>
                     </div>
@@ -157,7 +160,7 @@
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-2 pb-1">
                       <i class="ti ti-file me-1"></i>
-                      <a href="#" class="text-dark fs-14 fw-medium text-truncate">ARONHR Terminology :
+                      <a href="javascript:void(0);" class="text-dark fs-14 fw-medium text-truncate">ARONHR Terminology :
                         A
                         Beginner’s Guide</a>
                     </div>
@@ -178,7 +181,7 @@
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-2 pb-1">
                       <i class="ti ti-file me-1"></i>
-                      <a href="#" class="text-dark fs-14 fw-medium text-truncate">Cloud vs On-Premise
+                      <a href="javascript:void(0);" class="text-dark fs-14 fw-medium text-truncate">Cloud vs On-Premise
                         ARONHR vs Hybrid</a>
                     </div>
                     <div class="ps-3">
@@ -198,7 +201,7 @@
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-2 pb-1">
                       <i class="ti ti-file me-1"></i>
-                      <a href="#" class="text-dark fs-14 fw-medium text-truncate">Common Challenges
+                      <a href="javascript:void(0);" class="text-dark fs-14 fw-medium text-truncate">Common Challenges
                         When Implementing an ARONHR</a>
                     </div>
                     <div class="ps-3">
@@ -220,47 +223,47 @@
           <div class="card">
             <div class="card-body pb-1">
               <div class="d-flex align-items-center border-bottom mb-3 pb-3">
-                <a href="#" class="text-dark fs-16 fw-semibold text-truncate">Categories</a>
+                <a href="javascript:void(0);" class="text-dark fs-16 fw-semibold text-truncate">Categories</a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-folder text-primary fs-16 me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Employee Self-Service
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Employee Self-Service
                   (ESS) <span class="text-primary">( 10 )</span>
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-folder text-primary fs-16 me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Manager Self-Service (MSS)
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Manager Self-Service (MSS)
                   <span class="text-primary">( 12 )</span>
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-folder text-primary fs-16 me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Payroll Management <span
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Payroll Management <span
                     class="text-primary">( 08 )</span>
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-folder text-primary fs-16 me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Attendance & Time Tracking
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Attendance & Time Tracking
                   <span class="text-primary">( 07 )</span>
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-folder text-primary fs-16 me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Leave Management <span
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Leave Management <span
                     class="text-primary">( 06 )</span>
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-folder text-primary fs-16 me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Performance Management
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Performance Management
                   <span class="text-primary">( 13 )</span>
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-folder text-primary fs-16 me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Reports & Analytics <span
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Reports & Analytics <span
                     class="text-primary">( 15 )</span>
                 </a>
               </div>
@@ -269,36 +272,36 @@
           <div class="card">
             <div class="card-body pb-1">
               <div class="d-flex align-items-center border-bottom mb-3 pb-3">
-                <a href="#" class="text-dark fs-16 fw-semibold text-truncate">Popular Articles</a>
+                <a href="javascript:void(0);" class="text-dark fs-16 fw-semibold text-truncate">Popular Articles</a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">What is an ARONHR and Why
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">What is an ARONHR and Why
                   is
                   it Important?
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to view & update your
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to view & update your
                   personal information
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Viewing and managing team
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Viewing and managing team
                   attendance
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How Payroll is Processed :
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How Payroll is Processed :
                   A Step-by-Step Guide
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to clock in/out using
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to clock in/out using
                   the hrms portal
                 </a>
               </div>
@@ -307,35 +310,35 @@
           <div class="card">
             <div class="card-body pb-1">
               <div class="d-flex align-items-center border-bottom mb-3 pb-3">
-                <a href="#" class="text-dark fs-16 fw-semibold text-truncate">Latest Articles</a>
+                <a href="javascript:void(0);" class="text-dark fs-16 fw-semibold text-truncate">Latest Articles</a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to update & view
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to update & view
                   team’s work schedules
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to clock in/out using
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to clock in/out using
                   the hrms portal
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to Apply for Internal
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to Apply for Internal
                   Job Postings in Hrms
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to track your
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to track your
                   attendance and work hours
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to conduct performance
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to conduct performance
                   reviews
                 </a>
               </div>
@@ -349,7 +352,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

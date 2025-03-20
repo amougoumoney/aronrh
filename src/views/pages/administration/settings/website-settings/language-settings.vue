@@ -8,8 +8,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-            id="collapse-header" @click="toggleHeader">
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -31,7 +31,7 @@
                     <div class="me-3">
                       <vue-select :options="WerSel" id="wersel" placeholder="Select Language" />
                     </div>
-                    <a href="#" class="btn btn-primary">Add Language</a>
+                    <a href="javascript:void(0);" class="btn btn-primary">Add Language</a>
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <a href="#" class="btn btn-sm btn-icon btn-light border me-2">
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border me-2">
                                 <i class="ti ti-download"></i>
                               </a>
                               <router-link to="/website-settings/language-web"
@@ -130,7 +130,7 @@
                                 class="btn btn-sm border me-2">App</router-link>
                               <router-link to="/website-settings/language-web"
                                 class="btn btn-sm border me-2">Admin</router-link>
-                              <a href="#" class="btn btn-sm btn-icon btn-light border">
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border">
                                 <i class="ti ti-trash"></i>
                               </a>
                             </div>
@@ -182,7 +182,7 @@
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <a href="#" class="btn btn-sm btn-icon btn-light border me-2">
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border me-2">
                                 <i class="ti ti-download"></i>
                               </a>
                               <router-link to="/website-settings/language-web"
@@ -191,7 +191,7 @@
                                 class="btn btn-sm border me-2">App</router-link>
                               <router-link to="/website-settings/language-web"
                                 class="btn btn-sm border me-2">Admin</router-link>
-                              <a href="#" class="btn btn-sm btn-icon btn-light border">
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border">
                                 <i class="ti ti-trash"></i>
                               </a>
                             </div>
@@ -243,7 +243,7 @@
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <a href="#" class="btn btn-sm btn-icon btn-light border me-2">
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border me-2">
                                 <i class="ti ti-download"></i>
                               </a>
                               <router-link to="/website-settings/language-web"
@@ -252,7 +252,7 @@
                                 class="btn btn-sm border me-2">App</router-link>
                               <router-link to="/website-settings/language-web"
                                 class="btn btn-sm border me-2">Admin</router-link>
-                              <a href="#" class="btn btn-sm btn-icon btn-light border">
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border">
                                 <i class="ti ti-trash"></i>
                               </a>
                             </div>
@@ -304,7 +304,7 @@
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <a href="#" class="btn btn-sm btn-icon btn-light border me-2">
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border me-2">
                                 <i class="ti ti-download"></i>
                               </a>
                               <router-link to="/website-settings/language-web"
@@ -313,7 +313,7 @@
                                 class="btn btn-sm border me-2">App</router-link>
                               <router-link to="/website-settings/language-web"
                                 class="btn btn-sm border me-2">Admin</router-link>
-                              <a href="#" class="btn btn-sm btn-icon btn-light border">
+                              <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light border">
                                 <i class="ti ti-trash"></i>
                               </a>
                             </div>
@@ -333,7 +333,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

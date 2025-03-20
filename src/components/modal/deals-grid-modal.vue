@@ -22,8 +22,8 @@
                 <div class="input-block mb-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <label class="form-label">Pipeline <span class="text-danger"> *</span></label>
-                    <a href="#" class="add-new text-primary" data-bs-target="#add_pipeline" data-bs-toggle="modal"><i
-                        class="ti ti-plus text-primary me-1"></i>Add New</a>
+                    <a href="javascript:void(0);" class="add-new text-primary" data-bs-target="#add_pipeline"
+                      data-bs-toggle="modal"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
                   </div>
                   <vue-select :options="Marketing" id="marketin" placeholder="Select" />
                 </div>
@@ -177,8 +177,8 @@
                 <div class="input-block mb-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <label class="form-label">Pipeline <span class="text-danger"> *</span></label>
-                    <a href="#" class="add-new text-primary" data-bs-target="#add_pipeline" data-bs-toggle="modal"><i
-                        class="ti ti-plus text-primary me-1"></i>Add New</a>
+                    <a href="javascript:void(0);" class="add-new text-primary" data-bs-target="#add_pipeline"
+                      data-bs-toggle="modal"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
                   </div>
                   <vue-select :options="EditMarketing" id="editmarketin" placeholder="Sales" />
                 </div>
@@ -321,7 +321,7 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/crm/deals-grid" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
@@ -353,8 +353,8 @@
                 <div class="input-block mb-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <label class="form-label">Pipeline Stages <span class="text-danger"> *</span></label>
-                    <a href="#" class="add-new text-primary" data-bs-toggle="modal" data-bs-target="#add_stage"><i
-                        class="ti ti-plus text-primary me-1"></i>Add New</a>
+                    <a href="javascript:void(0);" class="add-new text-primary" data-bs-toggle="modal"
+                      data-bs-target="#add_stage"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
                   </div>
                   <div class="p-3 border border-gray br-5 mb-2">
                     <div class="d-flex align-items-center justify-content-between">
@@ -363,8 +363,9 @@
                         <h6 class="fs-14 fw-normal">Inpipline</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <a href="#" class="text-default"><span class="me-2"><i class="ti ti-edit"></i></span></a>
-                        <a href="#" class="text-default"><span><i class="ti ti-trash"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default"><span class="me-2"><i
+                              class="ti ti-edit"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default"><span><i class="ti ti-trash"></i></span></a>
                       </div>
                     </div>
                   </div>
@@ -375,8 +376,9 @@
                         <h6 class="fs-14 fw-normal">Follow Up</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <a href="#" class="text-default"><span class="me-2"><i class="ti ti-edit"></i></span></a>
-                        <a href="#" class="text-default"><span><i class="ti ti-trash"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default"><span class="me-2"><i
+                              class="ti ti-edit"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default"><span><i class="ti ti-trash"></i></span></a>
                       </div>
                     </div>
                   </div>
@@ -387,8 +389,9 @@
                         <h6 class="fs-14 fw-normal">Schedule Service</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <a href="#" class="text-default"><span class="me-2"><i class="ti ti-edit"></i></span></a>
-                        <a href="#" class="text-default"><span><i class="ti ti-trash"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default"><span class="me-2"><i
+                              class="ti ti-edit"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default"><span><i class="ti ti-trash"></i></span></a>
                       </div>
                     </div>
                   </div>
@@ -416,34 +419,34 @@
                         <div class="p-3 border border-gray br-5 mb-2">
                           <div class="d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center file-name-icon">
-                              <a href="#" class="avatar avatar-md border avatar-rounded">
+                              <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
                                 <img src="@/assets/img/profiles/avatar-20.jpg" class="img-fluid" alt="img" />
                               </a>
                               <div class="ms-2">
                                 <h6 class="fw-medium">
-                                  <a href="#">Sharon Roy</a>
+                                  <a href="javascript:void(0);">Sharon Roy</a>
                                 </h6>
                               </div>
                             </div>
                             <div class="d-flex align-items-center">
-                              <a href="#" class="text-danger">Remove</a>
+                              <a href="javascript:void(0);" class="text-danger">Remove</a>
                             </div>
                           </div>
                         </div>
                         <div class="p-3 border border-gray br-5 mb-2">
                           <div class="d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center file-name-icon">
-                              <a href="#" class="avatar avatar-md border avatar-rounded">
+                              <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
                                 <img src="@/assets/img/profiles/avatar-21.jpg" class="img-fluid" alt="img" />
                               </a>
                               <div class="ms-2">
                                 <h6 class="fw-medium">
-                                  <a href="#">Sharon Roy</a>
+                                  <a href="javascript:void(0);">Sharon Roy</a>
                                 </h6>
                               </div>
                             </div>
                             <div class="d-flex align-items-center">
-                              <a href="#" class="text-danger">Remove</a>
+                              <a href="javascript:void(0);" class="text-danger">Remove</a>
                             </div>
                           </div>
                         </div>

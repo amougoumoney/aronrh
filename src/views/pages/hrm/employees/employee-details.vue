@@ -12,14 +12,14 @@
         </div>
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#add_bank_satutory"
-              class="btn btn-primary d-flex align-items-center"><i
-                class="ti ti-circle-plus me-2"></i>{{ $t('bank&Statutory') }}
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_bank_satutory"
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{
+                $t('bank&Statutory') }}
             </a>
           </div>
           <div class="head-icons ms-2">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -81,8 +81,8 @@
                   <div class="row gx-2 mt-3">
                     <div class="col-6">
                       <div>
-                        <a href="#" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#edit_employee"><i
-                            class="ti ti-edit me-1"></i>{{ $t('EditInfo') }}</a>
+                        <a href="javascript:void(0);" class="btn btn-dark w-100" data-bs-toggle="modal"
+                          data-bs-target="#edit_employee"><i class="ti ti-edit me-1"></i>{{ $t('EditInfo') }}</a>
                       </div>
                     </div>
                     <div class="col-6">
@@ -97,8 +97,8 @@
               <div class="p-3 border-bottom">
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <h6>{{ $t('Basicinformation') }}</h6>
-                  <a href="#" class="btn btn-icon btn-sm" data-bs-toggle="modal" data-bs-target="#edit_employee"><i
-                      class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="btn btn-icon btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#edit_employee"><i class="ti ti-edit"></i></a>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <span class="d-inline-flex align-items-center">
@@ -112,7 +112,8 @@
                     <i class="ti ti-mail-check me-2"></i>
                     {{ $t('Email') }}
                   </span>
-                  <a href="#" class="text-info d-inline-flex align-items-center">perralt12@example.com<i
+                  <a href="javascript:void(0);"
+                    class="text-info d-inline-flex align-items-center">perralt12@example.com<i
                       class="ti ti-copy text-dark ms-2"></i></a>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-2">
@@ -143,8 +144,8 @@
               <div class="p-3 border-bottom">
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <h6>{{ $t('PersonalInformation') }}</h6>
-                  <a href="#" class="btn btn-icon btn-sm" data-bs-toggle="modal" data-bs-target="#edit_personal"><i
-                      class="ti ti-edit"></i></a>
+                  <a href="javascript:void(0);" class="btn btn-icon btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#edit_personal"><i class="ti ti-edit"></i></a>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-2">
                   <span class="d-inline-flex align-items-center">
@@ -200,8 +201,8 @@
           </div>
           <div class="d-flex align-items-center justify-content-between mb-2">
             <h6>{{ $t('EmergencyContactNumber') }}</h6>
-            <a href="#" class="btn btn-icon btn-sm" data-bs-toggle="modal" data-bs-target="#edit_emergency"><i
-                class="ti ti-edit"></i></a>
+            <a href="javascript:void(0);" class="btn btn-icon btn-sm" data-bs-toggle="modal"
+              data-bs-target="#edit_emergency"><i class="ti ti-edit"></i></a>
           </div>
           <div class="card">
             <div class="card-body p-0">
@@ -211,8 +212,8 @@
                     <span class="d-inline-flex align-items-center"> {{ $t('Primary') }} </span>
                     <h6 class="d-flex align-items-center fw-medium mt-1">
                       Adrian Peralt
-                      <span class="d-inline-flex mx-1"><i
-                          class="ti ti-point-filled text-danger"></i></span>{{ $t('Father') }}
+                      <span class="d-inline-flex mx-1"><i class="ti ti-point-filled text-danger"></i></span>{{
+                      $t('Father') }}
                     </h6>
                   </div>
                   <p class="text-dark">+1 127 2685 598</p>
@@ -224,8 +225,8 @@
                     <span class="d-inline-flex align-items-center"> {{ $t('Secondary') }} </span>
                     <h6 class="d-flex align-items-center fw-medium mt-1">
                       Karen Wills
-                      <span class="d-inline-flex mx-1"><i
-                          class="ti ti-point-filled text-danger"></i></span>{{ $t('Mother') }}
+                      <span class="d-inline-flex mx-1"><i class="ti ti-point-filled text-danger"></i></span>{{
+                      $t('Mother') }}
                     </h6>
                   </div>
                   <p class="text-dark">+1 989 7774 787</p>
@@ -244,9 +245,9 @@
                       <div class="accordion-button">
                         <div class="d-flex align-items-center flex-fill">
                           <h5>{{ $t('AboutEmployee') }}</h5>
-                          <a href="#" class="btn btn-sm btn-icon ms-auto" data-bs-toggle="modal"
+                          <a href="javascript:void(0);" class="btn btn-sm btn-icon ms-auto" data-bs-toggle="modal"
                             data-bs-target="#edit_employee"><i class="ti ti-edit"></i></a>
-                          <a href="#" class="d-flex align-items-center collapsed collapse-arrow"
+                          <a href="javascript:void(0);" class="d-flex align-items-center collapsed collapse-arrow"
                             data-bs-toggle="collapse" data-bs-target="#primaryBorderOne" aria-expanded="false"
                             aria-controls="primaryBorderOne">
                             <i class="ti ti-chevron-down fs-18"></i>
@@ -266,9 +267,9 @@
                       <div class="accordion-button">
                         <div class="d-flex align-items-center flex-fill">
                           <h5>{{ $t('BankInformation') }}</h5>
-                          <a href="#" class="btn btn-sm btn-icon ms-auto" data-bs-toggle="modal"
+                          <a href="javascript:void(0);" class="btn btn-sm btn-icon ms-auto" data-bs-toggle="modal"
                             data-bs-target="#edit_bank"><i class="ti ti-edit"></i></a>
-                          <a href="#" class="d-flex align-items-center collapsed collapse-arrow"
+                          <a href="javascript:void(0);" class="d-flex align-items-center collapsed collapse-arrow"
                             data-bs-toggle="collapse" data-bs-target="#primaryBorderTwo" aria-expanded="false"
                             aria-controls="primaryBorderTwo">
                             <i class="ti ti-chevron-down fs-18"></i>
@@ -320,9 +321,9 @@
                         <div class="d-flex align-items-center justify-content-between flex-fill">
                           <h5>{{ $t('FamilyInformation') }}</h5>
                           <div class="d-flex">
-                            <a href="#" class="btn btn-icon btn-sm" data-bs-toggle="modal"
+                            <a href="javascript:void(0);" class="btn btn-icon btn-sm" data-bs-toggle="modal"
                               data-bs-target="#edit_familyinformation"><i class="ti ti-edit"></i></a>
-                            <a href="#" class="d-flex align-items-center collapsed collapse-arrow"
+                            <a href="javascript:void(0);" class="d-flex align-items-center collapsed collapse-arrow"
                               data-bs-toggle="collapse" data-bs-target="#primaryBorderThree" aria-expanded="false"
                               aria-controls="primaryBorderThree">
                               <i class="ti ti-chevron-down fs-18"></i>
@@ -376,10 +377,11 @@
                               <div class="d-flex align-items-center justify-content-between flex-fill">
                                 <h5>{{ $t('EducationDetails') }}</h5>
                                 <div class="d-flex">
-                                  <a href="#" class="btn btn-icon btn-sm" data-bs-toggle="modal"
+                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm" data-bs-toggle="modal"
                                     data-bs-target="#edit_education"><i class="ti ti-edit"></i></a>
-                                  <a href="#" class="d-flex align-items-center collapsed collapse-arrow"
-                                    data-bs-toggle="collapse" data-bs-target="#primaryBorderFour" aria-expanded="false"
+                                  <a href="javascript:void(0);"
+                                    class="d-flex align-items-center collapsed collapse-arrow" data-bs-toggle="collapse"
+                                    data-bs-target="#primaryBorderFour" aria-expanded="false"
                                     aria-controls="primaryBorderFour">
                                     <i class="ti ti-chevron-down fs-18"></i>
                                   </a>
@@ -444,10 +446,11 @@
                               <div class="d-flex align-items-center justify-content-between flex-fill">
                                 <h5>{{ $t('Experience') }}</h5>
                                 <div class="d-flex">
-                                  <a href="#" class="btn btn-icon btn-sm" data-bs-toggle="modal"
+                                  <a href="javascript:void(0);" class="btn btn-icon btn-sm" data-bs-toggle="modal"
                                     data-bs-target="#edit_experience"><i class="ti ti-edit"></i></a>
-                                  <a href="#" class="d-flex align-items-center collapsed collapse-arrow"
-                                    data-bs-toggle="collapse" data-bs-target="#primaryBorderFive" aria-expanded="false"
+                                  <a href="javascript:void(0);"
+                                    class="d-flex align-items-center collapsed collapse-arrow" data-bs-toggle="collapse"
+                                    data-bs-target="#primaryBorderFive" aria-expanded="false"
                                     aria-controls="primaryBorderFive">
                                     <i class="ti ti-chevron-down fs-18"></i>
                                   </a>
@@ -536,7 +539,8 @@
                                     </router-link>
                                     <div>
                                       <h6 class="mb-1">
-                                        <router-link to="/projects/projects-details">{{ $t('WorldHealth') }}</router-link>
+                                        <router-link to="/projects/projects-details">{{ $t('WorldHealth')
+                                          }}</router-link>
                                       </h6>
                                       <div class="d-flex align-items-center">
                                         <p class="mb-0 fs-13">8 {{ $t('Tasks') }}</p>
@@ -557,7 +561,7 @@
                                     <div class="col-md-6">
                                       <div>
                                         <span class="mb-1 d-block">{{ $t('ProjectLead') }}</span>
-                                        <a href="#" class="fw-normal d-flex align-items-center">
+                                        <a href="javascript:void(0);" class="fw-normal d-flex align-items-center">
                                           <img class="avatar avatar-sm rounded-circle me-2"
                                             src="@/assets/img/profiles/avatar-01.jpg" alt="Img" />
                                           Leona
@@ -599,7 +603,7 @@
                                     <div class="col-md-6">
                                       <div>
                                         <span class="mb-1 d-block">{{ $t('ProjectLead') }}</span>
-                                        <a href="#" class="fw-normal d-flex align-items-center">
+                                        <a href="javascript:void(0);" class="fw-normal d-flex align-items-center">
                                           <img class="avatar avatar-sm rounded-circle me-2"
                                             src="@/assets/img/profiles/avatar-01.jpg" alt="Img" />
                                           Leona
@@ -633,7 +637,8 @@
                                           <div class="d-flex align-items-center">
                                             <p>
                                               <span class="text-primary">AST - 001<i
-                                                  class="ti ti-point-filled text-primary mx-1"></i></span>{{ $t('Assignedon') }}
+                                                  class="ti ti-point-filled text-primary mx-1"></i></span>{{
+                                              $t('Assignedon') }}
                                               22
                                               Nov, 2022 {{ $t('10:32AM') }}
                                             </p>
@@ -644,7 +649,7 @@
                                     <div class="col-md-3">
                                       <div>
                                         <span class="mb-1 d-block">{{ $t('AssignedBy') }}</span>
-                                        <a href="#" class="fw-normal d-flex align-items-center">
+                                        <a href="javascript:void(0);" class="fw-normal d-flex align-items-center">
                                           <img class="avatar avatar-sm rounded-circle me-2"
                                             src="@/assets/img/profiles/avatar-01.jpg" alt="Img" />
                                           Andrew Symon
@@ -653,18 +658,19 @@
                                     </div>
                                     <div class="col-md-1">
                                       <div class="dropdown ms-2">
-                                        <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
-                                          aria-expanded="false">
+                                        <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                                          data-bs-toggle="dropdown" aria-expanded="false">
                                           <i class="ti ti-dots-vertical"></i>
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-end p-3">
                                           <li>
-                                            <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
-                                              data-bs-target="#asset_info">{{ $t('ViewInfo') }}</a>
+                                            <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                                              data-bs-toggle="modal" data-bs-target="#asset_info">{{ $t('ViewInfo')
+                                              }}</a>
                                           </li>
                                           <li>
-                                            <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
-                                              data-bs-target="#refuse_msg">{{ $t('RaiseIssue') }}
+                                            <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                                              data-bs-toggle="modal" data-bs-target="#refuse_msg">{{ $t('RaiseIssue') }}
                                             </a>
                                           </li>
                                         </ul>
@@ -692,7 +698,8 @@
                                           <div class="d-flex align-items-center">
                                             <p>
                                               <span class="text-primary">AST - 001<i
-                                                  class="ti ti-point-filled text-primary mx-1"></i></span>{{ $t('Assignedon') }}
+                                                  class="ti ti-point-filled text-primary mx-1"></i></span>{{
+                                              $t('Assignedon') }}
                                               22
                                               Nov, 2022 {{ $t('10:32AM') }}
                                             </p>
@@ -703,7 +710,7 @@
                                     <div class="col-md-3">
                                       <div>
                                         <span class="mb-1 d-block">{{ $t('AssignedBy') }}</span>
-                                        <a href="#" class="fw-normal d-flex align-items-center">
+                                        <a href="javascript:void(0);" class="fw-normal d-flex align-items-center">
                                           <img class="avatar avatar-sm rounded-circle me-2"
                                             src="@/assets/img/profiles/avatar-01.jpg" alt="Img" />
                                           Andrew Symon
@@ -712,18 +719,19 @@
                                     </div>
                                     <div class="col-md-1">
                                       <div class="dropdown ms-2">
-                                        <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
-                                          aria-expanded="false">
+                                        <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                                          data-bs-toggle="dropdown" aria-expanded="false">
                                           <i class="ti ti-dots-vertical"></i>
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-end p-3">
                                           <li>
-                                            <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
-                                              data-bs-target="#asset_info">{{ $t('ViewInfo') }}</a>
+                                            <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                                              data-bs-toggle="modal" data-bs-target="#asset_info">{{ $t('ViewInfo')
+                                              }}</a>
                                           </li>
                                           <li>
-                                            <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
-                                              data-bs-target="#refuse_msg">{{ $t('RaiseIssue') }}
+                                            <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                                              data-bs-toggle="modal" data-bs-target="#refuse_msg">{{ $t('RaiseIssue') }}
                                             </a>
                                           </li>
                                         </ul>
@@ -747,7 +755,8 @@
     </div>
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
-      <p>{{ $t('designed') }} &amp; {{ $t('developedBy') }} <a href="#" class="text-primary">{{ $t('dreams') }}</a></p>
+      <p>{{ $t('designed') }} &amp; {{ $t('developedBy') }} <a href="javascript:void(0);" class="text-primary">{{
+        $t('dreams') }}</a></p>
     </div>
   </div>
   <!-- /Page Wrapper -->

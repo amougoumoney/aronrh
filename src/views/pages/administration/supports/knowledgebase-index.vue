@@ -10,8 +10,8 @@
         <div class="mb-2">
           <div class="d-flex align-items-center">
             <div class="head-icons ms-2 mb-0">
-              <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-                id="collapse-header" @click="toggleHeader">
+              <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                 <i class="ti ti-chevrons-up"></i>
               </a>
             </div>
@@ -35,25 +35,26 @@
                 </div>
               </div>
               <div class="dropdown">
-                <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);"
+                  class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Sort By : Last 7 Days
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Recently Added</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Ascending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Desending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last Month</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                   </li>
                 </ul>
               </div>
@@ -74,33 +75,33 @@
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">What is an ARONHR and Why
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">What is an ARONHR and Why
                   is
                   it Important?
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">The Key Features of an
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">The Key Features of an
                   ARONHR Explained
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How ARONHR Helps Automate
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How ARONHR Helps Automate
                   HR
                   Tasks
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">ARONHR Terminology : A
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">ARONHR Terminology : A
                   Beginner’s Guide
                 </a>
               </div>
               <div class="d-flex align-items-center">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Cloud vs On-Premise ARONHR
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Cloud vs On-Premise ARONHR
                   vs Hybrid
                 </a>
               </div>
@@ -118,31 +119,31 @@
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to view & update your
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to view & update your
                   personal information
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Steps to Apply for Leave
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Steps to Apply for Leave
                   via the Employee Portal
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to access and download
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to access and download
                   your payslips
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Submitting & Tracking
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Submitting & Tracking
                   Expense Reimbursements
                 </a>
               </div>
               <div class="d-flex align-items-center">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to track your
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to track your
                   attendance and work hours
                 </a>
               </div>
@@ -160,31 +161,31 @@
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to Approve or Reject
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to Approve or Reject
                   Employee Requests
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Viewing and managing team
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Viewing and managing team
                   attendance
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to conduct performance
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to conduct performance
                   reviews
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Approving expense claims
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Approving expense claims
                   for your team
                 </a>
               </div>
               <div class="d-flex align-items-center">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to update & view
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to update & view
                   team’s work schedules
                 </a>
               </div>
@@ -202,31 +203,31 @@
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How Payroll is Processed :
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How Payroll is Processed :
                   A Step-by-Step Guide
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Deductions, Overtime, and
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Deductions, Overtime, and
                   Bonuses
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">What to Do if There’s a
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">What to Do if There’s a
                   Payroll Discrepancy
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to Access Historical
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to Access Historical
                   Payroll Information
                 </a>
               </div>
               <div class="d-flex align-items-center">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Managing Employee Tax
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Managing Employee Tax
                   Information and Filing
                 </a>
               </div>
@@ -244,31 +245,31 @@
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to clock in/out using
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to clock in/out using
                   the hrms portal
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Submitting timesheets for
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Submitting timesheets for
                   approval
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Tracking overtime &
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Tracking overtime &
                   managing work hours in hrms
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to view and manage
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to view and manage
                   shifts and schedules
                 </a>
               </div>
               <div class="d-flex align-items-center">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Generating attendance
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Generating attendance
                   reports for your team
                 </a>
               </div>
@@ -285,31 +286,31 @@
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to Request Casual or
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to Request Casual or
                   Medical Leave
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How Leave Balances Are
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How Leave Balances Are
                   Calculated in Hrms
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Leave Approval Workflow :
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Leave Approval Workflow :
                   Guide for Managers
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Viewing Your Leave History
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Viewing Your Leave History
                   & Pending Requests
                 </a>
               </div>
               <div class="d-flex align-items-center">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Understanding Different
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Understanding Different
                   Types of Leaves
                 </a>
               </div>
@@ -327,31 +328,31 @@
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to Apply for Internal
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to Apply for Internal
                   Job Postings in Hrms
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Creating & Posting Job
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Creating & Posting Job
                   Openings as a Recruiter
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Tracking Applicants and
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Tracking Applicants and
                   Scheduling Interviews
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to Complete New Hire
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to Complete New Hire
                   Onboarding Process
                 </a>
               </div>
               <div class="d-flex align-items-center">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Uploading & Verifying New
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Uploading & Verifying New
                   Employee Documents
                 </a>
               </div>
@@ -369,31 +370,31 @@
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Setting and Tracking Your
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Setting and Tracking Your
                   Employee Goals
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Conducting 360-degree
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Conducting 360-degree
                   Feedback in Hrms
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to Complete a
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to Complete a
                   Performance Review
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to Update Employee
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to Update Employee
                   Development Plans
                 </a>
               </div>
               <div class="d-flex align-items-center">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Generating Performance
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Generating Performance
                   Reports and Metrics
                 </a>
               </div>
@@ -411,31 +412,31 @@
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to Generate Employee
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to Generate Employee
                   Attendance Reports
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Creating Custom Payroll
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Creating Custom Payroll
                   Reports
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Analyzing Workforce
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Analyzing Workforce
                   Metrics in Hrms
                 </a>
               </div>
               <div class="d-flex align-items-center mb-2 pb-1">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">How to Track Performance
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">How to Track Performance
                   Metrics and KPIs
                 </a>
               </div>
               <div class="d-flex align-items-center">
                 <i class="ti ti-file me-1"></i>
-                <a href="#" class="text-gray fs-14 fw-normal text-truncate">Viewing and Analyzing
+                <a href="javascript:void(0);" class="text-gray fs-14 fw-normal text-truncate">Viewing and Analyzing
                   Compensation
                 </a>
               </div>
@@ -449,7 +450,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

@@ -22,7 +22,8 @@
               </div>
             </div>
           </div>
-          <a href="#" class="btn btn-icon btn-sm text-white rounded-circle edit-top"><i class="ti ti-edit"></i></a>
+          <a href="javascript:void(0);" class="btn btn-icon btn-sm text-white rounded-circle edit-top"><i
+              class="ti ti-edit"></i></a>
         </div>
         <div class="card-body">
           <div class="mb-3">
@@ -50,19 +51,19 @@
           <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Leave Details</h5>
             <div class="dropdown">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>2024
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2024</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2024</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2023</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2023</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2022</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2022</a>
                 </li>
               </ul>
             </div>
@@ -134,19 +135,19 @@
           <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Leave Details</h5>
             <div class="dropdown">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>2024
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2024</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2024</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2023</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2023</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2022</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2022</a>
                 </li>
               </ul>
             </div>
@@ -192,7 +193,8 @@
             </div>
             <div class="col-sm-12">
               <div>
-                <a href="#" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#add_leaves">Apply New
+                <a href="javascript:void(0);" class="btn btn-dark w-100" data-bs-toggle="modal"
+                  data-bs-target="#add_leaves">Apply New
                   Leave</a>
               </div>
             </div>

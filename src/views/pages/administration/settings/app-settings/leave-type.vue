@@ -8,8 +8,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-            id="collapse-header" @click="toggleHeader">
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -25,9 +25,9 @@
               <div class="border-bottom d-flex align-items-center justify-content-between pb-3 mb-3">
                 <h4>{{ $t('LeaveType') }}</h4>
                 <div>
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#add_leaves"
-                    class="btn btn-primary d-flex align-items-center"><i
-                      class="ti ti-circle-plus me-2"></i>{{ $t('AddLeaveType') }}
+                  <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_leaves"
+                    class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{
+                      $t('AddLeaveType') }}
                   </a>
                 </div>
               </div>
@@ -62,13 +62,14 @@
                           <td>12</td>
 
                           <td>
-                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{ $t('Active') }}</span>
+                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{ $t('Active')
+                              }}</span>
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
-                              <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_leaves"><i
-                                  class="ti ti-edit"></i></a>
-                              <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                              <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
+                                data-bs-target="#edit_leaves"><i class="ti ti-edit"></i></a>
+                              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                   class="ti ti-trash"></i></a>
                             </div>
                           </td>
@@ -83,13 +84,14 @@
                           <td>12</td>
 
                           <td>
-                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{ $t('Active') }}</span>
+                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{ $t('Active')
+                              }}</span>
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
-                              <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_leaves"><i
-                                  class="ti ti-edit"></i></a>
-                              <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                              <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
+                                data-bs-target="#edit_leaves"><i class="ti ti-edit"></i></a>
+                              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                   class="ti ti-trash"></i></a>
                             </div>
                           </td>
@@ -104,13 +106,14 @@
                           <td>12</td>
 
                           <td>
-                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{ $t('Active') }}</span>
+                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{ $t('Active')
+                              }}</span>
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
-                              <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_leaves"><i
-                                  class="ti ti-edit"></i></a>
-                              <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                              <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
+                                data-bs-target="#edit_leaves"><i class="ti ti-edit"></i></a>
+                              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                   class="ti ti-trash"></i></a>
                             </div>
                           </td>
@@ -125,13 +128,14 @@
                           <td>12</td>
 
                           <td>
-                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{ $t('Active') }}</span>
+                            <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{ $t('Active')
+                              }}</span>
                           </td>
                           <td>
                             <div class="action-icon d-inline-flex">
-                              <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_leaves"><i
-                                  class="ti ti-edit"></i></a>
-                              <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                              <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
+                                data-bs-target="#edit_leaves"><i class="ti ti-edit"></i></a>
+                              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                   class="ti ti-trash"></i></a>
                             </div>
                           </td>
@@ -150,7 +154,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         {{ $t('designed') }} &amp; {{ $t('developedBy') }}
-        <a href="#" class="text-primary">{{ $t('dreams') }}</a>
+        <a href="javascript:void(0);" class="text-primary">{{ $t('dreams') }}</a>
       </p>
     </div>
   </div>

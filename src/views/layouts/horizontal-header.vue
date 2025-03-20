@@ -31,7 +31,7 @@
                 </ul>
               </li>
               <li v-if="menu.hasSubRouteTwo" class="submenu">
-                <a href="#" @click="openMenu(menu)"
+                <a href="javascript:void(0);" @click="openMenu(menu)"
                   :class="{ subdrop: openMenuItem === menu, active: route_array[0] === menu.active_link }">
                   <i :class="'ti ti-' + menu.icon"></i><span>{{ menu.menuValue }}</span>
                   <span class="menu-arrow"></span>
@@ -43,7 +43,7 @@
                       <router-link :to="subMenus.route">{{ subMenus.menuValue }}</router-link>
                     </template>
                     <template v-else>
-                      <a href="#" @click="openSubmenuOne(subMenus)"
+                      <a href="javascript:void(0);" @click="openSubmenuOne(subMenus)"
                         :class="{ subdrop: openSubmenuOneItem === subMenus }">
                         {{ subMenus.menuValue }}
                         <span class="menu-arrow inside-submenu"></span>
@@ -62,10 +62,10 @@
           </template>
         </ul>
         <div class="d-xl-flex align-items-center d-none">
-          <a href="#" class="me-3 avatar avatar-sm">
+          <a href="javascript:void(0);" class="me-3 avatar avatar-sm">
             <img src="@/assets/img/profiles/avatar-07.jpg" alt="profile" class="rounded-circle" />
           </a>
-          <a href="#" class="btn btn-icon btn-sm rounded-circle mode-toggle">
+          <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle mode-toggle">
             <i class="ti ti-sun"></i>
           </a>
         </div>

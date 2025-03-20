@@ -33,11 +33,11 @@
                   <td>$4,50,000</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                      <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-32.jpg" alt="Img" />
                       </a>
                       <h6 class="fw-medium">
-                        <a href="#">Anthony Lewis</a>
+                        <a href="javascript:void(0);">Anthony Lewis</a>
                       </h6>
                     </div>
                   </td>
@@ -53,11 +53,11 @@
                   <td>$3,15,000</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                      <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-09.jpg" alt="Img" />
                       </a>
                       <h6 class="fw-medium">
-                        <a href="#">Brian Villalobos</a>
+                        <a href="javascript:void(0);">Brian Villalobos</a>
                       </h6>
                     </div>
                   </td>
@@ -73,11 +73,11 @@
                   <td>$8,40,000</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                      <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-01.jpg" alt="Img" />
                       </a>
                       <h6 class="fw-medium">
-                        <a href="#">Harvey Smith</a>
+                        <a href="javascript:void(0);">Harvey Smith</a>
                       </h6>
                     </div>
                   </td>
@@ -93,11 +93,11 @@
                   <td>$6,10,000</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                      <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-33.jpg" alt="Img" />
                       </a>
                       <h6 class="fw-medium">
-                        <a href="#">Stephan Peralt</a>
+                        <a href="javascript:void(0);">Stephan Peralt</a>
                       </h6>
                     </div>
                   </td>
@@ -113,11 +113,11 @@
                   <td>$4,70,000</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                      <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                         <img src="@/assets/img/users/user-34.jpg" alt="Img" />
                       </a>
                       <h6 class="fw-medium">
-                        <a href="#">Doglas Martini</a>
+                        <a href="javascript:void(0);">Doglas Martini</a>
                       </h6>
                     </div>
                   </td>

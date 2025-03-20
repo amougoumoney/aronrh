@@ -190,12 +190,12 @@ export default {
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Trainer'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="#" class="avatar avatar-md border avatar-rounded">
+          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
             <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
-              <a href="#">{{ record.Trainer }}</a>
+              <a href="javascript:void(0);">{{ record.Trainer }}</a>
             </h6>
           </div>
         </div>
@@ -229,8 +229,10 @@ export default {
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_training"><i class="ti ti-edit"></i></a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_training"><i
+              class="ti ti-edit"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

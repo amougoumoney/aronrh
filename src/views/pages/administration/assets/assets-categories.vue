@@ -10,12 +10,12 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2"></div>
           <div class="mb-2">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#add_assets"
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_assets"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Category</a>
           </div>
           <div class="ms-2 head-icons">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -53,9 +53,10 @@
                 </template>
                 <template v-if="column.key === 'action'">
                   <div class="action-icon d-inline-flex">
-                    <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_assets"><i
+                    <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_assets"><i
                         class="ti ti-edit"></i></a>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                        class="ti ti-trash"></i></a>
                   </div>
                 </template>
               </template>
@@ -69,7 +70,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>
@@ -167,7 +168,7 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/asset/asset-categories" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>

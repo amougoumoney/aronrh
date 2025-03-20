@@ -10,18 +10,18 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">
                     <i class="ti ti-file-type-pdf me-1"></i>Export as PDF
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">
                     <i class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
@@ -160,18 +160,19 @@
                   </td>
                   <td class="text-end">
                     <div class="dropdown dropdown-action">
-                      <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a href="javascript:void(0);" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         <i class="ti ti-dots-vertical"></i>
                       </a>
                       <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#" @click="viewDetails(request)">
+                        <a class="dropdown-item" href="javascript:void(0);" @click="viewDetails(request)">
                           <i class="ti ti-eye me-2"></i>View Details
                         </a>
-                        <a class="dropdown-item" href="#" @click="approveRequest(request)"
+                        <a class="dropdown-item" href="javascript:void(0);" @click="approveRequest(request)"
                           v-if="request.status === 'Pending'">
                           <i class="ti ti-check me-2"></i>Approve
                         </a>
-                        <a class="dropdown-item" href="#" @click="rejectRequest(request)"
+                        <a class="dropdown-item" href="javascript:void(0);" @click="rejectRequest(request)"
                           v-if="request.status === 'Pending'">
                           <i class="ti ti-x me-2"></i>Reject
                         </a>

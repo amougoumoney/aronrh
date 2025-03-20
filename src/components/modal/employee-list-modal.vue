@@ -50,7 +50,7 @@
                             {{ $t('Upload') }}
                             <input type="file" class="form-control image-sign" multiple="" />
                           </div>
-                          <a href="#" class="btn btn-light btn-sm">{{ $t('cancel') }}</a>
+                          <a href="javascript:void(0);" class="btn btn-light btn-sm">{{ $t('cancel') }}</a>
                         </div>
                       </div>
                     </div>
@@ -719,7 +719,7 @@
                             {{ $t('Upload') }}
                             <input type="file" class="form-control image-sign" multiple="" />
                           </div>
-                          <a href="#" class="btn btn-light btn-sm">{{ $t('cancel') }}</a>
+                          <a href="javascript:void(0);" class="btn btn-light btn-sm">{{ $t('cancel') }}</a>
                         </div>
                       </div>
                     </div>
@@ -1352,12 +1352,12 @@
             <div>
               <div class="row g-2">
                 <div class="col-6">
-                  <router-link to="/employee/employee-list"
-                    class="btn btn-dark w-100">{{ $t('BacktoList') }}</router-link>
+                  <router-link to="/employee/employee-list" class="btn btn-dark w-100">{{ $t('BacktoList')
+                    }}</router-link>
                 </div>
                 <div class="col-6">
-                  <router-link to="/employee/employee-details"
-                    class="btn btn-primary w-100">{{ $t('DetailPage') }}</router-link>
+                  <router-link to="/employee/employee-details" class="btn btn-primary w-100">{{ $t('DetailPage')
+                    }}</router-link>
                 </div>
               </div>
             </div>
@@ -1381,7 +1381,7 @@
             {{ $t('Youwanttodeleteallthemarkeditems,thiscantbeundoneonceyoudelete.') }}
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">{{ $t('cancel') }}</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">{{ $t('cancel') }}</a>
             <router-link to="/employee/employee-list" class="btn btn-danger">{{ $t('Yes,Delete') }}</router-link>
           </div>
         </div>

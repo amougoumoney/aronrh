@@ -9,11 +9,12 @@
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a href="#" class="btn btn-dark d-flex align-items-center"><i class="ti ti-download me-2"></i>Download</a>
+            <a href="javascript:void(0);" class="btn btn-dark d-flex align-items-center"><i
+                class="ti ti-download me-2"></i>Download</a>
           </div>
           <div class="head-icons ms-2">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -174,7 +175,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed & Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
     <!-- /Footer -->

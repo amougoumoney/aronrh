@@ -13,9 +13,11 @@
             </div>
             <div class="d-flex align-items-center">
               <div class="action-icon d-inline-flex">
-                <a href="#"><i class="ti ti-circle-plus"></i></a>
-                <a href="#" class="" data-bs-toggle="modal" data-bs-target="#edit_deals"><i class="ti ti-edit"></i></a>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+                <a href="javascript:void(0);"><i class="ti ti-circle-plus"></i></a>
+                <a href="javascript:void(0);" class="" data-bs-toggle="modal" data-bs-target="#edit_deals"><i
+                    class="ti ti-edit"></i></a>
+                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                    class="ti ti-trash"></i></a>
               </div>
             </div>
           </div>
@@ -61,9 +63,9 @@
                   </div>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2"><img
+                      <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2"><img
                           :src="require(`@/assets/img/profiles/${Card.Image}`)" alt="image" /></a>
-                      <a href="#" class="text-dark">
+                      <a href="javascript:void(0);" class="text-dark">
                         {{ Card.Name }}
                       </a>
                     </div>
@@ -73,11 +75,11 @@
                   <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                     <span class="text-dark"><i class="ti ti-calendar-due text-gray-5"></i>{{ Card.Date }}</span>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="d-flex align-items-center justify-content-center me-2"><i
+                      <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-2"><i
                           class="ti ti-phone-check"></i></a>
-                      <a href="#" class="d-flex align-items-center justify-content-center me-2"><i
+                      <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-2"><i
                           class="ti ti-message-circle-2"></i></a>
-                      <a href="#" class="d-flex align-items-center justify-content-center"><i
+                      <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"><i
                           class="ti ti-color-swatch"></i></a>
                     </div>
                   </div>

@@ -169,22 +169,24 @@ export default {
       </template>
       <template v-if="column.key === 'Nil'">
         <div class="dropdown me-3">
-          <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+          <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+            data-bs-toggle="dropdown">
             unpublish
           </a>
           <ul class="dropdown-menu dropdown-menu-end p-3">
             <li>
-              <a href="#" class="dropdown-item rounded-1">unpublish</a>
+              <a href="javascript:void(0);" class="dropdown-item rounded-1">unpublish</a>
             </li>
             <li>
-              <a href="#" class="dropdown-item rounded-1">publish</a>
+              <a href="javascript:void(0);" class="dropdown-item rounded-1">publish</a>
             </li>
           </ul>
         </div>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

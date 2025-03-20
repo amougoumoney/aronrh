@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a href="#" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button type="submit" class="btn btn-primary">Add Ticket</button>
           </div>
         </form>

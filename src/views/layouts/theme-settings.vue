@@ -10,7 +10,7 @@
         <h3 class="mb-1 text-white">{{ $t('ThemeCustomizer') }}</h3>
         <p class="text-light">{{ $t('Chooseyourthemes&layoutsetc.') }}</p>
       </div>
-      <a href="#" class="custom-btn-close d-flex align-items-center justify-content-center text-white"
+      <a href="javascript:void(0);" class="custom-btn-close d-flex align-items-center justify-content-center text-white"
         data-bs-dismiss="offcanvas"><i class="ti ti-x"></i></a>
     </div>
     <div class="themesettings-inner offcanvas-body">
@@ -609,11 +609,12 @@
     <div class="p-3 pt-0">
       <div class="row gx-3">
         <div class="col-6">
-          <a href="#" id="resetbutton" class="btn btn-light close-theme w-100"><i class="ti ti-restore me-1"></i>{{
-            $t('Reset') }}</a>
+          <a href="javascript:void(0);" id="resetbutton" class="btn btn-light close-theme w-100"><i
+              class="ti ti-restore me-1"></i>{{
+                $t('Reset') }}</a>
         </div>
         <div class="col-6">
-          <a href="#" class="btn btn-primary w-100" data-bs-dismiss="offcanvas"><i
+          <a href="javascript:void(0);" class="btn btn-primary w-100" data-bs-dismiss="offcanvas"><i
               class="ti ti-shopping-cart-plus me-1"></i>{{ $t('BuyProduct') }}</a>
         </div>
       </div>

@@ -51,42 +51,42 @@
             <div class="card-body">
               <div class="alert alert-primary" role="alert">
                 A simple primary alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                <a href="javascript:void(0);" class="alert-link">an example link</a>. Give it a click if you
                 like.
               </div>
               <div class="alert alert-secondary" role="alert">
                 A simple secondary alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                <a href="javascript:void(0);" class="alert-link">an example link</a>. Give it a click if you
                 like.
               </div>
               <div class="alert alert-success" role="alert">
                 A simple success alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                <a href="javascript:void(0);" class="alert-link">an example link</a>. Give it a click if you
                 like.
               </div>
               <div class="alert alert-danger" role="alert">
                 A simple danger alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                <a href="javascript:void(0);" class="alert-link">an example link</a>. Give it a click if you
                 like.
               </div>
               <div class="alert alert-warning" role="alert">
                 A simple warning alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                <a href="javascript:void(0);" class="alert-link">an example link</a>. Give it a click if you
                 like.
               </div>
               <div class="alert alert-info" role="alert">
                 A simple info alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                <a href="javascript:void(0);" class="alert-link">an example link</a>. Give it a click if you
                 like.
               </div>
               <div class="alert alert-light" role="alert">
                 A simple light alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                <a href="javascript:void(0);" class="alert-link">an example link</a>. Give it a click if you
                 like.
               </div>
               <div class="alert alert-dark" role="alert">
                 A simple dark alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                <a href="javascript:void(0);" class="alert-link">an example link</a>. Give it a click if you
                 like.
               </div>
             </div>
@@ -438,8 +438,9 @@
                             Information alert to show to information message
                           </div>
                           <div class="fs-12">
-                            <a href="#" class="text-secondary fw-semibold me-2 d-inline-block">cancel</a>
-                            <a href="#" class="text-primary fw-semibold">open</a>
+                            <a href="javascript:void(0);"
+                              class="text-secondary fw-semibold me-2 d-inline-block">cancel</a>
+                            <a href="javascript:void(0);" class="text-primary fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -464,8 +465,8 @@
                             Success alert to show to success message
                           </div>
                           <div class="fs-12">
-                            <a href="#" class="text-danger fw-semibold me-2 d-inline-block">cancel</a>
-                            <a href="#" class="text-secondary fw-semibold">open</a>
+                            <a href="javascript:void(0);" class="text-danger fw-semibold me-2 d-inline-block">cancel</a>
+                            <a href="javascript:void(0);" class="text-secondary fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -490,8 +491,8 @@
                             Warning alert to show warning message
                           </div>
                           <div class="fs-12">
-                            <a href="#" class="text-dark fw-semibold me-2 d-inline-block">cancel</a>
-                            <a href="#" class="text-warning fw-semibold">open</a>
+                            <a href="javascript:void(0);" class="text-dark fw-semibold me-2 d-inline-block">cancel</a>
+                            <a href="javascript:void(0);" class="text-warning fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -516,8 +517,8 @@
                             Danger alert to show the danger message
                           </div>
                           <div class="fs-12">
-                            <a href="#" class="text-info fw-semibold me-2 d-inline-block">cancel</a>
-                            <a href="#" class="text-danger fw-semibold">open</a>
+                            <a href="javascript:void(0);" class="text-info fw-semibold me-2 d-inline-block">cancel</a>
+                            <a href="javascript:void(0);" class="text-danger fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -544,8 +545,8 @@
                             Information alert to show to information message
                           </div>
                           <div class="fs-12">
-                            <a href="#" class="text-fixed-white fw-semibold me-2 op-7">cancel</a>
-                            <a href="#" class="text-fixed-white fw-semibold">open</a>
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold me-2 op-7">cancel</a>
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -570,7 +571,7 @@
                             Success alert to show to success message
                           </div>
                           <div class="fs-12">
-                            <a href="#" class="text-fixed-white fw-semibold me-2">close</a>
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold me-2">close</a>
                           </div>
                         </div>
                       </div>
@@ -595,8 +596,8 @@
                             Warning alert to show to warning message
                           </div>
                           <div class="fs-12">
-                            <a href="#" class="text-fixed-white fw-semibold me-2 op-7">skip</a>
-                            <a href="#" class="text-fixed-white fw-semibold">open</a>
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold me-2 op-7">skip</a>
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -621,8 +622,8 @@
                             Danger alert to show to danger message
                           </div>
                           <div class="fs-12">
-                            <a href="#" class="text-fixed-white fw-semibold me-2 op-7">close</a>
-                            <a href="#" class="text-fixed-white fw-semibold">continue</a>
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold me-2 op-7">close</a>
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold">continue</a>
                           </div>
                         </div>
                       </div>
@@ -884,7 +885,8 @@
                       <p class="mb-0">
                         We appreciate you to let us know the bug in the template and for
                         warning us about future consequences
-                        <a href="#" class="fw-semibold text-decoration-underline text-primary">Visit for support for
+                        <a href="javascript:void(0);" class="fw-semibold text-decoration-underline text-primary">Visit
+                          for support for
                           queries ?</a>
                       </p>
                     </div>
@@ -906,7 +908,8 @@
                       <p class="mb-0">
                         We appreciate you to let us know the bug in the template and for
                         warning us about future consequences
-                        <a href="#" class="fw-semibold text-decoration-underline text-secondary">Visit for support for
+                        <a href="javascript:void(0);" class="fw-semibold text-decoration-underline text-secondary">Visit
+                          for support for
                           queries ?</a>
                       </p>
                     </div>
@@ -928,7 +931,8 @@
                       <p class="mb-0">
                         We appreciate you to let us know the bug in the template and for
                         warning us about future consequences
-                        <a href="#" class="fw-semibold text-decoration-underline text-success">Visit for support for
+                        <a href="javascript:void(0);" class="fw-semibold text-decoration-underline text-success">Visit
+                          for support for
                           queries ?</a>
                       </p>
                     </div>
@@ -950,7 +954,8 @@
                       <p class="mb-0">
                         We appreciate you to let us know the bug in the template and for
                         warning us about future consequences
-                        <a href="#" class="fw-semibold text-decoration-underline text-warning">Visit for support for
+                        <a href="javascript:void(0);" class="fw-semibold text-decoration-underline text-warning">Visit
+                          for support for
                           queries ?</a>
                       </p>
                     </div>

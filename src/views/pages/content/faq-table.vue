@@ -123,12 +123,14 @@ export default {
   <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Questions'">
-        <h6 class="fw-medium"><a href="#">{{ record.Questions }}</a></h6>
+        <h6 class="fw-medium"><a href="javascript:void(0);">{{ record.Questions }}</a></h6>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#edit_faq" class="me-2"><i class="ti ti-edit"></i></a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_faq" class="me-2"><i
+              class="ti ti-edit"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

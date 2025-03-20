@@ -207,16 +207,16 @@ export default {
             <span class="badge bg-light rounded-pill">{{ module.Count }}</span>
           </div>
           <div class="dropdown">
-            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+            <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
               <i class="ti ti-dots-vertical"></i>
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
-                <a href="#" class="dropdown-item rounded-1"><i class="ti ti-edit me-2"></i>Edit</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"><i class="ti ti-edit me-2"></i>Edit</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                    class="ti ti-trash me-2"></i>Delete</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                  data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
               </li>
             </ul>
           </div>
@@ -232,26 +232,27 @@ export default {
                     <span :class="Card.BadgeClass">{{ Card.BadgeNo }}</span>
                   </div>
                   <div class="dropdown">
-                    <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                       <i class="ti ti-dots-vertical"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end p-3">
                       <li>
-                        <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                           data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div class="d-flex align-items-center flex-shrink-0 mb-3">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img :src="(`@/assets/img/users/${Card.Image}`)" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap">
                       <h6 class="text-dark fs-16 fw-semibold">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">{{ Card.Name }}</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">{{
+                          Card.Name }}</a>
                       </h6>
                     </div>
                     <p class="text-gray fs-13 fw-normal">{{ Card.Email }}</p>
@@ -274,7 +275,8 @@ export default {
         </draggable>
       </div>
       <div class="pt-2">
-        <a href="#" class="btn btn-white border border-dashed d-flex align-items-center justify-content-center">
+        <a href="javascript:void(0);"
+          class="btn btn-white border border-dashed d-flex align-items-center justify-content-center">
           <i class="ti ti-plus me-2"></i>
           New Project
         </a>

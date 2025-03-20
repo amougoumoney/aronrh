@@ -21,7 +21,7 @@
                 type specimen book. It has survived not only five centuries, but also the
                 leap into electronic typesetting, remaining essentially unchanged.
               </p>
-              <a href="#" class="btn btn-primary">Read More</a>
+              <a href="javascript:void(0);" class="btn btn-primary">Read More</a>
             </div>
             <div class="card-footer">
               <span class="card-text">Last updated 3 mins ago</span>
@@ -40,7 +40,7 @@
                 Virginia, looked up one of the more obscure Latin words, consectetur, from
                 a Lorem Ipsum passage
               </p>
-              <a href="#" class="btn btn-primary">Read More</a>
+              <a href="javascript:void(0);" class="btn btn-primary">Read More</a>
             </div>
           </div>
           <div class="card">
@@ -55,8 +55,8 @@
               </p>
             </div>
             <div class="card-footer">
-              <a href="#" class="card-link text-danger m-1 me">Buy Now</a>
-              <a href="#" class="card-link text-success m-1"><u>Review</u></a>
+              <a href="javascript:void(0);" class="card-link text-danger m-1 me">Buy Now</a>
+              <a href="javascript:void(0);" class="card-link text-success m-1"><u>Review</u></a>
             </div>
           </div>
         </div>
@@ -97,8 +97,8 @@
               <li class="list-group-item">A second item</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="card-link text-primary">Card link</a>
-              <a href="#" class="card-link text-secondary d-inline-block">Another link</a>
+              <a href="javascript:void(0);" class="card-link text-primary">Card link</a>
+              <a href="javascript:void(0);" class="card-link text-secondary d-inline-block">Another link</a>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@
                   <p class="card-text">
                     With supporting text below as a natural lead-in to additional content.
                   </p>
-                  <a href="#" class="btn btn-primary">Purchase</a>
+                  <a href="javascript:void(0);" class="btn btn-primary">Purchase</a>
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@
                   <p class="card-text">
                     With supporting text below as a natural lead-in to additional content.
                   </p>
-                  <a href="#" class="btn btn-secondary">Purchase</a>
+                  <a href="javascript:void(0);" class="btn btn-secondary">Purchase</a>
                 </div>
               </div>
             </div>
@@ -197,7 +197,7 @@
                   <p class="card-text">
                     With supporting text below as a natural lead-in to additional content.
                   </p>
-                  <a href="#" class="btn btn-light">Purchase</a>
+                  <a href="javascript:void(0);" class="btn btn-light">Purchase</a>
                 </div>
               </div>
             </div>
@@ -224,7 +224,7 @@
                     Contrary to popular belief, Lorem Ipsum is not simply random text. It
                     has roots in a piece of classical Latin literature.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="javascript:void(0);" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -241,7 +241,7 @@
                     Many desktop publishing packages and web page editors now use Lorem
                     Ipsum as their default model text.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="javascript:void(0);" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -258,7 +258,7 @@
                     There are many variations of passages of Lorem Ipsum available, but
                     the majority have suffered alteration in some form.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="javascript:void(0);" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -304,13 +304,13 @@
                   <p class="mb-0 text-muted fs-11">28 Years, Male</p>
                 </div>
                 <div class="dropdown ms-auto">
-                  <a href="#" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown">
+                  <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown">
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Week</a></li>
-                    <li><a class="dropdown-item" href="#">Month</a></li>
-                    <li><a class="dropdown-item" href="#">Year</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Week</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Month</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Year</a></li>
                   </ul>
                 </div>
               </div>
@@ -435,8 +435,8 @@
               <p class="card-text mb-4">
                 With supporting text below as a natural lead-in to additional content.
               </p>
-              <a href="#" class="btn btn-primary mt-2 me-1">Read More</a>
-              <a href="#" class="btn btn-outline-secondary mt-2">Close</a>
+              <a href="javascript:void(0);" class="btn btn-primary mt-2 me-1">Read More</a>
+              <a href="javascript:void(0);" class="btn btn-outline-secondary mt-2">Close</a>
             </div>
             <div class="card-footer text-muted">11.32pm</div>
           </div>
@@ -481,8 +481,8 @@
           <div class="card">
             <div class="card-header justify-content-between d-flex flex-wrap">
               <div class="card-title">Card With Collapse Button</div>
-              <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
-                aria-controls="collapseExample">
+              <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
                 <i class="fa-solid fa-chevron-down fs-18 collapse-open"></i>
                 <i class="fa-solid fa-chevron-up collapse-close fs-18"></i>
               </a>
@@ -506,7 +506,7 @@
           <div class="card">
             <div class="card-header justify-content-between d-flex flex-wrap">
               <div class="card-title">Card With Close Button</div>
-              <a href="#" data-bs-toggle="card-remove">
+              <a href="javascript:void(0);" data-bs-toggle="card-remove">
                 <i class="fa-solid fa-xmark fs-18"></i>
               </a>
             </div>
@@ -527,7 +527,7 @@
           <div class="card">
             <div class="card-header justify-content-between d-flex flex-wrap">
               <div class="card-title">Card With Fullscreen Button</div>
-              <a href="#" data-bs-toggle="card-fullscreen">
+              <a href="javascript:void(0);" data-bs-toggle="card-fullscreen">
                 <i class="fa-solid fa-expand"></i>
               </a>
             </div>
@@ -564,7 +564,7 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary d-grid">Button</a>
+                  <a href="javascript:void(0);" class="btn btn-primary d-grid">Button</a>
                 </div>
               </div>
             </div>
@@ -579,7 +579,7 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary d-grid">Button</a>
+                  <a href="javascript:void(0);" class="btn btn-primary d-grid">Button</a>
                 </div>
               </div>
             </div>
@@ -593,10 +593,10 @@
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs ms-1">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="true" href="#">Active</a>
+                      <a class="nav-link active" aria-current="true" href="javascript:void(0);">Active</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="javascript:void(0);">Link</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link disabled">Disabled</a>
@@ -608,7 +608,7 @@
                   <p class="card-text">
                     With supporting text below as a natural lead-in to additional content.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="javascript:void(0);" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -617,10 +617,10 @@
                 <div class="card-header">
                   <ul class="nav nav-pills card-header-pills ms-1">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Active</a>
+                      <a class="nav-link active" href="javascript:void(0);">Active</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="javascript:void(0);">Link</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link disabled">Disabled</a>
@@ -632,7 +632,7 @@
                   <p class="card-text">
                     With supporting text below as a natural lead-in to additional content.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="javascript:void(0);" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -902,7 +902,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">Finished by today</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="#" class="text-fixed-white"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -922,7 +923,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">Completed 24 days back</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="#" class="text-fixed-white"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -942,7 +944,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">Completed today</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="#" class="text-fixed-white"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -962,7 +965,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">Pending from 4 days</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="#" class="text-fixed-white"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -982,7 +986,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">In leave for 1 month</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="#" class="text-fixed-white"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -1002,7 +1007,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">Completed by Tomorrow</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="#" class="text-fixed-white"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -1022,7 +1028,7 @@
                   <p class="mb-0 text-muted op-7 fs-12">Finished by 24,Nov</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="#" class="text-default"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                  <a href="javascript:void(0);" class="text-default"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -1042,7 +1048,7 @@
                   <p class="mb-0 op-7 fs-12 text-white">Completed on 24,may</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="#" class="text-white"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                  <a href="javascript:void(0);" class="text-white"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -1289,7 +1295,7 @@
       <div class="row">
         <div class="col-xxl-3 col-xl-12">
           <div class="card">
-            <a href="#" class="card-anchor"></a>
+            <a href="javascript:void(0);" class="card-anchor"></a>
             <img src="@/assets/img/img-1.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h6 class="card-title fw-semibold mb-0">Forests are Awesome.</h6>
@@ -1300,7 +1306,7 @@
           <div class="row">
             <div class="col-xxl-12 col-xl-12">
               <div class="card card-bg-primary">
-                <a href="#" class="card-anchor"></a>
+                <a href="javascript:void(0);" class="card-anchor"></a>
                 <div class="card-body">
                   <blockquote class="blockquote mb-0 text-center">
                     <h6 class="text-fixed-white">
@@ -1316,7 +1322,7 @@
             </div>
             <div class="col-xxl-5 col-xl-12">
               <div class="card">
-                <a href="#" class="card-anchor"></a>
+                <a href="javascript:void(0);" class="card-anchor"></a>
                 <div class="card-body">
                   <div class="d-flex align-items-center">
                     <div class="me-3">
@@ -1334,7 +1340,7 @@
                 </div>
               </div>
               <div class="card border border-info">
-                <a href="#" class="card-anchor"></a>
+                <a href="javascript:void(0);" class="card-anchor"></a>
                 <div class="card-body">
                   <div class="d-flex align-items-center">
                     <div class="me-3">
@@ -1355,7 +1361,7 @@
             </div>
             <div class="col-xxl-7 col-xl-12">
               <div class="card">
-                <a href="#" class="card-anchor"></a>
+                <a href="javascript:void(0);" class="card-anchor"></a>
                 <div class="row g-0">
                   <div class="col-md-8">
                     <div class="card-body">
@@ -1385,7 +1391,7 @@
         </div>
         <div class="col-xxl-3 col-xl-6">
           <div class="card">
-            <a href="#" class="card-anchor"></a>
+            <a href="javascript:void(0);" class="card-anchor"></a>
             <img src="@/assets/img/img-4.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h6 class="card-title fw-semibold">Most tropical areas are suitable</h6>

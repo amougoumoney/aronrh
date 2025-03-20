@@ -243,13 +243,13 @@ export default {
       <template v-if="column.key === 'Project_Name'">
         <div class="d-flex align-items-center file-name-icon">
           <h6 class="fw-medium">
-            <a href="#">{{ record.Project_Name }}</a>
+            <a href="javascript:void(0);">{{ record.Project_Name }}</a>
           </h6>
         </div>
       </template>
       <template v-if="column.key === 'Leader'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="#" class="avatar avatar-md border avatar-rounded">
+          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
             <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">

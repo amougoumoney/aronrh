@@ -11,10 +11,10 @@
               <div class="card-body">
                 <div class="bg-light rounded p-3 mb-4">
                   <div class="text-center mb-3">
-                    <a href="#" class="avatar avatar-xl online avatar-rounded">
+                    <a href="javascript:void(0);" class="avatar avatar-xl online avatar-rounded">
                       <img src="@/assets/img/users/user-11.jpg" alt="Img" />
                     </a>
-                    <h5 class="mb-1"><a href="#">James Hong </a></h5>
+                    <h5 class="mb-1"><a href="javascript:void(0);">James Hong </a></h5>
                     <p class="fs-12">@James Hong324</p>
                   </div>
                   <div class="row g-1">
@@ -39,7 +39,8 @@
                   </div>
                 </div>
                 <div class="mb-4">
-                  <a href="#" class="btn btn-primary d-inline-flex align-items-center justify-content-center w-100"><i
+                  <a href="javascript:void(0);"
+                    class="btn btn-primary d-inline-flex align-items-center justify-content-center w-100"><i
                       class="ti ti-circle-plus me-2"></i>Create Post</a>
                 </div>
                 <div class="files-list border-bottom pb-2 mb-4">
@@ -104,7 +105,7 @@
                         </a>
                       </div>
                       <div class="view-all mt-2">
-                        <a href="#" class="viewall-button-3 fw-medium"><span>Show More</span><i
+                        <a href="javascript:void(0);" class="viewall-button-3 fw-medium"><span>Show More</span><i
                             class="fa fa-chevron-down fs-10 ms-2"></i></a>
                       </div>
                     </div>
@@ -131,19 +132,28 @@
                   </div>
                   <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-photo fs-16"></i></a>
-                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-link fs-16"></i></a>
-                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-paperclip fs-16"></i></a>
-                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-video fs-16"></i></a>
-                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-hash fs-16"></i></a>
-                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i
+                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                          class="ti ti-photo fs-16"></i></a>
+                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                          class="ti ti-link fs-16"></i></a>
+                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                          class="ti ti-paperclip fs-16"></i></a>
+                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                          class="ti ti-video fs-16"></i></a>
+                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                          class="ti ti-hash fs-16"></i></a>
+                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
                           class="ti ti-map-pin-heart fs-16"></i></a>
-                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-mood-smile fs-16"></i></a>
+                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                          class="ti ti-mood-smile fs-16"></i></a>
                     </div>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-refresh fs-16"></i></a>
-                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-trash fs-16"></i></a>
-                      <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-world fs-16"></i></a>
+                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                          class="ti ti-refresh fs-16"></i></a>
+                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                          class="ti ti-trash fs-16"></i></a>
+                      <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                          class="ti ti-world fs-16"></i></a>
                       <button type="submit" class="btn btn-primary d-inline-flex align-items-center ms-2">
                         <i class="ti ti-circle-plus fs-16 me-2"></i>Share Post
                       </button>
@@ -157,11 +167,11 @@
               <div class="card-header border-0 pb-0">
                 <div class="d-flex align-items-center justify-content-between border-bottom flex-wrap row-gap-3 pb-3">
                   <div class="d-flex align-items-center">
-                    <a href="#" class="avatar avatar-lg avatar-rounded flex-shrink-0 me-2"><img
+                    <a href="javascript:void(0);" class="avatar avatar-lg avatar-rounded flex-shrink-0 me-2"><img
                         src="@/assets/img/users/user-03.jpg" alt="Img" /></a>
                     <div>
                       <h5 class="mb-1">
-                        <a href="#">Richard Smith
+                        <a href="javascript:void(0);">Richard Smith
                           <i class="ti ti-circle-check-filled text-success"></i></a>
                       </h5>
                       <p class="d-flex align-items-center">
@@ -181,30 +191,34 @@
                       </button>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                          <a class="dropdown-item" href="#">Private</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Private</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#">Public</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Public</a>
                         </li>
                       </ul>
                     </div>
                     <div class="dropdown">
-                      <a href="#" class="d-inline-flex align-items-center show" data-bs-toggle="dropdown"
-                        aria-expanded="true">
+                      <a href="javascript:void(0);" class="d-inline-flex align-items-center show"
+                        data-bs-toggle="dropdown" aria-expanded="true">
                         <i class="ti ti-dots-vertical"></i>
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end p-3">
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-edit me-2"></i>Edit</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-edit me-2"></i>Edit</a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-eye me-2"></i>Hide Post</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-eye me-2"></i>Hide Post</a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-report me-2"></i>Report</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-report me-2"></i>Report</a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-trash-x me-2"></i>Delete</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-trash-x me-2"></i>Delete</a>
                         </li>
                       </ul>
                     </div>
@@ -217,11 +231,11 @@
               <div class="card-header border-0 pb-0">
                 <div class="d-flex align-items-center justify-content-between border-bottom flex-wrap row-gap-3 pb-3">
                   <div class="d-flex align-items-center">
-                    <a href="#" class="avatar avatar-lg avatar-rounded flex-shrink-0 me-2"><img
+                    <a href="javascript:void(0);" class="avatar avatar-lg avatar-rounded flex-shrink-0 me-2"><img
                         src="@/assets/img/users/user-05.jpg" alt="Img" /></a>
                     <div>
                       <h5 class="mb-1">
-                        <a href="#">Jason Heier
+                        <a href="javascript:void(0);">Jason Heier
                           <i class="ti ti-circle-check-filled text-success"></i></a>
                       </h5>
                       <p class="d-flex align-items-center">
@@ -241,30 +255,34 @@
                       </button>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                          <a class="dropdown-item" href="#">Private</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Private</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#">Public</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Public</a>
                         </li>
                       </ul>
                     </div>
                     <div class="dropdown">
-                      <a href="#" class="d-inline-flex align-items-center show" data-bs-toggle="dropdown"
-                        aria-expanded="true">
+                      <a href="javascript:void(0);" class="d-inline-flex align-items-center show"
+                        data-bs-toggle="dropdown" aria-expanded="true">
                         <i class="ti ti-dots-vertical"></i>
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end p-3">
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-edit me-2"></i>Edit</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-edit me-2"></i>Edit</a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-eye me-2"></i>Hide Post</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-eye me-2"></i>Hide Post</a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-report me-2"></i>Report</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-report me-2"></i>Report</a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-trash-x me-2"></i>Delete</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-trash-x me-2"></i>Delete</a>
                         </li>
                       </ul>
                     </div>
@@ -275,42 +293,46 @@
                 <div class="mb-2">
                   <p class="text-dark fw-medium">
                     Drinking water boosts skin health and beauty. Stay hydrated!
-                    <a href="#" class="text-info link-hover">#HealthTips
+                    <a href="javascript:void(0);" class="text-info link-hover">#HealthTips
                     </a>
-                    <a href="#" class="text-info link-hover">
+                    <a href="javascript:void(0);" class="text-info link-hover">
                       #Wellness</a>
                     💧
                   </p>
                 </div>
                 <div class="card shadow-none mb-3">
                   <div class="card-img card-img-hover rounded-0">
-                    <a href="#" class="rounded-top"><img src="@/assets/img/social/social-feed-02.jpg"
+                    <a href="javascript:void(0);" class="rounded-top"><img src="@/assets/img/social/social-feed-02.jpg"
                         class="rounded-top" alt="Img" /></a>
                   </div>
                   <div class="card-body p-2">
                     <h6 class="mb-1 text-truncate">
-                      <a href="#">Drinking water boosts skin health and beauty. Stay hydrated!💧</a>
+                      <a href="javascript:void(0);">Drinking water boosts skin health and beauty. Stay hydrated!💧</a>
                     </h6>
-                    <a href="#">Health.com</a>
+                    <a href="javascript:void(0);">Health.com</a>
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
                   <div class="d-flex align-items-center flex-wrap row-gap-3">
-                    <a href="#" class="d-inline-flex align-items-center me-3">
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center me-3">
                       <i class="ti ti-heart me-2"></i>340K Likes
                     </a>
-                    <a href="#" class="d-inline-flex align-items-center me-3">
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center me-3">
                       <i class="ti ti-message-dots me-2"></i>45 Comments
                     </a>
-                    <a href="#" class="d-inline-flex align-items-center">
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center">
                       <i class="ti ti-share-3 me-2"></i>28 Share
                     </a>
                   </div>
                   <div class="d-flex align-items-center">
-                    <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-heart"></i></a>
-                    <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-share"></i></a>
-                    <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-message-star"></i></a>
-                    <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-bookmark"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                        class="ti ti-heart"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                        class="ti ti-share"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                        class="ti ti-message-star"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                        class="ti ti-bookmark"></i></a>
                   </div>
                 </div>
               </div>
@@ -323,7 +345,7 @@
                         src="@/assets/img/users/user-04.jpg" alt="Img" /></span>
                     <div>
                       <h5 class="mb-1">
-                        <a href="#">Sophie Headrick
+                        <a href="javascript:void(0);">Sophie Headrick
                           <i class="ti ti-circle-check-filled text-success"></i></a>
                       </h5>
                       <p class="d-flex align-items-center">
@@ -343,30 +365,34 @@
                       </button>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                          <a class="dropdown-item" href="#">Private</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Private</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#">Public</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Public</a>
                         </li>
                       </ul>
                     </div>
                     <div class="dropdown">
-                      <a href="#" class="d-inline-flex align-items-center show" data-bs-toggle="dropdown"
-                        aria-expanded="true">
+                      <a href="javascript:void(0);" class="d-inline-flex align-items-center show"
+                        data-bs-toggle="dropdown" aria-expanded="true">
                         <i class="ti ti-dots-vertical"></i>
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end p-3">
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-edit me-2"></i>Edit</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-edit me-2"></i>Edit</a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-eye me-2"></i>Hide Post</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-eye me-2"></i>Hide Post</a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-report me-2"></i>Report</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-report me-2"></i>Report</a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1"><i class="ti ti-trash-x me-2"></i>Delete</a>
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                              class="ti ti-trash-x me-2"></i>Delete</a>
                         </li>
                       </ul>
                     </div>
@@ -378,9 +404,9 @@
                   <p class="text-dark fw-medium">
                     Excited to announce the launch of our new product! Get yours now and
                     enjoy a special discount.
-                    <a href="#" class="text-info link-hover">#NewRelease
+                    <a href="javascript:void(0);" class="text-info link-hover">#NewRelease
                     </a>
-                    <a href="#" class="text-info link-hover">
+                    <a href="javascript:void(0);" class="text-info link-hover">
                       #Innovation</a>
                     🎉
                   </p>
@@ -390,79 +416,84 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3">
                   <div class="d-flex align-items-center flex-wrap row-gap-3">
-                    <a href="#" class="d-inline-flex align-items-center me-3">
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center me-3">
                       <i class="ti ti-heart me-2"></i>340K Likes
                     </a>
-                    <a href="#" class="d-inline-flex align-items-center me-3">
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center me-3">
                       <i class="ti ti-message-dots me-2"></i>45 Comments
                     </a>
-                    <a href="#" class="d-inline-flex align-items-center">
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center">
                       <i class="ti ti-share-3 me-2"></i>28 Share
                     </a>
                   </div>
                   <div class="d-flex align-items-center">
-                    <a href="#" class="btn btn-icon btn-sm rounded-circle"><i
+                    <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
                         class="ti ti-heart-filled text-danger"></i></a>
-                    <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-share"></i></a>
-                    <a href="#" class="btn btn-icon btn-sm rounded-circle"><i class="ti ti-message-star"></i></a>
-                    <a href="#" class="btn btn-icon btn-sm rounded-circle"><i
+                    <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                        class="ti ti-share"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
+                        class="ti ti-message-star"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle"><i
                         class="ti ti-bookmark-filled text-warning"></i></a>
                   </div>
                 </div>
                 <div class="d-flex align-items-start mb-3">
-                  <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                  <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                     <img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" />
                   </a>
                   <div class="bg-light rounded flex-fill p-2">
                     <div class="d-flex align-items-center mb-1">
-                      <h5><a href="#">Frank Hoffman</a></h5>
+                      <h5><a href="javascript:void(0);">Frank Hoffman</a></h5>
                       <span class="ms-2">12:45 PM</span>
                     </div>
                     <p class="mb-1">
                       Congratulations on the launch! I've been eagerly waiting for this
                       product, and the special discount makes it even more exciting.
                     </p>
-                    <a href="#" class="d-inline-flex align-items-center"><i class="ti ti-share-3 me-2"></i>Reply</a>
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"><i
+                        class="ti ti-share-3 me-2"></i>Reply</a>
                   </div>
                 </div>
                 <div class="d-flex align-items-start mb-3 ms-4 ps-2">
-                  <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                  <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                     <img src="@/assets/img/profiles/avatar-01.jpg" alt="Img" />
                   </a>
                   <div class="bg-light rounded flex-fill p-2">
                     <div class="d-flex align-items-center mb-1">
-                      <h5><a href="#">Sophie Headrick</a></h5>
+                      <h5><a href="javascript:void(0);">Sophie Headrick</a></h5>
                       <span class="ms-2">12:45 PM</span>
                     </div>
                     <p class="mb-1">Thank you so much for your enthusiasm and support!</p>
-                    <a href="#" class="d-inline-flex align-items-center"><i class="ti ti-share-3 me-2"></i>Reply</a>
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"><i
+                        class="ti ti-share-3 me-2"></i>Reply</a>
                   </div>
                 </div>
                 <div class="d-flex align-items-start mb-3">
-                  <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                  <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                     <img src="@/assets/img/profiles/avatar-04.jpg" alt="Img" />
                   </a>
                   <div class="bg-light rounded flex-fill p-2">
                     <div class="d-flex align-items-center mb-1">
-                      <h5><a href="#">Samuel Butler</a></h5>
+                      <h5><a href="javascript:void(0);">Samuel Butler</a></h5>
                       <span class="ms-2">12:40 PM</span>
                     </div>
                     <p class="mb-1">
                       So thrilled to see this product finally launched! I've heard amazing
                       things about it and am excited to see how it lives up to the hype.
                     </p>
-                    <a href="#" class="d-inline-flex align-items-center"><i class="ti ti-share-3 me-2"></i>Reply</a>
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"><i
+                        class="ti ti-share-3 me-2"></i>Reply</a>
                   </div>
                 </div>
                 <div>
                   <div class="more-menu">
                     <div class="d-flex align-items-start mb-3">
-                      <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                      <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                         <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
                       </a>
                       <div class="bg-light rounded flex-fill p-2">
                         <div class="d-flex align-items-center mb-1">
-                          <h5><a href="#">Samuel Butler</a></h5>
+                          <h5><a href="javascript:void(0);">Samuel Butler</a></h5>
                           <span class="ms-2">12:40 PM</span>
                         </div>
                         <p class="mb-1">
@@ -470,16 +501,17 @@
                           amazing things about it and am excited to see how it lives up to
                           the hype.
                         </p>
-                        <a href="#" class="d-inline-flex align-items-center"><i class="ti ti-share-3 me-2"></i>Reply</a>
+                        <a href="javascript:void(0);" class="d-inline-flex align-items-center"><i
+                            class="ti ti-share-3 me-2"></i>Reply</a>
                       </div>
                     </div>
                     <div class="d-flex align-items-start mb-3">
-                      <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                      <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                         <img src="@/assets/img/profiles/avatar-06.jpg" alt="Img" />
                       </a>
                       <div class="bg-light rounded flex-fill p-2">
                         <div class="d-flex align-items-center mb-1">
-                          <h5><a href="#">Samuel Butler</a></h5>
+                          <h5><a href="javascript:void(0);">Samuel Butler</a></h5>
                           <span class="ms-2">12:40 PM</span>
                         </div>
                         <p class="mb-1">
@@ -487,12 +519,13 @@
                           amazing things about it and am excited to see how it lives up to
                           the hype.
                         </p>
-                        <a href="#" class="d-inline-flex align-items-center"><i class="ti ti-share-3 me-2"></i>Reply</a>
+                        <a href="javascript:void(0);" class="d-inline-flex align-items-center"><i
+                            class="ti ti-share-3 me-2"></i>Reply</a>
                       </div>
                     </div>
                   </div>
                   <div class="view-all text-center mb-3">
-                    <a href="#" class="viewall-button text-primary fw-medium"><span>View All 200
+                    <a href="javascript:void(0);" class="viewall-button text-primary fw-medium"><span>View All 200
                         Comments</span><i class="fa fa-chevron-down fs-10 ms-2"></i></a>
                   </div>
                 </div>
@@ -529,93 +562,93 @@
                     <div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/profiles/avatar-29.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Anthony Lewis</a>
+                              <a href="javascript:void(0);">Anthony Lewis</a>
                               <i class="ti ti-circle-check-filled text-success ms-1"></i>
                             </h6>
                             <span class="fs-12 d-block">United States</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-01.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Harvey Smith</a>
+                              <a href="javascript:void(0);">Harvey Smith</a>
                             </h6>
                             <span class="fs-12 d-block">Ukrain</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-33.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Stephan Peralt</a>
+                              <a href="javascript:void(0);">Stephan Peralt</a>
                             </h6>
                             <span class="fs-12 d-block">Isreal</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-34.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Doglas Martini</a>
+                              <a href="javascript:void(0);">Doglas Martini</a>
                             </h6>
                             <span class="fs-12 d-block">Belgium</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-09.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Brian Villalobos</a>
+                              <a href="javascript:void(0);">Brian Villalobos</a>
                               <i class="ti ti-circle-check-filled text-success ms-1"></i>
                             </h6>
                             <span class="fs-12 d-block">United Kingdom</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-02.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Linda Ray</a>
+                              <a href="javascript:void(0);">Linda Ray</a>
                             </h6>
                             <span class="fs-12 d-block">Argentina</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                     </div>
                     <div>
-                      <a href="#" class="btn btn-outline-light w-100 border">View All <i
+                      <a href="javascript:void(0);" class="btn btn-outline-light w-100 border">View All <i
                           class="ti ti-arrow-right ms-2"></i></a>
                     </div>
                   </div>
@@ -623,93 +656,93 @@
                     <div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/profiles/avatar-11.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Anthony Lewis</a>
+                              <a href="javascript:void(0);">Anthony Lewis</a>
                               <i class="ti ti-circle-check-filled text-success ms-1"></i>
                             </h6>
                             <span class="fs-12 d-block">United States</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-12.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Harvey Smith</a>
+                              <a href="javascript:void(0);">Harvey Smith</a>
                             </h6>
                             <span class="fs-12 d-block">Ukrain</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-13.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Stephan Peralt</a>
+                              <a href="javascript:void(0);">Stephan Peralt</a>
                             </h6>
                             <span class="fs-12 d-block">Isreal</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-14.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Doglas Martini</a>
+                              <a href="javascript:void(0);">Doglas Martini</a>
                             </h6>
                             <span class="fs-12 d-block">Belgium</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-15.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Brian Villalobos</a>
+                              <a href="javascript:void(0);">Brian Villalobos</a>
                               <i class="ti ti-circle-check-filled text-success ms-1"></i>
                             </h6>
                             <span class="fs-12 d-block">United Kingdom</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
-                          <a href="#" class="avatar avatar-rounded flex-shrink-0 me-2">
+                          <a href="javascript:void(0);" class="avatar avatar-rounded flex-shrink-0 me-2">
                             <img src="@/assets/img/users/user-16.jpg" alt="Img" />
                           </a>
                           <div>
                             <h6 class="d-inline-flex align-items-center fw-medium mb-1">
-                              <a href="#">Linda Ray</a>
+                              <a href="javascript:void(0);">Linda Ray</a>
                             </h6>
                             <span class="fs-12 d-block">Argentina</span>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-user-x"></i></a>
                       </div>
                     </div>
                     <div>
-                      <a href="#" class="btn btn-outline-light w-100 border">View All <i
+                      <a href="javascript:void(0);" class="btn btn-outline-light w-100 border">View All <i
                           class="ti ti-arrow-right ms-2"></i></a>
                     </div>
                   </div>
@@ -721,54 +754,54 @@
                 <h5 class="mb-3">Saved Feeds</h5>
                 <div class="bg-light-500 rounded p-2 mb-2">
                   <div class="d-flex align-items-center justify-content-between mb-1">
-                    <a href="#" class="d-flex align-items-center">
+                    <a href="javascript:void(0);" class="d-flex align-items-center">
                       <span><img src="@/assets/img/icons/feeds-01.svg" class="me-2" alt="Img" /></span>
                       <p class="fs-12 fw-medium">World Health</p>
                     </a>
-                    <a href="#"><i class="ti ti-bookmark-filled text-warning"></i></a>
+                    <a href="javascript:void(0);"><i class="ti ti-bookmark-filled text-warning"></i></a>
                   </div>
                   <p class="text-dark fw-medium">
-                    <a href="#">Retail investor party continues even as</a>
+                    <a href="javascript:void(0);">Retail investor party continues even as</a>
                   </p>
                 </div>
                 <div class="bg-light-500 rounded p-2 mb-2">
                   <div class="d-flex align-items-center justify-content-between mb-1">
-                    <a href="#" class="d-flex align-items-center">
+                    <a href="javascript:void(0);" class="d-flex align-items-center">
                       <span><img src="@/assets/img/icons/feeds-02.svg" class="me-2" alt="Img" /></span>
                       <p class="fs-12 fw-medium">T3 Tech</p>
                     </a>
-                    <a href="#"><i class="ti ti-bookmark-filled text-warning"></i></a>
+                    <a href="javascript:void(0);"><i class="ti ti-bookmark-filled text-warning"></i></a>
                   </div>
                   <p class="text-dark fw-medium">
-                    <a href="#">Ipad Air (2020) vs Samsung Galaxy Tab</a>
+                    <a href="javascript:void(0);">Ipad Air (2020) vs Samsung Galaxy Tab</a>
                   </p>
                 </div>
                 <div class="bg-light-500 rounded p-2 mb-2">
                   <div class="d-flex align-items-center justify-content-between mb-1">
-                    <a href="#" class="d-flex align-items-center">
+                    <a href="javascript:void(0);" class="d-flex align-items-center">
                       <span><img src="@/assets/img/icons/feeds-03.svg" class="me-2" alt="Img" /></span>
                       <p class="fs-12 fw-medium">Fstoppers</p>
                     </a>
-                    <a href="#"><i class="ti ti-bookmark-filled text-warning"></i></a>
+                    <a href="javascript:void(0);"><i class="ti ti-bookmark-filled text-warning"></i></a>
                   </div>
                   <p class="text-dark fw-medium">
-                    <a href="#">Beyond capital gains tax! Top 50 stock</a>
+                    <a href="javascript:void(0);">Beyond capital gains tax! Top 50 stock</a>
                   </p>
                 </div>
                 <div class="bg-light-500 rounded p-2">
                   <div class="d-flex align-items-center justify-content-between mb-1">
-                    <a href="#" class="d-flex align-items-center">
+                    <a href="javascript:void(0);" class="d-flex align-items-center">
                       <span><img src="@/assets/img/icons/feeds-04.svg" class="me-2" alt="Img" /></span>
                       <p class="fs-12 fw-medium">Evernote</p>
                     </a>
-                    <a href="#"><i class="ti ti-bookmark-filled text-warning"></i></a>
+                    <a href="javascript:void(0);"><i class="ti ti-bookmark-filled text-warning"></i></a>
                   </div>
                   <p class="text-dark fw-medium">
-                    <a href="#">Sony Just Destroyed the Competition</a>
+                    <a href="javascript:void(0);">Sony Just Destroyed the Competition</a>
                   </p>
                 </div>
                 <div class="mt-3">
-                  <a href="#" class="btn btn-outline-light w-100 border">View All <i
+                  <a href="javascript:void(0);" class="btn btn-outline-light w-100 border">View All <i
                       class="ti ti-arrow-right ms-2"></i></a>
                 </div>
               </div>
@@ -777,10 +810,10 @@
               <div class="card-body">
                 <h5 class="mb-3">Trending Hastags</h5>
                 <div class="d-flex align-items-center flex-wrap gap-1">
-                  <a href="#" class="text-info d-inline-flex link-hover">#HealthTips</a>
-                  <a href="#" class="text-info d-inline-flex link-hover">#Wellness</a>
-                  <a href="#" class="text-info d-inline-flex link-hover">#Motivation</a>
-                  <a href="#" class="text-info d-inline-flex link-hover">#Inspiration
+                  <a href="javascript:void(0);" class="text-info d-inline-flex link-hover">#HealthTips</a>
+                  <a href="javascript:void(0);" class="text-info d-inline-flex link-hover">#Wellness</a>
+                  <a href="javascript:void(0);" class="text-info d-inline-flex link-hover">#Motivation</a>
+                  <a href="javascript:void(0);" class="text-info d-inline-flex link-hover">#Inspiration
                   </a>
                 </div>
               </div>
@@ -788,23 +821,23 @@
             <div class="card">
               <div class="card-body">
                 <div class="card-img card-img-hover mb-3">
-                  <a href="#" class="rounded"><img src="@/assets/img/social/social-feed-04.jpg" class="rounded"
-                      alt="Img" /></a>
+                  <a href="javascript:void(0);" class="rounded"><img src="@/assets/img/social/social-feed-04.jpg"
+                      class="rounded" alt="Img" /></a>
                 </div>
                 <h6 class="text-center">
-                  <a href="#">Enjoy Unlimited Access on a small price monthly.</a>
+                  <a href="javascript:void(0);">Enjoy Unlimited Access on a small price monthly.</a>
                 </h6>
                 <div class="mt-3">
-                  <a href="#" class="btn btn-outline-light w-100 border">Upgrade Now <i
+                  <a href="javascript:void(0);" class="btn btn-outline-light w-100 border">Upgrade Now <i
                       class="ti ti-arrow-right ms-2"></i></a>
                 </div>
               </div>
             </div>
             <div class="d-flex align-items-center flex-wrap justify-content-center template-more-links mb-4">
-              <a href="#" class="d-inline-flex">About</a>
-              <a href="#" class="d-inline-flex">Privacy</a>
-              <a href="#" class="d-inline-flex">Terms</a>
-              <a href="#" class="d-inline-flex">Help</a>
+              <a href="javascript:void(0);" class="d-inline-flex">About</a>
+              <a href="javascript:void(0);" class="d-inline-flex">Privacy</a>
+              <a href="javascript:void(0);" class="d-inline-flex">Terms</a>
+              <a href="javascript:void(0);" class="d-inline-flex">Help</a>
             </div>
           </div>
         </div>
@@ -814,7 +847,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

@@ -22,65 +22,65 @@
             <div class="tab-pane fade" id="openings">
               <div class="d-flex align-items-center justify-content-between mb-4">
                 <div class="d-flex align-items-center">
-                  <a href="#" class="avatar overflow-hidden flex-shrink-0 bg-gray-100">
+                  <a href="javascript:void(0);" class="avatar overflow-hidden flex-shrink-0 bg-gray-100">
                     <img src="@/assets/img/icons/apple.svg" class="img-fluid rounded-circle w-auto h-auto" alt="img" />
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="#">{{ $t('seniorIOSDeveloper') }}</a>
+                      <a href="javascript:void(0);">{{ $t('seniorIOSDeveloper') }}</a>
                     </p>
                     <span class="fs-12">{{ $t('noOfOpenings') }} : 25 </span>
                   </div>
                 </div>
-                <a href="#"
+                <a href="javascript:void(0);"
                   class="btn btn-light btn-sm p-0 btn-icon d-flex align-items-center justify-content-center"><i
                     class="ti ti-edit"></i></a>
               </div>
               <div class="d-flex align-items-center justify-content-between mb-4">
                 <div class="d-flex align-items-center">
-                  <a href="#" class="avatar overflow-hidden flex-shrink-0 bg-gray-100">
+                  <a href="javascript:void(0);" class="avatar overflow-hidden flex-shrink-0 bg-gray-100">
                     <img src="@/assets/img/icons/php.svg" class="img-fluid w-auto h-auto" alt="img" />
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="#">{{ $t('juniorPHPDeveloper') }}</a>
+                      <a href="javascript:void(0);">{{ $t('juniorPHPDeveloper') }}</a>
                     </p>
                     <span class="fs-12">{{ $t('noOfOpenings') }} : 20 </span>
                   </div>
                 </div>
-                <a href="#"
+                <a href="javascript:void(0);"
                   class="btn btn-light btn-sm p-0 btn-icon d-flex align-items-center justify-content-center"><i
                     class="ti ti-edit"></i></a>
               </div>
               <div class="d-flex align-items-center justify-content-between mb-4">
                 <div class="d-flex align-items-center">
-                  <a href="#" class="avatar overflow-hidden flex-shrink-0 bg-gray-100">
+                  <a href="javascript:void(0);" class="avatar overflow-hidden flex-shrink-0 bg-gray-100">
                     <img src="@/assets/img/icons/react.svg" class="img-fluid w-auto h-auto" alt="img" />
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="#">{{ $t('juniorReactDeveloper') }} </a>
+                      <a href="javascript:void(0);">{{ $t('juniorReactDeveloper') }} </a>
                     </p>
                     <span class="fs-12">{{ $t('noOfOpenings') }} : 30 </span>
                   </div>
                 </div>
-                <a href="#"
+                <a href="javascript:void(0);"
                   class="btn btn-light btn-sm p-0 btn-icon d-flex align-items-center justify-content-center"><i
                     class="ti ti-edit"></i></a>
               </div>
               <div class="d-flex align-items-center justify-content-between mb-0">
                 <div class="d-flex align-items-center">
-                  <a href="#" class="avatar overflow-hidden flex-shrink-0 bg-gray-100">
+                  <a href="javascript:void(0);" class="avatar overflow-hidden flex-shrink-0 bg-gray-100">
                     <img src="@/assets/img/icons/laravel-icon.svg" class="img-fluid w-auto h-auto" alt="img" />
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="#">{{ $t('seniorLaravelDeveloper') }}</a>
+                      <a href="javascript:void(0);">{{ $t('seniorLaravelDeveloper') }}</a>
                     </p>
                     <span class="fs-12">{{ $t('noOfOpenings') }} : 40 </span>
                   </div>
                 </div>
-                <a href="#"
+                <a href="javascript:void(0);"
                   class="btn btn-light btn-sm p-0 btn-icon d-flex align-items-center justify-content-center"><i
                     class="ti ti-edit"></i></a>
               </div>
@@ -88,12 +88,12 @@
             <div class="tab-pane fade show active" id="applicants">
               <div class="d-flex align-items-center justify-content-between mb-4">
                 <div class="d-flex align-items-center">
-                  <a href="#" class="avatar overflow-hidden flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar overflow-hidden flex-shrink-0">
                     <img src="@/assets/img/users/user-09.jpg" class="img-fluid rounded-circle" alt="img" />
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="#">Brian Villalobos</a>
+                      <a href="javascript:void(0);">Brian Villalobos</a>
                     </p>
                     <span class="fs-13 d-inline-flex align-items-center">Exp : 5+ {{ $t('years') }}<i
                         class="ti ti-circle-filled fs-4 mx-2 text-primary"></i>USA</span>
@@ -103,12 +103,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-4">
                 <div class="d-flex align-items-center">
-                  <a href="#" class="avatar overflow-hidden flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar overflow-hidden flex-shrink-0">
                     <img src="@/assets/img/users/user-32.jpg" class="img-fluid rounded-circle" alt="img" />
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="#">Anthony Lewis</a>
+                      <a href="javascript:void(0);">Anthony Lewis</a>
                     </p>
                     <span class="fs-13 d-inline-flex align-items-center">Exp : 4+ {{ $t('years') }}<i
                         class="ti ti-circle-filled fs-4 mx-2 text-primary"></i>USA</span>
@@ -118,12 +118,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-4">
                 <div class="d-flex align-items-center">
-                  <a href="#" class="avatar overflow-hidden flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar overflow-hidden flex-shrink-0">
                     <img src="@/assets/img/users/user-32.jpg" class="img-fluid rounded-circle" alt="img" />
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="#">Stephan Peralt</a>
+                      <a href="javascript:void(0);">Stephan Peralt</a>
                     </p>
                     <span class="fs-13 d-inline-flex align-items-center">Exp : 6+ {{ $t('years') }}<i
                         class="ti ti-circle-filled fs-4 mx-2 text-primary"></i>USA</span>
@@ -133,12 +133,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-0">
                 <div class="d-flex align-items-center">
-                  <a href="#" class="avatar overflow-hidden flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar overflow-hidden flex-shrink-0">
                     <img src="@/assets/img/users/user-34.jpg" class="img-fluid rounded-circle" alt="img" />
                   </a>
                   <div class="ms-2 overflow-hidden">
                     <p class="text-dark fw-medium text-truncate mb-0">
-                      <a href="#">Doglas Martini</a>
+                      <a href="javascript:void(0);">Doglas Martini</a>
                     </p>
                     <span class="fs-13 d-inline-flex align-items-center">Exp : 2+ {{ $t('years') }}<i
                         class="ti ti-circle-filled fs-4 mx-2 text-primary"></i>USA</span>
@@ -173,12 +173,12 @@
                 <tr>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar">
+                      <a href="javascript:void(0);" class="avatar">
                         <img src="@/assets/img/users/user-32.jpg" class="img-fluid rounded-circle" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-medium">
-                          <a href="#">Anthony Lewis</a>
+                          <a href="javascript:void(0);">Anthony Lewis</a>
                         </h6>
                         <span class="fs-12">{{ $t('finance') }}</span>
                       </div>
@@ -193,12 +193,12 @@
                 <tr>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar">
+                      <a href="javascript:void(0);" class="avatar">
                         <img src="@/assets/img/users/user-09.jpg" class="img-fluid rounded-circle" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-medium">
-                          <a href="#">Brian Villalobos</a>
+                          <a href="javascript:void(0);">Brian Villalobos</a>
                         </h6>
                         <span class="fs-12">{{ $t('PHPDeveloper') }}</span>
                       </div>
@@ -211,12 +211,12 @@
                 <tr>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar">
+                      <a href="javascript:void(0);" class="avatar">
                         <img src="@/assets/img/users/user-01.jpg" class="img-fluid rounded-circle" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-medium">
-                          <a href="#">Stephan Peralt</a>
+                          <a href="javascript:void(0);">Stephan Peralt</a>
                         </h6>
                         <span class="fs-12">{{ $t('executive') }}</span>
                       </div>
@@ -229,12 +229,12 @@
                 <tr>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar">
+                      <a href="javascript:void(0);" class="avatar">
                         <img src="@/assets/img/users/user-34.jpg" class="img-fluid rounded-circle" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-medium">
-                          <a href="#">Doglas Martini</a>
+                          <a href="javascript:void(0);">Doglas Martini</a>
                         </h6>
                         <span class="fs-12">{{ $t('projectManager') }}</span>
                       </div>
@@ -247,12 +247,12 @@
                 <tr>
                   <td class="border-0">
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar">
+                      <a href="javascript:void(0);" class="avatar">
                         <img src="@/assets/img/users/user-37.jpg" class="img-fluid rounded-circle" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-medium">
-                          <a href="#">Anthony Lewis</a>
+                          <a href="javascript:void(0);">Anthony Lewis</a>
                         </h6>
                         <span class="fs-12">{{ $t('UI/UXDesigner') }}</span>
                       </div>
@@ -277,23 +277,23 @@
           <h5 class="mb-2">{{ $t('todo') }}</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2 me-2">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>{{ $t('today') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('today') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('today') }}</a>
                 </li>
               </ul>
             </div>
-            <a href="#"
+            <a href="javascript:void(0);"
               class="btn btn-primary btn-icon btn-xs rounded-circle d-flex align-items-center justify-content-center p-0 mb-2"
               data-bs-toggle="modal" data-bs-target="#add_todo"><i class="ti ti-plus fs-16"></i></a>
           </div>

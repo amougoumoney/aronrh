@@ -18,28 +18,30 @@
           </div>
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#add_ticket"
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_ticket"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Ticket</a>
           </div>
           <div class="head-icons ms-2">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -181,62 +183,65 @@
             <h5>Ticket List</h5>
             <div class="d-flex align-items-center flex-wrap row-gap-3">
               <div class="dropdown me-2">
-                <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);"
+                  class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Priority
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Priority</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Priority</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">High</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">High</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Low</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Low</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Medium</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Medium</a>
                   </li>
                 </ul>
               </div>
               <div class="dropdown me-2">
-                <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);"
+                  class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Select Status
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Open</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Open</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">On Hold</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">On Hold</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Reopened</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Reopened</a>
                   </li>
                 </ul>
               </div>
               <div class="dropdown">
-                <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);"
+                  class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Sort By : Last 7 Days
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Recently Added</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Ascending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Desending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last Month</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                   </li>
                 </ul>
               </div>
@@ -395,7 +400,7 @@
             </div>
           </div>
           <div class="text-center mb-4">
-            <a href="#" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
+            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
           </div>
         </div>
         <div class="col-xl-3 col-md-4">
@@ -406,31 +411,31 @@
             <div class="card-body p-0">
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-                  <a href="#">Internet Issue</a>
+                  <a href="javascript:void(0);">Internet Issue</a>
                   <div class="d-flex align-items-center">
                     <span class="badge badge-xs bg-dark rounded-circle">0</span>
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-                  <a href="#">Computer</a>
+                  <a href="javascript:void(0);">Computer</a>
                   <div class="d-flex align-items-center">
                     <span class="badge badge-xs bg-dark rounded-circle">1</span>
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-                  <a href="#">Redistribute</a>
+                  <a href="javascript:void(0);">Redistribute</a>
                   <div class="d-flex align-items-center">
                     <span class="badge badge-xs bg-dark rounded-circle">0</span>
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-                  <a href="#">Payment</a>
+                  <a href="javascript:void(0);">Payment</a>
                   <div class="d-flex align-items-center">
                     <span class="badge badge-xs bg-dark rounded-circle">2</span>
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between p-3">
-                  <a href="#">Complaint</a>
+                  <a href="javascript:void(0);">Complaint</a>
                   <div class="d-flex align-items-center">
                     <span class="badge badge-xs bg-dark rounded-circle">1</span>
                   </div>
@@ -490,7 +495,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

@@ -4,8 +4,8 @@
       <p class="text-dark fw-medium">
         "Believe in yourself and all that you are. Know that there is something inside you
         that is greater than any obstacle.
-        <a href="#" class="text-info link-hover">#MotivationMonday</a>
-        <a href="#" class="text-info link-hover">#Inspiration</a>
+        <a href="javascript:void(0);" class="text-info link-hover">#MotivationMonday</a>
+        <a href="javascript:void(0);" class="text-info link-hover">#Inspiration</a>
         🌟"
       </p>
     </div>
@@ -22,7 +22,7 @@
     <!-- Image Thumbnails for Gallery -->
     <div class="d-flex flex-wrap gap-3 mb-3">
       <div v-for="(image, index) in galleryImages" :key="index">
-        <a href="#" class="gallery-item" @click="openLightbox(index)">
+        <a href="javascript:void(0);" class="gallery-item" @click="openLightbox(index)">
           <img :src="require(`@/assets/img/social/${image.thumb}`)" class="rounded" :alt="`gallery-item-${index}`"
             style="width: 120px; height: 120px; object-fit: cover" />
         </a>
@@ -32,27 +32,27 @@
     <!-- Like, Comment, Share Section -->
     <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3">
       <div class="d-flex align-items-center flex-wrap row-gap-3">
-        <a href="#" class="d-inline-flex align-items-center me-3">
+        <a href="javascript:void(0);" class="d-inline-flex align-items-center me-3">
           <i class="ti ti-heart me-2"></i>340K Likes
         </a>
-        <a href="#" class="d-inline-flex align-items-center me-3">
+        <a href="javascript:void(0);" class="d-inline-flex align-items-center me-3">
           <i class="ti ti-message-dots me-2"></i>45 Comments
         </a>
-        <a href="#" class="d-inline-flex align-items-center">
+        <a href="javascript:void(0);" class="d-inline-flex align-items-center">
           <i class="ti ti-share-3 me-2"></i>28 Share
         </a>
       </div>
       <div class="d-flex align-items-center">
-        <a href="#" class="btn btn-icon btn-sm rounded-circle">
+        <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle">
           <i class="ti ti-heart-filled text-danger"></i>
         </a>
-        <a href="#" class="btn btn-icon btn-sm rounded-circle">
+        <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle">
           <i class="ti ti-share"></i>
         </a>
-        <a href="#" class="btn btn-icon btn-sm rounded-circle">
+        <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle">
           <i class="ti ti-message-star"></i>
         </a>
-        <a href="#" class="btn btn-icon btn-sm rounded-circle">
+        <a href="javascript:void(0);" class="btn btn-icon btn-sm rounded-circle">
           <i class="ti ti-bookmark-filled text-warning"></i>
         </a>
       </div>
@@ -60,7 +60,7 @@
 
     <!-- Comment Section -->
     <div class="d-flex align-items-start">
-      <a href="#" class="avatar avatar-rounded me-2 flex-shrink-0">
+      <a href="javascript:void(0);" class="avatar avatar-rounded me-2 flex-shrink-0">
         <img src="@/assets/img/users/user-11.jpg" alt="Img" />
       </a>
       <input type="text" class="form-control" placeholder="Enter Comments" />

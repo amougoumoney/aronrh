@@ -78,7 +78,7 @@ export default {
                               Upload
                               <input type="file" class="form-control image-sign" multiple="" />
                             </div>
-                            <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                            <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                           </div>
                         </div>
                       </div>

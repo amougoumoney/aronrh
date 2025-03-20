@@ -125,18 +125,19 @@ export default {
                     <div class="mt-2">
                       <div class="d-flex align-items-center justify-content-center flex-wrap">
                         <div class="text-center me-2 flex-fill">
-                          <a href="#" class="br-10 p-2 btn btn-info d-flex align-items-center justify-content-center">
+                          <a href="javascript:void(0);"
+                            class="br-10 p-2 btn btn-info d-flex align-items-center justify-content-center">
                             <img class="img-fluid m-1" src="@/assets/img/icons/facebook-logo.svg" alt="Facebook" />
                           </a>
                         </div>
                         <div class="text-center me-2 flex-fill">
-                          <a href="#"
+                          <a href="javascript:void(0);"
                             class="br-10 p-2 btn btn-outline-light border d-flex align-items-center justify-content-center">
                             <img class="img-fluid m-1" src="@/assets/img/icons/google-logo.svg" alt="Facebook" />
                           </a>
                         </div>
                         <div class="text-center flex-fill">
-                          <a href="#"
+                          <a href="javascript:void(0);"
                             class="bg-dark br-10 p-2 btn btn-dark d-flex align-items-center justify-content-center">
                             <img class="img-fluid m-1" src="@/assets/img/icons/apple-logo.svg" alt="Apple" />
                           </a>

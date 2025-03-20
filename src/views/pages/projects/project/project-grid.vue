@@ -18,28 +18,30 @@
           </div>
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#add_project"
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_project"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Project</a>
           </div>
           <div class="ms-2 head-icons">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -53,42 +55,44 @@
             <h5>Projects Grid</h5>
             <div class="d-flex align-items-center flex-wrap row-gap-3">
               <div class="dropdown me-2">
-                <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);"
+                  class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Select Status
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Select Status</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Select Status</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Active</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Active</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Inactive</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Inactive</a>
                   </li>
                 </ul>
               </div>
               <div class="dropdown">
-                <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);"
+                  class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Sort By : Last 7 Days
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Recently Added</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Ascending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Desending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last Month</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                   </li>
                 </ul>
               </div>
@@ -107,16 +111,17 @@
                   <router-link to="/projects/projects-details">Office Management</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -131,12 +136,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-39.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Anthony Lewis</a>
+                      <a href="javascript:void(0);">Anthony Lewis</a>
                     </h6>
                     <span class="fs-12 fw-normal">Project Leader</span>
                   </div>
@@ -168,7 +173,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-05.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +1
                   </a>
                 </div>
@@ -185,16 +191,17 @@
                   </router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -208,12 +215,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-40.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Sophie Headrick </a>
+                      <a href="javascript:void(0);">Sophie Headrick </a>
                     </h6>
                     <span class="fs-12 fw-normal">Project Leader</span>
                   </div>
@@ -245,7 +252,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-08.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +2
                   </a>
                 </div>
@@ -261,16 +269,17 @@
                   <router-link to="/projects/projects-details">Educational Platform</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -285,12 +294,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-41.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Cameron Drake</a>
+                      <a href="javascript:void(0);">Cameron Drake</a>
                     </h6>
                     <span class="fs-12 fw-normal">Project Leader</span>
                   </div>
@@ -322,7 +331,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-11.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +2
                   </a>
                 </div>
@@ -339,16 +349,17 @@
                     Chat & Call Mobile App</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -362,12 +373,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-42.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Doris Crowley</a>
+                      <a href="javascript:void(0);">Doris Crowley</a>
                     </h6>
                     <span class="fs-12 fw-normal">Project Leader</span>
                   </div>
@@ -399,7 +410,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-14.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +2
                   </a>
                 </div>
@@ -415,16 +427,17 @@
                   <router-link to="/projects/projects-details">Travel Planning Website</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -438,12 +451,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-43.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Thomas Bordelon</a>
+                      <a href="javascript:void(0);">Thomas Bordelon</a>
                     </h6>
                     <span class="fs-12 fw-normal">Manager</span>
                   </div>
@@ -475,7 +488,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-17.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +2
                   </a>
                 </div>
@@ -491,16 +505,17 @@
                   <router-link to="/projects/projects-details">Service Booking Software</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -514,12 +529,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-45.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Kathleen Gutierrez</a>
+                      <a href="javascript:void(0);">Kathleen Gutierrez</a>
                     </h6>
                     <span class="fs-12 fw-normal">Project Leader</span>
                   </div>
@@ -551,7 +566,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-20.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +2
                   </a>
                 </div>
@@ -567,16 +583,17 @@
                   <router-link to="/projects/projects-details">Hotel Booking App</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -590,12 +607,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-46.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Bruce Wright</a>
+                      <a href="javascript:void(0);">Bruce Wright</a>
                     </h6>
                     <span class="fs-12 fw-normal">Project Leader</span>
                   </div>
@@ -627,7 +644,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-22.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +1
                   </a>
                 </div>
@@ -643,16 +661,17 @@
                   <router-link to="/projects/projects-details">Car & Bike Rental Software</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -666,12 +685,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-47.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Rebecca Smtih</a>
+                      <a href="javascript:void(0);">Rebecca Smtih</a>
                     </h6>
                     <span class="fs-12 fw-normal">Project Leader</span>
                   </div>
@@ -703,7 +722,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-14.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +2
                   </a>
                 </div>
@@ -719,16 +739,17 @@
                   <router-link to="/projects/projects-details">Navigation and Safety App</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -745,12 +766,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-28.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Connie Waters</a>
+                      <a href="javascript:void(0);">Connie Waters</a>
                     </h6>
                     <span class="fs-12 fw-normal">Project Leader</span>
                   </div>
@@ -782,7 +803,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-05.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +1
                   </a>
                 </div>
@@ -798,16 +820,17 @@
                   <router-link to="/projects/projects-details">Food Order App</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -821,12 +844,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-42.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Lori Broaddus</a>
+                      <a href="javascript:void(0);">Lori Broaddus</a>
                     </h6>
                     <span class="fs-12 fw-normal">Project Leader</span>
                   </div>
@@ -858,7 +881,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-08.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +2
                   </a>
                 </div>
@@ -874,16 +898,17 @@
                   <router-link to="/projects/projects-details">POS Admin Software</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -897,12 +922,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-48.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Stephen Dias</a>
+                      <a href="javascript:void(0);">Stephen Dias</a>
                     </h6>
                     <span class="fs-12 fw-normal">CEO</span>
                   </div>
@@ -934,7 +959,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-28.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +2
                   </a>
                 </div>
@@ -950,16 +976,17 @@
                   <router-link to="/projects/projects-details">Invoicing & Billing Software</router-link>
                 </h6>
                 <div class="dropdown">
-                  <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <i class="ti ti-dots-vertical"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#edit_project"><i class="ti ti-edit me-2"></i>Edit</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                      <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -974,12 +1001,12 @@
               </div>
               <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center file-name-icon">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0">
                     <img src="@/assets/img/users/user-50.jpg" class="img-fluid" alt="img" />
                   </a>
                   <div class="ms-2">
                     <h6 class="fw-normal fs-12">
-                      <a href="#">Angela Thomas</a>
+                      <a href="javascript:void(0);">Angela Thomas</a>
                     </h6>
                     <span class="fs-12 fw-normal">Project Leader</span>
                   </div>
@@ -1011,7 +1038,8 @@
                   <span class="avatar avatar-rounded">
                     <img class="border border-white" src="@/assets/img/profiles/avatar-03.jpg" alt="img" />
                   </span>
-                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+                  <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium"
+                    href="javascript:void(0);">
                     +2
                   </a>
                 </div>
@@ -1021,7 +1049,7 @@
         </div>
         <div class="col-md-12">
           <div class="text-center mb-4">
-            <a href="#" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
+            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
           </div>
         </div>
       </div>
@@ -1031,7 +1059,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

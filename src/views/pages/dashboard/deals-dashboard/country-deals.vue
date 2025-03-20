@@ -159,19 +159,20 @@
           <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Won Deals Stage</h5>
             <div class="dropdown">
-              <a href="#" class="btn btn-white border-0 dropdown-toggle btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);"
+                class="btn btn-white border-0 dropdown-toggle btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 Sales Pipeline
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Month</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Week</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Last Week</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
                 </li>
               </ul>
             </div>
@@ -219,89 +220,93 @@
           <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Recent Follow Up</h5>
             <div>
-              <a href="#" class="btn btn-light btn-sm px-3">View All</a>
+              <a href="javascript:void(0);" class="btn btn-light btn-sm px-3">View All</a>
             </div>
           </div>
         </div>
         <div class="card-body">
           <div class="d-flex align-items-center justify-content-between mb-4">
             <div class="d-flex align-items-center">
-              <a href="#" class="avatar flex-shrink-0">
+              <a href="javascript:void(0);" class="avatar flex-shrink-0">
                 <img src="@/assets/img/users/user-27.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
-                  <a href="#">Alexander Jermai</a>
+                  <a href="javascript:void(0);">Alexander Jermai</a>
                 </h6>
                 <p class="fs-13">UI/UX Designer</p>
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="#" class="btn btn-light btn-icon btn-sm"><i class="ti ti-mail-bolt fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i
+                  class="ti ti-mail-bolt fs-16"></i></a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between mb-4">
             <div class="d-flex align-items-center">
-              <a href="#" class="avatar flex-shrink-0">
+              <a href="javascript:void(0);" class="avatar flex-shrink-0">
                 <img src="@/assets/img/users/user-42.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
-                  <a href="#">Doglas Martini</a>
+                  <a href="javascript:void(0);">Doglas Martini</a>
                 </h6>
                 <p class="fs-13">Product Designer</p>
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="#" class="btn btn-light btn-icon btn-sm"><i class="ti ti-phone fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i class="ti ti-phone fs-16"></i></a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between mb-4">
             <div class="d-flex align-items-center">
-              <a href="#" class="avatar flex-shrink-0">
+              <a href="javascript:void(0);" class="avatar flex-shrink-0">
                 <img src="@/assets/img/users/user-43.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
-                  <a href="#">Daniel Esbella</a>
+                  <a href="javascript:void(0);">Daniel Esbella</a>
                 </h6>
                 <p class="fs-13">Project Manager</p>
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="#" class="btn btn-light btn-icon btn-sm"><i class="ti ti-mail-bolt fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i
+                  class="ti ti-mail-bolt fs-16"></i></a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between mb-4">
             <div class="d-flex align-items-center">
-              <a href="#" class="avatar flex-shrink-0">
+              <a href="javascript:void(0);" class="avatar flex-shrink-0">
                 <img src="@/assets/img/users/user-11.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
-                  <a href="#">Daniel Esbella</a>
+                  <a href="javascript:void(0);">Daniel Esbella</a>
                 </h6>
                 <p class="fs-13">Team Lead</p>
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="#" class="btn btn-light btn-icon btn-sm"><i class="ti ti-brand-hipchat fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i
+                  class="ti ti-brand-hipchat fs-16"></i></a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
-              <a href="#" class="avatar flex-shrink-0">
+              <a href="javascript:void(0);" class="avatar flex-shrink-0">
                 <img src="@/assets/img/users/user-44.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
-                  <a href="#">Stephan Peralt</a>
+                  <a href="javascript:void(0);">Stephan Peralt</a>
                 </h6>
                 <p class="fs-13">Team Lead</p>
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="#" class="btn btn-light btn-icon btn-sm"><i class="ti ti-brand-hipchat fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i
+                  class="ti ti-brand-hipchat fs-16"></i></a>
             </div>
           </div>
         </div>

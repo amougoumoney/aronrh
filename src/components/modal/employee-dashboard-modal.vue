@@ -186,14 +186,14 @@
                       <h6 class="fs-12 fw-medium me-1">Logo.zip</h6>
                       <span class="badge badge-soft-info">21MB </span>
                     </div>
-                    <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
                   </div>
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
                       <h6 class="fs-12 fw-medium me-1">Files.zip</h6>
                       <span class="badge badge-soft-info">25MB </span>
                     </div>
-                    <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
                   </div>
                 </div>
               </div>
@@ -224,7 +224,7 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/dashboard/employee-dashboard" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>

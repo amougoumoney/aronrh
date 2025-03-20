@@ -25,16 +25,16 @@
               <nav aria-label="Page navigation">
                 <ul class="pagination mb-0">
                   <li class="page-item disabled">
-                    <a class="page-link" href="#">Previous</a>
+                    <a class="page-link" href="javascript:void(0);">Previous</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link" href="javascript:void(0);">Next</a>
                   </li>
                 </ul>
               </nav>
@@ -53,16 +53,17 @@
               <nav aria-label="Page navigation">
                 <ul class="pagination mb-0">
                   <li class="page-item disabled">
-                    <a class="page-link" href="#"><i class="fas fa-arrow-left-long me-2"></i>Previous</a>
+                    <a class="page-link" href="javascript:void(0);"><i
+                        class="fas fa-arrow-left-long me-2"></i>Previous</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">Next<i class="fas fa-arrow-right-long ms-2"></i></a>
+                    <a class="page-link" href="javascript:void(0);">Next<i class="fas fa-arrow-right-long ms-2"></i></a>
                   </li>
                 </ul>
               </nav>
@@ -81,21 +82,21 @@
               <nav aria-label="Page navigation">
                 <ul class="pagination mb-0">
                   <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
+                    <a class="page-link" href="javascript:void(0);" aria-label="Previous">
                       <span aria-hidden="true"><i class="fas fa-angle-left"></i></span>
                     </a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">3</a>
+                    <a class="page-link" href="javascript:void(0);">3</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
+                    <a class="page-link" href="javascript:void(0);" aria-label="Next">
                       <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
                     </a>
                   </li>
@@ -119,10 +120,10 @@
                     <span class="page-link">1</span>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">3</a>
+                    <a class="page-link" href="javascript:void(0);">3</a>
                   </li>
                 </ul>
               </nav>
@@ -132,10 +133,10 @@
                     <span class="page-link">1</span>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">3</a>
+                    <a class="page-link" href="javascript:void(0);">3</a>
                   </li>
                 </ul>
               </nav>
@@ -145,10 +146,10 @@
                     <span class="page-link">1</span>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">3</a>
+                    <a class="page-link" href="javascript:void(0);">3</a>
                   </li>
                 </ul>
               </nav>
@@ -170,16 +171,16 @@
                     <a class="page-link">Previous</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">3</a>
+                    <a class="page-link" href="javascript:void(0);">3</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link" href="javascript:void(0);">Next</a>
                   </li>
                 </ul>
               </nav>
@@ -189,16 +190,16 @@
                     <a class="page-link">Previous</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">3</a>
+                    <a class="page-link" href="javascript:void(0);">3</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link" href="javascript:void(0);">Next</a>
                   </li>
                 </ul>
               </nav>
@@ -220,13 +221,13 @@
                     <a class="page-link">Previous</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link" href="javascript:void(0);">Next</a>
                   </li>
                 </ul>
               </nav>
@@ -236,13 +237,13 @@
                     <span class="page-link">Previous</span>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item active" aria-current="page">
                     <span class="page-link">2</span>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link" href="javascript:void(0);">Next</a>
                   </li>
                 </ul>
               </nav>
@@ -261,27 +262,27 @@
               <nav aria-label="Page navigation" class="pagination-style-1">
                 <ul class="pagination mb-0">
                   <li class="page-item disabled">
-                    <a class="page-link" href="#">
+                    <a class="page-link" href="javascript:void(0);">
                       <i class="fas fa-angle-left align-middle"></i>
                       <i class="ri-arrow-left-s-line align-middle"></i>
                     </a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item active">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">
+                    <a class="page-link" href="javascript:void(0);">
                       <i class="fas fa-ellipsis-h"></i>
                     </a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">21</a>
+                    <a class="page-link" href="javascript:void(0);">21</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">
+                    <a class="page-link" href="javascript:void(0);">
                       <i class="fas fa-angle-right align-middle"></i>
                       <i class="ri-arrow-right-s-line align-middle"></i>
                     </a>
@@ -303,24 +304,24 @@
               <nav aria-label="Page navigation" class="pagination-style-2">
                 <ul class="pagination mb-0 flex-wrap">
                   <li class="page-item disabled">
-                    <a class="page-link" href="#"> Prev </a>
+                    <a class="page-link" href="javascript:void(0);"> Prev </a>
                   </li>
                   <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">
+                    <a class="page-link" href="javascript:void(0);">
                       <i class="fas fa-ellipsis-h"></i>
                     </a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">17</a>
+                    <a class="page-link" href="javascript:void(0);">17</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link text-primary" href="#">
+                    <a class="page-link text-primary" href="javascript:void(0);">
                       Next
                     </a>
                   </li>
@@ -341,24 +342,24 @@
               <nav aria-label="Page navigation" class="pagination-style-3">
                 <ul class="pagination mb-0 flex-wrap">
                   <li class="page-item disabled">
-                    <a class="page-link" href="#"> Prev </a>
+                    <a class="page-link" href="javascript:void(0);"> Prev </a>
                   </li>
                   <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">
+                    <a class="page-link" href="javascript:void(0);">
                       <i class="fas fa-ellipsis-h"></i>
                     </a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">16</a>
+                    <a class="page-link" href="javascript:void(0);">16</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link text-primary" href="#">
+                    <a class="page-link text-primary" href="javascript:void(0);">
                       Next
                     </a>
                   </li>
@@ -379,27 +380,27 @@
               <nav aria-label="Page navigation" class="pagination-style-4">
                 <ul class="pagination mb-0 flex-wrap">
                   <li class="page-item disabled">
-                    <a class="page-link" href="#"> Prev </a>
+                    <a class="page-link" href="javascript:void(0);"> Prev </a>
                   </li>
                   <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="javascript:void(0);">1</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">
+                    <a class="page-link" href="javascript:void(0);">
                       <i class="fas fa-ellipsis-h"></i>
                     </a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">16</a>
+                    <a class="page-link" href="javascript:void(0);">16</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">17</a>
+                    <a class="page-link" href="javascript:void(0);">17</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link text-primary" href="#">
+                    <a class="page-link text-primary" href="javascript:void(0);">
                       Next
                     </a>
                   </li>

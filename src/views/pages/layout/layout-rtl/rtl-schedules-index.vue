@@ -36,11 +36,11 @@
                 <span class="avatar avatar-rounded">
                   <img class="border border-white" src="@/assets/img/users/user-58.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium" href="#">
+                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium" href="javascript:void(0);">
                   +3
                 </a>
               </div>
-              <a href="#" class="btn btn-primary btn-xs">Join Meeting</a>
+              <a href="javascript:void(0);" class="btn btn-primary btn-xs">Join Meeting</a>
             </div>
           </div>
           <div class="bg-transparent-secondary p-3 br-5 mb-0">
@@ -71,11 +71,11 @@
                 <span class="avatar avatar-rounded">
                   <img class="border border-white" src="@/assets/img/users/user-58.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium" href="#">
+                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium" href="javascript:void(0);">
                   +3
                 </a>
               </div>
-              <a href="#" class="btn btn-primary btn-xs">Join Meeting</a>
+              <a href="javascript:void(0);" class="btn btn-primary btn-xs">Join Meeting</a>
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@
       <div class="card flex-fill">
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
           <h5 class="mb-2">Birthdays</h5>
-          <a href="#" class="btn btn-light btn-md mb-2">View All</a>
+          <a href="javascript:void(0);" class="btn btn-light btn-md mb-2">View All</a>
         </div>
         <div class="card-body pb-1">
           <h6 class="mb-2">Today</h6>

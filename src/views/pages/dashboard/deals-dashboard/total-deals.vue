@@ -140,19 +140,19 @@
           <div class="d-flex align-items-center justify-content-between">
             <h5>Pipeline Stages</h5>
             <div class="dropdown">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>This Week
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Month</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Week</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Last Week</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
                 </li>
               </ul>
             </div>

@@ -548,8 +548,8 @@
                     Dropdown
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Dropdown link</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Dropdown link</a></li>
                   </ul>
                 </div>
               </div>
@@ -695,8 +695,8 @@
                         Dropdown
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Dropdown link</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Dropdown link</a></li>
                       </ul>
                     </div>
                     <div class="btn-group dropstart" role="group">
@@ -705,8 +705,8 @@
                         Dropdown
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Dropdown link</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Dropdown link</a></li>
                       </ul>
                     </div>
                     <div class="btn-group dropend" role="group">
@@ -715,8 +715,8 @@
                         Dropdown
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Dropdown link</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Dropdown link</a></li>
                       </ul>
                     </div>
                     <div class="btn-group dropup" role="group">
@@ -725,8 +725,8 @@
                         Dropdown
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Dropdown link</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Dropdown link</a></li>
                       </ul>
                     </div>
                   </div>

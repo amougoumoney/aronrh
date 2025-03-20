@@ -10,18 +10,18 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>{{ $t('dashboard.export') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">
                     <i class="ti ti-file-type-pdf me-1"></i>{{ $t('dashboard.exportPDF') }}
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">
                     <i class="ti ti-file-type-xls me-1"></i>{{ $t('dashboard.exportEXCEL') }}
                   </a>
                 </li>
@@ -30,7 +30,7 @@
           </div>
           <div class="mb-2">
             <!-- Use data attributes for the modal -->
-            <a href="#" data-bs-toggle="modal" data-bs-target="#add_interview"
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_interview"
               class="btn btn-primary d-flex align-items-center">
               <i class="ti ti-circle-plus me-2"></i>Add Interview
             </a>
@@ -75,21 +75,24 @@
                       <td>{{ interview.score || 'N/A' }}</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
-                          <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                          <a href="javascript:void(0);" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="ti ti-dots-vertical"></i>
                           </a>
                           <div class="dropdown-menu dropdown-menu-end">
-                            <a href="#" class="dropdown-item" @click="viewInterviewDetails(interview.id)">
+                            <a href="javascript:void(0);" class="dropdown-item"
+                              @click="viewInterviewDetails(interview.id)">
                               <i class="ti ti-eye me-2"></i>{{ $t('viewDetails') }}
                             </a>
-                            <a href="#" class="dropdown-item" @click="editInterviewDetails(interview.id)">
+                            <a href="javascript:void(0);" class="dropdown-item"
+                              @click="editInterviewDetails(interview.id)">
                               <i class="ti ti-pencil me-2"></i>{{ $t('Edit') }}
                             </a>
-                            <a href="#" class="dropdown-item" @click="addFeedback(interview.id)">
+                            <a href="javascript:void(0);" class="dropdown-item" @click="addFeedback(interview.id)">
                               <i class="ti ti-message me-2"></i>{{ $t('AddFeedback') }}
                             </a>
-                            <a href="#" class="dropdown-item" @click="deleteInterviewRecord(interview.id)">
+                            <a href="javascript:void(0);" class="dropdown-item"
+                              @click="deleteInterviewRecord(interview.id)">
                               <i class="ti ti-trash me-2"></i>{{ $t('Delete') }}
                             </a>
                           </div>

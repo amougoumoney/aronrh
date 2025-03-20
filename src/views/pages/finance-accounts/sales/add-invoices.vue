@@ -35,8 +35,8 @@ export default {
                                     </span>
                                     Back to List
                                 </router-link>
-                                <a href="#" class="text-primary text-decoration-underline" data-bs-toggle="modal"
-                                    data-bs-target="#invoice_preview">
+                                <a href="javascript:void(0);" class="text-primary text-decoration-underline"
+                                    data-bs-toggle="modal" data-bs-target="#invoice_preview">
                                     Preview
                                 </a>
                             </div>
@@ -45,8 +45,8 @@ export default {
                             <div class="bg-light p-3 rounded mb-3">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <h5>From</h5>
-                                    <a href="#" class="text-dark fw-medium"><span class="text-gray me-2"><i
-                                                class="ti ti-edit"></i></span>Edit Details</a>
+                                    <a href="javascript:void(0);" class="text-dark fw-medium"><span
+                                            class="text-gray me-2"><i class="ti ti-edit"></i></span>Edit Details</a>
                                 </div>
                                 <div>
                                     <h4 class="mb-1">Thomas Lawler</h4>
@@ -110,7 +110,8 @@ export default {
                                         <div class="mb-3">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <label class="form-label">Customer</label>
-                                                <a href="#" class="text-primary fw-medium d-flex align-items-center"
+                                                <a href="javascript:void(0);"
+                                                    class="text-primary fw-medium d-flex align-items-center"
                                                     data-bs-toggle="modal" data-bs-target="#add_customer">
                                                     <i class="ti ti-plus me-2"></i>Add New
                                                 </a>
@@ -176,7 +177,7 @@ export default {
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#"
+                                    <a href="javascript:void(0);"
                                         class="text-primary add-more-description fw-medium d-flex align-items-center"><i
                                             class="ti ti-plus me-2"></i>Add New</a>
                                 </div>
@@ -198,9 +199,10 @@ export default {
                             <!-- Additional Details-->
 
                             <div class="d-flex justify-content-end align-items-center flex-wrap row-gap-3">
-                                <a href="#" class="btn btn-dark d-flex justify-content-center align-items-center"><i
+                                <a href="javascript:void(0);"
+                                    class="btn btn-dark d-flex justify-content-center align-items-center"><i
                                         class="ti ti-printer me-2"></i>Save as Draft</a>
-                                <a href="#"
+                                <a href="javascript:void(0);"
                                     class="btn btn-primary d-flex justify-content-center align-items-center  ms-2"><i
                                         class="ti ti-copy me-2"></i>Save & Send</a>
                             </div>
@@ -213,7 +215,7 @@ export default {
         <!-- Footer -->
         <div class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3">
             <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
-            <p>Designed & Developed By <a href="#" class="text-primary">Dreams</a></p>
+            <p>Designed & Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
         </div>
         <!-- /Footer -->
     </div>

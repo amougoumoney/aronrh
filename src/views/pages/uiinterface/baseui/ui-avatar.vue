@@ -196,7 +196,7 @@
                 <span class="avatar ms-1">
                   <img src="@/assets/img/profiles/avatar-04.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary text-fixed-white ms-1" href="#">
+                <a class="avatar bg-primary text-fixed-white ms-1" href="javascript:void(0);">
                   +8
                 </a>
               </div>
@@ -210,7 +210,7 @@
                 <span class="avatar ms-1">
                   <img src="@/assets/img/profiles/avatar-04.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary text-fixed-white ms-1" href="#">
+                <a class="avatar bg-primary text-fixed-white ms-1" href="javascript:void(0);">
                   +8
                 </a>
               </div>
@@ -224,7 +224,7 @@
                 <span class="avatar ms-1">
                   <img src="@/assets/img/profiles/avatar-04.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary text-fixed-white ms-1" href="#">
+                <a class="avatar bg-primary text-fixed-white ms-1" href="javascript:void(0);">
                   +8
                 </a>
               </div>
@@ -248,7 +248,7 @@
                 <span class="avatar avatar-rounded ms-1">
                   <img src="@/assets/img/profiles/avatar-05.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary avatar-rounded text-fixed-white ms-1" href="#">
+                <a class="avatar bg-primary avatar-rounded text-fixed-white ms-1" href="javascript:void(0);">
                   +8
                 </a>
               </div>
@@ -262,7 +262,7 @@
                 <span class="avatar avatar-rounded ms-1">
                   <img src="@/assets/img/profiles/avatar-05.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary avatar-rounded text-fixed-white ms-1" href="#">
+                <a class="avatar bg-primary avatar-rounded text-fixed-white ms-1" href="javascript:void(0);">
                   +8
                 </a>
               </div>
@@ -276,7 +276,7 @@
                 <span class="avatar avatar-rounded ms-1">
                   <img src="@/assets/img/profiles/avatar-05.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary avatar-rounded text-fixed-white ms-1" href="#">
+                <a class="avatar bg-primary avatar-rounded text-fixed-white ms-1" href="javascript:void(0);">
                   +8
                 </a>
               </div>

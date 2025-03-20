@@ -98,16 +98,16 @@
               <h5 class="card-title">Coloured Link</h5>
             </div>
             <div class="card-body">
-              <p><a href="#" class="text-primary">Primary link</a></p>
-              <p><a href="#" class="text-secondary">Secondary link</a></p>
-              <p><a href="#" class="text-success">Success link</a></p>
-              <p><a href="#" class="text-danger">Danger link</a></p>
-              <p><a href="#" class="text-warning">Warning link</a></p>
-              <p><a href="#" class="text-info">Info link</a></p>
-              <p><a href="#" class="text-light bg-dark">Light link</a></p>
-              <p><a href="#" class="text-dark">Dark link</a></p>
-              <p><a href="#" class="text-muted">Muted link</a></p>
-              <p><a href="#" class="text-white bg-dark mb-0">White link</a></p>
+              <p><a href="javascript:void(0);" class="text-primary">Primary link</a></p>
+              <p><a href="javascript:void(0);" class="text-secondary">Secondary link</a></p>
+              <p><a href="javascript:void(0);" class="text-success">Success link</a></p>
+              <p><a href="javascript:void(0);" class="text-danger">Danger link</a></p>
+              <p><a href="javascript:void(0);" class="text-warning">Warning link</a></p>
+              <p><a href="javascript:void(0);" class="text-info">Info link</a></p>
+              <p><a href="javascript:void(0);" class="text-light bg-dark">Light link</a></p>
+              <p><a href="javascript:void(0);" class="text-dark">Dark link</a></p>
+              <p><a href="javascript:void(0);" class="text-muted">Muted link</a></p>
+              <p><a href="javascript:void(0);" class="text-white bg-dark mb-0">White link</a></p>
             </div>
           </div>
         </div>
@@ -512,7 +512,7 @@
               <p class="text-decoration-line-through">
                 This text has a line going through it.
               </p>
-              <a href="#" class="text-decoration-none">This link has its text decoration removed
+              <a href="javascript:void(0);" class="text-decoration-none">This link has its text decoration removed
               </a>
             </div>
           </div>
@@ -601,7 +601,7 @@
             <div class="card-body">
               <p class="text-muted mb-0">
                 Muted text with a
-                <a href="#" class="text-reset text-decoration-underline text-dark">reset link</a>.
+                <a href="javascript:void(0);" class="text-reset text-decoration-underline text-dark">reset link</a>.
               </p>
             </div>
           </div>

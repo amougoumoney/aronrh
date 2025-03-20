@@ -8,8 +8,8 @@
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="head-icons ms-2">
-          <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-            id="collapse-header" @click="toggleHeader">
+          <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
             <i class="ti ti-chevrons-up"></i>
           </a>
         </div>
@@ -54,7 +54,7 @@
                             <span class="btn btn-sm d-inline-flex align-items-center btn-dark">
                               <i class="ti ti-checks me-1"></i>Connected
                             </span>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#phpmailersettings"
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#phpmailersettings"
                               class="btn btn-icon btn-sm text-gray-5 fs-20"><i class="ti ti-settings"></i></a>
                           </div>
                         </div>
@@ -85,7 +85,7 @@
                             <span class="btn btn-sm d-inline-flex align-items-center btn-light">
                               <i class="ti ti-checks me-1"></i>Connected
                             </span>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#smtpsettings"
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#smtpsettings"
                               class="btn btn-icon btn-sm text-gray-5 fs-20"><i class="ti ti-settings"></i></a>
                           </div>
                         </div>
@@ -110,7 +110,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

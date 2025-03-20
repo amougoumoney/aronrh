@@ -6,19 +6,19 @@
           <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Performance</h5>
             <div class="dropdown">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>2024
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2024</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2024</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2023</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2023</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2022</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2022</a>
                 </li>
               </ul>
             </div>
@@ -46,19 +46,19 @@
           <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>My Skills</h5>
             <div class="dropdown">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>2024
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2024</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2024</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2023</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2023</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">2022</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">2022</a>
                 </li>
               </ul>
             </div>
@@ -188,7 +188,7 @@
                 <h6 class="text-white fw-medium mb-1">Andrew Jermia</h6>
                 <p>IOS Developer</p>
               </div>
-              <a href="#" class="btn btn-sm btn-primary">Send Wishes</a>
+              <a href="javascript:void(0);" class="btn btn-sm btn-primary">Send Wishes</a>
             </div>
           </div>
         </div>
@@ -198,7 +198,7 @@
               <h5 class="text-white mb-1">Leave Policy</h5>
               <p class="text-white">Last Updated : Today</p>
             </div>
-            <a href="#" class="btn btn-white btn-sm px-3">View All</a>
+            <a href="javascript:void(0);" class="btn btn-white btn-sm px-3">View All</a>
           </div>
         </div>
         <div class="card bg-warning">

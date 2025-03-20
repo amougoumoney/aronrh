@@ -14,12 +14,12 @@
             <router-link to="/applications/todo" class="btn btn-icon btn-sm"><i class="ti ti-table"></i></router-link>
           </div>
           <div class="">
-            <a href="#" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal"
+            <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal"
               data-bs-target="#add_todo"><i class="ti ti-circle-plus me-2"></i>Create New</a>
           </div>
           <div class="ms-2 mb-0 head-icons">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -46,80 +46,80 @@
                 :editable="true" :clearable="false" :input-format="dateFormat" />
             </div>
             <div class="dropdown me-2">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 Tags
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">All Tags</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">All Tags</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Urgent</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Urgent</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">High</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">High</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Medium</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Medium</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown me-2">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 Assignee
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Sophie</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Sophie</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Cameron</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Cameron</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Doris</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Doris</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Rufana</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Rufana</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown me-2">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 Select Status
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Completed</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Completed</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Pending</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Pending</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Inprogress</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Inprogress</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Onhold</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Onhold</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center fs-12"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center fs-12"
                 data-bs-toggle="dropdown">
                 <span class="fs-12 d-inline-flex me-1">Sort By : </span>
                 Last 7 Days
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Last 1 month</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 1 month</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Last 1 year</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 1 year</a>
                 </li>
               </ul>
             </div>
@@ -194,10 +194,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#edit_todo">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -251,10 +253,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#edit_todo">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -307,10 +311,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#edit_todo">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -363,10 +369,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#edit_todo">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -419,10 +427,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#edit_todo">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -475,10 +485,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#edit_todo">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -531,10 +543,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#edit_todo">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -587,10 +601,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#edit_todo">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -643,10 +659,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#edit_todo">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -699,10 +717,12 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#edit_todo">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#edit_todo">
                         <i class="ti ti-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm btn-icon" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#delete_modal">
                         <i class="ti ti-trash"></i>
                       </a>
                     </div>
@@ -719,7 +739,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

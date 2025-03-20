@@ -489,7 +489,8 @@
                         <div class="mb-3">
                           <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="customCheck1" />
-                            <label class="form-check-label" for="customCheck1">I accept <a href="#">Terms and
+                            <label class="form-check-label" for="customCheck1">I accept <a
+                                href="javascript:void(0);">Terms and
                                 Conditions</a></label>
                           </div>
                         </div>
@@ -891,7 +892,7 @@
                       <h5>Popover in a modal</h5>
                       <p>
                         This
-                        <a href="#" role="button" class="btn btn-secondary" data-bs-toggle="popover"
+                        <a href="javascript:void(0);" role="button" class="btn btn-secondary" data-bs-toggle="popover"
                           title="Popover title"
                           data-bs-content="Popover body content is set in this attribute.">button</a>
                         triggers a popover on click.
@@ -899,9 +900,11 @@
                       <hr />
                       <h5>Tooltips in a modal</h5>
                       <p>
-                        <a href="#" class="text-primary" data-bs-toggle="tooltip" title="Tooltip">This link</a>
+                        <a href="javascript:void(0);" class="text-primary" data-bs-toggle="tooltip" title="Tooltip">This
+                          link</a>
                         and
-                        <a href="#" class="text-primary" data-bs-toggle="tooltip" title="Tooltip">that link</a>
+                        <a href="javascript:void(0);" class="text-primary" data-bs-toggle="tooltip" title="Tooltip">that
+                          link</a>
                         have tooltips on hover.
                       </p>
                     </div>

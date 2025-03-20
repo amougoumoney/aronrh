@@ -12,9 +12,11 @@
             </div>
             <div class="d-flex align-items-center">
               <div class="action-icon d-inline-flex">
-                <a href="#"><i class="ti ti-circle-plus"></i></a>
-                <a href="#" class="" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="ti ti-edit"></i></a>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+                <a href="javascript:void(0);"><i class="ti ti-circle-plus"></i></a>
+                <a href="javascript:void(0);" class="" data-bs-toggle="modal" data-bs-target="#edit_leads"><i
+                    class="ti ti-edit"></i></a>
+                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                    class="ti ti-trash"></i></a>
               </div>
             </div>
           </div>
@@ -58,15 +60,15 @@
                   </p>
                 </div>
                 <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
-                  <a href="#" class="avatar avatar-sm avatar-rounded flex-shrink-0 me-2">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0 me-2">
                     <img :src="require(`@/assets/img/company/${element.companyLogo}`)" alt="image" />
                   </a>
                   <div class="icons-social d-flex align-items-center">
-                    <a href="#" class="d-flex align-items-center justify-content-center me-2"><i
+                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-2"><i
                         class="ti ti-phone-call"></i></a>
-                    <a href="#" class="d-flex align-items-center justify-content-center me-2"><i
+                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-2"><i
                         class="ti ti-brand-hipchat"></i></a>
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i
+                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"><i
                         class="ti ti-color-swatch"></i></a>
                   </div>
                 </div>

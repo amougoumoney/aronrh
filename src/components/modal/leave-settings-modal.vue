@@ -196,8 +196,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -252,8 +252,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" class=""><i class="ti ti-trash"></i></a>
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" class=""><i class="ti ti-trash"></i></a>
                           </div>
                         </div>
                         <div class="card border edit-leave-details">
@@ -304,8 +304,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -357,8 +357,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -489,8 +489,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -545,8 +545,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" class=""><i class="ti ti-trash"></i></a>
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" class=""><i class="ti ti-trash"></i></a>
                           </div>
                         </div>
                         <div class="card border edit-leave-details">
@@ -597,8 +597,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -650,8 +650,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -782,8 +782,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -838,8 +838,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" class=""><i class="ti ti-trash"></i></a>
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" class=""><i class="ti ti-trash"></i></a>
                           </div>
                         </div>
                         <div class="card border edit-leave-details">
@@ -890,8 +890,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -943,8 +943,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -1076,8 +1076,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -1132,8 +1132,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" class=""><i class="ti ti-trash"></i></a>
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" class=""><i class="ti ti-trash"></i></a>
                           </div>
                         </div>
                         <div class="card border edit-leave-details">
@@ -1184,8 +1184,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -1237,8 +1237,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -1370,8 +1370,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -1426,8 +1426,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" class=""><i class="ti ti-trash"></i></a>
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" class=""><i class="ti ti-trash"></i></a>
                           </div>
                         </div>
                         <div class="card border edit-leave-details">
@@ -1478,8 +1478,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -1531,8 +1531,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -1699,8 +1699,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -1755,8 +1755,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" class=""><i class="ti ti-trash"></i></a>
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" class=""><i class="ti ti-trash"></i></a>
                           </div>
                         </div>
                         <div class="card border edit-leave-details">
@@ -1807,8 +1807,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -1860,8 +1860,8 @@ export default {
                             </span>
                           </div>
                           <div class="action-icon d-inline-flex">
-                            <a href="#" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            <a href="javascript:void(0);" class="me-2 edit-leave-btn"><i class="ti ti-edit"></i></a>
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
                                 class="ti ti-trash"></i></a>
                           </div>
                         </div>
@@ -1921,7 +1921,7 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/leave/leave-settings" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>

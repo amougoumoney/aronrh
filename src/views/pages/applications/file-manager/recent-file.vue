@@ -3,21 +3,21 @@
   <div class="border-bottom mb-4">
     <div class="d-flex align-items-center justify-content-between mb-2">
       <h4 class="mb-2">
-        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview">Recent Files</a>
+        <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#preview">Recent Files</a>
       </h4>
       <div class="dropdown mb-2">
-        <a href="#" class="dropdown-toggle btn btn-white" data-bs-toggle="dropdown">
+        <a href="javascript:void(0);" class="dropdown-toggle btn btn-white" data-bs-toggle="dropdown">
           Last Modified
         </a>
         <ul class="dropdown-menu dropdown-menu-end p-3">
           <li>
-            <a href="#" class="dropdown-item rounded-1">Newest to Oldest</a>
+            <a href="javascript:void(0);" class="dropdown-item rounded-1">Newest to Oldest</a>
           </li>
           <li>
-            <a href="#" class="dropdown-item rounded-1">Last Modified</a>
+            <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Modified</a>
           </li>
           <li>
-            <a href="#" class="dropdown-item rounded-1">Oldest to Newest</a>
+            <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest to Newest</a>
           </li>
         </ul>
       </div>
@@ -32,37 +32,44 @@
             <div class="bg-white d-flex align-items-center justify-content-between p-3 files-content">
               <h6 class="fw-medium">{{ item.Name }}</h6>
               <div class="dropdown ms-2">
-                <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                   <i class="ti ti-dots"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview" class="dropdown-item rounded-1"><i
-                        class="ti ti-folder-open me-2"></i>Preview</a>
+                    <a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                      class="dropdown-item rounded-1"><i class="ti ti-folder-open me-2"></i>Preview</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1"><i class="ti ti-copy me-2"></i>Duplicate</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                        class="ti ti-copy me-2"></i>Duplicate</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1"><i class="ti ti-arrow-left-right me-2"></i>Move</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                        class="ti ti-arrow-left-right me-2"></i>Move</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1"><i class="ti ti-user-plus me-2"></i>Invite</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                        class="ti ti-user-plus me-2"></i>Invite</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1"><i class="ti ti-share-3 me-2"></i>Share Link</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                        class="ti ti-share-3 me-2"></i>Share Link</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider my-2" />
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1"><i class="ti ti-eye me-2"></i>View Details</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i class="ti ti-eye me-2"></i>View
+                      Details</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1"><i class="ti ti-download me-2"></i>Download</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                        class="ti ti-download me-2"></i>Download</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1"><i class="ti ti-trash-x me-2"></i>Delete</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                        class="ti ti-trash-x me-2"></i>Delete</a>
                   </li>
                 </ul>
               </div>

@@ -26,7 +26,7 @@
                       <p class="fs-16 text-center">
                         The server is in a maintenance mode, please come back later or
                         <br />
-                        <a href="#" class="text-primary">click here</a> to create ticket
+                        <a href="javascript:void(0);" class="text-primary">click here</a> to create ticket
                         if it’s urgent
                       </p>
                       <div class="d-flex justify-content-center pb-4">

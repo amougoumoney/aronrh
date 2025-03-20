@@ -25,7 +25,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a href="#" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button type="submit" class="btn btn-primary">Add IP Address</button>
           </div>
         </form>
@@ -61,7 +61,7 @@ Temporarily block to protect user accounts from internet fraudsters</textarea>
             </div>
           </div>
           <div class="modal-footer">
-            <a href="#" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button type="submit" class="btn btn-primary">Save Changes</button>
           </div>
         </form>

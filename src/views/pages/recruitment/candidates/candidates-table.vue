@@ -216,12 +216,12 @@ export default {
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Candidate'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="#" class="avatar avatar-md">
+          <a href="javascript:void(0);" class="avatar avatar-md">
             <img :src="(`@/assets/img/users/${record.Image}`)" class="img-fluid rounded-circle" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
-              <a href="#">{{ record.Candidate }}</a>
+              <a href="javascript:void(0);">{{ record.Candidate }}</a>
             </h6>
             <span class="d-block mt-1">{{ record.Email }}</span>
           </div>
@@ -229,8 +229,8 @@ export default {
       </template>
       <template v-if="column.key === 'Resume'">
         <div class="d-inline-flex">
-          <a href="#" class="text-gray me-2 fs-16"><i class="ti ti-file-text"></i></a>
-          <a href="#" class="text-gray fs-16"><i class="ti ti-download"></i></a>
+          <a href="javascript:void(0);" class="text-gray me-2 fs-16"><i class="ti ti-file-text"></i></a>
+          <a href="javascript:void(0);" class="text-gray fs-16"><i class="ti ti-download"></i></a>
         </div>
       </template>
       <template v-if="column.key === 'Status'">
@@ -252,7 +252,8 @@ export default {
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

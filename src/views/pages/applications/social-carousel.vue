@@ -8,7 +8,7 @@
       <div class="channels-slider owl-carousel">
         <Carousel :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
           <Slide v-for="item in SocialCarousel" :key="item.id">
-            <a href="#">
+            <a href="javascript:void(0);">
               <img :src="require(`@/assets/img/icons/${item.Image}`)" alt="Img" /> </a>
           </Slide>
           <template #addons>

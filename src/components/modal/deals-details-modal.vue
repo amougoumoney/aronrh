@@ -28,7 +28,7 @@
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
@@ -166,7 +166,7 @@
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
@@ -324,7 +324,8 @@
                   <h6 class="fw-medium mb-1">tes.txt</h6>
                   <p>1.2 MB</p>
                 </div>
-                <a href="#" class="btn btn-sm btn-icon text-danger"><i class="ti ti-trash fs-20"></i></a>
+                <a href="javascript:void(0);" class="btn btn-sm btn-icon text-danger"><i
+                    class="ti ti-trash fs-20"></i></a>
               </div>
             </div>
           </div>
@@ -546,7 +547,7 @@
                                     <input class="form-control" type="text" />
                                   </div>
                                   <div>
-                                    <a href="#" class="btn btn-icon btn-sm add-sign text-primary"><i
+                                    <a href="javascript:void(0);" class="btn btn-icon btn-sm add-sign text-primary"><i
                                         class="ti ti-circle-plus"></i></a>
                                   </div>
                                 </div>
@@ -622,7 +623,7 @@
                                     <input class="form-control" type="text" />
                                   </div>
                                   <div>
-                                    <a href="#" class="btn btn-icon btn-sm add-sign text-primary"><i
+                                    <a href="javascript:void(0);" class="btn btn-icon btn-sm add-sign text-primary"><i
                                         class="ti ti-circle-plus"></i></a>
                                   </div>
                                 </div>

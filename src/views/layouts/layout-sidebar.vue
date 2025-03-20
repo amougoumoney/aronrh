@@ -74,7 +74,7 @@ const dashboardRoute = computed(() => {
 			</div>
 			<div class="sidebar-nav mb-3">
 				<ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified bg-transparent" role="tablist">
-					<li class="nav-item"><a class="nav-link active border-0" href="#">{{ $t('menu')
+					<li class="nav-item"><a class="nav-link active border-0" href="javascript:void(0);">{{ $t('menu')
 					}}</a></li>
 					<li class="nav-item">
 						<router-link class="nav-link border-0" to="/applications/chat">{{ $t('chats') }}</router-link>
@@ -107,32 +107,32 @@ const dashboardRoute = computed(() => {
 			</div>
 			<div class="d-flex align-items-center justify-content-between menu-item mb-3">
 				<div class="me-3">
-					<a href="#" class="btn btn-menubar position-relative">
+					<a href="javascript:void(0);" class="btn btn-menubar position-relative">
 						<i class="ti ti-shopping-bag"></i>
 						<span
 							class="badge bg-success rounded-pill d-flex align-items-center justify-content-center header-badge">5</span>
 					</a>
 				</div>
 				<div class="me-3">
-					<a href="#" class="btn btn-menubar">
+					<a href="javascript:void(0);" class="btn btn-menubar">
 						<i class="ti ti-layout-grid-remove"></i>
 					</a>
 				</div>
 				<div class="me-3">
-					<a href="#" class="btn btn-menubar position-relative">
+					<a href="javascript:void(0);" class="btn btn-menubar position-relative">
 						<i class="ti ti-brand-hipchat"></i>
 						<span
 							class="badge bg-info rounded-pill d-flex align-items-center justify-content-center header-badge">5</span>
 					</a>
 				</div>
 				<div class="me-3 notification-item">
-					<a href="#" class="btn btn-menubar position-relative me-1">
+					<a href="javascript:void(0);" class="btn btn-menubar position-relative me-1">
 						<i class="ti ti-bell"></i>
 						<span class="notification-status-dot"></span>
 					</a>
 				</div>
 				<div class="me-0">
-					<a href="#" class="btn btn-menubar">
+					<a href="javascript:void(0);" class="btn btn-menubar">
 						<i class="ti ti-message"></i>
 					</a>
 				</div>

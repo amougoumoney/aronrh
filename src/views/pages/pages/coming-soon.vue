@@ -74,21 +74,21 @@
                         <div class="bg-transparent border p-2 d-flex align-items-center rounded ps-0">
                           <input type="email" class="form-control bg-transparent border-0"
                             placeholder="Enter Your Email" />
-                          <a href="#" class="btn btn-primary">Subscribe</a>
+                          <a href="javascript:void(0);" class="btn btn-primary">Subscribe</a>
                         </div>
                       </div>
                     </div>
                     <div class="d-flex flex-wrap justify-content-center align-items-center pb-4">
-                      <a href="#"
+                      <a href="javascript:void(0);"
                         class="btn btn-primary rounded-circle btn-icon btn-sm me-2 d-flex align-items-center justify-content-center"><i
                           class="ti ti-brand-facebook fs-16"></i></a>
-                      <a href="#"
+                      <a href="javascript:void(0);"
                         class="btn btn-primary rounded-circle btn-icon btn-sm me-2 d-flex align-items-center justify-content-center"><i
                           class="ti ti-brand-twitter fs-16"></i></a>
-                      <a href="#"
+                      <a href="javascript:void(0);"
                         class="btn btn-primary rounded-circle btn-icon btn-sm me-2 d-flex align-items-center justify-content-center"><i
                           class="ti ti-brand-linkedin fs-16"></i></a>
-                      <a href="#"
+                      <a href="javascript:void(0);"
                         class="btn btn-primary rounded-circle btn-icon btn-sm d-flex align-items-center justify-content-center"><i
                           class="ti ti-brand-instagram fs-16"></i></a>
                     </div>

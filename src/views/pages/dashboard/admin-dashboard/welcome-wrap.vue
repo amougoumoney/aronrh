@@ -9,7 +9,7 @@
         <div class="ms-3">
           <h3 class="mb-2">
             {{ $t('welcomeBack') }}, {{ username }}
-            <a href="#" class="edit-icon"><i class="ti ti-edit fs-14"></i></a>
+            <a href="javascript:void(0);" class="edit-icon"><i class="ti ti-edit fs-14"></i></a>
           </h3>
           <p>
             {{ $t('youHave') }}
@@ -41,7 +41,7 @@
                 <span class="fs-12 fw-medium text-success"><i class="fa-solid fa-caret-up me-1"></i>+2.1%</span>
               </h3>
               <router-link to="/attendance/attendance-employee" class="link-default">{{ $t('viewDetails')
-                }}</router-link>
+              }}</router-link>
             </div>
           </div>
         </div>
@@ -160,18 +160,19 @@
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
           <h5 class="mb-2">{{ $t('employeesByDepartment') }}</h5>
           <div class="dropdown mb-2">
-            <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center" data-bs-toggle="dropdown">
+            <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              data-bs-toggle="dropdown">
               <i class="ti ti-calendar me-1"></i>{{ $t('thisWeek') }}
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
-                <a href="#" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">{{ $t('lastWeek') }}</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('lastWeek') }}</a>
               </li>
             </ul>
           </div>

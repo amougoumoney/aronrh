@@ -15,12 +15,13 @@
             </div>
           </div>
           <div class="mb-2">
-            <a href="#" class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add
+            <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center"><i
+                class="ti ti-circle-plus me-2"></i>Add
               People</a>
           </div>
           <div class="ms-2 head-icons">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -46,38 +47,41 @@
                 <div class="record-time me-2">
                   <span>40:12</span>
                 </div>
-                <a href="#" class="video-expand btnFullscreen" @click="initFullScreen">
+                <a href="javascript:void(0);" class="video-expand btnFullscreen" @click="initFullScreen">
                   <i class="ti ti-maximize"></i>
                 </a>
               </div>
               <div class="more-icon">
-                <a href="#" class="mic-off">
+                <a href="javascript:void(0);" class="mic-off">
                   <i class="bx bx-microphone-off"></i>
                 </a>
               </div>
               <div class="call-overlay-bottom d-flex justify-content-sm-between align-items-center flex-wrap w-100">
-                <a href="#" :class="{
+                <a href="javascript:void(0);" :class="{
                   'options-icon d-flex align-items-center justify-content-center guest-off rounded': true,
                   activate: isActive,
                 }" @click="toggleActive">
                   <i class="ti ti-user-off"></i>
                 </a>
                 <div class="call-option rounded-pill d-flex justify-content-center align-items-center">
-                  <a href="#"
+                  <a href="javascript:void(0);"
                     class="options-icon bg-light d-flex justify-content-center align-items-center rounded me-2"><i
                       class="ti ti-microphone"></i></a>
-                  <a href="#"
+                  <a href="javascript:void(0);"
                     class="options-icon bg-light d-flex justify-content-center align-items-center rounded me-2"><i
                       class="ti ti-video"></i></a>
-                  <a href="#" class="call-icon bg-danger d-flex justify-content-center align-items-center rounded"><i
+                  <a href="javascript:void(0);"
+                    class="call-icon bg-danger d-flex justify-content-center align-items-center rounded"><i
                       class="ti ti-phone"></i></a>
-                  <a href="#"
+                  <a href="javascript:void(0);"
                     class="options-icon bg-light d-flex justify-content-center align-items-center rounded mx-2"><i
                       class="ti ti-volume"></i></a>
-                  <a href="#" class="options-icon bg-light d-flex justify-content-center align-items-center rounded"><i
+                  <a href="javascript:void(0);"
+                    class="options-icon bg-light d-flex justify-content-center align-items-center rounded"><i
                       class="ti ti-device-imac-share"></i></a>
                 </div>
-                <a href="#" class="options-icon bg-light d-flex align-items-center justify-content-center rounded"
+                <a href="javascript:void(0);"
+                  class="options-icon bg-light d-flex align-items-center justify-content-center rounded"
                   id="show-message" @click="toggleChat"><i class="ti ti-dots"></i></a>
               </div>
             </div>
@@ -86,7 +90,8 @@
                 <div class="card-header p-3 pb-0 border-0">
                   <div class="d-flex align-items-center justify-content-between">
                     <h5>Chat</h5>
-                    <a href="#" class="close_profile close_profile4 avatar avatar-sm mb-0 rounded-circle bg-danger"
+                    <a href="javascript:void(0);"
+                      class="close_profile close_profile4 avatar avatar-sm mb-0 rounded-circle bg-danger"
                       @click="closeChat">
                       <i class="ti ti-x"></i>
                     </a>
@@ -233,17 +238,17 @@
                     <div class="chat-footer">
                       <form>
                         <div class="smile-col comman-icon">
-                          <a href="#"><i class="far fa-smile"></i></a>
+                          <a href="javascript:void(0);"><i class="far fa-smile"></i></a>
                         </div>
                         <div class="attach-col comman-icon">
-                          <a href="#"><i class="fas fa-paperclip"></i></a>
+                          <a href="javascript:void(0);"><i class="fas fa-paperclip"></i></a>
                         </div>
                         <div class="micro-col comman-icon">
-                          <a href="#"><i class="bx bx-microphone"></i></a>
+                          <a href="javascript:void(0);"><i class="bx bx-microphone"></i></a>
                         </div>
                         <input type="text" class="form-control chat_form" placeholder="Enter Message....." />
                         <div class="send-chat comman-icon">
-                          <a href="#" class="rounded"><i data-feather="send"></i></a>
+                          <a href="javascript:void(0);" class="rounded"><i data-feather="send"></i></a>
                         </div>
                       </form>
                     </div>
@@ -261,7 +266,7 @@
       <p class="mb-0">2014-2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

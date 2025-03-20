@@ -58,7 +58,8 @@
             </div>
             <div class="row g-3">
               <div class="col-6">
-                <a href="#" class="btn btn-outline-primary w-100" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
+                <a href="javascript:void(0);" class="btn btn-outline-primary w-100" data-bs-dismiss="modal"
+                  aria-label="Close">Cancel</a>
               </div>
               <div class="col-6">
                 <button type="submit" class="btn btn-primary w-100">Save Changes</button>
@@ -130,7 +131,8 @@
             </div>
             <div class="row g-3">
               <div class="col-6">
-                <a href="#" class="btn btn-outline-primary w-100" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
+                <a href="javascript:void(0);" class="btn btn-outline-primary w-100" data-bs-dismiss="modal"
+                  aria-label="Close">Cancel</a>
               </div>
               <div class="col-6">
                 <button type="submit" class="btn btn-primary w-100">Save Changes</button>

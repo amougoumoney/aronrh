@@ -95,7 +95,7 @@ export default {
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
@@ -233,7 +233,7 @@ export default {
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
@@ -391,7 +391,8 @@ export default {
                   <h6 class="fw-medium mb-1">tes.txt</h6>
                   <p>1.2 MB</p>
                 </div>
-                <a href="#" class="btn btn-sm btn-icon text-danger"><i class="ti ti-trash fs-20"></i></a>
+                <a href="javascript:void(0);" class="btn btn-sm btn-icon text-danger"><i
+                    class="ti ti-trash fs-20"></i></a>
               </div>
             </div>
           </div>
@@ -614,7 +615,7 @@ export default {
                                     <input class="form-control" type="text" />
                                   </div>
                                   <div>
-                                    <a href="#" class="btn btn-icon btn-sm add-sign text-primary"><i
+                                    <a href="javascript:void(0);" class="btn btn-icon btn-sm add-sign text-primary"><i
                                         class="ti ti-circle-plus"></i></a>
                                   </div>
                                 </div>
@@ -690,7 +691,7 @@ export default {
                                     <input class="form-control" type="text" />
                                   </div>
                                   <div>
-                                    <a href="#" class="btn btn-icon btn-sm add-sign text-primary"><i
+                                    <a href="javascript:void(0);" class="btn btn-icon btn-sm add-sign text-primary"><i
                                         class="ti ti-circle-plus"></i></a>
                                   </div>
                                 </div>
@@ -840,7 +841,8 @@ export default {
                 <div class="input-block mb-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <label class="form-label">Pipeline <span class="text-danger"> *</span></label>
-                    <a href="#" class="add-new text-primary"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
+                    <a href="javascript:void(0);" class="add-new text-primary"><i
+                        class="ti ti-plus text-primary me-1"></i>Add New</a>
                   </div>
                   <vue-select :options="Pipeline" id="callss" placeholder="Select" />
                 </div>

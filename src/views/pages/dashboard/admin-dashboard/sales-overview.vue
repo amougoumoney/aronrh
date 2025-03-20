@@ -7,20 +7,20 @@
           <h5 class="mb-2">{{ $t('salesOverview') }}</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
-              <a href="#"
+              <a href="javascript:void(0);"
                 class="dropdown-toggle btn btn-white border-0 btn-sm d-inline-flex align-items-center fs-13 me-2"
                 data-bs-toggle="dropdown">
                 {{ $t('allDepartments') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('UI/UXDesigner') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('UI/UXDesigner') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('HRManager') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('HRManager') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('juniorTester') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('juniorTester') }}</a>
                 </li>
               </ul>
             </div>
@@ -54,37 +54,37 @@
           <h5 class="mb-2">{{ $t('invoices') }}</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
-              <a href="#"
+              <a href="javascript:void(0);"
                 class="dropdown-toggle btn btn-white btn-sm d-inline-flex align-items-center fs-13 me-2 border-0"
                 data-bs-toggle="dropdown">
                 {{ $t('invoices') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('invoices') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('invoices') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('paid') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('paid') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('unpaid') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('unpaid') }}</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown mb-2">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>{{ $t('thisWeek') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('today') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('today') }}</a>
                 </li>
               </ul>
             </div>

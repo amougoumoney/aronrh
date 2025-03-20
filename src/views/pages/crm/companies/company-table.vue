@@ -245,31 +245,31 @@ export default {
       <template v-if="column.key === 'Contact'">
         <ul class="contact-icon d-flex align-items-center">
           <li>
-            <a href="#"
+            <a href="javascript:void(0);"
               class="p-1 rounded-circle contact-icon-mail d-flex align-items-center justify-content-center"><span
                 class="d-flex align-items-center justify-content-center"><i
                   class="ti ti-mail text-gray-5"></i></span></a>
           </li>
           <li>
-            <a href="#"
+            <a href="javascript:void(0);"
               class="p-1 rounded-circle contact-icon-call d-flex align-items-center justify-content-center"><span
                 class="d-flex align-items-center justify-content-center"><i
                   class="ti ti-phone-call text-gray-5"></i></span></a>
           </li>
           <li>
-            <a href="#"
+            <a href="javascript:void(0);"
               class="p-1 rounded-circle contact-icon-msg d-flex align-items-center justify-content-center"><span
                 class="d-flex align-items-center justify-content-center"><i
                   class="ti ti-message-2 text-gray-5"></i></span></a>
           </li>
           <li>
-            <a href="#"
+            <a href="javascript:void(0);"
               class="p-1 rounded-circle contact-icon-skype d-flex align-items-center justify-content-center"><span
                 class="d-flex align-items-center justify-content-center"><i
                   class="ti ti-brand-skype text-gray-5"></i></span></a>
           </li>
           <li>
-            <a href="#"
+            <a href="javascript:void(0);"
               class="p-1 rounded-circle contact-icon-facebook d-flex align-items-center justify-content-center"><span
                 class="d-flex align-items-center justify-content-center"><i
                   class="ti ti-brand-facebook text-gray-5"></i></span></a>
@@ -290,8 +290,10 @@ export default {
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
           <router-link to="/crm/companies-details" class="me-2"><i class="ti ti-eye"></i></router-link>
-          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_company"><i class="ti ti-edit"></i></a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_company"><i
+              class="ti ti-edit"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

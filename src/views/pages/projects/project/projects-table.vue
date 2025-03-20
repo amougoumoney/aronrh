@@ -254,12 +254,12 @@ export default {
       </template>
       <template v-if="column.key === 'Leader'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="#" class="avatar avatar-sm border avatar-rounded">
+          <a href="javascript:void(0);" class="avatar avatar-sm border avatar-rounded">
             <img :src="require(`@/assets/img/users/${record.Image}`)" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-normal">
-              <a href="#">{{ record.Leader }}</a>
+              <a href="javascript:void(0);">{{ record.Leader }}</a>
             </h6>
           </div>
         </div>
@@ -275,14 +275,14 @@ export default {
           <span class="avatar avatar-rounded">
             <img class="border border-white" :src="require(`@/assets/img/profiles/${record.Img2}`)" alt="img" />
           </span>
-          <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="#">
+          <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12 fw-medium" href="javascript:void(0);">
             +{{ record.Team }}
           </a>
         </div>
       </template>
       <template v-if="column.key === 'Priority'">
         <div class="dropdown">
-          <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+          <a href="javascript:void(0);" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
             data-bs-toggle="dropdown">
             <span class="rounded-circle d-flex justify-content-center align-items-center me-2" :class="[
               record.Priority === 'High'
@@ -303,17 +303,20 @@ export default {
           </a>
           <ul class="dropdown-menu dropdown-menu-end p-3">
             <li>
-              <a href="#" class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+              <a href="javascript:void(0);"
+                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
                   class="rounded-circle bg-transparent-danger d-flex justify-content-center align-items-center me-2"><i
                     class="ti ti-point-filled text-danger"></i></span>High</a>
             </li>
             <li>
-              <a href="#" class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+              <a href="javascript:void(0);"
+                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
                   class="rounded-circle bg-transparent-warning d-flex justify-content-center align-items-center me-2"><i
                     class="ti ti-point-filled text-warning"></i></span>Medium</a>
             </li>
             <li>
-              <a href="#" class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+              <a href="javascript:void(0);"
+                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
                   class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"><i
                     class="ti ti-point-filled text-success"></i></span>Low</a>
             </li>
@@ -330,8 +333,10 @@ export default {
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_project"><i class="ti ti-edit"></i></a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_project"><i
+              class="ti ti-edit"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

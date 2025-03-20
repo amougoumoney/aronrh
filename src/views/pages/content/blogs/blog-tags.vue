@@ -76,12 +76,12 @@ export default {
         <breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#add_blog-tags"
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_blog-tags"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Tag</a>
           </div>
           <div class="ms-2 head-icons">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -103,25 +103,25 @@ export default {
               </div>
             </div>
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 Sort By : Last 7 Days
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">15 Jan 2024</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">15 Jan 2024</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">25 Jan 2024</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">25 Jan 2024</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">22 Feb 2024</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">22 Feb 2024</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">17 Mar 2024</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">17 Mar 2024</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">16 Apr 2024</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">16 Apr 2024</a>
                 </li>
               </ul>
             </div>
@@ -139,7 +139,7 @@ export default {
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

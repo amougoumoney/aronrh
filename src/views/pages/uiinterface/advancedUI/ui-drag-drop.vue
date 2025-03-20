@@ -17,7 +17,7 @@
       <div class="row">
         <div class="col-xl-6" id="draggable-left">
           <div class="card custom-card card-bg-primary">
-            <a href="#" class="card-anchor"></a>
+            <a href="javascript:void(0);" class="card-anchor"></a>
             <div class="card-body">
               <blockquote class="blockquote mb-0 text-center">
                 <h6 class="text-fixed-white">
@@ -33,7 +33,7 @@
           <div class="card custom-card">
             <div class="card-header justify-content-between">
               <div class="card-title">Card With Fullscreen Button</div>
-              <a href="#" data-bs-toggle="card-fullscreen">
+              <a href="javascript:void(0);" data-bs-toggle="card-fullscreen">
                 <vue-feather type="maximize" class="zap"></vue-feather>
               </a>
             </div>
@@ -66,7 +66,7 @@
             </div>
           </div>
           <div class="card custom-card">
-            <a href="#" class="card-anchor"></a>
+            <a href="javascript:void(0);" class="card-anchor"></a>
             <div class="card-body">
               <div class="d-flex align-items-center">
                 <div class="me-3">
@@ -84,7 +84,7 @@
             </div>
           </div>
           <div class="card custom-card border border-info">
-            <a href="#" class="card-anchor"></a>
+            <a href="javascript:void(0);" class="card-anchor"></a>
             <div class="card-body">
               <div class="d-flex align-items-center">
                 <div class="me-3">
@@ -135,8 +135,8 @@
           <div class="card custom-card">
             <div class="card-header border-bottom-0 justify-content-between">
               <div class="card-title">Card With Collapse Button</div>
-              <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
-                aria-controls="collapseExample">
+              <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
                 <vue-feather type="chevron-down" class="fs-18 collapse-open"></vue-feather>
                 <vue-feather type="chevron-up" class="collapse-close fs-18"></vue-feather>
               </a>
@@ -158,7 +158,7 @@
           <div class="card custom-card">
             <div class="card-header justify-content-between">
               <div class="card-title">Card With Close Button</div>
-              <a href="#" data-bs-toggle="card-remove" @click="removeCard">
+              <a href="javascript:void(0);" data-bs-toggle="card-remove" @click="removeCard">
                 <vue-feather type="x" class="fs-18"></vue-feather>
               </a>
             </div>

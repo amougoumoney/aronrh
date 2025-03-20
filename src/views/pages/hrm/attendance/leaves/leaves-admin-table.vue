@@ -182,12 +182,12 @@ export default {
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Employee'">
         <div class="d-flex align-items-center file-name-icon">
-          <a href="#" class="avatar avatar-md border avatar-rounded">
+          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
             <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
-              <a href="#">{{ record.Employee }}</a>
+              <a href="javascript:void(0);">{{ record.Employee }}</a>
             </h6>
             <span class="fs-12 fw-normal">{{ record.Roll }}</span>
           </div>
@@ -198,7 +198,7 @@ export default {
           <p class="fs-14 fw-medium d-flex align-items-center mb-0">
             {{ record.Leave_Type }}
           </p>
-          <a href="#" class="ms-2" data-bs-toggle="tooltip" data-bs-placement="right"
+          <a href="javascript:void(0);" class="ms-2" data-bs-toggle="tooltip" data-bs-placement="right"
             data-bs-title="I am currently experiencing a fever and design & Development">
             <i class="ti ti-info-circle text-info"></i>
           </a>
@@ -206,8 +206,10 @@ export default {
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_leaves"><i class="ti ti-edit"></i></a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_leaves"><i
+              class="ti ti-edit"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

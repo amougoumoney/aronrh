@@ -9,7 +9,7 @@
         <div class="ms-3">
           <h3 class="mb-2">
             Welcome Back, Adrian
-            <a href="#" class="edit-icon"><i class="ti ti-edit fs-14"></i></a>
+            <a href="javascript:void(0);" class="edit-icon"><i class="ti ti-edit fs-14"></i></a>
           </h3>
           <p>
             You have
@@ -20,10 +20,10 @@
         </div>
       </div>
       <div class="d-flex align-items-center flex-wrap mb-1">
-        <a href="#" class="btn btn-secondary btn-md ms-2 mb-2" data-bs-toggle="modal" data-bs-target="#add_project"><i
-            class="ti ti-square-rounded-plus ms-1"></i>Add Project</a>
-        <a href="#" class="btn btn-primary btn-md mb-2" data-bs-toggle="modal" data-bs-target="#add_leaves"><i
-            class="ti ti-square-rounded-plus ms-1"></i>Add Requests</a>
+        <a href="javascript:void(0);" class="btn btn-secondary btn-md ms-2 mb-2" data-bs-toggle="modal"
+          data-bs-target="#add_project"><i class="ti ti-square-rounded-plus ms-1"></i>Add Project</a>
+        <a href="javascript:void(0);" class="btn btn-primary btn-md mb-2" data-bs-toggle="modal"
+          data-bs-target="#add_leaves"><i class="ti ti-square-rounded-plus ms-1"></i>Add Requests</a>
       </div>
     </div>
   </div>
@@ -163,18 +163,19 @@
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
           <h5 class="mb-2">Employees By Department</h5>
           <div class="dropdown mb-2">
-            <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center" data-bs-toggle="dropdown">
+            <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              data-bs-toggle="dropdown">
               <i class="ti ti-calendar ms-1"></i>This Week
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
-                <a href="#" class="dropdown-item rounded-1">This Month</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">This Week</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">Last Week</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
               </li>
             </ul>
           </div>

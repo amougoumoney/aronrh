@@ -16,7 +16,7 @@
                   </span>
                   Back to List
                 </router-link>
-                <a href="#" class="text-primary text-decoration-underline" data-bs-toggle="modal"
+                <a href="javascript:void(0);" class="text-primary text-decoration-underline" data-bs-toggle="modal"
                   data-bs-target="#invoice_preview">
                   Preview
                 </a>
@@ -26,7 +26,7 @@
               <div class="bg-light p-3 rounded mb-3">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h5>From</h5>
-                  <a href="#" class="text-dark fw-medium"><span class="text-gray me-2"><i
+                  <a href="javascript:void(0);" class="text-dark fw-medium"><span class="text-gray me-2"><i
                         class="ti ti-edit"></i></span>Edit
                     Details</a>
                 </div>
@@ -92,8 +92,8 @@
                     <div class="mb-3">
                       <div class="d-flex justify-content-between align-items-center">
                         <label class="form-label">Customer</label>
-                        <a href="#" class="text-primary fw-medium d-flex align-items-center" data-bs-toggle="modal"
-                          data-bs-target="#add_customer">
+                        <a href="javascript:void(0);" class="text-primary fw-medium d-flex align-items-center"
+                          data-bs-toggle="modal" data-bs-target="#add_customer">
                           <i class="ti ti-plus me-2"></i>Add New
                         </a>
                       </div>
@@ -159,15 +159,15 @@
                       </div>
 
                       <!-- Delete Button only shows if the item is not empty -->
-                      <a href="#" class="link-danger ms-2 delete-item"
+                      <a href="javascript:void(0);" class="link-danger ms-2 delete-item"
                         v-if="item.description || item.qty || item.discount || item.rate" @click="deleteItem(index)">
                         <i class="far fa-trash-alt"></i> Delete
                       </a>
                     </div>
 
                     <!-- Add New Item Button -->
-                    <a href="#" class="text-primary add-more-description fw-medium d-flex align-items-center"
-                      @click="addNewItem">
+                    <a href="javascript:void(0);"
+                      class="text-primary add-more-description fw-medium d-flex align-items-center" @click="addNewItem">
                       <i class="ti ti-plus me-2"></i> Add New
                     </a>
                   </div>
@@ -190,9 +190,10 @@
               <!-- Additional Details-->
 
               <div class="d-flex justify-content-end align-items-center flex-wrap row-gap-3">
-                <a href="#" class="btn btn-dark d-flex justify-content-center align-items-center"><i
+                <a href="javascript:void(0);" class="btn btn-dark d-flex justify-content-center align-items-center"><i
                     class="ti ti-printer me-2"></i>Save as Draft</a>
-                <a href="#" class="btn btn-primary d-flex justify-content-center align-items-center ms-2"><i
+                <a href="javascript:void(0);"
+                  class="btn btn-primary d-flex justify-content-center align-items-center ms-2"><i
                     class="ti ti-copy me-2"></i>Save & Send</a>
               </div>
             </div>
@@ -206,7 +207,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed & Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
     <!-- /Footer -->
@@ -388,7 +389,7 @@
                     Upload
                     <input type="file" class="form-control image-sign" multiple="" />
                   </div>
-                  <a href="#" class="btn btn-light btn-sm">Cancel</a>
+                  <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                 </div>
               </div>
             </div>

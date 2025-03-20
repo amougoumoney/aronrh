@@ -198,7 +198,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="mb-3 text-md-end">
-                    <a href="#" class="btn btn-dark d-inline-flex align-items-center"><i
+                    <a href="javascript:void(0);" class="btn btn-dark d-inline-flex align-items-center"><i
                         class="ti ti-download me-1"></i>Download</a>
                   </div>
                 </div>
@@ -212,14 +212,14 @@
               <h5 class="fw-medium mb-2">Candidate Pipeline Stage</h5>
               <div class="pipeline-list candidates border-0 mb-0">
                 <ul class="mb-0">
-                  <li><a href="#" class="bg-purple">New</a></li>
-                  <li><a href="#" class="bg-gray-100">Scheduled</a></li>
+                  <li><a href="javascript:void(0);" class="bg-purple">New</a></li>
+                  <li><a href="javascript:void(0);" class="bg-gray-100">Scheduled</a></li>
                   <li>
-                    <a href="#" class="bg-grat-100">Interviewed</a>
+                    <a href="javascript:void(0);" class="bg-grat-100">Interviewed</a>
                   </li>
-                  <li><a href="#" class="bg-gray-100">Offered</a></li>
+                  <li><a href="javascript:void(0);" class="bg-gray-100">Offered</a></li>
                   <li>
-                    <a href="#" class="bg-gray-100">Hired / Rejected</a>
+                    <a href="javascript:void(0);" class="bg-gray-100">Hired / Rejected</a>
                   </li>
                 </ul>
               </div>
@@ -254,10 +254,10 @@
                   <div class="mb-3">
                     <p class="mb-1">Recruiter</p>
                     <div class="d-flex align-items-center">
-                      <a href="#" class="avatar avatar-sm avatar-rounded me-2">
+                      <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded me-2">
                         <img src="@/assets/img/users/user-01.jpg" alt="Img" />
                       </a>
-                      <h6><a href="#">Anthony Lewis</a></h6>
+                      <h6><a href="javascript:void(0);">Anthony Lewis</a></h6>
                     </div>
                   </div>
                 </div>
@@ -265,8 +265,8 @@
             </div>
             <div class="card-footer">
               <div class="d-flex align-items-center justify-content-end">
-                <a href="#" class="btn btn-dark me-3">Reject</a>
-                <a href="#" class="btn btn-primary">Move to Next Stage</a>
+                <a href="javascript:void(0);" class="btn btn-dark me-3">Reject</a>
+                <a href="javascript:void(0);" class="btn btn-primary">Move to Next Stage</a>
               </div>
             </div>
           </div>

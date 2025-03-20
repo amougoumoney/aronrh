@@ -22,18 +22,19 @@ export default {
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
           <h5 class="mb-2">{{ $t('employeeStatus') }}</h5>
           <div class="dropdown mb-2">
-            <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center" data-bs-toggle="dropdown">
+            <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              data-bs-toggle="dropdown">
               <i class="ti ti-calendar me-1"></i>{{ $t('thisWeek') }}
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
-                <a href="#" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">{{ $t('today') }}</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('today') }}</a>
               </li>
             </ul>
           </div>
@@ -124,7 +125,7 @@ export default {
             </div>
           </div>
           <router-link to="/employee/employee-list" class="btn btn-light btn-md w-100">{{ $t('viewAllEmployees')
-            }}</router-link>
+          }}</router-link>
         </div>
       </div>
     </div>
@@ -136,18 +137,19 @@ export default {
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
           <h5 class="mb-2">{{ $t('attendanceOverview') }}</h5>
           <div class="dropdown mb-2">
-            <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center" data-bs-toggle="dropdown">
+            <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              data-bs-toggle="dropdown">
               <i class="ti ti-calendar me-1"></i>{{ $t('today') }}
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
-                <a href="#" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1">{{ $t('today') }}</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('today') }}</a>
               </li>
             </ul>
           </div>
@@ -202,13 +204,13 @@ export default {
                 <span class="avatar avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-29.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10" href="#">
+                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10" href="javascript:void(0);">
                   +1
                 </a>
               </div>
             </div>
-            <router-link to="/leave/leaves-admin"
-              class="fs-13 link-primary text-decoration-underline mb-2">{{ $t('viewDetails') }}</router-link>
+            <router-link to="/leave/leaves-admin" class="fs-13 link-primary text-decoration-underline mb-2">{{
+              $t('viewDetails') }}</router-link>
           </div>
         </div>
       </div>
@@ -222,37 +224,37 @@ export default {
           <h5 class="mb-2">{{ $t('clock-In/Out') }}</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
-              <a href="#"
+              <a href="javascript:void(0);"
                 class="dropdown-toggle btn btn-white btn-sm d-inline-flex align-items-center border-0 fs-13 me-2"
                 data-bs-toggle="dropdown">
                 {{ $t('allDepartments') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('finance') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('finance') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('development') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('development') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('marketing') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('marketing') }}</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown mb-2">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>{{ $t('today') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisMonth') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('thisWeek') }}</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">{{ $t('today') }}</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('today') }}</a>
                 </li>
               </ul>
             </div>
@@ -262,7 +264,7 @@ export default {
           <div>
             <div class="d-flex align-items-center justify-content-between mb-3 p-2 border border-dashed br-5">
               <div class="d-flex align-items-center">
-                <a href="#" class="avatar flex-shrink-0">
+                <a href="javascript:void(0);" class="avatar flex-shrink-0">
                   <img src="@/assets/img/profiles/avatar-24.jpg" class="rounded-circle border border-2" alt="img" />
                 </a>
                 <div class="ms-2">
@@ -271,14 +273,14 @@ export default {
                 </div>
               </div>
               <div class="d-flex align-items-center">
-                <a href="#" class="link-default me-2"><i class="ti ti-clock-share"></i></a>
+                <a href="javascript:void(0);" class="link-default me-2"><i class="ti ti-clock-share"></i></a>
                 <span class="fs-10 fw-medium d-inline-flex align-items-center badge badge-success"><i
                     class="ti ti-circle-filled fs-5 me-1"></i>09:15</span>
               </div>
             </div>
             <div class="d-flex align-items-center justify-content-between mb-3 p-2 border br-5">
               <div class="d-flex align-items-center">
-                <a href="#" class="avatar flex-shrink-0">
+                <a href="javascript:void(0);" class="avatar flex-shrink-0">
                   <img src="@/assets/img/profiles/avatar-23.jpg" class="rounded-circle border border-2" alt="img" />
                 </a>
                 <div class="ms-2">
@@ -287,7 +289,7 @@ export default {
                 </div>
               </div>
               <div class="d-flex align-items-center">
-                <a href="#" class="link-default me-2"><i class="ti ti-clock-share"></i></a>
+                <a href="javascript:void(0);" class="link-default me-2"><i class="ti ti-clock-share"></i></a>
                 <span class="fs-10 fw-medium d-inline-flex align-items-center badge badge-success"><i
                     class="ti ti-circle-filled fs-5 me-1"></i>09:36</span>
               </div>
@@ -295,7 +297,7 @@ export default {
             <div class="mb-3 p-2 border br-5">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
-                  <a href="#" class="avatar flex-shrink-0">
+                  <a href="javascript:void(0);" class="avatar flex-shrink-0">
                     <img src="@/assets/img/profiles/avatar-27.jpg" class="rounded-circle border border-2" alt="img" />
                   </a>
                   <div class="ms-2">
@@ -304,7 +306,7 @@ export default {
                   </div>
                 </div>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="link-default me-2"><i class="ti ti-clock-share"></i></a>
+                  <a href="javascript:void(0);" class="link-default me-2"><i class="ti ti-clock-share"></i></a>
                   <span class="fs-10 fw-medium d-inline-flex align-items-center badge badge-success"><i
                       class="ti ti-circle-filled fs-5 me-1"></i>09:15</span>
                 </div>
@@ -347,13 +349,13 @@ export default {
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="#" class="link-default me-2"><i class="ti ti-clock-share"></i></a>
+              <a href="javascript:void(0);" class="link-default me-2"><i class="ti ti-clock-share"></i></a>
               <span class="fs-10 fw-medium d-inline-flex align-items-center badge badge-danger"><i
                   class="ti ti-circle-filled fs-5 me-1"></i>08:35</span>
             </div>
           </div>
           <router-link to="/reports/attendance-report" class="btn btn-light btn-md w-100">{{ $t('viewAllAttendance')
-            }}</router-link>
+          }}</router-link>
         </div>
       </div>
     </div>

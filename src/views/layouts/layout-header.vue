@@ -17,7 +17,7 @@
         </router-link>
       </div>
 
-      <a id="mobile_btn" class="mobile_btn" @click="toggleSidebar1" href="#">
+      <a id="mobile_btn" class="mobile_btn" @click="toggleSidebar1" href="javascript:void(0);">
         <span class="bar-icon">
           <span></span>
           <span></span>
@@ -28,7 +28,7 @@
       <div class="header-user">
         <div class="nav user-menu nav-list">
           <div class="me-auto d-flex align-items-center" id="header-search">
-            <a id="toggle_btn" href="#" @click="toggleSidebar" class="btn btn-menubar me-1">
+            <a id="toggle_btn" href="javascript:void(0);" @click="toggleSidebar" class="btn btn-menubar me-1">
               <i class="ti ti-arrow-bar-to-left"></i>
             </a>
             <!-- Search -->
@@ -51,13 +51,13 @@
             </div>
 
             <div class="me-1">
-              <a href="#" class="btn btn-menubar btnFullscreen" @click="initFullScreen">
+              <a href="javascript:void(0);" class="btn btn-menubar btnFullscreen" @click="initFullScreen">
                 <i class="ti ti-maximize"></i>
               </a>
             </div>
 
             <div class="me-1 notification_item">
-              <a href="#" class="btn btn-menubar position-relative me-1" id="notification_popup"
+              <a href="javascript:void(0);" class="btn btn-menubar position-relative me-1" id="notification_popup"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-bell"></i>
                 <span class="notification-status-dot"></span>
@@ -66,24 +66,24 @@
                 <div class="d-flex align-items-center justify-content-between border-bottom p-0 pb-3 mb-3">
                   <h4 class="notification-title">{{ $t('notifications') }} (2)</h4>
                   <div class="d-flex align-items-center">
-                    <a href="#" class="text-primary fs-15 me-3 lh-1">{{ $t('markAllAsRead') }}</a>
+                    <a href="javascript:void(0);" class="text-primary fs-15 me-3 lh-1">{{ $t('markAllAsRead') }}</a>
                     <div class="dropdown">
-                      <a href="#" class="bg-white dropdown-toggle" data-bs-toggle="dropdown">
+                      <a href="javascript:void(0);" class="bg-white dropdown-toggle" data-bs-toggle="dropdown">
                         <i class="ti ti-calendar-due me-1"></i>{{ $t('today') }}
                       </a>
                       <ul class="dropdown-menu mt-2 p-3">
                         <li>
-                          <a href="#" class="dropdown-item rounded-1">
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1">
                             {{ $t('thisWeek') }}
                           </a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1">
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1">
                             {{ $t('lastWeek') }}
                           </a>
                         </li>
                         <li>
-                          <a href="#" class="dropdown-item rounded-1">
+                          <a href="javascript:void(0);" class="dropdown-item rounded-1">
                             {{ $t('lastMonth') }}
                           </a>
                         </li>
@@ -166,14 +166,14 @@
                   </div>
                 </div>
                 <div class="d-flex p-0">
-                  <a href="#" class="btn btn-light w-100 me-2">{{ $t('cancel') }}</a>
+                  <a href="javascript:void(0);" class="btn btn-light w-100 me-2">{{ $t('cancel') }}</a>
                   <router-link to="/crm/activity" class="btn btn-primary w-100">{{ $t('viewAll') }}</router-link>
                 </div>
               </div>
             </div>
 
             <div class="dropdown profile-dropdown">
-              <a href="#" class="dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+              <a href="javascript:void(0);" class="dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
                 <span class="avatar avatar-sm online">
                   <img src="@/assets/img/profiles/avatar-12.jpg" alt="Img" class="img-fluid rounded-circle" />
                 </span>
@@ -208,7 +208,7 @@
 
                   </div>
                   <div class="card-footer">
-                    <a class="dropdown-item d-inline-flex align-items-center p-0 py-2" href="#"
+                    <a class="dropdown-item d-inline-flex align-items-center p-0 py-2" href="javascript:void(0);"
                       @click.prevent="handleLogout">
                       <i class="ti ti-login me-2"></i>{{ $t('logout') }}
                     </a>
@@ -222,12 +222,12 @@
 
       <!-- Mobile Menu -->
       <div class="dropdown mobile-user-menu">
-        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i
-            class="fa fa-ellipsis-v"></i></a>
+        <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
         <div class="dropdown-menu dropdown-menu-end">
           <router-link class="dropdown-item" to="/pages/profile">{{ $t('myProfil') }}</router-link>
           <router-link class="dropdown-item" to="/general-settings/profile-settings">{{ $t('settings') }}</router-link>
-          <a class="dropdown-item" href="#" @click.prevent="handleLogout">{{ $t('logout') }}</a>
+          <a class="dropdown-item" href="javascript:void(0);" @click.prevent="handleLogout">{{ $t('logout') }}</a>
         </div>
       </div>
       <!-- /Mobile Menu -->

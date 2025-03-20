@@ -10,7 +10,8 @@
 
     <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="languageDropdown">
       <li v-for="(language, i) in languages" :key="i">
-        <a href="#" class="dropdown-item d-flex align-items-center rounded-1" @click="setLanguage(language)">
+        <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center rounded-1"
+          @click="setLanguage(language)">
           <img :src="language.icon" alt="Language icon" class="me-2 rounded-circle"
             style="width: 20px; height: 20px;" />
           <span class="me-auto">{{ language.name }}</span>

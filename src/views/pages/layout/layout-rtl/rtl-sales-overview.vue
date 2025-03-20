@@ -7,20 +7,20 @@
           <h5 class="mb-2">Sales Overview</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
-              <a href="#"
+              <a href="javascript:void(0);"
                 class="dropdown-toggle btn btn-white border-0 btn-sm d-inline-flex align-items-center fs-13 ms-2"
                 data-bs-toggle="dropdown">
                 All Departments
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">UI/UX Designer</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">UI/UX Designer</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">HR Manager</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">HR Manager</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Junior Tester</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Junior Tester</a>
                 </li>
               </ul>
             </div>
@@ -54,37 +54,37 @@
           <h5 class="mb-2">Invoices</h5>
           <div class="d-flex align-items-center">
             <div class="dropdown mb-2">
-              <a href="#"
+              <a href="javascript:void(0);"
                 class="dropdown-toggle btn btn-white btn-sm d-inline-flex align-items-center fs-13 ms-2 border-0"
                 data-bs-toggle="dropdown">
                 Invoices
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Invoices</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Invoices</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Paid</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Paid</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Unpaid</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Unpaid</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown mb-2">
-              <a href="#" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-calendar ms-1"></i>This Week
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Month</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">This Week</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1">Today</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
                 </li>
               </ul>
             </div>

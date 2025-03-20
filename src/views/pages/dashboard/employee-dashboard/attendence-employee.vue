@@ -26,7 +26,7 @@
               <i class="ti ti-fingerprint text-primary me-1"></i>
               Punch In at 10.00 AM
             </h6>
-            <a href="#" class="btn btn-primary w-100">Punch Out</a>
+            <a href="javascript:void(0);" class="btn btn-primary w-100">Punch Out</a>
           </div>
         </div>
       </div>

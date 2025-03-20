@@ -177,12 +177,12 @@ export default {
                     <div class="row">
                       <div class="col-md-4">
                         <div class="d-flex align-items-center file-name-icon">
-                          <a href="#" class="avatar avatar-md border avatar-rounded">
+                          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
                             <img src="@/assets/img/users/user-32.jpg" class="img-fluid" alt="img" />
                           </a>
                           <div class="ms-2">
                             <h6 class="fw-medium fs-14">
-                              <a href="#">Anthony Lewis</a>
+                              <a href="javascript:void(0);">Anthony Lewis</a>
                             </h6>
                             <span class="fs-12 fw-normal">UI/UX Team</span>
                           </div>
@@ -245,7 +245,7 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/attendance/overtime" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>

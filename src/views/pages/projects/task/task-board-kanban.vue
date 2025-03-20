@@ -231,17 +231,17 @@ export default {
             <span class="badge bg-light rounded-pill">{{ module.Count }}</span>
           </div>
           <div class="dropdown">
-            <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+            <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
               <i class="ti ti-dots-vertical"></i>
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-3">
               <li>
-                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal" data-bs-target="#edit_task"><i
-                    class="ti ti-edit me-2"></i>Edit</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                  data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                    class="ti ti-trash me-2"></i>Delete</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                  data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
               </li>
             </ul>
           </div>
@@ -260,16 +260,16 @@ export default {
                     </span>
                   </div>
                   <div class="dropdown">
-                    <a href="#" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center" data-bs-toggle="dropdown">
                       <i class="ti ti-dots-vertical"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end p-3">
                       <li>
-                        <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                           data-bs-target="#edit_task"><i class="ti ti-edit me-2"></i>Edit</a>
                       </li>
                       <li>
-                        <a href="#" class="dropdown-item rounded-1" data-bs-toggle="modal"
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1" data-bs-toggle="modal"
                           data-bs-target="#delete_modal"><i class="ti ti-trash me-2"></i>Delete</a>
                       </li>
                     </ul>
@@ -308,9 +308,9 @@ export default {
                     <span class="avatar avatar-rounded bg-primary fs-12"> 1+ </span>
                   </div>
                   <div class="d-flex align-items-center">
-                    <a href="#" class="d-flex align-items-center text-dark me-2"><i
+                    <a href="javascript:void(0);" class="d-flex align-items-center text-dark me-2"><i
                         class="ti ti-message-circle text-gray me-1"></i>14</a>
-                    <a href="#" class="d-flex align-items-center text-dark"><i
+                    <a href="javascript:void(0);" class="d-flex align-items-center text-dark"><i
                         class="ti ti-paperclip text-gray me-1"></i>14</a>
                   </div>
                 </div>
@@ -320,7 +320,8 @@ export default {
         </draggable>
       </div>
       <div class="pt-2">
-        <a href="#" class="btn btn-white border border-dashed d-flex align-items-center justify-content-center"
+        <a href="javascript:void(0);"
+          class="btn btn-white border border-dashed d-flex align-items-center justify-content-center"
           data-bs-toggle="modal" data-bs-target="#add_task">
           <i class="ti ti-plus me-2"></i>
           New Task

@@ -140,7 +140,7 @@ export default {
     <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
         <template #bodyCell="{ column, record }">
             <template v-if="column.key === 'City_Name'">
-                <h6 class="fw-medium"><a href="#">{{ record.City_Name }}</a></h6>
+                <h6 class="fw-medium"><a href="javascript:void(0);">{{ record.City_Name }}</a></h6>
             </template>
             <template v-if="column.key === 'Status'">
                 <span class="badge badge-success d-inline-flex align-items-center badge-xs">
@@ -149,9 +149,10 @@ export default {
             </template>
             <template v-if="column.key === 'action'">
                 <div class="action-icon d-inline-flex">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#edit_cities" class="me-2"><i
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_cities" class="me-2"><i
                             class="ti ti-edit"></i></a>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                            class="ti ti-trash"></i></a>
                 </div>
             </template>
         </template>

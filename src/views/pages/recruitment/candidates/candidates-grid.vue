@@ -87,24 +87,26 @@ export default {
           </div>
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="head-icons ms-2">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -127,59 +129,59 @@ export default {
                 </div>
               </div>
               <div class="dropdown me-3">
-                <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Role
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Accountant</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Accountant</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">App Developer</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">App Developer</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Technician</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Technician</a>
                   </li>
                 </ul>
               </div>
               <div class="dropdown me-3">
-                <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Select Status
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Select Status</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Select Status</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Active</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Active</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Inactive</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Inactive</a>
                   </li>
                 </ul>
               </div>
               <div class="dropdown">
-                <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Sort By : Last 7 Days
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Recently Added</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Ascending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Desending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last Month</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                   </li>
                 </ul>
               </div>
@@ -195,14 +197,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-39.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">Harold Gaynor</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">Harold Gaynor</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-001</span>
                     </div>
@@ -233,14 +236,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-40.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">Sandra Ornellas</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">Sandra Ornellas</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-002</span>
                     </div>
@@ -271,14 +275,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-41.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">John Harris</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">John Harris</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-003</span>
                     </div>
@@ -309,14 +314,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-42.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">Carole Langan</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">Carole Langan</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-004</span>
                     </div>
@@ -347,14 +353,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-44.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">Charles Marks</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">Charles Marks</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-005</span>
                     </div>
@@ -385,14 +392,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-43.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">Kerry Drake</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">Kerry Drake</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-006</span>
                     </div>
@@ -423,14 +431,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-46.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">David Carmona</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">David Carmona</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-007</span>
                     </div>
@@ -461,14 +470,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-45.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">Margaret Soto</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">Margaret Soto</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-008</span>
                     </div>
@@ -499,14 +509,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-48.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">Jeffrey Thaler</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">Jeffrey Thaler</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-009</span>
                     </div>
@@ -537,14 +548,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-47.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">Joyce Golston</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">Joyce Golston</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-010</span>
                     </div>
@@ -575,14 +587,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-49.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">Cedric Rosalez</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">Cedric Rosalez</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-011</span>
                     </div>
@@ -613,14 +626,15 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center flex-shrink-0">
-                  <a href="#" class="avatar avatar-lg avatar rounded-circle me-2" data-bs-toggle="offcanvas"
-                    data-bs-target="#candidate_details">
+                  <a href="javascript:void(0);" class="avatar avatar-lg avatar rounded-circle me-2"
+                    data-bs-toggle="offcanvas" data-bs-target="#candidate_details">
                     <img src="@/assets/img/users/user-50.jpg" class="img-fluid h-auto w-auto" alt="img" />
                   </a>
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-wrap mb-1">
                       <h6 class="fs-16 fw-semibold me-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#candidate_details">Lillie Diaz</a>
+                        <a href="javascript:void(0);" data-bs-toggle="offcanvas"
+                          data-bs-target="#candidate_details">Lillie Diaz</a>
                       </h6>
                       <span class="badge bg-primary-transparent">Cand-012</span>
                     </div>
@@ -648,7 +662,7 @@ export default {
         </div>
         <div class="col-md-12">
           <div class="text-center mb-4">
-            <a href="#" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
+            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
           </div>
         </div>
       </div>
@@ -658,7 +672,7 @@ export default {
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

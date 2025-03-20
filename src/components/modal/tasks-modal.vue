@@ -145,14 +145,14 @@ export default {
                       <h6 class="fs-12 fw-medium me-1">Logo.zip</h6>
                       <span class="badge badge-soft-info">21MB </span>
                     </div>
-                    <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
                   </div>
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
                       <h6 class="fs-12 fw-medium me-1">Files.zip</h6>
                       <span class="badge badge-soft-info">25MB </span>
                     </div>
-                    <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
                   </div>
                 </div>
               </div>
@@ -276,14 +276,14 @@ export default {
                       <h6 class="fs-12 fw-medium me-1">Logo.zip</h6>
                       <span class="badge badge-soft-info">21MB </span>
                     </div>
-                    <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
                   </div>
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
                       <h6 class="fs-12 fw-medium me-1">Files.zip</h6>
                       <span class="badge badge-soft-info">25MB </span>
                     </div>
-                    <a href="#" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-sm btn-icon"><i class="ti ti-trash"></i></a>
                   </div>
                 </div>
               </div>
@@ -372,7 +372,7 @@ export default {
           <span class="badge badge-danger d-inline-flex align-items-center"><i
               class="ti ti-square me-1"></i>Urgent</span>
           <span><i class="ti ti-star-filled text-warning"></i></span>
-          <a href="#"><i class="ti ti-trash text-white"></i></a>
+          <a href="javascript:void(0);"><i class="ti ti-trash text-white"></i></a>
           <button type="button" class="btn-close custom-btn-close bg-transparent fs-16 text-white position-static"
             data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
@@ -457,7 +457,7 @@ export default {
             you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/projects/tasks" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>

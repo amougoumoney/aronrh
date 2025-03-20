@@ -8,23 +8,24 @@
               <span class="badge bg-outline-warning d-inline-flex align-items-center"><i
                   class="fas fa-circle fs-6 me-1"></i>{{ item.Badge }}</span>
               <div>
-                <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fas fa-ellipsis-v"></i>
                 </a>
                 <div class="dropdown-menu notes-menu dropdown-menu-end">
-                  <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-note-units"><span><i
-                        data-feather="edit"></i></span>Edit</a>
-                  <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-modal"><span><i
-                        data-feather="trash-2"></i></span>Delete</a>
-                  <a href="#" class="dropdown-item"><span><i data-feather="star"></i></span>Not Important</a>
-                  <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-note-units"><span><i
-                        data-feather="eye"></i></span>View</a>
+                  <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal"
+                    data-bs-target="#edit-note-units"><span><i data-feather="edit"></i></span>Edit</a>
+                  <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal"
+                    data-bs-target="#delete-modal"><span><i data-feather="trash-2"></i></span>Delete</a>
+                  <a href="javascript:void(0);" class="dropdown-item"><span><i data-feather="star"></i></span>Not
+                    Important</a>
+                  <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal"
+                    data-bs-target="#view-note-units"><span><i data-feather="eye"></i></span>View</a>
                 </div>
               </div>
             </div>
             <div class="my-3">
               <h5 class="text-truncate mb-1">
-                <a href="#">{{ item.Title }}</a>
+                <a href="javascript:void(0);">{{ item.Title }}</a>
               </h5>
               <p class="mb-3 d-flex align-items-center text-dark">
                 <i class="ti ti-calendar me-1"></i>20 Jan 2024
@@ -35,7 +36,7 @@
             </div>
             <div class="d-flex align-items-center justify-content-between border-top pt-3">
               <div class="d-flex align-items-center">
-                <a href="#" class="avatar avatar-md me-2">
+                <a href="javascript:void(0);" class="avatar avatar-md me-2">
                   <img :src="require(`@/assets/img/profiles/${item.Image}`)" alt="Profile"
                     class="img-fluid rounded-circle" />
                 </a>
@@ -43,10 +44,10 @@
                     class="fas fa-square square-rotate fs-10 me-1"></i>{{ item.Role }}</span>
               </div>
               <div class="d-flex align-items-center">
-                <a href="#" class="me-2">
+                <a href="javascript:void(0);" class="me-2">
                   <span><i class="fas fa-star text-warning"></i></span>
                 </a>
-                <a href="#">
+                <a href="javascript:void(0);">
                   <span><i class="ti ti-trash text-danger"></i></span>
                 </a>
               </div>

@@ -36,11 +36,11 @@
                 <span class="avatar avatar-rounded">
                   <img class="border border-white" src="@/assets/img/users/user-58.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium" href="#">
+                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium" href="javascript:void(0);">
                   +3
                 </a>
               </div>
-              <a href="#" class="btn btn-primary btn-xs">{{ $t('joinMeeting') }}</a>
+              <a href="javascript:void(0);" class="btn btn-primary btn-xs">{{ $t('joinMeeting') }}</a>
             </div>
           </div>
           <div class="bg-transparent-secondary p-3 br-5 mb-0">
@@ -71,11 +71,11 @@
                 <span class="avatar avatar-rounded">
                   <img class="border border-white" src="@/assets/img/users/user-58.jpg" alt="img" />
                 </span>
-                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium" href="#">
+                <a class="avatar bg-primary avatar-rounded text-fixed-white fs-10 fw-medium" href="javascript:void(0);">
                   +3
                 </a>
               </div>
-              <a href="#" class="btn btn-primary btn-xs">{{ $t('joinMeeting') }}</a>
+              <a href="javascript:void(0);" class="btn btn-primary btn-xs">{{ $t('joinMeeting') }}</a>
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@
       <div class="card flex-fill">
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
           <h5 class="mb-2">{{ $t('birthdays') }}</h5>
-          <a href="#" class="btn btn-light btn-md mb-2">{{ $t('viewAll') }}</a>
+          <a href="javascript:void(0);" class="btn btn-light btn-md mb-2">{{ $t('viewAll') }}</a>
         </div>
         <div class="card-body pb-1">
           <h6 class="mb-2">{{ $t('today') }}</h6>
@@ -226,8 +226,8 @@
                   <p class="fs-13">{{ $t('IOSDeveloper') }}</p>
                 </div>
               </div>
-              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i
-                  class="ti ti-cake me-1"></i>{{ $t('send') }}</a>
+              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>{{
+                $t('send') }}</a>
             </div>
           </div>
           <h6 class="mb-2">{{ $t('tomorow') }}</h6>
@@ -242,8 +242,8 @@
                   <p class="fs-13">{{ $t('UI/UXDesigner') }}</p>
                 </div>
               </div>
-              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i
-                  class="ti ti-cake me-1"></i>{{ $t('send') }}</a>
+              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>{{
+                $t('send') }}</a>
             </div>
           </div>
           <div class="bg-light p-2 border border-dashed rounded-top mb-3">
@@ -257,8 +257,8 @@
                   <p class="fs-13">{{ $t('AndroidDeveloper') }}</p>
                 </div>
               </div>
-              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i
-                  class="ti ti-cake me-1"></i>{{ $t('send') }}</a>
+              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>{{
+                $t('send') }}</a>
             </div>
           </div>
           <h6 class="mb-2">25 Jan 2025</h6>
@@ -273,8 +273,8 @@
                   <p class="fs-13">{{ $t('.NetDeveloper') }}</p>
                 </div>
               </div>
-              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i
-                  class="ti ti-cake me-1"></i>{{ $t('send') }}</a>
+              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>{{
+                $t('send') }}</a>
             </div>
           </div>
         </div>

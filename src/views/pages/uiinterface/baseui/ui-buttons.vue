@@ -303,7 +303,7 @@
             </div>
             <div class="card-body">
               <div class="btn-list">
-                <a class="btn btn-primary m-0" href="#" role="button">Link</a>
+                <a class="btn btn-primary m-0" href="javascript:void(0);" role="button">Link</a>
                 <button class="btn btn-primary m-0" type="submit">Button</button>
                 <input class="btn btn-primary" type="button" value="Input" />
                 <input class="btn btn-primary" type="submit" value="Submit" />

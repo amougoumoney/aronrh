@@ -180,7 +180,7 @@ export default {
       <template v-if="column.key === 'Task_Name'">
         <div class="d-flex align-items-center file-name-icon">
           <h6 class="fw-medium">
-            <a href="#">{{ record.Task_Name }}</a>
+            <a href="javascript:void(0);">{{ record.Task_Name }}</a>
           </h6>
         </div>
       </template>

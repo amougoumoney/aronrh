@@ -26,7 +26,8 @@
             <div class="row earning-row">
               <div class="d-flex justify-content-between mb-3">
                 <label class="form-label">Earnings</label>
-                <a href="#" class="add-earnings text-primary mb-2"><i class="ti ti-plus me-2"></i>Add New</a>
+                <a href="javascript:void(0);" class="add-earnings text-primary mb-2"><i class="ti ti-plus me-2"></i>Add
+                  New</a>
               </div>
               <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
@@ -77,7 +78,8 @@
             <div class="row deduction-row">
               <div class="d-flex justify-content-between mb-3">
                 <label class="form-label">Deductions</label>
-                <a href="#" class="add-deduction text-primary mb-2"><i class="ti ti-plus me-2"></i>Add New</a>
+                <a href="javascript:void(0);" class="add-deduction text-primary mb-2"><i class="ti ti-plus me-2"></i>Add
+                  New</a>
               </div>
               <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
@@ -164,7 +166,8 @@
             <div class="row earning-row">
               <div class="d-flex justify-content-between mb-3">
                 <label class="form-label">Earnings</label>
-                <a href="#" class="add-earnings text-primary mb-2"><i class="ti ti-plus me-2"></i>Add New</a>
+                <a href="javascript:void(0);" class="add-earnings text-primary mb-2"><i class="ti ti-plus me-2"></i>Add
+                  New</a>
               </div>
               <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
@@ -215,7 +218,8 @@
             <div class="row deduction-row">
               <div class="d-flex justify-content-between mb-3">
                 <label class="form-label">Deductions</label>
-                <a href="#" class="add-deduction text-primary mb-2"><i class="ti ti-plus me-2"></i>Add New</a>
+                <a href="javascript:void(0);" class="add-deduction text-primary mb-2"><i class="ti ti-plus me-2"></i>Add
+                  New</a>
               </div>
               <div class="col-12 col-sm-6 col-md-3">
                 <div class="mb-3">
@@ -288,7 +292,7 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
             <router-link to="/payroll/employee-salary" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>

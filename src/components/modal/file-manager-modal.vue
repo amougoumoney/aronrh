@@ -6,11 +6,12 @@
         <h4 class="mb-1 text-white">Preview</h4>
       </div>
       <div class="d-flex align-items-center">
-        <a href="#" class="d-flex align-items-center justify-content-center me-3"><i
+        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-3"><i
             class="ti ti-star-filled filled text-warning"></i></a>
-        <a href="#" class="d-flex align-items-center justify-content-center text-white me-3"><i
+        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center text-white me-3"><i
             class="ti ti-trash"></i></a>
-        <a href="#" class="custom-btn-close d-flex align-items-center justify-content-center text-white"
+        <a href="javascript:void(0);"
+          class="custom-btn-close d-flex align-items-center justify-content-center text-white"
           data-bs-dismiss="offcanvas"><i class="ti ti-x"></i></a>
       </div>
     </div>
@@ -147,7 +148,8 @@
         </div>
         <div class="d-flex align-items-center justify-content-between">
           <h4 class="mb-3">Members</h4>
-          <a href="#" class="fs-12 mb-3" data-bs-toggle="modal" data-bs-target="#add_member">Add Members</a>
+          <a href="javascript:void(0);" class="fs-12 mb-3" data-bs-toggle="modal" data-bs-target="#add_member">Add
+            Members</a>
         </div>
         <div class="card shadow-none mb-0">
           <div class="card-body p-3 pb-0">
@@ -161,7 +163,7 @@
                   <p class="fs-12">Finance</p>
                 </div>
               </div>
-              <a href="#" class="user-icon mb-2">
+              <a href="javascript:void(0);" class="user-icon mb-2">
                 <i class="ti ti-user-x fs-16"></i>
               </a>
             </div>
@@ -175,7 +177,7 @@
                   <p class="fs-12">Developer</p>
                 </div>
               </div>
-              <a href="#" class="user-icon mb-2">
+              <a href="javascript:void(0);" class="user-icon mb-2">
                 <i class="ti ti-user-x fs-16"></i>
               </a>
             </div>
@@ -189,7 +191,7 @@
                   <p class="fs-12">Executive Officer</p>
                 </div>
               </div>
-              <a href="#" class="user-icon mb-2">
+              <a href="javascript:void(0);" class="user-icon mb-2">
                 <i class="ti ti-user-x fs-16"></i>
               </a>
             </div>
@@ -203,7 +205,7 @@
                   <p class="fs-12">Manager</p>
                 </div>
               </div>
-              <a href="#" class="user-icon mb-2">
+              <a href="javascript:void(0);" class="user-icon mb-2">
                 <i class="ti ti-user-x fs-16"></i>
               </a>
             </div>
@@ -217,7 +219,7 @@
                   <p class="fs-12">Finance</p>
                 </div>
               </div>
-              <a href="#" class="user-icon mb-2">
+              <a href="javascript:void(0);" class="user-icon mb-2">
                 <i class="ti ti-user-x fs-16"></i>
               </a>
             </div>

@@ -255,13 +255,13 @@
             <div class="card-body">
               <ul class="nav nav-tabs border-bottom-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+                  <a class="nav-link active" aria-current="page" href="javascript:void(0);">Active</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="javascript:void(0);">Link</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="javascript:void(0);">Link</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled">Disabled</a>
@@ -278,13 +278,13 @@
             <div class="card-body">
               <ul class="nav nav-pills">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+                  <a class="nav-link active" aria-current="page" href="javascript:void(0);">Active</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="javascript:void(0);">Link</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="javascript:void(0);">Link</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled">Disabled</a>
@@ -1889,7 +1889,7 @@
                     aria-selected="true">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);" role="button"
                     aria-expanded="false">Company</a>
                   <ul class="dropdown-menu">
                     <li>
@@ -1897,16 +1897,16 @@
                         aria-selected="false">About</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </li>
@@ -1960,22 +1960,22 @@
                     aria-selected="true">Products</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);" role="button"
                     aria-expanded="false">Cart</a>
                   <ul class="dropdown-menu">
                     <li>
                       <a class="dropdown-item" data-bs-toggle="tab" role="tab" aria-current="page" href="#pill-wishlist"
                         aria-selected="false">Wishlist</a>
                     </li>
-                    <li><a class="dropdown-item" href="#">Liked</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Liked</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Save For Later</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Save For Later</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Recently Viewed</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Recently Viewed</a>
                     </li>
                   </ul>
                 </li>

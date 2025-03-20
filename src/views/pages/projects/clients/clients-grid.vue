@@ -18,28 +18,30 @@
           </div>
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
                 <i class="ti ti-file-export me-1"></i>Export
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item rounded-1"><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
+                      class="ti ti-file-type-xls me-1"></i>Export as Excel
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="mb-2">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#add_client"
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_client"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Client</a>
           </div>
           <div class="ms-2 head-icons">
-            <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse"
-              id="collapse-header" @click="toggleHeader">
+            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
               <i class="ti ti-chevrons-up"></i>
             </a>
           </div>
@@ -154,42 +156,44 @@
             <h5>Client Grid</h5>
             <div class="d-flex align-items-center flex-wrap row-gap-3">
               <div class="dropdown me-2">
-                <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);"
+                  class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Select Status
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Select Status</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Select Status</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Active</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Active</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Inactive</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Inactive</a>
                   </li>
                 </ul>
               </div>
               <div class="dropdown">
-                <a href="#" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+                <a href="javascript:void(0);"
+                  class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
                   Sort By : Last 7 Days
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Recently Added</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Ascending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Desending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last Month</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item rounded-1">Last 7 Days</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
                   </li>
                 </ul>
               </div>
@@ -220,12 +224,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -253,7 +258,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-03.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +1
                     </a>
                   </div>
@@ -266,8 +271,10 @@
                   <h6 class="fw-normal text-truncate">BrightWave Innovations</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -293,12 +300,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -326,7 +334,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-06.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +2
                     </a>
                   </div>
@@ -339,8 +347,10 @@
                   <h6 class="fw-normal text-truncate">Stellar Dynamics</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -366,12 +376,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -399,7 +410,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-09.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +2
                     </a>
                   </div>
@@ -412,8 +423,10 @@
                   <h6 class="fw-normal text-truncate">Quantum Nexus</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -439,12 +452,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -472,7 +486,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-12.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +2
                     </a>
                   </div>
@@ -485,8 +499,10 @@
                   <h6 class="fw-normal text-truncate">EcoVision Enterprises</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -512,12 +528,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -545,7 +562,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-12.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +2
                     </a>
                   </div>
@@ -558,8 +575,10 @@
                   <h6 class="fw-normal text-truncate">Aurora Technologies</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -585,12 +604,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -618,7 +638,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-15.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +3
                     </a>
                   </div>
@@ -631,8 +651,10 @@
                   <h6 class="fw-normal text-truncate">BlueSky Ventures</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -658,12 +680,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -691,7 +714,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-18.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +3
                     </a>
                   </div>
@@ -704,8 +727,10 @@
                   <h6 class="fw-normal text-truncate">TerraFusion Energy</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -731,12 +756,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -764,7 +790,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-21.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +2
                     </a>
                   </div>
@@ -777,8 +803,10 @@
                   <h6 class="fw-normal text-truncate">UrbanPulse Design</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -804,12 +832,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -837,7 +866,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-24.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +2
                     </a>
                   </div>
@@ -850,8 +879,10 @@
                   <h6 class="fw-normal text-truncate">Nimbus Networks</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -877,12 +908,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -910,7 +942,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-27.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +1
                     </a>
                   </div>
@@ -923,8 +955,10 @@
                   <h6 class="fw-normal text-truncate">Nimbus Networks</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -950,12 +984,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -983,7 +1018,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-30.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +1
                     </a>
                   </div>
@@ -996,8 +1031,10 @@
                   <h6 class="fw-normal text-truncate">Nimbus Networks</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -1023,12 +1060,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal" data-bs-target="#edit_client">
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#edit_client">
                         <i class="ti ti-edit me-1"></i>Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item rounded-1" href="#" data-bs-toggle="modal"
+                      <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
                     </li>
                   </ul>
@@ -1056,7 +1094,7 @@
                     <span class="avatar avatar-rounded">
                       <img src="@/assets/img/users/user-33.jpg" class="border border-white" alt="img" />
                     </span>
-                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="#">
+                    <a class="avatar bg-primary avatar-rounded text-fixed-white fs-12" href="javascript:void(0);">
                       +1
                     </a>
                   </div>
@@ -1069,8 +1107,10 @@
                   <h6 class="fw-normal text-truncate">Phoenix Solutions</h6>
                 </div>
                 <div class="icons-social d-flex align-items-center">
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light me-2"><i class="ti ti-message"></i></a>
-                  <a href="#" class="avatar avatar-rounded avatar-sm bg-light"><i class="ti ti-phone"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light me-2"><i
+                      class="ti ti-message"></i></a>
+                  <a href="javascript:void(0);" class="avatar avatar-rounded avatar-sm bg-light"><i
+                      class="ti ti-phone"></i></a>
                 </div>
               </div>
             </div>
@@ -1078,7 +1118,7 @@
         </div>
         <div class="col-md-12">
           <div class="text-center mb-4">
-            <a href="#" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
+            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
           </div>
         </div>
       </div>
@@ -1088,7 +1128,7 @@
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
         Designed &amp; Developed By
-        <a href="#" class="text-primary">Dreams</a>
+        <a href="javascript:void(0);" class="text-primary">Dreams</a>
       </p>
     </div>
   </div>

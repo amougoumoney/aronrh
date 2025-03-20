@@ -163,8 +163,8 @@
             <div class="card-body">
               <p class="text-muted mb-0">
                 Hover on the link to view the
-                <a href="#" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Link Tooltip"
-                  class="text-primary">Tooltip</a>
+                <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary"
+                  title="Link Tooltip" class="text-primary">Tooltip</a>
               </p>
             </div>
           </div>
@@ -178,16 +178,16 @@
               <h5 class="card-title">Tooltip For Images</h5>
             </div>
             <div class="card-body">
-              <a href="#" data-bs-toggle="tooltip" title="Marina Kai" data-bs-custom-class="tooltip-primary"
-                class="avatar avatar-md me-2 online avatar-rounded">
+              <a href="javascript:void(0);" data-bs-toggle="tooltip" title="Marina Kai"
+                data-bs-custom-class="tooltip-primary" class="avatar avatar-md me-2 online avatar-rounded">
                 <img src="@/assets/img/profiles/avatar-01.jpg" alt="img" />
               </a>
-              <a href="#" data-bs-toggle="tooltip" title="Alex Carey" data-bs-custom-class="tooltip-primary"
-                class="avatar avatar-lg me-2 online avatar-rounded">
+              <a href="javascript:void(0);" data-bs-toggle="tooltip" title="Alex Carey"
+                data-bs-custom-class="tooltip-primary" class="avatar avatar-lg me-2 online avatar-rounded">
                 <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
               </a>
-              <a href="#" data-bs-toggle="tooltip" title="Maria John" data-bs-custom-class="tooltip-primary"
-                class="avatar avatar-xl me-2 offline avatar-rounded">
+              <a href="javascript:void(0);" data-bs-toggle="tooltip" title="Maria John"
+                data-bs-custom-class="tooltip-primary" class="avatar avatar-xl me-2 offline avatar-rounded">
                 <img src="@/assets/img/profiles/avatar-03.jpg" alt="img" />
               </a>
             </div>
