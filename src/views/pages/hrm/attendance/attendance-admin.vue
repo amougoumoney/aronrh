@@ -47,16 +47,16 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                <i class="ti ti-file-export me-1"></i>Export
+                                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
                                     <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                                            class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                                            class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                                            class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
+                                            class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}} </a>
                                 </li>
                             </ul>
                         </div>
@@ -64,7 +64,7 @@ export default {
                     <div class="mb-2">
                         <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center"
                             data-bs-target="#attendance_report" data-bs-toggle="modal"><i
-                                class="ti ti-file-analytics me-2"></i>Report</a>
+                                class="ti ti-file-analytics me-2"></i>{{$t('Report')}}</a>
                     </div>
                     <div class="ms-2 head-icons">
                         <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -81,13 +81,13 @@ export default {
                     <div class="row align-items-center mb-4">
                         <div class="col-md-5">
                             <div class="mb-3 mb-md-0">
-                                <h4 class="mb-1">Attendance Details Today</h4>
-                                <p>Data from the 800+ total no of employees</p>
+                                <h4 class="mb-1">{{$t('AttendanceDetailsToday')}}</h4>
+                                <p>{{$t('Datafromthe800+totalnoofemployees')}}</p>
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="d-flex align-items-center justify-content-md-end">
-                                <h6>Total Absenties today</h6>
+                                <h6>{{$t('TotalAbsentiestoday')}}</h6>
                                 <div class="avatar-list-stacked avatar-group-sm ms-4">
                                     <span class="avatar avatar-rounded">
                                         <img class="border border-white" src="@/assets/img/profiles/avatar-02.jpg"
@@ -121,7 +121,7 @@ export default {
                         <div class="row gx-0">
                             <div class="col-md col-sm-4 border-end">
                                 <div class="p-3">
-                                    <span class="fw-medium mb-1 d-block">Present</span>
+                                    <span class="fw-medium mb-1 d-block">{{$t('Present')}}</span>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <h5>250</h5>
                                         <span class="badge badge-success d-inline-flex align-items-center">
@@ -133,7 +133,7 @@ export default {
                             </div>
                             <div class="col-md col-sm-4 border-end">
                                 <div class="p-3">
-                                    <span class="fw-medium mb-1 d-block">Late Login</span>
+                                    <span class="fw-medium mb-1 d-block">{{$t('LateLogin')}}</span>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <h5>45</h5>
                                         <span class="badge badge-danger d-inline-flex align-items-center">
@@ -145,7 +145,7 @@ export default {
                             </div>
                             <div class="col-md col-sm-4 border-end">
                                 <div class="p-3">
-                                    <span class="fw-medium mb-1 d-block">Uninformed</span>
+                                    <span class="fw-medium mb-1 d-block">{{$t('Uninformed')}}</span>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <h5>15</h5>
                                         <span class="badge badge-danger d-inline-flex align-items-center">
@@ -157,7 +157,7 @@ export default {
                             </div>
                             <div class="col-md col-sm-4 border-end">
                                 <div class="p-3">
-                                    <span class="fw-medium mb-1 d-block">Permisson</span>
+                                    <span class="fw-medium mb-1 d-block">{{$t('Permisson')}}</span>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <h5>03</h5>
                                         <span class="badge badge-success d-inline-flex align-items-center">
@@ -169,7 +169,7 @@ export default {
                             </div>
                             <div class="col-md col-sm-4">
                                 <div class="p-3">
-                                    <span class="fw-medium mb-1 d-block">Absent</span>
+                                    <span class="fw-medium mb-1 d-block">{{$t('Absent')}}</span>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <h5>12</h5>
                                         <span class="badge badge-danger d-inline-flex align-items-center">
@@ -186,7 +186,7 @@ export default {
 
             <div class="card">
                 <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-                    <h5>Admin Attendance</h5>
+                    <h5>{{$t('AdminAttendance')}}</h5>
                     <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
                         <div class="me-3">
                             <div class="input-icon w-120 position-relative">
@@ -194,7 +194,7 @@ export default {
                                     <i class="ti ti-calendar"></i>
                                 </span>
                                 <date-picker v-model="startdate" class="form-control datetimepicker"
-                                    placeholder="dd/mm/yyyy" :editable="true" :clearable="false"
+                                    :placeholder="$t('dd/mm/yyyy')" :editable="true" :clearable="false"
                                     :input-format="dateFormat" />
                             </div>
                         </div>
@@ -202,18 +202,18 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                Department
+                                {{$t('Department')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Finance</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('finance')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Application
-                                        Development</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">
+                                        {{$t('ApplicationDevelopment')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">IT Management</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('ITManagement')}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -221,14 +221,14 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                Select Status
+                                {{$t('SelectStatus')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Present</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Present')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Absent</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Absent')}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -236,23 +236,23 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                Sort By : Last 7 Days
+                               {{$t('SortBy:Last7Days')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('RecentlyAdded')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Descending')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('lastMonth')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Last7Days')}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -269,7 +269,7 @@ export default {
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
             <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
-            <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
+            <p>{{$t('designed')}} &amp; {{$t('developedBy')}} <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a></p>
         </div>
 
     </div>

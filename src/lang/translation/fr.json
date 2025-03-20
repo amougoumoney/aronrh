@@ -451,7 +451,20 @@
     "SickLeave" : "Congé maladie",
     "Hospitalisation" : "Hospitalisation",
     "Maternity" : "Maternité",
-    "Paternity" : "Paternité"
+    "Paternity" : "Paternité",
+    "AddCustomPolicy" : "Ajouter une politique personnalisée",
+    "Rejected" : "Rejeté",
+    "Accepted" : "Accepté",
+    "ProjectManagement" : "Gestion de projet",
+    "OfficeManagement" : "Gestion de bureau",
+    "Project" : "Projet",
+    "Employee" : "Employé",
+    "Overtime" : "Heures supplémentaires",
+    "PendingRequest" : "Demande en attente",
+    "OvertimeHours" : "Heures supplémentaires",
+    "OvertimeEmployee" : "Employé en heures supplémentaires",
+    "AddOvertime" : "Ajouter des heures supplémentaires"
+
 
 
 

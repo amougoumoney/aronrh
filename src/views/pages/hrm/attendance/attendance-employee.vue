@@ -47,16 +47,16 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                <i class="ti ti-file-export me-1"></i>Export
+                                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
                                     <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                                            class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                                            class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                                            class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
+                                            class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}} </a>
                                 </li>
                             </ul>
                         </div>
@@ -64,7 +64,7 @@ export default {
                     <div class="mb-2">
                         <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center"
                             data-bs-toggle="modal" data-bs-target="#attendance_report"><i
-                                class="ti ti-file-analytics me-2"></i>Report</a>
+                                class="ti ti-file-analytics me-2"></i>{{$t('Report')}}</a>
                     </div>
                     <div class="ms-2 head-icons">
                         <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -81,8 +81,8 @@ export default {
                     <div class="card flex-fill">
                         <div class="card-body">
                             <div class="mb-3 text-center">
-                                <h6 class="fw-medium text-gray-5 mb-2">Good Morning, Adrian</h6>
-                                <h4>08:35 AM, 11 Mar 2025</h4>
+                                <h6 class="fw-medium text-gray-5 mb-2">{{$t('GoodMorning')}}, Adrian</h6>
+                                <h4>{{$t('08:35AM,11Mar2025')}}</h4>
                             </div>
                             <div class="attendance-circle-progress mx-auto mb-3" data-value='65'>
                                 <span class="progress-left">
@@ -96,12 +96,12 @@ export default {
                                 </div>
                             </div>
                             <div class="text-center">
-                                <div class="badge badge-md badge-primary mb-3">Production : 3.45 hrs</div>
+                                <div class="badge badge-md badge-primary mb-3">{{$t('Production')}} : 3.45 hrs</div>
                                 <h6 class="fw-medium d-flex align-items-center justify-content-center mb-3">
                                     <i class="ti ti-fingerprint text-primary me-1"></i>
-                                    Punch In at 10.00 AM
+                                    {{$t('PunchInat10.00AM')}}
                                 </h6>
-                                <a href="javascript:void(0);" class="btn btn-dark w-100">Punch Out</a>
+                                <a href="javascript:void(0);" class="btn btn-dark w-100">{{$t('PunchOut')}}</a>
                             </div>
                         </div>
                     </div>
@@ -115,14 +115,14 @@ export default {
                                         <span class="avatar avatar-sm bg-primary mb-2"><i
                                                 class="ti ti-clock-stop"></i></span>
                                         <h2 class="mb-2">8.36 / <span class="fs-20 text-gray-5"> 9</span></h2>
-                                        <p class="fw-medium text-truncate">Total Hours Today</p>
+                                        <p class="fw-medium text-truncate">{{$t('TotalHoursToday')}}</p>
                                     </div>
                                     <div>
                                         <p class="d-flex align-items-center fs-13">
                                             <span class="avatar avatar-xs rounded-circle bg-success flex-shrink-0 me-2">
                                                 <i class="ti ti-arrow-up fs-12"></i>
                                             </span>
-                                            <span>5% This Week</span>
+                                            <span>5% {{$t('thisWeek')}}</span>
                                         </p>
                                     </div>
                                 </div>
@@ -135,14 +135,14 @@ export default {
                                         <span class="avatar avatar-sm bg-dark mb-2"><i
                                                 class="ti ti-clock-up"></i></span>
                                         <h2 class="mb-2">10 / <span class="fs-20 text-gray-5"> 40</span></h2>
-                                        <p class="fw-medium text-truncate">Total Hours Week</p>
+                                        <p class="fw-medium text-truncate">{{$t('TotalHoursWeek')}}</p>
                                     </div>
                                     <div>
                                         <p class="d-flex align-items-center fs-13">
                                             <span class="avatar avatar-xs rounded-circle bg-success flex-shrink-0 me-2">
                                                 <i class="ti ti-arrow-up fs-12"></i>
                                             </span>
-                                            <span>7% Last Week</span>
+                                            <span>7% {{$t('lastWeek')}}</span>
                                         </p>
                                     </div>
                                 </div>
@@ -155,14 +155,14 @@ export default {
                                         <span class="avatar avatar-sm bg-info mb-2"><i
                                                 class="ti ti-calendar-up"></i></span>
                                         <h2 class="mb-2">75 / <span class="fs-20 text-gray-5"> 98</span></h2>
-                                        <p class="fw-medium text-truncate">Total Hours Month</p>
+                                        <p class="fw-medium text-truncate">{{$t('TotalHoursMonth')}}</p>
                                     </div>
                                     <div>
                                         <p class="d-flex align-items-center fs-13 text-truncate">
                                             <span class="avatar avatar-xs rounded-circle bg-danger flex-shrink-0 me-2">
                                                 <i class="ti ti-arrow-down fs-12"></i>
                                             </span>
-                                            <span>8% Last Month</span>
+                                            <span>8% {{$t('lastMonth')}}</span>
                                         </p>
                                     </div>
                                 </div>
@@ -175,14 +175,14 @@ export default {
                                         <span class="avatar avatar-sm bg-pink mb-2"><i
                                                 class="ti ti-calendar-star"></i></span>
                                         <h2 class="mb-2">16 / <span class="fs-20 text-gray-5"> 28</span></h2>
-                                        <p class="fw-medium text-truncate">Overtime this Month</p>
+                                        <p class="fw-medium text-truncate">{{$t('OvertimethisMonth')}}</p>
                                     </div>
                                     <div>
                                         <p class="d-flex align-items-center fs-13 text-truncate">
                                             <span class="avatar avatar-xs rounded-circle bg-danger flex-shrink-0 me-2">
                                                 <i class="ti ti-arrow-down fs-12"></i>
                                             </span>
-                                            <span>6% Last Month</span>
+                                            <span>6% {{$t('lastMonth')}}</span>
                                         </p>
                                     </div>
                                 </div>
@@ -195,30 +195,30 @@ export default {
                                         <div class="col-xl-3">
                                             <div class="mb-3">
                                                 <p class="d-flex align-items-center mb-1"><i
-                                                        class="ti ti-point-filled text-dark-transparent me-1"></i>Total
-                                                    Working hours</p>
+                                                        class="ti ti-point-filled text-dark-transparent me-1"></i>
+                                                    {{$t('TotalWorkinghours')}}</p>
                                                 <h3>12h 36m</h3>
                                             </div>
                                         </div>
                                         <div class="col-xl-3">
                                             <div class="mb-3">
                                                 <p class="d-flex align-items-center mb-1"><i
-                                                        class="ti ti-point-filled text-success me-1"></i>Productive
-                                                    Hours</p>
+                                                        class="ti ti-point-filled text-success me-1"></i>{{$t('ProductiveHours')}}
+                                                    </p>
                                                 <h3>08h 36m</h3>
                                             </div>
                                         </div>
                                         <div class="col-xl-3">
                                             <div class="mb-3">
                                                 <p class="d-flex align-items-center mb-1"><i
-                                                        class="ti ti-point-filled text-warning me-1"></i>Break hours</p>
+                                                        class="ti ti-point-filled text-warning me-1"></i>{{$t('Breakhours')}}</p>
                                                 <h3>22m 15s</h3>
                                             </div>
                                         </div>
                                         <div class="col-xl-3">
                                             <div class="mb-3">
                                                 <p class="d-flex align-items-center mb-1"><i
-                                                        class="ti ti-point-filled text-info me-1"></i>Overtime</p>
+                                                        class="ti ti-point-filled text-info me-1"></i>{{$t('Overtime')}}</p>
                                                 <h3>02h 15m</h3>
                                             </div>
                                         </div>
@@ -282,7 +282,7 @@ export default {
 
             <div class="card">
                 <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-                    <h5>Employee Attendance</h5>
+                    <h5>{{$t('EmployeeAttendance')}}</h5>
                     <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
                         <div class="me-3">
                             <div class="input-icon w-120 position-relative">
@@ -298,14 +298,14 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                Select Status
+                                {{$t('SelectStatus')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Present</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Present')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Absent</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Absent')}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -313,23 +313,23 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                Sort By : Last 7 Days
+                                {{$t('SortBy:Last7Days')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('RecentlyAdded')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Descending')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('lastMonth')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Last7Days')}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -346,7 +346,7 @@ export default {
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
             <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
-            <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
+            <p>{{$t('designed')}} &amp; {{$t('developedBy')}} <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a></p>
         </div>
 
     </div>

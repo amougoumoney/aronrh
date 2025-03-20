@@ -81,24 +81,24 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                <i class="ti ti-file-export me-1"></i>Export
+                                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
                                     <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                                            class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                                            class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}F</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                                            class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
+                                            class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}} </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="mb-2">
                         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_overtime"
-                            class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add
-                            Overtime</a>
+                            class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>
+                            {{$t('AddOvertime')}}</a>
                     </div>
                     <div class="head-icons ms-2">
                         <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -117,7 +117,7 @@ export default {
                         <div class="card-body">
                             <div class="d-flex align-items-center flex-wrap justify-content-between">
                                 <div>
-                                    <p class="fs-12 fw-medium mb-0 text-gray-5">Overtime Employee</p>
+                                    <p class="fs-12 fw-medium mb-0 text-gray-5">{{$t('OvertimeEmployee')}}</p>
                                     <h4>12</h4>
                                 </div>
                                 <div>
@@ -134,7 +134,7 @@ export default {
                         <div class="card-body">
                             <div class="d-flex align-items-center flex-wrap justify-content-between">
                                 <div>
-                                    <p class="fs-12 fw-medium mb-0 text-gray-5">Overtime Hours</p>
+                                    <p class="fs-12 fw-medium mb-0 text-gray-5">{{$t('OvertimeHours')}}</p>
                                     <h4>118</h4>
                                 </div>
                                 <div>
@@ -151,7 +151,7 @@ export default {
                         <div class="card-body">
                             <div class="d-flex align-items-center flex-wrap justify-content-between">
                                 <div>
-                                    <p class="fs-12 fw-medium mb-0 text-gray-5">Pending Request</p>
+                                    <p class="fs-12 fw-medium mb-0 text-gray-5">{{$t('PendingRequest')}}</p>
                                     <h4>23</h4>
                                 </div>
                                 <div>
@@ -168,7 +168,7 @@ export default {
                         <div class="card-body">
                             <div class="d-flex align-items-center flex-wrap justify-content-between">
                                 <div>
-                                    <p class="fs-12 fw-medium mb-0 text-gray-5">Rejected</p>
+                                    <p class="fs-12 fw-medium mb-0 text-gray-5">{{$t('Rejected')}}</p>
                                     <h4>5</h4>
                                 </div>
                                 <div>
@@ -186,12 +186,12 @@ export default {
             <!-- Performance Indicator list -->
             <div class="card">
                 <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-                    <h5>Overtime</h5>
+                    <h5>{{$t('Overtime')}}</h5>
                     <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
                         <div class="me-3">
                             <div class="input-icon-end position-relative">
                                 <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
-                                    placeholder="dd/mm/yyyy - dd/mm/yyyy">
+                                    :placeholder="$t('dd/mm/yyyy - dd/mm/yyyy')">
                                 <span class="input-icon-addon">
                                     <i class="ti ti-chevron-down"></i>
                                 </span>
@@ -201,7 +201,7 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                Employee
+                                {{$t('Employee')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
@@ -219,18 +219,18 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                Project
+                                {{$t('Project')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Office Management</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('OfficeManagement')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Project Management</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('ProjectManagement')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Hospital
-                                        Administration</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">
+                                        {{$t('HospitalAdministration')}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -238,14 +238,14 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                Select Status
+                                {{$t('SelectStatus')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Accepted</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Accepted')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Rejected</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Rejected')}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -253,23 +253,23 @@ export default {
                             <a href="javascript:void(0);"
                                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                                 data-bs-toggle="dropdown">
-                                Sort By : Last 7 Days
+                                {{$t('SortBy:Last7Days')}}
                             </a>
                             <ul class="dropdown-menu  dropdown-menu-end p-3">
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('RecentlyAdded')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Descending')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('lastMonth')}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Last7Days')}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -287,7 +287,7 @@ export default {
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
             <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
-            <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
+            <p>{{$t('designed')}} &amp; {{$t('developedBy')}} <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a></p>
         </div>
 
     </div>
