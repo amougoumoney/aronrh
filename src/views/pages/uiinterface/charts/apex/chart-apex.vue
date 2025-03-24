@@ -8,7 +8,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">Charts</h3>
+            <h3 class="page-title">{{ $t('Charts') }}</h3>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Apex Simple</h5>
+              <h5 class="card-title">{{ $t('ApexSimple') }}</h5>
             </div>
             <div class="card-body">
               <apexchart
@@ -37,7 +37,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Area Chart</h5>
+              <h5 class="card-title">{{ $t('AreaChart') }}</h5>
             </div>
             <div class="card-body">
               <apexchart
@@ -55,7 +55,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Column Chart</h5>
+              <h5 class="card-title">{{ $t('ColumnChart') }}</h5>
             </div>
             <div class="card-body">
               <apexchart
@@ -73,7 +73,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Column Stacked Chart</h5>
+              <h5 class="card-title">{{ $t('ColumnStackedChart') }}</h5>
             </div>
             <div class="card-body">
               <apexchart
@@ -91,7 +91,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Bar Chart</h5>
+              <h5 class="card-title">{{ $t('BarChart') }}</h5>
             </div>
             <div class="card-body">
               <apexchart
@@ -109,7 +109,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Mixed Chart</h5>
+              <h5 class="card-title">{{ $t('MixedChart') }}</h5>
             </div>
             <div class="card-body">
               <apexchart
@@ -127,7 +127,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Donut Chart</h5>
+              <h5 class="card-title">{{ $t('DonutChart') }}</h5>
             </div>
             <div class="card-body">
               <apexchart
@@ -145,7 +145,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Radial Chart</h5>
+              <h5 class="card-title">{{ $t('RadialChart') }}</h5>
             </div>
             <div class="card-body">
               <apexchart

@@ -78,7 +78,7 @@ export default {
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
             <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_holiday"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Holiday</a>
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddHoliday')}}</a>
           </div>
           <div class="head-icons ms-2">
             <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -92,7 +92,7 @@ export default {
 
       <div class="card">
         <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-          <h5>Holidays List</h5>
+          <h5>{{$t('HolidaysList')}}</h5>
         </div>
         <div class="card-body p-0">
           <div class="custom-datatable-filter table-responsive">
@@ -105,8 +105,8 @@ export default {
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        {{$t('designed')}} &amp; {{$t('developedBy')}}
+        <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a>
       </p>
     </div>
   </div>

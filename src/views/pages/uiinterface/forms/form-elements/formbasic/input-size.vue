@@ -1,24 +1,24 @@
 <template>
   <div class="card">
     <div class="card-header">
-      <h5 class="card-title">Basic Inputs</h5>
+      <h5 class="card-title">{{ $t('BasicInputs') }}</h5>
     </div>
     <div class="card-body">
       <b-form action="#">
         <div class="form-group row">
-          <label class="col-form-label col-md-2">Text Input</label>
+          <label class="col-form-label col-md-2">{{ $t('TextInput') }}</label>
           <div class="col-md-10 mb-3">
             <b-form-input type="text" class="form-control"></b-form-input>
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-form-label col-md-2">Password</label>
+          <label class="col-form-label col-md-2">{{ $t('Password') }}</label>
           <div class="col-md-10 mb-3">
             <b-form-input type="password" class="form-control"></b-form-input>
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-form-label col-md-2">Disabled Input</label>
+          <label class="col-form-label col-md-2">{{ $t('DisabledInput') }}</label>
           <div class="col-md-10 mb-3">
             <b-form-input
               type="text"
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-form-label col-md-2">Readonly Input</label>
+          <label class="col-form-label col-md-2">{{ $t('ReadonlyInput') }}</label>
           <div class="col-md-10 mb-3">
             <b-form-input
               type="text"
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-form-label col-md-2">Placeholder</label>
+          <label class="col-form-label col-md-2">{{ $t('Placeholder') }}</label>
           <div class="col-md-10 mb-3">
             <b-form-input
               type="text"
@@ -48,47 +48,47 @@
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-form-label col-md-2">File Input</label>
+          <label class="col-form-label col-md-2">{{ $t('FileInput') }}</label>
           <div class="col-md-10 mb-3">
             <input class="form-control" type="file" />
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-form-label col-md-2">Default Select</label>
+          <label class="col-form-label col-md-2">{{ $t('DefaultSelect') }}</label>
           <div class="col-md-10 mb-3">
             <vue-select :options="Select" id="select" placeholder="-- Select --" />
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-form-label col-md-2">Radio</label>
+          <label class="col-form-label col-md-2">{{ $t('Radio') }}</label>
           <div class="col-md-10 mb-3">
             <div class="radio">
-              <label> <input type="radio" name="radio" /> Option 1 </label>
+              <label> <input type="radio" name="radio" /> {{ $t('Option1') }} </label>
             </div>
             <div class="radio">
-              <label> <input type="radio" name="radio" /> Option 2 </label>
+              <label> <input type="radio" name="radio" /> {{ $t('Option2') }}</label>
             </div>
             <div class="radio">
-              <label> <input type="radio" name="radio" /> Option 3 </label>
+              <label> <input type="radio" name="radio" /> {{ $t('Option3') }}</label>
             </div>
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-form-label col-md-2">Checkbox</label>
+          <label class="col-form-label col-md-2">{{ $t('Checkbox') }}</label>
           <div class="col-md-10 mb-3">
             <div class="checkbox">
-              <label> <input type="checkbox" name="checkbox" /> Option 1 </label>
+              <label> <input type="checkbox" name="checkbox" /> {{ $t('Option1') }} </label>
             </div>
             <div class="checkbox">
-              <label> <input type="checkbox" name="checkbox" /> Option 2 </label>
+              <label> <input type="checkbox" name="checkbox" /> {{ $t('Option2') }} </label>
             </div>
             <div class="checkbox">
-              <label> <input type="checkbox" name="checkbox" /> Option 3 </label>
+              <label> <input type="checkbox" name="checkbox" /> {{ $t('Option3') }}</label>
             </div>
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-form-label col-md-2">Textarea</label>
+          <label class="col-form-label col-md-2">{{ $t('Textarea') }}</label>
           <div class="col-md-10 mb-3">
             <b-form-textarea
               id="textarea"
@@ -100,12 +100,12 @@
           </div>
         </div>
         <div class="form-group mb-0 row">
-          <label class="col-form-label col-md-2">Input Addons</label>
+          <label class="col-form-label col-md-2">{{ $t('InputAddons') }}</label>
           <div class="col-md-10">
             <div class="input-group">
               <span class="input-group-text">$</span>
               <b-form-input class="form-control" type="text"></b-form-input>
-              <b-button variant="primary">Button</b-button>
+              <b-button variant="primary">{{ $t('Button') }}</b-button>
             </div>
           </div>
         </div>

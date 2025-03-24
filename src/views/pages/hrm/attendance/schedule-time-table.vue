@@ -105,7 +105,7 @@ export default {
       <template v-if="column.key === 'action'">
         <div>
           <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#schedule_timing"
-            class="btn btn-dark">Schedule Timing</a>
+            class="btn btn-dark">{{$t('ScheduleTiming')}}</a>
         </div>
       </template>
     </template>

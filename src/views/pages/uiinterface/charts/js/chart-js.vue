@@ -8,7 +8,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">Chartjs</h3>
+            <h3 class="page-title">{{ $t('Chartjs') }}</h3>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Bar Chart</div>
+              <div class="card-title">{{ $t('BarChart') }}</div>
             </div>
             <div class="card-body">
               <div>
@@ -37,7 +37,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Transparency</div>
+              <div class="card-title">{{ $t('Transparency') }}</div>
             </div>
             <div class="card-body">
               <div>
@@ -55,7 +55,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Gradient Bar Chart</div>
+              <div class="card-title">{{ $t('GradientBarChart') }}</div>
             </div>
             <div class="card-body">
               <div>
@@ -73,7 +73,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Horizontal Bar Chart</div>
+              <div class="card-title">{{ $t('HorizontalBarChart') }}</div>
             </div>
             <div class="card-body">
               <div class="chartjs-wrapper-demo">
@@ -91,7 +91,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Horizontal Bar Chart Style2</div>
+              <div class="card-title">{{ $t('HorizontalBarChartStyle2') }}</div>
             </div>
             <div class="card-body">
               <div class="chartjs-wrapper-demo">
@@ -109,7 +109,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Vertical Stacked Bar Chart</div>
+              <div class="card-title">{{ $t('VerticalStackedBarChart') }}</div>
             </div>
             <div class="card-body">
               <div class="chartjs-wrapper-demo">
@@ -127,7 +127,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Horizontal Stacked Bar Chart</div>
+              <div class="card-title">{{ $t('HorizontalStackedBarChart') }}</div>
             </div>
             <div class="card-body">
               <div class="chartjs-wrapper-demo">
@@ -145,7 +145,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Line Chart</div>
+              <div class="card-title">{{ $t('LineChart') }}</div>
             </div>
             <div class="card-body">
               <div class="chartjs-wrapper-demo">
@@ -163,7 +163,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Donut Chart</div>
+              <div class="card-title">{{ $t('DonutChart') }}</div>
             </div>
             <div class="card-body">
               <div class="chartjs-wrapper-demo">
@@ -181,7 +181,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Pie Chart</div>
+              <div class="card-title">{{ $t('PieChart') }}</div>
             </div>
             <div class="card-body">
               <div class="chartjs-wrapper-demo">
@@ -199,7 +199,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Area Chart</div>
+              <div class="card-title">{{ $t('AreaChart') }}</div>
             </div>
             <div class="card-body">
               <div class="chartjs-wrapper-demo">

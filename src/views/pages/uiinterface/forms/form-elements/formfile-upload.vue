@@ -7,7 +7,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">File Upload</h3>
+            <h3 class="page-title">{{ $t('FileUpload') }}</h3>
           </div>
         </div>
       </div>
@@ -18,12 +18,12 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Single File Upload</h5>
+              <h5 class="card-title">{{ $t('SingleFileUpload') }}</h5>
             </div>
             <div class="card-body">
               <div class="custom-file-container" data-upload-id="myFirstImage">
                 <label
-                  >Upload (Single File)
+                  >{{ $t('Upload(SingleFile)') }}
                   <a
                     href="javascript:void(0)"
                     class="custom-file-container__image-clear"
@@ -48,12 +48,12 @@
 
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Multiple File Upload</h5>
+              <h5 class="card-title">{{ $t('MultipleFileUpload') }}</h5>
             </div>
             <div class="card-body">
               <div class="custom-file-container" data-upload-id="mySecondImage">
                 <label
-                  >Upload (Allow Multiple)
+                  >{{ $t('Upload(AllowMultiple)') }}
                   <a
                     href="javascript:void(0)"
                     class="custom-file-container__image-clear"

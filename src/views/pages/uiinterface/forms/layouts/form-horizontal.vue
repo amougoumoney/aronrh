@@ -7,7 +7,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col">
-            <h3 class="page-title">Horizontal Form</h3>
+            <h3 class="page-title">{{ $t('HorizontalForm') }}</h3>
           </div>
         </div>
       </div>
@@ -17,48 +17,48 @@
         <div class="col-xl-6 d-flex">
           <div class="card flex-fill">
             <div class="card-header">
-              <h5 class="card-title">Basic Form</h5>
+              <h5 class="card-title">{{ $t('BasicForm') }}</h5>
             </div>
             <div class="card-body">
               <form action="#">
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">First Name</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('FirstName') }}</label>
                   <div class="col-lg-9">
                     <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">Last Name</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('LastName') }}</label>
                   <div class="col-lg-9">
                     <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">Email Address</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('EmailAddress') }}</label>
                   <div class="col-lg-9">
                     <input type="email" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">Username</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('Username') }}</label>
                   <div class="col-lg-9">
                     <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">Password</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('Password') }}</label>
                   <div class="col-lg-9">
                     <input type="password" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">Repeat Password</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('RepeatPassword') }}</label>
                   <div class="col-lg-9">
                     <input type="password" class="form-control" />
                   </div>
                 </div>
                 <div class="text-end">
-                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">{{ $t('Submit') }}</button>
                 </div>
               </form>
             </div>
@@ -67,48 +67,48 @@
         <div class="col-xl-6 d-flex">
           <div class="card flex-fill">
             <div class="card-header">
-              <h5 class="card-title">Address Form</h5>
+              <h5 class="card-title">{{ $t('AddressForm') }}</h5>
             </div>
             <div class="card-body">
               <form action="#">
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">Address 1</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('Address1') }}</label>
                   <div class="col-lg-9">
                     <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">Address 2</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('Address2') }}</label>
                   <div class="col-lg-9">
                     <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">City</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('City') }}</label>
                   <div class="col-lg-9">
                     <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">State</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('State') }}</label>
                   <div class="col-lg-9">
                     <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">Country</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('Country') }}</label>
                   <div class="col-lg-9">
                     <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-lg-3 col-form-label">Postal Code</label>
+                  <label class="col-lg-3 col-form-label">{{ $t('PostalCode') }}</label>
                   <div class="col-lg-9">
                     <input type="text" class="form-control" />
                   </div>
                 </div>
                 <div class="text-end">
-                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">{{ $t('Submit') }}</button>
                 </div>
               </form>
             </div>
@@ -119,27 +119,27 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Two Column Horizontal Form</h5>
+              <h5 class="card-title">{{ $t('TwoColumnHorizontalForm') }}</h5>
             </div>
             <div class="card-body">
-              <h6 class="mb-3">Personal Information</h6>
+              <h6 class="mb-3">{{ $t('PersonalInformation') }}</h6>
               <form action="#">
                 <div class="row">
                   <div class="col-xl-6">
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">First Name</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('FirstName') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Last Name</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('LastName') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Gender</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('Gender') }}</label>
                       <div class="col-lg-9">
                         <div class="form-check form-check-inline">
                           <input
@@ -150,7 +150,7 @@
                             value="option1"
                             checked
                           />
-                          <label class="form-check-label" for="gender_male"> Male </label>
+                          <label class="form-check-label" for="gender_male"> {{ $t('Male') }} </label>
                         </div>
                         <div class="form-check form-check-inline">
                           <input
@@ -161,13 +161,13 @@
                             value="option2"
                           />
                           <label class="form-check-label" for="gender_female">
-                            Female
+                            {{ $t('Female') }}
                           </label>
                         </div>
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Blood Group</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('BloodGroup') }}</label>
                       <div class="col-lg-9">
                         <vue-select
                           :options="FormBlood"
@@ -179,48 +179,48 @@
                   </div>
                   <div class="col-xl-6">
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Username</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('Username') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Email</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('Email') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Password</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('Password') }}</label>
                       <div class="col-lg-9">
                         <input type="password" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Repeat Password</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('RepeatPassword') }}</label>
                       <div class="col-lg-9">
                         <input type="password" class="form-control" />
                       </div>
                     </div>
                   </div>
                 </div>
-                <h6 class="mb-3">Address</h6>
+                <h6 class="mb-3">{{ $t('Address') }}</h6>
                 <div class="row">
                   <div class="col-xl-6">
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Address Line 1</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('AddressLine1') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Address Line 2</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('AddressLine2') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">State</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('State') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
@@ -228,19 +228,19 @@
                   </div>
                   <div class="col-xl-6">
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">City</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('City') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Country</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('Country') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Postal Code</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('PostalCode') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
@@ -248,7 +248,7 @@
                   </div>
                 </div>
                 <div class="text-end">
-                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">{{ $t('Submit') }}</button>
                 </div>
               </form>
             </div>
@@ -259,33 +259,33 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Two Column Horizontal Form 2</h5>
+              <h5 class="card-title">{{ $t('TwoColumnHorizontalForm2') }}</h5>
             </div>
             <div class="card-body">
               <form action="#">
                 <div class="row">
                   <div class="col-xl-6">
-                    <h6 class="mb-3">Personal Information</h6>
+                    <h6 class="mb-3">{{ $t('PersonalInformation') }}</h6>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">First Name</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('FirstName') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Last Name</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('LastName') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Password</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('Password') }}</label>
                       <div class="col-lg-9">
                         <input type="password" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">State</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('State') }}</label>
                       <div class="col-lg-9">
                         <vue-select
                           :options="Formhorizontalstate"
@@ -295,7 +295,7 @@
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">About</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('About') }}</label>
                       <div class="col-lg-9">
                         <textarea
                           rows="4"
@@ -307,9 +307,9 @@
                     </div>
                   </div>
                   <div class="col-xl-6">
-                    <h6 class="mb-3">Personal Details</h6>
+                    <h6 class="mb-3">{{ $t('PersonalDetails') }}</h6>
                     <div class="row">
-                      <label class="col-lg-3 col-form-label">Name</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('name') }}</label>
                       <div class="col-lg-9">
                         <div class="row">
                           <div class="col-md-6">
@@ -334,19 +334,19 @@
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Email</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('Email') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Phone</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('phone') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label class="col-lg-3 col-form-label">Address</label>
+                      <label class="col-lg-3 col-form-label">{{ $t('Address') }}</label>
                       <div class="col-lg-9">
                         <input type="text" class="form-control" />
                         <div class="row mt-4">
@@ -388,7 +388,7 @@
                   </div>
                 </div>
                 <div class="text-end">
-                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">{{ $t('Submit') }}</button>
                 </div>
               </form>
             </div>
@@ -399,12 +399,12 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Horizontal form With Icons</div>
+              <div class="card-title">{{ $t('HorizontalformWithIcons') }}</div>
             </div>
             <div class="card-body">
               <form>
                 <div class="row mb-3">
-                  <label for="inputEmail1" class="col-sm-2 col-form-label">Email</label>
+                  <label for="inputEmail1" class="col-sm-2 col-form-label">{{ $t('Email') }}</label>
                   <div class="col-sm-10">
                     <div class="input-group">
                       <input type="email" class="form-control" id="inputEmail1" />
@@ -416,7 +416,7 @@
                 </div>
                 <div class="row mb-3">
                   <label for="inputPassword1" class="col-sm-2 col-form-label"
-                    >Password</label
+                    >{{ $t('Password') }}</label
                   >
                   <div class="col-sm-10">
                     <div class="input-group">
@@ -428,7 +428,7 @@
                   </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Sign in</button>
+                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">{{ $t('Signin') }}</button>
               </form>
             </div>
           </div>
@@ -436,14 +436,14 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Horizontal form label sizing</div>
+              <div class="card-title">{{ $t('Horizontalformlabelsizing') }}</div>
             </div>
             <div class="card-body">
               <div class="row mb-3">
                 <label
                   for="colFormLabelSm"
                   class="col-sm-2 col-form-label col-form-label-sm"
-                  >Email</label
+                  >{{ $t('Email') }}</label
                 >
                 <div class="col-sm-10">
                   <input
@@ -455,7 +455,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label">{{ $t('Email') }}</label>
                 <div class="col-sm-10">
                   <input
                     type="email"
@@ -469,7 +469,7 @@
                 <label
                   for="colFormLabelLg"
                   class="col-sm-2 col-form-label col-form-label-lg"
-                  >Email</label
+                  >{{ $t('Email') }}</label
                 >
                 <div class="col-sm-10">
                   <input
@@ -489,12 +489,12 @@
         <div class="col-xl-12">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Auto sizing</div>
+              <div class="card-title">{{ $t('Autosizing') }}</div>
             </div>
             <div class="card-body">
               <form class="row gy-2 gx-3 align-items-center mb-4">
                 <div class="col-auto">
-                  <label class="visually-hidden" for="autoSizingInput">Name</label>
+                  <label class="visually-hidden" for="autoSizingInput">{{ $t('name') }}</label>
                   <input
                     type="text"
                     class="form-control"
@@ -504,7 +504,7 @@
                 </div>
                 <div class="col-auto">
                   <label class="visually-hidden" for="autoSizingInputGroup"
-                    >Username</label
+                    >{{ $t('Username') }}</label
                   >
                   <div class="input-group">
                     <div class="input-group-text">@</div>
@@ -517,7 +517,7 @@
                   </div>
                 </div>
                 <div class="col-auto">
-                  <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                  <label class="visually-hidden" for="autoSizingSelect">{{ $t('Preference') }}</label>
                   <vue-select
                     :options="Formchoose"
                     id="formchoose"
@@ -532,21 +532,20 @@
                       id="autoSizingCheck"
                     />
                     <label class="form-check-label" for="autoSizingCheck">
-                      Remember me
+                      {{ $t('Rememberme') }}
                     </label>
                   </div>
                 </div>
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">{{ $t('Submit') }}</button>
                 </div>
               </form>
               <span class="fw-semibold mb-1 text-muted"
-                >You can then remix that once again with size-specific column
-                classes.</span
+                >{{ $t('youcan') }}.</span
               >
               <form class="row gx-3 gy-2 align-items-center mt-0">
                 <div class="col-sm-3">
-                  <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                  <label class="visually-hidden" for="specificSizeInputName">{{ $t('name') }}</label>
                   <input
                     type="text"
                     class="form-control"
@@ -556,7 +555,7 @@
                 </div>
                 <div class="col-sm-3">
                   <label class="visually-hidden" for="specificSizeInputGroupUsername"
-                    >Username</label
+                    >{{ $t('Username') }}</label
                   >
                   <div class="input-group">
                     <div class="input-group-text">@</div>
@@ -570,7 +569,7 @@
                 </div>
                 <div class="col-sm-3">
                   <label class="visually-hidden" for="specificSizeSelect"
-                    >Preference</label
+                    >{{ $t('Preference') }}</label
                   >
                   <vue-select
                     :options="Formchooseone"
@@ -586,12 +585,12 @@
                       id="autoSizingCheck2"
                     />
                     <label class="form-check-label" for="autoSizingCheck2">
-                      Remember me
+                      {{ $t('Rememberme') }}
                     </label>
                   </div>
                 </div>
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">{{ $t('Submit') }}</button>
                 </div>
               </form>
             </div>

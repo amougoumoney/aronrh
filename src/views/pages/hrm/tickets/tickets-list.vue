@@ -20,16 +20,16 @@
             <div class="dropdown">
               <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>Export
+                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                      class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>Export as Excel
+                      class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}}
                   </a>
                 </li>
               </ul>
@@ -37,7 +37,7 @@
           </div>
           <div class="mb-2">
             <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_ticket"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Ticket</a>
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddTicket')}}</a>
           </div>
           <div class="head-icons ms-2">
             <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -61,7 +61,7 @@
                       <span class="avatar avatar-lg avatar-rounded bg-primary-transparent"><i
                           class="ti ti-ticket fs-20"></i></span>
                     </div>
-                    <p class="fw-medium fs-12 mb-1">New Tickets</p>
+                    <p class="fw-medium fs-12 mb-1">{{$t('NewTickets')}}</p>
                     <h4>120</h4>
                   </div>
                 </div>
@@ -92,7 +92,7 @@
                       <span class="avatar avatar-lg avatar-rounded bg-transparent-purple"><i
                           class="ti ti-folder-open fs-20"></i></span>
                     </div>
-                    <p class="fw-medium fs-12 mb-1">Open Tickets</p>
+                    <p class="fw-medium fs-12 mb-1">{{$t('OpenTickets')}}</p>
                     <h4>60</h4>
                   </div>
                 </div>
@@ -123,7 +123,7 @@
                       <span class="avatar avatar-lg avatar-rounded bg-success-transparent"><i
                           class="ti ti-checks fs-20"></i></span>
                     </div>
-                    <p class="fw-medium fs-12 mb-1">Solved Tickets</p>
+                    <p class="fw-medium fs-12 mb-1">{{$t('SolvedTickets')}}</p>
                     <h4>50</h4>
                   </div>
                 </div>
@@ -155,7 +155,7 @@
                       <span class="avatar avatar-lg avatar-rounded bg-info-transparent"><i
                           class="ti ti-progress-alert fs-20"></i></span>
                     </div>
-                    <p class="fw-medium fs-12 mb-1">Pending Tickets</p>
+                    <p class="fw-medium fs-12 mb-1">{{$t('PendingTickets')}}</p>
                     <h4>10</h4>
                   </div>
                 </div>
@@ -180,26 +180,26 @@
       <div class="card">
         <div class="card-body p-3">
           <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-            <h5>Ticket List</h5>
+            <h5>{{$t('TicketList')}}</h5>
             <div class="d-flex align-items-center flex-wrap row-gap-3">
               <div class="dropdown me-2">
                 <a href="javascript:void(0);"
                   class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
-                  Priority
+                  {{$t('Priority')}}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Priority</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Priority')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">High</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('high')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Low</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('low')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Medium</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('medium')}}</a>
                   </li>
                 </ul>
               </div>
@@ -207,17 +207,17 @@
                 <a href="javascript:void(0);"
                   class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
-                  Select Status
+                  {{$t('SelectStatus')}}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Open</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Open')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">On Hold</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('OnHold')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Reopened</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Reopened')}}</a>
                   </li>
                 </ul>
               </div>
@@ -225,23 +225,23 @@
                 <a href="javascript:void(0);"
                   class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
-                  Sort By : Last 7 Days
+                  {{$t('SortBy:Last7Days')}}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('RecentlyAdded')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Descending')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('lastMonth')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Last7Days')}}</a>
                   </li>
                 </ul>
               </div>
@@ -253,10 +253,10 @@
         <div class="col-xl-9 col-md-8">
           <div class="card">
             <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-              <h5 class="text-info fw-medium">IT Support</h5>
+              <h5 class="text-info fw-medium">{{$t('ITSupport')}}</h5>
               <div class="d-flex align-items-center">
                 <span class="badge badge-danger d-inline-flex align-items-center me-3"><i
-                    class="ti ti-circle-filled fs-5 me-1"></i>High</span>
+                    class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}</span>
                 <div>
                   <vue-select :options="PublSel" id="publsel" placeholder="Mark as Private" />
                 </div>
@@ -267,22 +267,22 @@
                 <span class="badge badge-info rounded-pill mb-2">Tic - 001</span>
                 <div class="d-flex align-items-center mb-2">
                   <h5 class="fw-semibold me-2">
-                    <router-link to="/tickets/tickets-details">Laptop Issue</router-link>
+                    <router-link to="/tickets/tickets-details">{{$t('LaptopIssue')}}</router-link>
                   </h5>
                   <span class="badge bg-outline-pink d-flex align-items-center ms-1"><i
-                      class="ti ti-circle-filled fs-5 me-1"></i>Open</span>
+                      class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}</span>
                 </div>
                 <div class="d-flex align-items-center flex-wrap row-gap-2">
                   <p class="d-flex align-items-center mb-0 me-2">
                     <img src="@/assets/img/profiles/avatar-03.jpg" class="avatar avatar-xs rounded-circle me-2"
                       alt="img" />
-                    Assigned to <span class="text-dark ms-1"> Edgar Hansel</span>
+                    {{$t('AssignedTo')}} <span class="text-dark ms-1"> Edgar Hansel</span>
                   </p>
                   <p class="d-flex align-items-center mb-0 me-2">
-                    <i class="ti ti-calendar-bolt me-1"></i>Updated 10 hours ago
+                    <i class="ti ti-calendar-bolt me-1"></i>{{$t('Updated10hoursago')}}
                   </p>
                   <p class="d-flex align-items-center mb-0">
-                    <i class="ti ti-message-share me-1"></i>9 Comments
+                    <i class="ti ti-message-share me-1"></i>9 {{$t('Comments')}}
                   </p>
                 </div>
               </div>
@@ -290,10 +290,10 @@
           </div>
           <div class="card">
             <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-              <h5 class="text-info fw-medium">IT Support</h5>
+              <h5 class="text-info fw-medium">{{$t('ITSupport')}}</h5>
               <div class="d-flex align-items-center">
                 <span class="badge badge-success d-inline-flex align-items-center me-3"><i
-                    class="ti ti-circle-filled fs-5 me-1"></i>Low</span>
+                    class="ti ti-circle-filled fs-5 me-1"></i>{{$t('low')}}</span>
                 <div>
                   <vue-select :options="PublSelOne" id="publselOne" placeholder="Mark as Public" />
                 </div>
@@ -304,22 +304,22 @@
                 <span class="badge badge-info rounded-pill mb-2">Tic - 002</span>
                 <div class="d-flex align-items-center mb-2">
                   <h5 class="fw-semibold me-2">
-                    <router-link to="/tickets/tickets-details">Payment Issue</router-link>
+                    <router-link to="/tickets/tickets-details">{{$t('PaymentIssue')}}</router-link>
                   </h5>
                   <span class="badge bg-outline-warning d-flex align-items-center ms-1"><i
-                      class="ti ti-circle-filled fs-5 me-1"></i>On Hold</span>
+                      class="ti ti-circle-filled fs-5 me-1"></i>{{$t('OnHold')}}</span>
                 </div>
                 <div class="d-flex align-items-center flex-wrap row-gap-2">
                   <p class="d-flex align-items-center mb-0 me-2">
                     <img src="@/assets/img/profiles/avatar-01.jpg" class="avatar avatar-xs rounded-circle me-2"
                       alt="img" />
-                    Assigned to <span class="text-dark ms-1">Ann Lynch</span>
+                    {{$t('AssignedTo')}} <span class="text-dark ms-1">Ann Lynch</span>
                   </p>
                   <p class="d-flex align-items-center mb-0 me-2">
-                    <i class="ti ti-calendar-bolt me-1"></i>Updated 15 hours ago
+                    <i class="ti ti-calendar-bolt me-1"></i>{{$t('Updated15hoursago')}}
                   </p>
                   <p class="d-flex align-items-center mb-0">
-                    <i class="ti ti-message-share me-1"></i>9 Comments
+                    <i class="ti ti-message-share me-1"></i>9 {{$t('Comments')}}
                   </p>
                 </div>
               </div>
@@ -327,10 +327,10 @@
           </div>
           <div class="card">
             <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-              <h5 class="text-info fw-medium">IT Support</h5>
+              <h5 class="text-info fw-medium">{{$t('ITSupport')}}</h5>
               <div class="d-flex align-items-center">
                 <span class="badge badge-warning d-inline-flex align-items-center me-3"><i
-                    class="ti ti-circle-filled fs-5 me-1"></i>Medium</span>
+                    class="ti ti-circle-filled fs-5 me-1"></i>{{$t('medium')}}</span>
                 <div>
                   <vue-select :options="PublSelTwo" id="publseltwo" placeholder="Mark as Private" />
                 </div>
@@ -341,22 +341,22 @@
                 <span class="badge badge-info rounded-pill mb-2">Tic - 003</span>
                 <div class="d-flex align-items-center mb-2">
                   <h5 class="fw-semibold me-2">
-                    <router-link to="/tickets/tickets-details">Bug Report</router-link>
+                    <router-link to="/tickets/tickets-details">{{$t('BugReport')}}</router-link>
                   </h5>
                   <span class="badge bg-outline-purple d-flex align-items-center ms-1"><i
-                      class="ti ti-circle-filled fs-5 me-1"></i>Reopened</span>
+                      class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Reopened')}}</span>
                 </div>
                 <div class="d-flex align-items-center flex-wrap row-gap-2">
                   <p class="d-flex align-items-center mb-0 me-2">
                     <img src="@/assets/img/profiles/avatar-06.jpg" class="avatar avatar-xs rounded-circle me-2"
                       alt="img" />
-                    Assigned to <span class="text-dark ms-1">Juan Hermann</span>
+                    {{$t('AssignedTo')}} <span class="text-dark ms-1">Juan Hermann</span>
                   </p>
                   <p class="d-flex align-items-center mb-0 me-2">
-                    <i class="ti ti-calendar-bolt me-1"></i>Updated 20 hours ago
+                    <i class="ti ti-calendar-bolt me-1"></i>{{$t('Updated20hoursago')}}
                   </p>
                   <p class="d-flex align-items-center mb-0">
-                    <i class="ti ti-message-share me-1"></i>9 Comments
+                    <i class="ti ti-message-share me-1"></i>9 {{$t('Comments')}}
                   </p>
                 </div>
               </div>
@@ -364,10 +364,10 @@
           </div>
           <div class="card">
             <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-              <h5 class="text-info fw-medium">IT Support</h5>
+              <h5 class="text-info fw-medium">{{$t('ITSupport')}}</h5>
               <div class="d-flex align-items-center">
                 <span class="badge badge-success d-inline-flex align-items-center me-3"><i
-                    class="ti ti-circle-filled fs-5 me-1"></i>Low</span>
+                    class="ti ti-circle-filled fs-5 me-1"></i>{{$t('low')}}</span>
                 <div>
                   <vue-select :options="PublSelThree" id="publselthree" placeholder="Mark as Private" />
                 </div>
@@ -378,64 +378,64 @@
                 <span class="badge badge-info rounded-pill mb-2">Tic - 004</span>
                 <div class="d-flex align-items-center mb-2">
                   <h5 class="fw-semibold me-2">
-                    <router-link to="/tickets/tickets-details">Access Denied</router-link>
+                    <router-link to="/tickets/tickets-details">{{$t('AccessDenied')}}</router-link>
                   </h5>
                   <span class="badge bg-outline-pink d-flex align-items-center ms-1"><i
-                      class="ti ti-circle-filled fs-5 me-1"></i>Open</span>
+                      class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}</span>
                 </div>
                 <div class="d-flex align-items-center flex-wrap row-gap-2">
                   <p class="d-flex align-items-center mb-0 me-2">
                     <img src="@/assets/img/profiles/avatar-05.jpg" class="avatar avatar-xs rounded-circle me-2"
                       alt="img" />
-                    Assigned to <span class="text-dark ms-1">Jessie Otero</span>
+                    {{$t('AssignedTo')}} <span class="text-dark ms-1">Jessie Otero</span>
                   </p>
                   <p class="d-flex align-items-center mb-0 me-2">
-                    <i class="ti ti-calendar-bolt me-1"></i>Updated 23 hours ago
+                    <i class="ti ti-calendar-bolt me-1"></i>{{$t('Updated23hoursago')}}
                   </p>
                   <p class="d-flex align-items-center mb-0">
-                    <i class="ti ti-message-share me-1"></i>9 Comments
+                    <i class="ti ti-message-share me-1"></i>9 {{$t('Comments')}}
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="text-center mb-4">
-            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
+            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>{{$t('LoadMore')}}</a>
           </div>
         </div>
         <div class="col-xl-3 col-md-4">
           <div class="card">
             <div class="card-header">
-              <h4>Ticket Categories</h4>
+              <h4>{{$t('TicketCategories')}}</h4>
             </div>
             <div class="card-body p-0">
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-                  <a href="javascript:void(0);">Internet Issue</a>
+                  <a href="javascript:void(0);">{{$t('InternetIssue')}}</a>
                   <div class="d-flex align-items-center">
                     <span class="badge badge-xs bg-dark rounded-circle">0</span>
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-                  <a href="javascript:void(0);">Computer</a>
+                  <a href="javascript:void(0);">{{$t('Computer')}}</a>
                   <div class="d-flex align-items-center">
                     <span class="badge badge-xs bg-dark rounded-circle">1</span>
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-                  <a href="javascript:void(0);">Redistribute</a>
+                  <a href="javascript:void(0);">{{$t('Redistribute')}}</a>
                   <div class="d-flex align-items-center">
                     <span class="badge badge-xs bg-dark rounded-circle">0</span>
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between border-bottom p-3">
-                  <a href="javascript:void(0);">Payment</a>
+                  <a href="javascript:void(0);">{{$t('Payment')}}</a>
                   <div class="d-flex align-items-center">
                     <span class="badge badge-xs bg-dark rounded-circle">2</span>
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between p-3">
-                  <a href="javascript:void(0);">Complaint</a>
+                  <a href="javascript:void(0);">{{$t('Complaint')}}</a>
                   <div class="d-flex align-items-center">
                     <span class="badge badge-xs bg-dark rounded-circle">1</span>
                   </div>
@@ -445,7 +445,7 @@
           </div>
           <div class="card">
             <div class="card-header">
-              <h4>Support Agents</h4>
+              <h4>{{$t('SupportAgents')}}</h4>
             </div>
             <div class="card-body p-0">
               <div class="d-flex flex-column">
@@ -494,8 +494,8 @@
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        {{$t('designed')}} &amp; {{$t('developedBy')}}
+        <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a>
       </p>
     </div>
   </div>

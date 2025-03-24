@@ -7,7 +7,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col">
-            <h3 class="page-title">Checks & Radios</h3>
+            <h3 class="page-title">{{ $t('Checks&Radios') }}</h3>
           </div>
         </div>
       </div>
@@ -17,7 +17,7 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <h5 class="card-title">Checkbox</h5>
+              <h5 class="card-title">{{ $t('Checkbox') }}</h5>
             </div>
             <div class="card-body">
               <div class="form-check">
@@ -28,7 +28,7 @@
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
+                  {{ $t('Defaultcheckbox') }}
                 </label>
               </div>
               <div class="form-check">
@@ -40,7 +40,7 @@
                   checked=""
                 />
                 <label class="form-check-label" for="flexCheckChecked">
-                  Checked checkbox
+                  {{ $t('Checkedcheckbox') }}
                 </label>
               </div>
             </div>
@@ -50,7 +50,7 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <h5 class="card-title">Disabled</h5>
+              <h5 class="card-title">{{ $t('Disabled') }}</h5>
             </div>
             <div class="card-body">
               <div class="form-check">
@@ -62,7 +62,7 @@
                   disabled=""
                 />
                 <label class="form-check-label" for="flexCheckDisabled">
-                  Disabled checkbox
+                  {{ $t('Disabledcheckbox') }}
                 </label>
               </div>
               <div class="form-check">
@@ -75,7 +75,7 @@
                   disabled=""
                 />
                 <label class="form-check-label" for="flexCheckCheckedDisabled">
-                  Disabled checked checkbox
+                  {{ $t('Disabledcheckedcheckbox') }}
                 </label>
               </div>
             </div>
@@ -85,7 +85,7 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <h5 class="card-title">Radios</h5>
+              <h5 class="card-title">{{ $t('Radios') }}</h5>
             </div>
             <div class="card-body">
               <div class="form-check">
@@ -96,7 +96,7 @@
                   id="flexRadioDefault1"
                 />
                 <label class="form-check-label" for="flexRadioDefault1">
-                  Default radio
+                  {{ $t('Defaultradio') }}
                 </label>
               </div>
               <div class="form-check">
@@ -108,7 +108,7 @@
                   checked=""
                 />
                 <label class="form-check-label" for="flexRadioDefault2">
-                  Default checked radio
+                  {{$t('DefaultCheckedradio')}}
                 </label>
               </div>
             </div>
@@ -118,7 +118,7 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <h5 class="card-title">Radios</h5>
+              <h5 class="card-title">{{ $t('Radios') }}</h5>
             </div>
             <div class="card-body">
               <div class="form-check">
@@ -130,7 +130,7 @@
                   disabled=""
                 />
                 <label class="form-check-label" for="flexRadioDisabled">
-                  Disabled radio
+                  {{ $t('Disabledradio') }}
                 </label>
               </div>
               <div class="form-check">
@@ -143,7 +143,7 @@
                   disabled=""
                 />
                 <label class="form-check-label" for="flexRadioCheckedDisabled">
-                  Disabled checked radio
+                  {{ $t('Disabledcheckedradio') }}
                 </label>
               </div>
             </div>
@@ -153,7 +153,7 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <h5 class="card-title">Default (stacked)</h5>
+              <h5 class="card-title">{{ $t('Default(stacked)') }}</h5>
             </div>
             <div class="card-body">
               <div class="form-check">
@@ -164,7 +164,7 @@
                   id="defaultCheck1"
                 />
                 <label class="form-check-label" for="defaultCheck1">
-                  Default checkbox
+                  {{ $t('Defaultcheckbox') }}
                 </label>
               </div>
               <div class="form-check">
@@ -176,7 +176,7 @@
                   disabled=""
                 />
                 <label class="form-check-label" for="defaultCheck2">
-                  Disabled checkbox
+                  {{ $t('Disabledcheckbox') }}
                 </label>
               </div>
               <div class="form-check">
@@ -189,7 +189,7 @@
                   checked=""
                 />
                 <label class="form-check-label" for="exampleRadios1">
-                  Default radio
+                  {{ $t('Defaultradio') }}
                 </label>
               </div>
               <div class="form-check mb-0">
@@ -202,7 +202,7 @@
                   disabled=""
                 />
                 <label class="form-check-label" for="exampleRadios3">
-                  Disabled radio
+                  {{ $t('Disabledradio') }}
                 </label>
               </div>
             </div>
@@ -212,7 +212,7 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <h5 class="card-title">Switches</h5>
+              <h5 class="card-title">{{ $t('Switches') }}</h5>
             </div>
             <div class="card-body">
               <div class="form-check form-switch">
@@ -223,7 +223,7 @@
                   id="flexSwitchCheckDefault"
                 />
                 <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >Default switch checkbox input</label
+                  >{{ $t('Defaultswitchcheckboxinput') }}</label
                 >
               </div>
               <div class="form-check form-switch">
@@ -235,7 +235,7 @@
                   checked=""
                 />
                 <label class="form-check-label" for="flexSwitchCheckChecked"
-                  >Checked switch checkbox input</label
+                  >{{ $t('Checkedswitchcheckboxinput') }}</label
                 >
               </div>
               <div class="form-check form-switch">
@@ -247,7 +247,7 @@
                   disabled=""
                 />
                 <label class="form-check-label" for="flexSwitchCheckDisabled"
-                  >Disabled switch checkbox input</label
+                  >{{ $t('Disabledswitchcheckboxinput') }}</label
                 >
               </div>
               <div class="form-check form-switch mb-0">
@@ -260,7 +260,7 @@
                   disabled=""
                 />
                 <label class="form-check-label" for="flexSwitchCheckCheckedDisabled"
-                  >Disabled checked switch checkbox input</label
+                  >{{ $t('Disabledcheckedswitchcheckboxinput') }}</label
                 >
               </div>
             </div>
@@ -270,7 +270,7 @@
         <div class="col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Checkbox Sizes</div>
+              <div class="card-title">{{ $t('CheckboxSizes') }}</div>
             </div>
             <div class="card-body d-sm-flex align-items-center justify-content-between">
               <div class="form-check">
@@ -281,7 +281,7 @@
                   id="checkebox-sm"
                   checked=""
                 />
-                <label class="form-check-label" for="checkebox-sm"> Default </label>
+                <label class="form-check-label" for="checkebox-sm"> {{ $t('Default') }} </label>
               </div>
               <div class="form-check form-check-md d-flex align-items-center">
                 <input
@@ -291,7 +291,7 @@
                   id="checkebox-md"
                   checked=""
                 />
-                <label class="form-check-label" for="checkebox-md"> Medium </label>
+                <label class="form-check-label" for="checkebox-md"> {{ $t('medium') }} </label>
               </div>
               <div class="form-check form-check-lg d-flex align-items-center">
                 <input
@@ -301,7 +301,7 @@
                   id="checkebox-lg"
                   checked=""
                 />
-                <label class="form-check-label" for="checkebox-lg"> Large </label>
+                <label class="form-check-label" for="checkebox-lg"> {{ $t('Large') }} </label>
               </div>
             </div>
           </div>
@@ -309,16 +309,16 @@
         <div class="col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Radio Sizes</div>
+              <div class="card-title">{{ $t('RadioSizes') }}</div>
             </div>
             <div class="card-body d-sm-flex align-items-center justify-content-between">
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="Radio" id="Radio-sm" />
-                <label class="form-check-label" for="Radio-sm"> Default </label>
+                <label class="form-check-label" for="Radio-sm"> {{ $t('Default') }} </label>
               </div>
               <div class="form-check form-check-md">
                 <input class="form-check-input" type="radio" name="Radio" id="Radio-md" />
-                <label class="form-check-label" for="Radio-md"> Medium </label>
+                <label class="form-check-label" for="Radio-md"> {{ $t('medium') }} </label>
               </div>
               <div class="form-check form-check-lg">
                 <input
@@ -328,7 +328,7 @@
                   id="Radio-lg"
                   checked=""
                 />
-                <label class="form-check-label" for="Radio-lg"> Large </label>
+                <label class="form-check-label" for="Radio-lg"> {{ $t('Large') }} </label>
               </div>
             </div>
           </div>
@@ -336,7 +336,7 @@
         <div class="col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Switch Sizes</div>
+              <div class="card-title">{{ $t('SwitchSizes') }}</div>
             </div>
             <div class="card-body d-sm-flex align-item-center justify-content-between">
               <div class="form-check form-switch">
@@ -346,7 +346,7 @@
                   role="switch"
                   id="switch-sm"
                 />
-                <label class="form-check-label" for="switch-sm">Default</label>
+                <label class="form-check-label" for="switch-sm">{{ $t('Default') }}</label>
               </div>
               <div class="form-check form-check-md form-switch">
                 <input
@@ -355,7 +355,7 @@
                   role="switch"
                   id="switch-md"
                 />
-                <label class="form-check-label" for="switch-md">Medium</label>
+                <label class="form-check-label" for="switch-md">{{ $t('medium') }}</label>
               </div>
               <div class="form-check form-check-lg form-switch">
                 <input
@@ -364,7 +364,7 @@
                   role="switch"
                   id="switch-lg"
                 />
-                <label class="form-check-label" for="switch-lg">Large</label>
+                <label class="form-check-label" for="switch-lg">{{ $t('Large') }}</label>
               </div>
             </div>
           </div>
@@ -373,7 +373,7 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <h5 class="card-title">Inline</h5>
+              <h5 class="card-title">{{ $t('Inline') }}</h5>
             </div>
             <div class="card-body">
               <div class="form-check form-check-inline">
@@ -402,7 +402,7 @@
                   value="option3"
                   disabled=""
                 />
-                <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                <label class="form-check-label" for="inlineCheckbox3">3 ({{ $t('Disabled') }})</label>
               </div>
               <div class="form-check form-check-inline">
                 <input
@@ -433,7 +433,7 @@
                   value="option3"
                   disabled=""
                 />
-                <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                <label class="form-check-label" for="inlineRadio3">3 ({{ $t('Disabled') }})</label>
               </div>
             </div>
           </div>
@@ -442,7 +442,7 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <h5 class="card-title">Without labels</h5>
+              <h5 class="card-title">{{ $t('Withoutlabels') }}</h5>
             </div>
             <div class="card-body">
               <span class="me-3">

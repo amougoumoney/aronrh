@@ -30,7 +30,7 @@
             <!-- Use data attributes for the modal -->
             <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_interview"
               class="btn btn-primary d-flex align-items-center">
-              <i class="ti ti-circle-plus me-2"></i>Add Interview
+              <i class="ti ti-circle-plus me-2"></i>{{ $t('AddInterview') }}
             </a>
           </div>
         </div>

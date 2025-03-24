@@ -7,7 +7,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">Form Validation</h3>
+            <h3 class="page-title">{{ $t('FormValidation') }}</h3>
           </div>
         </div>
       </div>
@@ -19,15 +19,14 @@
           <!-- Custom Boostrap Validation -->
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Custom Bootstrap Form Validation</h5>
+              <h5 class="card-title">{{ $t('CustomBootstrapFormValidation') }}</h5>
               <p class="card-text">
-                For custom Bootstrap form validation messages, you’ll need to add the
-                <code>novalidate</code> boolean attribute to your form. For server side
-                validation
+                {{ $t('for...') }}
+                <code>novalidate</code> {{ $t('boolean...') }}
                 <a
                   href="https://getbootstrap.com/docs/4.1/components/forms/#server-side"
                   target="_blank"
-                  >read full documentation</a
+                  >{{ $t('readfulldocumentation') }}</a
                 >.
               </p>
             </div>
@@ -38,11 +37,9 @@
           <!-- Default Browser Validation -->
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title mb-0">Browser Defaults</h5>
+              <h5 class="card-title mb-0">{{ $t('BrowserDefaults') }}</h5>
               <p class="card-text">
-                Not interested in custom validation feedback messages or writing
-                JavaScript to change form behaviors? All good, you can use the browser
-                defaults. Try submitting the form below.
+                {{ $t('Not...') }}
               </p>
             </div>
             <div class="card-body">
@@ -52,7 +49,7 @@
                     <form>
                       <div class="form-row row">
                         <div class="col-md-4 mb-3">
-                          <label for="validationDefault01">First Name</label>
+                          <label for="validationDefault01">{{ $t('FirstName') }}</label>
                           <input
                             type="text"
                             class="form-control"
@@ -63,7 +60,7 @@
                           />
                         </div>
                         <div class="col-md-4 mb-3">
-                          <label for="validationDefault02">Last Name</label>
+                          <label for="validationDefault02">{{ $t('LastName') }}</label>
                           <input
                             type="text"
                             class="form-control"
@@ -74,7 +71,7 @@
                           />
                         </div>
                         <div class="col-md-4 mb-3">
-                          <label for="validationDefaultUsername">Username</label>
+                          <label for="validationDefaultUsername">{{ $t('Username') }}</label>
                           <div class="input-group">
                             <span class="input-group-text" id="inputGroupPrepend2"
                               >@</span
@@ -92,7 +89,7 @@
                       </div>
                       <div class="form-row row">
                         <div class="col-md-6 mb-3">
-                          <label for="validationDefault03">City</label>
+                          <label for="validationDefault03">{{ $t('City') }}</label>
                           <input
                             type="text"
                             class="form-control"
@@ -102,7 +99,7 @@
                           />
                         </div>
                         <div class="col-md-3 mb-3">
-                          <label for="validationDefault04">State</label>
+                          <label for="validationDefault04">{{ $t('State') }}</label>
                           <input
                             type="text"
                             class="form-control"
@@ -112,7 +109,7 @@
                           />
                         </div>
                         <div class="col-md-3 mb-3">
-                          <label for="validationDefault05">Zip</label>
+                          <label for="validationDefault05">{{ $t('Zip') }}</label>
                           <input
                             type="text"
                             class="form-control"
@@ -132,11 +129,11 @@
                             required
                           />
                           <label class="form-check-label" for="invalidCheck2">
-                            Agree to terms and conditions
+                            {{ $t('Agreetotermsandconditions') }}
                           </label>
                         </div>
                       </div>
-                      <button class="btn btn-primary" type="submit">Submit form</button>
+                      <button class="btn btn-primary" type="submit">{{ $t('Submitform') }}</button>
                     </form>
                   </div>
                 </div>
@@ -148,19 +145,18 @@
           <!-- Server Side Validation -->
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title mb-0">Server Side</h5>
+              <h5 class="card-title mb-0">{{ $t('ServerSide') }}</h5>
               <p class="card-text">
-                We recommend using client side validation, but in case you require server
-                side, you can indicate invalid and valid form fields with
-                <code>.is-invalid</code> and <code>.is-valid</code>. Note that
-                <code>.invalid-feedback</code> is also supported with these classes.
+                {{ $t('we...') }}
+                <code>.is-invalid</code> {{ $t('and') }} <code>.is-valid</code>. {{ $t('Notethat') }}
+                <code>.invalid-feedback</code> {{ $t('is...') }}
               </p>
             </div>
             <div class="card-body">
               <form class="needs-validation" novalidate>
                 <div class="form-row row">
                   <div class="col-md-4 mb-3">
-                    <label for="validationServer01">First Name</label>
+                    <label for="validationServer01">{{ $t('FirstName') }}</label>
                     <input
                       type="text"
                       class="form-control is-valid"
@@ -169,10 +165,10 @@
                       value="Mark"
                       required
                     />
-                    <div class="valid-feedback">Looks good!</div>
+                    <div class="valid-feedback">{{ $t('Looksgood!') }}</div>
                   </div>
                   <div class="col-md-4 mb-3">
-                    <label for="validationServer02">Last Name</label>
+                    <label for="validationServer02">{{ $t('LastName') }}</label>
                     <input
                       type="text"
                       class="form-control is-valid"
@@ -181,10 +177,10 @@
                       value="Otto"
                       required
                     />
-                    <div class="valid-feedback">Looks good!</div>
+                    <div class="valid-feedback">{{ $t('Looksgood!') }}</div>
                   </div>
                   <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Username</label>
+                    <label for="validationServerUsername">{{ $t('Username') }}</label>
                     <div class="input-group">
                       <span class="input-group-text" id="inputGroupPrepend3">@</span>
                       <input
@@ -195,13 +191,13 @@
                         aria-describedby="inputGroupPrepend3"
                         required
                       />
-                      <div class="invalid-feedback">Please choose a username.</div>
+                      <div class="invalid-feedback">{{ $t('Pleasechooseausername') }}.</div>
                     </div>
                   </div>
                 </div>
                 <div class="form-row row">
                   <div class="col-md-6 mb-3">
-                    <label for="validationServer03">City</label>
+                    <label for="validationServer03">{{ $t('City') }}</label>
                     <input
                       type="text"
                       class="form-control is-invalid"
@@ -209,10 +205,10 @@
                       placeholder="City"
                       required
                     />
-                    <div class="invalid-feedback">Please provide a valid city.</div>
+                    <div class="invalid-feedback">{{ $t('Pleaseprovideavalidcity') }}.</div>
                   </div>
                   <div class="col-md-3 mb-3">
-                    <label for="validationServer04">State</label>
+                    <label for="validationServer04">{{ $t('State') }}</label>
                     <input
                       type="text"
                       class="form-control is-invalid"
@@ -220,10 +216,10 @@
                       placeholder="State"
                       required
                     />
-                    <div class="invalid-feedback">Please provide a valid state.</div>
+                    <div class="invalid-feedback">{{ $t('Pleaseprovideavalidstate') }}.</div>
                   </div>
                   <div class="col-md-3 mb-3">
-                    <label for="validationServer05">Zip</label>
+                    <label for="validationServer05">{{ $t('Zip') }}</label>
                     <input
                       type="text"
                       class="form-control is-invalid"
@@ -231,7 +227,7 @@
                       placeholder="Zip"
                       required
                     />
-                    <div class="invalid-feedback">Please provide a valid zip.</div>
+                    <div class="invalid-feedback">{{ $t('Pleaseprovideavalidzip') }}.</div>
                   </div>
                 </div>
                 <div class="input-block mb-3">
@@ -244,12 +240,12 @@
                       required
                     />
                     <label class="form-check-label" for="invalidCheck3">
-                      Agree to terms and conditions
+                      {{ $t('Agreetotermsandconditions') }}
                     </label>
-                    <div class="invalid-feedback">You must agree before submitting.</div>
+                    <div class="invalid-feedback">{{ $t('you...') }}</div>
                   </div>
                 </div>
-                <button class="btn btn-primary" type="submit">Submit form</button>
+                <button class="btn btn-primary" type="submit">{{ $t('Submitform') }}</button>
               </form>
             </div>
           </div>
@@ -258,10 +254,9 @@
           <!-- Supported Elements -->
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title mb-0">Supported Elements</h5>
+              <h5 class="card-title mb-0">{{ $t('SupportedElements') }}</h5>
               <p class="card-text">
-                Form validation styles are also available for bootstrap custom form
-                controls.
+                {{ $t('form...') }}
               </p>
             </div>
             <div class="card-body">
@@ -276,9 +271,9 @@
                         required
                       />
                       <label for="customControlValidation1"
-                        >Check this custom checkbox</label
+                        >{{ $t('Checkthiscustomcheckbox') }}</label
                       >
-                      <div class="invalid-feedback">Example invalid feedback text</div>
+                      <div class="invalid-feedback">{{ $t('Exampleinvalidfeedbacktext') }}</div>
                     </div>
                     <div class="custom-radio">
                       <input
@@ -289,7 +284,7 @@
                         required
                       />
                       <label for="customControlValidation2"
-                        >Toggle this custom radio</label
+                        >{{ $t('Togglethiscustomradio') }}</label
                       >
                     </div>
                     <div class="custom-radio mb-3">
@@ -301,21 +296,21 @@
                         required
                       />
                       <label for="customControlValidation3"
-                        >Or toggle this other custom radio</label
+                        >{{ $t('Ortogglethisothercustomradio') }}</label
                       >
                       <div class="invalid-feedback">
-                        More example invalid feedback text
+                        {{ $t('Moreexampleinvalidfeedbacktext') }}
                       </div>
                     </div>
                     <div class="input-block mb-3">
                       <select class="form-select" required>
-                        <option value="">Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="">{{ $t('Openthisselectmenu') }}</option>
+                        <option value="1">{{ $t('One') }}</option>
+                        <option value="2">{{ $t('Two') }}</option>
+                        <option value="3">{{ $t('Three') }}</option>
                       </select>
                       <div class="invalid-feedback">
-                        Example invalid custom select feedback
+                        {{ $t('Exampleinvalidcustomselectfeedback') }}
                       </div>
                     </div>
 
@@ -327,7 +322,7 @@
                         required
                       />
                       <div class="invalid-feedback">
-                        Example invalid custom file feedback
+                        {{ $t('Exampleinvalidcustomfilefeedback') }}
                       </div>
                     </div>
                   </form>
@@ -340,11 +335,10 @@
           <!-- Validation Tooltips -->
           <div class="card mb-0">
             <div class="card-header">
-              <h5 class="card-title mb-0">Tooltips</h5>
+              <h5 class="card-title mb-0">{{ $t('Tooltips') }}</h5>
               <p class="card-text">
-                You can swap the <code>.{valid|invalid}-feedback</code> classes for
-                <code>.{valid|invalid}-tooltip</code> classes to display validation
-                feedback in a styled tooltip.
+                {{ $t('Youcanswapthe') }}<code>.{valid|invalid}-feedback</code> {{ $t('classesfor') }}
+                <code>.{valid|invalid}-tooltip</code> {{ $t('kb') }}.
               </p>
             </div>
             <div class="card-body">
@@ -356,7 +350,7 @@
               >
                 <div class="form-row row">
                   <div class="col-md-4 mb-3">
-                    <label class="form-label" for="validationTooltip01">First name</label>
+                    <label class="form-label" for="validationTooltip01">{{ $t('FirstName') }}</label>
                     <input
                       type="text"
                       class="form-control"
@@ -365,10 +359,10 @@
                       value="Mark"
                       required
                     />
-                    <div class="valid-tooltip">Looks good!</div>
+                    <div class="valid-tooltip">{{ $t('Looksgood!') }}</div>
                   </div>
                   <div class="col-md-4 mb-3">
-                    <label class="form-label" for="validationTooltip02">Last name</label>
+                    <label class="form-label" for="validationTooltip02">{{ $t('LastName') }}</label>
                     <input
                       type="text"
                       class="form-control"
@@ -377,11 +371,11 @@
                       value="Otto"
                       required
                     />
-                    <div class="valid-tooltip">Looks good!</div>
+                    <div class="valid-tooltip">{{ $t('Looksgood!') }}</div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <label class="form-label" for="validationTooltipUsername"
-                      >Username</label
+                      >{{ $t('Username') }}</label
                     >
                     <input
                       type="text"
@@ -391,13 +385,13 @@
                       required
                     />
                     <div class="invalid-tooltip">
-                      Please choose a unique and valid username.
+                      {{ $t('Pleasechooseauniqueandvalidusername') }}.
                     </div>
                   </div>
                 </div>
                 <div class="form-row row">
                   <div class="col-md-6 mb-3 mt-4">
-                    <label class="form-label" for="validationTooltip03">City</label>
+                    <label class="form-label" for="validationTooltip03">{{ $t('City') }}</label>
                     <input
                       type="text"
                       class="form-control"
@@ -405,10 +399,10 @@
                       placeholder="City"
                       required
                     />
-                    <div class="invalid-tooltip">Please provide a valid city.</div>
+                    <div class="invalid-tooltip">{{ $t('Pleaseprovideavalidcity') }}.</div>
                   </div>
                   <div class="col-md-3 mb-3 mt-4">
-                    <label class="form-label" for="validationTooltip04">State</label>
+                    <label class="form-label" for="validationTooltip04">{{ $t('State') }}</label>
                     <input
                       type="text"
                       class="form-control"
@@ -416,10 +410,10 @@
                       placeholder="State"
                       required
                     />
-                    <div class="invalid-tooltip">Please provide a valid state.</div>
+                    <div class="invalid-tooltip">{{ $t('Pleaseprovideavalidstate') }}.</div>
                   </div>
                   <div class="col-md-3 mb-3 mt-4">
-                    <label class="form-label" for="validationTooltip05">Zip</label>
+                    <label class="form-label" for="validationTooltip05">{{ $t('Zip') }}</label>
                     <input
                       type="text"
                       class="form-control"
@@ -427,10 +421,10 @@
                       placeholder="Zip"
                       required
                     />
-                    <div class="invalid-tooltip">Please provide a valid zip.</div>
+                    <div class="invalid-tooltip">{{ $t('Pleaseprovideavalidzip') }}.</div>
                   </div>
                 </div>
-                <button class="btn btn-primary mt-4" type="submit">Submit form</button>
+                <button class="btn btn-primary mt-4" type="submit">{{ $t('Submitform') }}</button>
               </form>
             </div>
           </div>

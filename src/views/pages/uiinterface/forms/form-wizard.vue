@@ -7,7 +7,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">Form Wizard</h3>
+            <h3 class="page-title">{{ $t('FormWizard') }}</h3>
           </div>
         </div>
       </div>
@@ -18,7 +18,7 @@
         <div class="col-lg-12">
           <div class="card">
             <div class="card-header">
-              <h4 class="card-title mb-0">Basic Wizard</h4>
+              <h4 class="card-title mb-0">{{ $t('BasicWizard') }}</h4>
             </div>
             <div class="card-body">
               <div id="basic-pills-wizard" class="twitter-bs-wizard">
@@ -74,14 +74,14 @@
                 <div class="tab-content twitter-bs-wizard-tab-content mt-4">
                   <div class="tab-pane active" id="seller-details">
                     <div class="mb-4">
-                      <h5>Enter Your Personal Details</h5>
+                      <h5>{{ $t('EnterYourPersonalDetails') }}</h5>
                     </div>
                     <form>
                       <div class="row">
                         <div class="col-lg-6">
                           <div class="mb-3">
                             <label for="basicpill-firstname-input" class="form-label"
-                              >First name</label
+                              >{{ $t('FirstName') }}</label
                             >
                             <input
                               type="text"
@@ -93,7 +93,7 @@
                         <div class="col-lg-6">
                           <div class="mb-3">
                             <label for="basicpill-lastname-input" class="form-label"
-                              >Last name</label
+                              >{{ $t('LastName') }}</label
                             >
                             <input
                               type="text"
@@ -108,7 +108,7 @@
                         <div class="col-lg-6">
                           <div class="mb-3">
                             <label for="basicpill-phoneno-input" class="form-label"
-                              >Phone</label
+                              >{{ $t('phone') }}</label
                             >
                             <input
                               type="text"
@@ -120,7 +120,7 @@
                         <div class="col-lg-6">
                           <div class="mb-3">
                             <label for="basicpill-email-input" class="form-label"
-                              >Email</label
+                              >{{ $t('Email') }}</label
                             >
                             <input
                               type="email"
@@ -137,7 +137,7 @@
                           href="javascript: void(0);"
                           class="btn btn-primary"
                           @click="nextTab"
-                          >Next <i class="bx bx-chevron-right ms-1"></i
+                          >{{ $t('Next') }} <i class="bx bx-chevron-right ms-1"></i
                         ></a>
                       </li>
                     </ul>
@@ -146,14 +146,14 @@
                   <div class="tab-pane" id="company-document">
                     <div>
                       <div class="mb-4">
-                        <h5>Enter Your Address</h5>
+                        <h5>{{ $t('EnterYourAddress') }}</h5>
                       </div>
                       <form>
                         <div class="row">
                           <div class="col-lg-6">
                             <div class="mb-3">
                               <label for="basicpill-pancard-input" class="form-label"
-                                >Address 1</label
+                                >{{ $t('Address1') }}</label
                               >
                               <input
                                 type="text"
@@ -166,7 +166,7 @@
                           <div class="col-lg-6">
                             <div class="mb-3">
                               <label for="basicpill-vatno-input" class="form-label"
-                                >Address 2</label
+                                >{{ $t('Address2') }}</label
                               >
                               <input
                                 type="text"
@@ -180,7 +180,7 @@
                           <div class="col-lg-6">
                             <div class="mb-3">
                               <label for="basicpill-cstno-input" class="form-label"
-                                >Landmark</label
+                                >{{ $t('Landmark') }}</label
                               >
                               <input
                                 type="text"
@@ -193,7 +193,7 @@
                           <div class="col-lg-6">
                             <div class="mb-3">
                               <label for="basicpill-servicetax-input" class="form-label"
-                                >Town</label
+                                >{{ $t('Town') }}</label
                               >
                               <input
                                 type="text"
@@ -210,7 +210,7 @@
                             href="javascript: void(0);"
                             class="btn btn-primary"
                             @click="previousTab"
-                            ><i class="bx bx-chevron-left me-1"></i> Previous</a
+                            ><i class="bx bx-chevron-left me-1"></i> {{ $t('Previous') }}</a
                           >
                         </li>
                         <li class="next">
@@ -218,7 +218,7 @@
                             href="javascript: void(0);"
                             class="btn btn-primary"
                             @click="nextTab"
-                            >Next <i class="bx bx-chevron-right ms-1"></i
+                            >{{ $t('Next') }} <i class="bx bx-chevron-right ms-1"></i
                           ></a>
                         </li>
                       </ul>
@@ -228,14 +228,14 @@
                   <div class="tab-pane" id="bank-detail">
                     <div>
                       <div class="mb-4">
-                        <h5>Payment Details</h5>
+                        <h5>{{ $t('PaymentDetails') }}</h5>
                       </div>
                       <form>
                         <div class="row">
                           <div class="col-lg-6">
                             <div class="mb-3">
                               <label for="basicpill-namecard-input" class="form-label"
-                                >Name on Card</label
+                                >{{ $t('NameonCard') }}</label
                               >
                               <input
                                 type="text"
@@ -247,13 +247,13 @@
 
                           <div class="col-lg-6">
                             <div class="mb-3">
-                              <label class="form-label">Credit Card Type</label>
+                              <label class="form-label">{{ $t('CreditCardType') }}</label>
                               <select class="form-select">
-                                <option selected>Select Card Type</option>
-                                <option value="AE">American Express</option>
-                                <option value="VI">Visa</option>
-                                <option value="MC">MasterCard</option>
-                                <option value="DI">Discover</option>
+                                <option selected>{{ $t('SelectCardType') }}</option>
+                                <option value="AE">{{ $t('AmericanExpress') }}</option>
+                                <option value="VI">{{ $t('Visa') }}</option>
+                                <option value="MC">{{ $t('MasterCard') }}</option>
+                                <option value="DI">{{ $t('Discover') }}</option>
                               </select>
                             </div>
                           </div>
@@ -262,7 +262,7 @@
                           <div class="col-lg-6">
                             <div class="mb-3">
                               <label for="basicpill-cardno-input" class="form-label"
-                                >Credit Card Number</label
+                                >{{ $t('CreditCardNumber') }}</label
                               >
                               <input
                                 type="text"
@@ -277,7 +277,7 @@
                               <label
                                 for="basicpill-card-verification-input"
                                 class="form-label"
-                                >Card Verification Number</label
+                                >{{ $t('CardVerificationNumber') }}</label
                               >
                               <input
                                 type="text"
@@ -291,7 +291,7 @@
                           <div class="col-lg-6">
                             <div class="mb-3">
                               <label for="basicpill-expiration-input" class="form-label"
-                                >Expiration Date</label
+                                >{{ $t('ExpirationDate') }}</label
                               >
                               <input
                                 type="text"
@@ -308,7 +308,7 @@
                             href="javascript: void(0);"
                             class="btn btn-primary"
                             @click="previousTab"
-                            ><i class="bx bx-chevron-left me-1"></i> Previous</a
+                            ><i class="bx bx-chevron-left me-1"></i> {{ $t('Previous') }}</a
                           >
                         </li>
                         <li class="float-end">
@@ -317,7 +317,7 @@
                             class="btn btn-primary"
                             data-bs-toggle="modal"
                             data-bs-target=".confirmModal"
-                            >Save Changes</a
+                            >{{ $t('SaveChanges') }}</a
                           >
                         </li>
                       </ul>

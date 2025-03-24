@@ -7,7 +7,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col">
-            <h3 class="page-title">Grid & Gutters</h3>
+            <h3 class="page-title">{{ $t('Grid&Gutters') }}</h3>
           </div>
         </div>
       </div>
@@ -17,20 +17,20 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Form Grid</div>
+              <div class="card-title">{{ $t('FormGrid') }}</div>
             </div>
             <div class="card-body">
               <div class="row">
                 <div class="col-md-6 mb-3">
-                  <label class="form-label">First Name</label>
+                  <label class="form-label">{{ $t('FirstName') }}</label>
                   <input type="text" class="form-control" placeholder="First Name" />
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label class="form-label">Last Name</label>
+                  <label class="form-label">{{ $t('LastName') }}</label>
                   <input type="text" class="form-control" placeholder="Last Name" />
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label class="form-label">Address</label>
+                  <label class="form-label">{{ $t('Address') }}</label>
                   <div class="row">
                     <div class="col-xl-12 mb-3">
                       <input type="text" class="form-control" placeholder="Street" />
@@ -67,7 +67,7 @@
                 <div class="col-md-6 mb-3">
                   <div class="row">
                     <div class="col-xl-12 mb-3">
-                      <label class="form-label">Email</label>
+                      <label class="form-label">{{ $t('Email') }}</label>
                       <input type="email" class="form-control" placeholder="Email" />
                     </div>
                     <div class="col-xl-12 mb-3">
@@ -83,7 +83,7 @@
                     </div>
                     <div class="col-xl-12 mb-3">
                       <div class="row">
-                        <label class="form-label mb-1">Maritial Status</label>
+                        <label class="form-label mb-1">{{ $t('MaritialStatus') }}</label>
                         <div class="col-xl-6">
                           <div class="form-check">
                             <input
@@ -118,21 +118,21 @@
                   </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label class="form-label">Contact Number</label>
+                  <label class="form-label">{{ $t('ContactNumber') }}</label>
                   <input type="number" class="form-control" placeholder="Phone Number" />
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label class="form-label">Alternative Contact</label>
+                  <label class="form-label">{{ $t('AlternativeContact') }}</label>
                   <input type="number" class="form-control" placeholder="Phone Number" />
                 </div>
                 <div class="col-md-12">
                   <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" id="gridCheck" />
-                    <label class="form-check-label" for="gridCheck"> Check me out </label>
+                    <label class="form-check-label" for="gridCheck"> {{ $t('Checkmeout') }} </label>
                   </div>
                 </div>
                 <div class="col-md-12">
-                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Sign in</button>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">{{ $t('Signin') }}</button>
                 </div>
               </div>
             </div>
@@ -141,40 +141,40 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Gutters</div>
+              <div class="card-title">{{ $t('Gutters') }}</div>
             </div>
             <div class="card-body">
               <form class="row g-3 mt-0">
                 <div class="col-md-6">
-                  <label class="form-label">First Name</label>
+                  <label class="form-label">{{ $t('FirstName') }}</label>
                   <input type="text" class="form-control" placeholder="First Name" />
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label">Last Name</label>
+                  <label class="form-label">{{ $t('LastName') }}</label>
                   <input type="text" class="form-control" placeholder="Last Name" />
                 </div>
                 <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
+                  <label for="inputEmail4" class="form-label">{{ $t('Email') }}</label>
                   <input type="email" class="form-control" id="inputEmail4" />
                 </div>
                 <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Password</label>
+                  <label for="inputPassword4" class="form-label">{{ $t('Password') }}</label>
                   <input type="password" class="form-control" id="inputPassword4" />
                 </div>
                 <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
+                  <label for="inputAddress" class="form-label">{{ $t('Address') }}</label>
                   <input type="text" class="form-control" id="inputAddress" />
                 </div>
                 <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <label for="inputAddress2" class="form-label">{{ $t('Address2') }}</label>
                   <input type="text" class="form-control" id="inputAddress2" />
                 </div>
                 <div class="col-md-6">
-                  <label for="inputCity" class="form-label">City</label>
+                  <label for="inputCity" class="form-label">{{ $t('City') }}</label>
                   <input type="text" class="form-control" id="inputCity" />
                 </div>
                 <div class="col-md-4">
-                  <label for="inputState" class="form-label">State</label>
+                  <label for="inputState" class="form-label">{{ $t('State') }}</label>
                   <vue-select
                     :options="FormState1"
                     id="formstate1"
@@ -182,19 +182,19 @@
                   />
                 </div>
                 <div class="col-md-2">
-                  <label for="inputZip" class="form-label">Zip</label>
+                  <label for="inputZip" class="form-label">{{ $t('Zip') }}</label>
                   <input type="text" class="form-control" id="inputZip" />
                 </div>
                 <div class="col-12">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck3" />
                     <label class="form-check-label" for="gridCheck3">
-                      Check me out
+                      {{ $t('Checkmeout') }}
                     </label>
                   </div>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Sign in</button>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">{{ $t('Signin') }}</button>
                 </div>
               </form>
             </div>

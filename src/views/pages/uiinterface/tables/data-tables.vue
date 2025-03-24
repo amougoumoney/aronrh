@@ -9,7 +9,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col">
-            <h3 class="page-title">Data Tables</h3>
+            <h3 class="page-title">{{ $t('DataTables') }}</h3>
           </div>
         </div>
       </div>
@@ -19,10 +19,10 @@
         <div class="col-sm-12">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title mb-2">Default Datatable</h5>
+              <h5 class="card-title mb-2">{{ $t('DefaultDatatable') }}</h5>
               <p class="card-text">
-                This is the most basic example of the datatables with zero configuration.
-                Use the <code>.datatable</code> class to initialize datatables.
+                {{ $t('Thisisthemostbasicexampleofthedatatableswithzeroconfiguration.') }}
+                {{ $t('Usethe') }} <code>.datatable</code> {{ $t('classtoinitializedatatables.') }}
               </p>
             </div>
             <div class="card-body">

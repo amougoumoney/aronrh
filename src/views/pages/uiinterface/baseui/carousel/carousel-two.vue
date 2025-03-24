@@ -3,9 +3,9 @@
     <div class="col-lg-6">
       <div class="card">
         <div class="card-body card-buttons">
-          <h4 class="header-title">With indicators</h4>
+          <h4 class="header-title">{{ $t('Withindicators') }}</h4>
           <p class="sub-header">
-            You can also add the indicators to the carousel, alongside the controls, too.
+            {{ $t('y...') }}
           </p>
 
           <div
@@ -72,10 +72,10 @@
     <div class="col-lg-6">
       <div class="card">
         <div class="card-body card-buttons">
-          <h4 class="header-title">With captions</h4>
+          <h4 class="header-title">{{ $t('Withcaptions') }}</h4>
           <p class="sub-header">
-            Add captions to your slides easily with the
-            <code>.carousel-caption</code> element within any <code>.carousel-item</code>.
+            {{ $t('a.') }}
+            <code>.carousel-caption</code> {{ $t('elementwithinany') }} <code>.carousel-item</code>.
           </p>
 
           <div id="carouselExampleCaption" class="carousel slide" data-bs-ride="carousel">
@@ -83,21 +83,21 @@
               <div class="carousel-item active">
                 <img src="@/assets/img/img-1.jpg" alt="..." class="d-block img-fluid" />
                 <div class="carousel-caption d-none d-md-block">
-                  <h3 class="text-white">First slide label</h3>
+                  <h3 class="text-white">{{ $t('Firstslidelabel') }}</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="@/assets/img/img-2.jpg" alt="..." class="d-block img-fluid" />
                 <div class="carousel-caption d-none d-md-block">
-                  <h3 class="text-white">Second slide label</h3>
+                  <h3 class="text-white">{{ $t('Secondslidelabel') }}</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="@/assets/img/img-3.jpg" alt="..." class="d-block img-fluid" />
                 <div class="carousel-caption d-none d-md-block">
-                  <h3 class="text-white">Third slide label</h3>
+                  <h3 class="text-white">{{ $t('Thirdslidelabel') }}</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
               </div>

@@ -10,16 +10,16 @@
             <div class="dropdown">
               <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>Export
+                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                      class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>Export as Excel
+                      class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}}
                   </a>
                 </li>
               </ul>
@@ -27,8 +27,8 @@
           </div>
           <div class="mb-2">
             <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_designation"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add
-              Designation</a>
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddDesignation')}}
+              </a>
           </div>
           <div class="head-icons ms-2">
             <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -43,56 +43,56 @@
       <!-- Performance Indicator list -->
       <div class="card">
         <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-          <h5>Designation List</h5>
+          <h5>{{$t('DesignationList')}}</h5>
           <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
             <div class="dropdown me-3">
               <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                Department
+                {{$t('Department')}}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Finance</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('finance')}}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Application Development</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('ApplicationDevelopment')}}</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown me-3">
               <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                Select Status
+                {{$t('SelectStatus')}}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Active</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Active')}}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Inactive</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Inactive')}}</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown">
               <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                Sort By : Last 7 Days
+                {{$t('SortBy:Last7Days')}}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('RecentlyAdded')}}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Descending')}}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('lastMonth')}}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Last7Days')}}</a>
                 </li>
               </ul>
             </div>
@@ -140,8 +140,8 @@
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        {{$t('designed')}} &amp; {{$t('developedBy')}}
+        <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a>
       </p>
     </div>
   </div>
