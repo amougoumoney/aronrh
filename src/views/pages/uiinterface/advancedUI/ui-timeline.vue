@@ -8,7 +8,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">Timeline</h3>
+            <h3 class="page-title">{{ $t('Timeline') }}</h3>
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@
                   </div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
-                      <h4 class="timeline-title">Title</h4>
+                      <h4 class="timeline-title">{{ $t('Title') }}</h4>
                     </div>
                     <div class="timeline-body">
                       <p>
@@ -44,7 +44,7 @@
                   </div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
-                      <h4 class="timeline-title">Title</h4>
+                      <h4 class="timeline-title">{{ $t('Title') }}</h4>
                     </div>
                     <div class="timeline-body">
                       <p>

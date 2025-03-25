@@ -7,7 +7,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">Sticky Note</h3>
+            <h3 class="page-title">{{ $t('StickyNote') }}</h3>
           </div>
         </div>
       </div>
@@ -18,9 +18,9 @@
           <div class="card">
             <div class="card-header">
               <h5 class="card-title">
-                Sticky Note
+                {{ $t('StickyNote') }}
                 <button class="btn btn-primary float-sm-end m-l-10" @click="newNote">
-                  Add New Note
+                  {{ $t('AddNewNote') }}
                 </button>
               </h5>
             </div>
