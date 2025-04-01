@@ -13,6 +13,10 @@ export default defineConfig({
         }),
         vue(),
     ],
+    optimizeDeps: {
+        include: ['bootstrap-vue-next']
+      },
+      
     resolve: {
         alias: {
             "@": fileURLToPath(new URL("./src", import.meta.url)),

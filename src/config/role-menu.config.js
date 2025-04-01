@@ -87,7 +87,7 @@ export const ROLE_MENU_ACCESS = {
             'Leaves': ['Leaves (Admin)', 'Leave Settings'],
             'Travel': ['Travel (Admin)'],
             'Attendance': ['Attendance (Admin)', 'Timesheets', 'Schedule Timing', 'Overtime'],
-            'Recruitment': ['Interviews', 'References'],
+            'Recruitment': ['Interviews', 'References', 'Candidates'],
             'Employee': ['Employee Lists', 'Employee Details'],
             'Payroll': ['Employee Salary', 'Payslip', 'Payroll Items'],
             'Training': ['Training List', 'Trainers'],
