@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div class="modal custom-modal fade" id="grant_modal" role="dialog">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">

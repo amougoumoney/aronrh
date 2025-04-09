@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BASE_URL: import.meta.env.VUE_APP_API_BASE_URL || 'https://hrms-backend-api-v1-main-wrhlmg.laravel.cloud/api/v1',
+    BASE_URL: import.meta.env.VUE_APP_API_BASE_URL || 'http://localhost:3333/api',
     HEADERS: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
@@ -32,13 +32,13 @@ export const API_ENDPOINTS = {
 
     // Employee endpoints
     EMPLOYEE: {
-        LIST: '/employees',
-        CREATE: '/employees',
-        UPDATE: '/employees/:id',
-        DELETE: '/employees/:id',
-        DETAILS: '/employees/:id',
-        SEARCH: '/employees/search',
-        SITE_RECORDS: '/employees/site-records'
+        LIST: '/employee',
+        CREATE: '/employee',
+        UPDATE: '/employee/:id',
+        DELETE: '/employee/:id',
+        DETAILS: '/employee/:id',
+        SEARCH: '/employee/search',
+        SITE_RECORDS: '/employee/site-records'
     },
 
     // Role endpoints
@@ -82,5 +82,13 @@ export const API_ENDPOINTS = {
         DETAILS: '/interviews/:id',
         UPDATE_STATUS: '/interviews/:id/status',
         FEEDBACK: '/interviews/:id/feedback'
+    },
+    //Candidat endpoints
+    CANDIDAT: {
+        LIST: '/candidat',
+        CREATE: '/candidat',
+        UPDATE: '/candidat/:id',
+        DELETE: '/candidat/:id',
+        DETAILS: '/candidat/:id',
     }
 };

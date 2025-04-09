@@ -5,14 +5,18 @@ import { ref, onMounted } from "vue";
 import moment from "moment";
 import DateRangePicker from "daterangepicker";
 import  CandidatModal from "@/components/modal/candidat-list-modal.vue"
+import { Modal } from "bootstrap";
 
 const title = "Candidates";
 const text = "HR";
 const text1 = "Candidates";
 
-const showAddModal = ref(false);
-
 const dateRangeInput = ref(null);
+
+const openAddGrantModal = (grantModalRef) => {
+  grantModalRef.value?.resetForm();
+  new Modal(document.getElementById("add_candidates")).show();
+};
 
 // Fonction pour formater la plage de dates
 function booking_range(start, end) {
@@ -89,13 +93,14 @@ function toggleHeader() {
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                                            class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
+                                    class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" class="btn btn-primary d-flex align-items-center" @click="showAddModal = true"><i class="ti ti-circle-plus me-2"></i>{{
+            <a href="javascript:void(0);" data-bs-toggle="modal" @click="openAddGrantModal"
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{
                 $t('AddNewCandidat')}} 
             </a>
           </div>
@@ -203,6 +208,6 @@ function toggleHeader() {
     </div>
     <!-- /Page Wrapper -->
 
-    <CandidatModal v-show ="showAddModal" @close="showAddModal = false"/>
+    <CandidatModal ref="grantModal"/>
     
 </template>

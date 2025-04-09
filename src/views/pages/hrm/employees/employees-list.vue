@@ -34,7 +34,7 @@
             </div>
           </div>
           <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_employee"
+            <a href="javascript:void(0);" @click="openEmployeeModal(false)"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{
                 $t('AddNewEmployee') }}
             </a>
@@ -149,7 +149,7 @@
 
       <div class="card">
         <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-          <h5>{{ $t('PlanList') }}</h5>
+          <h5>{{ $t('EmployeeList') }}</h5>
           <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
             <div class="me-3">
               <div class="input-icon-end position-relative">
@@ -205,91 +205,97 @@
           </div>
         </div>
         <div class="card-body p-0">
-          <div class="custom-datatable-filter table-responsive">
-            <a-table class="table datatable thead-light" :columns="columns" :data-source="data"
-              :row-selection="rowSelection">
-              <template #bodyCell="{ column, record }">
-                <template v-if="column.key === 'Name'">
-                  <div class="d-flex align-items-center file-name-icon">
-                    <a href="javascript:void(0);" class="avatar avatar-md">
-                      <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid rounded-circle" alt="img" />
-
-                    </a>
-                    <div class="ms-2">
-                      <h6 class="fw-medium">
-                        <a href="javascript:void(0);">{{ record.Name }}</a>
-                      </h6>
-                      <span class="d-block mt-1">{{ record.Work }}</span>
-                    </div>
-                  </div>
-                </template>
-                <template v-if="column.key === 'Designation'">
-                  <div class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                      data-bs-toggle="dropdown">
-                      <span
-                        class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>
-                      {{ record.Designation }}
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end p-3">
-                      <li>
-                        <a href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>{{
-                          $t('finance') }}</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{
-                          $t('Developer') }}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{
-                          $t('executive') }}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{
-                          $t('manager') }}
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </template>
-
-                <template v-if="column.key === 'Status'">
-                  <span :class="[
-                    'badge',
-                    record.Status === 'Active'
-                      ? 'badge-success'
-                      : record.Status === 'Inactive'
-                        ? 'badge-danger'
-                        : 'd-inline-flex',
-                    'align-items-center',
-                    'badge-xs',
-                  ]">
-                    <i class="ti ti-point-filled me-1"></i>
-                    {{ record.Status }}
-                  </span>
-                </template>
-                <template v-if="column.key === 'action'">
-                  <div class="action-icon d-inline-flex">
-                    <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
-                      data-bs-target="#edit-employee-salary"><i class="ti ti-edit"></i></a>
-                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                        class="ti ti-trash"></i></a>
-                  </div>
-                </template>
-              </template>
-            </a-table>
-          </div>
-        </div>
+  <div class="custom-datatable-filter table-responsive">
+    <table class="table datatable thead-light">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Staff ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Subsidiary</th>
+          <th>Gender</th>
+          <th>Date of Birth</th>
+          <th>Designation</th>
+          <th>Joining Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="employee in employees" :key="employee.id">
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>{{ employee.staffId }}</td>
+          <td>
+            <div class="d-flex align-items-center file-name-icon">
+              <a href="javascript:void(0);" class="avatar avatar-md">
+                <img :src="employee.image || '@/assets/img/users/default-user.png'" 
+                     class="img-fluid rounded-circle" alt="img" />
+              </a>
+              <div class="ms-2">
+                <h6 class="fw-medium">
+                  <a href="javascript:void(0);">
+                    {{ employee.firstName }} {{ employee.lastName }}
+                  </a>
+                </h6>
+                <span class="d-block mt-1">{{ employee.designation }}</span>
+              </div>
+            </div>
+          </td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.mobilePhone }}</td>
+          <td>{{ employee.subsidiary }}</td>
+          <td>{{ employee.gender }}</td> 
+          <td>{{ formatDate(employee.dateOfBirth) }}</td>
+          <td>
+            <div class="dropdown">
+              <a href="javascript:void(0);" 
+                 class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                 data-bs-toggle="dropdown">
+                <span class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>
+                {{ employee.designation || 'Not specified' }}
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end p-3">
+                <li v-for="dept in ['Finance', 'Developer', 'Executive', 'Manager']" :key="dept">
+                  <a href="javascript:void(0);"
+                    class="dropdown-item rounded-1 d-flex justify-content-start align-items-center">
+                    <span class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>
+                    {{ dept }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </td>
+          <td>{{ formatDate(employee.joining_date) }}</td>
+          <td>
+            <span :class="[
+              'badge',
+              employee.status === 'Active' 
+                ? 'badge-success' 
+                : 'badge-danger',
+              'align-items-center',
+              'badge-xs',
+            ]">
+              <i class="ti ti-point-filled me-1"></i>
+              {{ employee.status }}
+            </span>
+          </td>
+          <td>
+            <div class="action-icon d-inline-flex">
+              <a href="javascript:void(0);" class="me-2" @click="openEmployeeModal(true, employee)">
+                <i class="ti ti-edit"></i>
+              </a>
+              <a href="javascript:void(0);" @click="confirmDelete(employee.id)">
+                <i class="ti ti-trash"></i>
+              </a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
       </div>
     </div>
 
@@ -302,117 +308,154 @@
     </div>
   </div>
   <!-- /Page Wrapper -->
-  <employee-list-modal></employee-list-modal>
+
+  <!-- Employee Modal -->
+  <EmployeeModal ref="employeeModal" @saved="handleEmployeeSaved" />
+  
+  <!-- Delete Confirmation Modal -->
+  <div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-body text-center p-4">
+          <i class="ti ti-alert-circle fs-48 text-danger mb-3"></i>
+          <h5>{{ $t('ConfirmDelete') }}</h5>
+          <p class="mb-4">{{ $t('DeleteEmployeeWarning') }}</p>
+          <div class="d-flex justify-content-center itemss-center">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">{{ $t('Cancel') }}</button>
+            <button @click="deleteEmployee" type="button" class="btn btn-danger">{{ $t('Delete') }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+
 <script setup>
 import { ref, onMounted } from "vue";
 import moment from "moment";
 import DateRangePicker from "daterangepicker";
 import "daterangepicker/daterangepicker.css";
 import "daterangepicker/daterangepicker.js";
+import EmployeeModal from '@/components/modal/employee-list-modal.vue';
+import EmployeeService from '@/services/employee.service.js';
+import { Modal } from "bootstrap";
+import { useNotifications } from '@/composables/useNotifications';
+
+const { showNotification } = useNotifications();
 
 // Data
-const columns = [
-  { sorter: false },
-  {
-    title: "Emp ID",
-    dataIndex: "EmpID",
-    sorter: (a, b) => (a.EmpID.toLowerCase() > b.EmpID.toLowerCase() ? -1 : 1),
-  },
-  {
-    title: "Name",
-    dataIndex: "Name",
-    key: "Name",
-    sorter: (a, b) => (a.Name.toLowerCase() > b.Name.toLowerCase() ? -1 : 1),
-  },
-  {
-    title: "Email",
-    dataIndex: "Email",
-    sorter: (a, b) => (a.Email.toLowerCase() > b.Email.toLowerCase() ? -1 : 1),
-  },
-  {
-    title: "Phone",
-    dataIndex: "Phone",
-    sorter: (a, b) => (a.Phone.toLowerCase() > b.Phone.toLowerCase() ? -1 : 1),
-  },
-  {
-    title: "Designation",
-    dataIndex: "Designation",
-    key: "Designation",
-    sorter: (a, b) => (a.Designation.toLowerCase() > b.Designation.toLowerCase() ? -1 : 1),
-  },
-  {
-    title: "Joining Date",
-    dataIndex: "JoiningDate",
-    key: "JoiningDate",
-    sorter: (a, b) => (a.JoiningDate.toLowerCase() > b.JoiningDate.toLowerCase() ? -1 : 1),
-  },
-  {
-    title: "Status",
-    dataIndex: "Status",
-    key: "Status",
-    sorter: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
-  },
-  {
-    title: "",
-    key: "action",
-    sorter: false,
-  },
-];
+const employees = ref([]);
+const employeeModal = ref(null);
+const employeeToDelete = ref(null);
+const isLoading = ref(false);
 
-const data = [
-  { EmpID: "Emp-001", Name: "Anthony Lewis", Email: "anthony@example.com", Phone: "(123) 4567 890", Designation: "Finance", JoiningDate: "12 Sep 2024", Status: "Active" },
-  { EmpID: "Emp-002", Name: "Brian Villalobos", Email: "brian@example.com", Phone: "(179) 7382 829", Designation: "Developer", JoiningDate: "24 Oct 2024", Status: "Active" },
-  { EmpID: "Emp-003", Name: "Harvey Smith", Email: "harvey@example.com", Phone: "(184) 2719 738", Designation: "Executive", JoiningDate: "18 Feb 2024", Status: "Active" },
-  { EmpID: "Emp-004", Name: "Stephan Peralt", Email: "peral@example.com", Phone: "(193) 7839 748", Designation: "Executive", JoiningDate: "17 Oct 2024", Status: "Active" },
-  { EmpID: "Emp-005", Name: "Doglas Martini", Email: "martniwr@example.com", Phone: "(183) 9302 890", Designation: "Manager", JoiningDate: "20 Jun 2024", Status: "Active" },
-  { EmpID: "Emp-006", Name: "Linda Ray", Email: "ray456@example.com", Phone: "(120) 3728 039", Designation: "Finance", JoiningDate: "10 Apr 2024", Status: "Active" },
-  { EmpID: "Emp-007", Name: "Elliot Murray", Email: "murray@example.com", Phone: "(102) 8480 832", Designation: "Finance", JoiningDate: "29 Aug 2024", Status: "Active" },
-  { EmpID: "Emp-008", Name: "Rebecca Smtih", Email: "smtih@example.com", Phone: "(162) 8920 713", Designation: "Executive", JoiningDate: "22 Feb 2024", Status: "Inactive" },
-  { EmpID: "Emp-009", Name: "Connie Waters", Email: "connie@example.com", Phone: "(189) 0920 723", Designation: "Developer", JoiningDate: "03 Nov 2024", Status: "Active" },
-  { EmpID: "Emp-010", Name: "Lori Broaddus", Email: "broaddus@example.com", Phone: "(168) 8392 823", Designation: "Finance", JoiningDate: "17 Dec 2024", Status: "Active" },
-];
-
-const rowSelection = {
-  onChange: () => { },
-  onSelect: () => { },
-  onSelectAll: () => { },
+// Methods
+const fetchEmployees = async () => {
+  try {
+    isLoading.value = true;
+    const response = await EmployeeService.getEmployees();
+    console.log('employe data:',response.data); // Vérifiez ce que l'API retourne
+    employees.value = response.data;
+  } catch (error) {
+    console.error('Error fetching employees:', error);
+    showNotification({
+      type: 'error',
+      title: 'Error',
+      message: 'Failed to load employees',
+      timeout: 5000
+    });
+  } finally {
+    isLoading.value = false;
+  }
 };
 
-// Reactive variables
-const dateRangeInput = ref(null);
+const openEmployeeModal = (isEdit, employeeData = null) => {
+  employeeModal.value.show(isEdit, employeeData);
+};
 
-// DateRangePicker initialization
-const booking_range = (start, end) => {
-  return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+const confirmDelete = (empId) => {
+  employeeToDelete.value = empId;
+  const modal = new Modal(document.getElementById('deleteConfirmModal'));
+  modal.show();
+};
+
+const deleteEmployee = async () => {
+  try {
+    if (!employeeToDelete.value) return;
+    
+    await EmployeeService.deleteEmployee(employeeToDelete.value);
+    
+    employees.value = employees.value.filter(e => e.id !== employeeToDelete.value);
+    
+    showNotification({
+      type: 'success',
+      title: 'Success',
+      message: 'Employee deleted successfully',
+      timeout: 5000
+    });
+    
+    const modal = Modal.getInstance(document.getElementById('deleteConfirmModal'));
+    modal.hide();
+  } catch (error) {
+    console.error('Error deleting employee:', error);
+    showNotification({
+      type: 'error',
+      title: 'Error',
+      message: 'Failed to delete employee',
+      timeout: 5000
+    });
+  }
+};
+
+const formatDate = (date) => {
+  return moment(date).format("DD/MM/YYYY"); // ou le format que vous souhaitez
+};
+
+const handleEmployeeSaved = ({ action, employee }) => {
+  if (action === 'update') {
+    const index = employees.value.findIndex(e => e.staff_id === employee.staff_id);
+    if (index !== -1) {
+      employees.value[index] = employee;
+    }
+  } else {
+    employees.value.unshift(employee);
+  }
+  
+  showNotification({
+    type: 'success',
+    title: 'Success',
+    message: `Employee ${action === 'update' ? 'updated' : 'created'} successfully`,
+    timeout: 5000
+  });
 };
 
 onMounted(() => {
-  if (dateRangeInput.value) {
-    const start = moment().subtract(6, "days");
-    const end = moment();
+  fetchEmployees();
+  
+  // Initialize date range picker
+  const start = moment().subtract(6, "days");
+  const end = moment();
 
-    new DateRangePicker(
-      dateRangeInput.value,
-      {
-        startDate: start,
-        endDate: end,
-        ranges: {
-          Today: [moment(), moment()],
-          Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-          "Last 7 Days": [moment().subtract(6, "days"), moment()],
-          "Last 30 Days": [moment().subtract(29, "days"), moment()],
-          "This Month": [moment().startOf("month"), moment().endOf("month")],
-          "Last Month": [
-            moment().subtract(1, "month").startOf("month"),
-            moment().subtract(1, "month").endOf("month"),
-          ],
-        },
+  new DateRangePicker(
+    document.querySelector('.bookingrange'),
+    {
+      startDate: start,
+      endDate: end,
+      ranges: {
+        Today: [moment(), moment()],
+        Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+        "Last 7 Days": [moment().subtract(6, "days"), moment()],
+        "Last 30 Days": [moment().subtract(29, "days"), moment()],
+        "This Month": [moment().startOf("month"), moment().endOf("month")],
+        "Last Month": [
+          moment().subtract(1, "month").startOf("month"),
+          moment().subtract(1, "month").endOf("month"),
+        ],
       },
-      booking_range
-    );
-
-    booking_range(start, end);
-  }
+    },
+    function(start, end) {
+      return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+    }
+  );
 });
 </script>

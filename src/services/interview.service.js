@@ -15,7 +15,8 @@ class InterviewService {
 
   // Create a new interview
   async createInterview(interviewData) {
-    return await apiService.post(API_ENDPOINTS.INTERVIEW.CREATE, interviewData);
+    const formadatta = this.formatInterviewData(interviewData);
+    return await apiService.post(API_ENDPOINTS.INTERVIEW.CREATE, formadatta);
   }
 
   // Update an existing interview
@@ -36,6 +37,26 @@ class InterviewService {
     return await apiService.patch(endpoint, { status });
   }
 
+
+  formatInterviewData(data) {
+    return {
+  candidate_name: data.candidate_name,
+  phone: data.phone,
+  resume: data.resume,
+  job_position: data.job_position,
+  interviewer_name: data.interviewer_name,
+  interview_date: data.interview_date,
+  start_time: data.start_time,
+  end_time: data.end_time, 
+  interview_mode: data.interview_mode,
+  interview_status:data.interview_status,
+  score: data.score,
+  feedback: data.feedback,
+  reference_info: data.reference_info,
+  created_by: data.created_by || 1, // CHAMP CRUCIAL
+  updated_by: data.updated_by || 1 // Souvent requis pour les updates
+    };
+  }
   // Submit interview feedback
   async submitFeedback(id, feedback, score) {
     const endpoint = API_ENDPOINTS.INTERVIEW.FEEDBACK.replace(':id', id);
@@ -47,3 +68,4 @@ class InterviewService {
 }
 
 export const interviewService = new InterviewService();
+export default interviewService;

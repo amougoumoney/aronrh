@@ -28,7 +28,7 @@
           </div>
           <div class="mb-2">
             <!-- Use data attributes for the modal -->
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_interview"
+            <a href="javascript:void(0);" data-bs-toggle="modal" @click="openInterviewModal(false)"
               class="btn btn-primary d-flex align-items-center">
               <i class="ti ti-circle-plus me-2"></i>{{ $t('AddInterview') }}
             </a>
@@ -65,7 +65,7 @@
                       <td>{{ interview.interviewTime }}</td>
                       <td>{{ interview.candidateName }}</td>
                       <td>{{ interview.interviewType }}</td>
-                      <td>
+                      <td>  
                         <span :class="'badge ' + getStatusClass(interview.status)">
                           {{ interview.status }}
                         </span>
@@ -83,14 +83,14 @@
                               <i class="ti ti-eye me-2"></i>{{ $t('viewDetails') }}
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item"
-                              @click="editInterviewDetails(interview.id)">
+                              @click="openInterviewModal(true, interview)">
                               <i class="ti ti-pencil me-2"></i>{{ $t('Edit') }}
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item" @click="addFeedback(interview.id)">
                               <i class="ti ti-message me-2"></i>{{ $t('AddFeedback') }}
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item"
-                              @click="deleteInterviewRecord(interview.id)">
+                              @click="confirmDelete(interview.id)">
                               <i class="ti ti-trash me-2"></i>{{ $t('Delete') }}
                             </a>
                           </div>
@@ -109,36 +109,71 @@
   </div>
 
   <!-- Interview Modal -->
-  <interview-modal ref="interviewModal" @interview-added="onInterviewAdded" />
+  <interview-modal ref="interviewModals" @saved="handleinterviewSaved"  />
+
+  <!-- Delete Confirmation Modal -->
+  <div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-body text-center p-4">
+          <i class="ti ti-alert-circle fs-48 text-danger mb-3"></i>
+          <h5>{{ $t('ConfirmDelete') }}</h5>
+          <p class="mb-4">{{ $t('DeleteInterviewWarning') }}</p>
+          <div class="d-flex justify-content-center itemss-center">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">{{ $t('Cancel') }}</button>
+            <button @click="deleteInterviewRecord" type="button" class="btn btn-danger">{{ $t('Delete') }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from "vue";
 import router from "../../../../router";
 import indexBreadcrumb from "@/components/breadcrumb/index-breadcrumb.vue";
-import { interviewService } from "@/services/interview.service";
+import InterviewService from "@/services/interview.service";
 import interviewModal from "../../../../components/modal/interview-modal.vue";
+import { useNotifications } from '@/composables/useNotifications'
+import { Modal } from "bootstrap";
+
 const title = ref("Interviews");
 const text = ref("Recruitment");
 const text1 = ref("Interviews List");
 
 const interviews = ref([]);
+const interviewModals = ref(null);
 const currentPage = ref(1);
 const pageSize = ref(10);
 const totalInterviews = ref(0);
 const searchTerm = ref("");
+const InterviewDelete = ref(null);
+
+const { showNotification } = useNotifications()
+
+const openInterviewModal = (isEdit, interviewData = null) => {
+  interviewModals.value.show(isEdit, interviewData);
+};
+
+const confirmDelete = (empId) => {
+  InterviewDelete.value = empId;
+  const modal = new Modal(document.getElementById('deleteConfirmModal'));
+  modal.show();
+};
 
 const fetchInterviews = async () => {
   try {
-    const response = await interviewService.getAllInterviews();
+    const response = await InterviewService.getAllInterviews();
+    console.log("Interviews fetched successfully:", response.data);
     interviews.value = response.data.map((interview) => ({
       id: interview.id,
       candidateName: interview.candidateName,
-      position: interview.job_position,
-      interviewDate: interview.interview_date,
-      interviewTime: interview.start_time,
-      interviewType: interview.interview_mode,
-      status: interview.interview_status,
+      position: interview.jobPosition,
+      interviewDate: interview.interviewDate,
+      interviewTime: interview.startTime,
+      interviewType: interview.interviewMode,
+      status: interview.interviewStatus,
       feedback: interview.feedback,
       score: interview.score,
     }));
@@ -156,8 +191,8 @@ const onInterviewAdded = (interview) => {
 
 const getStatusClass = (status) => {
   const statusClasses = {
-    Scheduled: "bg-warning-light",
-    Completed: "bg-success-light",
+    scheduled: "bg-warning-light",
+    completed: "bg-success-light",
     Cancelled: "bg-danger-light",
     "In Progress": "bg-info-light",
   };
@@ -181,16 +216,51 @@ const addFeedback = (interviewId) => {
   router.push(`/interviews/feedback/${interviewId}`);
 };
 
-const deleteInterviewRecord = async (interviewId) => {
-  if (confirm("Are you sure you want to delete this interview record?")) {
-    try {
-      await interviewService.deleteInterview(interviewId);
-      interviews.value = interviews.value.filter((interview) => interview.id !== interviewId);
-    } catch (error) {
-      console.error("Error deleting interview:", error);
-    }
+const deleteInterviewRecord = async () => {
+  try {
+    if (!InterviewDelete.value) return;
+    
+    await InterviewService.deleteInterview(InterviewDelete.value);
+    
+    interviews.value = interviews.value.filter(e => e.id !== InterviewDelete.value);
+    
+    showNotification({
+      type: 'success',
+      title: 'Success',
+      message: 'Employee deleted successfully',
+      timeout: 5000
+    });
+    
+    const modal = Modal.getInstance(document.getElementById('deleteConfirmModal'));
+    modal.hide();
+  } catch (error) {
+    console.error('Error deleting employee:', error);
+    showNotification({
+      type: 'error',
+      title: 'Error',
+      message: 'Failed to delete employee',
+      timeout: 5000
+    });
   }
 };
+const handleinterviewSaved = ({ action, interview }) => {
+  if (action === 'update') {
+    const index = interviews.value.findIndex(e => e.id === interview.id);
+    if (index !== -1) {
+      interviews.value[index] = interview;
+    }
+  } else {
+    interviews.value.unshift(interview);
+  }
+  
+  showNotification({
+    type: 'success',
+    title: 'Success',
+    message: `Employee ${action === 'update' ? 'updated' : 'created'} successfully`,
+    timeout: 5000
+  });
+};
+
 
 onMounted(fetchInterviews);
 </script>
