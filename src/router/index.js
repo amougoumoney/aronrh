@@ -326,6 +326,8 @@ import LeaveReport from '@/views/pages/administration/reports/leave-report.vue';
 import DailyReport from '@/views/pages/administration/reports/daily-report.vue';
 import InterviewsList from '@/views/pages/recruitment/interviews/interviews-list.vue';
 import InterviewsDetails from '@/views/pages/recruitment/interviews/interviews-details.vue';
+import Formationemployee from '@/views/pages/hrm/employees/formationemployee.vue';
+import EnfantEmployee from '@/views/pages/hrm/employees/childemployee.vue';
 
 const routes = [
   // Public routes
@@ -809,6 +811,8 @@ const routes = [
       { path: "employee-list", component: employeesList },
       { path: "employee-grid", component: employeesGrid },
       { path: "employee-details", component: employeeDetails },
+      { path: "employee-child", component: EnfantEmployee } ,
+      { path: "employee-training", component: Formationemployee },
       { path: "departments", component: employeeDepartment },
       { path: "designations", component: employeeDesignations },
       { path: "policy", component: employeePolicy },
