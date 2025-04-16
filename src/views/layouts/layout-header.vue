@@ -242,6 +242,7 @@ import { useRouter } from 'vue-router';
 import { authService } from '@/services/auth.service';
 import sideBarData from "@/assets/json/sidebar-menuone.json";
 import Swal from 'sweetalert2';
+import LanguageSwitcher from '@/components/button/language-switcher.vue';
 
 const router = useRouter();
 

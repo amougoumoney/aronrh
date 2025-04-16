@@ -76,7 +76,7 @@ export default {
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label">{{$t('JobPosition ')}}<span class="text-danger">*</span></label>
+                  <label class="form-label">{{$t('JobPosition')}}<span class="text-danger">*</span></label>
                   <input class="form-control" type="text" v-model="formData.jobPosition" required>
                 </div>
               </div>

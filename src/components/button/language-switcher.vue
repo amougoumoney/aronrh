@@ -22,7 +22,7 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 import us from '@/assets/img/flags/us.png'
 import fr from '@/assets/img/flags/fr.png'
 import { useI18n } from 'vue-i18n'
@@ -65,4 +65,45 @@ export default {
   }
 }
 
+</script> -->
+<script setup>
+import { computed, ref, defineEmits } from 'vue'
+import us from '@/assets/img/flags/us.png'
+import fr from '@/assets/img/flags/fr.png'
+import { useI18n } from 'vue-i18n'
+import { useLanguageStore } from '@/lang/language'
+const t = useI18n({ useScope: 'global' })
+const emit = defineEmits();
+
+
+
+
+const languages = [
+  {
+    code: 'en',
+    name: 'English',
+    icon: us,
+  },
+  {
+    code: 'fr',
+    name: 'French',
+    icon: fr,
+  },
+]
+const show = ref(false)
+const useLanguage = useLanguageStore()
+const selectLanguage = computed(() => {
+  return languages.filter((e) => e.code === useLanguage.locale)[0]
+})
+const setLanguage = (lg) => {
+  console.log('setLanguage', lg)
+  show.value = !show
+  if (lg.code !== t.locale.value) {
+    t.locale.value = lg.code
+    emit('changeLang', lg.code);
+    useLanguage.set(t.locale.value)
+  }
+  console.log('useLanguage', useLanguage.locale)
+}
 </script>
+
