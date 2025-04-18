@@ -9,7 +9,7 @@ export const API_CONFIG = {
 
 // API endpoints
 export const API_ENDPOINTS = {
-    // Auth endpoints
+    // Auth endpoints(ok)
     AUTH: {
         LOGIN: '/login',
         LOGOUT: '/logout',
@@ -30,7 +30,7 @@ export const API_ENDPOINTS = {
         DETAILS: '/users/:id'
     },
 
-    // Employee endpoints
+    // Employee endpoints(ok)
     EMPLOYEE: {
         LIST: '/employee',
         CREATE: '/employee',
@@ -41,7 +41,7 @@ export const API_ENDPOINTS = {
         SITE_RECORDS: '/employee/site-records'
     },
 
-    // Role endpoints
+    // Role endpoints(ok)
     ROLE: {
         LIST: '/roles',
         CREATE: '/roles',
@@ -52,7 +52,7 @@ export const API_ENDPOINTS = {
         UPDATE_PERMISSIONS: '/roles/:id/permissions'
     },
 
-    // Permission endpoints
+    // Permission endpoints(ok)
     PERMISSION: {
         LIST: '/permissions',
         CREATE: '/permissions',
@@ -72,8 +72,16 @@ export const API_ENDPOINTS = {
         DETAILS: '/grants/:id',
         UPLOAD: '/grants/upload'
     },
+        // Points de terminaison pour les items de subvention
+    GRANT_ITEM: {
+        LIST: '/grantitems',
+        CREATE: '/grantitems',
+        UPDATE: '/grantitems/:id',
+        DELETE: '/grantitems/:id',
+        DETAILS: '/grantitems/:id'
+    },
 
-    // Interview endpoints
+    // Interview endpoints(ok)
     INTERVIEW: {
         LIST: '/interviews',
         CREATE: '/interviews',
@@ -90,5 +98,85 @@ export const API_ENDPOINTS = {
         UPDATE: '/candidat/:id',
         DELETE: '/candidat/:id',
         DETAILS: '/candidat/:id',
+    },
+     // Points de terminaison pour les départements
+    DEPARTEMENT: {
+        LIST: '/departemnt',
+        CREATE: '/departemnt',
+        UPDATE: '/departemnt/:id',
+        DELETE: '/departemnt/:id',
+        DETAILS: '/departemnt/:id'
+    },
+
+    // Points de terminaison pour les allocations d'emploi
+    EMPLOYMENT_ALLOCATION: {
+        LIST: '/grantallocation',
+        CREATE: '/grantallocation',
+        UPDATE: '/grantallocation/:id',
+        DELETE: '/grantallocation/:id',
+        DETAILS: '/grantallocation/:id'
+    },
+
+    // Points de terminaison pour les types d'emploi
+    EMPLOYMENT_TYPE: {
+        LIST: '/employmentTypes',
+        CREATE: '/employmentTypes',
+        UPDATE: '/employmentTypes/:id',
+        DELETE: '/employmentTypes/:id',
+        DETAILS: '/employmentTypes/:id'
+    },
+
+    // Points de terminaison pour les formations
+    FORMATION: {
+        LIST: '/formation',
+        CREATE: '/formation',
+        UPDATE: '/formation/:id',
+        DELETE: '/formation/:id',
+        DETAILS: '/formation/:id'
+    },
+
+    // Points de terminaison pour les employés de formation
+    FORMATION_EMPLOYES: {
+        LIST: '/formationemployes',
+        CREATE: '/formationemployes',
+        UPDATE: '/formationemployes/:id',
+        DELETE: '/formationemployes/:id',
+        DETAILS: '/formationemployes/:id'
+    },
+
+    // Points de terminaison pour les enfants employés(ok)
+    ENFANT_EMPLOYES: {
+        LIST: '/enfantemployes',
+        CREATE: '/enfantemployes',
+        UPDATE: '/enfantemployes/:id',
+        DELETE: '/enfantemployes/:id',
+        DETAILS: '/enfantemployes/:id'
+    },
+
+    // Points de terminaison pour les historiques d'emploi
+    EMPLOYMENT_HISTORY: {
+        LIST: '/employmentHistories',
+        CREATE: '/employmentHistories',
+        UPDATE: '/employmentHistories/:id',
+        DELETE: '/employmentHistories/:id',
+        DETAILS: '/employmentHistories/:id'
+    },
+        // Points de terminaison pour les localisations de travail
+    WORK_LOCATION: {
+        LIST: '/worklocation',
+        CREATE: '/worklocation',
+        UPDATE: '/worklocation/:id',
+        DELETE: '/worklocation/:id',
+        DETAILS: '/worklocation/:id'
+    },
+
+    // Points de terminaison pour les lookups
+    LOOKUP: {
+        LIST: '/lookup',
+        CREATE: '/lookup',
+        UPDATE: '/lookup/:id',
+        DELETE: '/lookup/:id',
+        DETAILS: '/lookup/:id'
     }
+    
 };

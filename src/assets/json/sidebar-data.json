@@ -117,6 +117,16 @@
             "active_link": "/employee/employee-details"
           },
           {
+            "menuValue": "Employee child",
+            "route": "/employee/employee-child",
+            "active_link": "/employee/employee-child"
+          },
+          {
+            "menuValue": "Employee training",
+            "route": "/employee/employee-training",
+            "active_link": "/employee/employee-trainig"
+          },
+          {
             "menuValue": "Departments",
             "route": "/employee/departments",
             "active_link": "/employee/departments"
