@@ -5,7 +5,7 @@
     <div class="content">
       <div class="page-header">
         <div class="page-title">
-          <h4>Typography</h4>
+          <h4>{{ $t('Typography') }}</h4>
         </div>
       </div>
       <div class="row">
@@ -13,15 +13,15 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Headings Tags</h5>
+              <h5 class="card-title">{{ $t('HeadingsTags') }}</h5>
             </div>
             <div class="card-body">
-              <h1 class="mb-3">h1. Bootstrap heading</h1>
-              <h2 class="mb-3">h2. Bootstrap heading</h2>
-              <h3 class="mb-3">h3. Bootstrap heading</h3>
-              <h4 class="mb-3">h4. Bootstrap heading</h4>
-              <h5 class="mb-3">h5. Bootstrap heading</h5>
-              <h6 class="mb-0">h6. Bootstrap heading</h6>
+              <h1 class="mb-3">h1. {{ $t('Bootstrapheading') }}</h1>
+              <h2 class="mb-3">h2. {{ $t('Bootstrapheading') }}</h2>
+              <h3 class="mb-3">h3. {{ $t('Bootstrapheading') }}</h3>
+              <h4 class="mb-3">h4. {{ $t('Bootstrapheading') }}</h4>
+              <h5 class="mb-3">h5. {{ $t('Bootstrapheading') }}</h5>
+              <h6 class="mb-0">h6. {{ $t('Bootstrapheading') }}</h6>
             </div>
           </div>
         </div>
@@ -31,15 +31,15 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Heading Class Names</h5>
+              <h5 class="card-title">{{ $t('HeadingClassNames') }}</h5>
             </div>
             <div class="card-body">
-              <p class="h1 mb-3">h1. Bootstrap heading</p>
-              <p class="h2 mb-3">h2. Bootstrap heading</p>
-              <p class="h3 mb-3">h3. Bootstrap heading</p>
-              <p class="h4 mb-3">h4. Bootstrap heading</p>
-              <p class="h5 mb-3">h5. Bootstrap heading</p>
-              <p class="h6 mb-0">h6. Bootstrap heading</p>
+              <p class="h1 mb-3">h1. {{ $t('Bootstrapheading') }}</p>
+              <p class="h2 mb-3">h2. {{ $t('Bootstrapheading') }}</p>
+              <p class="h3 mb-3">h3. {{ $t('Bootstrapheading') }}</p>
+              <p class="h4 mb-3">h4. {{ $t('Bootstrapheading') }}</p>
+              <p class="h5 mb-3">h5. {{ $t('Bootstrapheading') }}</p>
+              <p class="h6 mb-0">h6. {{ $t('Bootstrapheading') }}</p>
             </div>
           </div>
         </div>
@@ -49,15 +49,15 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Display Headings</h5>
+              <h5 class="card-title">{{ $t('DisplayHeadings') }}</h5>
             </div>
             <div class="card-body">
-              <h1 class="mb-0 display-1">Display 1</h1>
-              <h1 class="mb-0 display-2">Display 2</h1>
-              <h1 class="mb-0 display-3">Display 3</h1>
-              <h1 class="mb-0 display-4">Display 4</h1>
-              <h1 class="mb-0 display-5">Display 5</h1>
-              <h1 class="mb-0 display-6">Display 6</h1>
+              <h1 class="mb-0 display-1">{{ $t('Display') }} 1</h1>
+              <h1 class="mb-0 display-2">{{ $t('Display') }} 2</h1>
+              <h1 class="mb-0 display-3">{{ $t('Display') }} 3</h1>
+              <h1 class="mb-0 display-4">{{ $t('Display') }} 4</h1>
+              <h1 class="mb-0 display-5">{{ $t('Display') }} 5</h1>
+              <h1 class="mb-0 display-6">{{ $t('Display') }} 6</h1>
             </div>
           </div>
         </div>
@@ -67,27 +67,24 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Text Element</h5>
+              <h5 class="card-title">{{ $t('TextElement') }}</h5>
             </div>
             <div class="card-body">
-              <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-              <p><del>This line of text is meant to be treated as deleted text.</del></p>
+              <p>{{ $t('Youcanusethemarktagto') }} <mark>{{ $t('highlight') }}</mark> {{ $t('text') }}.</p>
+              <p><del>{{ $t('del') }}.</del></p>
               <p>
-                <s>This line of text is meant to be treated as no longer accurate.</s>
+                <s>{{ $t('this') }}.</s>
               </p>
               <p>
-                <ins
-                  >This line of text is meant to be treated as an addition to the
-                  document.</ins
-                >
+                <ins>{{ $t('ins') }}.</ins>
               </p>
-              <p><u>This line of text will render as underlined</u></p>
+              <p><u>{{ $t('u') }}</u></p>
               <p>
-                <small>This line of text is meant to be treated as fine print.</small>
+                <small>{{ $t('small...') }}.</small>
               </p>
-              <p><strong>This line rendered as bold text.</strong></p>
-              <p><em>This line rendered as italicized text.</em></p>
-              <p class="font-monospace mb-0">This is in monospace</p>
+              <p><strong>{{ $t('Thislinerenderedasboldtext') }}.</strong></p>
+              <p><em>{{ $t('em') }}.</em></p>
+              <p class="font-monospace mb-0">{{ $t('Thisisinmonospace') }}</p>
             </div>
           </div>
         </div>
@@ -97,19 +94,19 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Coloured Link</h5>
+              <h5 class="card-title">{{ $t('ColouredLink') }}</h5>
             </div>
             <div class="card-body">
-              <p><a href="javascript:void(0);" class="text-primary">Primary link</a></p>
-              <p><a href="javascript:void(0);" class="text-secondary">Secondary link</a></p>
-              <p><a href="javascript:void(0);" class="text-success">Success link</a></p>
-              <p><a href="javascript:void(0);" class="text-danger">Danger link</a></p>
-              <p><a href="javascript:void(0);" class="text-warning">Warning link</a></p>
-              <p><a href="javascript:void(0);" class="text-info">Info link</a></p>
-              <p><a href="javascript:void(0);" class="text-light bg-dark">Light link</a></p>
-              <p><a href="javascript:void(0);" class="text-dark">Dark link</a></p>
-              <p><a href="javascript:void(0);" class="text-muted">Muted link</a></p>
-              <p><a href="javascript:void(0);" class="text-white bg-dark mb-0">White link</a></p>
+              <p><a href="javascript:void(0);" class="text-primary">{{ $t('Primarylink') }}</a></p>
+              <p><a href="javascript:void(0);" class="text-secondary">{{ $t('Secondarylink') }}</a></p>
+              <p><a href="javascript:void(0);" class="text-success">{{ $t('Successlink') }}</a></p>
+              <p><a href="javascript:void(0);" class="text-danger">{{ $t('Dangerlink') }}</a></p>
+              <p><a href="javascript:void(0);" class="text-warning">{{ $t('Warninglink') }}</a></p>
+              <p><a href="javascript:void(0);" class="text-info">{{ $t('Infolink') }}</a></p>
+              <p><a href="javascript:void(0);" class="text-light bg-dark">{{ $t('Lightlink') }}</a></p>
+              <p><a href="javascript:void(0);" class="text-dark">{{ $t('Darklink') }}</a></p>
+              <p><a href="javascript:void(0);" class="text-muted">{{ $t('Mutedlink') }}</a></p>
+              <p><a href="javascript:void(0);" class="text-white bg-dark mb-0">{{ $t('Whitelink') }}</a></p>
             </div>
           </div>
         </div>
@@ -119,7 +116,7 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Coloured Text</h5>
+              <h5 class="card-title">{{ $t('ColouredText') }}</h5>
             </div>
             <div class="card-body">
               <p class="text-primary">.text-primary</p>
@@ -141,7 +138,7 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Bullet Lists</h5>
+              <h5 class="card-title">{{ $t('BulletLists') }}</h5>
             </div>
             <div class="card-body">
               <ul class="list-disc">
@@ -200,8 +197,8 @@
             </div>
             <div class="card-body">
               <p class="lead mb-0">
-                <b>This is a lead paragraph. It stands out from regular paragraphs</b
-                >.There are many variations of passages of Lorem Ipsum available, but the
+                <b>This is a lead paragraph. It stands out from regular paragraphs</b>.There are many variations of
+                passages of Lorem Ipsum available, but the
                 majority have suffered alteration in some form, by injected humour, or
                 randomised words which don't look even slightly believable. If you are
                 going to use a passage of Lorem Ipsum, you need to be sure there isn't
@@ -267,9 +264,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-xl-4">
-                  <blockquote
-                    class="blockquote custom-blockquote primary mb-3 text-center"
-                  >
+                  <blockquote class="blockquote custom-blockquote primary mb-3 text-center">
                     <h6>
                       The future belongs to those who believe in the beauty of their
                       dreams..
@@ -281,9 +276,7 @@
                   </blockquote>
                 </div>
                 <div class="col-xl-4">
-                  <blockquote
-                    class="blockquote custom-blockquote secondary mb-3 text-center"
-                  >
+                  <blockquote class="blockquote custom-blockquote secondary mb-3 text-center">
                     <h6>
                       The future belongs to those who believe in the beauty of their
                       dreams..
@@ -307,9 +300,7 @@
                   </blockquote>
                 </div>
                 <div class="col-xl-4">
-                  <blockquote
-                    class="blockquote custom-blockquote warning mb-3 text-center"
-                  >
+                  <blockquote class="blockquote custom-blockquote warning mb-3 text-center">
                     <h6>
                       The future belongs to those who believe in the beauty of their
                       dreams..
@@ -321,9 +312,7 @@
                   </blockquote>
                 </div>
                 <div class="col-xl-4">
-                  <blockquote
-                    class="blockquote custom-blockquote success mb-3 text-center"
-                  >
+                  <blockquote class="blockquote custom-blockquote success mb-3 text-center">
                     <h6>
                       The future belongs to those who believe in the beauty of their
                       dreams..
@@ -335,9 +324,7 @@
                   </blockquote>
                 </div>
                 <div class="col-xl-4">
-                  <blockquote
-                    class="blockquote custom-blockquote danger mb-3 text-center"
-                  >
+                  <blockquote class="blockquote custom-blockquote danger mb-3 text-center">
                     <h6>
                       The future belongs to those who believe in the beauty of their
                       dreams..
@@ -524,8 +511,7 @@
               <p class="text-decoration-line-through">
                 This text has a line going through it.
               </p>
-              <a href="javascript:void(0);" class="text-decoration-none"
-                >This link has its text decoration removed
+              <a href="javascript:void(0);" class="text-decoration-none">This link has its text decoration removed
               </a>
             </div>
           </div>
@@ -614,9 +600,7 @@
             <div class="card-body">
               <p class="text-muted mb-0">
                 Muted text with a
-                <a href="javascript:void(0);" class="text-reset text-decoration-underline text-dark"
-                  >reset link</a
-                >.
+                <a href="javascript:void(0);" class="text-reset text-decoration-underline text-dark">reset link</a>.
               </p>
             </div>
           </div>

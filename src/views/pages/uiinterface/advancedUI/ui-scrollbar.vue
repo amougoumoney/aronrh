@@ -7,7 +7,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">Scroll Bar</h3>
+            <h3 class="page-title">{{ $t('ScrollBar') }}</h3>
           </div>
         </div>
       </div>
@@ -18,7 +18,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Horizontal Scroll</h5>
+              <h5 class="card-title">{{ $t('HorizontalScroll') }}</h5>
             </div>
             <div class="card-body">
               <div class="scroll-bar-wrap">
@@ -60,7 +60,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Vertical Scroll</h5>
+              <h5 class="card-title">{{ $t('VerticalScroll') }}</h5>
             </div>
             <div class="card-body">
               <div class="vertical-scroll scroll-demo">
@@ -91,7 +91,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Small Size Scroll</h5>
+              <h5 class="card-title">{{ $t('SmallSizeScroll') }}</h5>
             </div>
             <div class="card-body">
               <div class="scrollbar-margins large-margin scroll-demo">
@@ -122,7 +122,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Visible Scroll</h5>
+              <h5 class="card-title">{{ $t('VisibleScroll') }}</h5>
             </div>
             <div class="card-body">
               <div class="scroll-bar-wrap">

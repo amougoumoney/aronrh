@@ -38,9 +38,7 @@ export default {
             <!-- Invoices -->
             <div class="d-flex justify-content-center align-items-center">
               <div class="flex-fill">
-                <div
-                  class="row justify-content-between align-items-center border-bottom mb-3"
-                >
+                <div class="row justify-content-between align-items-center border-bottom mb-3">
                   <div class="col-md-6">
                     <div class="mb-2">
                       <img src="@/assets/img/logo.svg" class="img-fluid" alt="logo" />
@@ -87,9 +85,8 @@ export default {
                   <div class="col-md-2">
                     <div class="mb-3">
                       <p class="text-title mb-2 fw-medium">Payment Status</p>
-                      <span class="badge badge-danger align-items-center mb-3"
-                        ><i class="ti ti-point-filled"></i>Due in 10 Days</span
-                      >
+                      <span class="badge badge-danger align-items-center mb-3"><i class="ti ti-point-filled"></i>Due in
+                        10 Days</span>
                       <div>
                         <img src="@/assets/img/qr.svg" class="img-fluid" alt="QR" />
                       </div>
@@ -99,9 +96,7 @@ export default {
                 <div>
                   <p class="fw-medium">
                     Invoice For :
-                    <span class="text-dark fw-medium"
-                      >Design & development of Website</span
-                    >
+                    <span class="text-dark fw-medium">Design & development of Website</span>
                   </p>
                   <div class="table-responsive mb-3">
                     <table class="table">
@@ -116,28 +111,36 @@ export default {
                       </thead>
                       <tbody>
                         <tr>
-                          <td><h6>UX Strategy</h6></td>
+                          <td>
+                            <h6>UX Strategy</h6>
+                          </td>
                           <td class="text-gray-9 fw-medium text-end">1</td>
                           <td class="text-gray-9 fw-medium text-end">$500</td>
                           <td class="text-gray-9 fw-medium text-end">$100</td>
                           <td class="text-gray-9 fw-medium text-end">$500</td>
                         </tr>
                         <tr>
-                          <td><h6>Design System</h6></td>
+                          <td>
+                            <h6>Design System</h6>
+                          </td>
                           <td class="text-gray-9 fw-medium text-end">1</td>
                           <td class="text-gray-9 fw-medium text-end">$5000</td>
                           <td class="text-gray-9 fw-medium text-end">$100</td>
                           <td class="text-gray-9 fw-medium text-end">$5000</td>
                         </tr>
                         <tr>
-                          <td><h6>Brand Guidellines</h6></td>
+                          <td>
+                            <h6>Brand Guidellines</h6>
+                          </td>
                           <td class="text-gray-9 fw-medium text-end">1</td>
                           <td class="text-gray-9 fw-medium text-end">$5000</td>
                           <td class="text-gray-9 fw-medium text-end">$100</td>
                           <td class="text-gray-9 fw-medium text-end">$5000</td>
                         </tr>
                         <tr>
-                          <td><h6>Social Media Template</h6></td>
+                          <td>
+                            <h6>Social Media Template</h6>
+                          </td>
                           <td class="text-gray-9 fw-medium text-end">1</td>
                           <td class="text-gray-9 fw-medium text-end">$5000</td>
                           <td class="text-gray-9 fw-medium text-end">$100</td>
@@ -164,27 +167,19 @@ export default {
                     </div>
                   </div>
                   <div class="col-md-5">
-                    <div
-                      class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3">
                       <p class="mb-0">Sub Total</p>
                       <p class="text-dark fw-medium mb-2">$5500</p>
                     </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pe-3">
                       <p class="mb-0">Discount(0%)</p>
                       <p class="text-dark fw-medium mb-2">$400</p>
                     </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-2 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center mb-2 pe-3">
                       <p class="mb-0">VAT(5%)</p>
                       <p class="text-dark fw-medium mb-2">$54</p>
                     </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-2 pe-3"
-                    >
+                    <div class="d-flex justify-content-between align-items-center mb-2 pe-3">
                       <h5>Total Amount</h5>
                       <h5>$5775</h5>
                     </div>
@@ -193,9 +188,7 @@ export default {
                     </p>
                   </div>
                 </div>
-                <div
-                  class="row justify-content-end align-items-end text-end border-bottom mb-3"
-                >
+                <div class="row justify-content-end align-items-end text-end border-bottom mb-3">
                   <div class="col-md-3">
                     <div class="text-end">
                       <img src="@/assets/img/sign.svg" class="img-fluid" alt="sign" />
@@ -239,23 +232,15 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Customer</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
         <form @submit.prevent="submitForm">
           <div class="modal-body">
-            <div
-              class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-            >
+            <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
               <div
-                class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-              >
+                class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
                 <i class="ti ti-photo-plus fs-16"></i>
               </div>
               <div class="profile-upload">
@@ -275,99 +260,67 @@ export default {
             <div class="row">
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >First Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">First Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Last Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Last Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >User Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">User Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Email <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Email <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Password <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Password <span class="text-danger"> *</span></label>
                   <div class="pass-group">
-                    <input
-                      :type="showPassword ? 'text' : 'password'"
-                      class="pass-input form-control"
-                    />
-                    <span
-                      @click="toggleShow"
-                      class="ti toggle-password"
-                      :class="{
-                        'ti-eye': showPassword,
-                        'ti-eye-off': !showPassword,
-                      }"
-                    ></span>
+                    <input :type="showPassword ? 'text' : 'password'" class="pass-input form-control" />
+                    <span @click="toggleShow" class="ti toggle-password" :class="{
+                      'ti-eye': showPassword,
+                      'ti-eye-off': !showPassword,
+                    }"></span>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Confirm Password <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Confirm Password <span class="text-danger"> *</span></label>
                   <div class="pass-group">
-                    <input
-                      :type="showPassword1 ? 'text' : 'password'"
-                      class="pass-inputs form-control"
-                    />
-                    <span
-                      @click="toggleShow1"
-                      class="ti toggle-passwords"
-                      :class="{
-                        'ti-eye': showPassword1,
-                        'ti-eye-off': !showPassword1,
-                      }"
-                    ></span>
+                    <input :type="showPassword1 ? 'text' : 'password'" class="pass-inputs form-control" />
+                    <span @click="toggleShow1" class="ti toggle-passwords" :class="{
+                      'ti-eye': showPassword1,
+                      'ti-eye-off': !showPassword1,
+                    }"></span>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Phone Number <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Phone Number <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Company <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Company <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-0">
-                  <label class="form-label"
-                    >Address <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Address <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -375,11 +328,7 @@ export default {
           </div>
           <div class="modal-footer">
             <div class="d-flex align-items-center justify-content-end m-0">
-              <button
-                class="btn btn-outline border me-2"
-                type="button"
-                data-bs-dismiss="modal"
-              >
+              <button class="btn btn-outline border me-2" type="button" data-bs-dismiss="modal">
                 Cancel
               </button>
               <button type="submit" class="btn btn-primary">Save</button>

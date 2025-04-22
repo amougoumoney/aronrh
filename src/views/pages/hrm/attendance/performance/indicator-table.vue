@@ -117,9 +117,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -134,12 +134,7 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Designation'">
         <div class="d-flex align-items-center file-name-icon">
@@ -153,11 +148,7 @@ export default {
       <template v-if="column.key === 'Approved_By'">
         <div class="d-flex align-items-center file-name-icon">
           <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded">
-            <img
-              :src="require(`@/assets/img/users/${record.Image}`)"
-              class="img-fluid"
-              alt="img"
-            />
+            <img :src="require(`@/assets/img/users/${record.Image}`)" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
@@ -174,19 +165,10 @@ export default {
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#edit_performance-indicator"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
+            data-bs-target="#edit_performance-indicator"><i class="ti ti-edit"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

@@ -17,7 +17,8 @@
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
                     <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                        class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                        class="ti ti-file-type-pdf me-1"></i>Export as
+                      PDF</a>
                   </li>
                   <li>
                     <a href="javascript:void(0);" class="dropdown-item rounded-1"><i

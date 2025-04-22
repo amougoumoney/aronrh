@@ -1,10 +1,6 @@
 <template>
   <div class="d-flex overflow-x-auto align-items-start mb-4">
-    <div
-      class="kanban-list-items bg-white"
-      v-for="(element, color) in modules"
-      :key="color"
-    >
+    <div class="kanban-list-items bg-white" v-for="(element, color) in modules" :key="color">
       <div class="card mb-0">
         <div class="card-body">
           <div class="d-flex justify-content-between align-items-center">
@@ -12,50 +8,32 @@
               <h4 class="fw-semibold d-flex align-items-center mb-1">
                 <i :class="element.DotClass"></i>{{ element.title }}
               </h4>
-              <span class="fw-medium text-default"
-                >{{ element.leadsCount }} Leads - {{ element.revenue }}</span
-              >
+              <span class="fw-medium text-default">{{ element.leadsCount }} Leads - {{ element.revenue }}</span>
             </div>
             <div class="d-flex align-items-center">
               <div class="action-icon d-inline-flex">
                 <a href="javascript:void(0);"><i class="ti ti-circle-plus"></i></a>
-                <a
-                  href="javascript:void(0);"
-                  class=""
-                  data-bs-toggle="modal"
-                  data-bs-target="#edit_leads"
-                  ><i class="ti ti-edit"></i
-                ></a>
-                <a
-                  href="javascript:void(0);"
-                  data-bs-toggle="modal"
-                  data-bs-target="#delete_modal"
-                  ><i class="ti ti-trash"></i
-                ></a>
+                <a href="javascript:void(0);" class="" data-bs-toggle="modal" data-bs-target="#edit_leads"><i
+                    class="ti ti-edit"></i></a>
+                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                    class="ti ti-trash"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="kanban-drag-wrap pt-4">
-        <draggable
-          :list="element.cards"
-          :group="{ name: 'kanban', pull: true, put: true }"
-          @end="onDragEnd(color)"
-        >
+        <draggable :list="element.cards" :group="{ name: 'kanban', pull: true, put: true }" @end="onDragEnd(color)">
           <div v-for="element in element.cards" :key="element.id">
             <div class="card kanban-card">
               <div class="card-body">
                 <div class="d-block">
                   <div :class="element.colorclass"></div>
                   <div class="d-flex align-items-center mb-3">
-                    <router-link
-                      to="/crm/leads-details"
-                      class="avatar avatar-lg bg-gray flex-shrink-0 me-2"
-                      ><span class="avatar-title text-dark">{{
-                        element.initials
-                      }}</span></router-link
-                    >
+                    <router-link to="/crm/leads-details" class="avatar avatar-lg bg-gray flex-shrink-0 me-2"><span
+                        class="avatar-title text-dark">{{
+                          element.initials
+                        }}</span></router-link>
                     <h6 class="fw-medium">
                       <router-link to="/crm/leads-details">{{
                         element.name
@@ -81,34 +59,17 @@
                     {{ element.location }}
                   </p>
                 </div>
-                <div
-                  class="d-flex align-items-center justify-content-between border-top pt-3 mt-3"
-                >
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar avatar-sm avatar-rounded flex-shrink-0 me-2"
-                  >
-                    <img
-                      :src="require(`@/assets/img/company/${element.companyLogo}`)"
-                      alt="image"
-                    />
+                <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
+                  <a href="javascript:void(0);" class="avatar avatar-sm avatar-rounded flex-shrink-0 me-2">
+                    <img :src="require(`@/assets/img/company/${element.companyLogo}`)" alt="image" />
                   </a>
                   <div class="icons-social d-flex align-items-center">
-                    <a
-                      href="javascript:void(0);"
-                      class="d-flex align-items-center justify-content-center me-2"
-                      ><i class="ti ti-phone-call"></i
-                    ></a>
-                    <a
-                      href="javascript:void(0);"
-                      class="d-flex align-items-center justify-content-center me-2"
-                      ><i class="ti ti-brand-hipchat"></i
-                    ></a>
-                    <a
-                      href="javascript:void(0);"
-                      class="d-flex align-items-center justify-content-center"
-                      ><i class="ti ti-color-swatch"></i
-                    ></a>
+                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-2"><i
+                        class="ti ti-phone-call"></i></a>
+                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-2"><i
+                        class="ti ti-brand-hipchat"></i></a>
+                    <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"><i
+                        class="ti ti-color-swatch"></i></a>
                   </div>
                 </div>
               </div>
@@ -264,8 +225,8 @@ export default {
     };
   },
   methods: {
-    onDragEnd() {},
-    onModuleDragEnd() {},
+    onDragEnd() { },
+    onModuleDragEnd() { },
   },
 };
 </script>

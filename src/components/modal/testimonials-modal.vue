@@ -21,12 +21,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Testimonial</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -34,12 +29,9 @@ export default {
           <div class="modal-body pb-0">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                >
+                <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                   <div
-                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                  >
+                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
                     <i class="ti ti-photo text-gray-2 fs-16"></i>
                   </div>
                   <div class="profile-upload">
@@ -52,18 +44,14 @@ export default {
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                        >Cancel</a
-                      >
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Author <span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Author <span class="text-danger">*</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -99,12 +87,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Testimonial</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -112,17 +95,10 @@ export default {
           <div class="modal-body pb-0">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                >
+                <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                   <div
-                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                  >
-                    <img
-                      src="@/assets/img/testimonials/user-10.jpg"
-                      class="img-fluid rounded-circle"
-                      alt="img"
-                    />
+                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
+                    <img src="@/assets/img/testimonials/user-10.jpg" class="img-fluid rounded-circle" alt="img" />
                   </div>
                   <div class="profile-upload">
                     <div class="mb-2">
@@ -134,37 +110,28 @@ export default {
                         Upload
                         <input type="file" class="form-control image-sign" multiple="" />
                       </div>
-                      <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                        >Cancel</a
-                      >
+                      <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Author <span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Author <span class="text-danger">*</span></label>
                   <input type="text" class="form-control" value="Ivan Lucas" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Select Role</label>
-                  <vue-select
-                    :options="EditRole"
-                    id="edittestrole"
-                    placeholder="Hr Manager"
-                  />
+                  <vue-select :options="EditRole" id="edittestrole" placeholder="Hr Manager" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Content</label>
                   <textarea rows="3" class="form-control">
-This system streamlined our HR processes, saving us time and boosting team efficiency.</textarea
-                  >
+This system streamlined our HR processes, saving us time and boosting team efficiency.</textarea>
                 </div>
               </div>
             </div>
@@ -194,15 +161,8 @@ This system streamlined our HR processes, saving us time and boosting team effic
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/content/testimonials" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/content/testimonials" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

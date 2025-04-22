@@ -191,7 +191,8 @@
                     </div>
                     <div>
                       <a href="javascript:void(0);" class="d-flex align-items-center fs-12"><i
-                          class="ti ti-circle-plus me-1"></i>Add New</a>
+                          class="ti ti-circle-plus me-1"></i>Add
+                        New</a>
                     </div>
                   </div>
                 </div>
@@ -218,7 +219,8 @@
                     </div>
                     <div>
                       <a href="javascript:void(0);" class="d-flex align-items-center fs-12"><i
-                          class="ti ti-circle-plus me-1"></i>Add New</a>
+                          class="ti ti-circle-plus me-1"></i>Add
+                        New</a>
                     </div>
                   </div>
                 </div>
@@ -238,7 +240,8 @@
                     </div>
                     <div>
                       <a href="javascript:void(0);" class="d-flex align-items-center fs-12"><i
-                          class="ti ti-circle-plus me-1"></i>Add New</a>
+                          class="ti ti-circle-plus me-1"></i>Add
+                        New</a>
                     </div>
                   </div>
                 </div>

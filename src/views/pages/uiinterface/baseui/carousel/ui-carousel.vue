@@ -6,7 +6,7 @@
     <div class="content container-fluid">
       <div class="page-header">
         <div class="content-page-header">
-          <h5>Carousel</h5>
+          <h5>{{$t('Carousel')}}</h5>
         </div>
       </div>
       <carousel-one></carousel-one>

@@ -1,102 +1,72 @@
 <template>
     <div>
-        <select class="form-control" :id="id" :name="name" :disabled="disabled" :required="required"></select>
+        <select ref="selectRef" class="form-control" :id="id" :name="name" :disabled="disabled"
+            :required="required"></select>
     </div>
 </template>
 
-<script>
-import $ from 'jquery';
-//import 'select2/dist/js/select2.full';
-import 'select2/dist/css/select2.min.css'
+<script setup>
+import { ref, watch, onMounted, onBeforeUnmount } from "vue";
+import $ from "jquery";
+import "select2/dist/js/select2.full.min";
+import "select2/dist/css/select2.min.css";
 
-export default {
-    name: 'SelectView',
-    data() {
-        return {
-            select2: null
-        };
-    },
-    emits: ['update:modelValue'],
-    props: {
-        modelValue: [String, Array], // previously was `value: String`
-        id: {
-            type: String,
-            default: ''
-        },
-        name: {
-            type: String,
-            default: ''
-        },
-        placeholder: {
-            type: String,
-            default: ''
-        },
-        options: {
-            type: Array,
-            default: () => []
-        },
-        disabled: {
-            type: Boolean,
-            default: false
-        },
-        required: {
-            type: Boolean,
-            default: false
-        },
-        settings: {
-            type: Object,
-            default: () => { }
-        },
-    },
-    watch: {
-        options: {
-            handler(val) {
-                this.setOption(val);
-            },
-            deep: true
-        },
-        modelValue: {
-            handler(val) {
-                this.setValue(val);
-            },
-            deep: true
-        },
-    },
-    methods: {
-        setOption(val = []) {
-            this.select2.empty();
-            this.select2.select2({
-                placeholder: this.placeholder,
-                ...this.settings,
-                data: val
-            });
-            this.setValue(this.modelValue);
-        },
-        setValue(val) {
-            if (val instanceof Array) {
-                this.select2.val([...val]);
-            } else {
-                this.select2.val([val]);
-            }
-            this.select2.trigger('change');
-        }
-    },
-    mounted() {
-        this.select2 = $(this.$el)
-            .find('select')
-            .select2({
-                placeholder: this.placeholder,
-                ...this.settings,
-                data: this.options
-            })
-            .on('select2:select select2:unselect', ev => {
-                this.$emit('update:modelValue', this.select2.val());
-                this.$emit('select', ev['params']['data']);
-            });
-        this.setValue(this.modelValue);
-    },
-    beforeUnmount() {
-        this.select2.select2('destroy');
+const props = defineProps({
+    modelValue: [String, Array],
+    id: { type: String, default: "" },
+    name: { type: String, default: "" },
+    placeholder: { type: String, default: "" },
+    options: { type: Array, default: () => [] },
+    disabled: { type: Boolean, default: false },
+    required: { type: Boolean, default: false },
+    settings: { type: Object, default: () => ({}) },
+});
+
+const emit = defineEmits(["update:modelValue", "select"]);
+
+const selectRef = ref(null);
+let select2Instance = null;
+
+const setOptions = (val = []) => {
+    if (select2Instance) {
+        select2Instance.empty().select2({
+            placeholder: props.placeholder,
+            ...props.settings,
+            data: val,
+        });
+        setValue(props.modelValue);
     }
 };
+
+const setValue = (val) => {
+    if (select2Instance) {
+        select2Instance.val(Array.isArray(val) ? val : [val]).trigger("change");
+    }
+};
+
+watch(() => props.options, setOptions, { deep: true });
+watch(() => props.modelValue, setValue, { deep: true });
+
+onMounted(() => {
+    if (!selectRef.value) return;
+
+    select2Instance = $(selectRef.value).select2({
+        placeholder: props.placeholder,
+        ...props.settings,
+        data: props.options,
+    });
+
+    select2Instance.on("select2:select select2:unselect", (ev) => {
+        emit("update:modelValue", select2Instance.val());
+        emit("select", ev.params.data);
+    });
+
+    setValue(props.modelValue);
+});
+
+onBeforeUnmount(() => {
+    if (select2Instance) {
+        select2Instance.select2("destroy");
+    }
+});
 </script>

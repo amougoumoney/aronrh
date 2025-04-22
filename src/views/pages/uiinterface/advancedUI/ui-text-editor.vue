@@ -7,7 +7,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">Text Editor</h3>
+            <h3 class="page-title">{{ $t('TextEditor') }}</h3>
           </div>
         </div>
       </div>
@@ -18,7 +18,7 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Editor</h5>
+              <h5 class="card-title">{{ $t('Editor') }}</h5>
             </div>
             <div class="card-body">
               <ckeditor

@@ -16,7 +16,8 @@
           </div>
           <div class="mb-2">
             <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center"><i
-                class="ti ti-circle-plus me-2"></i>Add People</a>
+                class="ti ti-circle-plus me-2"></i>Add
+              People</a>
           </div>
           <div class="ms-2 head-icons">
             <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"

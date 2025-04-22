@@ -10,7 +10,7 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
             <a href="javascript:void(0);" class="btn btn-dark d-flex align-items-center"><i
-                class="ti ti-download me-2"></i>Download</a>
+                class="ti ti-download me-2"></i>{{ $t('Download') }}</a>
           </div>
           <div class="head-icons ms-2">
             <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -43,7 +43,7 @@
                         Payslip No <span class="text-primary"> #PS4283</span>
                       </h5>
                       <p class="fw-medium">
-                        Salary Month : <span class="text-dark">October 2024</span>
+                        {{ $t('SalaryMonth') }} : <span class="text-dark">{{ $t('October') }} 2024</span>
                       </p>
                     </div>
                   </div>
@@ -51,14 +51,14 @@
                 <div class="row border-bottom align-items-center mb-3">
                   <div class="col-md-5">
                     <div class="mb-3">
-                      <p class="text-dark mb-2 fw-semibold">From</p>
+                      <p class="text-dark mb-2 fw-semibold">{{ $t('From') }}</p>
                       <div>
                         <h4 class="mb-1">XYZ Technologies</h4>
                         <p class="mb-1">2077 Chicago Avenue Orosi, CA 93647</p>
                         <p class="mb-1">
-                          Email : <span class="text-dark">xyztech@example.com</span>
+                          {{ $t('Email') }} : <span class="text-dark">xyztech@example.com</span>
                         </p>
-                        <p>Phone : <span class="text-dark">+1 987 654 3210</span></p>
+                        <p>{{ $t('phone ') }}: <span class="text-dark">+1 987 654 3210</span></p>
                       </div>
                     </div>
                   </div>
@@ -67,50 +67,50 @@
                       <p class="text-dark mb-2 fw-semibold">To</p>
                       <div>
                         <h4 class="mb-1">Anthony Lewis</h4>
-                        <p class="mb-1">Web Designer</p>
+                        <p class="mb-1">{{ $t('WebDesigner') }}</p>
                         <p class="mb-1">
-                          Email : <span class="text-dark">anthony@example.com</span>
+                          {{ $t('Email') }}  : <span class="text-dark">anthony@example.com</span>
                         </p>
-                        <p>Phone : <span class="text-dark">+1 458 268 4738</span></p>
+                        <p>{{ $t('phone ') }} : <span class="text-dark">+1 458 268 4738</span></p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <h5 class="text-center mb-4">Payslip for the moth of October 2024</h5>
+                  <h5 class="text-center mb-4">{{ $t('PayslipforthemothofOctober2024') }}</h5>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="list-group mb-3">
                         <div class="list-group-item bg-light p-3 border-bottom-0">
-                          <h6>Earnings</h6>
+                          <h6>{{ $t('earnings') }}</h6>
                         </div>
                         <div class="list-group-item">
                           <div class="d-flex align-items-center justify-content-between">
-                            <p class="mb-0">Basic Salary</p>
+                            <p class="mb-0">{{ $t('BasicSalary') }}</p>
                             <h6 class="fw-medium">$3000</h6>
                           </div>
                         </div>
                         <div class="list-group-item">
                           <div class="d-flex align-items-center justify-content-between">
-                            <p class="mb-0">House Rent Allowance (H.R.A.)</p>
+                            <p class="mb-0">{{ $t('HouseRentAllowance(H.R.A.)') }}</p>
                             <h6 class="fw-medium">$1000</h6>
                           </div>
                         </div>
                         <div class="list-group-item">
                           <div class="d-flex align-items-center justify-content-between">
-                            <p class="mb-0">Conveyance</p>
+                            <p class="mb-0">{{ $t('Conveyance') }}</p>
                             <h6 class="fw-medium">$200</h6>
                           </div>
                         </div>
                         <div class="list-group-item">
                           <div class="d-flex align-items-center justify-content-between">
-                            <p class="mb-0">Other Allowance</p>
+                            <p class="mb-0">{{ $t('OtherAllowance') }}</p>
                             <h6 class="fw-medium">$100</h6>
                           </div>
                         </div>
                         <div class="list-group-item">
                           <div class="d-flex align-items-center justify-content-between">
-                            <p class="mb-0">Total Earnings</p>
+                            <p class="mb-0">{{ $t('TotalEarnings') }}</p>
                             <h6 class="fw-medium">$4300</h6>
                           </div>
                         </div>
@@ -119,17 +119,17 @@
                     <div class="col-md-6">
                       <div class="list-group mb-3">
                         <div class="list-group-item bg-light p-3 border-bottom-0">
-                          <h6>Deductions</h6>
+                          <h6>{{ $t('Deductions') }}</h6>
                         </div>
                         <div class="list-group-item">
                           <div class="d-flex align-items-center justify-content-between">
-                            <p class="mb-0">Tax Deducted at Source (T.D.S.)</p>
+                            <p class="mb-0">{{ $t('TaxDeductedatSource(T.D.S.)') }}</p>
                             <h6 class="fw-medium">$200</h6>
                           </div>
                         </div>
                         <div class="list-group-item">
                           <div class="d-flex align-items-center justify-content-between">
-                            <p class="mb-0">Provident Fund</p>
+                            <p class="mb-0">{{ $t('ProvidentFund') }}</p>
                             <h6 class="fw-medium">$300</h6>
                           </div>
                         </div>
@@ -147,7 +147,7 @@
                         </div>
                         <div class="list-group-item">
                           <div class="d-flex align-items-center justify-content-between">
-                            <p class="mb-0">Total Earnings</p>
+                            <p class="mb-0">{{ $t('TotalEarnings') }}</p>
                             <h6 class="fw-medium">$700</h6>
                           </div>
                         </div>
@@ -156,9 +156,9 @@
                   </div>
                   <div>
                     <p>
-                      Net Salary :
+                      {{ $t('NetSalary') }} :
                       <span class="text-gray-9 fw-medium">
-                        $3600(Three thousand six hundred only)</span>
+                        $3600({{ $t('Threethousandsixhundredonly') }})</span>
                     </p>
                   </div>
                 </div>
@@ -174,8 +174,8 @@
     <div class="footer d-sm-flex align-items-center justify-content-between bg-white border-top p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        Designed & Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        {{$t('designed')}} & {{$t('developedBy')}}
+        <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a>
       </p>
     </div>
     <!-- /Footer -->

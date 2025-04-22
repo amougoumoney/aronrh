@@ -16,32 +16,21 @@
     </div>
 
     <!-- Vue Easy Lightbox for Image Gallery -->
-    <vue-easy-lightbox
-      :visible="lightboxVisible"
-      :imgs="fullImages"
-      :index="lightboxIndex"
-      @close="closeLightbox"
-      @click.self="closeLightbox"
-    />
+    <vue-easy-lightbox :visible="lightboxVisible" :imgs="fullImages" :index="lightboxIndex" @close="closeLightbox"
+      @click.self="closeLightbox" />
 
     <!-- Image Thumbnails for Gallery -->
     <div class="d-flex flex-wrap gap-3 mb-3">
       <div v-for="(image, index) in galleryImages" :key="index">
         <a href="javascript:void(0);" class="gallery-item" @click="openLightbox(index)">
-          <img
-            :src="require(`@/assets/img/social/${image.thumb}`)"
-            class="rounded"
-            :alt="`gallery-item-${index}`"
-            style="width: 120px; height: 120px; object-fit: cover"
-          />
+          <img :src="require(`@/assets/img/social/${image.thumb}`)" class="rounded" :alt="`gallery-item-${index}`"
+            style="width: 120px; height: 120px; object-fit: cover" />
         </a>
       </div>
     </div>
 
     <!-- Like, Comment, Share Section -->
-    <div
-      class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3"
-    >
+    <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3">
       <div class="d-flex align-items-center flex-wrap row-gap-3">
         <a href="javascript:void(0);" class="d-inline-flex align-items-center me-3">
           <i class="ti ti-heart me-2"></i>340K Likes

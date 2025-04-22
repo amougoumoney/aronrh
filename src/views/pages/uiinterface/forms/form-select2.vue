@@ -7,7 +7,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">Form Select2</h3>
+            <h3 class="page-title">{{ $t('FormSelect2') }}</h3>
           </div>
         </div>
       </div>
@@ -17,7 +17,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Basic Select2</h5>
+              <h5 class="card-title">{{ $t('BasicSelect2') }}</h5>
             </div>
             <div class="card-body">
               <vue-select :options="SelectOne" id="selectone" placeholder="Selection-1" />
@@ -28,7 +28,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Multiple Select</h5>
+              <h5 class="card-title">{{ $t('MultipleSelect') }}</h5>
             </div>
             <div class="card-body">
               <vue-select :options="SelectTwo" id="selecttwo" placeholder="" />
@@ -39,7 +39,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Single Select With Placeholder</h5>
+              <h5 class="card-title">{{ $t('SingleSelectWithPlaceholder') }}</h5>
             </div>
             <div class="card-body">
               <vue-select :options="SelectThree" id="selectthree" placeholder="Texas" />
@@ -50,7 +50,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Multiple Select With Placeholder</h5>
+              <h5 class="card-title">{{ $t('MultipleSelectWithPlaceholder') }}</h5>
             </div>
             <div class="card-body">
               <vue-select :options="SelectFour" id="selectfour" placeholder="Select" />
@@ -61,7 +61,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Multiple Select With Placeholder</h5>
+              <h5 class="card-title">{{ $t('MultipleSelectWithPlaceholder') }}</h5>
             </div>
             <div class="card-body">
               <vue-select :options="SelectFive" id="selectfive" placeholder="" />
@@ -75,13 +75,13 @@
           <!-- Basic -->
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Basic</h5>
+              <h5 class="card-title">{{ $t('Basic') }}</h5>
             </div>
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12">
                   <p>
-                    Use select2() function on select element to convert it to Select 2.
+                    {{ $t('Use...') }}
                   </p>
                   <vue-select :options="SelectSix" id="selectsix" placeholder="Orange" />
                 </div>
@@ -93,27 +93,27 @@
           <!-- Nested -->
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Nested</h5>
+              <h5 class="card-title">{{ $t('Nested') }}</h5>
             </div>
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12">
-                  <p>Add options inside the optgroups to for group options.</p>
+                  <p>{{ $t('Add.') }}</p>
                   <select class="form-control nested">
                     <optgroup label="Group1">
-                      <option selected="selected">orange</option>
-                      <option>white</option>
-                      <option>purple</option>
+                      <option selected="selected">{{ $('orange') }}</option>
+                      <option>{{ $t('white') }}</option>
+                      <option>{{ $t('purple') }}</option>
                     </optgroup>
                     <optgroup label="Group2">
-                      <option>purple</option>
-                      <option>orange</option>
-                      <option>white</option>
+                      <option>{{ $t('purple') }}</option>
+                      <option>{{ $('orange') }}</option>
+                      <option>{{ $t('white') }}</option>
                     </optgroup>
                     <optgroup label="Group3">
-                      <option>white</option>
-                      <option>purple</option>
-                      <option>orange</option>
+                      <option>{{ $t('white') }}</option>
+                      <option>{{ $t('purple') }}</option>
+                      <option>{{ $('orange') }}</option>
                     </optgroup>
                   </select>
                 </div>
@@ -125,12 +125,12 @@
           <!-- Placeholder -->
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Placeholder</h5>
+              <h5 class="card-title">{{ $t('Placeholder') }}</h5>
             </div>
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12">
-                  <p>Apply Placeholder by setting option placeholder option.</p>
+                  <p>{{ $t('Apply...') }}.</p>
                   <vue-select
                     :options="SelectSeven"
                     id="selectseven"
@@ -145,16 +145,16 @@
           <!-- Tagging with multi-value -->
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Tagging with multi-value select boxes</h5>
+              <h5 class="card-title">{{ $t('Tag...') }}</h5>
             </div>
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12">
-                  <p>Set tags: true to convert select 2 in Tag mode.</p>
+                  <p>{{ $t('set...') }}.</p>
                   <select class="form-control tagging" multiple="multiple">
-                    <option>orange</option>
-                    <option>white</option>
-                    <option>purple</option>
+                    <option>{{ $('orange') }}</option>
+                    <option>{{ $t('white') }}</option>
+                    <option>{{ $t('purple') }}</option>
                   </select>
                 </div>
               </div>
@@ -166,12 +166,12 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Small Select2</h5>
+              <h5 class="card-title">{{ $t('SmallSelect2') }}</h5>
             </div>
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12">
-                  <p>Use data('select2') function to get container of select2.</p>
+                  <p>{{ $t('use...') }}.</p>
                   <vue-select
                     :options="SelectEight"
                     id="selecteight"
@@ -184,12 +184,12 @@
 
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Disabling options</h5>
+              <h5 class="card-title">{{$t('Disablingoptions')}}</h5>
             </div>
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12">
-                  <p>Disable Select using disabled attribute.</p>
+                  <p>{{ $t('DisableSelectusingdisabledattribute') }}.</p>
                   <vue-select
                     :options="SelectNine"
                     id="selectnine"
@@ -202,19 +202,18 @@
 
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Limiting the number of Tagging</h5>
+              <h5 class="card-title">{{ $t('LimitingthenumberofTagging') }}</h5>
             </div>
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12">
                   <p>
-                    Set maximumSelectionLength: 2 with tags: true to limit selectin in Tag
-                    mode.
+                    {{ $t('setMaximum') }}.
                   </p>
                   <select class="form-control tagging" multiple="multiple">
-                    <option>orange</option>
-                    <option>white</option>
-                    <option>purple</option>
+                    <option>{{ $('orange') }}</option>
+                    <option>{{ $t('white') }}</option>
+                    <option>{{ $t('purple') }}</option>
                   </select>
                 </div>
               </div>

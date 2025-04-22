@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Todo</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -38,11 +33,7 @@
               <div class="col-lg-12">
                 <div class="mb-3">
                   <label class="form-label">Descriptions</label>
-                    <ckeditor
-                      :editor="editor"
-                      v-model="editorData"
-                      :config="editorConfig"
-                    ></ckeditor>
+                  <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                 </div>
               </div>
               <div class="col-12">
@@ -75,19 +66,12 @@
   <div class="modal fade" id="add_project" role="dialog">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div
-          class="modal-header header-border align-items-center justify-content-between"
-        >
+        <div class="modal-header header-border align-items-center justify-content-between">
           <div class="d-flex align-items-center">
             <h5 class="modal-title me-2">Add Project</h5>
             <p class="text-dark">Project ID : PRO-0004</p>
           </div>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -107,12 +91,9 @@
               <div class="modal-body">
                 <div class="row">
                   <div class="col-md-12">
-                    <div
-                      class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                    >
+                    <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                       <div
-                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                      >
+                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
                         <i class="ti ti-photo text-gray-2 fs-16"></i>
                       </div>
                       <div class="profile-upload">
@@ -125,9 +106,7 @@
                             Upload
                             <input type="file" class="form-control image-sign" multiple />
                           </div>
-                          <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                            >Cancel</a
-                          >
+                          <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                         </div>
                       </div>
                     </div>
@@ -150,14 +129,8 @@
                         <div class="mb-3">
                           <label class="form-label">Start Date</label>
                           <div class="input-icon-end position-relative">
-                            <date-picker
-                              v-model="startdateOne"
-                              class="form-control datetimepicker"
-                              placeholder="dd/mm/yyyy"
-                              :editable="true"
-                              :clearable="false"
-                              :input-format="dateFormat"
-                            />
+                            <date-picker v-model="startdateOne" class="form-control datetimepicker"
+                              placeholder="dd/mm/yyyy" :editable="true" :clearable="false" :input-format="dateFormat" />
                             <span class="input-icon-addon">
                               <i class="ti ti-calendar text-gray-7"></i>
                             </span>
@@ -168,14 +141,8 @@
                         <div class="mb-3">
                           <label class="form-label">End Date</label>
                           <div class="input-icon-end position-relative">
-                            <date-picker
-                              v-model="startdateTwo"
-                              class="form-control datetimepicker"
-                              placeholder="dd/mm/yyyy"
-                              :editable="true"
-                              :clearable="false"
-                              :input-format="dateFormat"
-                            />
+                            <date-picker v-model="startdateTwo" class="form-control datetimepicker"
+                              placeholder="dd/mm/yyyy" :editable="true" :clearable="false" :input-format="dateFormat" />
                             <span class="input-icon-addon">
                               <i class="ti ti-calendar text-gray-7"></i>
                             </span>
@@ -185,11 +152,7 @@
                       <div class="col-md-6">
                         <div class="mb-3">
                           <label class="form-label">Priority</label>
-                          <vue-select
-                            :options="ProAdminOne"
-                            id="proadminone"
-                            placeholder="Select"
-                          />
+                          <vue-select :options="ProAdminOne" id="proadminone" placeholder="Select" />
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -202,12 +165,8 @@
                         <div class="mb-3">
                           <label class="form-label">Total Working Hours</label>
                           <div class="input-icon-end position-relative">
-                            <input
-                              type="text"
-                              class="form-control timepicker"
-                              placeholder="-- : -- : --"
-                              value="02-05-2024"
-                            />
+                            <input type="text" class="form-control timepicker" placeholder="-- : -- : --"
+                              value="02-05-2024" />
                             <span class="input-icon-addon">
                               <i class="ti ti-clock-hour-3 text-gray-7"></i>
                             </span>
@@ -225,22 +184,14 @@
                   <div class="col-md-12">
                     <div class="mb-0">
                       <label class="form-label">Description</label>
-                      <ckeditor
-                        :editor="editor"
-                        v-model="editorData"
-                        :config="editorConfig"
-                      ></ckeditor>
+                      <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="modal-footer">
                 <div class="d-flex align-items-center justify-content-end">
-                  <button
-                    type="button"
-                    class="btn btn-outline-light border me-2"
-                    data-bs-dismiss="modal"
-                  >
+                  <button type="button" class="btn btn-outline-light border me-2" data-bs-dismiss="modal">
                     Cancel
                   </button>
                   <button class="btn btn-primary wizard-next-btn" type="button">
@@ -257,44 +208,23 @@
                   <div class="col-md-12">
                     <div class="mb-3">
                       <label class="form-label me-2">Team Members</label>
-                      <vue3-tags-input
-                        class="input-tags form-control"
-                        placeholder="Add new"
-                        type="text"
-                        data-role="tagsinput"
-                        name="Label"
-                        value="Tag1"
-                        :tags="tags"
-                      />
+                      <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                        data-role="tagsinput" name="Label" value="Tag1" :tags="tags" />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
                       <label class="form-label me-2">Team Leader</label>
 
-                      <vue3-tags-input
-                        class="input-tags form-control"
-                        placeholder="Add new"
-                        type="text"
-                        data-role="tagsinput"
-                        name="Label"
-                        value="Tag1"
-                        :tags="tagsOne"
-                      />
+                      <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                        data-role="tagsinput" name="Label" value="Tag1" :tags="tagsOne" />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
                       <label class="form-label me-2">Project Manager</label>
-                      <vue3-tags-input
-                        class="input-tags form-control"
-                        placeholder="Add new"
-                        type="text"
-                        data-role="tagsinput"
-                        name="Label"
-                        value="Tag1"
-                        :tags="tagsTwo"
-                      />
+                      <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                        data-role="tagsinput" name="Label" value="Tag1" :tags="tagsTwo" />
                     </div>
                   </div>
                   <div class="col-md-12">
@@ -313,19 +243,10 @@
               </div>
               <div class="modal-footer">
                 <div class="d-flex align-items-center justify-content-end">
-                  <button
-                    type="button"
-                    class="btn btn-outline-light border me-2"
-                    data-bs-dismiss="modal"
-                  >
+                  <button type="button" class="btn btn-outline-light border me-2" data-bs-dismiss="modal">
                     Cancel
                   </button>
-                  <button
-                    class="btn btn-primary"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#success_modal"
-                  >
+                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#success_modal">
                     Save
                   </button>
                 </div>
@@ -344,12 +265,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Leave Request</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -359,35 +275,21 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Employee Name</label>
-                  <vue-select
-                    :options="SmithAdmin"
-                    id="smithadmin"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="SmithAdmin" id="smithadmin" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Leave Type</label>
-                  <vue-select
-                    :options="LeaveAdmin"
-                    id="leaveadmin"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="LeaveAdmin" id="leaveadmin" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">From </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateThree"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateThree" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -398,14 +300,8 @@
                 <div class="mb-3">
                   <label class="form-label">To </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>

@@ -6,18 +6,11 @@
         <div class="modal-header">
           <h4 class="modal-title d-flex align-items-center">
             Domain Detail
-            <span
-              class="badge bg-outline-success d-inline-flex align-items-center badge-xs ms-2"
-            >
+            <span class="badge bg-outline-success d-inline-flex align-items-center badge-xs ms-2">
               <i class="ti ti-point-filled"></i>Approved
             </span>
           </h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -30,15 +23,8 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="d-flex align-items-center file-name-icon">
-                          <a
-                            href="javascript:void(0);"
-                            class="avatar avatar-md border avatar-rounded"
-                          >
-                            <img
-                              src="@/assets/img/company/company-01.svg"
-                              class="img-fluid"
-                              alt="img"
-                            />
+                          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                            <img src="@/assets/img/company/company-01.svg" class="img-fluid" alt="img" />
                           </a>
                           <div class="ms-2">
                             <h6 class="fw-medium fs-14">
@@ -102,18 +88,11 @@
         <div class="modal-header">
           <h4 class="modal-title d-flex align-items-center">
             Domain Detail
-            <span
-              class="badge bg-outline-skyblue d-inline-flex align-items-center badge-xs ms-2"
-            >
+            <span class="badge bg-outline-skyblue d-inline-flex align-items-center badge-xs ms-2">
               <i class="ti ti-point-filled"></i>Pending
             </span>
           </h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -126,15 +105,8 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="d-flex align-items-center file-name-icon">
-                          <a
-                            href="javascript:void(0);"
-                            class="avatar avatar-md border avatar-rounded"
-                          >
-                            <img
-                              src="@/assets/img/company/company-01.svg"
-                              class="img-fluid"
-                              alt="img"
-                            />
+                          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                            <img src="@/assets/img/company/company-01.svg" class="img-fluid" alt="img" />
                           </a>
                           <div class="ms-2">
                             <h6 class="fw-medium fs-14">
@@ -144,14 +116,10 @@
                         </div>
                       </div>
                       <div class="col-md-6 text-end">
-                        <span
-                          class="badge badge-success d-inline-flex align-items-center badge-xs ms-2"
-                        >
+                        <span class="badge badge-success d-inline-flex align-items-center badge-xs ms-2">
                           <i class="ti ti-check me-1"></i>Approve
                         </span>
-                        <span
-                          class="badge badge-danger d-inline-flex align-items-center badge-xs ms-2"
-                        >
+                        <span class="badge badge-danger d-inline-flex align-items-center badge-xs ms-2">
                           <i class="ti ti-x me-1"></i>Reject
                         </span>
                       </div>
@@ -210,18 +178,11 @@
         <div class="modal-header">
           <h4 class="modal-title d-flex align-items-center">
             Domain Detail
-            <span
-              class="badge bg-outline-danger d-inline-flex align-items-center badge-xs ms-2"
-            >
+            <span class="badge bg-outline-danger d-inline-flex align-items-center badge-xs ms-2">
               <i class="ti ti-point-filled"></i>Rejected
             </span>
           </h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -234,15 +195,8 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="d-flex align-items-center file-name-icon">
-                          <a
-                            href="javascript:void(0);"
-                            class="avatar avatar-md border avatar-rounded"
-                          >
-                            <img
-                              src="@/assets/img/company/company-01.svg"
-                              class="img-fluid"
-                              alt="img"
-                            />
+                          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                            <img src="@/assets/img/company/company-01.svg" class="img-fluid" alt="img" />
                           </a>
                           <div class="ms-2">
                             <h6 class="fw-medium fs-14">
@@ -312,15 +266,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/super-admin/domain" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/super-admin/domain" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

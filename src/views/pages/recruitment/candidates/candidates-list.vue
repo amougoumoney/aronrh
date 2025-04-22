@@ -1,66 +1,62 @@
-<script>
+<script setup>
 import "daterangepicker/daterangepicker.css";
 import "daterangepicker/daterangepicker.js";
-import { ref } from "vue";
-import { onMounted } from "vue";
+import { ref, onMounted } from "vue";
 import moment from "moment";
-import DateRangePicker from "daterangepicker"
+import DateRangePicker from "daterangepicker";
+import  CandidatModal from "@/components/modal/candidat-list-modal.vue"
+import { Modal } from "bootstrap";
 
-export default {
-    data() {
-        return {
-            title: "Candidates",
-            text: "HR",
-            text1: "Candidates",
-        }
-    },
-    methods: {
-        toggleHeader() {
-            document.getElementById("collapse-header").classList.toggle("active");
-            document.body.classList.toggle("header-collapse");
-        },
-    },
-    setup() {
-        const dateRangeInput = ref(null);
+const title = "Candidates";
+const text = "HR";
+const text1 = "Candidates";
 
-        // Move the function declaration outside of the onMounted callback
-        function booking_range(start, end) {
-            return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
-        }
+const dateRangeInput = ref(null);
 
-        onMounted(() => {
-            if (dateRangeInput.value) {
-                const start = moment().subtract(6, "days");
-                const end = moment();
+const openAddGrantModal = (grantModalRef) => {
+  grantModalRef.value?.resetForm();
+  new Modal(document.getElementById("add_candidates")).show();
+};
 
-                new DateRangePicker(
-                    dateRangeInput.value,
-                    {
-                        startDate: start,
-                        endDate: end,
-                        ranges: {
-                            Today: [moment(), moment()],
-                            Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-                            "Last 7 Days": [moment().subtract(6, "days"), moment()],
-                            "Last 30 Days": [moment().subtract(29, "days"), moment()],
-                            "This Month": [moment().startOf("month"), moment().endOf("month")],
-                            "Last Month": [
-                                moment().subtract(1, "month").startOf("month"),
-                                moment().subtract(1, "month").endOf("month"),
-                            ],
-                        },
-                    },
-                    booking_range
-                );
+// Fonction pour formater la plage de dates
+function booking_range(start, end) {
+    return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+}
 
-                booking_range(start, end);
-            }
-        });
+// Utiliser onMounted pour initialiser le DateRangePicker
+onMounted(() => {
+    if (dateRangeInput.value) {
+        const start = moment().subtract(6, "days");
+        const end = moment();
 
-        return {
-            dateRangeInput,
-        };
-    },
+        new DateRangePicker(
+            dateRangeInput.value,
+            {
+                startDate: start,
+                endDate: end,
+                ranges: {
+                    Today: [moment(), moment()],
+                    Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+                    "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                    "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                    "This Month": [moment().startOf("month"), moment().endOf("month")],
+                    "Last Month": [
+                        moment().subtract(1, "month").startOf("month"),
+                        moment().subtract(1, "month").endOf("month"),
+                    ],
+                },
+            },
+            booking_range
+        );
+
+        booking_range(start, end);
+    }
+});
+
+// Méthode pour basculer l'en-tête (ajoutez-la si nécessaire)
+function toggleHeader() {
+    document.getElementById("collapse-header").classList.toggle("active");
+    document.body.classList.toggle("header-collapse");
 }
 </script>
 
@@ -68,23 +64,19 @@ export default {
     <layout-header></layout-header>
     <layout-sidebar></layout-sidebar>
 
-    <!-- Page Wrapper -->
+   <!-- Page Wrapper -->
     <div class="page-wrapper">
         <div class="content">
 
             <!-- Breadcrumb -->
             <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
-                <index-breadcrumb :title="title" :text="text" :text1="text1" />
+               <index-breadcrumb :title="title" :text="text" :text1="text1" />
                 <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
                     <div class="me-2 mb-2">
                         <div class="d-flex align-items-center border bg-white rounded p-1 me-2">
-                            <router-link to="/recuritment/candidates-kanban" class="btn btn-icon btn-sm me-1"><i
-                                    class="ti ti-layout-kanban"></i></router-link>
-                            <router-link to="/recuritment/candidates"
-                                class="btn btn-icon btn-sm active bg-primary text-white me-1"><i
-                                    class="ti ti-list-tree"></i></router-link>
-                            <router-link to="/recuritment/candidates-grid" class="btn btn-icon btn-sm"><i
-                                    class="ti ti-layout-grid"></i></router-link>
+                            <router-link to="/recuritment/candidates-kanban" class="btn btn-icon btn-sm me-1"><i class="ti ti-layout-kanban"></i></router-link>
+                            <router-link to="/recuritment/candidates" class="btn btn-icon btn-sm active bg-primary text-white me-1"><i class="ti ti-list-tree"></i></router-link>                                
+                            <router-link to="/recuritment/candidates-grid" class="btn btn-icon btn-sm"><i class="ti ti-layout-grid"></i></router-link>
                         </div>
                     </div>
                     <div class="me-2 mb-2">
@@ -101,14 +93,19 @@ export default {
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                                            class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
+                                    class="ti ti-file-type-xls me-1"></i>Export as Excel </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="mb-2">
+            <a href="javascript:void(0);" data-bs-toggle="modal" @click="openAddGrantModal"
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{
+                $t('AddNewCandidat')}} 
+            </a>
+          </div>
                     <div class="head-icons ms-2">
-                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-                            data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+                        <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
                             <i class="ti ti-chevrons-up"></i>
                         </a>
                     </div>
@@ -204,12 +201,13 @@ export default {
         </div>
 
         <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
-            <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
+            <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
             <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
         </div>
 
     </div>
     <!-- /Page Wrapper -->
 
-    <candidates-modal></candidates-modal>
+    <CandidatModal ref="grantModal"/>
+    
 </template>

@@ -195,9 +195,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -212,21 +212,12 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Candidate'">
         <div class="d-flex align-items-center file-name-icon">
           <a href="javascript:void(0);" class="avatar avatar-md">
-            <img
-              :src="(`@/assets/img/users/${record.Image}`)"
-              class="img-fluid rounded-circle"
-              alt="img"
-            />
+            <img :src="(`@/assets/img/users/${record.Image}`)" class="img-fluid rounded-circle" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
@@ -238,43 +229,31 @@ export default {
       </template>
       <template v-if="column.key === 'Resume'">
         <div class="d-inline-flex">
-          <a href="javascript:void(0);" class="text-gray me-2 fs-16"
-            ><i class="ti ti-file-text"></i
-          ></a>
-          <a href="javascript:void(0);" class="text-gray fs-16"
-            ><i class="ti ti-download"></i
-          ></a>
+          <a href="javascript:void(0);" class="text-gray me-2 fs-16"><i class="ti ti-file-text"></i></a>
+          <a href="javascript:void(0);" class="text-gray fs-16"><i class="ti ti-download"></i></a>
         </div>
       </template>
       <template v-if="column.key === 'Status'">
-        <span
-          class="badge border"
-          :class="[
-            record.Status === 'Sent'
-              ? 'border-purple text-purple'
-              : record.Status === 'App Received'
+        <span class="badge border" :class="[
+          record.Status === 'Sent'
+            ? 'border-purple text-purple'
+            : record.Status === 'App Received'
               ? 'border-purple text-purple'
               : record.Status === 'Scheduled'
-              ? 'border-pink text-pink'
-              : record.Status === 'Interviewed'
-              ? 'border-info text-info'
-              : record.Status === 'Offered'
-              ? 'border-warning text-warning'
-              : record.Status === 'Hired'
-              ? 'border-success text-success'
-              : 'border-danger text-danger',
-          ]"
-          ><i class="ti ti-point-filled"></i>{{ record.Status }}</span
-        >
+                ? 'border-pink text-pink'
+                : record.Status === 'Interviewed'
+                  ? 'border-info text-info'
+                  : record.Status === 'Offered'
+                    ? 'border-warning text-warning'
+                    : record.Status === 'Hired'
+                      ? 'border-success text-success'
+                      : 'border-danger text-danger',
+        ]"><i class="ti ti-point-filled"></i>{{ record.Status }}</span>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

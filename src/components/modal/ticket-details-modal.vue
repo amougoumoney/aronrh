@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Ticket</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -50,12 +45,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-2"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button type="submit" class="btn btn-primary">Add Ticket</button>
           </div>
         </form>

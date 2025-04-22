@@ -32,12 +32,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Todays Work</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -46,30 +41,16 @@ export default {
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Project <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="Project"
-                    id="project-management"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Project <span class="text-danger"> *</span></label>
+                  <vue-select :options="Project" id="project-management" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Deadline <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Deadline <span class="text-danger"> *</span></label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -78,34 +59,22 @@ export default {
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Total Hours <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Total Hours <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Remaining Hours<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Remaining Hours<span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Date<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Date<span class="text-danger"> *</span></label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -114,9 +83,7 @@ export default {
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Hours<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Hours<span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -140,12 +107,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Todays Work</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -154,31 +116,16 @@ export default {
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Project <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="Project"
-                    id="project-management-one"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Project <span class="text-danger"> *</span></label>
+                  <vue-select :options="Project" id="project-management-one" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Deadline <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Deadline <span class="text-danger"> *</span></label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      value="14/01/2024"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" value="14/01/2024"
+                      placeholder="dd/mm/yyyy" :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -187,35 +134,22 @@ export default {
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Total Hours <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Total Hours <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" value="32" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Remaining Hours<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Remaining Hours<span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" value="8" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Date<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Date<span class="text-danger"> *</span></label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      value="14/05/2024"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" value="14/05/2024"
+                      placeholder="dd/mm/yyyy" :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -224,9 +158,7 @@ export default {
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Hours<span class="text-danger">*</span></label
-                  >
+                  <label class="form-label">Hours<span class="text-danger">*</span></label>
                   <input type="text" class="form-control" value="13" />
                 </div>
               </div>
@@ -257,15 +189,8 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/attendance/timesheets" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/attendance/timesheets" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

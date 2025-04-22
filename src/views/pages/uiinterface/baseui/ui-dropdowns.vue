@@ -17,12 +17,8 @@
             </div>
             <div class="card-body d-flex flex-wrap gap-2">
               <div class="dropdown">
-                <button
-                  class="btn btn-primary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Dropdown Button
                 </button>
                 <ul class="dropdown-menu">
@@ -32,13 +28,8 @@
                 </ul>
               </div>
               <div class="dropdown">
-                <a
-                  class="btn btn-secondary dropdown-toggle"
-                  href="javascript:void(0);"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <a class="btn btn-secondary dropdown-toggle" href="javascript:void(0);" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown Link
                 </a>
                 <ul class="dropdown-menu">
@@ -61,12 +52,8 @@
             <div class="card-body">
               <div class="btn-list d-flex flex-wrap gap-2">
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-primary dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -74,32 +61,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-secondary dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -107,32 +84,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-success dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -140,32 +107,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-info dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -173,32 +130,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-warning dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -206,32 +153,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-danger dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -239,22 +176,16 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -273,12 +204,8 @@
             <div class="card-body">
               <div class="btn-list d-flex flex-wrap gap-2">
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-primary dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-primary dropdown-toggle rounded-pill" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -286,32 +213,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-secondary dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-secondary dropdown-toggle rounded-pill" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -319,32 +236,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-success dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-success dropdown-toggle rounded-pill" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -352,32 +259,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-info dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-info dropdown-toggle rounded-pill" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -385,32 +282,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-warning dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-warning dropdown-toggle rounded-pill" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -418,32 +305,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-danger dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-danger dropdown-toggle rounded-pill" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -451,22 +328,16 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -485,12 +356,8 @@
             <div class="card-body">
               <div class="btn-list d-flex flex-wrap gap-2">
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -498,32 +365,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -531,32 +388,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-success dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -564,32 +411,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-info dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -597,32 +434,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-warning dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -630,32 +457,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-danger dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -663,22 +480,16 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -697,12 +508,8 @@
             <div class="card-body">
               <div class="btn-list d-flex flex-wrap gap-2">
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-primary dropdown-toggle rounded-pill"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -710,32 +517,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-secondary dropdown-toggle rounded-pill"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -743,32 +540,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-success dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-success dropdown-toggle rounded-pill"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -776,32 +563,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-info dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-info dropdown-toggle rounded-pill"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -809,32 +586,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-warning dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-warning dropdown-toggle rounded-pill"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -842,32 +609,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-danger dropdown-toggle rounded-pill"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-outline-danger dropdown-toggle rounded-pill"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     Action
                   </button>
                   <ul class="dropdown-menu">
@@ -875,22 +632,16 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -909,12 +660,8 @@
             <div class="card-body">
               <div class="btn-group my-1">
                 <button type="button" class="btn btn-primary">Action</button>
-                <button
-                  type="button"
-                  class="btn btn-primary dropdown-toggle dropdown-toggle-split me-2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split me-2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -923,9 +670,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -937,12 +682,8 @@
               </div>
               <div class="btn-group my-1">
                 <button type="button" class="btn btn-secondary">Action</button>
-                <button
-                  type="button"
-                  class="btn btn-secondary dropdown-toggle dropdown-toggle-split me-2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split me-2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -951,9 +692,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -965,12 +704,8 @@
               </div>
               <div class="btn-group my-1">
                 <button type="button" class="btn btn-info">Action</button>
-                <button
-                  type="button"
-                  class="btn btn-info dropdown-toggle dropdown-toggle-split me-2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split me-2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -979,9 +714,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -993,12 +726,8 @@
               </div>
               <div class="btn-group my-1">
                 <button type="button" class="btn btn-success">Action</button>
-                <button
-                  type="button"
-                  class="btn btn-success dropdown-toggle dropdown-toggle-split me-2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split me-2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -1007,9 +736,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1021,12 +748,8 @@
               </div>
               <div class="btn-group my-1">
                 <button type="button" class="btn btn-warning">Action</button>
-                <button
-                  type="button"
-                  class="btn btn-warning dropdown-toggle dropdown-toggle-split me-2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split me-2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -1035,9 +758,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1049,12 +770,8 @@
               </div>
               <div class="btn-group my-1">
                 <button type="button" class="btn btn-danger">Action</button>
-                <button
-                  type="button"
-                  class="btn btn-danger dropdown-toggle dropdown-toggle-split me-2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split me-2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -1063,9 +780,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1085,12 +800,8 @@
             </div>
             <div class="card-body">
               <div class="btn-group my-1 me-2">
-                <button
-                  class="btn btn-primary btn-lg dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Large button
                 </button>
                 <ul class="dropdown-menu">
@@ -1099,9 +810,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1115,12 +824,8 @@
                 <button class="btn btn-success btn-lg" type="button">
                   Large split button
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-lg btn-success dropdown-toggle dropdown-toggle-split"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-lg btn-success dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -1129,9 +834,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1143,12 +846,8 @@
               </div>
               <!-- samll button groups (default and split) -->
               <div class="btn-group my-1 me-2">
-                <button
-                  class="btn btn-primary btn-sm dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Small button
                 </button>
                 <ul class="dropdown-menu">
@@ -1157,9 +856,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1173,12 +870,8 @@
                 <button class="btn btn-danger btn-sm" type="button">
                   Small split button
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-danger dropdown-toggle dropdown-toggle-split"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-sm btn-danger dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -1187,9 +880,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1212,12 +903,8 @@
             </div>
             <div class="card-body">
               <div class="btn-group dropup my-1">
-                <button
-                  type="button"
-                  class="btn btn-primary dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Dropup
                 </button>
                 <ul class="dropdown-menu">
@@ -1226,9 +913,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1240,12 +925,8 @@
               </div>
               <div class="btn-group dropup my-1 ms-1">
                 <button type="button" class="btn btn-info">Split dropup</button>
-                <button
-                  type="button"
-                  class="btn btn-info dropdown-toggle dropdown-toggle-split"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -1254,9 +935,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1279,12 +958,8 @@
             </div>
             <div class="card-body">
               <div class="btn-group dropend my-1">
-                <button
-                  type="button"
-                  class="btn btn-primary dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Dropright
                 </button>
                 <ul class="dropdown-menu">
@@ -1293,9 +968,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1307,12 +980,8 @@
               </div>
               <div class="btn-group dropend my-1 ms-1">
                 <button type="button" class="btn btn-info">Split dropend</button>
-                <button
-                  type="button"
-                  class="btn btn-info dropdown-toggle dropdown-toggle-split"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropright</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -1321,9 +990,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1346,12 +1013,8 @@
             </div>
             <div class="card-body">
               <div class="btn-group dropstart my-1">
-                <button
-                  type="button"
-                  class="btn btn-primary dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Dropstart
                 </button>
                 <ul class="dropdown-menu">
@@ -1360,9 +1023,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -1374,12 +1035,8 @@
               </div>
               <div class="btn-group">
                 <div class="btn-group dropstart my-1 ms-1" role="group">
-                  <button
-                    type="button"
-                    class="btn btn-info dropdown-toggle dropdown-toggle-split"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="visually-hidden">Toggle Dropstart</span>
                   </button>
                   <ul class="dropdown-menu">
@@ -1387,22 +1044,16 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -1420,12 +1071,8 @@
               <div class="card-title">Active</div>
             </div>
             <div class="card-body">
-              <button
-                type="button"
-                class="btn btn-primary dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Dropstart
               </button>
               <ul class="dropdown-menu">
@@ -1433,12 +1080,7 @@
                   <a class="dropdown-item" href="javascript:void(0);">Regular link</a>
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item active"
-                    href="javascript:void(0);"
-                    aria-current="true"
-                    >Active link</a
-                  >
+                  <a class="dropdown-item active" href="javascript:void(0);" aria-current="true">Active link</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="javascript:void(0);">Another link</a>
@@ -1456,12 +1098,8 @@
               <div class="card-title">Disabled</div>
             </div>
             <div class="card-body">
-              <button
-                type="button"
-                class="btn btn-primary dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Dropstart
               </button>
               <ul class="dropdown-menu">
@@ -1469,12 +1107,7 @@
                   <a class="dropdown-item" href="javascript:void(0);">Regular link</a>
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item disabled"
-                    href="javascript:void(0);"
-                    aria-current="true"
-                    >Active link</a
-                  >
+                  <a class="dropdown-item disabled" href="javascript:void(0);" aria-current="true">Active link</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="javascript:void(0);">Another link</a>
@@ -1492,46 +1125,25 @@
               <div class="card-title">Dropdowns with Forms</div>
             </div>
             <div class="card-body">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenu2"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
               </button>
               <div class="dropdown-menu">
                 <form class="px-4 py-3">
                   <div class="mb-3">
-                    <label for="exampleDropdownFormEmail1" class="form-label"
-                      >Email address</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleDropdownFormEmail1"
-                      placeholder="email@example.com"
-                    />
+                    <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                      placeholder="email@example.com" />
                   </div>
                   <div class="mb-3">
-                    <label for="exampleDropdownFormPassword1" class="form-label"
-                      >Password</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="exampleDropdownFormPassword1"
-                      placeholder="Password"
-                    />
+                    <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                      placeholder="Password" />
                   </div>
                   <div class="mb-3">
                     <div class="form-check">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="dropdownCheck"
-                      />
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck" />
                       <label class="form-check-label" for="dropdownCheck">
                         Remember me
                       </label>
@@ -1540,9 +1152,7 @@
                   <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Sign in</button>
                 </form>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="javascript:void(0);"
-                  >New around here? Sign up</a
-                >
+                <a class="dropdown-item" href="javascript:void(0);">New around here? Sign up</a>
                 <a class="dropdown-item" href="javascript:void(0);">Forgot password?</a>
               </div>
             </div>
@@ -1559,14 +1169,8 @@
             <div class="card-body">
               <div class="btn-list">
                 <div class="btn-group">
-                  <button
-                    class="btn btn-primary dropdown-toggle"
-                    type="button"
-                    id="defaultDropdown"
-                    data-bs-toggle="dropdown"
-                    data-bs-auto-close="true"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="defaultDropdown"
+                    data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
                     Default dropdown
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
@@ -1582,20 +1186,11 @@
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuClickableOutside"
-                    data-bs-toggle="dropdown"
-                    data-bs-auto-close="inside"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuClickableOutside"
+                    data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
                     Clickable outside
                   </button>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuClickableOutside"
-                  >
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
                     <li>
                       <a class="dropdown-item" href="javascript:void(0);">Menu item</a>
                     </li>
@@ -1608,14 +1203,8 @@
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    class="btn btn-info dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuClickableInside"
-                    data-bs-toggle="dropdown"
-                    data-bs-auto-close="outside"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuClickableInside"
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                     Clickable inside
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
@@ -1631,14 +1220,8 @@
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    class="btn btn-warning dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuClickableInsise"
-                    data-bs-toggle="dropdown"
-                    data-bs-auto-close="false"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuClickableInsise"
+                    data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                     Manual close
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInsise">
@@ -1670,13 +1253,8 @@
                 Use <code>.dropdown-center</code> on the parent element.
               </p>
               <div class="dropdown-center">
-                <button
-                  class="btn btn-primary dropdown-toggle"
-                  type="button"
-                  id="dropdownCenterBtn"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownCenterBtn"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   Centered dropdown
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
@@ -1706,13 +1284,8 @@
                 on the parent element.
               </p>
               <div class="dropup-center dropup">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  id="dropupCenterBtn"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropupCenterBtn"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   Centered dropup
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropupCenterBtn">
@@ -1742,13 +1315,8 @@
                 dropdown items.
               </p>
               <div class="dropdown">
-                <button
-                  class="btn btn-info dropdown-toggle"
-                  type="button"
-                  id="dropdownMenu1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Dropdown
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -1778,14 +1346,8 @@
               </p>
               <div class="d-flex align-items-center">
                 <div class="dropdown me-1">
-                  <button
-                    type="button"
-                    class="btn btn-primary dropdown-toggle"
-                    id="dropdownMenuOffset"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    data-bs-offset="10,20"
-                  >
+                  <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset"
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
                     Offset
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
@@ -1793,27 +1355,18 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
                   <button type="button" class="btn btn-info">Reference</button>
-                  <button
-                    type="button"
-                    class="btn btn-info dropdown-toggle dropdown-toggle-split"
-                    id="dropdownMenuReference"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    data-bs-reference="parent"
-                  >
+                  <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+                    id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false"
+                    data-bs-reference="parent">
                     <span class="visually-hidden">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
@@ -1821,22 +1374,16 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -1855,13 +1402,8 @@
             <div class="card-body">
               <div class="btn-list">
                 <div class="btn-group my-1">
-                  <button
-                    class="btn btn-primary dropdown-toggle mb-0"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-primary dropdown-toggle mb-0" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -1877,12 +1419,8 @@
                   </ul>
                 </div>
                 <div class="btn-group my-1">
-                  <button
-                    type="button"
-                    class="btn btn-secondary dropdown-toggle mb-0"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-secondary dropdown-toggle mb-0" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Right-aligned menu
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -1898,13 +1436,8 @@
                   </ul>
                 </div>
                 <div class="btn-group my-1">
-                  <button
-                    type="button"
-                    class="btn btn-info dropdown-toggle mb-0"
-                    data-bs-toggle="dropdown"
-                    data-bs-display="static"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-info dropdown-toggle mb-0" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
                     Left-aligned, right-aligned lg
                   </button>
                   <ul class="dropdown-menu dropdown-menu-lg-end">
@@ -1920,13 +1453,8 @@
                   </ul>
                 </div>
                 <div class="btn-group my-1">
-                  <button
-                    type="button"
-                    class="btn btn-warning dropdown-toggle mb-0"
-                    data-bs-toggle="dropdown"
-                    data-bs-display="static"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-warning dropdown-toggle mb-0" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
                     Right-aligned, left-aligned lg
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
@@ -1942,12 +1470,8 @@
                   </ul>
                 </div>
                 <div class="btn-group dropstart my-1">
-                  <button
-                    type="button"
-                    class="btn btn-success dropdown-toggle mb-0"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-success dropdown-toggle mb-0" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Dropstart
                   </button>
                   <ul class="dropdown-menu">
@@ -1963,12 +1487,8 @@
                   </ul>
                 </div>
                 <div class="btn-group dropend my-1">
-                  <button
-                    type="button"
-                    class="btn btn-danger dropdown-toggle mb-0"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-danger dropdown-toggle mb-0" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Dropend
                   </button>
                   <ul class="dropdown-menu">
@@ -1984,12 +1504,8 @@
                   </ul>
                 </div>
                 <div class="btn-group dropup my-1">
-                  <button
-                    type="button"
-                    class="btn btn-teal dropdown-toggle mb-0"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-teal dropdown-toggle mb-0" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Dropup
                   </button>
                   <ul class="dropdown-menu">
@@ -2018,13 +1534,8 @@
             </div>
             <div class="card-body">
               <div class="dropdown">
-                <button
-                  class="btn btn-dark dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton3"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton3"
+                  data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown button
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark">
@@ -2033,9 +1544,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                 </ul>
               </div>
@@ -2052,12 +1561,8 @@
             </div>
             <div class="card-body">
               <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn btn-primary dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Right-aligned menu example
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -2085,13 +1590,8 @@
             </div>
             <div class="card-body">
               <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn btn-secondary dropdown-toggle text-wrap"
-                  data-bs-toggle="dropdown"
-                  data-bs-display="static"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-secondary dropdown-toggle text-wrap" data-bs-toggle="dropdown"
+                  data-bs-display="static" aria-expanded="false">
                   Left-aligned but right aligned when large screen
                 </button>
                 <ul class="dropdown-menu dropdown-menu-lg-end">
@@ -2116,13 +1616,8 @@
             </div>
             <div class="card-body">
               <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn btn-info dropdown-toggle text-wrap"
-                  data-bs-toggle="dropdown"
-                  data-bs-display="static"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn btn-info dropdown-toggle text-wrap" data-bs-toggle="dropdown"
+                  data-bs-display="static" aria-expanded="false">
                   Left-aligned but right aligned when large screen
                 </button>
                 <ul class="dropdown-menu dropdown-menu-lg-start">
@@ -2153,12 +1648,8 @@
             <div class="card-body">
               <div class="btn-list">
                 <div class="btn-group">
-                  <button
-                    class="btn btn-primary dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Primary
                   </button>
                   <ul class="dropdown-menu dropdown-menu-primary">
@@ -2166,24 +1657,16 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Secondary
                   </button>
                   <ul class="dropdown-menu dropdown-menu-secondary">
@@ -2191,84 +1674,56 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    class="btn btn-warning dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Warning
                   </button>
                   <ul class="dropdown-menu dropmenu-item-warning">
                     <li>
-                      <a class="dropdown-item active" href="javascript:void(0);"
-                        >Active</a
-                      >
+                      <a class="dropdown-item active" href="javascript:void(0);">Active</a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    class="btn btn-info dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Info
                   </button>
                   <ul class="dropdown-menu dropmenu-item-info">
                     <li>
-                      <a class="dropdown-item active" href="javascript:void(0);"
-                        >Active</a
-                      >
+                      <a class="dropdown-item active" href="javascript:void(0);">Active</a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    class="btn btn-soft-success dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-soft-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Success
                   </button>
                   <ul class="dropdown-menu dropmenu-light-success">
@@ -2276,29 +1731,19 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item active" href="javascript:void(0);"
-                        >Active</a
-                      >
+                      <a class="dropdown-item active" href="javascript:void(0);">Active</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    class="btn btn-soft-danger dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button class="btn btn-soft-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Danger
                   </button>
                   <ul class="dropdown-menu dropmenu-light-danger">
@@ -2306,19 +1751,13 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item active" href="javascript:void(0);"
-                        >Active</a
-                      >
+                      <a class="dropdown-item active" href="javascript:void(0);">Active</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                   </ul>
                 </div>
@@ -2337,12 +1776,8 @@
             <div class="card-body">
               <div class="btn-list">
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-primary-ghost dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-primary-ghost dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Primary
                   </button>
                   <ul class="dropdown-menu">
@@ -2350,32 +1785,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-secondary-ghost dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-secondary-ghost dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Secondary
                   </button>
                   <ul class="dropdown-menu">
@@ -2383,32 +1808,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-success-ghost dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-success-ghost dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Success
                   </button>
                   <ul class="dropdown-menu">
@@ -2416,32 +1831,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-info-ghost dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-info-ghost dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Info
                   </button>
                   <ul class="dropdown-menu">
@@ -2449,32 +1854,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-warning-ghost dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-warning-ghost dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Warning
                   </button>
                   <ul class="dropdown-menu">
@@ -2482,32 +1877,22 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-danger-ghost dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" class="btn btn-danger-ghost dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Danger
                   </button>
                   <ul class="dropdown-menu">
@@ -2515,22 +1900,16 @@
                       <a class="dropdown-item" href="javascript:void(0);">Action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Another action</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Something else here</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >Separated link</a
-                      >
+                      <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                     </li>
                   </ul>
                 </div>
@@ -2559,9 +1938,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                 </ul>
               </div>
@@ -2591,9 +1968,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                 </ul>
               </div>
@@ -2619,9 +1994,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Another action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                      >Something else here</a
-                    >
+                    <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />

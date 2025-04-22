@@ -8,7 +8,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col">
-            <h3 class="page-title">Basic Inputs</h3>
+            <h3 class="page-title">{{ $t('BasicInputs') }}</h3>
           </div>
         </div>
       </div>
@@ -19,12 +19,12 @@
           <input-size />
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Input Sizes</h5>
+              <h5 class="card-title">{{ $t('InputSizes') }}</h5>
             </div>
             <div class="card-body">
               <b-form action="#">
                 <div class="form-group row">
-                  <label class="col-form-label col-md-2">Large Input</label>
+                  <label class="col-form-label col-md-2">{{ $t('LargeInput') }}</label>
                   <div class="col-md-10">
                     <b-form-input
                       type="text"
@@ -34,7 +34,7 @@
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="col-form-label col-md-2">Default Input</label>
+                  <label class="col-form-label col-md-2">{{ $t('DefaultInput') }}</label>
                   <div class="col-md-10">
                     <b-form-input
                       type="text"
@@ -44,7 +44,7 @@
                   </div>
                 </div>
                 <div class="form-group mb-0 row">
-                  <label class="col-form-label col-md-2">Small Input</label>
+                  <label class="col-form-label col-md-2">{{ $t('SmallInput') }}</label>
                   <div class="col-md-10">
                     <b-form-input
                       type="text"

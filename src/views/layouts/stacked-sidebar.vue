@@ -48,13 +48,13 @@
       </div>
       <div class="sidebar-right d-flex justify-content-between flex-column">
         <div class="sidebar-scroll">
-          <h6 class="mb-3">Welcome to AronHR</h6>
+          <h6 class="mb-3">{{ $t('welcometoAronHR') }}</h6>
           <div class="sidebar-profile text-center rounded bg-light p-3 mb-4">
             <div class="avatar avatar-lg online mb-3">
               <img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" class="img-fluid rounded-circle" />
             </div>
             <h6 class="fs-12 fw-normal mb-1">Adrian Herman</h6>
-            <p class="fs-10">System Admin</p>
+            <p class="fs-10">{{ $t('SystemAdmin') }}</p>
           </div>
           <div class="stack-menu">
             <div class="nav flex-column align-items-center nav-pills" role="tablist" aria-orientation="vertical">
@@ -63,35 +63,35 @@
                   <a href="javascript:void(0);" role="tab" class="nav-link active" title="Dashboard"
                     data-bs-toggle="tab" data-bs-target="#menu-dashboard" aria-selected="true">
                     <span><i class="ti ti-smart-home"></i></span>
-                    <p>Dashboard</p>
+                    <p>{{ $t('Dashboard') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Apps" data-bs-toggle="tab"
                     data-bs-target="#menu-application" aria-selected="false">
                     <span><i class="ti ti-layout-grid-add"></i></span>
-                    <p>Applications</p>
+                    <p>{{ $t('Applications') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Apps" data-bs-toggle="tab"
                     data-bs-target="#menu-superadmin" aria-selected="false">
                     <span><i class="ti ti-user-star"></i></span>
-                    <p>Super Admin</p>
+                    <p>{{ $t('superAdmin') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Layout" data-bs-toggle="tab"
                     data-bs-target="#menu-layout" aria-selected="false">
                     <span><i class="ti ti-layout-board-split"></i></span>
-                    <p>Layouts</p>
+                    <p>{{ $t('layouts') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Projects" data-bs-toggle="tab"
                     data-bs-target="#menu-project" aria-selected="false">
                     <span><i class="ti ti-folder"></i></span>
-                    <p>Projects</p>
+                    <p>{{ $t('projects') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
@@ -112,42 +112,42 @@
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Finance & Accounts"
                     data-bs-toggle="tab" data-bs-target="#menu-finance" aria-selected="false">
                     <span><i class="ti ti-shopping-cart-dollar"></i></span>
-                    <p>Finance & Accounts</p>
+                    <p>{{ $t('Finance&Accounts') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Administration" data-bs-toggle="tab"
                     data-bs-target="#menu-administration" aria-selected="false">
                     <span><i class="ti ti-cash"></i></span>
-                    <p>Administration</p>
+                    <p>{{ $t('administration') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Content" data-bs-toggle="tab"
                     data-bs-target="#menu-content" aria-selected="false">
                     <span><i class="ti ti-license"></i></span>
-                    <p>Contents</p>
+                    <p>{{ $t('contents') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Pages" data-bs-toggle="tab"
                     data-bs-target="#menu-pages" aria-selected="false">
                     <span><i class="ti ti-page-break"></i></span>
-                    <p>Pages</p>
+                    <p>{{ $t('pages') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="Authentication" data-bs-toggle="tab"
                     data-bs-target="#menu-authentication" aria-selected="false">
                     <span><i class="ti ti-lock-check"></i></span>
-                    <p>Authentication</p>
+                    <p>{{ $t('Authentication') }}</p>
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="javascript:void(0);" role="tab" class="nav-link" title="UI Elements" data-bs-toggle="tab"
                     data-bs-target="#menu-ui-elements" aria-selected="false">
                     <span><i class="ti ti-ux-circle"></i></span>
-                    <p>Basic UI</p>
+                    <p>{{ $t('BasicUI') }}</p>
                   </a>
                 </div>
               </div>
@@ -155,34 +155,35 @@
             <div class="tab-content">
               <div class="tab-pane fade show active" id="menu-dashboard">
                 <ul class="stack-submenu">
-                  <li><router-link to="/dashboard/" class="active">Admin Dashboard</router-link></li>
-                  <li><router-link to="/dashboard/employee-dashboard">Employee Dashboard</router-link></li>
-                  <li><router-link to="/dashboard/deals-dashboard">Deals Dashboard</router-link></li>
-                  <li><router-link to="/dashboard/leads-dashboard">Leads Dashboard</router-link></li>
+                  <li><router-link to="/dashboard/" class="active">{{ $t('AdminDashboard') }}</router-link></li>
+                  <li><router-link to="/dashboard/employee-dashboard">{{ $t('EmployeeDashboard') }}</router-link></li>
+                  <li><router-link to="/dashboard/deals-dashboard">{{ $t('DealsDashboard') }}</router-link></li>
+                  <li><router-link to="/dashboard/leads-dashboard">{{ $t('LeadsDashboard') }}</router-link></li>
                 </ul>
               </div>
               <div class="tab-pane fade" id="menu-superadmin">
                 <ul class="stack-submenu">
-                  <li class="menu-title"><span>SUPER ADMIN</span></li>
-                  <li><router-link to="/super-admin/dashboard">Dashboard</router-link></li>
-                  <li><router-link to="/super-admin/companies">Companies</router-link></li>
-                  <li><router-link to="/super-admin/subscription">Subscriptions</router-link></li>
-                  <li><router-link to="/super-admin/packages">Packages</router-link></li>
-                  <li><router-link to="/super-admin/domain">Domain</router-link></li>
-                  <li><router-link to="/super-admin/purchase-transaction">Purchase Transaction</router-link></li>
+                  <li class="menu-title"><span>{{ $t('SUPERADMIN') }}</span></li>
+                  <li><router-link to="/super-admin/dashboard">{{ $t('Dashboard') }}</router-link></li>
+                  <li><router-link to="/super-admin/companies">{{ $t('Companies') }}</router-link></li>
+                  <li><router-link to="/super-admin/subscription">{{ $t('Subscriptions') }}</router-link></li>
+                  <li><router-link to="/super-admin/packages">{{ $t('Packages') }}</router-link></li>
+                  <li><router-link to="/super-admin/domain">{{ $t('Domain') }}</router-link></li>
+                  <li><router-link to="/super-admin/purchase-transaction">{{ $t('PurchaseTransaction') }}</router-link>
+                  </li>
                 </ul>
               </div>
               <div class="tab-pane fade" id="menu-application">
                 <ul class="stack-submenu">
-                  <li><router-link to="/applications/chat">Chat</router-link></li>
+                  <li><router-link to="/applications/chat">{{ $t('Chat') }}</router-link></li>
                   <li class="submenu submenu-two">
-                    <a href="javascript:void(0);">Calls<span class="menu-arrow inside-submenu"></span></a>
+                    <a href="javascript:void(0);">{{ $t('Calls') }}<span class="menu-arrow inside-submenu"></span></a>
                     <ul>
-                      <li><router-link to="/calls/video-call">Voice Call</router-link></li>
-                      <li><router-link to="/calls/video-call">Video Call</router-link></li>
-                      <li><router-link to="/calls/outgoing-call">Outgoing Call</router-link></li>
-                      <li><router-link to="/calls/incoming-call">Incoming Call</router-link></li>
-                      <li><router-link to="/calls/call-history">Call History</router-link></li>
+                      <li><router-link to="/calls/video-call">{{ $t('VoiceCall') }}</router-link></li>
+                      <li><router-link to="/calls/video-call">{{ $t('VideoCall') }}</router-link></li>
+                      <li><router-link to="/calls/outgoing-call">{{ $t('OutgoingCall') }}</router-link></li>
+                      <li><router-link to="/calls/incoming-call">{{ $t('IncomingCall') }}</router-link></li>
+                      <li><router-link to="/calls/call-history">{{ $t('CallHistory') }}</router-link></li>
                     </ul>
                   </li>
                   <li><router-link to="/applications/events">Calendar</router-link></li>

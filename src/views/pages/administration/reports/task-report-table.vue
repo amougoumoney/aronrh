@@ -158,9 +158,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -175,12 +175,7 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Task_Name'">
         <div class="d-flex align-items-center file-name-icon">
@@ -190,32 +185,25 @@ export default {
         </div>
       </template>
       <template v-if="column.key === 'Priority'">
-        <span
-          class="badge"
-          :class="[
-            record.Priority === 'Low'
-              ? 'badge-success-transparent'
-              : record.Priority === 'Medium'
+        <span class="badge" :class="[
+          record.Priority === 'Low'
+            ? 'badge-success-transparent'
+            : record.Priority === 'Medium'
               ? 'badge-warning-transparent'
               : 'badge-danger-transparent',
-          ]"
-          ><i class="ti ti-point-filled me-1"></i>{{ record.Priority }}</span
-        >
+        ]"><i class="ti ti-point-filled me-1"></i>{{ record.Priority }}</span>
       </template>
       <template v-if="column.key === 'Status'">
-        <span
-          class="d-inline-flex align-items-center badge-xs"
-          :class="[
-            'badge',
-            record.Status === 'Completed'
-              ? 'badge-success'
-              : record.Status === 'Inprogress'
+        <span class="d-inline-flex align-items-center badge-xs" :class="[
+          'badge',
+          record.Status === 'Completed'
+            ? 'badge-success'
+            : record.Status === 'Inprogress'
               ? 'badge-purple'
               : record.Status === 'On Hold'
-              ? 'badge-warning'
-              : 'badge-skyblue',
-          ]"
-        >
+                ? 'badge-warning'
+                : 'badge-skyblue',
+        ]">
           <i class="ti ti-point-filled me-1"></i>{{ record.Status }}
         </span>
       </template>

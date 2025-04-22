@@ -8,7 +8,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col">
-            <h3 class="page-title">Basic Tables</h3>
+            <h3 class="page-title">{{ $t('BasicTables') }}</h3>
           </div>
         </div>
       </div>
@@ -18,16 +18,16 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header">
-              <h4 class="card-title">Basic Table</h4>
+              <h4 class="card-title">{{ $t('BasicTable') }}</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table mb-0">
                   <thead>
                     <tr>
-                      <th>Firstname</th>
-                      <th>Lastname</th>
-                      <th>Email</th>
+                      <th>{{ $t('FirstName') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('Email') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -55,16 +55,16 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Striped Rows</h5>
+              <h5 class="card-title">{{ $t('StripedRows') }}</h5>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-striped mb-0">
                   <thead>
                     <tr>
-                      <th>Firstname</th>
-                      <th>Lastname</th>
-                      <th>Email</th>
+                      <th>{{ $t('FirstName') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('Email') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -94,16 +94,16 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Bordered Table</h5>
+              <h5 class="card-title">{{ $t('BorderedTable') }}</h5>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered mb-0">
                   <thead>
                     <tr>
-                      <th>Firstname</th>
-                      <th>Lastname</th>
-                      <th>Email</th>
+                      <th>{{ $t('FirstName') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('Email') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -131,16 +131,16 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Borderless Table</h5>
+              <h5 class="card-title">{{ $t('BorderlessTable') }}</h5>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-borderless mb-0">
                   <thead>
                     <tr>
-                      <th>Firstname</th>
-                      <th>Lastname</th>
-                      <th>Email</th>
+                      <th>{{ $t('FirstName') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('Email') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -168,16 +168,16 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Hover Rows</h5>
+              <h5 class="card-title">{{ $t('HoverRows') }}</h5>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-hover mb-0">
                   <thead>
                     <tr>
-                      <th>Firstname</th>
-                      <th>Lastname</th>
-                      <th>Email</th>
+                      <th>{{ $t('FirstName') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('Email') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -207,61 +207,61 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Contextual Classes</h5>
+              <h5 class="card-title">{{ $t('ContextualClasses') }}</h5>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table mb-0">
                   <thead>
                     <tr>
-                      <th>Firstname</th>
-                      <th>Lastname</th>
-                      <th>Email</th>
+                      <th>{{ $t('FirstName') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('Email') }}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Default</td>
+                      <td>{{ $t('Default') }}</td>
                       <td>Defaultson</td>
                       <td>def@somemail.com</td>
                     </tr>
                     <tr class="table-primary">
-                      <td>Primary</td>
+                      <td>{{ $t('Primary')}}</td>
                       <td>Doe</td>
                       <td>john@example.com</td>
                     </tr>
                     <tr class="table-secondary">
-                      <td>Secondary</td>
+                      <td>{{ $t('Secondary') }}</td>
                       <td>Moe</td>
                       <td>mary@example.com</td>
                     </tr>
                     <tr class="table-success">
-                      <td>Success</td>
+                      <td>{{ $t('Success') }}</td>
                       <td>Dooley</td>
                       <td>july@example.com</td>
                     </tr>
                     <tr class="table-danger">
-                      <td>Danger</td>
+                      <td>{{ $t('Danger') }}</td>
                       <td>Refs</td>
                       <td>bo@example.com</td>
                     </tr>
                     <tr class="table-warning">
-                      <td>Warning</td>
+                      <td>{{ $t('Warning') }}</td>
                       <td>Activeson</td>
                       <td>act@example.com</td>
                     </tr>
                     <tr class="table-info">
-                      <td>Info</td>
+                      <td>{{ $t('Info') }}</td>
                       <td>Activeson</td>
                       <td>act@example.com</td>
                     </tr>
                     <tr class="table-light">
-                      <td>Light</td>
+                      <td>{{ $t('Light') }}</td>
                       <td>Activeson</td>
                       <td>act@example.com</td>
                     </tr>
                     <tr class="table-dark">
-                      <td>Dark</td>
+                      <td>{{ $t('Dark') }}</td>
                       <td>Activeson</td>
                       <td>act@example.com</td>
                     </tr>
@@ -274,7 +274,7 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Responsive Tables</h5>
+              <h5 class="card-title">{{ $t('ResponsiveTables') }}</h5>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -282,11 +282,11 @@
                   <thead>
                     <tr>
                       <th>#</th>
-                      <th>Firstname</th>
-                      <th>Lastname</th>
-                      <th>Age</th>
-                      <th>City</th>
-                      <th>Country</th>
+                      <th>{{ $t('FirstName') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('Age') }}</th>
+                      <th>{{ $t('City') }}</th>
+                      <th>{{ $t('Country') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -373,43 +373,43 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Table Without Borders</div>
+              <div class="card-title">{{ $t('TableWithoutBorders') }}</div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table text-nowrap table-borderless">
                   <thead>
                     <tr>
-                      <th scope="col">User Name</th>
-                      <th scope="col">Transaction Id</th>
-                      <th scope="col">Created</th>
-                      <th scope="col">Status</th>
+                      <th scope="col">{{ $t('UserName') }}</th>
+                      <th scope="col">{{ $t('TransactionId') }}</th>
+                      <th scope="col">{{ $t('Created') }}</th>
+                      <th scope="col">{{ $t('Status') }}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row">Harshrath</th>
                       <td>#5182-3467</td>
-                      <td>24 May 2022</td>
-                      <td><span class="badge bg-primary">Fixed</span></td>
+                      <td>24 {{ $t('May') }} 2022</td>
+                      <td><span class="badge bg-primary">{{ $t('Fixed') }}</span></td>
                     </tr>
                     <tr>
                       <th scope="row">Zozo Hadid</th>
                       <td>#5182-3412</td>
-                      <td>02 July 2022</td>
-                      <td><span class="badge bg-warning">In Progress</span></td>
+                      <td>02 {{ $t('July') }} 2022</td>
+                      <td><span class="badge bg-warning">{{ $t('InProgress') }}</span></td>
                     </tr>
                     <tr>
                       <th scope="row">Martiana</th>
                       <td>#5182-3423</td>
-                      <td>15 April 2022</td>
-                      <td><span class="badge bg-success">Completed</span></td>
+                      <td>15 {{ $t('April') }} 2022</td>
+                      <td><span class="badge bg-success">{{ $t('Completed') }}</span></td>
                     </tr>
                     <tr>
                       <th scope="row">Alex Carey</th>
                       <td>#5182-3456</td>
-                      <td>17 March 2022</td>
-                      <td><span class="badge bg-danger">Pending</span></td>
+                      <td>17 {{ $t('March') }} 2022</td>
+                      <td><span class="badge bg-danger">{{ $t('Pending') }}</span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -420,17 +420,17 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Striped rows</div>
+              <div class="card-title">{{ $t('Stripedrows') }}</div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table text-nowrap table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">Date</th>
-                      <th scope="col">Customer</th>
-                      <th scope="col">Action</th>
+                      <th scope="col">{{ $t('id') }}</th>
+                      <th scope="col">{{ $t('Date') }}</th>
+                      <th scope="col">{{ $t('Customer') }}</th>
+                      <th scope="col">{{ $t('Action') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -439,11 +439,8 @@
                       <td>27-010-2022</td>
                       <td>Moracco</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-success btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-download align-middle me-2 d-inline-block"></i
-                          >Download
+                        <button class="btn btn-sm btn-success btn-wave waves-effect waves-light">
+                          <i class="feather-download align-middle me-2 d-inline-block"></i>{{ $t('Download') }}
                         </button>
                       </td>
                     </tr>
@@ -452,11 +449,8 @@
                       <td>28-10-2022</td>
                       <td>Thornton</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-success btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-download align-middle me-2 d-inline-block"></i
-                          >Download
+                        <button class="btn btn-sm btn-success btn-wave waves-effect waves-light">
+                          <i class="feather-download align-middle me-2 d-inline-block"></i>{{ $t('Download') }}
                         </button>
                       </td>
                     </tr>
@@ -465,11 +459,8 @@
                       <td>22-10-2022</td>
                       <td>Larry Bird</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-success btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-download align-middle me-2 d-inline-block"></i
-                          >Download
+                        <button class="btn btn-sm btn-success btn-wave waves-effect waves-light">
+                          <i class="feather-download align-middle me-2 d-inline-block"></i>{{ $t('Download') }}
                         </button>
                       </td>
                     </tr>
@@ -478,11 +469,8 @@
                       <td>29-09-2022</td>
                       <td>Erica Sean</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-success btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-download align-middle me-2 d-inline-block"></i
-                          >Download
+                        <button class="btn btn-sm btn-success btn-wave waves-effect waves-light">
+                          <i class="feather-download align-middle me-2 d-inline-block"></i>{{ $t('Download') }}
                         </button>
                       </td>
                     </tr>
@@ -496,17 +484,17 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Striped columns</div>
+              <div class="card-title">{{ $t('Stripedcolumns') }}</div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table text-nowrap table-striped-columns">
                   <thead>
                     <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">Date</th>
-                      <th scope="col">Customer</th>
-                      <th scope="col">Action</th>
+                      <th scope="col">{{ $t('id') }}</th>
+                      <th scope="col">{{ $t('Date') }}</th>
+                      <th scope="col">{{ $t('Customer') }}</th>
+                      <th scope="col">{{ $t('Action') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -515,11 +503,8 @@
                       <td>27-010-2022</td>
                       <td>Moracco</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-danger btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-trash align-middle me-2 d-inline-block"></i
-                          >Delete
+                        <button class="btn btn-sm btn-danger btn-wave waves-effect waves-light">
+                          <i class="feather-trash align-middle me-2 d-inline-block"></i>{{ $t('Delete') }}
                         </button>
                       </td>
                     </tr>
@@ -528,11 +513,8 @@
                       <td>28-10-2022</td>
                       <td>Thornton</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-danger btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-trash align-middle me-2 d-inline-block"></i
-                          >Delete
+                        <button class="btn btn-sm btn-danger btn-wave waves-effect waves-light">
+                          <i class="feather-trash align-middle me-2 d-inline-block"></i>{{ $t('Delete') }}
                         </button>
                       </td>
                     </tr>
@@ -541,11 +523,8 @@
                       <td>22-10-2022</td>
                       <td>Larry Bird</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-danger btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-trash align-middle me-2 d-inline-block"></i
-                          >Delete
+                        <button class="btn btn-sm btn-danger btn-wave waves-effect waves-light">
+                          <i class="feather-trash align-middle me-2 d-inline-block"></i>{{ $t('Delete') }}
                         </button>
                       </td>
                     </tr>
@@ -554,11 +533,8 @@
                       <td>29-09-2022</td>
                       <td>Erica Sean</td>
                       <td>
-                        <button
-                          class="btn btn-sm btn-danger btn-wave waves-effect waves-light"
-                        >
-                          <i class="feather-trash align-middle me-2 d-inline-block"></i
-                          >Delete
+                        <button class="btn btn-sm btn-danger btn-wave waves-effect waves-light">
+                          <i class="feather-trash align-middle me-2 d-inline-block"></i>{{ $t('Delete') }}
                         </button>
                       </td>
                     </tr>
@@ -571,173 +547,117 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Small Tables</div>
+              <div class="card-title">{{ $t('SmallTables') }}</div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table text-nowrap table-sm">
                   <thead>
                     <tr>
-                      <th scope="col">Invoice</th>
-                      <th scope="col">Created Date</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Action</th>
+                      <th scope="col">{{ $t('Invoice') }}</th>
+                      <th scope="col">{{ $t('CreatedDate') }}</th>
+                      <th scope="col">{{ $t('Status') }}</th>
+                      <th scope="col">{{ $t('Action') }}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="checkebox-sm"
-                            checked=""
-                          />
+                          <input class="form-check-input" type="checkbox" value="" id="checkebox-sm" checked="" />
                           <label class="form-check-label" for="checkebox-sm">
                             Zelensky
                           </label>
                         </div>
                       </th>
-                      <td>25-Apr-2021</td>
-                      <td><span class="badge bg-soft-success">Paid</span></td>
+                      <td>25-{{$t('Apr')}}-2021</td>
+                      <td><span class="badge bg-soft-success">{{ $t('Paid') }}</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="checkebox-sm1"
-                          />
+                          <input class="form-check-input" type="checkbox" value="" id="checkebox-sm1" />
                           <label class="form-check-label" for="checkebox-sm1">
                             Kim Jong
                           </label>
                         </div>
                       </th>
-                      <td>29-April-2022</td>
-                      <td><span class="badge bg-soft-danger">Pending</span></td>
+                      <td>29-{{$t('April')}}-2022</td>
+                      <td><span class="badge bg-soft-danger">{{ $t('Pending') }}</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="checkebox-sm2"
-                          />
+                          <input class="form-check-input" type="checkbox" value="" id="checkebox-sm2" />
                           <label class="form-check-label" for="checkebox-sm2">
                             Obana
                           </label>
                         </div>
                       </th>
                       <td>30-Nov-2022</td>
-                      <td><span class="badge bg-soft-success">Paid</span></td>
+                      <td><span class="badge bg-soft-success">{{ $t('Paid') }}</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="checkebox-sm3"
-                          />
+                          <input class="form-check-input" type="checkbox" value="" id="checkebox-sm3" />
                           <label class="form-check-label" for="checkebox-sm3">
                             Sean Paul
                           </label>
                         </div>
                       </th>
                       <td>01-Jan-2022</td>
-                      <td><span class="badge bg-soft-success">Paid</span></td>
+                      <td><span class="badge bg-soft-success">{{ $t('Paid') }}</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="checkebox-sm4"
-                          />
+                          <input class="form-check-input" type="checkbox" value="" id="checkebox-sm4" />
                           <label class="form-check-label" for="checkebox-sm4">
                             Karizma
                           </label>
                         </div>
                       </th>
-                      <td>14-Feb-2022</td>
-                      <td><span class="badge bg-soft-danger">Pending</span></td>
+                      <td>14-{{ $t('Feb') }}-2022</td>
+                      <td><span class="badge bg-soft-danger">{{ $t('Pending') }}</span></td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-light"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -750,17 +670,17 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Table Head Primary</div>
+              <div class="card-title">{{ $t('TableHeadPrimary') }}</div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table text-nowrap">
                   <thead class="table-primary">
                     <tr>
-                      <th scope="col">User Name</th>
-                      <th scope="col">Transaction Id</th>
-                      <th scope="col">Created</th>
-                      <th scope="col">Status</th>
+                      <th scope="col">{{ $t('UserName') }}</th>
+                      <th scope="col">{{ $t('TransactionId') }}</th>
+                      <th scope="col">{{ $t('Created') }}</th>
+                      <th scope="col">{{ $t('Status') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -770,93 +690,57 @@
                       <td>24 May 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-success rounded-pill"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-info rounded-pill"
-                            ><i class="feather-edit"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-danger rounded-pill"
-                            ><i class="feather-trash"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                              class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                              class="feather-trash"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">Zozo Hadid</th>
                       <td>#5182-3412</td>
-                      <td>02 July 2022</td>
+                      <td>02 {{ $t('July') }} 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-success rounded-pill"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-info rounded-pill"
-                            ><i class="feather-edit"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-danger rounded-pill"
-                            ><i class="feather-trash"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                              class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                              class="feather-trash"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">Martiana</th>
                       <td>#5182-3423</td>
-                      <td>15 April 2022</td>
+                      <td>15 {{ $t('April') }} 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-success rounded-pill"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-info rounded-pill"
-                            ><i class="feather-edit"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-danger rounded-pill"
-                            ><i class="feather-trash"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                              class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                              class="feather-trash"></i></a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">Alex Carey</th>
                       <td>#5182-3456</td>
-                      <td>17 March 2022</td>
+                      <td>17 {{ $t('March') }} 2022</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-success rounded-pill"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-info rounded-pill"
-                            ><i class="feather-edit"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-soft-danger rounded-pill"
-                            ><i class="feather-trash"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-success rounded-pill"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-info rounded-pill"><i
+                              class="feather-edit"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-soft-danger rounded-pill"><i
+                              class="feather-trash"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -870,17 +754,17 @@
         <div class="col-xl-12">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Hoverable Rows</div>
+              <div class="card-title">{{ $t('HoverableRows') }}</div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table text-nowrap table-hover">
                   <thead>
                     <tr>
-                      <th scope="col">Product Manager</th>
-                      <th scope="col">Category</th>
-                      <th scope="col">Team</th>
-                      <th scope="col">Status</th>
+                      <th scope="col">{{ $t('ProductManager') }}</th>
+                      <th scope="col">{{ $t('Category') }}</th>
+                      <th scope="col">{{ $t('Team') }}</th>
+                      <th scope="col">{{ $t('Status') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -895,9 +779,7 @@
                               <span>Joanna Smith</span>
                             </div>
                             <div class="lh-1">
-                              <span class="fs-11 text-muted"
-                                >joannasmith14@gmail.com</span
-                              >
+                              <span class="fs-11 text-muted">joannasmith14@gmail.com</span>
                             </div>
                           </div>
                         </div>
@@ -914,24 +796,16 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +5
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 52%"
-                            aria-valuenow="52"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 52%" aria-valuenow="52"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                     </tr>
@@ -951,7 +825,7 @@
                           </div>
                         </div>
                       </td>
-                      <td><span class="badge bg-soft-warning">Clothing</span></td>
+                      <td><span class="badge bg-soft-warning">{{ $t('Clothing') }}</span></td>
                       <td>
                         <div class="avatar-list-stacked">
                           <span class="avatar avatar-sm avatar-rounded">
@@ -960,24 +834,16 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +6
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 40%"
-                            aria-valuenow="40"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                     </tr>
@@ -997,7 +863,7 @@
                           </div>
                         </div>
                       </td>
-                      <td><span class="badge bg-soft-dark">Electronics</span></td>
+                      <td><span class="badge bg-soft-dark">{{ $t('Electronics') }}</span></td>
                       <td>
                         <div class="avatar-list-stacked">
                           <span class="avatar avatar-sm avatar-rounded">
@@ -1009,24 +875,16 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-15.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +2
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 17%"
-                            aria-valuenow="17"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 17%" aria-valuenow="17"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                     </tr>
@@ -1046,7 +904,7 @@
                           </div>
                         </div>
                       </td>
-                      <td><span class="badge bg-soft-danger">Sports</span></td>
+                      <td><span class="badge bg-soft-danger">{{ $t('Sports') }}</span></td>
                       <td>
                         <div class="avatar-list-stacked">
                           <span class="avatar avatar-sm avatar-rounded">
@@ -1055,24 +913,16 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +5
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 72%"
-                            aria-valuenow="72"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                     </tr>
@@ -1085,17 +935,17 @@
         <div class="col-xl-6">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Hoverable rows With striped rows</div>
+              <div class="card-title">{{ $t('HoverablerowsWithstripedrows') }}</div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table text-nowrap table-striped table-hover">
                   <thead>
                     <tr>
-                      <th scope="col">Invoice</th>
-                      <th scope="col">Customer</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Date</th>
+                      <th scope="col">{{ $t('Invoice') }}</th>
+                      <th scope="col">{{ $t('Customer') }}</th>
+                      <th scope="col">{{ $t('Status') }}</th>
+                      <th scope="col">{{ $t('Date') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -1117,9 +967,7 @@
                         </div>
                       </td>
                       <td>
-                        <span class="badge bg-soft-success"
-                          ><i class="ri-check-fill align-middle me-1"></i>Paid</span
-                        >
+                        <span class="badge bg-soft-success"><i class="ri-check-fill align-middle me-1"></i>{{ $t('Paid') }}</span>
                       </td>
                       <td>Jul 26,2022</td>
                     </tr>
@@ -1141,9 +989,7 @@
                         </div>
                       </td>
                       <td>
-                        <span class="badge bg-soft-success"
-                          ><i class="ri-check-fill align-middle me-1"></i>Paid</span
-                        >
+                        <span class="badge bg-soft-success"><i class="ri-check-fill align-middle me-1"></i>{{ $t('Paid') }}</span>
                       </td>
                       <td>Mar 14,2022</td>
                     </tr>
@@ -1165,9 +1011,8 @@
                         </div>
                       </td>
                       <td>
-                        <span class="badge bg-soft-danger"
-                          ><i class="ri-close-fill align-middle me-1"></i>Cancelled</span
-                        >
+                        <span class="badge bg-soft-danger"><i
+                            class="ri-close-fill align-middle me-1"></i>{{ $t('Cancelled') }}</span>
                       </td>
                       <td>Feb 1,2022</td>
                     </tr>
@@ -1189,11 +1034,10 @@
                         </div>
                       </td>
                       <td>
-                        <span class="badge bg-light text-dark"
-                          ><i class="ri-reply-line align-middle me-1"></i>Refunded</span
-                        >
+                        <span class="badge bg-light text-dark"><i
+                            class="ri-reply-line align-middle me-1"></i>{{ $t('Refunded') }}</span>
                       </td>
-                      <td>Apr 24,2022</td>
+                      <td>{{ $t('Apr') }} 24,2022</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1208,21 +1052,21 @@
         <div class="col-xl-12">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Always responsive</div>
+              <div class="card-title">{{ $t('Alwaysresponsive') }}</div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table text-nowrap">
                   <thead>
                     <tr>
-                      <th scope="col">Team Head</th>
-                      <th scope="col">Category</th>
-                      <th scope="col">Role</th>
-                      <th scope="col">Gmail</th>
-                      <th scope="col">Team</th>
-                      <th scope="col">Work Progress</th>
-                      <th scope="col">Revenue</th>
-                      <th scope="col">Action</th>
+                      <th scope="col">{{ $t('TeamHead') }}</th>
+                      <th scope="col">{{ $t('Category') }}</th>
+                      <th scope="col">{{ $t('Role') }}</th>
+                      <th scope="col">{{ $t('Gmail') }}</th>
+                      <th scope="col">{{ $t('Team') }}</th>
+                      <th scope="col">{{ $t('WorkProgress') }}</th>
+                      <th scope="col">{{ $t('Revenue') }}</th>
+                      <th scope="col">{{ $t('Action') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -1230,15 +1074,11 @@
                       <td>
                         <div class="d-flex align-items-center">
                           <span class="avatar avatar-xs me-2 online avatar-rounded">
-                            <img
-                              src="@/assets/img/profiles/avatar-03.jpg"
-                              alt="img"
-                            /> </span
-                          >Mayor Kelly
+                            <img src="@/assets/img/profiles/avatar-03.jpg" alt="img" /> </span>Mayor Kelly
                         </div>
                       </td>
-                      <td>Manufacturer</td>
-                      <td><span class="badge bg-soft-primary">Team Lead</span></td>
+                      <td>{{ $t('Manufacturer') }}</td>
+                      <td><span class="badge bg-soft-primary">{{ $t('TeamLead') }}</span></td>
                       <td>mayorkrlly@gmail.com</td>
                       <td>
                         <div class="avatar-list-stacked">
@@ -1251,39 +1091,25 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +4
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 52%"
-                            aria-valuenow="52"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 52%" aria-valuenow="52"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                       <td>$10,984.29</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-success"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-info"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -1291,15 +1117,11 @@
                       <td>
                         <div class="d-flex align-items-center">
                           <span class="avatar avatar-xs me-2 online avatar-rounded">
-                            <img
-                              src="@/assets/img/profiles/avatar-12.jpg"
-                              alt="img"
-                            /> </span
-                          >Andrew Garfield
+                            <img src="@/assets/img/profiles/avatar-12.jpg" alt="img" /> </span>Andrew Garfield
                         </div>
                       </td>
-                      <td>Managing Director</td>
-                      <td><span class="badge bg-soft-warning">Director</span></td>
+                      <td>{{ $t('ManagingDirector') }}</td>
+                      <td><span class="badge bg-soft-warning">{{ $t('Director') }}</span></td>
                       <td>andrewgarfield@gmail.com</td>
                       <td>
                         <div class="avatar-list-stacked">
@@ -1315,39 +1137,25 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-15.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +4
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 91%"
-                            aria-valuenow="91"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 91%" aria-valuenow="91"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                       <td>$1.4billion</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-success"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-info"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -1355,15 +1163,11 @@
                       <td>
                         <div class="d-flex align-items-center">
                           <span class="avatar avatar-xs me-2 online avatar-rounded">
-                            <img
-                              src="@/assets/img/profiles/avatar-14.jpg"
-                              alt="img"
-                            /> </span
-                          >Simon Cowel
+                            <img src="@/assets/img/profiles/avatar-14.jpg" alt="img" /> </span>Simon Cowel
                         </div>
                       </td>
-                      <td>Service Manager</td>
-                      <td><span class="badge bg-soft-success">Manager</span></td>
+                      <td>{{ $t('ServiceManager') }}</td>
+                      <td><span class="badge bg-soft-success">{{ $t('manager') }}</span></td>
                       <td>simoncowel234@gmail.com</td>
                       <td>
                         <div class="avatar-list-stacked">
@@ -1373,39 +1177,25 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-16.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +10
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 45%"
-                            aria-valuenow="45"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 45%" aria-valuenow="45"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                       <td>$7,123.21</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-success"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-info"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -1413,15 +1203,11 @@
                       <td>
                         <div class="d-flex align-items-center">
                           <span class="avatar avatar-xs me-2 online avatar-rounded">
-                            <img
-                              src="@/assets/img/profiles/avatar-05.jpg"
-                              alt="img"
-                            /> </span
-                          >Mirinda Hers
+                            <img src="@/assets/img/profiles/avatar-05.jpg" alt="img" /> </span>Mirinda Hers
                         </div>
                       </td>
-                      <td>Recruiter</td>
-                      <td><span class="badge bg-soft-danger">Employee</span></td>
+                      <td>{{ $t('Recruiter') }}</td>
+                      <td><span class="badge bg-soft-danger">{{ $t('Employee') }}</span></td>
                       <td>mirindahers@gmail.com</td>
                       <td>
                         <div class="avatar-list-stacked">
@@ -1434,39 +1220,25 @@
                           <span class="avatar avatar-sm avatar-rounded">
                             <img src="@/assets/img/profiles/avatar-14.jpg" alt="img" />
                           </span>
-                          <a
-                            class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
-                            href="javascript:void(0);"
-                          >
+                          <a class="avatar avatar-sm bg-primary text-fixed-white avatar-rounded"
+                            href="javascript:void(0);">
                             +6
                           </a>
                         </div>
                       </td>
                       <td>
                         <div class="progress progress-xs">
-                          <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: 21%"
-                            aria-valuenow="21"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 21%" aria-valuenow="21"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </td>
                       <td>$2,325.45</td>
                       <td>
                         <div class="hstack gap-2 fs-15">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-success"
-                            ><i class="feather-download"></i
-                          ></a>
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-icon btn-sm btn-info"
-                            ><i class="feather-edit"></i
-                          ></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i
+                              class="feather-download"></i></a>
+                          <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info"><i
+                              class="feather-edit"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -1484,7 +1256,7 @@
         <div class="col-xl-12">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Primary Table</div>
+              <div class="card-title">{{ $t('PrimaryTable') }}</div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -1492,9 +1264,9 @@
                   <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">{{ $t('First') }}</th>
+                      <th scope="col">{{ $t('Last') }}</th>
+                      <th scope="col">{{ $t('Handle') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -1530,7 +1302,7 @@
         <div class="col-xl-12">
           <div class="card">
             <div class="card-header justify-content-between">
-              <div class="card-title">Table head options</div>
+              <div class="card-title">{{ $t('Tableheadoptions') }}</div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -1538,10 +1310,10 @@
                   <thead class="thead-primary">
                     <tr>
                       <th>#</th>
-                      <th class="w-25">thead-primary</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
-                      <th>Role</th>
+                      <th class="w-25">{{ $t('thead-primary') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('UserName') }}</th>
+                      <th>{{ $t('Role') }}</th>
                     </tr>
                   </thead>
                 </table>
@@ -1551,10 +1323,10 @@
                   <thead class="thead-secondary">
                     <tr>
                       <th>#</th>
-                      <th class="w-25">thead-secondary</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
-                      <th>Role</th>
+                      <th class="w-25">{{ $t('thead-secondary') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('UserName') }}</th>
+                      <th>{{ $t('Role') }}</th>
                     </tr>
                   </thead>
                 </table>
@@ -1564,10 +1336,10 @@
                   <thead class="thead-success">
                     <tr>
                       <th>#</th>
-                      <th class="w-25">thead-success</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
-                      <th>Role</th>
+                      <th class="w-25">{{ $t('thead-success') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('UserName') }}</th>
+                      <th>{{ $t('Role') }}</th>
                     </tr>
                   </thead>
                 </table>
@@ -1577,10 +1349,10 @@
                   <thead class="thead-warning">
                     <tr>
                       <th>#</th>
-                      <th class="w-25">thead-warning</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
-                      <th>Role</th>
+                      <th class="w-25">{{ $t('thead-warning') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('UserName') }}</th>
+                      <th>{{ $t('Role') }}</th>
                     </tr>
                   </thead>
                 </table>
@@ -1590,10 +1362,10 @@
                   <thead class="thead-info">
                     <tr>
                       <th>#</th>
-                      <th class="w-25">thead-info</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
-                      <th>Role</th>
+                      <th class="w-25">{{ $t('thead-info') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('UserName') }}</th>
+                      <th>{{ $t('Role') }}</th>
                     </tr>
                   </thead>
                 </table>
@@ -1603,10 +1375,10 @@
                   <thead class="thead-danger">
                     <tr>
                       <th>#</th>
-                      <th class="w-25">thead-danger</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
-                      <th>Role</th>
+                      <th class="w-25">{{ $t('thead-danger') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('UserName') }}</th>
+                      <th>{{ $t('Role') }}</th>
                     </tr>
                   </thead>
                 </table>
@@ -1616,10 +1388,10 @@
                   <thead class="thead-dark">
                     <tr>
                       <th>#</th>
-                      <th class="w-25">thead-dark</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
-                      <th>Role</th>
+                      <th class="w-25">{{ $t('thead-dark') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('UserName') }}</th>
+                      <th>{{ $t('Role') }}</th>
                     </tr>
                   </thead>
                 </table>
@@ -1629,10 +1401,10 @@
                   <thead class="thead-light">
                     <tr>
                       <th>#</th>
-                      <th class="w-25">thead-light</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
-                      <th>Role</th>
+                      <th class="w-25">{{ $t('thead-light') }}</th>
+                      <th>{{ $t('LastName') }}</th>
+                      <th>{{ $t('UserName') }}</th>
+                      <th>{{ $t('Role') }}</th>
                     </tr>
                   </thead>
                 </table>

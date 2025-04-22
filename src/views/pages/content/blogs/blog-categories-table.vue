@@ -99,9 +99,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -116,36 +116,20 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Category'">
         <div class="text-dark">{{ record.Category }}</div>
       </template>
       <template v-if="column.key === 'Status'">
-        <span class="badge badge-success"
-          ><i class="ti ti-point-filled"></i>{{ record.Status }}</span
-        >
+        <span class="badge badge-success"><i class="ti ti-point-filled"></i>{{ record.Status }}</span>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#edit_blog-category"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_blog-category"><i
+              class="ti ti-edit"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

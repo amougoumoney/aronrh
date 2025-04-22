@@ -1,12 +1,7 @@
 <template>
   <div class="alert bg-secondary-transparent alert-dismissible fade show mb-4">
     Your Leave Request on“24th April 2024”has been Approved!!!
-    <button
-      type="button"
-      class="btn-close fs-14"
-      data-bs-dismiss="alert"
-      aria-label="Close"
-    >
+    <button type="button" class="btn-close fs-14" data-bs-dismiss="alert" aria-label="Close">
       <i class="ti ti-x"></i>
     </button>
   </div>
@@ -15,9 +10,7 @@
       <div class="card position-relative flex-fill">
         <div class="card-header bg-dark">
           <div class="d-flex align-items-center">
-            <span
-              class="avatar avatar-lg avatar-rounded border border-white border-2 flex-shrink-0 me-2"
-            >
+            <span class="avatar avatar-lg avatar-rounded border border-white border-2 flex-shrink-0 me-2">
               <img src="@/assets/img/users/user-01.jpg" alt="Img" />
             </span>
             <div>
@@ -29,9 +22,8 @@
               </div>
             </div>
           </div>
-          <a href="javascript:void(0);" class="btn btn-icon btn-sm text-white rounded-circle edit-top"
-            ><i class="ti ti-edit"></i
-          ></a>
+          <a href="javascript:void(0);" class="btn btn-icon btn-sm text-white rounded-circle edit-top"><i
+              class="ti ti-edit"></i></a>
         </div>
         <div class="card-body">
           <div class="mb-3">
@@ -56,16 +48,11 @@
     <div class="col-xl-5 d-flex">
       <div class="card flex-fill">
         <div class="card-header">
-          <div
-            class="d-flex align-items-center justify-content-between flex-wrap row-gap-2"
-          >
+          <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Leave Details</h5>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-white border btn-sm d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>2024
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
@@ -126,12 +113,7 @@
             <div class="col-md-6">
               <div class="mb-3 d-flex justify-content-md-end">
                 <div id="leaves_chart">
-                  <apexchart
-                    type="donut"
-                    height="200"
-                    :options="leaveChart.leave"
-                    :series="leaveChart.series"
-                  >
+                  <apexchart type="donut" height="200" :options="leaveChart.leave" :series="leaveChart.series">
                   </apexchart>
                 </div>
               </div>
@@ -139,9 +121,8 @@
             <div class="col-md-12">
               <div class="form-check mt-2">
                 <input class="form-check-input" type="checkbox" id="todo1" />
-                <label class="form-check-label" for="todo1"
-                  >Better than <span class="text-gray-9">85%</span> of Employees</label
-                >
+                <label class="form-check-label" for="todo1">Better than <span class="text-gray-9">85%</span> of
+                  Employees</label>
               </div>
             </div>
           </div>
@@ -151,16 +132,11 @@
     <div class="col-xl-3 d-flex">
       <div class="card flex-fill">
         <div class="card-header">
-          <div
-            class="d-flex align-items-center justify-content-between flex-wrap row-gap-2"
-          >
+          <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Leave Details</h5>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-white border btn-sm d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>2024
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
@@ -217,13 +193,9 @@
             </div>
             <div class="col-sm-12">
               <div>
-                <a
-                  href="javascript:void(0);"
-                  class="btn btn-dark w-100"
-                  data-bs-toggle="modal"
-                  data-bs-target="#add_leaves"
-                  >Apply New Leave</a
-                >
+                <a href="javascript:void(0);" class="btn btn-dark w-100" data-bs-toggle="modal"
+                  data-bs-target="#add_leaves">Apply New
+                  Leave</a>
               </div>
             </div>
           </div>

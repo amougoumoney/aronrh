@@ -216,9 +216,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -233,24 +233,12 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Name'">
         <div class="d-flex align-items-center file-name-icon">
-          <router-link
-            to="/crm/contact-details"
-            class="avatar avatar-md border avatar-rounded"
-          >
-            <img
-              :src="require(`@/assets/img/users/${record.Image}`)"
-              class="img-fluid"
-              alt="img"
-            />
+          <router-link to="/crm/contact-details" class="avatar avatar-md border avatar-rounded">
+            <img :src="require(`@/assets/img/users/${record.Image}`)" class="img-fluid" alt="img" />
           </router-link>
           <div class="ms-2">
             <h6 class="fw-medium">
@@ -261,51 +249,40 @@ export default {
         </div>
       </template>
       <template v-if="column.key === 'Rating'">
-        <span class="d-flex align-items-center"
-          ><i class="ti ti-star-filled text-warning me-2"></i>{{ record.Rating }}</span
-        >
+        <span class="d-flex align-items-center"><i class="ti ti-star-filled text-warning me-2"></i>{{ record.Rating
+        }}</span>
       </template>
       <template v-if="column.key === 'Contact'">
         <ul class="contact-icon d-flex align-items-center">
           <li>
-            <a
-              href="javascript:void(0);"
-              class="p-1 rounded-circle contact-icon-mail d-flex align-items-center justify-content-center"
-              ><span class="d-flex align-items-center justify-content-center"
-                ><i class="ti ti-mail text-gray-5"></i></span
-            ></a>
+            <a href="javascript:void(0);"
+              class="p-1 rounded-circle contact-icon-mail d-flex align-items-center justify-content-center"><span
+                class="d-flex align-items-center justify-content-center"><i
+                  class="ti ti-mail text-gray-5"></i></span></a>
           </li>
           <li>
-            <a
-              href="javascript:void(0);"
-              class="p-1 rounded-circle contact-icon-call d-flex align-items-center justify-content-center"
-              ><span class="d-flex align-items-center justify-content-center"
-                ><i class="ti ti-phone-call text-gray-5"></i></span
-            ></a>
+            <a href="javascript:void(0);"
+              class="p-1 rounded-circle contact-icon-call d-flex align-items-center justify-content-center"><span
+                class="d-flex align-items-center justify-content-center"><i
+                  class="ti ti-phone-call text-gray-5"></i></span></a>
           </li>
           <li>
-            <a
-              href="javascript:void(0);"
-              class="p-1 rounded-circle contact-icon-msg d-flex align-items-center justify-content-center"
-              ><span class="d-flex align-items-center justify-content-center"
-                ><i class="ti ti-message-2 text-gray-5"></i></span
-            ></a>
+            <a href="javascript:void(0);"
+              class="p-1 rounded-circle contact-icon-msg d-flex align-items-center justify-content-center"><span
+                class="d-flex align-items-center justify-content-center"><i
+                  class="ti ti-message-2 text-gray-5"></i></span></a>
           </li>
           <li>
-            <a
-              href="javascript:void(0);"
-              class="p-1 rounded-circle contact-icon-skype d-flex align-items-center justify-content-center"
-              ><span class="d-flex align-items-center justify-content-center"
-                ><i class="ti ti-brand-skype text-gray-5"></i></span
-            ></a>
+            <a href="javascript:void(0);"
+              class="p-1 rounded-circle contact-icon-skype d-flex align-items-center justify-content-center"><span
+                class="d-flex align-items-center justify-content-center"><i
+                  class="ti ti-brand-skype text-gray-5"></i></span></a>
           </li>
           <li>
-            <a
-              href="javascript:void(0);"
-              class="p-1 rounded-circle contact-icon-facebook d-flex align-items-center justify-content-center"
-              ><span class="d-flex align-items-center justify-content-center"
-                ><i class="ti ti-brand-facebook text-gray-5"></i></span
-            ></a>
+            <a href="javascript:void(0);"
+              class="p-1 rounded-circle contact-icon-facebook d-flex align-items-center justify-content-center"><span
+                class="d-flex align-items-center justify-content-center"><i
+                  class="ti ti-brand-facebook text-gray-5"></i></span></a>
           </li>
         </ul>
       </template>
@@ -316,19 +293,10 @@ export default {
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#edit_contact"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_contact"><i
+              class="ti ti-edit"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

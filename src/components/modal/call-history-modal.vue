@@ -7,12 +7,7 @@
           <div class="d-flex align-items-center">
             <h4 class="modal-title">Caller Details</h4>
           </div>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -22,29 +17,19 @@
               <div class="card-body">
                 <div class="text-center">
                   <div class="avatar avatar-xxxl mb-3">
-                    <img
-                      src="@/assets/img/users/user-32.jpg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
+                    <img src="@/assets/img/users/user-32.jpg" alt="img" class="rounded-circle" />
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-center">
-                  <router-link
-                    to="/calls/video-call"
-                    class="btn btn-gray call-item p-0 d-flex align-items-center justify-content-center me-3"
-                    ><i class="ti ti-video fs-20"></i
-                  ></router-link>
-                  <router-link
-                    to="/applications/chat"
-                    class="btn btn-gray call-item p-0 d-flex align-items-center justify-content-center me-3"
-                    ><i class="ti ti-message fs-20"></i
-                  ></router-link>
-                  <router-link
-                    to="/calls/voice-call"
-                    class="btn btn-gray call-item p-0 d-flex align-items-center justify-content-center"
-                    ><i class="ti ti-phone fs-20"></i
-                  ></router-link>
+                  <router-link to="/calls/video-call"
+                    class="btn btn-gray call-item p-0 d-flex align-items-center justify-content-center me-3"><i
+                      class="ti ti-video fs-20"></i></router-link>
+                  <router-link to="/applications/chat"
+                    class="btn btn-gray call-item p-0 d-flex align-items-center justify-content-center me-3"><i
+                      class="ti ti-message fs-20"></i></router-link>
+                  <router-link to="/calls/voice-call"
+                    class="btn btn-gray call-item p-0 d-flex align-items-center justify-content-center"><i
+                      class="ti ti-phone fs-20"></i></router-link>
                 </div>
               </div>
             </div>
@@ -106,15 +91,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/calls/call-history" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/calls/call-history" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

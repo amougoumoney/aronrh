@@ -101,89 +101,49 @@
             <div class="card-body">
               <div class="alert alert-solid-primary alert-dismissible fade show">
                 A simple solid primary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-solid-secondary alert-dismissible fade show">
                 A simple solid secondary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-solid-info alert-dismissible fade show">
                 A simple solid info alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-solid-warning alert-dismissible fade show">
                 A simple solid warning alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-solid-success alert-dismissible fade show">
                 A simple solid success alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-solid-danger alert-dismissible fade show">
                 A simple solid danger alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-solid-light alert-dismissible fade show">
                 A simple solid light alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close text-default"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close text-default" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-solid-dark alert-dismissible fade show text-white">
                 A simple solid dark alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close text-white"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close text-white" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
@@ -199,89 +159,49 @@
             <div class="card-body">
               <div class="alert alert-outline-primary alert-dismissible fade show">
                 A simple outline primary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-outline-secondary alert-dismissible fade show">
                 A simple outline secondary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-outline-info alert-dismissible fade show">
                 A simple outline info alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-outline-warning alert-dismissible fade show">
                 A simple outline warning alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-outline-success alert-dismissible fade show">
                 A simple outline success alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-outline-danger alert-dismissible fade show">
                 A simple outline danger alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-outline-light alert-dismissible fade show">
                 A simple outline light alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close text-default"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close text-default" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-outline-dark alert-dismissible fade show">
                 A simple outline dark alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
@@ -295,55 +215,27 @@
               <h5 class="card-title">Rounded Solid Alerts</h5>
             </div>
             <div class="card-body">
-              <div
-                class="alert alert-solid-primary rounded-pill alert-dismissible fade show"
-              >
+              <div class="alert alert-solid-primary rounded-pill alert-dismissible fade show">
                 A simple solid rounded primary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-solid-secondary rounded-pill alert-dismissible fade show"
-              >
+              <div class="alert alert-solid-secondary rounded-pill alert-dismissible fade show">
                 A simple solid rounded secondary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-solid-warning rounded-pill alert-dismissible fade show"
-              >
+              <div class="alert alert-solid-warning rounded-pill alert-dismissible fade show">
                 A simple solid rounded warning alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-solid-danger rounded-pill alert-dismissible fade show"
-              >
+              <div class="alert alert-solid-danger rounded-pill alert-dismissible fade show">
                 A simple solid rounded danger alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
@@ -357,55 +249,27 @@
               <h5 class="card-title">Rounded Outline Alerts</h5>
             </div>
             <div class="card-body">
-              <div
-                class="alert alert-outline-primary rounded-pill alert-dismissible fade show"
-              >
+              <div class="alert alert-outline-primary rounded-pill alert-dismissible fade show">
                 A simple outline rounded primary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-outline-secondary rounded-pill alert-dismissible fade show"
-              >
+              <div class="alert alert-outline-secondary rounded-pill alert-dismissible fade show">
                 A simple outline rounded secondary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-outline-warning rounded-pill alert-dismissible fade show"
-              >
+              <div class="alert alert-outline-warning rounded-pill alert-dismissible fade show">
                 A simple outline rounded warning alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-outline-danger rounded-pill alert-dismissible fade show"
-              >
+              <div class="alert alert-outline-danger rounded-pill alert-dismissible fade show">
                 A simple outline rounded danger alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
@@ -421,45 +285,25 @@
             <div class="card-body">
               <div class="alert alert-primary rounded-pill alert-dismissible fade show">
                 A simple rounded primary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-secondary rounded-pill alert-dismissible fade show">
                 A simple rounded secondary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-warning rounded-pill alert-dismissible fade show">
                 A simple rounded warning alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-danger rounded-pill alert-dismissible fade show">
                 A simple rounded danger alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
@@ -475,45 +319,25 @@
             <div class="card-body">
               <div class="alert alert-primary rounded-pill alert-dismissible fade show">
                 A simple rounded primary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close custom-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-secondary rounded-pill alert-dismissible fade show">
                 A simple rounded secondary alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close custom-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-warning rounded-pill alert-dismissible fade show">
                 A simple rounded warning alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close custom-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div class="alert alert-danger rounded-pill alert-dismissible fade show">
                 A simple rounded danger alert—check it out!
-                <button
-                  type="button"
-                  class="btn-close custom-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
@@ -555,61 +379,37 @@
             <div class="card-body">
               <div
                 class="alert alert-primary alert-dismissible fade show custom-alert-icon shadow-sm d-flex align-items-center"
-                role="alert"
-              >
+                role="alert">
                 <i class="feather-info flex-shrink-0 me-2"></i>
                 A customized primary alert with an icon
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div
                 class="alert alert-secondary alert-dismissible fade show custom-alert-icon shadow-sm d-flex align-items-center"
-                role="alert"
-              >
+                role="alert">
                 <i class="feather-check-circle flex-shrink-0 me-2"></i>
                 A customized secondary alert with an icon
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div
                 class="alert alert-warning alert-dismissible fade show custom-alert-icon shadow-sm d-flex align-items-center"
-                role="alert"
-              >
+                role="alert">
                 <i class="feather-alert-triangle flex-shrink-0 me-2"></i>
                 A customized warning alert with an icon
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
               <div
                 class="alert alert-danger alert-dismissible fade show custom-alert-icon shadow-sm d-flex align-items-centers"
-                role="alert"
-              >
+                role="alert">
                 <i class="feather-alert-octagon flex-shrink-0 me-2"></i>
                 A customized danger alert with an icon
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
@@ -629,12 +429,8 @@
                         </div>
                         <div class="text-primary w-100">
                           <div class="fw-semibold d-flex justify-content-between">
-                            Information Alert<button
-                              type="button"
-                              class="btn-close p-0"
-                              data-bs-dismiss="alert"
-                              aria-label="Close"
-                            >
+                            Information Alert<button type="button" class="btn-close p-0" data-bs-dismiss="alert"
+                              aria-label="Close">
                               <i class="fas fa-xmark"></i>
                             </button>
                           </div>
@@ -642,14 +438,9 @@
                             Information alert to show to information message
                           </div>
                           <div class="fs-12">
-                            <a
-                              href="javascript:void(0);"
-                              class="text-secondary fw-semibold me-2 d-inline-block"
-                              >cancel</a
-                            >
-                            <a href="javascript:void(0);" class="text-primary fw-semibold"
-                              >open</a
-                            >
+                            <a href="javascript:void(0);"
+                              class="text-secondary fw-semibold me-2 d-inline-block">cancel</a>
+                            <a href="javascript:void(0);" class="text-primary fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -665,12 +456,8 @@
                         </div>
                         <div class="text-secondary w-100">
                           <div class="fw-semibold d-flex justify-content-between">
-                            Success Alert<button
-                              type="button"
-                              class="btn-close p-0"
-                              data-bs-dismiss="alert"
-                              aria-label="Close"
-                            >
+                            Success Alert<button type="button" class="btn-close p-0" data-bs-dismiss="alert"
+                              aria-label="Close">
                               <i class="fas fa-xmark"></i>
                             </button>
                           </div>
@@ -678,16 +465,8 @@
                             Success alert to show to success message
                           </div>
                           <div class="fs-12">
-                            <a
-                              href="javascript:void(0);"
-                              class="text-danger fw-semibold me-2 d-inline-block"
-                              >cancel</a
-                            >
-                            <a
-                              href="javascript:void(0);"
-                              class="text-secondary fw-semibold"
-                              >open</a
-                            >
+                            <a href="javascript:void(0);" class="text-danger fw-semibold me-2 d-inline-block">cancel</a>
+                            <a href="javascript:void(0);" class="text-secondary fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -703,12 +482,8 @@
                         </div>
                         <div class="text-warning w-100">
                           <div class="fw-semibold d-flex justify-content-between">
-                            Warning Alert<button
-                              type="button"
-                              class="btn-close p-0"
-                              data-bs-dismiss="alert"
-                              aria-label="Close"
-                            >
+                            Warning Alert<button type="button" class="btn-close p-0" data-bs-dismiss="alert"
+                              aria-label="Close">
                               <i class="fas fa-xmark"></i>
                             </button>
                           </div>
@@ -716,14 +491,8 @@
                             Warning alert to show warning message
                           </div>
                           <div class="fs-12">
-                            <a
-                              href="javascript:void(0);"
-                              class="text-dark fw-semibold me-2 d-inline-block"
-                              >cancel</a
-                            >
-                            <a href="javascript:void(0);" class="text-warning fw-semibold"
-                              >open</a
-                            >
+                            <a href="javascript:void(0);" class="text-dark fw-semibold me-2 d-inline-block">cancel</a>
+                            <a href="javascript:void(0);" class="text-warning fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -739,12 +508,8 @@
                         </div>
                         <div class="text-danger w-100">
                           <div class="fw-semibold d-flex justify-content-between">
-                            Danger Alert<button
-                              type="button"
-                              class="btn-close p-0"
-                              data-bs-dismiss="alert"
-                              aria-label="Close"
-                            >
+                            Danger Alert<button type="button" class="btn-close p-0" data-bs-dismiss="alert"
+                              aria-label="Close">
                               <i class="fas fa-xmark"></i>
                             </button>
                           </div>
@@ -752,14 +517,8 @@
                             Danger alert to show the danger message
                           </div>
                           <div class="fs-12">
-                            <a
-                              href="javascript:void(0);"
-                              class="text-info fw-semibold me-2 d-inline-block"
-                              >cancel</a
-                            >
-                            <a href="javascript:void(0);" class="text-danger fw-semibold"
-                              >open</a
-                            >
+                            <a href="javascript:void(0);" class="text-info fw-semibold me-2 d-inline-block">cancel</a>
+                            <a href="javascript:void(0);" class="text-danger fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -777,12 +536,8 @@
                         </div>
                         <div class="text-fixed-white w-100">
                           <div class="fw-semibold d-flex justify-content-between">
-                            Information Alert<button
-                              type="button"
-                              class="btn-close p-0"
-                              data-bs-dismiss="alert"
-                              aria-label="Close"
-                            >
+                            Information Alert<button type="button" class="btn-close p-0" data-bs-dismiss="alert"
+                              aria-label="Close">
                               <i class="fas fa-xmark"></i>
                             </button>
                           </div>
@@ -790,16 +545,8 @@
                             Information alert to show to information message
                           </div>
                           <div class="fs-12">
-                            <a
-                              href="javascript:void(0);"
-                              class="text-fixed-white fw-semibold me-2 op-7"
-                              >cancel</a
-                            >
-                            <a
-                              href="javascript:void(0);"
-                              class="text-fixed-white fw-semibold"
-                              >open</a
-                            >
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold me-2 op-7">cancel</a>
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -808,21 +555,15 @@
                 </div>
                 <div class="col-xl-3">
                   <div class="card border-0">
-                    <div
-                      class="alert alert-solid-secondary border border-secondary mb-0 p-3"
-                    >
+                    <div class="alert alert-solid-secondary border border-secondary mb-0 p-3">
                       <div class="d-flex align-items-start">
                         <div class="me-2">
                           <i class="feather-check-circle flex-shrink-0"></i>
                         </div>
                         <div class="text-fixed-white w-100">
                           <div class="fw-semibold d-flex justify-content-between">
-                            Success Alert<button
-                              type="button"
-                              class="btn-close p-0"
-                              data-bs-dismiss="alert"
-                              aria-label="Close"
-                            >
+                            Success Alert<button type="button" class="btn-close p-0" data-bs-dismiss="alert"
+                              aria-label="Close">
                               <i class="fas fa-xmark"></i>
                             </button>
                           </div>
@@ -830,11 +571,7 @@
                             Success alert to show to success message
                           </div>
                           <div class="fs-12">
-                            <a
-                              href="javascript:void(0);"
-                              class="text-fixed-white fw-semibold me-2"
-                              >close</a
-                            >
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold me-2">close</a>
                           </div>
                         </div>
                       </div>
@@ -850,12 +587,8 @@
                         </div>
                         <div class="text-fixed-white w-100">
                           <div class="fw-semibold d-flex justify-content-between">
-                            Warning Alert<button
-                              type="button"
-                              class="btn-close p-0"
-                              data-bs-dismiss="alert"
-                              aria-label="Close"
-                            >
+                            Warning Alert<button type="button" class="btn-close p-0" data-bs-dismiss="alert"
+                              aria-label="Close">
                               <i class="fas fa-xmark"></i>
                             </button>
                           </div>
@@ -863,16 +596,8 @@
                             Warning alert to show to warning message
                           </div>
                           <div class="fs-12">
-                            <a
-                              href="javascript:void(0);"
-                              class="text-fixed-white fw-semibold me-2 op-7"
-                              >skip</a
-                            >
-                            <a
-                              href="javascript:void(0);"
-                              class="text-fixed-white fw-semibold"
-                              >open</a
-                            >
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold me-2 op-7">skip</a>
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold">open</a>
                           </div>
                         </div>
                       </div>
@@ -888,12 +613,8 @@
                         </div>
                         <div class="text-fixed-white w-100">
                           <div class="fw-semibold d-flex justify-content-between">
-                            Danger Alert<button
-                              type="button"
-                              class="btn-close p-0"
-                              data-bs-dismiss="alert"
-                              aria-label="Close"
-                            >
+                            Danger Alert<button type="button" class="btn-close p-0" data-bs-dismiss="alert"
+                              aria-label="Close">
                               <i class="fas fa-xmark"></i>
                             </button>
                           </div>
@@ -901,16 +622,8 @@
                             Danger alert to show to danger message
                           </div>
                           <div class="fs-12">
-                            <a
-                              href="javascript:void(0);"
-                              class="text-fixed-white fw-semibold me-2 op-7"
-                              >close</a
-                            >
-                            <a
-                              href="javascript:void(0);"
-                              class="text-fixed-white fw-semibold"
-                              >continue</a
-                            >
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold me-2 op-7">close</a>
+                            <a href="javascript:void(0);" class="text-fixed-white fw-semibold">continue</a>
                           </div>
                         </div>
                       </div>
@@ -928,122 +641,69 @@
               <div class="card-title">Alerts With Images</div>
             </div>
             <div class="card-body">
-              <div
-                class="alert alert-img alert-primary alert-dismissible fase show rounded-pill flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-primary alert-dismissible fase show rounded-pill flex-wrap"
+                role="alert">
                 <div class="avatar avatar-sm me-3 avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-01.jpg" alt="img" />
                 </div>
                 <div>A simple primary alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-secondary alert-dismissible fase show rounded-pill flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-secondary alert-dismissible fase show rounded-pill flex-wrap"
+                role="alert">
                 <div class="avatar avatar-sm me-3 avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                 </div>
                 <div>A simple secondary alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-warning alert-dismissible fase show rounded-pill flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-warning alert-dismissible fase show rounded-pill flex-wrap"
+                role="alert">
                 <div class="avatar avatar-sm me-3 avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-03.jpg" alt="img" />
                 </div>
                 <div>A simple warning alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-danger alert-dismissible fase show rounded-pill flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-danger alert-dismissible fase show rounded-pill flex-wrap" role="alert">
                 <div class="avatar avatar-sm me-3 avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-04.jpg" alt="img" />
                 </div>
                 <div>A simple danger alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-info alert-dismissible fase show rounded-pill flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-info alert-dismissible fase show rounded-pill flex-wrap" role="alert">
                 <div class="avatar avatar-sm me-3 avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-05.jpg" alt="img" />
                 </div>
                 <div>A simple info alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-light alert-dismissible fase show rounded-pill flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-light alert-dismissible fase show rounded-pill flex-wrap" role="alert">
                 <div class="avatar avatar-sm me-3 avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-06.jpg" alt="img" />
                 </div>
                 <div>A simple light alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-dark alert-dismissible fase show rounded-pill flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-dark alert-dismissible fase show rounded-pill flex-wrap" role="alert">
                 <div class="avatar avatar-sm me-3 avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-07.jpg" alt="img" />
                 </div>
                 <div>A simple dark alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark text-muted"></i>
                 </button>
               </div>
@@ -1056,105 +716,57 @@
               <div class="card-title">Alerts With Different size Images</div>
             </div>
             <div class="card-body">
-              <div
-                class="alert alert-img alert-primary alert-dismissible fase show flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-primary alert-dismissible fase show flex-wrap" role="alert">
                 <div class="avatar avatar-xs me-3">
                   <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                 </div>
                 <div>A simple primary alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-secondary alert-dismissible fase show flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-secondary alert-dismissible fase show flex-wrap" role="alert">
                 <div class="avatar avatar-sm me-3">
                   <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                 </div>
                 <div>A simple secondary alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-warning alert-dismissible fase show flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-warning alert-dismissible fase show flex-wrap" role="alert">
                 <div class="avatar me-3">
                   <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                 </div>
                 <div>A simple warning alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-danger alert-dismissible fase show flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-danger alert-dismissible fase show flex-wrap" role="alert">
                 <div class="avatar avatar-md me-3">
                   <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                 </div>
                 <div>A simple danger alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-info alert-dismissible fase show flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-info alert-dismissible fase show flex-wrap" role="alert">
                 <div class="avatar avatar-lg me-3">
                   <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                 </div>
                 <div>A simple info alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark"></i>
                 </button>
               </div>
-              <div
-                class="alert alert-img alert-dark alert-dismissible fase show flex-wrap"
-                role="alert"
-              >
+              <div class="alert alert-img alert-dark alert-dismissible fase show flex-wrap" role="alert">
                 <div class="avatar avatar-xl me-3">
                   <img src="@/assets/img/profiles/avatar-02.jpg" alt="img" />
                 </div>
                 <div>A simple info alert with image—check it out!</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                  aria-label="Close"
-                >
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                   <i class="fas fa-xmark text-muted"></i>
                 </button>
               </div>
@@ -1167,12 +779,7 @@
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
               <div class="card bg-white border-0">
                 <div class="alert custom-alert1 alert-primary">
-                  <button
-                    type="button"
-                    class="btn-close ms-auto"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"
-                  >
+                  <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close">
                     <i class="fas fa-xmark"></i>
                   </button>
                   <div class="text-center px-5 pb-0">
@@ -1194,12 +801,7 @@
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
               <div class="card bg-white border-0">
                 <div class="alert custom-alert1 alert-secondary">
-                  <button
-                    type="button"
-                    class="btn-close ms-auto"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"
-                  >
+                  <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close">
                     <i class="fas fa-xmark"></i>
                   </button>
                   <div class="text-center px-5 pb-0">
@@ -1220,12 +822,7 @@
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
               <div class="card bg-white border-0">
                 <div class="alert custom-alert1 alert-warning">
-                  <button
-                    type="button"
-                    class="btn-close ms-auto"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"
-                  >
+                  <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close">
                     <i class="fas fa-xmark"></i>
                   </button>
                   <div class="text-center px-5 pb-0">
@@ -1247,12 +844,7 @@
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
               <div class="card bg-white border-0">
                 <div class="alert custom-alert1 alert-danger">
-                  <button
-                    type="button"
-                    class="btn-close ms-auto"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"
-                  >
+                  <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close">
                     <i class="fas fa-xmark"></i>
                   </button>
                   <div class="text-center px-5 pb-0">
@@ -1279,18 +871,12 @@
               <div class="row gy-3">
                 <div class="col-xl-6">
                   <div class="alert alert-primary overflow-hidden p-0" role="alert">
-                    <div
-                      class="p-3 bg-primary text-fixed-white d-flex justify-content-between"
-                    >
+                    <div class="p-3 bg-primary text-fixed-white d-flex justify-content-between">
                       <h6 class="aletr-heading mb-0 text-fixed-white">
                         Thank you for reporting this.
                       </h6>
-                      <button
-                        type="button"
-                        class="btn-close p-0 text-fixed-white"
-                        data-bs-dismiss="alert"
-                        aria-label="Close"
-                      >
+                      <button type="button" class="btn-close p-0 text-fixed-white" data-bs-dismiss="alert"
+                        aria-label="Close">
                         <i class="fas fa-xmark"></i>
                       </button>
                     </div>
@@ -1299,29 +885,21 @@
                       <p class="mb-0">
                         We appreciate you to let us know the bug in the template and for
                         warning us about future consequences
-                        <a
-                          href="javascript:void(0);"
-                          class="fw-semibold text-decoration-underline text-primary"
-                          >Visit for support for queries ?</a
-                        >
+                        <a href="javascript:void(0);" class="fw-semibold text-decoration-underline text-primary">Visit
+                          for support for
+                          queries ?</a>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-6">
                   <div class="alert alert-secondary overflow-hidden p-0" role="alert">
-                    <div
-                      class="p-3 bg-secondary text-fixed-white d-flex justify-content-between"
-                    >
+                    <div class="p-3 bg-secondary text-fixed-white d-flex justify-content-between">
                       <h6 class="aletr-heading mb-0 text-fixed-white">
                         Thank you for reporting this.
                       </h6>
-                      <button
-                        type="button"
-                        class="btn-close p-0 text-fixed-white"
-                        data-bs-dismiss="alert"
-                        aria-label="Close"
-                      >
+                      <button type="button" class="btn-close p-0 text-fixed-white" data-bs-dismiss="alert"
+                        aria-label="Close">
                         <i class="fas fa-xmark"></i>
                       </button>
                     </div>
@@ -1330,29 +908,21 @@
                       <p class="mb-0">
                         We appreciate you to let us know the bug in the template and for
                         warning us about future consequences
-                        <a
-                          href="javascript:void(0);"
-                          class="fw-semibold text-decoration-underline text-secondary"
-                          >Visit for support for queries ?</a
-                        >
+                        <a href="javascript:void(0);" class="fw-semibold text-decoration-underline text-secondary">Visit
+                          for support for
+                          queries ?</a>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-6">
                   <div class="alert alert-success overflow-hidden p-0" role="alert">
-                    <div
-                      class="p-3 bg-success text-fixed-white d-flex justify-content-between"
-                    >
+                    <div class="p-3 bg-success text-fixed-white d-flex justify-content-between">
                       <h6 class="aletr-heading mb-0 text-fixed-white">
                         Thank you for reporting this.
                       </h6>
-                      <button
-                        type="button"
-                        class="btn-close p-0 text-fixed-white"
-                        data-bs-dismiss="alert"
-                        aria-label="Close"
-                      >
+                      <button type="button" class="btn-close p-0 text-fixed-white" data-bs-dismiss="alert"
+                        aria-label="Close">
                         <i class="fas fa-xmark"></i>
                       </button>
                     </div>
@@ -1361,29 +931,21 @@
                       <p class="mb-0">
                         We appreciate you to let us know the bug in the template and for
                         warning us about future consequences
-                        <a
-                          href="javascript:void(0);"
-                          class="fw-semibold text-decoration-underline text-success"
-                          >Visit for support for queries ?</a
-                        >
+                        <a href="javascript:void(0);" class="fw-semibold text-decoration-underline text-success">Visit
+                          for support for
+                          queries ?</a>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-6">
                   <div class="alert alert-warning overflow-hidden p-0" role="alert">
-                    <div
-                      class="p-3 bg-warning text-fixed-white d-flex justify-content-between"
-                    >
+                    <div class="p-3 bg-warning text-fixed-white d-flex justify-content-between">
                       <h6 class="aletr-heading mb-0 text-fixed-white">
                         Thank you for reporting this.
                       </h6>
-                      <button
-                        type="button"
-                        class="btn-close p-0 text-fixed-white"
-                        data-bs-dismiss="alert"
-                        aria-label="Close"
-                      >
+                      <button type="button" class="btn-close p-0 text-fixed-white" data-bs-dismiss="alert"
+                        aria-label="Close">
                         <i class="fas fa-xmark"></i>
                       </button>
                     </div>
@@ -1392,11 +954,9 @@
                       <p class="mb-0">
                         We appreciate you to let us know the bug in the template and for
                         warning us about future consequences
-                        <a
-                          href="javascript:void(0);"
-                          class="fw-semibold text-decoration-underline text-warning"
-                          >Visit for support for queries ?</a
-                        >
+                        <a href="javascript:void(0);" class="fw-semibold text-decoration-underline text-warning">Visit
+                          for support for
+                          queries ?</a>
                       </p>
                     </div>
                   </div>

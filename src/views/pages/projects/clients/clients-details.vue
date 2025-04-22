@@ -1905,7 +1905,8 @@
                                     <div class="ms-2">
                                       <p class="text-title fw-medium mb-0">
                                         <a href="javascript:void(0);" data-bs-toggle="offcanvas"
-                                          data-bs-target="#preview">Sophie Headrick</a>
+                                          data-bs-target="#preview">Sophie
+                                          Headrick</a>
                                       </p>
                                     </div>
                                   </div>
@@ -2039,7 +2040,8 @@
                                     <div class="ms-2">
                                       <p class="text-title fw-medium mb-0">
                                         <a href="javascript:void(0);" data-bs-toggle="offcanvas"
-                                          data-bs-target="#preview">Doris Crowley</a>
+                                          data-bs-target="#preview">Doris
+                                          Crowley</a>
                                       </p>
                                     </div>
                                   </div>

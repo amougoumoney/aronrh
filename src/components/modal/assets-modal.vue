@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Asset</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -27,14 +22,8 @@
                 <div class="mb-3">
                   <label class="form-label">Purchased Date</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -69,14 +58,8 @@
                 <div class="mb-3">
                   <label class="form-label">Warranty</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateTwo"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateTwo" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -92,11 +75,7 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="StaInactive"
-                    id="stainactive"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="StaInactive" id="stainactive" placeholder="Select" />
                 </div>
               </div>
             </div>
@@ -119,12 +98,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Asset</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -141,14 +115,8 @@
                 <div class="mb-3">
                   <label class="form-label">Purchased Date</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateTwo"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateTwo" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -183,14 +151,8 @@
                 <div class="mb-3">
                   <label class="form-label">Warranty</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateThree"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateThree" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -200,21 +162,13 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Asset User</label>
-                  <vue-select
-                    :options="EditHeadrick"
-                    id="editheadrick"
-                    placeholder="Anthony Lewis"
-                  />
+                  <vue-select :options="EditHeadrick" id="editheadrick" placeholder="Anthony Lewis" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="EditStaInactive"
-                    id="editstainactive"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="EditStaInactive" id="editstainactive" placeholder="Active" />
                 </div>
               </div>
             </div>
@@ -244,15 +198,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/asset/assets" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/asset/assets" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

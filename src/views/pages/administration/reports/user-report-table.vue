@@ -147,9 +147,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -164,21 +164,12 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Name'">
         <div class="d-flex align-items-center file-name-icon">
           <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
-            <img
-              :src="`@/assets/img/users/${record.Image}`"
-              class="img-fluid"
-              alt="img"
-            />
+            <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
@@ -188,26 +179,20 @@ export default {
         </div>
       </template>
       <template v-if="column.key === 'Role'">
-        <span
-          class="d-inline-flex align-items-center badge-xs"
-          :class="[
-            'badge',
-            record.Role === 'Employee'
-              ? 'badge-pink-transparent'
-              : 'badge-purple-transparent',
-          ]"
-        >
+        <span class="d-inline-flex align-items-center badge-xs" :class="[
+          'badge',
+          record.Role === 'Employee'
+            ? 'badge-pink-transparent'
+            : 'badge-purple-transparent',
+        ]">
           {{ record.Role }}
         </span>
       </template>
       <template v-if="column.key === 'Status'">
-        <span
-          class="d-inline-flex align-items-center badge-xs"
-          :class="[
-            'badge',
-            record.Status === 'Active' ? 'badge-success' : 'badge-danger',
-          ]"
-        >
+        <span class="d-inline-flex align-items-center badge-xs" :class="[
+          'badge',
+          record.Status === 'Active' ? 'badge-success' : 'badge-danger',
+        ]">
           <i class="ti ti-point-filled me-1"></i>{{ record.Status }}
         </span>
       </template>

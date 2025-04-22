@@ -26,12 +26,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Provident Fund</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -41,11 +36,7 @@ export default {
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Employee Name</label>
-                  <vue-select
-                    :options="Employeename"
-                    id="villalobos"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="Employeename" id="villalobos" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
@@ -88,11 +79,7 @@ export default {
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-white border me-2"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Add Provident Fund</button>
@@ -109,12 +96,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Provident Fund</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -124,21 +106,13 @@ export default {
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Employee Name</label>
-                  <vue-select
-                    :options="Employeename"
-                    id="villalobos-one"
-                    placeholder="Anthony Lewis"
-                  />
+                  <vue-select :options="Employeename" id="villalobos-one" placeholder="Anthony Lewis" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Provident Fund Type</label>
-                  <vue-select
-                    :options="Provident"
-                    id="voluntary-one"
-                    placeholder="Employee Provident Fund"
-                  />
+                  <vue-select :options="Provident" id="voluntary-one" placeholder="Employee Provident Fund" />
                 </div>
               </div>
               <div class="col-md-6">
@@ -175,11 +149,7 @@ export default {
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-white border me-2"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -203,15 +173,8 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/sales/provident-fund" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/sales/provident-fund" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

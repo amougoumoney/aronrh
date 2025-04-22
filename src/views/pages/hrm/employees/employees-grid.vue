@@ -1,20 +1,18 @@
 <template>
-  <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar>
   <!-- Page Wrapper -->
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
         <div class="my-auto mb-2">
-          <h2 class="mb-1">Employee</h2>
+          <h2 class="mb-1">{{$t('Employee')}}</h2>
           <nav>
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item">
                 <router-link to="/dashboard/"><i class="ti ti-smart-home"></i></router-link>
               </li>
-              <li class="breadcrumb-item">Employee</li>
-              <li class="breadcrumb-item active" aria-current="page">Employee Grid</li>
+              <li class="breadcrumb-item"></li>
+              <li class="breadcrumb-item active" aria-current="page">{{$t('EmployeeGrid')}}</li>
             </ol>
           </nav>
         </div>
@@ -31,16 +29,16 @@
             <div class="dropdown">
               <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>Export
+                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                      class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>Export as Excel
+                      class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}}
                   </a>
                 </li>
               </ul>
@@ -48,7 +46,7 @@
           </div>
           <div class="mb-2">
             <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_employee"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Employee</a>
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddEmployee')}}</a>
           </div>
           <div class="head-icons ms-2">
             <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -70,7 +68,7 @@
                   <span class="avatar avatar-lg bg-dark rounded-circle"><i class="ti ti-users"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
-                  <p class="fs-12 fw-medium mb-1 text-truncate">Total Employee</p>
+                  <p class="fs-12 fw-medium mb-1 text-truncate">{{$t('TotalEmployee')}}</p>
                   <h4>1007</h4>
                 </div>
               </div>
@@ -94,7 +92,7 @@
                   <span class="avatar avatar-lg bg-success rounded-circle"><i class="ti ti-user-share"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
-                  <p class="fs-12 fw-medium mb-1 text-truncate">Active</p>
+                  <p class="fs-12 fw-medium mb-1 text-truncate">{{$t('Active')}}</p>
                   <h4>1007</h4>
                 </div>
               </div>
@@ -118,7 +116,7 @@
                   <span class="avatar avatar-lg bg-danger rounded-circle"><i class="ti ti-user-pause"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
-                  <p class="fs-12 fw-medium mb-1 text-truncate">InActive</p>
+                  <p class="fs-12 fw-medium mb-1 text-truncate">{{$t('Inactive')}}</p>
                   <h4>1007</h4>
                 </div>
               </div>
@@ -142,7 +140,7 @@
                   <span class="avatar avatar-lg bg-info rounded-circle"><i class="ti ti-user-plus"></i></span>
                 </div>
                 <div class="ms-2 overflow-hidden">
-                  <p class="fs-12 fw-medium mb-1 text-truncate">New Joiners</p>
+                  <p class="fs-12 fw-medium mb-1 text-truncate">{{$t('NewJoiners')}}</p>
                   <h4>67</h4>
                 </div>
               </div>
@@ -160,36 +158,36 @@
       <div class="card">
         <div class="card-body p-3">
           <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-            <h5>Employees Grid</h5>
+            <h5>{{$t('EmployeesGrid')}}</h5>
             <div class="d-flex align-items-center flex-wrap row-gap-3">
               <div class="dropdown me-3">
                 <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
-                  Designation
+                  {{$t('Designation')}}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Finance</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('finance')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Developer</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Developer')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Executive</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('executive')}}</a>
                   </li>
                 </ul>
               </div>
               <div class="dropdown">
                 <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
-                  Sort By : Last 7 Days
+                  {{$t('SortBy:Last7Days')}} 
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Last7Days')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
                   </li>
                 </ul>
               </div>
@@ -222,12 +220,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -236,30 +234,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Anthony Lewis</router-link>
                 </h6>
-                <span class="badge bg-pink-transparent fs-10 fw-medium">Software Developer</span>
+                <span class="badge bg-pink-transparent fs-10 fw-medium">{{$T('SoftwareDeveloper')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">20</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">13</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">7</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-purple"> 65%</span>
+                {{$t('Productivity')}} : <span class="text-purple"> 65%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-purple" role="progressbar" style="width: 65%"></div>
@@ -289,12 +287,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -303,30 +301,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Brian Villalobos</router-link>
                 </h6>
-                <span class="badge badge-purple-transparent fs-10 fw-medium">Developer</span>
+                <span class="badge badge-purple-transparent fs-10 fw-medium">{{$t('Developer')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">30</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">10</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">20</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-warning"> 30%</span>
+                {{$t('Productivity')}} : <span class="text-warning"> 30%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"></div>
@@ -356,12 +354,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -370,30 +368,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Harvey Smith</router-link>
                 </h6>
-                <span class="badge badge-purple-transparent fs-10 fw-medium">Developer</span>
+                <span class="badge badge-purple-transparent fs-10 fw-medium">{{$t('Developer')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">25</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">7</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">18</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-danger"> 20%</span>
+                {{$t('Productivity')}} : <span class="text-danger"> 20%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"></div>
@@ -423,12 +421,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -437,30 +435,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Stephan Peralt</router-link>
                 </h6>
-                <span class="badge badge-dark-transparent fs-10 fw-medium">Software Developer</span>
+                <span class="badge badge-dark-transparent fs-10 fw-medium">{{$t('SoftwareDeveloper')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">15</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">13</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">2</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-success"> 90%</span>
+                {{$t('Productivity')}} : <span class="text-success"> 90%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 90%"></div>
@@ -490,12 +488,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -504,30 +502,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Doglas Martini</router-link>
                 </h6>
-                <span class="badge badge-secondary-transparent fs-10 fw-medium">Full Stack Developer</span>
+                <span class="badge badge-secondary-transparent fs-10 fw-medium">{{$t('FullStackDeveloper')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">15</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">2</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">13</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-danger"> 10%</span>
+                {{$t('Productivity')}} : <span class="text-danger"> 10%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-danger" role="progressbar" style="width: 10%"></div>
@@ -557,12 +555,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -571,30 +569,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Linda Ray</router-link>
                 </h6>
-                <span class="badge bg-pink-transparent fs-10 fw-medium">Software Developer</span>
+                <span class="badge bg-pink-transparent fs-10 fw-medium">{{$t('SoftwareDeveloper')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">20</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">10</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">10</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-purple"> 50%</span>
+                {{$t('Productivity')}} : <span class="text-purple"> 50%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-purple" role="progressbar" style="width: 50%"></div>
@@ -624,12 +622,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -638,30 +636,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Elliot Murray</router-link>
                 </h6>
-                <span class="badge badge-purple-transparent fs-10 fw-medium">Developer</span>
+                <span class="badge badge-purple-transparent fs-10 fw-medium">{{$t('Developer')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">40</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">35</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">5</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-success"> 93%</span>
+                {{$t('Productivity')}} : <span class="text-success"> 93%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 93%"></div>
@@ -691,12 +689,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -705,30 +703,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Rebecca Smtih</router-link>
                 </h6>
-                <span class="badge badge-soft-skyblue fs-10 fw-medium">Tester</span>
+                <span class="badge badge-soft-skyblue fs-10 fw-medium">{{$t('Tester')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">30</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">22</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">8</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-pink"> 80%</span>
+                {{$t('Productivity')}} : <span class="text-pink"> 80%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-pink" role="progressbar" style="width: 80%"></div>
@@ -758,12 +756,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -772,30 +770,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Connie Waters</router-link>
                 </h6>
-                <span class="badge bg-pink-transparent fs-10 fw-medium">Software Developer</span>
+                <span class="badge bg-pink-transparent fs-10 fw-medium">{{$t('SoftwareDeveloper')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">25</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">11</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">14</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-warning"> 35%</span>
+                {{$t('Productivity')}} : <span class="text-warning"> 35%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-warning" role="progressbar" style="width: 35%"></div>
@@ -825,12 +823,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -839,30 +837,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Lori Broaddus</router-link>
                 </h6>
-                <span class="badge badge-secondary-transparent fs-10 fw-medium">Full Stack Developer</span>
+                <span class="badge badge-secondary-transparent fs-10 fw-medium">{{$t('FullStackDeveloper')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">40</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">27</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">16</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-pink"> 75%</span>
+               {{$t('Productivity')}} : <span class="text-pink"> 75%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-pink" role="progressbar" style="width: 75%"></div>
@@ -892,12 +890,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -906,30 +904,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Trent Frazier</router-link>
                 </h6>
-                <span class="badge bg-pink-transparent fs-10 fw-medium">Software Developer</span>
+                <span class="badge bg-pink-transparent fs-10 fw-medium">{{$t('SoftwareDeveloper')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">30</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">17</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">13</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-purple"> 60%</span>
+                {{$t('Productivity')}} : <span class="text-purple"> 60%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-purple" role="progressbar" style="width: 60%"></div>
@@ -959,12 +957,12 @@
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
                         data-bs-target="#edit_employee">
-                        <i class="ti ti-edit me-1"></i>Edit
+                        <i class="ti ti-edit me-1"></i>{{$t('Edit')}}
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
@@ -973,30 +971,30 @@
                 <h6 class="mb-1">
                   <router-link to="/employee/employee-details">Norene Valle</router-link>
                 </h6>
-                <span class="badge bg-danger-transparent fs-10 fw-medium">Trainee</span>
+                <span class="badge bg-danger-transparent fs-10 fw-medium">{{$t('Trainee')}}</span>
               </div>
               <div class="row text-center">
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Projects</span>
+                    <span class="fs-12">{{$t('Projects')}}</span>
                     <h6 class="fw-medium">10</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Done</span>
+                    <span class="fs-12">{{$t('Done')}}</span>
                     <h6 class="fw-medium">1</h6>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <span class="fs-12">Progress</span>
+                    <span class="fs-12">{{$t('Progress')}}</span>
                     <h6 class="fw-medium">9</h6>
                   </div>
                 </div>
               </div>
               <p class="mb-2 text-center">
-                Productivity : <span class="text-danger"> 10%</span>
+                {{$t('Productivity')}} : <span class="text-danger"> 10%</span>
               </p>
               <div class="progress progress-xs mb-2">
                 <div class="progress-bar bg-danger" role="progressbar" style="width: 10%"></div>
@@ -1006,7 +1004,7 @@
         </div>
         <div class="col-md-12">
           <div class="text-center mb-4">
-            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
+            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>{{$t('LoadMore')}}</a>
           </div>
         </div>
       </div>
@@ -1015,8 +1013,8 @@
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        {{$t('designed')}} &amp; {{$t('developedBy')}}
+        <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a>
       </p>
     </div>
   </div>

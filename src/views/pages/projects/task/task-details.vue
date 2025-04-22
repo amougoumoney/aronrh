@@ -129,7 +129,8 @@
                     </div>
                     <div>
                       <a href="javascript:void(0);" class="d-flex align-items-center fs-12"><i
-                          class="ti ti-circle-plus me-1"></i>Add New</a>
+                          class="ti ti-circle-plus me-1"></i>Add
+                        New</a>
                     </div>
                   </div>
                 </div>
@@ -151,7 +152,8 @@
                     </div>
                     <div>
                       <a href="javascript:void(0);" class="d-flex align-items-center fs-12"><i
-                          class="ti ti-circle-plus me-1"></i>Add New</a>
+                          class="ti ti-circle-plus me-1"></i>Add
+                        New</a>
                     </div>
                   </div>
                 </div>
@@ -200,8 +202,7 @@
                               <div class="d-flex align-items-center justify-content-between mb-2 pb-2 border-bottom">
                                 <div class="d-flex align-items-center overflow-hidden">
                                   <a href="javascript:void(0);" class="avatar avatar-md bg-light me-2">
-                                    <img :src="`@/assets/img/icons/${item.Logo}`" class="w-auto h-auto"
-                                      alt="img">
+                                    <img :src="`@/assets/img/icons/${item.Logo}`" class="w-auto h-auto" alt="img">
                                   </a>
                                   <div class="overflow-hidden">
                                     <h6 class="mb-1 text-truncate">{{ item.File_type }}</h6>

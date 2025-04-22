@@ -56,9 +56,7 @@
             </div>
             <div class="card-footer">
               <a href="javascript:void(0);" class="card-link text-danger m-1 me">Buy Now</a>
-              <a href="javascript:void(0);" class="card-link text-success m-1"
-                ><u>Review</u></a
-              >
+              <a href="javascript:void(0);" class="card-link text-success m-1"><u>Review</u></a>
             </div>
           </div>
         </div>
@@ -100,11 +98,7 @@
             </ul>
             <div class="card-body">
               <a href="javascript:void(0);" class="card-link text-primary">Card link</a>
-              <a
-                href="javascript:void(0);"
-                class="card-link text-secondary d-inline-block"
-                >Another link</a
-              >
+              <a href="javascript:void(0);" class="card-link text-secondary d-inline-block">Another link</a>
             </div>
           </div>
         </div>
@@ -304,21 +298,13 @@
           <div class="card">
             <div class="card-header">
               <div class="d-flex align-items-center w-100">
-                <img
-                  src="@/assets/img/profiles/avatar-01.jpg"
-                  alt="img"
-                  class="avatar avatar-rounded me-2"
-                />
+                <img src="@/assets/img/profiles/avatar-01.jpg" alt="img" class="avatar avatar-rounded me-2" />
                 <div class="">
                   <div class="fs-15 fw-semibold">Adam Smith</div>
                   <p class="mb-0 text-muted fs-11">28 Years, Male</p>
                 </div>
                 <div class="dropdown ms-auto">
-                  <a
-                    href="javascript:void(0);"
-                    class="btn btn-icon btn-sm btn-light"
-                    data-bs-toggle="dropdown"
-                  >
+                  <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown">
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                   </a>
                   <ul class="dropdown-menu">
@@ -371,9 +357,7 @@
         <div class="col-xl-3">
           <div class="card text-center">
             <div class="card-header border-bottom-0 pb-0">
-              <span class="ms-auto shadow-lg fs-17"
-                ><i class="fa-solid fa-heart text-danger"></i
-              ></span>
+              <span class="ms-auto shadow-lg fs-17"><i class="fa-solid fa-heart text-danger"></i></span>
             </div>
             <div class="card-body pt-1">
               <span class="avatar avatar-xl avatar-rounded me-2 mb-2">
@@ -452,9 +436,7 @@
                 With supporting text below as a natural lead-in to additional content.
               </p>
               <a href="javascript:void(0);" class="btn btn-primary mt-2 me-1">Read More</a>
-              <a href="javascript:void(0);" class="btn btn-outline-secondary mt-2"
-                >Close</a
-              >
+              <a href="javascript:void(0);" class="btn btn-outline-secondary mt-2">Close</a>
             </div>
             <div class="card-footer text-muted">11.32pm</div>
           </div>
@@ -468,9 +450,7 @@
                     <img src="@/assets/img/profiles/avatar-03.jpg" alt="img" />
                   </span>
                 </div>
-                <div
-                  class="d-flex align-items-center justify-content-between w-100 flex-wrap"
-                >
+                <div class="d-flex align-items-center justify-content-between w-100 flex-wrap">
                   <div class="me-3">
                     <p class="text-muted mb-0">Posts</p>
                     <p class="fw-semibold fs-16 mb-0">25</p>
@@ -501,13 +481,8 @@
           <div class="card">
             <div class="card-header justify-content-between d-flex flex-wrap">
               <div class="card-title">Card With Collapse Button</div>
-              <a
-                href="javascript:void(0);"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseExample"
-                aria-expanded="false"
-                aria-controls="collapseExample"
-              >
+              <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
                 <i class="fa-solid fa-chevron-down fs-18 collapse-open"></i>
                 <i class="fa-solid fa-chevron-up collapse-close fs-18"></i>
               </a>
@@ -618,12 +593,7 @@
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs ms-1">
                     <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        aria-current="true"
-                        href="javascript:void(0);"
-                        >Active</a
-                      >
+                      <a class="nav-link active" aria-current="true" href="javascript:void(0);">Active</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="javascript:void(0);">Link</a>
@@ -839,11 +809,8 @@
           <div class="card">
             <div class="row g-0">
               <div class="col-md-4">
-                <img
-                  src="@/assets/img/img-05.jpg"
-                  class="img-fluid rounded-start object-fit-cover h-100 w-100"
-                  alt="..."
-                />
+                <img src="@/assets/img/img-05.jpg" class="img-fluid rounded-start object-fit-cover h-100 w-100"
+                  alt="..." />
               </div>
               <div class="col-md-8">
                 <div class="card-header">
@@ -884,11 +851,8 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <img
-                  src="@/assets/img/img-01.jpg"
-                  class="img-fluid rounded-end object-fit-cover h-100 w-100"
-                  alt="..."
-                />
+                <img src="@/assets/img/img-01.jpg" class="img-fluid rounded-end object-fit-cover h-100 w-100"
+                  alt="..." />
               </div>
             </div>
           </div>
@@ -912,11 +876,8 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <img
-                  src="@/assets/img/img-02.jpg"
-                  class="img-fluid rounded-end object-fit-cover h-100 w-100"
-                  alt="..."
-                />
+                <img src="@/assets/img/img-02.jpg" class="img-fluid rounded-end object-fit-cover h-100 w-100"
+                  alt="..." />
               </div>
             </div>
           </div>
@@ -941,9 +902,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">Finished by today</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="javascript:void(0);" class="text-fixed-white"
-                    ><i class="fa-solid fa-ellipsis-vertical"></i
-                  ></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -963,9 +923,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">Completed 24 days back</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="javascript:void(0);" class="text-fixed-white"
-                    ><i class="fa-solid fa-ellipsis-vertical"></i
-                  ></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -985,9 +944,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">Completed today</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="javascript:void(0);" class="text-fixed-white"
-                    ><i class="fa-solid fa-ellipsis-vertical"></i
-                  ></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -1007,9 +965,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">Pending from 4 days</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="javascript:void(0);" class="text-fixed-white"
-                    ><i class="fa-solid fa-ellipsis-vertical"></i
-                  ></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -1029,9 +986,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">In leave for 1 month</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="javascript:void(0);" class="text-fixed-white"
-                    ><i class="fa-solid fa-ellipsis-vertical"></i
-                  ></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -1051,9 +1007,8 @@
                   <p class="mb-0 text-fixed-white op-7 fs-12">Completed by Tomorrow</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="javascript:void(0);" class="text-fixed-white"
-                    ><i class="fa-solid fa-ellipsis-vertical"></i
-                  ></a>
+                  <a href="javascript:void(0);" class="text-fixed-white"><i
+                      class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -1073,9 +1028,7 @@
                   <p class="mb-0 text-muted op-7 fs-12">Finished by 24,Nov</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="javascript:void(0);" class="text-default"
-                    ><i class="fa-solid fa-ellipsis-vertical"></i
-                  ></a>
+                  <a href="javascript:void(0);" class="text-default"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -1095,9 +1048,7 @@
                   <p class="mb-0 op-7 fs-12 text-white">Completed on 24,may</p>
                 </div>
                 <div class="ms-auto">
-                  <a href="javascript:void(0);" class="text-white"
-                    ><i class="fa-solid fa-ellipsis-vertical"></i
-                  ></a>
+                  <a href="javascript:void(0);" class="text-white"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -1431,11 +1382,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <img
-                      src="@/assets/img/img-5.jpg"
-                      class="img-fluid rounded-end object-fit-cover h-100"
-                      alt="..."
-                    />
+                    <img src="@/assets/img/img-5.jpg" class="img-fluid rounded-end object-fit-cover h-100" alt="..." />
                   </div>
                 </div>
               </div>

@@ -8,7 +8,7 @@
       <div class="page-header">
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="page-title">C3 Chart</h3>
+            <h3 class="page-title">{{ $t('C3Chart') }}</h3>
           </div>
         </div>
       </div>
@@ -20,7 +20,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Bar Chart</div>
+              <div class="card-title">{{ $t('BarChart') }}</div>
             </div>
             <div class="card-body">
               <apexchart
@@ -38,7 +38,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Multiple Bar Chart</div>
+              <div class="card-title">{{ $t('MultipleBarChart') }}</div>
             </div>
             <div class="card-body">
               <apexchart
@@ -56,7 +56,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Horizontal Bar Chart</div>
+              <div class="card-title">{{ $t('HorizontalBarChart') }}</div>
             </div>
             <div class="card-body">
               <apexchart
@@ -75,7 +75,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Line Chart</div>
+              <div class="card-title">{{ $t('LineChart') }}</div>
             </div>
             <div class="card-body">
               <apexchart
@@ -93,7 +93,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Line Chart</div>
+              <div class="card-title">{{ $t('LineChart') }}</div>
             </div>
             <div class="card-body">
               <apexchart
@@ -111,7 +111,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Line Chart</div>
+              <div class="card-title">{{ $t('LineChart') }}</div>
             </div>
             <div class="card-body">
               <apexchart
@@ -129,7 +129,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Pie Chart</div>
+              <div class="card-title">{{ $t('PieChart') }}</div>
             </div>
             <div class="card-body">
               <apexchart
@@ -147,7 +147,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Donut Chart</div>
+              <div class="card-title">{{ $t('DonutChart') }}</div>
             </div>
             <div class="card-body">
               <apexchart

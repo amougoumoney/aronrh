@@ -3,10 +3,9 @@
     <div class="col-lg-6">
       <div class="card">
         <div class="card-body card-buttons">
-          <h4 class="header-title">Crossfade</h4>
+          <h4 class="header-title">{{ $t('Crossfade') }}</h4>
           <p class="sub-header">
-            Add <code>.carousel-fade</code> to your carousel to animate slides with a fade
-            transition instead of a slide.
+            {{ $t('Add') }} <code>.carousel-fade</code> {{ $t('to...') }}
           </p>
 
           <div
@@ -64,11 +63,10 @@
     <div class="col-lg-6">
       <div class="card">
         <div class="card-body card-buttons">
-          <h4 class="header-title">Individual interval</h4>
+          <h4 class="header-title">{{ $t('Individualinterval') }}</h4>
           <p class="sub-header">
-            Add <code>data-bs-interval=""</code> to a <code>.carousel-item</code> to
-            change the amount of time to delay between automatically cycling to the next
-            item.
+           {{ $t(' Add') }} <code>data-bs-interval=""</code> {{ $t('toa') }} <code>.carousel-item</code> 
+          {{ $t('t...') }}
           </p>
 
           <div

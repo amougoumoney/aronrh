@@ -53,9 +53,8 @@
               <nav aria-label="Page navigation">
                 <ul class="pagination mb-0">
                   <li class="page-item disabled">
-                    <a class="page-link" href="javascript:void(0);"
-                      ><i class="fas fa-arrow-left-long me-2"></i>Previous</a
-                    >
+                    <a class="page-link" href="javascript:void(0);"><i
+                        class="fas fa-arrow-left-long me-2"></i>Previous</a>
                   </li>
                   <li class="page-item">
                     <a class="page-link" href="javascript:void(0);">1</a>
@@ -64,9 +63,7 @@
                     <a class="page-link" href="javascript:void(0);">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="javascript:void(0);"
-                      >Next<i class="fas fa-arrow-right-long ms-2"></i
-                    ></a>
+                    <a class="page-link" href="javascript:void(0);">Next<i class="fas fa-arrow-right-long ms-2"></i></a>
                   </li>
                 </ul>
               </nav>

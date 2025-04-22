@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Custom Field</h4>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -45,22 +40,11 @@
                 <div class="d-flex mb-3">
                   <label class="form-label me-3">Required</label>
                   <div class="form-check me-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="required"
-                      id="required1"
-                      checked
-                    />
+                    <input class="form-check-input" type="radio" name="required" id="required1" checked />
                     <label class="form-check-label" for="required1">Yes</label>
                   </div>
                   <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      name="required"
-                      type="radio"
-                      id="required2"
-                    />
+                    <input class="form-check-input" name="required" type="radio" id="required2" />
                     <label class="form-check-label" for="required2">No</label>
                   </div>
                 </div>
@@ -74,13 +58,8 @@
             </div>
             <div class="row g-3">
               <div class="col-6">
-                <a
-                  href="javascript:void(0);"
-                  class="btn btn-outline-primary w-100"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  >Cancel</a
-                >
+                <a href="javascript:void(0);" class="btn btn-outline-primary w-100" data-bs-dismiss="modal"
+                  aria-label="Close">Cancel</a>
               </div>
               <div class="col-6">
                 <button type="submit" class="btn btn-primary w-100">Save Changes</button>
@@ -99,12 +78,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Custom Field</h4>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -139,22 +113,11 @@
                 <div class="d-flex mb-3">
                   <label class="form-label me-3">Required</label>
                   <div class="form-check me-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="required"
-                      id="required3"
-                      checked
-                    />
+                    <input class="form-check-input" type="radio" name="required" id="required3" checked />
                     <label class="form-check-label" for="required3">Yes</label>
                   </div>
                   <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      name="required"
-                      type="radio"
-                      id="required4"
-                    />
+                    <input class="form-check-input" name="required" type="radio" id="required4" />
                     <label class="form-check-label" for="required4">No</label>
                   </div>
                 </div>
@@ -162,23 +125,14 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="EditCussta"
-                    id="editcussta"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="EditCussta" id="editcussta" placeholder="Active" />
                 </div>
               </div>
             </div>
             <div class="row g-3">
               <div class="col-6">
-                <a
-                  href="javascript:void(0);"
-                  class="btn btn-outline-primary w-100"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  >Cancel</a
-                >
+                <a href="javascript:void(0);" class="btn btn-outline-primary w-100" data-bs-dismiss="modal"
+                  aria-label="Close">Cancel</a>
               </div>
               <div class="col-6">
                 <button type="submit" class="btn btn-primary w-100">Save Changes</button>

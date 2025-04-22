@@ -20,16 +20,16 @@
             <div class="dropdown">
               <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>Export
+                <i class="ti ti-file-export me-1"></i>{{$t('dashboard.export')}}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                      class="ti ti-file-type-pdf me-1"></i>{{$t('dashboard.exportPDF')}}</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>Export as Excel
+                      class="ti ti-file-type-xls me-1"></i>{{$t('dashboard.exportEXCEL')}}
                   </a>
                 </li>
               </ul>
@@ -37,7 +37,7 @@
           </div>
           <div class="mb-2">
             <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_ticket"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add New Ticket</a>
+              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddNewTicket')}}</a>
           </div>
           <div class="head-icons ms-2">
             <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -61,7 +61,7 @@
                       <span class="avatar avatar-lg avatar-rounded bg-primary-transparent"><i
                           class="ti ti-ticket fs-20"></i></span>
                     </div>
-                    <p class="fw-medium fs-12 mb-1">New Tickets</p>
+                    <p class="fw-medium fs-12 mb-1">{{$t('NewTickets')}}</p>
                     <h4>120</h4>
                   </div>
                 </div>
@@ -92,7 +92,7 @@
                       <span class="avatar avatar-lg avatar-rounded bg-transparent-purple"><i
                           class="ti ti-folder-open fs-20"></i></span>
                     </div>
-                    <p class="fw-medium fs-12 mb-1">Open Tickets</p>
+                    <p class="fw-medium fs-12 mb-1">{{$t('OpenTickets')}}</p>
                     <h4>60</h4>
                   </div>
                 </div>
@@ -123,7 +123,7 @@
                       <span class="avatar avatar-lg avatar-rounded bg-success-transparent"><i
                           class="ti ti-checks fs-20"></i></span>
                     </div>
-                    <p class="fw-medium fs-12 mb-1">Solved Tickets</p>
+                    <p class="fw-medium fs-12 mb-1">{{$t('SolvedTickets')}}</p>
                     <h4>50</h4>
                   </div>
                 </div>
@@ -154,7 +154,7 @@
                       <span class="avatar avatar-lg avatar-rounded bg-info-transparent"><i
                           class="ti ti-progress-alert fs-20"></i></span>
                     </div>
-                    <p class="fw-medium fs-12 mb-1">Pending Tickets</p>
+                    <p class="fw-medium fs-12 mb-1">{{$t('PendingTickets')}}</p>
                     <h4>10</h4>
                   </div>
                 </div>
@@ -178,26 +178,26 @@
       <div class="card">
         <div class="card-body p-3">
           <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-            <h5>Ticket Grid</h5>
+            <h5>{{$t('TicketGrid')}}</h5>
             <div class="d-flex align-items-center flex-wrap row-gap-3">
               <div class="dropdown me-2">
                 <a href="javascript:void(0);"
                   class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
-                  Priority
+                  {{$t('Priority')}}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Priority</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Priority')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">High</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('high')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Low</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('low')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Medium</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('medium')}}</a>
                   </li>
                 </ul>
               </div>
@@ -205,17 +205,17 @@
                 <a href="javascript:void(0);"
                   class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
-                  Select Status
+                  {{$t('SelectStatus')}}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Open</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Open')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">On Hold</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('OnHold')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Reopened</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Reopened')}}</a>
                   </li>
                 </ul>
               </div>
@@ -223,23 +223,23 @@
                 <a href="javascript:void(0);"
                   class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
                   data-bs-toggle="dropdown">
-                  Sort By : Last 7 Days
+                  {{$t('SortBy:Last7Days')}}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-3">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('RecentlyAdded')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Descending')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('lastMonth')}}</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                    <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Last7Days')}}</a>
                   </li>
                 </ul>
               </div>
@@ -269,42 +269,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Laptop Issue</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('LaptopIssue')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 001</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">Hardware Issues</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('HardwareIssues')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-secondary d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Low
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('low')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -343,42 +343,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Payment Issue</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('PaymentIssue')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 002</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">Software Issues</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('SoftwareIssues')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -417,42 +417,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Bug Report</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('BugReport')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 003</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">IT Support</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('ITSupport')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -491,42 +491,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Access Denied</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('AccessDenied')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 004</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">IT Support</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('ITSupport')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -565,42 +565,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Display Glitch</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('DisplayGlitch')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 005</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">Hardware Issues</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('HardwareIssues')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -639,42 +639,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Security Alert</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('SecurityAlert')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 006</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">IT Support</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('ITSupport')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -713,42 +713,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Connectivity Issue</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('ConnectivityIssue')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 007</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">Connectivity</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('Connectivity')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -787,42 +787,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Update Error</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('UpdateError')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 008</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">IT Support</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('ITSupport')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -861,42 +861,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Login Failure</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('LoginFailure')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 009</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">IT Support</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('ITSupport')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -935,42 +935,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Server Timeout</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('ServerTimeout')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 010</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">Connectivity</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('Connectivity')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -1009,42 +1009,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Email Client Setup</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('EmailClientSetup')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 011</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">IT Support</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('ITSupport')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -1083,42 +1083,42 @@
                   <ul class="dropdown-menu dropdown-menu-end p-3">
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);"><i
-                          class="ti ti-edit me-1"></i>Edit</a>
+                          class="ti ti-edit me-1"></i>{{$t('Edit')}}</a>
                     </li>
                     <li>
                       <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal"
-                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>Delete</a>
+                        data-bs-target="#delete_modal"><i class="ti ti-trash me-1"></i>{{$t('Delete')}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="text-center mb-3">
                 <h6 class="mb-1">
-                  <router-link to="/tickets/tickets-details">Application Crashing</router-link>
+                  <router-link to="/tickets/tickets-details">{{$t('ApplicationCrashing')}}</router-link>
                 </h6>
                 <span class="badge bg-info-transparent fs-10 fw-medium">Tic - 012</span>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Category</span>
-                  <h6 class="fw-medium">Software Issues</h6>
+                  <span>{{$t('Category')}}</span>
+                  <h6 class="fw-medium">{{$t('SoftwareIssues')}}</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <span>Status</span>
+                  <span>{{$t('Status')}}</span>
                   <span class="badge bg-pink-transparent d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>Open
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('Open')}}
                   </span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <span>Priority</span>
+                  <span>{{$t('Priority')}}</span>
                   <span class="badge bg-outline-danger d-inline-flex align-items-center fs-10 fw-medium">
-                    <i class="ti ti-circle-filled fs-5 me-1"></i>High
+                    <i class="ti ti-circle-filled fs-5 me-1"></i>{{$t('high')}}
                   </span>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
                 <div>
-                  <p class="mb-1 fs-12">Assigned To</p>
+                  <p class="mb-1 fs-12">{{$t('AssignedTo')}}</p>
                   <div class="d-flex align-items-center">
                     <span class="avatar avatar-xs avatar-rounded me-2">
                       <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
@@ -1138,7 +1138,7 @@
         </div>
         <div class="col-md-12">
           <div class="text-center mb-4">
-            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>Load More</a>
+            <a href="javascript:void(0);" class="btn btn-primary"><i class="ti ti-loader-3 me-1"></i>{{$t('LoadMore')}}</a>
           </div>
         </div>
       </div>
@@ -1146,8 +1146,8 @@
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        {{$t('designed')}} &amp; {{$t('developedBy')}}
+        <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a>
       </p>
     </div>
   </div>

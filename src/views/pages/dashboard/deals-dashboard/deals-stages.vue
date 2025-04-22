@@ -3,33 +3,22 @@
     <div class="col-xl-4 d-flex">
       <div class="card flex-fill">
         <div class="card-header">
-          <div
-            class="d-flex align-items-center justify-content-between flex-wrap row-gap-2"
-          >
+          <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Deals by Stage</h5>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-white border btn-sm d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>This Week
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Month</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Week</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last Week</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
                 </li>
               </ul>
             </div>
@@ -39,19 +28,11 @@
           <div>
             <div class="d-flex align-items-center">
               <h3 class="me-2">98%</h3>
-              <span
-                class="badge badge-outline-success bg-success-transparent rounded-pill me-1"
-                >12%</span
-              >
+              <span class="badge badge-outline-success bg-success-transparent rounded-pill me-1">12%</span>
               <span>vs last years</span>
             </div>
             <div id="deals_stage">
-              <apexchart
-                type="bar"
-                height="280"
-                :options="dealsStage.stages"
-                :series="dealsStage.series"
-              >
+              <apexchart type="bar" height="280" :options="dealsStage.stages" :series="dealsStage.series">
               </apexchart>
             </div>
           </div>
@@ -61,33 +42,22 @@
     <div class="col-xl-4 d-flex">
       <div class="card flex-fill">
         <div class="card-header">
-          <div
-            class="d-flex align-items-center justify-content-between flex-wrap row-gap-2"
-          >
+          <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Deals By Companies</h5>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-white border btn-sm d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>This Week
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Month</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Week</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last Week</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
                 </li>
               </ul>
             </div>
@@ -98,15 +68,8 @@
             <div class="border border-dashed bg-transparent-light rounded p-2 mb-2">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar avatar-md rounded-circle bg-gray-100 flex-shrink-0 me-2"
-                  >
-                    <img
-                      src="@/assets/img/company/company-24.svg"
-                      class="w-auto h-auto"
-                      alt="Img"
-                    />
+                  <a href="javascript:void(0);" class="avatar avatar-md rounded-circle bg-gray-100 flex-shrink-0 me-2">
+                    <img src="@/assets/img/company/company-24.svg" class="w-auto h-auto" alt="Img" />
                   </a>
                   <div>
                     <h6 class="fw-medium mb-1">Pitch</h6>
@@ -121,15 +84,8 @@
             <div class="border border-dashed bg-transparent-light rounded p-2 mb-2">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar avatar-md rounded-circle bg-gray-100 flex-shrink-0 me-2"
-                  >
-                    <img
-                      src="@/assets/img/company/company-25.svg"
-                      class="w-auto h-auto"
-                      alt="Img"
-                    />
+                  <a href="javascript:void(0);" class="avatar avatar-md rounded-circle bg-gray-100 flex-shrink-0 me-2">
+                    <img src="@/assets/img/company/company-25.svg" class="w-auto h-auto" alt="Img" />
                   </a>
                   <div>
                     <h6 class="fw-medium mb-1">Initech</h6>
@@ -144,15 +100,8 @@
             <div class="border border-dashed bg-transparent-light rounded p-2 mb-2">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar avatar-md rounded-circle bg-gray-100 flex-shrink-0 me-2"
-                  >
-                    <img
-                      src="@/assets/img/company/company-26.svg"
-                      class="w-auto h-auto"
-                      alt="Img"
-                    />
+                  <a href="javascript:void(0);" class="avatar avatar-md rounded-circle bg-gray-100 flex-shrink-0 me-2">
+                    <img src="@/assets/img/company/company-26.svg" class="w-auto h-auto" alt="Img" />
                   </a>
                   <div>
                     <h6 class="fw-medium mb-1">Umbrella Corp</h6>
@@ -167,15 +116,8 @@
             <div class="border border-dashed bg-transparent-light rounded p-2 mb-2">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar avatar-md rounded-circle bg-gray-100 flex-shrink-0 me-2"
-                  >
-                    <img
-                      src="@/assets/img/company/company-27.svg"
-                      class="w-auto h-auto"
-                      alt="Img"
-                    />
+                  <a href="javascript:void(0);" class="avatar avatar-md rounded-circle bg-gray-100 flex-shrink-0 me-2">
+                    <img src="@/assets/img/company/company-27.svg" class="w-auto h-auto" alt="Img" />
                   </a>
                   <div>
                     <h6 class="fw-medium mb-1">Capital Partners</h6>
@@ -190,15 +132,8 @@
             <div class="border border-dashed bg-transparent-light rounded p-2">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar avatar-md rounded-circle bg-gray-100 flex-shrink-0 me-2"
-                  >
-                    <img
-                      src="@/assets/img/company/company-28.svg"
-                      class="w-auto h-auto"
-                      alt="Img"
-                    />
+                  <a href="javascript:void(0);" class="avatar avatar-md rounded-circle bg-gray-100 flex-shrink-0 me-2">
+                    <img src="@/assets/img/company/company-28.svg" class="w-auto h-auto" alt="Img" />
                   </a>
                   <div>
                     <h6 class="fw-medium mb-1">Massive Dynamic</h6>
@@ -217,33 +152,22 @@
     <div class="col-xl-4 d-flex">
       <div class="card flex-fill">
         <div class="card-header">
-          <div
-            class="d-flex align-items-center justify-content-between flex-wrap row-gap-2"
-          >
+          <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Top Deals</h5>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-white border btn-sm d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>This Week
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Month</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Week</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Week</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >Last Week</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Week</a>
                 </li>
               </ul>
             </div>
@@ -251,12 +175,7 @@
         </div>
         <div class="card-body">
           <div class="text-center">
-            <apexchart
-              type="radar"
-              height="200"
-              :options="topDeals.dealsCharts"
-              :series="topDeals.series"
-            >
+            <apexchart type="radar" height="200" :options="topDeals.dealsCharts" :series="topDeals.series">
             </apexchart>
           </div>
           <div>

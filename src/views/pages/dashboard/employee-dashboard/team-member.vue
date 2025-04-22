@@ -14,11 +14,7 @@
           <div class="d-flex align-items-center justify-content-between mb-4">
             <div class="d-flex align-items-center">
               <a href="javascript:void(0);" class="avatar flex-shrink-0">
-                <img
-                  src="@/assets/img/users/user-27.jpg"
-                  class="rounded-circle border border-2"
-                  alt="img"
-                />
+                <img src="@/assets/img/users/user-27.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -28,25 +24,18 @@
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-phone fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-mail-bolt fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"
-                ><i class="ti ti-brand-hipchat fs-16"></i
-              ></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-phone fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-mail-bolt fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i
+                  class="ti ti-brand-hipchat fs-16"></i></a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between mb-4">
             <div class="d-flex align-items-center">
               <a href="javascript:void(0);" class="avatar flex-shrink-0">
-                <img
-                  src="@/assets/img/users/user-42.jpg"
-                  class="rounded-circle border border-2"
-                  alt="img"
-                />
+                <img src="@/assets/img/users/user-42.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -56,25 +45,18 @@
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-phone fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-mail-bolt fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"
-                ><i class="ti ti-brand-hipchat fs-16"></i
-              ></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-phone fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-mail-bolt fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i
+                  class="ti ti-brand-hipchat fs-16"></i></a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between mb-4">
             <div class="d-flex align-items-center">
               <a href="javascript:void(0);" class="avatar flex-shrink-0">
-                <img
-                  src="@/assets/img/users/user-43.jpg"
-                  class="rounded-circle border border-2"
-                  alt="img"
-                />
+                <img src="@/assets/img/users/user-43.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -84,25 +66,18 @@
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-phone fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-mail-bolt fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"
-                ><i class="ti ti-brand-hipchat fs-16"></i
-              ></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-phone fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-mail-bolt fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i
+                  class="ti ti-brand-hipchat fs-16"></i></a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between mb-4">
             <div class="d-flex align-items-center">
               <a href="javascript:void(0);" class="avatar flex-shrink-0">
-                <img
-                  src="@/assets/img/users/user-11.jpg"
-                  class="rounded-circle border border-2"
-                  alt="img"
-                />
+                <img src="@/assets/img/users/user-11.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -112,25 +87,18 @@
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-phone fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-mail-bolt fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"
-                ><i class="ti ti-brand-hipchat fs-16"></i
-              ></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-phone fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-mail-bolt fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i
+                  class="ti ti-brand-hipchat fs-16"></i></a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between mb-4">
             <div class="d-flex align-items-center">
               <a href="javascript:void(0);" class="avatar flex-shrink-0">
-                <img
-                  src="@/assets/img/users/user-44.jpg"
-                  class="rounded-circle border border-2"
-                  alt="img"
-                />
+                <img src="@/assets/img/users/user-44.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -140,25 +108,18 @@
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-phone fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-mail-bolt fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"
-                ><i class="ti ti-brand-hipchat fs-16"></i
-              ></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-phone fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-mail-bolt fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i
+                  class="ti ti-brand-hipchat fs-16"></i></a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
               <a href="javascript:void(0);" class="avatar flex-shrink-0">
-                <img
-                  src="@/assets/img/users/user-54.jpg"
-                  class="rounded-circle border border-2"
-                  alt="img"
-                />
+                <img src="@/assets/img/users/user-54.jpg" class="rounded-circle border border-2" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -168,15 +129,12 @@
               </div>
             </div>
             <div class="d-flex align-items-center">
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-phone fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"
-                ><i class="ti ti-mail-bolt fs-16"></i
-              ></a>
-              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"
-                ><i class="ti ti-brand-hipchat fs-16"></i
-              ></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-phone fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm me-2"><i
+                  class="ti ti-mail-bolt fs-16"></i></a>
+              <a href="javascript:void(0);" class="btn btn-light btn-icon btn-sm"><i
+                  class="ti ti-brand-hipchat fs-16"></i></a>
             </div>
           </div>
         </div>
@@ -195,11 +153,7 @@
         <div class="card-body">
           <div class="d-flex align-items-start mb-4">
             <a href="javascript:void(0);" class="avatar flex-shrink-0">
-              <img
-                src="@/assets/img/users/user-27.jpg"
-                class="rounded-circle border border-2"
-                alt="img"
-              />
+              <img src="@/assets/img/users/user-27.jpg" class="rounded-circle border border-2" alt="img" />
             </a>
             <div class="ms-2">
               <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -207,23 +161,15 @@
               </h6>
               <p class="fs-13 mb-2">Today at 9:42 AM</p>
               <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="avatar avatar-sm border flex-shrink-0 me-2"
-                  ><img
-                    src="@/assets/img/social/pdf-icon.svg"
-                    class="w-auto h-auto"
-                    alt="Img"
-                /></a>
+                <a href="javascript:void(0);" class="avatar avatar-sm border flex-shrink-0 me-2"><img
+                    src="@/assets/img/social/pdf-icon.svg" class="w-auto h-auto" alt="Img" /></a>
                 <h6 class="fw-normal"><a href="javascript:void(0);">EY_review.pdf</a></h6>
               </div>
             </div>
           </div>
           <div class="d-flex align-items-start mb-4">
             <a href="javascript:void(0);" class="avatar flex-shrink-0">
-              <img
-                src="@/assets/img/users/user-28.jpg"
-                class="rounded-circle border border-2"
-                alt="img"
-              />
+              <img src="@/assets/img/users/user-28.jpg" class="rounded-circle border border-2" alt="img" />
             </a>
             <div class="ms-2">
               <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -234,11 +180,7 @@
           </div>
           <div class="d-flex align-items-start mb-4">
             <a href="javascript:void(0);" class="avatar flex-shrink-0">
-              <img
-                src="@/assets/img/users/user-29.jpg"
-                class="rounded-circle border border-2"
-                alt="img"
-              />
+              <img src="@/assets/img/users/user-29.jpg" class="rounded-circle border border-2" alt="img" />
             </a>
             <div class="ms-2">
               <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -253,11 +195,7 @@
           </div>
           <div class="d-flex align-items-start mb-4">
             <a href="javascript:void(0);" class="avatar flex-shrink-0">
-              <img
-                src="@/assets/img/users/user-30.jpg"
-                class="rounded-circle border border-2"
-                alt="img"
-              />
+              <img src="@/assets/img/users/user-30.jpg" class="rounded-circle border border-2" alt="img" />
             </a>
             <div class="ms-2">
               <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -268,11 +206,7 @@
           </div>
           <div class="d-flex align-items-start">
             <a href="javascript:void(0);" class="avatar flex-shrink-0">
-              <img
-                src="@/assets/img/users/user-33.jpg"
-                class="rounded-circle border border-2"
-                alt="img"
-              />
+              <img src="@/assets/img/users/user-33.jpg" class="rounded-circle border border-2" alt="img" />
             </a>
             <div class="ms-2">
               <h6 class="fs-14 fw-medium text-truncate mb-1">
@@ -287,16 +221,11 @@
     <div class="col-xl-4 d-flex">
       <div class="card flex-fill">
         <div class="card-header">
-          <div
-            class="d-flex align-items-center justify-content-between flex-wrap row-gap-2"
-          >
+          <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
             <h5>Meetings Schedule</h5>
             <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="btn btn-white border btn-sm d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-              >
+              <a href="javascript:void(0);" class="btn btn-white border btn-sm d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
                 <i class="ti ti-calendar me-1"></i>Today
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
@@ -304,14 +233,10 @@
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">Today</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Month</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Month</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                    >This Year</a
-                  >
+                  <a href="javascript:void(0);" class="dropdown-item rounded-1">This Year</a>
                 </li>
               </ul>
             </div>

@@ -96,7 +96,8 @@
                     src="@/assets/img/users/user-38.jpg" class="avatar avatar-xs me-2 flex-shrink-0"
                     alt="Profile" />Gertrude Bowie</a>
                 <a href="javascript:void(0);" class="border-start text-gray fs-14 fw-normal ps-2"><i
-                    class="ti ti-calendar"></i> 05 Oct 2024
+                    class="ti ti-calendar"></i> 05 Oct
+                  2024
                 </a>
               </div>
               <div class="col-xl-12 border-bottom mb-3 pb-4">

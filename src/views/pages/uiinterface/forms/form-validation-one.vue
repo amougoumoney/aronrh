@@ -5,7 +5,7 @@
         <form ref="form" novalidate>
           <div class="form-row row">
             <div class="col-md-4 mb-3">
-              <label class="form-label" for="validationCustom01">First name</label>
+              <label class="form-label" for="validationCustom01">{{ $t('FirstName') }}</label>
               <input
                 type="text"
                 class="form-control"
@@ -14,10 +14,10 @@
                 v-model="firstName"
                 required
               />
-              <div class="valid-feedback">Looks good!</div>
+              <div class="valid-feedback">{{ $t('Looksgood!') }}</div>
             </div>
             <div class="col-md-4 mb-3">
-              <label class="form-label" for="validationCustom02">Last name</label>
+              <label class="form-label" for="validationCustom02">{{ $t('LastName') }}</label>
               <input
                 type="text"
                 class="form-control"
@@ -26,10 +26,10 @@
                 v-model="lastName"
                 required
               />
-              <div class="valid-feedback">Looks good!</div>
+              <div class="valid-feedback">{{ $t('Looksgood!') }}</div>
             </div>
             <div class="col-md-4 mb-3">
-              <label class="form-label" for="validationCustomUsername">Username</label>
+              <label class="form-label" for="validationCustomUsername">{{ $t('Username') }}</label>
               <div class="input-group">
                 <span class="input-group-text" id="inputGroupPrepend">@</span>
                 <input
@@ -41,13 +41,13 @@
                   v-model="username"
                   required
                 />
-                <div class="invalid-feedback">Please choose a username.</div>
+                <div class="invalid-feedback">{{ $t('Pleasechooseausername.') }}</div>
               </div>
             </div>
           </div>
           <div class="form-row row">
             <div class="col-md-6 mb-3">
-              <label class="form-label" for="validationCustom03">City</label>
+              <label class="form-label" for="validationCustom03">{{ $t('City') }}</label>
               <input
                 type="text"
                 class="form-control"
@@ -56,10 +56,10 @@
                 v-model="city"
                 required
               />
-              <div class="invalid-feedback">Please provide a valid city.</div>
+              <div class="invalid-feedback">{{ $t('Pleaseprovideavalidcity') }}.</div>
             </div>
             <div class="col-md-3 mb-3">
-              <label class="form-label" for="validationCustom04">State</label>
+              <label class="form-label" for="validationCustom04">{{ $t('State') }}</label>
               <input
                 type="text"
                 class="form-control"
@@ -68,10 +68,10 @@
                 v-model="state"
                 required
               />
-              <div class="invalid-feedback">Please provide a valid state.</div>
+              <div class="invalid-feedback">{{ $t('Pleaseprovideavalidstate') }}.</div>
             </div>
             <div class="col-md-3 mb-3">
-              <label class="form-label" for="validationCustom05">Zip</label>
+              <label class="form-label" for="validationCustom05">{{ $t('Zip') }}</label>
               <input
                 type="text"
                 class="form-control"
@@ -80,7 +80,7 @@
                 v-model="zip"
                 required
               />
-              <div class="invalid-feedback">Please provide a valid zip.</div>
+              <div class="invalid-feedback">{{ $t('Pleaseprovideavalidzip') }}.</div>
             </div>
           </div>
           <div class="mb-3">
@@ -93,13 +93,13 @@
                 required
               />
               <label class="form-check-label" for="invalidCheck"
-                >Agree to terms and conditions</label
+                >{{ $t('Agreetotermsandconditions') }}</label
               >
-              <div class="invalid-feedback">You must agree before submitting.</div>
+              <div class="invalid-feedback">{{ $t('Youmustagreebeforesubmitting') }}.</div>
             </div>
           </div>
           <button type="submit" class="btn btn-primary" @click.prevent="validateForm">
-            Submit Form
+            {{ $t('SubmitForm') }}
           </button>
         </form>
       </div>

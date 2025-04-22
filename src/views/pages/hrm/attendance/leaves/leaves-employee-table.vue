@@ -183,9 +183,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -200,26 +200,15 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Leave_Type'">
         <div class="d-flex align-items-center">
           <p class="fs-14 fw-medium d-flex align-items-center mb-0">
             {{ record.Leave_Type }}
           </p>
-          <a
-            href="javascript:void(0);"
-            class="ms-2"
-            data-bs-toggle="tooltip"
-            data-bs-placement="right"
-            data-bs-title="I am currently experiencing a fever and
-                    feeling unwell."
-          >
+          <a href="javascript:void(0);" class="ms-2" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="I am currently experiencing a fever and
+                    feeling unwell.">
             <i class="ti ti-info-circle text-info"></i>
           </a>
         </div>
@@ -227,11 +216,7 @@ export default {
       <template v-if="column.key === 'Approved_By'">
         <div class="d-flex align-items-center file-name-icon">
           <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
-            <img
-              :src="require(`@/assets/img/users/${record.Image}`)"
-              class="img-fluid"
-              alt="img"
-            />
+            <img :src="require(`@/assets/img/users/${record.Image}`)" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
@@ -243,84 +228,53 @@ export default {
       </template>
       <template v-if="column.key === 'Status'">
         <div class="dropdown">
-          <a
-            href="javascript:void(0);"
-            class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
-            data-bs-toggle="dropdown"
-          >
-            <span
-              class="rounded-circle d-flex justify-content-center align-items-center me-2"
-              :class="[
-                record.Status === 'Approved'
-                  ? 'bg-transparent-success'
-                  : record.Status === 'Declined'
+          <a href="javascript:void(0);" class="dropdown-toggle btn btn-sm btn-white d-inline-flex align-items-center"
+            data-bs-toggle="dropdown">
+            <span class="rounded-circle d-flex justify-content-center align-items-center me-2" :class="[
+              record.Status === 'Approved'
+                ? 'bg-transparent-success'
+                : record.Status === 'Declined'
                   ? 'bg-transparent-danger'
                   : 'bg-transparent-purple',
-              ]"
-            >
-              <i
-                class="ti ti-point-filled"
-                :class="[
-                  record.Status === 'Approved'
-                    ? 'text-success'
-                    : record.Status === 'Declined'
+            ]">
+              <i class="ti ti-point-filled" :class="[
+                record.Status === 'Approved'
+                  ? 'text-success'
+                  : record.Status === 'Declined'
                     ? 'text-danger'
                     : 'text-purple',
-                ]"
-              >
-              </i
-            ></span>
+              ]">
+              </i></span>
             {{ record.Status }}
           </a>
           <ul class="dropdown-menu dropdown-menu-end p-3">
             <li>
-              <a
-                href="javascript:void(0);"
-                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"
-                ><span
-                  class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"
-                  ><i class="ti ti-point-filled text-success"></i></span
-                >Approved</a
-              >
+              <a href="javascript:void(0);"
+                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+                  class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"><i
+                    class="ti ti-point-filled text-success"></i></span>Approved</a>
             </li>
             <li>
-              <a
-                href="javascript:void(0);"
-                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"
-                ><span
-                  class="rounded-circle bg-transparent-danger d-flex justify-content-center align-items-center me-2"
-                  ><i class="ti ti-point-filled text-danger"></i></span
-                >Declined</a
-              >
+              <a href="javascript:void(0);"
+                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+                  class="rounded-circle bg-transparent-danger d-flex justify-content-center align-items-center me-2"><i
+                    class="ti ti-point-filled text-danger"></i></span>Declined</a>
             </li>
             <li>
-              <a
-                href="javascript:void(0);"
-                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"
-                ><span
-                  class="rounded-circle bg-transparent-purple d-flex justify-content-center align-items-center me-2"
-                  ><i class="ti ti-point-filled text-purple"></i></span
-                >New</a
-              >
+              <a href="javascript:void(0);"
+                class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
+                  class="rounded-circle bg-transparent-purple d-flex justify-content-center align-items-center me-2"><i
+                    class="ti ti-point-filled text-purple"></i></span>New</a>
             </li>
           </ul>
         </div>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#edit_leaves"
-            ><i class="ti ti-edit"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-            ><i class="ti ti-trash"></i
-          ></a>
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#edit_leaves"><i
+              class="ti ti-edit"></i></a>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+              class="ti ti-trash"></i></a>
         </div>
       </template>
     </template>

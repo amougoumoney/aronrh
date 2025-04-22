@@ -1,6 +1,4 @@
 <template>
-  <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar>
   <!-- Page Wrapper -->
   <div class="page-wrapper">
     <div class="content">
@@ -10,34 +8,31 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>Export
+              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                data-bs-toggle="dropdown">
+                <i class="ti ti-file-export me-1"></i>{{ $t('dashboard.export') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">
-                    <i class="ti ti-file-type-pdf me-1"></i>Export as PDF
+                    <i class="ti ti-file-type-pdf me-1"></i>{{ $t('dashboard.exportPDF') }}
                   </a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">
-                    <i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                    <i class="ti ti-file-type-xls me-1"></i>{{ $t('dashboard.exportEXCEL') }}
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-        <div class="mb-2">
+          <div class="mb-2">
             <!-- Use data attributes for the modal -->
-            <a
-              href="javascript:void(0);"
-              data-bs-toggle="modal"
-              data-bs-target="#add_interview"
-              class="btn btn-primary d-flex align-items-center"
-            >
-              <i class="ti ti-circle-plus me-2"></i>Add Interview
+            <a href="javascript:void(0);" data-bs-toggle="modal" @click="openInterviewModal(false)"
+              class="btn btn-primary d-flex align-items-center">
+              <i class="ti ti-circle-plus me-2"></i>{{ $t('AddInterview') }}
             </a>
-        </div>
+          </div>
         </div>
       </div>
       <!-- /Breadcrumb -->
@@ -51,15 +46,15 @@
                 <table class="table table-striped custom-table mb-0 datatable">
                   <thead>
                     <tr>
-                      <th>ID</th>
-                      <th>Job Position</th>
-                      <th>Interview Date</th>
-                      <th>Time</th>
-                      <th>Interviewer</th>
-                      <th>Mode</th>
-                      <th>Status</th>
-                      <th>Score</th>
-                      <th class="text-end">Actions</th>
+                      <th>{{ $t('id') }}</th>
+                      <th>{{ $t('JobPosition') }}</th>
+                      <th>{{ $t('InterviewDate') }}</th>
+                      <th>{{ $t('Time') }}</th>
+                      <th>{{ $t('Interviewer') }}</th>
+                      <th>{{ $t('Mode') }}</th>
+                      <th>{{ $t('Status') }}</th>
+                      <th>{{ $t('Score') }}</th>
+                      <th class="text-end">{{ $t('Actions') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -70,7 +65,7 @@
                       <td>{{ interview.interviewTime }}</td>
                       <td>{{ interview.candidateName }}</td>
                       <td>{{ interview.interviewType }}</td>
-                      <td>
+                      <td>  
                         <span :class="'badge ' + getStatusClass(interview.status)">
                           {{ interview.status }}
                         </span>
@@ -78,21 +73,25 @@
                       <td>{{ interview.score || 'N/A' }}</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
-                          <a href="javascript:void(0);" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a href="javascript:void(0);" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <i class="ti ti-dots-vertical"></i>
                           </a>
                           <div class="dropdown-menu dropdown-menu-end">
-                            <a href="javascript:void(0);" class="dropdown-item" @click="viewInterviewDetails(interview.id)">
-                              <i class="ti ti-eye me-2"></i>View Details
+                            <a href="javascript:void(0);" class="dropdown-item"
+                              @click="viewInterviewDetails(interview.id)">
+                              <i class="ti ti-eye me-2"></i>{{ $t('viewDetails') }}
                             </a>
-                            <a href="javascript:void(0);" class="dropdown-item" @click="editInterviewDetails(interview.id)">
-                              <i class="ti ti-pencil me-2"></i>Edit
+                            <a href="javascript:void(0);" class="dropdown-item"
+                              @click="openInterviewModal(true, interview)">
+                              <i class="ti ti-pencil me-2"></i>{{ $t('Edit') }}
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item" @click="addFeedback(interview.id)">
-                              <i class="ti ti-message me-2"></i>Add Feedback
+                              <i class="ti ti-message me-2"></i>{{ $t('AddFeedback') }}
                             </a>
-                            <a href="javascript:void(0);" class="dropdown-item" @click="deleteInterviewRecord(interview.id)">
-                              <i class="ti ti-trash me-2"></i>Delete
+                            <a href="javascript:void(0);" class="dropdown-item"
+                              @click="confirmDelete(interview.id)">
+                              <i class="ti ti-trash me-2"></i>{{ $t('Delete') }}
                             </a>
                           </div>
                         </div>
@@ -110,94 +109,158 @@
   </div>
 
   <!-- Interview Modal -->
-  <interview-modal ref="interviewModal" @interview-added="onInterviewAdded"/>
+  <interview-modal ref="interviewModals" @saved="handleinterviewSaved"  />
+
+  <!-- Delete Confirmation Modal -->
+  <div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-body text-center p-4">
+          <i class="ti ti-alert-circle fs-48 text-danger mb-3"></i>
+          <h5>{{ $t('ConfirmDelete') }}</h5>
+          <p class="mb-4">{{ $t('DeleteInterviewWarning') }}</p>
+          <div class="d-flex justify-content-center itemss-center">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">{{ $t('Cancel') }}</button>
+            <button @click="deleteInterviewRecord" type="button" class="btn btn-danger">{{ $t('Delete') }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
-<script>
-import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
-import { interviewService } from '@/services/interview.service';
+<script setup>
+import { ref, computed, onMounted } from "vue";
+import router from "../../../../router";
+import indexBreadcrumb from "@/components/breadcrumb/index-breadcrumb.vue";
+import InterviewService from "@/services/interview.service";
+import interviewModal from "../../../../components/modal/interview-modal.vue";
+import { useNotifications } from '@/composables/useNotifications'
+import { Modal } from "bootstrap";
 
-export default {
-  name: 'InterviewsList',
-  components: {
-    indexBreadcrumb,
-   
-  },
-  data() {
-    return {
-      title: 'Interviews',
-      text: 'Recruitment',
-      text1: 'Interviews List',
-      interviews: [],
-      currentPage: 1,
-      pageSize: 10,
-      totalInterviews: 0,
-      searchTerm: ''
-    };
-  },
-  methods: {
-    async fetchInterviews() {
-      try {
-        const response = await interviewService.getAllInterviews();
-        this.interviews = response.data.map(interview => ({
-          id: interview.id,
-          candidateName: interview.candidateName,
-          position: interview.job_position,
-          interviewDate: interview.interview_date,
-          interviewTime: interview.start_time,
-          interviewType: interview.interview_mode,
-          status: interview.interview_status,
-          feedback: interview.feedback,
-          score: interview.score
-        }));
-      } catch (error) {
-        console.error('Error fetching interviews:', error);
-      }
-    },
-    
-    onInterviewAdded(interview) {
-      this.interviews.push({
-        id: this.interviews.length + 1,
-        ...interview
-      });
-    },
-    
-    getStatusClass(status) {
-      const statusClasses = {
-        'Scheduled': 'bg-warning-light',
-        'Completed': 'bg-success-light',
-        'Cancelled': 'bg-danger-light',
-        'In Progress': 'bg-info-light'
-      };
-      return statusClasses[status] || 'bg-secondary-light';
-    },
-    formatDate(date) {
-      if (!date) return '';
-      return new Date(date).toLocaleDateString();
-    },
-    viewInterviewDetails(interviewId) {
-      this.$router.push(`/interviews/details/${interviewId}`);
-    },
-    editInterviewDetails(interviewId) {
-      this.$router.push(`/interviews/edit/${interviewId}`);
-    },
-    addFeedback(interviewId) {
-      this.$router.push(`/interviews/feedback/${interviewId}`);
-    },
-    async deleteInterviewRecord(interviewId) {
-      if (confirm('Are you sure you want to delete this interview record?')) {
-        try {
-          await interviewService.deleteInterview(interviewId);
-          this.interviews = this.interviews.filter(interview => interview.id !== interviewId);
-        } catch (error) {
-          console.error('Error deleting interview:', error);
-        }
-      }
-    },
-  },
-  
-  mounted() {
-    this.fetchInterviews();
+const title = ref("Interviews");
+const text = ref("Recruitment");
+const text1 = ref("Interviews List");
+
+const interviews = ref([]);
+const interviewModals = ref(null);
+const currentPage = ref(1);
+const pageSize = ref(10);
+const totalInterviews = ref(0);
+const searchTerm = ref("");
+const InterviewDelete = ref(null);
+
+const { showNotification } = useNotifications()
+
+const openInterviewModal = (isEdit, interviewData = null) => {
+  interviewModals.value.show(isEdit, interviewData);
+};
+
+const confirmDelete = (empId) => {
+  InterviewDelete.value = empId;
+  const modal = new Modal(document.getElementById('deleteConfirmModal'));
+  modal.show();
+};
+
+const fetchInterviews = async () => {
+  try {
+    const response = await InterviewService.getAllInterviews();
+    console.log("Interviews fetched successfully:", response.data);
+    interviews.value = response.data.map((interview) => ({
+      id: interview.id,
+      candidateName: interview.candidateName,
+      position: interview.jobPosition,
+      interviewDate: interview.interviewDate,
+      interviewTime: interview.startTime,
+      interviewType: interview.interviewMode,
+      status: interview.interviewStatus,
+      feedback: interview.feedback,
+      score: interview.score,
+    }));
+  } catch (error) {
+    console.error("Error fetching interviews:", error);
   }
 };
+
+const onInterviewAdded = (interview) => {
+  interviews.value.push({
+    id: interviews.value.length + 1,
+    ...interview,
+  });
+};
+
+const getStatusClass = (status) => {
+  const statusClasses = {
+    scheduled: "bg-warning-light",
+    completed: "bg-success-light",
+    Cancelled: "bg-danger-light",
+    "In Progress": "bg-info-light",
+  };
+  return statusClasses[status] || "bg-secondary-light";
+};
+
+const formatDate = (date) => {
+  if (!date) return "";
+  return new Date(date).toLocaleDateString();
+};
+
+const viewInterviewDetails = (interviewId) => {
+  router.push(`/interviews/details/${interviewId}`);
+};
+
+const editInterviewDetails = (interviewId) => {
+  router.push(`/interviews/edit/${interviewId}`);
+};
+
+const addFeedback = (interviewId) => {
+  router.push(`/interviews/feedback/${interviewId}`);
+};
+
+const deleteInterviewRecord = async () => {
+  try {
+    if (!InterviewDelete.value) return;
+    
+    await InterviewService.deleteInterview(InterviewDelete.value);
+    
+    interviews.value = interviews.value.filter(e => e.id !== InterviewDelete.value);
+    
+    showNotification({
+      type: 'success',
+      title: 'Success',
+      message: 'Employee deleted successfully',
+      timeout: 5000
+    });
+    
+    const modal = Modal.getInstance(document.getElementById('deleteConfirmModal'));
+    modal.hide();
+  } catch (error) {
+    console.error('Error deleting employee:', error);
+    showNotification({
+      type: 'error',
+      title: 'Error',
+      message: 'Failed to delete employee',
+      timeout: 5000
+    });
+  }
+};
+const handleinterviewSaved = ({ action, interview }) => {
+  if (action === 'update') {
+    const index = interviews.value.findIndex(e => e.id === interview.id);
+    if (index !== -1) {
+      interviews.value[index] = interview;
+    }
+  } else {
+    interviews.value.unshift(interview);
+  }
+  
+  showNotification({
+    type: 'success',
+    title: 'Success',
+    message: `Employee ${action === 'update' ? 'updated' : 'created'} successfully`,
+    timeout: 5000
+  });
+};
+
+
+onMounted(fetchInterviews);
 </script>

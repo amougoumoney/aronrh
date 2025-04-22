@@ -20,7 +20,8 @@
               <i class="ti ti-circle-plus me-2"></i>Add Deal
             </a>
             <a href="javascript:void(0);" class="btn btn-dark d-inline-flex align-items-center"><i
-                class="ti ti-mail me-2"></i>Send Email</a>
+                class="ti ti-mail me-2"></i>Send
+              Email</a>
             <div class="head-icons ms-2 mb-0">
               <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
                 data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">

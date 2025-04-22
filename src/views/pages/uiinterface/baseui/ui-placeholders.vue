@@ -49,11 +49,8 @@
                         <span class="placeholder col-6"></span>
                         <span class="placeholder col-8"></span>
                       </p>
-                      <a
-                        href="javascript:void(0);"
-                        tabindex="-1"
-                        class="btn btn-primary disabled placeholder col-6"
-                      ></a>
+                      <a href="javascript:void(0);" tabindex="-1"
+                        class="btn btn-primary disabled placeholder col-6"></a>
                     </div>
                   </div>
                 </div>
@@ -126,11 +123,7 @@
               <p aria-hidden="true">
                 <span class="placeholder col-6"></span>
               </p>
-              <a
-                href="javascript:void(0);"
-                class="btn btn-primary disabled placeholder col-4"
-                aria-hidden="true"
-              ></a>
+              <a href="javascript:void(0);" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
             </div>
           </div>
           <div class="card">

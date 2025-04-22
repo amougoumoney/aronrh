@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Company</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -18,76 +13,40 @@
           <div class="contact-grids-tab">
             <ul class="nav nav-underline" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="info-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#basic-info"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
+                <button class="nav-link active" id="info-tab" data-bs-toggle="tab" data-bs-target="#basic-info"
+                  type="button" role="tab" aria-selected="true">
                   Basic Information
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="address-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#address"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                >
+                <button class="nav-link" id="address-tab" data-bs-toggle="tab" data-bs-target="#address" type="button"
+                  role="tab" aria-selected="false">
                   Address
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="social-profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#social-profile"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                >
+                <button class="nav-link" id="social-profile-tab" data-bs-toggle="tab" data-bs-target="#social-profile"
+                  type="button" role="tab" aria-selected="false">
                   Social Profiles
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="access-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#access"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                >
+                <button class="nav-link" id="access-tab" data-bs-toggle="tab" data-bs-target="#access" type="button"
+                  role="tab" aria-selected="false">
                   Access
                 </button>
               </li>
             </ul>
           </div>
           <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="basic-info"
-              role="tabpanel"
-              aria-labelledby="info-tab"
-              tabindex="0"
-            >
+            <div class="tab-pane fade show active" id="basic-info" role="tabpanel" aria-labelledby="info-tab"
+              tabindex="0">
               <div class="modal-body pb-0">
                 <div class="row">
                   <div class="col-md-12">
-                    <div
-                      class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                    >
+                    <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                       <div
-                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                      >
+                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
                         <i class="ti ti-photo text-gray-2 fs-16"></i>
                       </div>
                       <div class="profile-upload">
@@ -98,29 +57,17 @@
                         <div class="profile-uploader d-flex align-items-center">
                           <div class="drag-upload-btn btn btn-sm btn-primary me-2">
                             Upload
-                            <input
-                              type="file"
-                              class="form-control image-sign"
-                              multiple=""
-                            />
+                            <input type="file" class="form-control image-sign" multiple="" />
                           </div>
-                          <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                            >Cancel</a
-                          >
+                          <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Company Name <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="InnvoationSele"
-                        id="innovationsele"
-                        placeholder="Select"
-                      />
+                      <label class="form-label">Company Name <span class="text-danger">*</span></label>
+                      <vue-select :options="InnvoationSele" id="innovationsele" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -131,9 +78,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Phone Number <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Phone Number <span class="text-danger">*</span></label>
                       <input type="text" class="form-control" />
                     </div>
                   </div>
@@ -157,128 +102,73 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Reviews <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Reviews <span class="text-danger">*</span></label>
                       <input type="text" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Owner <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Owner <span class="text-danger">*</span></label>
                       <vue-select :options="Hendry" id="hendry" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Tags <span class="text-danger">*</span>
+                      <label class="form-label">Tags <span class="text-danger">*</span>
                       </label>
-                      <vue3-tags-input
-                        class="input-tags form-control"
-                        placeholder="Add new"
-                        type="text"
-                        data-role="tagsinput"
-                        name="Label"
-                        value="Tag1"
-                        :tags="tags"
-                      />
+                      <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                        data-role="tagsinput" name="Label" value="Tag1" :tags="tags" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
                       <div class="d-flex justify-content-between align-items-center mb-2">
-                        <label class="col-form-label p-0"
-                          >Deals <span class="text-danger">*</span></label
-                        >
-                        <a
-                          href="javascript:void(0);"
-                          class="add-new text-primary"
-                          data-bs-target="#add_deals"
-                          data-bs-toggle="modal"
-                          ><i class="ti ti-plus text-primary me-1"></i>Add New</a
-                        >
+                        <label class="col-form-label p-0">Deals <span class="text-danger">*</span></label>
+                        <a href="javascript:void(0);" class="add-new text-primary" data-bs-target="#add_deals"
+                          data-bs-toggle="modal"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
                       </div>
-                      <vue-select
-                        :options="CollinsKon"
-                        id="collinskon"
-                        placeholder="Select"
-                      />
+                      <vue-select :options="CollinsKon" id="collinskon" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Industry <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="BarryCuda"
-                        id="barrycuda"
-                        placeholder="Select"
-                      />
+                      <label class="form-label">Industry <span class="text-danger">*</span></label>
+                      <vue-select :options="BarryCuda" id="barrycuda" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Source <span class="text-danger">*</span>
+                      <label class="form-label">Source <span class="text-danger">*</span>
                       </label>
-                      <vue-select
-                        :options="PhoneCalls"
-                        id="phonecalls"
-                        placeholder="Select"
-                      />
+                      <vue-select :options="PhoneCalls" id="phonecalls" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Currency <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="DolarSel"
-                        id="dolarsel"
-                        placeholder="Select"
-                      />
+                      <label class="form-label">Currency <span class="text-danger">*</span></label>
+                      <vue-select :options="DolarSel" id="dolarsel" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Language <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Language <span class="text-danger">*</span></label>
                       <vue-select :options="Chinese" id="chinses" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >About <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">About <span class="text-danger">*</span></label>
                       <textarea class="form-control"></textarea>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
                       <div class="d-flex justify-content-between align-items-center mb-2">
-                        <label class="col-form-label p-0"
-                          >Contact <span class="text-danger">*</span></label
-                        >
-                        <a
-                          href="javascript:void(0);"
-                          class="add-new text-primary"
-                          data-bs-target="#add_deals"
-                          data-bs-toggle="modal"
-                          ><i class="ti ti-plus text-primary me-1"></i>Add New</a
-                        >
+                        <label class="col-form-label p-0">Contact <span class="text-danger">*</span></label>
+                        <a href="javascript:void(0);" class="add-new text-primary" data-bs-target="#add_deals"
+                          data-bs-toggle="modal"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
                       </div>
-                      <vue-select
-                        :options="SharonyR"
-                        id="sharonyr"
-                        placeholder="Darlee Robertson"
-                      />
+                      <vue-select :options="SharonyR" id="sharonyr" placeholder="Darlee Robertson" />
                     </div>
                   </div>
                 </div>
@@ -290,60 +180,36 @@
                 <button type="submit" class="btn btn-primary">Save</button>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="address"
-              role="tabpanel"
-              aria-labelledby="address-tab"
-              tabindex="0"
-            >
+            <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab" tabindex="0">
               <div class="modal-body pb-0">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Address <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Address <span class="text-danger">*</span></label>
                       <input type="text" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Last Name <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Last Name <span class="text-danger">*</span></label>
                       <input type="email" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >State <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="StateCand"
-                        id="statecand"
-                        placeholder="Select"
-                      />
+                      <label class="form-label">State <span class="text-danger">*</span></label>
+                      <vue-select :options="StateCand" id="statecand" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Country <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="Indonesia"
-                        id="indonesia"
-                        placeholder="Select"
-                      />
+                      <label class="form-label">Country <span class="text-danger">*</span></label>
+                      <vue-select :options="Indonesia" id="indonesia" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Zipcode <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Zipcode <span class="text-danger">*</span></label>
                       <input type="text" class="form-control" />
                     </div>
                   </div>
@@ -356,13 +222,8 @@
                 <button type="submit" class="btn btn-primary">Save</button>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="social-profile"
-              role="tabpanel"
-              aria-labelledby="social-profile-tab"
-              tabindex="0"
-            >
+            <div class="tab-pane fade" id="social-profile" role="tabpanel" aria-labelledby="social-profile-tab"
+              tabindex="0">
               <div class="modal-body pb-0">
                 <div class="row">
                   <div class="col-md-6">
@@ -410,48 +271,27 @@
                 <button type="submit" class="btn btn-primary">Save</button>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="access"
-              role="tabpanel"
-              aria-labelledby="access-tab"
-              tabindex="0"
-            >
+            <div class="tab-pane fade" id="access" role="tabpanel" aria-labelledby="access-tab" tabindex="0">
               <div class="modal-body pb-0">
                 <div class="mb-4">
                   <h6 class="fs-14 fw-medium mb-1">Visibility</h6>
                   <div class="d-flex align-items-center">
                     <div class="form-check me-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault1"
-                      />
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                       <label class="form-check-label text-dark" for="flexRadioDefault1">
                         Public
                       </label>
                     </div>
                     <div class="form-check me-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault2"
-                        checked
-                      />
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        checked />
                       <label class="form-check-label text-dark" for="flexRadioDefault2">
                         Private
                       </label>
                     </div>
                     <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault3"
-                        checked
-                      />
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+                        checked />
                       <label class="form-check-label text-dark" for="flexRadioDefault3">
                         Select People
                       </label>
@@ -460,22 +300,10 @@
                 </div>
                 <div class="p-3 bg-gray br-5 mb-4">
                   <div class="d-flex align-items-center mb-3">
-                    <input
-                      class="form-check-input me-1"
-                      type="checkbox"
-                      value=""
-                      id="user-6"
-                    />
+                    <input class="form-check-input me-1" type="checkbox" value="" id="user-6" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md border avatar-rounded"
-                      >
-                        <img
-                          src="@/assets/img/reports/user-01.jpg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                        <img src="@/assets/img/reports/user-01.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
@@ -485,22 +313,10 @@
                     </div>
                   </div>
                   <div class="d-flex align-items-center mb-3">
-                    <input
-                      class="form-check-input me-1"
-                      type="checkbox"
-                      value=""
-                      id="user-7"
-                    />
+                    <input class="form-check-input me-1" type="checkbox" value="" id="user-7" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md border avatar-rounded"
-                      >
-                        <img
-                          src="@/assets/img/reports/user-02.jpg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                        <img src="@/assets/img/reports/user-02.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
@@ -510,22 +326,10 @@
                     </div>
                   </div>
                   <div class="d-flex align-items-center mb-3">
-                    <input
-                      class="form-check-input me-1"
-                      type="checkbox"
-                      value=""
-                      id="user-8"
-                    />
+                    <input class="form-check-input me-1" type="checkbox" value="" id="user-8" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md border avatar-rounded"
-                      >
-                        <img
-                          src="@/assets/img/reports/user-03.jpg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                        <img src="@/assets/img/reports/user-03.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
@@ -535,22 +339,10 @@
                     </div>
                   </div>
                   <div class="d-flex align-items-center mb-3">
-                    <input
-                      class="form-check-input me-1"
-                      type="checkbox"
-                      value=""
-                      id="user-9"
-                    />
+                    <input class="form-check-input me-1" type="checkbox" value="" id="user-9" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md border avatar-rounded"
-                      >
-                        <img
-                          src="@/assets/img/reports/user-04.jpg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                        <img src="@/assets/img/reports/user-04.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
@@ -560,22 +352,10 @@
                     </div>
                   </div>
                   <div class="d-flex align-items-center mb-3">
-                    <input
-                      class="form-check-input me-1"
-                      type="checkbox"
-                      value=""
-                      id="user-10"
-                    />
+                    <input class="form-check-input me-1" type="checkbox" value="" id="user-10" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md border avatar-rounded"
-                      >
-                        <img
-                          src="@/assets/img/profiles/avatar-12.jpg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                        <img src="@/assets/img/profiles/avatar-12.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
@@ -597,12 +377,7 @@
                 <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">
                   Cancel
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#success_compay"
-                >
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#success_compay">
                   Save
                 </button>
               </div>
@@ -620,12 +395,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit New Company</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -633,81 +403,41 @@
           <div class="contact-grids-tab">
             <ul class="nav nav-underline" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="info-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#basic-info"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
+                <button class="nav-link active" id="info-tab" data-bs-toggle="tab" data-bs-target="#basic-info"
+                  type="button" role="tab" aria-selected="true">
                   Basic Information
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="address-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#address"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                >
+                <button class="nav-link" id="address-tab" data-bs-toggle="tab" data-bs-target="#address" type="button"
+                  role="tab" aria-selected="false">
                   Address
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="social-profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#social-profile"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                >
+                <button class="nav-link" id="social-profile-tab" data-bs-toggle="tab" data-bs-target="#social-profile"
+                  type="button" role="tab" aria-selected="false">
                   Social Profiles
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="access-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#access"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                >
+                <button class="nav-link" id="access-tab" data-bs-toggle="tab" data-bs-target="#access" type="button"
+                  role="tab" aria-selected="false">
                   Access
                 </button>
               </li>
             </ul>
           </div>
           <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="basic-info"
-              role="tabpanel"
-              aria-labelledby="info-tab"
-              tabindex="0"
-            >
+            <div class="tab-pane fade show active" id="basic-info" role="tabpanel" aria-labelledby="info-tab"
+              tabindex="0">
               <div class="modal-body pb-0">
                 <div class="row">
                   <div class="col-md-12">
-                    <div
-                      class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4"
-                    >
+                    <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                       <div
-                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
-                      >
-                        <img
-                          src="@/assets/img/profiles/avatar-30.jpg"
-                          alt="img"
-                          class="rounded-circle"
-                        />
+                        class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
+                        <img src="@/assets/img/profiles/avatar-30.jpg" alt="img" class="rounded-circle" />
                       </div>
                       <div class="profile-upload">
                         <div class="mb-2">
@@ -717,46 +447,29 @@
                         <div class="profile-uploader d-flex align-items-center">
                           <div class="drag-upload-btn btn btn-sm btn-primary me-2">
                             Upload
-                            <input
-                              type="file"
-                              class="form-control image-sign"
-                              multiple=""
-                            />
+                            <input type="file" class="form-control image-sign" multiple="" />
                           </div>
-                          <a href="javascript:void(0);" class="btn btn-light btn-sm"
-                            >Cancel</a
-                          >
+                          <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Company Name <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="EditInnvoationSele"
-                        id="editinnovationsele"
-                        placeholder="Stellar Dynamics"
-                      />
+                      <label class="form-label">Company Name <span class="text-danger">*</span></label>
+                      <vue-select :options="EditInnvoationSele" id="editinnovationsele"
+                        placeholder="Stellar Dynamics" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Email</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        value="darlee@example.com"
-                      />
+                      <input type="text" class="form-control" value="darlee@example.com" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Phone Number <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Phone Number <span class="text-danger">*</span></label>
                       <input type="text" class="form-control" value="(146) 1249 296" />
                     </div>
                   </div>
@@ -780,138 +493,74 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Reviews <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Reviews <span class="text-danger">*</span></label>
                       <input type="text" class="form-control" value="4.5" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Owner <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="EditHendry"
-                        id="edithendry"
-                        placeholder="Guilory"
-                      />
+                      <label class="form-label">Owner <span class="text-danger">*</span></label>
+                      <vue-select :options="EditHendry" id="edithendry" placeholder="Guilory" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Tags <span class="text-danger">*</span>
+                      <label class="form-label">Tags <span class="text-danger">*</span>
                       </label>
-                      <vue3-tags-input
-                        class="input-tags form-control"
-                        placeholder="Add new"
-                        type="text"
-                        data-role="tagsinput"
-                        name="Label"
-                        value="Tag1"
-                        :tags="tagsOne"
-                      />
+                      <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                        data-role="tagsinput" name="Label" value="Tag1" :tags="tagsOne" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
                       <div class="d-flex justify-content-between align-items-center mb-2">
-                        <label class="col-form-label p-0"
-                          >Deals <span class="text-danger">*</span></label
-                        >
-                        <a
-                          href="javascript:void(0);"
-                          class="add-new text-primary"
-                          data-bs-target="#add_deals"
-                          data-bs-toggle="modal"
-                          ><i class="ti ti-plus text-primary me-1"></i>Add New</a
-                        >
+                        <label class="col-form-label p-0">Deals <span class="text-danger">*</span></label>
+                        <a href="javascript:void(0);" class="add-new text-primary" data-bs-target="#add_deals"
+                          data-bs-toggle="modal"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
                       </div>
-                      <vue-select
-                        :options="EditCollinsKon"
-                        id="editcollinskon"
-                        placeholder="Collins"
-                      />
+                      <vue-select :options="EditCollinsKon" id="editcollinskon" placeholder="Collins" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Industry <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="EditCollinsKon"
-                        id="editcollinskone"
-                        placeholder="Barry Cuda"
-                      />
+                      <label class="form-label">Industry <span class="text-danger">*</span></label>
+                      <vue-select :options="EditCollinsKon" id="editcollinskone" placeholder="Barry Cuda" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Source <span class="text-danger">*</span>
+                      <label class="form-label">Source <span class="text-danger">*</span>
                       </label>
-                      <vue-select
-                        :options="EditPhoneCalls"
-                        id="editphonecalls"
-                        placeholder="Social Media"
-                      />
+                      <vue-select :options="EditPhoneCalls" id="editphonecalls" placeholder="Social Media" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Currency <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="EditDolarSel"
-                        id="editdolarsel"
-                        placeholder="Dollar"
-                      />
+                      <label class="form-label">Currency <span class="text-danger">*</span></label>
+                      <vue-select :options="EditDolarSel" id="editdolarsel" placeholder="Dollar" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Language <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="EditChinese"
-                        id="editchinses"
-                        placeholder="English"
-                      />
+                      <label class="form-label">Language <span class="text-danger">*</span></label>
+                      <vue-select :options="EditChinese" id="editchinses" placeholder="English" />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >About <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">About <span class="text-danger">*</span></label>
                       <textarea class="form-control">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vitae consequatur impedit rem laboriosam iusto sapiente ex mollitia voluptate ullam laudantium, vel atque ducimus blanditiis magni perspiciatis nulla.</textarea
-                      >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vitae consequatur impedit rem laboriosam iusto sapiente ex mollitia voluptate ullam laudantium, vel atque ducimus blanditiis magni perspiciatis nulla.</textarea>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
                       <div class="d-flex justify-content-between align-items-center mb-2">
-                        <label class="col-form-label p-0"
-                          >Contact <span class="text-danger">*</span></label
-                        >
-                        <a
-                          href="javascript:void(0);"
-                          class="add-new text-primary"
-                          data-bs-target="#add_deals"
-                          data-bs-toggle="modal"
-                          ><i class="ti ti-plus text-primary me-1"></i>Add New</a
-                        >
+                        <label class="col-form-label p-0">Contact <span class="text-danger">*</span></label>
+                        <a href="javascript:void(0);" class="add-new text-primary" data-bs-target="#add_deals"
+                          data-bs-toggle="modal"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
                       </div>
-                      <vue-select
-                        :options="EditSharonyR"
-                        id="editsharonyr"
-                        placeholder="Sharon Roy"
-                      />
+                      <vue-select :options="EditSharonyR" id="editsharonyr" placeholder="Sharon Roy" />
                     </div>
                   </div>
                 </div>
@@ -923,60 +572,36 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                 <button type="submit" class="btn btn-primary">Save</button>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="address"
-              role="tabpanel"
-              aria-labelledby="address-tab"
-              tabindex="0"
-            >
+            <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab" tabindex="0">
               <div class="modal-body pb-0">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Address <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Address <span class="text-danger">*</span></label>
                       <input type="text" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Last Name <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Last Name <span class="text-danger">*</span></label>
                       <input type="email" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >State <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="EditStateCand"
-                        id="editstatecand"
-                        placeholder="Select"
-                      />
+                      <label class="form-label">State <span class="text-danger">*</span></label>
+                      <vue-select :options="EditStateCand" id="editstatecand" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Country <span class="text-danger">*</span></label
-                      >
-                      <vue-select
-                        :options="EditIndonesia"
-                        id="editindonesia"
-                        placeholder="Select"
-                      />
+                      <label class="form-label">Country <span class="text-danger">*</span></label>
+                      <vue-select :options="EditIndonesia" id="editindonesia" placeholder="Select" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label"
-                        >Zipcode <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Zipcode <span class="text-danger">*</span></label>
                       <input type="text" class="form-control" />
                     </div>
                   </div>
@@ -989,13 +614,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                 <button type="submit" class="btn btn-primary">Save</button>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="social-profile"
-              role="tabpanel"
-              aria-labelledby="social-profile-tab"
-              tabindex="0"
-            >
+            <div class="tab-pane fade" id="social-profile" role="tabpanel" aria-labelledby="social-profile-tab"
+              tabindex="0">
               <div class="modal-body pb-0">
                 <div class="row">
                   <div class="col-md-6">
@@ -1043,48 +663,27 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                 <button type="submit" class="btn btn-primary">Save</button>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="access"
-              role="tabpanel"
-              aria-labelledby="access-tab"
-              tabindex="0"
-            >
+            <div class="tab-pane fade" id="access" role="tabpanel" aria-labelledby="access-tab" tabindex="0">
               <div class="modal-body pb-0">
                 <div class="mb-4">
                   <h6 class="fs-14 fw-medium mb-1">Visibility</h6>
                   <div class="d-flex align-items-center">
                     <div class="form-check me-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault1"
-                      />
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                       <label class="form-check-label text-dark" for="flexRadioDefault1">
                         Public
                       </label>
                     </div>
                     <div class="form-check me-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault2"
-                        checked
-                      />
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        checked />
                       <label class="form-check-label text-dark" for="flexRadioDefault2">
                         Private
                       </label>
                     </div>
                     <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault3"
-                        checked
-                      />
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+                        checked />
                       <label class="form-check-label text-dark" for="flexRadioDefault3">
                         Select People
                       </label>
@@ -1093,22 +692,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                 </div>
                 <div class="p-3 bg-gray br-5 mb-4">
                   <div class="d-flex align-items-center mb-3">
-                    <input
-                      class="form-check-input me-1"
-                      type="checkbox"
-                      value=""
-                      id="user-6"
-                    />
+                    <input class="form-check-input me-1" type="checkbox" value="" id="user-6" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md border avatar-rounded"
-                      >
-                        <img
-                          src="@/assets/img/reports/user-01.jpg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                        <img src="@/assets/img/reports/user-01.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
@@ -1118,22 +705,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                     </div>
                   </div>
                   <div class="d-flex align-items-center mb-3">
-                    <input
-                      class="form-check-input me-1"
-                      type="checkbox"
-                      value=""
-                      id="user-7"
-                    />
+                    <input class="form-check-input me-1" type="checkbox" value="" id="user-7" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md border avatar-rounded"
-                      >
-                        <img
-                          src="@/assets/img/reports/user-02.jpg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                        <img src="@/assets/img/reports/user-02.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
@@ -1143,22 +718,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                     </div>
                   </div>
                   <div class="d-flex align-items-center mb-3">
-                    <input
-                      class="form-check-input me-1"
-                      type="checkbox"
-                      value=""
-                      id="user-8"
-                    />
+                    <input class="form-check-input me-1" type="checkbox" value="" id="user-8" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md border avatar-rounded"
-                      >
-                        <img
-                          src="@/assets/img/reports/user-03.jpg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                        <img src="@/assets/img/reports/user-03.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
@@ -1168,22 +731,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                     </div>
                   </div>
                   <div class="d-flex align-items-center mb-3">
-                    <input
-                      class="form-check-input me-1"
-                      type="checkbox"
-                      value=""
-                      id="user-9"
-                    />
+                    <input class="form-check-input me-1" type="checkbox" value="" id="user-9" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md border avatar-rounded"
-                      >
-                        <img
-                          src="@/assets/img/reports/user-04.jpg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                        <img src="@/assets/img/reports/user-04.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
@@ -1193,22 +744,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                     </div>
                   </div>
                   <div class="d-flex align-items-center mb-3">
-                    <input
-                      class="form-check-input me-1"
-                      type="checkbox"
-                      value=""
-                      id="user-10"
-                    />
+                    <input class="form-check-input me-1" type="checkbox" value="" id="user-10" />
                     <div class="d-flex align-items-center file-name-icon">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md border avatar-rounded"
-                      >
-                        <img
-                          src="@/assets/img/profiles/avatar-12.jpg"
-                          class="img-fluid"
-                          alt="img"
-                        />
+                      <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                        <img src="@/assets/img/profiles/avatar-12.jpg" class="img-fluid" alt="img" />
                       </a>
                       <div class="ms-2">
                         <h6 class="fw-normal">
@@ -1223,23 +762,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="EditCrmStat"
-                    id="editcrmstat"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="EditCrmStat" id="editcrmstat" placeholder="Select" />
                 </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">
                   Cancel
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#success_compay"
-                >
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#success_compay">
                   Save
                 </button>
               </div>
@@ -1257,12 +787,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Deals</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -1271,103 +796,69 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Deal Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Deal Name <span class="text-danger"> *</span></label>
                   <vue-select :options="AdasmSel" id="adasmsel" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input-block mb-3">
                   <div class="d-flex justify-content-between align-items-center">
-                    <label class="form-label"
-                      >Pipeline <span class="text-danger"> *</span></label
-                    >
-                    <a
-                      href="javascript:void(0);"
-                      class="add-new text-primary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#add_pipeline"
-                      ><i class="ti ti-plus text-primary me-1"></i>Add New</a
-                    >
+                    <label class="form-label">Pipeline <span class="text-danger"> *</span></label>
+                    <a href="javascript:void(0);" class="add-new text-primary" data-bs-toggle="modal"
+                      data-bs-target="#add_pipeline"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
                   </div>
-                  <vue-select
-                    :options="MarketSelec"
-                    id="marketselec"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="MarketSelec" id="marketselec" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Status <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Status <span class="text-danger"> *</span></label>
                   <vue-select :options="OpenSelec" id="openselec" plaecholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Deal Value <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Deal Value <span class="text-danger"> *</span></label>
                   <vue-select :options="ValueSele" id="valuesele" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Currency<span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Currency<span class="text-danger"> *</span></label>
                   <vue-select :options="AmValsel" id="amvalsel" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Period <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Period <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Period Value <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Period Value <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Contact <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Contact <span class="text-danger"> *</span></label>
                   <vue-select :options="Lewisel" id="lewisel" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Project * <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Project * <span class="text-danger"> *</span></label>
                   <vue-select :options="AppManage" id="appmanage" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Due Date <span class="text-danger"> *</span>
+                  <label class="form-label">Due Date <span class="text-danger"> *</span>
                   </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -1376,18 +867,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Expected Closing Date <span class="text-danger"> *</span>
+                  <label class="form-label">Expected Closing Date <span class="text-danger"> *</span>
                   </label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -1396,46 +880,23 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Assignee <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="AssignActive"
-                    id="assignactive"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Assignee <span class="text-danger"> *</span></label>
+                  <vue-select :options="AssignActive" id="assignactive" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Tags <span class="text-danger"> *</span></label
-                  >
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="tagsTwo"
-                  />
+                  <label class="form-label">Tags <span class="text-danger"> *</span></label>
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="tagsTwo" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Followup Date <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Followup Date <span class="text-danger"> *</span></label>
                   <div class="input-icon-end position-relative">
-                    <date-picker
-                      v-model="startdateTwo"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateTwo" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -1444,25 +905,19 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Source <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Source <span class="text-danger"> *</span></label>
                   <vue-select :options="Tressa" id="tressase" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Priority <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Priority <span class="text-danger"> *</span></label>
                   <vue-select :options="Priorty" id="priorty" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Description <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Description <span class="text-danger"> *</span></label>
                   <textarea class="form-control"></textarea>
                 </div>
               </div>
@@ -1486,12 +941,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Pipeline</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -1500,25 +950,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Pipeline Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Pipeline Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="input-block mb-3">
                   <div class="d-flex justify-content-between align-items-center">
-                    <label class="form-label"
-                      >Pipeline Stages <span class="text-danger"> *</span></label
-                    >
-                    <a
-                      href="javascript:void(0);"
-                      class="add-new text-primary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#add_stage"
-                      ><i class="ti ti-plus text-primary me-1"></i>Add New</a
-                    >
+                    <label class="form-label">Pipeline Stages <span class="text-danger"> *</span></label>
+                    <a href="javascript:void(0);" class="add-new text-primary" data-bs-toggle="modal"
+                      data-bs-target="#add_stage"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
                   </div>
                   <div class="p-3 border border-gray br-5 mb-2">
                     <div class="d-flex align-items-center justify-content-between">
@@ -1527,20 +968,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                         <h6 class="fs-14 fw-normal">Inpipline</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <a
-                          href="javascript:void(0);"
-                          class="text-default"
-                          data-bs-toggle="modal"
-                          data-bs-target="#edit_stage"
-                          ><span class="me-2"><i class="ti ti-edit"></i></span
-                        ></a>
-                        <a
-                          href="javascript:void(0);"
-                          class="text-default"
-                          data-bs-toggle="modal"
-                          data-bs-target="#delete_modal"
-                          ><span><i class="ti ti-trash"></i></span
-                        ></a>
+                        <a href="javascript:void(0);" class="text-default" data-bs-toggle="modal"
+                          data-bs-target="#edit_stage"><span class="me-2"><i class="ti ti-edit"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default" data-bs-toggle="modal"
+                          data-bs-target="#delete_modal"><span><i class="ti ti-trash"></i></span></a>
                       </div>
                     </div>
                   </div>
@@ -1551,20 +982,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                         <h6 class="fs-14 fw-normal">Follow Up</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <a
-                          href="javascript:void(0);"
-                          class="text-default"
-                          data-bs-toggle="modal"
-                          data-bs-target="#edit_stage"
-                          ><span class="me-2"><i class="ti ti-edit"></i></span
-                        ></a>
-                        <a
-                          href="javascript:void(0);"
-                          class="text-default"
-                          data-bs-toggle="modal"
-                          data-bs-target="#delete_modal"
-                          ><span><i class="ti ti-trash"></i></span
-                        ></a>
+                        <a href="javascript:void(0);" class="text-default" data-bs-toggle="modal"
+                          data-bs-target="#edit_stage"><span class="me-2"><i class="ti ti-edit"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default" data-bs-toggle="modal"
+                          data-bs-target="#delete_modal"><span><i class="ti ti-trash"></i></span></a>
                       </div>
                     </div>
                   </div>
@@ -1575,21 +996,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                         <h6 class="fs-14 fw-normal">Schedule Service</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <a
-                          href="javascript:void(0);"
-                          class="text-default"
-                          data-bs-toggle="modal"
-                          data-bs-target="#edit_stage"
-                          ><span class="me-2"><i class="ti ti-edit"></i></span
-                        ></a>
-                        <a href="javascript:void(0);" class="text-default"
-                          ><span
-                            ><i
-                              class="ti ti-trash"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_modal"
-                            ></i></span
-                        ></a>
+                        <a href="javascript:void(0);" class="text-default" data-bs-toggle="modal"
+                          data-bs-target="#edit_stage"><span class="me-2"><i class="ti ti-edit"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default"><span><i class="ti ti-trash"
+                              data-bs-toggle="modal" data-bs-target="#delete_modal"></i></span></a>
                       </div>
                     </div>
                   </div>
@@ -1600,31 +1010,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                   <label class="form-label">Access</label>
                   <div class="d-flex access-item nav">
                     <div class="d-flex align-items-center">
-                      <div
-                        class="radio-btn d-flex align-items-center"
-                        data-bs-toggle="tab"
-                        data-bs-target="#all"
-                      >
-                        <input
-                          type="radio"
-                          class="status-radio me-2"
-                          id="all"
-                          name="status"
-                          checked
-                        />
+                      <div class="radio-btn d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#all">
+                        <input type="radio" class="status-radio me-2" id="all" name="status" checked />
                         <label for="all">All</label>
                       </div>
-                      <div
-                        class="radio-btn d-flex align-items-center"
-                        data-bs-toggle="tab"
-                        data-bs-target="#select-person"
-                      >
-                        <input
-                          type="radio"
-                          class="status-radio me-2"
-                          id="select"
-                          name="status"
-                        />
+                      <div class="radio-btn d-flex align-items-center" data-bs-toggle="tab"
+                        data-bs-target="#select-person">
+                        <input type="radio" class="status-radio me-2" id="select" name="status" />
                         <label for="select">Select Person</label>
                       </div>
                     </div>
@@ -1635,15 +1027,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                         <div class="p-3 border border-gray br-5 mb-2">
                           <div class="d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center file-name-icon">
-                              <a
-                                href="javascript:void(0);"
-                                class="avatar avatar-md border avatar-rounded"
-                              >
-                                <img
-                                  src="@/assets/img/profiles/avatar-20.jpg"
-                                  class="img-fluid"
-                                  alt="img"
-                                />
+                              <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                                <img src="@/assets/img/profiles/avatar-20.jpg" class="img-fluid" alt="img" />
                               </a>
                               <div class="ms-2">
                                 <h6 class="fw-medium">
@@ -1659,15 +1044,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                         <div class="p-3 border border-gray br-5 mb-2">
                           <div class="d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center file-name-icon">
-                              <a
-                                href="javascript:void(0);"
-                                class="avatar avatar-md border avatar-rounded"
-                              >
-                                <img
-                                  src="@/assets/img/profiles/avatar-21.jpg"
-                                  class="img-fluid"
-                                  alt="img"
-                                />
+                              <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                                <img src="@/assets/img/profiles/avatar-21.jpg" class="img-fluid" alt="img" />
                               </a>
                               <div class="ms-2">
                                 <h6 class="fw-medium">
@@ -1691,12 +1069,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
             <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">
               Cancel
             </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#pipeline-access"
-            >
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pipeline-access">
               Add Pipeline
             </button>
           </div>
@@ -1712,12 +1085,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Pipeline</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -1726,25 +1094,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Pipeline Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Pipeline Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" value="Marketing" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="input-block mb-3">
                   <div class="d-flex justify-content-between align-items-center">
-                    <label class="form-label"
-                      >Pipeline Stages <span class="text-danger"> *</span></label
-                    >
-                    <a
-                      href="javascript:void(0);"
-                      class="add-new text-primary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#add_stage"
-                      ><i class="ti ti-plus text-primary me-1"></i>Add New</a
-                    >
+                    <label class="form-label">Pipeline Stages <span class="text-danger"> *</span></label>
+                    <a href="javascript:void(0);" class="add-new text-primary" data-bs-toggle="modal"
+                      data-bs-target="#add_stage"><i class="ti ti-plus text-primary me-1"></i>Add New</a>
                   </div>
                   <div class="p-3 border border-gray br-5 mb-2">
                     <div class="d-flex align-items-center justify-content-between">
@@ -1753,12 +1112,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                         <h6 class="fs-14 fw-normal">Inpipline</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <a href="javascript:void(0);" class="text-default"
-                          ><span class="me-2"><i class="ti ti-edit"></i></span
-                        ></a>
-                        <a href="javascript:void(0);" class="text-default"
-                          ><span><i class="ti ti-trash"></i></span
-                        ></a>
+                        <a href="javascript:void(0);" class="text-default"><span class="me-2"><i
+                              class="ti ti-edit"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default"><span><i class="ti ti-trash"></i></span></a>
                       </div>
                     </div>
                   </div>
@@ -1769,12 +1125,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                         <h6 class="fs-14 fw-normal">Follow Up</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <a href="javascript:void(0);" class="text-default"
-                          ><span class="me-2"><i class="ti ti-edit"></i></span
-                        ></a>
-                        <a href="javascript:void(0);" class="text-default"
-                          ><span><i class="ti ti-trash"></i></span
-                        ></a>
+                        <a href="javascript:void(0);" class="text-default"><span class="me-2"><i
+                              class="ti ti-edit"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default"><span><i class="ti ti-trash"></i></span></a>
                       </div>
                     </div>
                   </div>
@@ -1785,12 +1138,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                         <h6 class="fs-14 fw-normal">Schedule Service</h6>
                       </div>
                       <div class="d-flex align-items-center">
-                        <a href="javascript:void(0);" class="text-default"
-                          ><span class="me-2"><i class="ti ti-edit"></i></span
-                        ></a>
-                        <a href="javascript:void(0);" class="text-default"
-                          ><span><i class="ti ti-trash"></i></span
-                        ></a>
+                        <a href="javascript:void(0);" class="text-default"><span class="me-2"><i
+                              class="ti ti-edit"></i></span></a>
+                        <a href="javascript:void(0);" class="text-default"><span><i class="ti ti-trash"></i></span></a>
                       </div>
                     </div>
                   </div>
@@ -1801,31 +1151,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                   <label class="form-label">Access</label>
                   <div class="d-flex access-item nav">
                     <div class="d-flex align-items-center">
-                      <div
-                        class="radio-btn d-flex align-items-center"
-                        data-bs-toggle="tab"
-                        data-bs-target="#all2"
-                      >
-                        <input
-                          type="radio"
-                          class="status-radio me-2"
-                          id="all2"
-                          name="status"
-                          checked
-                        />
+                      <div class="radio-btn d-flex align-items-center" data-bs-toggle="tab" data-bs-target="#all2">
+                        <input type="radio" class="status-radio me-2" id="all2" name="status" checked />
                         <label for="all2">All</label>
                       </div>
-                      <div
-                        class="radio-btn d-flex align-items-center"
-                        data-bs-toggle="tab"
-                        data-bs-target="#select-person2"
-                      >
-                        <input
-                          type="radio"
-                          class="status-radio me-2"
-                          id="select2"
-                          name="status"
-                        />
+                      <div class="radio-btn d-flex align-items-center" data-bs-toggle="tab"
+                        data-bs-target="#select-person2">
+                        <input type="radio" class="status-radio me-2" id="select2" name="status" />
                         <label for="select2">Select Person</label>
                       </div>
                     </div>
@@ -1836,15 +1168,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                         <div class="p-3 border border-gray br-5 mb-2">
                           <div class="d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center file-name-icon">
-                              <a
-                                href="javascript:void(0);"
-                                class="avatar avatar-md border avatar-rounded"
-                              >
-                                <img
-                                  src="@/assets/img/profiles/avatar-20.jpg"
-                                  class="img-fluid"
-                                  alt="img"
-                                />
+                              <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                                <img src="@/assets/img/profiles/avatar-20.jpg" class="img-fluid" alt="img" />
                               </a>
                               <div class="ms-2">
                                 <h6 class="fw-medium">
@@ -1860,15 +1185,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                         <div class="p-3 border border-gray br-5 mb-2">
                           <div class="d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center file-name-icon">
-                              <a
-                                href="javascript:void(0);"
-                                class="avatar avatar-md border avatar-rounded"
-                              >
-                                <img
-                                  src="@/assets/img/profiles/avatar-21.jpg"
-                                  class="img-fluid"
-                                  alt="img"
-                                />
+                              <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                                <img src="@/assets/img/profiles/avatar-21.jpg" class="img-fluid" alt="img" />
                               </a>
                               <div class="ms-2">
                                 <h6 class="fw-medium">
@@ -1892,12 +1210,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
             <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">
               Cancel
             </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#pipeline-access"
-            >
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pipeline-access">
               Add Pipeline
             </button>
           </div>
@@ -1913,12 +1226,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Pipeline Access</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -1944,15 +1252,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                           <input class="form-check-input" type="checkbox" />
                         </div>
                         <div class="d-flex align-items-center file-name-icon">
-                          <a
-                            href="javascript:void(0);"
-                            class="avatar avatar-md border avatar-rounded"
-                          >
-                            <img
-                              src="@/assets/img/profiles/avatar-19.jpg"
-                              class="img-fluid"
-                              alt="img"
-                            />
+                          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                            <img src="@/assets/img/profiles/avatar-19.jpg" class="img-fluid" alt="img" />
                           </a>
                           <div class="ms-2">
                             <h6 class="fw-medium fs-12">
@@ -1967,15 +1268,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                           <input class="form-check-input" type="checkbox" />
                         </div>
                         <div class="d-flex align-items-center file-name-icon">
-                          <a
-                            href="javascript:void(0);"
-                            class="avatar avatar-md border avatar-rounded"
-                          >
-                            <img
-                              src="@/assets/img/profiles/avatar-20.jpg"
-                              class="img-fluid"
-                              alt="img"
-                            />
+                          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                            <img src="@/assets/img/profiles/avatar-20.jpg" class="img-fluid" alt="img" />
                           </a>
                           <div class="ms-2">
                             <h6 class="fw-medium fs-12">
@@ -1990,15 +1284,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                           <input class="form-check-input" type="checkbox" />
                         </div>
                         <div class="d-flex align-items-center file-name-icon">
-                          <a
-                            href="javascript:void(0);"
-                            class="avatar avatar-md border avatar-rounded"
-                          >
-                            <img
-                              src="@/assets/img/profiles/avatar-21.jpg"
-                              class="img-fluid"
-                              alt="img"
-                            />
+                          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                            <img src="@/assets/img/profiles/avatar-21.jpg" class="img-fluid" alt="img" />
                           </a>
                           <div class="ms-2">
                             <h6 class="fw-medium fs-12">
@@ -2013,15 +1300,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                           <input class="form-check-input" type="checkbox" />
                         </div>
                         <div class="d-flex align-items-center file-name-icon">
-                          <a
-                            href="javascript:void(0);"
-                            class="avatar avatar-md border avatar-rounded"
-                          >
-                            <img
-                              src="@/assets/img/users/user-33.jpg"
-                              class="img-fluid"
-                              alt="img"
-                            />
+                          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                            <img src="@/assets/img/users/user-33.jpg" class="img-fluid" alt="img" />
                           </a>
                           <div class="ms-2">
                             <h6 class="fw-medium fs-12">
@@ -2036,15 +1316,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
                           <input class="form-check-input" type="checkbox" />
                         </div>
                         <div class="d-flex align-items-center file-name-icon">
-                          <a
-                            href="javascript:void(0);"
-                            class="avatar avatar-md border avatar-rounded"
-                          >
-                            <img
-                              src="@/assets/img/users/user-34.jpg"
-                              class="img-fluid"
-                              alt="img"
-                            />
+                          <a href="javascript:void(0);" class="avatar avatar-md border avatar-rounded">
+                            <img src="@/assets/img/users/user-34.jpg" class="img-fluid" alt="img" />
                           </a>
                           <div class="ms-2">
                             <h6 class="fw-medium fs-12">
@@ -2078,12 +1351,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Stage</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -2092,9 +1360,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Stage Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Stage Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -2118,12 +1384,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Stage</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -2132,9 +1393,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Edit Name <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Edit Name <span class="text-danger"> *</span></label>
                   <input type="text" class="form-control" value="Inpipeline" />
                 </div>
               </div>
@@ -2160,33 +1419,21 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
           <div class="p-4">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="d-flex flex-column align-items-center justify-content-center mb-3"
-                >
-                  <img
-                    src="@/assets/img/reports-img/check-icon.svg"
-                    alt="icon"
-                    class="mb-3"
-                  />
+                <div class="d-flex flex-column align-items-center justify-content-center mb-3">
+                  <img src="@/assets/img/reports-img/check-icon.svg" alt="icon" class="mb-3" />
                   <h5>Company Added Successfully</h5>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <router-link
-                    to="/crm/companies-crm"
-                    class="btn btn-dark d-flex justify-content-center"
-                    >Back to List</router-link
-                  >
+                  <router-link to="/crm/companies-crm" class="btn btn-dark d-flex justify-content-center">Back to
+                    List</router-link>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <router-link
-                    to="/crm/companies-details"
-                    class="btn btn-primary bg-primary-gradient d-flex justify-content-center"
-                    >Detail Page</router-link
-                  >
+                  <router-link to="/crm/companies-details"
+                    class="btn btn-primary bg-primary-gradient d-flex justify-content-center">Detail Page</router-link>
                 </div>
               </div>
             </div>
@@ -2210,15 +1457,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi numquam vit
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="companies-crm" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="companies-crm" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

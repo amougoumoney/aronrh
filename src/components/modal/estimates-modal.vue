@@ -29,12 +29,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New Estimate</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -43,37 +38,25 @@ export default {
             <div class="row">
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Client <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Client <span class="text-danger"> *</span></label>
                   <vue-select :options="Client" id="headrick" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Project <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="Project"
-                    id="manage-project"
-                    placeholder="Select"
-                  />
+                  <label class="form-label">Project <span class="text-danger"> *</span></label>
+                  <vue-select :options="Project" id="manage-project" placeholder="Select" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Email <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Email <span class="text-danger"> *</span></label>
                   <input type="email" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Tax <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Tax <span class="text-danger"> *</span></label>
                   <vue-select :options="Tax" id="manage-tax" placeholder="Select" />
                 </div>
               </div>
@@ -96,14 +79,8 @@ export default {
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar"></i>
                     </span>
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                   </div>
                 </div>
               </div>
@@ -114,14 +91,8 @@ export default {
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar"></i>
                     </span>
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                   </div>
                 </div>
               </div>
@@ -164,11 +135,9 @@ export default {
                     </div>
                   </div>
                 </div>
-                <a
-                  href="javascript:void(0);"
-                  class="text-primary add-more-estimate fw-medium d-flex align-items-center mb-2"
-                  ><i class="ti ti-plus me-2"></i>Add New Item</a
-                >
+                <a href="javascript:void(0);"
+                  class="text-primary add-more-estimate fw-medium d-flex align-items-center mb-2"><i
+                    class="ti ti-plus me-2"></i>Add New Item</a>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-3">
@@ -222,12 +191,7 @@ export default {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Estimate</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -236,45 +200,25 @@ export default {
             <div class="row">
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Client <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="Client"
-                    id="headrick-one"
-                    placeholder="Michael Walker"
-                  />
+                  <label class="form-label">Client <span class="text-danger"> *</span></label>
+                  <vue-select :options="Client" id="headrick-one" placeholder="Michael Walker" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Project <span class="text-danger"> *</span></label
-                  >
-                  <vue-select
-                    :options="Project"
-                    id="manage-project-one"
-                    placeholder="Project Management"
-                  />
+                  <label class="form-label">Project <span class="text-danger"> *</span></label>
+                  <vue-select :options="Project" id="manage-project-one" placeholder="Project Management" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Email <span class="text-danger"> *</span></label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    value="michaelwalker@example.com"
-                  />
+                  <label class="form-label">Email <span class="text-danger"> *</span></label>
+                  <input type="email" class="form-control" value="michaelwalker@example.com" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label"
-                    >Tax <span class="text-danger"> *</span></label
-                  >
+                  <label class="form-label">Tax <span class="text-danger"> *</span></label>
                   <vue-select :options="Tax" id="manage-tax-one" placeholder="VAT" />
                 </div>
               </div>
@@ -297,14 +241,8 @@ export default {
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar"></i>
                     </span>
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                   </div>
                 </div>
               </div>
@@ -315,14 +253,8 @@ export default {
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar"></i>
                     </span>
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                   </div>
                 </div>
               </div>
@@ -365,11 +297,9 @@ export default {
                     </div>
                   </div>
                 </div>
-                <a
-                  href="javascript:void(0);"
-                  class="text-primary add-more-estimate fw-medium d-flex align-items-center mb-2"
-                  ><i class="ti ti-plus me-2"></i>Add New Item</a
-                >
+                <a href="javascript:void(0);"
+                  class="text-primary add-more-estimate fw-medium d-flex align-items-center mb-2"><i
+                    class="ti ti-plus me-2"></i>Add New Item</a>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-3">
@@ -430,15 +360,8 @@ export default {
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/sales/estimates" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/sales/estimates" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

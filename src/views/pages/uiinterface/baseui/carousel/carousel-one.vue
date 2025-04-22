@@ -3,11 +3,10 @@
     <div class="col-lg-6">
       <div class="card">
         <div class="card-body card-buttons">
-          <h4 class="header-title">Slides only</h4>
+          <h4 class="header-title">{{ $t('Slidesonly') }}</h4>
           <p class="sub-header">
-            Here’s a carousel with slides only. Note the presence of the
-            <code>.d-block</code> and <code>.img-fluid</code> on carousel images to
-            prevent browser default image alignment.
+            {{ $t('her..') }}
+            <code>.d-block</code> {{ $t('and') }} <code>.img-fluid</code> {{ $t('on...') }}
           </p>
 
           <div
@@ -46,8 +45,8 @@
     <div class="col-lg-6">
       <div class="card mb-0">
         <div class="card-body card-buttons">
-          <h4 class="header-title">With controls</h4>
-          <p class="sub-header">Adding in the previous and next controls:</p>
+          <h4 class="header-title">{{ $t('Withcontrols') }}</h4>
+          <p class="sub-header">{{ $t('Addinginthepreviousandnextcontrols') }}:</p>
 
           <!-- START carousel-->
           <div

@@ -11,16 +11,18 @@
             <div class="dropdown">
               <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
                 data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>Export
+                <i class="ti ti-file-export me-1"></i>{{ $t('dashboard.export') }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>Export as PDF</a>
+                      class="ti ti-file-type-pdf me-1"></i>{{
+                        $t('dashboard.exportPDF') }}</a>
                 </li>
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>Export as Excel
+                      class="ti ti-file-type-xls me-1"></i>{{
+                        $t('dashboard.exportEXCEL') }}
                   </a>
                 </li>
               </ul>
@@ -47,7 +49,7 @@
 
       <welcome-wrap></welcome-wrap>
 
-      <employee-status></employee-status>
+      <EmployeeStatus></EmployeeStatus>
 
       <job-applicants></job-applicants>
 
@@ -60,35 +62,35 @@
     <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
       <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
       <p>
-        Designed &amp; Developed By
-        <a href="javascript:void(0);" class="text-primary">Dreams</a>
+        {{ $t('designed') }} &amp; {{ $t('developedBy') }}
+        <a href="javascript:void(0);" class="text-primary">{{ $t('dreams') }}</a>
       </p>
     </div>
   </div>
   <hr-manager-dashboard-modal></hr-manager-dashboard-modal>
 </template>
-<script>
+<script setup>
 import { ref } from "vue";
+import LayoutHeader from "../../../layouts/layout-header.vue";
+import layoutSidebar from "../../../layouts/layout-sidebar.vue";
+import welcomeWrap from "../admin-dashboard/welcome-wrap.vue";
+import EmployeeStatus from "../admin-dashboard/employee-status.vue";
+import jobApplicants from "../admin-dashboard/job-applicants.vue";
+import salesOverview from "../admin-dashboard/sales-overview.vue";
+import projectTable from "../admin-dashboard/project-table.vue";
+import schedulesIndex from "../admin-dashboard/schedules-index.vue";
+const title = ref("HR Manager Dashboard");
+const text = ref("Dashboard");
+const text1 = ref("HR Manager Dashboard");
 const value5 = ref();
-export default {
-  data() {
-    return {
-      title: "HR Manager Dashboard",
-      text: "Dashboard",
-      text1: "HR Manager Dashboard",
-      value5,
-      isCollapsed: false,
-    };
-  },
-  methods: {
-    toggleCollapse() {
-      this.isCollapsed = !this.isCollapsed;
-      if (this.isCollapsed) {
-        document.body.classList.add("header-collapse");
-      } else {
-        document.body.classList.remove("header-collapse");
-      }
-    },
-  },
+const isCollapsed = ref(false);
+
+const toggleCollapse = () => {
+  isCollapsed.value = !isCollapsed.value;
+  if (isCollapsed.value) {
+    document.body.classList.add("header-collapse");
+  } else {
+    document.body.classList.remove("header-collapse");
+  }
 };
 </script>

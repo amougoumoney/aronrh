@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add New IP Address</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -20,11 +15,7 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">IP Address</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter Currency Name"
-                  />
+                  <input type="text" class="form-control" placeholder="Enter Currency Name" />
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Reason</label>
@@ -49,12 +40,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit IP Address</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -69,8 +55,7 @@
                 <div class="mb-3">
                   <label class="form-label">Reason</label>
                   <textarea class="form-control">
-Temporarily block to protect user accounts from internet fraudsters</textarea
-                  >
+Temporarily block to protect user accounts from internet fraudsters</textarea>
                 </div>
               </div>
             </div>
@@ -98,15 +83,8 @@ Temporarily block to protect user accounts from internet fraudsters</textarea
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/others-settings/ban-ip-address" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/others-settings/ban-ip-address" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

@@ -214,9 +214,9 @@ const columns = [
 ];
 
 const rowSelection = {
-  onChange: () => {},
-  onSelect: () => {},
-  onSelectAll: () => {},
+  onChange: () => { },
+  onSelect: () => { },
+  onSelectAll: () => { },
 };
 
 export default {
@@ -231,21 +231,12 @@ export default {
 </script>
 
 <template>
-  <a-table
-    class="table datatable thead-light"
-    :columns="columns"
-    :data-source="data"
-    :row-selection="rowSelection"
-  >
+  <a-table class="table datatable thead-light" :columns="columns" :data-source="data" :row-selection="rowSelection">
     <template #bodyCell="{ column, record }">
       <template v-if="column.key === 'Subscriber'">
         <div class="d-flex align-items-center file-name-icon">
           <a href="javascript:void(0);" class="avatar avatar-md border rounded-circle">
-            <img
-              :src="require(`@/assets/img/company/${record.Image}`)"
-              class="img-fluid"
-              alt="img"
-            />
+            <img :src="require(`@/assets/img/company/${record.Image}`)" class="img-fluid" alt="img" />
           </a>
           <div class="ms-2">
             <h6 class="fw-medium">
@@ -255,31 +246,20 @@ export default {
         </div>
       </template>
       <template v-if="column.key === 'Status'">
-        <span
-          class="d-flex align-items-center badge-xs"
-          :class="['badge', record.Status === 'Paid' ? 'badge-success' : 'badge-danger']"
-        >
+        <span class="d-flex align-items-center badge-xs"
+          :class="['badge', record.Status === 'Paid' ? 'badge-success' : 'badge-danger']">
           <i class="ti ti-point-filled me-1"></i>{{ record.Status }}
         </span>
       </template>
       <template v-if="column.key === 'action'">
         <div class="action-icon d-inline-flex">
-          <a
-            href="javascript:void(0);"
-            class="me-2"
-            data-bs-toggle="modal"
-            data-bs-target="#view_invoice"
-          >
+          <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal" data-bs-target="#view_invoice">
             <i class="ti ti-file-invoice"></i>
           </a>
           <a href="javascript:void(0);" class="me-2">
             <i class="ti ti-download"></i>
           </a>
-          <a
-            href="javascript:void(0);"
-            data-bs-toggle="modal"
-            data-bs-target="#delete_modal"
-          >
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal">
             <i class="ti ti-trash"></i>
           </a>
         </div>

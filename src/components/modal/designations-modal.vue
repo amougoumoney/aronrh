@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Designation</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -32,11 +27,7 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="DesignActive"
-                    id="desginacti"
-                    placeholder="Select"
-                  />
+                  <vue-select :options="DesignActive" id="desginacti" placeholder="Select" />
                 </div>
               </div>
             </div>
@@ -59,12 +50,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Designation</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -86,11 +72,7 @@
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="EditDesignActive"
-                    id="editdesginacti"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="EditDesignActive" id="editdesginacti" placeholder="Active" />
                 </div>
               </div>
             </div>
@@ -120,15 +102,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/employee/designations" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/employee/designations" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

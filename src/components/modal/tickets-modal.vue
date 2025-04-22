@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Ticket</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -32,15 +27,8 @@
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Assign To</label>
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="Onetags"
-                  />
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="Onetags" />
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Ticket Description</label>
@@ -58,12 +46,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-2"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
             <button type="submit" class="btn btn-primary">Add Ticket</button>
           </div>
         </form>
@@ -85,15 +68,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/tickets/tickets-grid" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/tickets/tickets-grid" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>

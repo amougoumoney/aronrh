@@ -1,17 +1,24 @@
 import { API_CONFIG } from '../config/api.config';
+import axios from 'axios';
 
 class ApiService {
     constructor() {
         this.baseURL = API_CONFIG.BASE_URL;
         this.headers = API_CONFIG.HEADERS;
+        this.axiosInstance = axios.create({
+            baseURL: this.baseURL,
+            headers: this.headers,
+            withCredentials: true
+        })
     }
 
     // Set auth token
     setAuthToken(token) {
         if (token) {
-            this.headers['Authorization'] = `Bearer ${token}`;
+            this.axiosInstance.defaults.headers['Authorization'] = this.headers['Authorization'];
         } else {
             delete this.headers['Authorization'];
+            delete this.axiosInstance.defaults.headers['Authorization'];
         }
     }
 

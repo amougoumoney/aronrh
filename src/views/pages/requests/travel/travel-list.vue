@@ -9,7 +9,8 @@
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="me-2 mb-2">
-            <button class="btn btn-primary" @click="openAddTravelModal" data-bs-toggle="modal" data-bs-target="#add_travel">
+            <button class="btn btn-primary" @click="openAddTravelModal" data-bs-toggle="modal"
+              data-bs-target="#add_travel">
               <i class="ti ti-plus me-1"></i>Create Travel Request
             </button>
           </div>
@@ -45,7 +46,8 @@
                   </td>
                   <td class="text-end">
                     <div class="dropdown dropdown-action">
-                      <a href="javascript:void(0);" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a href="javascript:void(0);" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         <i class="ti ti-dots-vertical"></i>
                       </a>
                       <div class="dropdown-menu dropdown-menu-end">
@@ -119,4 +121,4 @@ export default {
     }
   }
 };
-</script> 
+</script>

@@ -4,19 +4,19 @@
     <div class="col-xxl-4 d-flex">
       <div class="card flex-fill">
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
-          <h5 class="mb-2">Schedules</h5>
-          <router-link to="/recuritment/candidates" class="btn btn-light btn-md mb-2">View All</router-link>
+          <h5 class="mb-2">{{ $t('schedules') }}</h5>
+          <router-link to="/recuritment/candidates" class="btn btn-light btn-md mb-2">{{ $t('viewAll') }}</router-link>
         </div>
         <div class="card-body">
           <div class="bg-transparent-secondary p-3 br-5 mb-4">
-            <span class="badge badge-secondary badge-xs mb-1">UI/ UX Designer</span>
-            <h6 class="mb-1 text-truncate">Interview Candidates - UI/UX Designer</h6>
+            <span class="badge badge-secondary badge-xs mb-1">{{ $t('UI/UXDesigner') }}</span>
+            <h6 class="mb-1 text-truncate">{{ $t('interviewCandidates') }} - {{ $t('UI/UXDesigner') }}</h6>
             <div class="d-flex align-items-center flex-wrap border-bottom pb-2">
               <p class="fs-13 mb-1 me-2">
-                <i class="ti ti-calendar-event me-2"></i>Thu, 15 Feb 2025
+                <i class="ti ti-calendar-event me-2"></i>{{ $t('Thu15Feb2025') }}
               </p>
               <p class="fs-13 mb-1">
-                <i class="ti ti-clock-hour-11 me-2"></i>01:00 PM - 02:20 PM
+                <i class="ti ti-clock-hour-11 me-2"></i>{{ $t('01:00PM02:20PM') }}
               </p>
             </div>
             <div class="d-flex align-items-center justify-content-between border-top mt-1 pt-3">
@@ -40,18 +40,18 @@
                   +3
                 </a>
               </div>
-              <a href="javascript:void(0);" class="btn btn-primary btn-xs">Join Meeting</a>
+              <a href="javascript:void(0);" class="btn btn-primary btn-xs">{{ $t('joinMeeting') }}</a>
             </div>
           </div>
           <div class="bg-transparent-secondary p-3 br-5 mb-0">
-            <span class="badge badge-dark badge-xs mb-1">IOS Developer</span>
-            <h6 class="mb-1 text-truncate">Interview Candidates - IOS Developer</h6>
+            <span class="badge badge-dark badge-xs mb-1">{{ $t('IOSDeveloper') }}</span>
+            <h6 class="mb-1 text-truncate">{{ $t('interviewCandidates') }} - {{ $t('IOSDeveloper') }}</h6>
             <div class="d-flex align-items-center flex-wrap border-bottom pb-2">
               <p class="fs-13 mb-1 me-2">
-                <i class="ti ti-calendar-event me-2"></i>Thu, 15 Feb 2025
+                <i class="ti ti-calendar-event me-2"></i>{{ $t('Thu15Feb2025') }}
               </p>
               <p class="fs-13 mb-1">
-                <i class="ti ti-clock-hour-11 me-2"></i>02:00 PM - 04:20 PM
+                <i class="ti ti-clock-hour-11 me-2"></i>{{ $t('02:00PM04:20PM') }}
               </p>
             </div>
             <div class="d-flex align-items-center justify-content-between border-top mt-1 pt-3">
@@ -75,7 +75,7 @@
                   +3
                 </a>
               </div>
-              <a href="javascript:void(0);" class="btn btn-primary btn-xs">Join Meeting</a>
+              <a href="javascript:void(0);" class="btn btn-primary btn-xs">{{ $t('joinMeeting') }}</a>
             </div>
           </div>
         </div>
@@ -87,8 +87,8 @@
     <div class="col-xxl-4 col-xl-6 d-flex">
       <div class="card flex-fill">
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
-          <h5 class="mb-2">Recent Activities</h5>
-          <router-link to="/crm/activity" class="btn btn-light btn-md mb-2">View All</router-link>
+          <h5 class="mb-2">{{ $t('recentActivities') }}</h5>
+          <router-link to="/crm/activity" class="btn btn-light btn-md mb-2">{{ $t('viewAll') }}</router-link>
         </div>
         <div class="card-body">
           <div class="recent-item">
@@ -102,10 +102,10 @@
                     <h6 class="fs-medium text-truncate">
                       <a href="javscript:void(0);">Matt Morgan</a>
                     </h6>
-                    <p class="fs-13">05:30 PM</p>
+                    <p class="fs-13">{{ $t('05:30PM') }}</p>
                   </div>
                   <p class="fs-13">
-                    Added New Project <span class="text-primary">ARONHR Dashboard</span>
+                    {{ $t('addedNewProject') }} <span class="text-primary">{{ $t('ARONHRDashboard') }}</span>
                   </p>
                 </div>
               </div>
@@ -122,9 +122,9 @@
                     <h6 class="fs-medium text-truncate">
                       <a href="javscript:void(0);">Jay Ze</a>
                     </h6>
-                    <p class="fs-13">05:00 PM</p>
+                    <p class="fs-13">{{ $t('05:00PM') }}</p>
                   </div>
-                  <p class="fs-13">Commented on Uploaded Document</p>
+                  <p class="fs-13">{{ $t('commentedonUploadedDocument') }}</p>
                 </div>
               </div>
             </div>
@@ -140,9 +140,9 @@
                     <h6 class="fs-medium text-truncate">
                       <a href="javscript:void(0);">Mary Donald</a>
                     </h6>
-                    <p class="fs-13">05:30 PM</p>
+                    <p class="fs-13">{{ $t('05:30PM') }}</p>
                   </div>
-                  <p class="fs-13">Approved Task Projects</p>
+                  <p class="fs-13">{{ $t('ApprovedTaskProjects') }}</p>
                 </div>
               </div>
             </div>
@@ -158,9 +158,9 @@
                     <h6 class="fs-medium text-truncate">
                       <a href="javscript:void(0);">George David</a>
                     </h6>
-                    <p class="fs-13">06:00 PM</p>
+                    <p class="fs-13">{{ $t('06:00PM') }}</p>
                   </div>
-                  <p class="fs-13">Requesting Access to Module Tickets</p>
+                  <p class="fs-13">{{ $t('RequestingAccesstoModuleTickets') }}</p>
                 </div>
               </div>
             </div>
@@ -176,9 +176,9 @@
                     <h6 class="fs-medium text-truncate">
                       <a href="javscript:void(0);">Aaron Zeen</a>
                     </h6>
-                    <p class="fs-13">06:30 PM</p>
+                    <p class="fs-13">{{ $t('06:30PM') }}</p>
                   </div>
-                  <p class="fs-13">Downloaded App Reportss</p>
+                  <p class="fs-13">{{ $t('DownloadedAppReports') }}</p>
                 </div>
               </div>
             </div>
@@ -194,9 +194,9 @@
                     <h6 class="fs-medium text-truncate">
                       <a href="javscript:void(0);">Hendry Daniel</a>
                     </h6>
-                    <p class="fs-13">05:30 PM</p>
+                    <p class="fs-13">{{ $t('05:30PM') }}</p>
                   </div>
-                  <p class="fs-13">Completed New Project <span>HMS</span></p>
+                  <p class="fs-13">{{ $t('CompletedNewProject') }} <span>HMS</span></p>
                 </div>
               </div>
             </div>
@@ -210,11 +210,11 @@
     <div class="col-xxl-4 col-xl-6 d-flex">
       <div class="card flex-fill">
         <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
-          <h5 class="mb-2">Birthdays</h5>
-          <a href="javascript:void(0);" class="btn btn-light btn-md mb-2">View All</a>
+          <h5 class="mb-2">{{ $t('birthdays') }}</h5>
+          <a href="javascript:void(0);" class="btn btn-light btn-md mb-2">{{ $t('viewAll') }}</a>
         </div>
         <div class="card-body pb-1">
-          <h6 class="mb-2">Today</h6>
+          <h6 class="mb-2">{{ $t('today') }}</h6>
           <div class="bg-light p-2 border border-dashed rounded-top mb-3">
             <div class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center">
@@ -223,13 +223,14 @@
                 </span>
                 <div class="ms-2 overflow-hidden">
                   <h6 class="fs-medium">Andrew Jermia</h6>
-                  <p class="fs-13">IOS Developer</p>
+                  <p class="fs-13">{{ $t('IOSDeveloper') }}</p>
                 </div>
               </div>
-              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>Send</a>
+              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>{{
+                $t('send') }}</a>
             </div>
           </div>
-          <h6 class="mb-2">Tomorow</h6>
+          <h6 class="mb-2">{{ $t('tomorow') }}</h6>
           <div class="bg-light p-2 border border-dashed rounded-top mb-3">
             <div class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center">
@@ -238,10 +239,11 @@
                 </span>
                 <div class="ms-2 overflow-hidden">
                   <h6 class="fs-medium">Mary Zeen</h6>
-                  <p class="fs-13">UI/UX Designer</p>
+                  <p class="fs-13">{{ $t('UI/UXDesigner') }}</p>
                 </div>
               </div>
-              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>Send</a>
+              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>{{
+                $t('send') }}</a>
             </div>
           </div>
           <div class="bg-light p-2 border border-dashed rounded-top mb-3">
@@ -252,10 +254,11 @@
                 </span>
                 <div class="ms-2 overflow-hidden">
                   <h6 class="fs-medium">Antony Lewis</h6>
-                  <p class="fs-13">Android Developer</p>
+                  <p class="fs-13">{{ $t('AndroidDeveloper') }}</p>
                 </div>
               </div>
-              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>Send</a>
+              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>{{
+                $t('send') }}</a>
             </div>
           </div>
           <h6 class="mb-2">25 Jan 2025</h6>
@@ -267,10 +270,11 @@
                 </span>
                 <div class="ms-2 overflow-hidden">
                   <h6 class="fs-medium">Doglas Martini</h6>
-                  <p class="fs-13">.Net Developer</p>
+                  <p class="fs-13">{{ $t('.NetDeveloper') }}</p>
                 </div>
               </div>
-              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>Send</a>
+              <a href="javascript:vOid(0);" class="btn btn-secondary btn-xs"><i class="ti ti-cake me-1"></i>{{
+                $t('send') }}</a>
             </div>
           </div>
         </div>

@@ -1,10 +1,6 @@
 <template>
   <div class="d-flex overflow-x-auto align-items-start mb-4">
-    <div
-      class="kanban-list-items bg-white"
-      v-for="(module, color) in modules"
-      :key="color"
-    >
+    <div class="kanban-list-items bg-white" v-for="(module, color) in modules" :key="color">
       <div class="card mb-0">
         <div class="card-body">
           <div class="d-flex justify-content-between align-items-center">
@@ -18,30 +14,17 @@
             <div class="d-flex align-items-center">
               <div class="action-icon d-inline-flex">
                 <a href="javascript:void(0);"><i class="ti ti-circle-plus"></i></a>
-                <a
-                  href="javascript:void(0);"
-                  class=""
-                  data-bs-toggle="modal"
-                  data-bs-target="#edit_deals"
-                  ><i class="ti ti-edit"></i
-                ></a>
-                <a
-                  href="javascript:void(0);"
-                  data-bs-toggle="modal"
-                  data-bs-target="#delete_modal"
-                  ><i class="ti ti-trash"></i
-                ></a>
+                <a href="javascript:void(0);" class="" data-bs-toggle="modal" data-bs-target="#edit_deals"><i
+                    class="ti ti-edit"></i></a>
+                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
+                    class="ti ti-trash"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="kanban-drag-wrap pt-4">
-        <draggable
-          :list="module.Cards"
-          :group="{ name: 'kanban', pull: true, put: true }"
-          @end="onDragEnd(color)"
-        >
+        <draggable :list="module.Cards" :group="{ name: 'kanban', pull: true, put: true }" @end="onDragEnd(color)">
           <div v-for="Card in module.Cards" :key="Card.id">
             <div>
               <div class="card kanban-card">
@@ -49,13 +32,10 @@
                   <div class="d-block">
                     <div :class="Card.CardClass"></div>
                     <div class="d-flex align-items-center mb-3">
-                      <router-link
-                        to="/crm/deals-details"
-                        class="avatar avatar-lg bg-gray flex-shrink-0 me-2"
-                        ><span class="avatar-title text-dark">{{
-                          Card.Logo
-                        }}</span></router-link
-                      >
+                      <router-link to="/crm/deals-details" class="avatar avatar-lg bg-gray flex-shrink-0 me-2"><span
+                          class="avatar-title text-dark">{{
+                            Card.Logo
+                          }}</span></router-link>
                       <h6 class="fw-medium">
                         <router-link to="/crm/deals-details">{{
                           Card.CompanyName
@@ -83,43 +63,24 @@
                   </div>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="avatar avatar-md avatar-rounded flex-shrink-0 me-2"
-                        ><img
-                          :src="require(`@/assets/img/profiles/${Card.Image}`)"
-                          alt="image"
-                      /></a>
+                      <a href="javascript:void(0);" class="avatar avatar-md avatar-rounded flex-shrink-0 me-2"><img
+                          :src="require(`@/assets/img/profiles/${Card.Image}`)" alt="image" /></a>
                       <a href="javascript:void(0);" class="text-dark">
                         {{ Card.Name }}
                       </a>
                     </div>
-                    <span class="badge badge-sm badge-info-transparent"
-                      ><i class="ti ti-progress me-1"></i>{{ Card.Percentage }}</span
-                    >
+                    <span class="badge badge-sm badge-info-transparent"><i class="ti ti-progress me-1"></i>{{
+                      Card.Percentage }}</span>
                   </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between border-top pt-3 mt-3"
-                  >
-                    <span class="text-dark"
-                      ><i class="ti ti-calendar-due text-gray-5"></i>{{ Card.Date }}</span
-                    >
+                  <div class="d-flex align-items-center justify-content-between border-top pt-3 mt-3">
+                    <span class="text-dark"><i class="ti ti-calendar-due text-gray-5"></i>{{ Card.Date }}</span>
                     <div class="d-flex align-items-center">
-                      <a
-                        href="javascript:void(0);"
-                        class="d-flex align-items-center justify-content-center me-2"
-                        ><i class="ti ti-phone-check"></i
-                      ></a>
-                      <a
-                        href="javascript:void(0);"
-                        class="d-flex align-items-center justify-content-center me-2"
-                        ><i class="ti ti-message-circle-2"></i
-                      ></a>
-                      <a
-                        href="javascript:void(0);"
-                        class="d-flex align-items-center justify-content-center"
-                        ><i class="ti ti-color-swatch"></i
-                      ></a>
+                      <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-2"><i
+                          class="ti ti-phone-check"></i></a>
+                      <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-2"><i
+                          class="ti ti-message-circle-2"></i></a>
+                      <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center"><i
+                          class="ti ti-color-swatch"></i></a>
                     </div>
                   </div>
                 </div>
@@ -289,8 +250,8 @@ export default {
     };
   },
   methods: {
-    onDragEnd() {},
-    onModuleDragEnd() {},
+    onDragEnd() { },
+    onModuleDragEnd() { },
   },
 };
 </script>

@@ -1,27 +1,18 @@
 <template>
   <!-- Preview -->
   <div class="sidebar-themesettings offcanvas offcanvas-end" id="preview">
-    <div
-      class="offcanvas-header d-flex align-items-center justify-content-between bg-dark"
-    >
+    <div class="offcanvas-header d-flex align-items-center justify-content-between bg-dark">
       <div>
         <h4 class="mb-1 text-white">Preview</h4>
       </div>
       <div class="d-flex align-items-center">
-        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-3"
-          ><i class="ti ti-star-filled filled text-warning"></i
-        ></a>
-        <a
-          href="javascript:void(0);"
-          class="d-flex align-items-center justify-content-center text-white me-3"
-          ><i class="ti ti-trash"></i
-        ></a>
-        <a
-          href="javascript:void(0);"
+        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-3"><i
+            class="ti ti-star-filled filled text-warning"></i></a>
+        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-center text-white me-3"><i
+            class="ti ti-trash"></i></a>
+        <a href="javascript:void(0);"
           class="custom-btn-close d-flex align-items-center justify-content-center text-white"
-          data-bs-dismiss="offcanvas"
-          ><i class="ti ti-x"></i
-        ></a>
+          data-bs-dismiss="offcanvas"><i class="ti ti-x"></i></a>
       </div>
     </div>
     <div class="offcanvas-body p-0">
@@ -30,10 +21,7 @@
           <img src="@/assets/img/icons/pdf-icon.svg" alt="icon" />
         </div>
         <h4 class="mb-1">
-          Document Final Proof Read<span
-            class="badge badge-secondary-transparent fw-normal fs-12 ms-2"
-            >2.4 GB</span
-          >
+          Document Final Proof Read<span class="badge badge-secondary-transparent fw-normal fs-12 ms-2">2.4 GB</span>
         </h4>
         <p>Last Accessed on 15 Mar 2025, 08:15:23 PM</p>
       </div>
@@ -64,11 +52,7 @@
             <ul class="recent-activity mb-3">
               <li class="d-flex">
                 <span class="avatar avatar-md">
-                  <img
-                    src="@/assets/img/profiles/avatar-01.jpg"
-                    class="rounded-circle"
-                    alt="img"
-                  />
+                  <img src="@/assets/img/profiles/avatar-01.jpg" class="rounded-circle" alt="img" />
                 </span>
                 <div class="ms-2 flex-grow-1">
                   <p class="mb-0">
@@ -76,9 +60,7 @@
                     <span class="text-title">Drive</span>
                   </p>
                   <p class="mb-0">05:22 PM</p>
-                  <div
-                    class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1"
-                  >
+                  <div class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1">
                     <div class="d-flex align-items-center">
                       <i class="ti ti-video text-title fs-16"></i>
                       <p class="ms-2">All_files.mp4</p>
@@ -89,11 +71,7 @@
               </li>
               <li class="d-flex">
                 <span class="avatar avatar-md">
-                  <img
-                    src="@/assets/img/profiles/avatar-15.jpg"
-                    class="rounded-circle"
-                    alt="img"
-                  />
+                  <img src="@/assets/img/profiles/avatar-15.jpg" class="rounded-circle" alt="img" />
                 </span>
                 <div class="ms-2 flex-grow-1">
                   <p class="mb-0">
@@ -101,27 +79,21 @@
                     <span class="text-title">ROOT FOLDER</span>
                   </p>
                   <p class="mb-0">05:23 PM</p>
-                  <div
-                    class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1"
-                  >
+                  <div class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1">
                     <div class="d-flex align-items-center">
                       <i class="ti ti-photo text-title fs-16"></i>
                       <p class="ms-2">WebsiteBackupScreen.png</p>
                     </div>
                     <span class="fs-12">3.2 MB</span>
                   </div>
-                  <div
-                    class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1"
-                  >
+                  <div class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1">
                     <div class="d-flex align-items-center">
                       <i class="ti ti-file-zip text-title fs-16"></i>
                       <p class="ms-2">Finaldraft.zip</p>
                     </div>
                     <span class="fs-12">4 MB</span>
                   </div>
-                  <div
-                    class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1"
-                  >
+                  <div class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1">
                     <div class="d-flex align-items-center">
                       <i class="ti ti-photo text-title fs-16"></i>
                       <p class="ms-2">Photo.jpg</p>
@@ -135,11 +107,7 @@
             <ul class="recent-activity mb-3">
               <li class="d-flex">
                 <span class="avatar avatar-md">
-                  <img
-                    src="@/assets/img/profiles/avatar-29.jpg"
-                    class="rounded-circle"
-                    alt="img"
-                  />
+                  <img src="@/assets/img/profiles/avatar-29.jpg" class="rounded-circle" alt="img" />
                 </span>
                 <div class="ms-2 flex-grow-1">
                   <p class="mb-0">
@@ -147,9 +115,7 @@
                     <span class="text-title">Personal Assets</span>
                   </p>
                   <p class="mb-0">05:22 PM</p>
-                  <div
-                    class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1"
-                  >
+                  <div class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1">
                     <div class="d-flex align-items-center">
                       <i class="ti ti-photo text-title fs-16"></i>
                       <p class="ms-2">Photo_12.jpg</p>
@@ -160,11 +126,7 @@
               </li>
               <li class="d-flex">
                 <span class="avatar avatar-md">
-                  <img
-                    src="@/assets/img/profiles/avatar-25.jpg"
-                    class="rounded-circle"
-                    alt="img"
-                  />
+                  <img src="@/assets/img/profiles/avatar-25.jpg" class="rounded-circle" alt="img" />
                 </span>
                 <div class="ms-2 flex-grow-1">
                   <p class="mb-0">
@@ -172,9 +134,7 @@
                     <span class="text-title">Drive</span>
                   </p>
                   <p class="mb-0">05:23 PM</p>
-                  <div
-                    class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1"
-                  >
+                  <div class="bg-light rounded p-2 d-flex align-items-center justify-content-between mt-1">
                     <div class="d-flex align-items-center">
                       <i class="ti ti-photo text-title fs-16"></i>
                       <p class="ms-2">Photo.jpg</p>
@@ -188,24 +148,15 @@
         </div>
         <div class="d-flex align-items-center justify-content-between">
           <h4 class="mb-3">Members</h4>
-          <a
-            href="javascript:void(0);"
-            class="fs-12 mb-3"
-            data-bs-toggle="modal"
-            data-bs-target="#add_member"
-            >Add Members</a
-          >
+          <a href="javascript:void(0);" class="fs-12 mb-3" data-bs-toggle="modal" data-bs-target="#add_member">Add
+            Members</a>
         </div>
         <div class="card shadow-none mb-0">
           <div class="card-body p-3 pb-0">
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div class="d-flex align-items-center mb-2">
                 <span class="avatar avatar-md">
-                  <img
-                    src="@/assets/img/profiles/avatar-29.jpg"
-                    class="rounded-circle"
-                    alt="img"
-                  />
+                  <img src="@/assets/img/profiles/avatar-29.jpg" class="rounded-circle" alt="img" />
                 </span>
                 <div class="ms-2">
                   <h6 class="fw-medium">Anthony Lewis</h6>
@@ -219,11 +170,7 @@
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div class="d-flex align-items-center mb-2">
                 <span class="avatar avatar-md">
-                  <img
-                    src="@/assets/img/profiles/avatar-06.jpg"
-                    class="rounded-circle"
-                    alt="img"
-                  />
+                  <img src="@/assets/img/profiles/avatar-06.jpg" class="rounded-circle" alt="img" />
                 </span>
                 <div class="ms-2">
                   <h6 class="fw-medium">Harvey Smith</h6>
@@ -237,11 +184,7 @@
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div class="d-flex align-items-center mb-2">
                 <span class="avatar avatar-md">
-                  <img
-                    src="@/assets/img/profiles/avatar-02.jpg"
-                    class="rounded-circle"
-                    alt="img"
-                  />
+                  <img src="@/assets/img/profiles/avatar-02.jpg" class="rounded-circle" alt="img" />
                 </span>
                 <div class="ms-2">
                   <h6 class="fw-medium">Stephan Peralt</h6>
@@ -255,11 +198,7 @@
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div class="d-flex align-items-center mb-2">
                 <span class="avatar avatar-md">
-                  <img
-                    src="@/assets/img/profiles/avatar-26.jpg"
-                    class="rounded-circle"
-                    alt="img"
-                  />
+                  <img src="@/assets/img/profiles/avatar-26.jpg" class="rounded-circle" alt="img" />
                 </span>
                 <div class="ms-2">
                   <h6 class="fw-medium">Doglas Martini</h6>
@@ -273,11 +212,7 @@
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div class="d-flex align-items-center mb-2">
                 <span class="avatar avatar-md">
-                  <img
-                    src="@/assets/img/profiles/avatar-01.jpg"
-                    class="rounded-circle"
-                    alt="img"
-                  />
+                  <img src="@/assets/img/profiles/avatar-01.jpg" class="rounded-circle" alt="img" />
                 </span>
                 <div class="ms-2">
                   <h6 class="fw-medium">Linda Ray</h6>
@@ -301,12 +236,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Create Folder</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -335,12 +265,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Members</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -353,8 +278,7 @@
           </div>
           <div class="form-check ps-0">
             <label
-              class="form-check-label member-check-list activate d-flex align-items-center justify-content-between p-2 rounded mb-1"
-            >
+              class="form-check-label member-check-list activate d-flex align-items-center justify-content-between p-2 rounded mb-1">
               <span class="d-flex align-items-center text-dark">
                 <span class="avatar avatar-md avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-01.jpg" class="me-2" alt="Img" />
@@ -364,8 +288,7 @@
               <input type="checkbox" class="form-check-input" checked />
             </label>
             <label
-              class="form-check-label member-check-list d-flex align-items-center justify-content-between p-2 rounded mb-1"
-            >
+              class="form-check-label member-check-list d-flex align-items-center justify-content-between p-2 rounded mb-1">
               <span class="d-flex align-items-center text-dark">
                 <span class="avatar avatar-md avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-02.jpg" class="me-2" alt="Img" />
@@ -375,8 +298,7 @@
               <input type="checkbox" class="form-check-input" />
             </label>
             <label
-              class="form-check-label member-check-list d-flex align-items-center justify-content-between p-2 rounded mb-1"
-            >
+              class="form-check-label member-check-list d-flex align-items-center justify-content-between p-2 rounded mb-1">
               <span class="d-flex align-items-center text-dark">
                 <span class="avatar avatar-md avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-03.jpg" class="me-2" alt="Img" />
@@ -386,8 +308,7 @@
               <input type="checkbox" class="form-check-input" />
             </label>
             <label
-              class="form-check-label member-check-list d-flex align-items-center justify-content-between p-2 rounded mb-1"
-            >
+              class="form-check-label member-check-list d-flex align-items-center justify-content-between p-2 rounded mb-1">
               <span class="d-flex align-items-center text-dark">
                 <span class="avatar avatar-md avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-04.jpg" class="me-2" alt="Img" />
@@ -397,8 +318,7 @@
               <input type="checkbox" class="form-check-input" />
             </label>
             <label
-              class="form-check-label member-check-list d-flex align-items-center justify-content-between p-2 rounded mb-1"
-            >
+              class="form-check-label member-check-list d-flex align-items-center justify-content-between p-2 rounded mb-1">
               <span class="d-flex align-items-center text-dark">
                 <span class="avatar avatar-md avatar-rounded">
                   <img src="@/assets/img/profiles/avatar-04.jpg" class="me-2" alt="Img" />

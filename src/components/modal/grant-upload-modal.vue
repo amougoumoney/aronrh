@@ -4,22 +4,22 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="grantUploadModalLabel">Upload Grant Files</h5>
+          <h5 class="modal-title" id="grantUploadModalLabel">{{$t('UploadGrantFiles')}}</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form @submit.prevent="handleSubmit">
             <div class="mb-3">
-              <label for="grantFile" class="form-label">Select File</label>
+              <label for="grantFile" class="form-label">{{$t('SelectFile')}}</label>
               <input type="file" class="form-control" id="grantFile" @change="handleFileChange" required />
             </div>
             <div class="mb-3">
-              <label for="description" class="form-label">Description</label>
+              <label for="description" class="form-label">{{$t('Description')}}</label>
               <textarea class="form-control" id="description" v-model="description" rows="3" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary" :disabled="isUploading">
               <span v-if="isUploading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-              Upload
+              {{$t('Upload')}}
             </button>
           </form>
         </div>

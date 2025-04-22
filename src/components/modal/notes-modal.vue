@@ -5,12 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Add Notes</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -32,15 +27,8 @@
               <div class="col-6">
                 <div class="mb-3">
                   <label class="form-label">Tag</label>
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="tagsOne"
-                  />
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="tagsOne" />
                 </div>
               </div>
               <div class="col-6">
@@ -53,14 +41,8 @@
                 <div class="input-blocks todo-calendar">
                   <label class="form-label">Due Date</label>
                   <div class="input-groupicon calender-input">
-                    <date-picker
-                      v-model="startdate"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                   </div>
                 </div>
               </div>
@@ -73,11 +55,7 @@
               <div class="col-lg-12">
                 <div class="mb-0 summer-description-box notes-summernote">
                   <label class="form-label">Descriptions</label>
-                  <ckeditor
-                    :editor="editor"
-                    v-model="editorData"
-                    :config="editorConfig"
-                  ></ckeditor>
+                  <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                   <small>Maximum 60 Characters</small>
                 </div>
               </div>
@@ -101,12 +79,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Edit Notes</h4>
-          <button
-            type="button"
-            class="btn-close custom-btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
@@ -116,80 +89,47 @@
               <div class="col-12">
                 <div class="mb-3">
                   <label class="form-label">Note Title</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Team meet at Starbucks"
-                  />
+                  <input type="text" class="form-control" value="Team meet at Starbucks" />
                 </div>
               </div>
               <div class="col-12">
                 <div class="mb-3">
                   <label class="form-label">Assignee</label>
-                  <vue-select
-                    :options="EditNotAss"
-                    id="editnotass"
-                    placeholder="Kathleen"
-                  />
+                  <vue-select :options="EditNotAss" id="editnotass" placeholder="Kathleen" />
                 </div>
               </div>
               <div class="col-6">
                 <div class="mb-3">
                   <label class="form-label">Tag</label>
-                  <vue3-tags-input
-                    class="input-tags form-control"
-                    placeholder="Add new"
-                    type="text"
-                    data-role="tagsinput"
-                    name="Label"
-                    value="Tag1"
-                    :tags="tagsOne"
-                  />
+                  <vue3-tags-input class="input-tags form-control" placeholder="Add new" type="text"
+                    data-role="tagsinput" name="Label" value="Tag1" :tags="tagsOne" />
                 </div>
               </div>
               <div class="col-6">
                 <div class="mb-3">
                   <label class="form-label">Priority</label>
-                  <vue-select
-                    :options="EditPrioSelec"
-                    id="editpronot"
-                    placeholder="Medium"
-                  />
+                  <vue-select :options="EditPrioSelec" id="editpronot" placeholder="Medium" />
                 </div>
               </div>
               <div class="col-6">
                 <div class="input-blocks todo-calendar">
                   <label class="form-label">Due Date</label>
                   <div class="input-groupicon calender-input">
-                    <date-picker
-                      v-model="startdateOne"
-                      class="form-control datetimepicker"
-                      placeholder="dd/mm/yyyy"
-                      :editable="true"
-                      :clearable="false"
-                      :input-format="dateFormat"
-                    />
+                    <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
+                      :editable="true" :clearable="false" :input-format="dateFormat" />
                   </div>
                 </div>
               </div>
               <div class="col-6">
                 <div class="mb-3">
                   <label class="form-label">Status</label>
-                  <vue-select
-                    :options="EditActSel"
-                    id="editactseleee"
-                    placeholder="Active"
-                  />
+                  <vue-select :options="EditActSel" id="editactseleee" placeholder="Active" />
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="mb-0 summer-description-box notes-summernote">
                   <label class="form-label">Descriptions</label>
-                  <ckeditor
-                    :editor="editor"
-                    v-model="editorData"
-                    :config="editorConfig"
-                  ></ckeditor>
+                  <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
                   <small>Maximum 60 Characters</small>
                 </div>
               </div>
@@ -220,15 +160,8 @@
             You want to delete all the marked items, this cant be undone once you delete.
           </p>
           <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <router-link to="/applications/notes" class="btn btn-danger"
-              >Yes, Delete</router-link
-            >
+            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+            <router-link to="/applications/notes" class="btn btn-danger">Yes, Delete</router-link>
           </div>
         </div>
       </div>
@@ -247,12 +180,7 @@
                 <h4 class="modal-title me-3">Notes</h4>
                 <p class="text-info">Personal</p>
               </div>
-              <button
-                type="button"
-                class="btn-close custom-btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              >
+              <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
                 <i class="ti ti-x"></i>
               </button>
             </div>
@@ -270,9 +198,7 @@
                       while we hike at a local park.
                     </p>
 
-                    <p
-                      class="badge bg-outline-danger d-inline-flex align-items-center mb-0"
-                    >
+                    <p class="badge bg-outline-danger d-inline-flex align-items-center mb-0">
                       <i class="fas fa-circle fs-6 me-1"></i> High
                     </p>
                   </div>
@@ -280,9 +206,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <a href="javascript:void(0);" class="btn btn-danger" data-bs-dismiss="modal"
-                >Close</a
-              >
+              <a href="javascript:void(0);" class="btn btn-danger" data-bs-dismiss="modal">Close</a>
             </div>
           </div>
         </div>
