@@ -159,7 +159,7 @@ onMounted(() => {
 });
 
 const handleSubmit = async () => {
-  const payload = formData.value;
+  const payload = { ... formData.value };
   try {
     console.log('Submitting form:', payload);
     const response = isEditing.value
@@ -187,7 +187,6 @@ const handleSubmit = async () => {
 
 const resetForm = () => {
   formData.value = {
-    id: null,
     grant_id: null,
     bg_line: '',
     grant_position: '',
