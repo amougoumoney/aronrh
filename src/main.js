@@ -33,6 +33,7 @@ import CircleProgress from "vue3-circle-progress";
 import "vue3-circle-progress/dist/circle-progress.css";
 import i18n from './lang/index';
 
+
 // Styles supplémentaires
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -49,6 +50,20 @@ import "boxicons/css/boxicons.min.css";
 import "v-calendar/dist/style.css";
 import '@/assets/scss/main.scss';
 
+/***********Layout Components **********/
+import Layout_Header from '@/views/layouts/layout-header.vue';
+import Layout_Sidebar from '@/views/layouts/layout-sidebar.vue';
+import Horizontal_Header from '@/views/layouts/horizontal-header.vue';
+import Two_Sidebar from '@/views/layouts/two-sidebar.vue';
+import Stacked_Sidebar from '@/views/layouts/stacked-sidebar.vue';
+import Theme_Settings from '@/views/layouts/theme-settings.vue';
+import SidebarMenu from '@/views/layouts/sidebar-menu.vue';
+import themeColor from '@/views/layouts/theme-color.vue';
+
+/************Breadcrumb********************/
+
+import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
+
 // Configuration SweetAlert2
 import swal from 'sweetalert2';
 window.Swal = swal;
@@ -57,7 +72,19 @@ const pinia = createPinia();
 const initDaya = initData();
 const app = createApp(App);
 
+/*************Layout *****************/
+app.component('layout-header', Layout_Header)
+app.component('layout-sidebar', Layout_Sidebar)
+app.component('horizontal-header', Horizontal_Header)
+app.component('two-sidebar', Two_Sidebar)
+app.component('stacked-sidebar', Stacked_Sidebar)
+app.component('theme-settings', Theme_Settings)
+app.component('sidebar-menu', SidebarMenu)
+app.component('theme-color', themeColor)
 
+
+/*************Breadcrumb *****************/
+app.component('index-breadcrumb', indexBreadcrumb)
 
    app.use(pinia)
     .use(router)
