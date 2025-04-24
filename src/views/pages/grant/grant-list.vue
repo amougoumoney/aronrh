@@ -86,7 +86,7 @@
                     <td colspan="7" class="p-0">
                       <div class="p-2 bg-light">
                         <!-- Sub-table for grant items -->
-                        <table class="table table-sm mb-0">
+                        <table class="table table-striped custom-table mb-0 table-hover">
                           <thead>
                             <tr>
                               <th>{{ $t('BGLine') }}</th>
@@ -116,6 +116,17 @@
                               <td>{{ item.grant_benefit_fte }}</td>
                               <td>{{ item.position_id }}</td>
                               <td>{{ item.grant_total_amount }}</td>
+                              <td class="text-end action-icons">
+                                <button class="btn btn-link" @click="openEditGrantItemModal(item)">
+                                  <i class="ti ti-pencil"></i>
+                                </button>
+                                <button class="btn btn-link" @click="deleteGrantItem(item.id)">
+                                  <i class="ti ti-trash"></i>
+                                </button>
+                                <router-link :to="'/grant/item/details/' + item.id" class="btn btn-link">
+                                  <i class="ti ti-eye"></i>
+                                </router-link>
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -143,8 +154,9 @@ import { ref, computed, onMounted } from "vue";
 import GrantModal from "@/components/modal/grant-modal.vue";
 import GrantUploadModal from "@/components/modal/grant-upload-modal.vue";
 import indexBreadcrumb from "@/components/breadcrumb/index-breadcrumb.vue";
-import { grantService } from "@/services/grant.service";
+import GrantService  from "@/services/grant.service";
 import { Modal } from "bootstrap";
+import GrantItemService from '@/services/grantitem.service';
 
 const title = ref("Grants");
 const text = ref("Grants");
@@ -165,47 +177,55 @@ const paginatedGrants = computed(() => {
 
 const fetchGrants = async () => {
   try {
-    const response = await grantService.getGrants();
-    const grantsData = Array.isArray(response.data)
-      ? response.data
-      : Array.isArray(response)
-        ? response
-        : [];
+    // Appel de service pour récupérer tous les grants
+    const response = await GrantService.getAllGrants(); // Récupérer les grants
+    console.log("Réponse des grants :", response);
+    const grantsData = Array.isArray(response.data) ? response.data : [];
 
-    grants.value = grantsData.map((grant) => ({
-      id: grant.id,
-      code: grant.code,
-      name: grant.name,
-      amount: grant.amount || calculateTotalAmount(grant.grant_items),
-      startDate: grant.startDate || new Date().toLocaleDateString(),
-      endDate:
-        grant.endDate ||
-        new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toLocaleDateString(),
-      status: grant.status || "Pending",
-      items: (grant.grant_items || []).map((item) => ({
-        id: item.id,
-        bg_line: item.bg_line,
-        grant_position: item.grant_position,
-        grant_salary: item.grant_salary,
-        grant_benefit: item.grant_benefit,
-        grant_level_of_effort: item.grant_level_of_effort,
-        grant_position_number: item.grant_position_number,
-        grant_cost_by_monthly: item.grant_cost_by_monthly,
-        grant_total_cost_by_person: item.grant_total_cost_by_person,
-        grant_total_amount: item.grant_total_amount,
-      })),
-      expanded: false,
-    }));
+    // Récupérer tous les grant items
+    const response1 = await GrantItemService.getAllGrantItems(); // Récupérer les items de grant
+    console.log("Réponse des grant items :", response1);
+    const grantItemsData = Array.isArray(response1.data) ? response1.data : [];
 
+    // Mappage des données récupérées pour créer la structure des grants
+    grants.value = grantsData.map((grant) => {
+      // Filtrer les items associés à ce grant
+      const associatedItems = grantItemsData.filter(item => item.grantId === grant.id);
+
+      return {
+        id: grant.id,
+        code: grant.code,
+        name: grant.name,
+        amount: grant.amount || calculateTotalAmount(associatedItems), // Calculer le montant total des items associés
+        startDate: grant.startDate || new Date().toLocaleDateString(),
+        endDate: grant.endDate || new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toLocaleDateString(),
+        status: grant.status || "Pending",
+        items: associatedItems.map((item) => ({
+          id: item.id,
+          bg_line: item.bgLine,
+          grant_position: item.grantPosition,
+          grant_salary: item.grantSalary,
+          grant_benefit: item.grantBenefit,
+          grant_level_of_effort: item.grantLevelOfEffort,
+          grant_position_number: item.grantPositionNumber,
+          grant_cost_by_monthly: item.grantCostByMonthly,
+          grant_total_cost_by_person: item.grantTotalCostByPerson,
+          grant_total_amount: item.grantTotalAmount,
+        })),
+        expanded: false, // Pour gérer l'affichage des éléments étendus
+      };
+    });
+
+    // Mise à jour du total des grants pour la pagination
     totalGrants.value = grants.value.length;
   } catch (error) {
-    console.error("Error fetching grants:", error);
+    console.error("Erreur lors de la récupération des grants :", error);
   }
 };
 
 const calculateTotalAmount = (items) => {
   if (!items || !items.length) return "0";
-  const total = items.reduce((sum, item) => sum + Number(item.grant_total_amount || 0), 0);
+  const total = items.reduce((sum, item) => sum + Number(item.grantTotalAmount || 0), 0);
   return `${total.toFixed(2)}`;
 };
 
@@ -284,3 +304,34 @@ onMounted(() => {
   fetchGrants();
 });
 </script>
+<style>
+  .table-hover tbody tr {
+  position: relative; /* Nécessaire pour positionner les actions */
+}
+
+.table-hover tbody tr:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+  background-color: #f5f5f5; /* Couleur de fond pour le survol */
+}
+
+.action-icons {
+  display: none; /* Masquer par défaut les icônes d'action */
+  position: absolute; /* Positionner les actions */
+  right: 10px; /* Espace à droite */
+  top: 50%; /* Centrer verticalement */
+  transform: translateY(-50%); /* Ajuster pour centrer */
+  z-index: 1; /* S'assurer qu'elles sont au-dessus */
+}
+
+.table-hover tbody tr:hover .action-icons {
+  display: inline-block; /* Afficher les icônes d'action au survol */
+}
+
+.btn-update {
+  color: blue; /* Couleur pour le bouton Update */
+}
+
+.btn-delete {
+  color: red; /* Couleur pour le bouton Delete */
+}
+</style>

@@ -65,12 +65,12 @@ export const API_ENDPOINTS = {
 
     // Grant endpoints
     GRANT: {
-        LIST: '/grants',
-        CREATE: '/grants',
-        UPDATE: '/grants/:id',
-        DELETE: '/grants/:id',
-        DETAILS: '/grants/:id',
-        UPLOAD: '/grants/upload'
+        LIST: '/grant',
+        CREATE: '/grant',
+        UPDATE: '/grant/:id',
+        DELETE: '/grant/:id',
+        DETAILS: '/grant/:id',
+        UPLOAD: '/grant/upload'
     },
         // Points de terminaison pour les items de subvention
     GRANT_ITEM: {

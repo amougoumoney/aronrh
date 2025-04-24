@@ -1,19 +1,74 @@
-<script>
-export default {
-  data() {
-    return {
-      Leavetype: ["Select", "Medical Leave", "Casual Leave", "Annual Leave"],
-      Addemployee: ["Sophie", "Cameron", "Doris", "Rufana", "Michael"],
-      Addemp: ["Select", "Sophie", "Cameron", "Doris"],
-    };
-  },
-  methods: {
-    submitForm() {
-      this.$router.push("/leave/leaves-admin");
-    },
-  },
+<script setup>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { Modal } from 'bootstrap';
+
+// Router
+const router = useRouter();
+
+// Reactive references for modals
+const leaveModal = ref(null);
+const annualLeaveModal = ref(null);
+const sickLeaveModal = ref(null);
+const hospitalisationModal = ref(null);
+const maternityModal = ref(null);
+const paternityModal = ref(null);
+const lopModal = ref(null);
+const deleteModal = ref(null);
+
+// Data
+const Leavetype = ref(["Select", "Medical Leave", "Casual Leave", "Annual Leave"]);
+const Addemployee = ref(["Sophie", "Cameron", "Doris", "Rufana", "Michael"]);
+const Addemp = ref(["Select", "Sophie", "Cameron", "Doris"]);
+
+// Methods to open modals
+const openLeaveModal = () => {
+  leaveModal.value = new Modal(document.getElementById('new_custom_policy'));
+  leaveModal.value.show();
+};
+
+const openAnnualLeaveModal = () => {
+  annualLeaveModal.value = new Modal(document.getElementById('annual_leave_settings'));
+  annualLeaveModal.value.show();
+};
+
+const openSickLeaveModal = () => {
+  sickLeaveModal.value = new Modal(document.getElementById('sick_leave_settings'));
+  sickLeaveModal.value.show();
+};
+
+const openHospitalisationModal = () => {
+  hospitalisationModal.value = new Modal(document.getElementById('hospitalisation_settings'));
+  hospitalisationModal.value.show();
+};
+
+const openMaternityModal = () => {
+  maternityModal.value = new Modal(document.getElementById('maternity_settings'));
+  maternityModal.value.show();
+};
+
+const openPaternityModal = () => {
+  paternityModal.value = new Modal(document.getElementById('paternity_settings'));
+  paternityModal.value.show();
+};
+
+const openLopModal = () => {
+  lopModal.value = new Modal(document.getElementById('lop_settings'));
+  lopModal.value.show();
+};
+
+const openDeleteModal = () => {
+  deleteModal.value = new Modal(document.getElementById('delete_modal'));
+  deleteModal.value.show();
+};
+
+// Form submission
+const submitForm = () => {
+  // Here you would handle the form submission logic
+  router.push("/leave/leaves-admin");
 };
 </script>
+
 
 <template>
   <!-- New Custom Policy -->

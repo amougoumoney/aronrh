@@ -50,23 +50,6 @@ class GrantService {
       end_date: data.end_date,
       created_by: data.created_by || 'admin',
       updated_by: data.updated_by || 'admin',
-      grant_items: data.grant_items.map(item => ({
-        id: item.id,
-        grant_id: item.grant_id,
-        bg_line: item.bg_line,
-        grant_position: item.grant_position,
-        grant_salary: item.grant_salary,
-        grant_benefit: item.grant_benefit,
-        grant_level_of_effort: item.grant_level_of_effort,
-        grant_position_number: item.grant_position_number,
-        grant_cost_by_monthly: item.grant_cost_by_monthly,
-        grant_total_cost_by_person: item.grant_total_cost_by_person,
-        grant_benefit_fte: item.grant_benefit_fte,
-        position_id: item.position_id,
-        grant_total_amount: item.grant_total_amount,
-        created_by: item.created_by || 'admin',
-        updated_by: item.updated_by || 'admin',
-      }))
     };
   }
 }
