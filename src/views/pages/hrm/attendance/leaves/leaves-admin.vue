@@ -1,71 +1,65 @@
-<script>
-import "daterangepicker/daterangepicker.css";
-import "daterangepicker/daterangepicker.js";
-import { ref } from "vue";
-import { onMounted } from "vue";
-import moment from "moment";
-import DateRangePicker from "daterangepicker";
+<script setup>
+import { ref, onMounted } from 'vue';
+import moment from 'moment';
+import DateRangePicker from 'daterangepicker';
 import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
+import LeavesAdminModal from '@/components/modal/leaves-admin-modal.vue';
 
-export default {
-  components: {
-    indexBreadcrumb
-  },
-  data() {
-    return {
-      title: "Leaves",
-      text: "Employee",
-      text1: "Leaves",
-    };
-  },
-  methods: {
-    toggleHeader() {
-      document.getElementById("collapse-header").classList.toggle("active");
-      document.body.classList.toggle("header-collapse");
-    },
-  },
-  setup() {
-    const dateRangeInput = ref(null);
 
-    // Move the function declaration outside of the onMounted callback
-    function booking_range(start, end) {
-      return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
-    }
+// Référence au modal
+const leaveModal = ref(null);
+const title = "Leaves";
+const text = "Employee";
+const text1 = "Leaves";
+const dateRangeInput = ref(null);
 
-    onMounted(() => {
-      if (dateRangeInput.value) {
-        const start = moment().subtract(6, "days");
-        const end = moment();
-
-        new DateRangePicker(
-          dateRangeInput.value,
-          {
-            startDate: start,
-            endDate: end,
-            ranges: {
-              Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-              "Last 7 Days": [moment().subtract(6, "days"), moment()],
-              "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
-              "Last Month": [
-                moment().subtract(1, "month").startOf("month"),
-                moment().subtract(1, "month").endOf("month"),
-              ],
-            },
-          },
-          booking_range
-        );
-
-        booking_range(start, end);
-      }
-    });
-
-    return {
-      dateRangeInput,
-    };
-  },
+// Fonction pour ouvrir le modal en mode création
+const openAddModal = () => {
+  leaveModal.value.show();
 };
+
+// Fonction pour ouvrir le modal en mode édition
+const openEditModal = (leaveData) => {
+  leaveModal.value.show(true, leaveData);
+};
+
+function toggleHeader() {
+  document.getElementById("collapse-header").classList.toggle("active");
+  document.body.classList.toggle("header-collapse");
+}
+
+function booking_range(start, end) {
+  return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+}
+
+onMounted(() => {
+  if (dateRangeInput.value) {
+    const start = moment().subtract(6, "days");
+    const end = moment();
+
+    new DateRangePicker(
+      dateRangeInput.value,
+      {
+        startDate: start,
+        endDate: end,
+        ranges: {
+          Today: [moment(), moment()],
+          Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+          "Last 7 Days": [moment().subtract(6, "days"), moment()],
+          "Last 30 Days": [moment().subtract(29, "days"), moment()],
+          "This Month": [moment().startOf("month"), moment().endOf("month")],
+          "Last Month": [
+            moment().subtract(1, "month").startOf("month"),
+            moment().subtract(1, "month").endOf("month"),
+          ],
+        },
+      },
+      booking_range
+    );
+
+    booking_range(start, end);
+  }
+});
 </script>
 
 <template>
@@ -273,4 +267,4 @@ export default {
   <!-- /Page Wrapper -->
 
   <leaves-admin-modal></leaves-admin-modal>
-</template>
+</template>rf

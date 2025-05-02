@@ -37,7 +37,7 @@
                 <h6 class="d-flex align-items-center">{{ $t(leave.label) }}</h6>
               </div>
               <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" @click="openModal('add_custom_policy')">{{ $t('CustomPolicy') }}</a>
+                <a href="javascript:void(0);" class="text-decoration-underline me-2" @click="openModal('#add_custom_policy')">{{ $t('CustomPolicy') }}</a>
                 <a href="javascript:void(0);" @click="openModal(leave.settingsModal)">
                   <i class="ti ti-settings"></i>
                 </a>
@@ -113,49 +113,41 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
 import { ref } from 'vue';
-import bootstrap from 'bootstrap';
+import { Modal } from 'bootstrap';
 
-export default {
-  components: {
-    indexBreadcrumb
-  },
-  data() {
-    return {
-      title: "Leave Settings",
-      text: "Employee",
-      text1: "Leave Settings",
-      policyName: '',
-      noOfDays: '',
-      leaveTypes: [
-        { key: 'AnnualLeave', label: 'AnnualLeave', active: true, settingsModal: 'annual_leave_settings' },
-        { key: 'SickLeave', label: 'SickLeave', active: false, settingsModal: 'sick_leave_settings' },
-        { key: 'Hospitalisation', label: 'Hospitalisation', active: true, settingsModal: 'hospitalisation_settings' },
-        { key: 'Maternity', label: 'Maternity', active: true, settingsModal: 'maternity_settings' },
-        { key: 'Paternity', label: 'Paternity', active: false, settingsModal: 'paternity_settings' },
-        { key: 'LOP', label: 'LOP', active: false, settingsModal: 'lop_settings' },
-      ],
-    };
-  },
-  methods: {
-    toggleHeader() {
-      document.getElementById("collapse-header").classList.toggle("active");
-      document.body.classList.toggle("header-collapse");
-    },
-    openModal(modalId) {
-      const modal = new bootstrap.Modal(document.getElementById(modalId));
-      modal.show();
-    },
-    submitForm() {
-      // Handle form submission logic
-      console.log("Form submitted: ", { policyName: this.policyName, noOfDays: this.noOfDays });
-      // Reset fields after submission
-      this.policyName = '';
-      this.noOfDays = '';
-    }
-  },
+const title = ref("Leave Settings");
+const text = ref("Employee");
+const text1 = ref("Leave Settings");
+const policyName = ref('');
+const noOfDays = ref('');
+const leaveTypes = ref([
+  { key: 'AnnualLeave', label: 'AnnualLeave', active: true, settingsModal: 'annual_leave_settings' },
+  { key: 'SickLeave', label: 'SickLeave', active: false, settingsModal: 'sick_leave_settings' },
+  { key: 'Hospitalisation', label: 'Hospitalisation', active: true, settingsModal: 'hospitalisation_settings' },
+  { key: 'Maternity', label: 'Maternity', active: true, settingsModal: 'maternity_settings' },
+  { key: 'Paternity', label: 'Paternity', active: false, settingsModal: 'paternity_settings' },
+  { key: 'LOP', label: 'LOP', active: false, settingsModal: 'lop_settings' },
+]);
+
+const toggleHeader = () => {
+  document.getElementById("collapse-header").classList.toggle("active");
+  document.body.classList.toggle("header-collapse");
+};
+
+const openModal = (modalId) => {
+  const modal = new Modal(document.getElementById(modalId));
+  modal.show();
+};
+
+const submitForm = () => {
+  // Handle form submission logic
+  console.log("Form submitted: ", { policyName: policyName.value, noOfDays: noOfDays.value });
+  // Reset fields after submission
+  policyName.value = '';
+  noOfDays.value = '';
 };
 </script>
 

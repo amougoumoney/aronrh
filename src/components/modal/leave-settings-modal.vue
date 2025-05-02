@@ -77,8 +77,8 @@ const submitForm = () => {
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">New Custom Policy</h4>
-          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
-            <i class="ti ti-x"></i>
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">x
+            <i class="ti ti-x"></i>x
           </button>
         </div>
         <form @submit.prevent="submitForm">

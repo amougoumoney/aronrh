@@ -1,29 +1,125 @@
-<script>
-import { ref } from "vue";
-const currentDate = ref(new Date());
-const currentDateOne = ref(new Date());
+<script setup>
+import { ref, computed } from 'vue';
+import { Modal } from 'bootstrap';
+import { useNotifications } from '@/composables/useNotifications';
 
-export default {
-  data() {
-    return {
-      Employeename: ["Select", "Anthony Lewis", "Brian Villalobos", "Harvey Smith"],
-      Leavetype: ["Select", "Medical Leave", "Casual Leave", "Annual Leave"],
-      startdate: currentDate,
-      startdateOne: currentDateOne,
-      dateFormat: "dd-MM-yyyy",
+const { showNotification } = useNotifications();
+
+const emit = defineEmits(['saved']);
+const isEditMode = ref(false);
+
+// Données du formulaire
+const formData = ref({
+  employee_name: '',
+  leave_type: '',
+  from_date: new Date(),
+  to_date: new Date(),
+  days_count: '',
+  remaining_days: '',
+  reason: ''
+});
+
+// Options pour les selects
+const employeeOptions = ref([
+  { value: '', label: 'Select' },
+  { value: 'Anthony Lewis', label: 'Anthony Lewis' },
+  { value: 'Brian Villalobos', label: 'Brian Villalobos' },
+  { value: 'Harvey Smith', label: 'Harvey Smith' }
+]);
+
+const leaveTypeOptions = ref([
+  { value: '', label: 'Select' },
+  { value: 'Medical Leave', label: 'Medical Leave' },
+  { value: 'Casual Leave', label: 'Casual Leave' },
+  { value: 'Annual Leave', label: 'Annual Leave' }
+]);
+
+// Calculer le nombre de jours entre les dates
+const daysCount = computed(() => {
+  if (!formData.value.from_date || !formData.value.to_date) return 0;
+  
+  const diffTime = Math.abs(new Date(formData.value.to_date) - new Date(formData.value.from_date));
+  return Math.ceil(diffTime / (1000 * 60 * 60 * 24)) + 1; // +1 pour inclure le jour de départ
+});
+
+// Afficher le modal
+const show = (editMode = false, leaveData = null) => {
+  isEditMode.value = editMode;
+  
+  if (editMode && leaveData) {
+    formData.value = { ...leaveData };
+  } else {
+    // Réinitialiser le formulaire pour une nouvelle demande
+    formData.value = {
+      employee_name: '',
+      leave_type: '',
+      from_date: new Date(),
+      to_date: new Date(),
+      days_count: '',
+      remaining_days: '',
+      reason: ''
     };
-  },
-  methods: {
-    submitForm() {
-      this.$router.push("/leave/leaves-admin");
-    },
-  },
+  }
+  
+  const modalId = editMode ? 'edit_leaves' : 'add_leaves';
+  const modal = new Modal(document.getElementById(modalId));
+  modal.show();
 };
+
+// Soumettre le formulaire
+const submitForm = async () => {
+  try {
+    // Validation
+    if (!formData.value.employee_name || !formData.value.leave_type) {
+      throw new Error('Please select employee and leave type');
+    }
+    
+    if (new Date(formData.value.from_date) > new Date(formData.value.to_date)) {
+      throw new Error('End date must be after start date');
+    }
+    
+    // Mettre à jour le nombre de jours
+    formData.value.days_count = daysCount.value;
+    
+    // Ici vous ajouteriez l'appel à votre API
+    // const response = isEditMode.value 
+    //   ? await updateLeave(formData.value)
+    //   : await createLeave(formData.value);
+    
+    showNotification({
+      type: 'success',
+      title: 'Success',
+      message: isEditMode.value ? 'Leave updated successfully' : 'Leave created successfully',
+      timeout: 5000
+    });
+    
+    emit('saved', {
+      action: isEditMode.value ? 'update' : 'create',
+      data: formData.value
+    });
+    
+    // Fermer le modal
+    const modalId = isEditMode.value ? 'edit_leaves' : 'add_leaves';
+    const modal = Modal.getInstance(document.getElementById(modalId));
+    modal.hide();
+    
+  } catch (error) {
+    showNotification({
+      type: 'error',
+      title: 'Error',
+      message: error.message || 'An error occurred',
+      timeout: 8000
+    });
+  }
+};
+
+// Exposer les méthodes
+defineExpose({ show });
 </script>
 
 <template>
-  <!-- Add Leaves -->
-  <div class="modal fade" id="add_leaves">
+  <!-- Add Leaves Modal -->
+  <div class="modal fade" id="add_leaves" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
         <div class="modal-header">
@@ -38,21 +134,38 @@ export default {
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Employee Name</label>
-                  <vue-select :options="Employeename" id="employeeleave" placeholder="Select" />
+                  <vue-select 
+                    v-model="formData.employee_name"
+                    :options="employeeOptions" 
+                    placeholder="Select"
+                    required
+                  />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Leave Type</label>
-                  <vue-select :options="Leavetype" id="employeeleavetype" placeholder="Select" />
+                  <vue-select 
+                    v-model="formData.leave_type"
+                    :options="leaveTypeOptions" 
+                    placeholder="Select"
+                    required
+                  />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label">From </label>
+                  <label class="form-label">From</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker v-model="startdate" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
-                      :editable="true" :clearable="false" :input-format="dateFormat" />
+                    <date-picker 
+                      v-model="formData.from_date" 
+                      class="form-control datetimepicker" 
+                      placeholder="dd/mm/yyyy"
+                      :editable="true" 
+                      :clearable="false" 
+                      input-format="dd-MM-yyyy"
+                      required
+                    />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -61,10 +174,17 @@ export default {
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label">To </label>
+                  <label class="form-label">To</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker v-model="startdateOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy"
-                      :editable="true" :clearable="false" :input-format="dateFormat" />
+                    <date-picker 
+                      v-model="formData.to_date" 
+                      class="form-control datetimepicker" 
+                      placeholder="dd/mm/yyyy"
+                      :editable="true" 
+                      :clearable="false" 
+                      input-format="dd-MM-yyyy"
+                      required
+                    />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -74,19 +194,33 @@ export default {
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">No of Days</label>
-                  <input type="text" class="form-control" />
+                  <input 
+                    v-model="daysCount"
+                    type="text" 
+                    class="form-control" 
+                    readonly
+                  />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Remaining Days</label>
-                  <input type="text" class="form-control" />
+                  <input 
+                    v-model="formData.remaining_days"
+                    type="text" 
+                    class="form-control" 
+                  />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Reason</label>
-                  <textarea class="form-control" rows="3"></textarea>
+                  <textarea 
+                    v-model="formData.reason"
+                    class="form-control" 
+                    rows="3"
+                    required
+                  ></textarea>
                 </div>
               </div>
             </div>
@@ -95,16 +229,15 @@ export default {
             <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary">Add Leaves</button>
+            <button type="submit" class="btn btn-primary">Add Leave</button>
           </div>
         </form>
       </div>
     </div>
   </div>
-  <!-- /Add Leaves -->
 
-  <!-- Edit Leaves -->
-  <div class="modal fade" id="edit_leaves">
+  <!-- Edit Leaves Modal -->
+  <div class="modal fade" id="edit_leaves" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
         <div class="modal-header">
@@ -119,21 +252,32 @@ export default {
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Employee Name</label>
-                  <vue-select :options="Employeename" id="employeeleaveone" placeholder="Anthony Lewis" />
+                  <vue-select 
+                    v-model="formData.employee_name"
+                    :options="employeeOptions" 
+                  />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Leave Type</label>
-                  <vue-select :options="Leavetype" id="employeeleavetypeone" placeholder="Medical Leave" />
+                  <vue-select 
+                    v-model="formData.leave_type"
+                    :options="leaveTypeOptions" 
+                  />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label">From </label>
+                  <label class="form-label">From</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker v-model="startdate" class="form-control datetimepicker" value="14/01/24"
-                      placeholder="dd/mm/yyyy" :editable="true" :clearable="false" :input-format="dateFormat" />
+                    <date-picker 
+                      v-model="formData.from_date" 
+                      class="form-control datetimepicker" 
+                      :editable="true" 
+                      :clearable="false" 
+                      input-format="dd-MM-yyyy"
+                    />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -142,10 +286,15 @@ export default {
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label">To </label>
+                  <label class="form-label">To</label>
                   <div class="input-icon-end position-relative">
-                    <date-picker v-model="startdateOne" class="form-control datetimepicker" value="15/01/24"
-                      placeholder="dd/mm/yyyy" :editable="true" :clearable="false" :input-format="dateFormat" />
+                    <date-picker 
+                      v-model="formData.to_date" 
+                      class="form-control datetimepicker" 
+                      :editable="true" 
+                      :clearable="false" 
+                      input-format="dd-MM-yyyy"
+                    />
                     <span class="input-icon-addon">
                       <i class="ti ti-calendar text-gray-7"></i>
                     </span>
@@ -155,19 +304,32 @@ export default {
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">No of Days</label>
-                  <input type="text" class="form-control" value="01" />
+                  <input 
+                    v-model="daysCount"
+                    type="text" 
+                    class="form-control" 
+                    readonly
+                  />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Remaining Days</label>
-                  <input type="text" class="form-control" value="07" />
+                  <input 
+                    v-model="formData.remaining_days"
+                    type="text" 
+                    class="form-control" 
+                  />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
                   <label class="form-label">Reason</label>
-                  <textarea class="form-control" rows="3"> Going to Hospital </textarea>
+                  <textarea 
+                    v-model="formData.reason"
+                    class="form-control" 
+                    rows="3"
+                  ></textarea>
                 </div>
               </div>
             </div>
@@ -182,9 +344,8 @@ export default {
       </div>
     </div>
   </div>
-  <!-- /Edit Leaves -->
 
-  <!-- Delete Modal -->
+  <!-- Delete Modal (unchanged) -->
   <div class="modal fade" id="delete_modal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -204,5 +365,4 @@ export default {
       </div>
     </div>
   </div>
-  <!-- /Delete Modal -->
 </template>

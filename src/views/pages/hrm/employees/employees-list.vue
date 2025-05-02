@@ -230,7 +230,7 @@
           <td>
             <div class="d-flex align-items-center file-name-icon">
               <a href="javascript:void(0);" class="avatar avatar-md">
-                <img :src="employee.image || '@/assets/img/users/default-user.png'" 
+                <img :src="employee.profilePicture || '@/assets/img/users/default-user.png'" 
                      class="img-fluid rounded-circle" alt="img" />
               </a>
               <div class="ms-2">

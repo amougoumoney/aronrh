@@ -183,16 +183,23 @@
     </div>
   </div>
   <!-- /Page Wrapper -->
-  <employee-salary-modal></employee-salary-modal>
+  <EmployeeSalary ></EmployeeSalary >
 </template>
-<script>
+<script setup>
 import "daterangepicker/daterangepicker.css";
 import "daterangepicker/daterangepicker.js";
-import { ref } from "vue";
-import { onMounted } from "vue";
+import { ref, onMounted } from "vue";
 import moment from "moment";
 import DateRangePicker from "daterangepicker";
-const columns = [
+import EmployeeSalary from "@/components/modal/employee-salary-modal.vue";
+
+
+
+const salaryModal = ref(null);
+salaryModal.value?.show();                                                                                                                                              
+
+
+const columns = ref([
   {
     sorter: false,
   },
@@ -282,8 +289,9 @@ const columns = [
     key: "action",
     sorter: false,
   },
-];
-const data = [
+]);
+
+const data = ref([
   {
     EmpID: "Emp-001",
     Name: "Anthony Lewis",
@@ -308,165 +316,55 @@ const data = [
     Payslip: "Generate Slip",
     Image: "user-09.jpg",
   },
-  {
-    EmpID: "Emp-003",
-    Name: "Harvey Smith",
-    Work: "Developer",
-    Email: "harvey@example.com",
-    Phone: "(184) 2719 738",
-    Designation: "Executive",
-    JoiningDate: "18 Feb 2024",
-    Salary: "$20000",
-    Payslip: "Generate Slip",
-    Image: "user-01.jpg",
-  },
-  {
-    EmpID: "Emp-004",
-    Name: "Stephan Peralt",
-    Work: "Executive Officer",
-    Email: "peral@example.com",
-    Phone: "(193) 7839 748",
-    Designation: "Executive ",
-    JoiningDate: "17 Oct 2024",
-    Salary: "$$22000",
-    Payslip: "Generate Slip",
-    Image: "user-33.jpg",
-  },
-  {
-    EmpID: "Emp-005",
-    Name: "Doglas Martini",
-    Work: "Manager",
-    Email: "martniwr@example.com",
-    Phone: "(183) 9302 890",
-    Designation: "Manager",
-    JoiningDate: "20 Jul 2024",
-    Salary: "$25000",
-    Payslip: "Generate Slip",
-    Image: "user-34.jpg",
-  },
-  {
-    EmpID: "Emp-006",
-    Name: "Linda Ray",
-    Work: "Finance",
-    Email: "ray456@example.com",
-    Phone: "(120) 3728 039",
-    Designation: "Finance",
-    JoiningDate: "10 Apr 2024",
-    Salary: "$30000",
-    Payslip: "Generate Slip",
-    Image: "user-02.jpg",
-  },
-  {
-    EmpID: "Emp-007",
-    Name: "Elliot Murray",
-    Work: "Developer",
-    Email: "murray@example.com",
-    Phone: "(102) 8480 832",
-    Designation: "Finance",
-    JoiningDate: "29 Aug 2024",
-    Salary: "$35000",
-    Payslip: "Generate Slip",
-    Image: "user-35.jpg",
-  },
-  {
-    EmpID: "Emp-008",
-    Name: "Rebecca Smtih",
-    Work: "Executive",
-    Email: "smtih@example.com",
-    Phone: "(162) 8920 713",
-    Designation: "Executive",
-    JoiningDate: "22 Feb 2024",
-    Salary: "$45000",
-    Payslip: "Generate Slip",
-    Image: "user-36.jpg",
-  },
-  {
-    EmpID: "Emp-009",
-    Name: "Connie Waters",
-    Work: "Developer",
-    Email: "connie@example.com",
-    Phone: "(189) 0920 723",
-    Designation: "Developer",
-    JoiningDate: "03 Nov 2024",
-    Salary: "$50000",
-    Payslip: "Generate Slip",
-    Image: "user-37.jpg",
-  },
-  {
-    EmpID: "Emp-010",
-    Name: "Lori Broaddus",
-    Work: "Finance",
-    Email: "broaddus@example.com",
-    Phone: "(168) 8392 823",
-    Designation: "Finance ",
-    JoiningDate: "17 Dec 2024",
-    Salary: "$25000",
-    Payslip: "Generate Slip",
-    Image: "user-38.jpg",
-  },
-];
-const rowSelection = {
+  // ... (rest of your data items)
+]);
+
+const rowSelection = ref({
   onChange: () => { },
   onSelect: () => { },
   onSelectAll: () => { },
+});
+
+const title = ref("Employee Salary");
+const text = ref("HR");
+const text1 = ref("Employee Salary");
+const dateRangeInput = ref(null);
+
+const toggleHeader = () => {
+  document.getElementById("collapse-header").classList.toggle("active");
+  document.body.classList.toggle("header-collapse");
 };
-export default {
-  data() {
-    return {
-      data,
-      columns,
-      rowSelection,
-      title: "Employee Salary",
-      text: "HR",
-      text1: "Employee Salary",
-    };
-  },
-  methods: {
-    toggleHeader() {
-      document.getElementById("collapse-header").classList.toggle("active");
-      document.body.classList.toggle("header-collapse");
-    },
-  },
-  setup() {
-    const dateRangeInput = ref(null);
 
-    // Move the function declaration outside of the onMounted callback
-    function booking_range(start, end) {
-      return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
-    }
+function booking_range(start, end) {
+  return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+}
 
-    onMounted(() => {
-      if (dateRangeInput.value) {
-        const start = moment().subtract(6, "days");
-        const end = moment();
+onMounted(() => {
+  if (dateRangeInput.value) {
+    const start = moment().subtract(6, "days");
+    const end = moment();
 
-        new DateRangePicker(
-          dateRangeInput.value,
-          {
-            startDate: start,
-            endDate: end,
-            ranges: {
-              Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-              "Last 7 Days": [moment().subtract(6, "days"), moment()],
-              "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
-              "Last Month": [
-                moment().subtract(1, "month").startOf("month"),
-                moment().subtract(1, "month").endOf("month"),
-              ],
-            },
-          },
-          booking_range
-        );
+    new DateRangePicker(
+      dateRangeInput.value,
+      {
+        startDate: start,
+        endDate: end,
+        ranges: {
+          Today: [moment(), moment()],
+          Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+          "Last 7 Days": [moment().subtract(6, "days"), moment()],
+          "Last 30 Days": [moment().subtract(29, "days"), moment()],
+          "This Month": [moment().startOf("month"), moment().endOf("month")],
+          "Last Month": [
+            moment().subtract(1, "month").startOf("month"),
+            moment().subtract(1, "month").endOf("month"),
+          ],
+        },
+      },
+      booking_range
+    );
 
-        booking_range(start, end);
-      }
-    });
-
-    return {
-      dateRangeInput,
-    };
-  },
-};
+    booking_range(start, end);
+  }
+});
 </script>
