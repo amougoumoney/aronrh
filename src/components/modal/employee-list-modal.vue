@@ -305,7 +305,7 @@ import axios from 'axios';
 // Dans votre setup
 const { showNotification } = useNotifications();
 
-const cloudName = 'ddwutdh6t  '
+const cloudName = 'ddwutdh6t'
 const uploadPreset = 'preset_profile'; // Remplacez par votre upload preset
 const uploading = ref(false);
 
@@ -522,13 +522,10 @@ const submitForm = async () => {
 };
 
 const uploadImageToCloudinary = async (file) => {
-  uploading.value = true;
   try {
     const formData = new FormData();
     formData.append('file', file);
     formData.append('upload_preset', uploadPreset);
-    formData.append('cloud_name', cloudName);
-    formData.append('public_id', `employee_profile_${uuidv4()}`);
 
     const response = await axios.post(
       `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`,
@@ -540,25 +537,16 @@ const uploadImageToCloudinary = async (file) => {
       }
     );
 
-    return response.data.secure_url; // Retourne l'URL de l'image
+    return response.data.secure_url; // Retourner l'URL de l'image
   } catch (error) {
-    console.error('Error uploading image:', error);
+    console.error('Erreur lors du téléversement de l\'image:', error);
     throw error;
   }
 };
-
 const handleImageUpload = async (event) => {
   const file = event.target.files[0];
-
-  const reader = new FileReader();
-  reader.onload = (e) => {
-    // Affiche un aperçu instantané avant l'upload
-    formData.value.image = e.target.result; 
-  };
-  reader.readAsDataURL(file);
   if (!file) return;
 
-    // Vérification du type et taille
   const validTypes = ['image/jpeg', 'image/png', 'image/webp'];
   const maxSize = 5 * 1024 * 1024; // 5MB
 
@@ -567,7 +555,7 @@ const handleImageUpload = async (event) => {
       type: 'error',
       title: 'Format invalide',
       message: 'Seuls les JPEG, PNG et WEBP sont acceptés',
-      timeout: 500
+      timeout: 5000
     });
     return;
   }
@@ -577,39 +565,40 @@ const handleImageUpload = async (event) => {
       type: 'error',
       title: 'Fichier trop lourd',
       message: 'La taille maximale est de 5MB',
-      timeout: 500
+      timeout: 5000
     });
     return;
   }
 
+  uploading.value = true; // Afficher l'overlay de chargement
   try {
-    // Afficher un loader pendant l'upload
+        // Afficher un loader pendant l'upload
     showNotification({
       type: 'info',
       title: 'Upload en cours',
       message: 'Traitement de votre image...',
-      timeout: 200
+      timeout: 2000
     });
 
     const imageUrl = await uploadImageToCloudinary(file);
-    formData.value.profile_picture = imageUrl; // Stockez aussi dans profile_picture si besoin
-
-    showNotification({
+    formData.value.profile_picture = imageUrl; // Mettre à jour l'URL dans formData
+        showNotification({
       type: 'success',
       title: 'Succès',
       message: 'Image uploadée avec succès!',
-      timeout: 300
+      timeout: 3000
     });
   } catch (error) {
     showNotification({
       type: 'error',
-      title: 'Erreur',
-      message: "Échec de l'upload de l'image",
+      title: 'Échec du téléversement',
+      message: 'Échec du téléversement de l\'image',
       timeout: 5000
     });
+  } finally {
+    uploading.value = false; // Cacher l'overlay de chargement
   }
 };
-
 const removeImage = async () => {
   // Optionnel: Supprimer l'image de Cloudinary si nécessaire
   // (nécessite une implémentation côté serveur pour la suppression sécurisée)
@@ -632,7 +621,6 @@ onMounted(() => {
   width: 80px;
   height: 80px;
 }
-
 .upload-overlay {
   position: absolute;
   top: 0;

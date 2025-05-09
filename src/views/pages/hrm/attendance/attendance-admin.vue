@@ -1,23 +1,23 @@
-<script>
+<script setup>
 import { ref } from "vue";
-const currentDate = ref(new Date());
+import attendenceAdminModal from "@/components/modal/attendance-admin-modal.vue"
+import attendenceAdminTable from "./attendance-admin-table.vue"
 
-export default {
-    data() {
-        return {
-            title: "Attendance Admin",
-            text: "Employee",
-            text1: "Attendance Admin",
-            startdate: currentDate,
-            dateFormat: "dd-MM-yyyy",
-        }
-    },
-    methods: {
-        toggleHeader() {
-            document.getElementById("collapse-header").classList.toggle("active");
-            document.body.classList.toggle("header-collapse");
-        },
-    },
+const currentDate = ref(new Date());
+const attendanceModalRef = ref(null);
+
+const title = "Attendance Admin";
+const text = "Employee";
+const text1 = "Attendance Admin";
+const dateFormat = "dd-MM-yyyy";
+
+const ShowAttendanceModal = () => {
+  attendanceModalRef.value.show();
+};  
+
+function toggleHeader() {
+  document.getElementById("collapse-header").classList.toggle("active");
+  document.body.classList.toggle("header-collapse");
 }
 </script>
 
@@ -63,7 +63,7 @@ export default {
                     </div>
                     <div class="mb-2">
                         <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center"
-                            data-bs-target="#attendance_report" data-bs-toggle="modal"><i
+                            @click="ShowAttendanceModal" data-bs-toggle="modal"><i
                                 class="ti ti-file-analytics me-2"></i>{{$t('Report')}}</a>
                     </div>
                     <div class="ms-2 head-icons">
@@ -275,5 +275,6 @@ export default {
     </div>
     <!-- /Page Wrapper -->
 
-    <attendence-admin-modal></attendence-admin-modal>
+    <attendence-admin-modal  ref="attendanceModalRef"
+    @attendance-saved="refreshAttendanceList"></attendence-admin-modal>
 </template>

@@ -187,6 +187,25 @@ export const API_ENDPOINTS = {
         UPDATE: '/payroll/:id',
         DELETE: '/payroll/:id',
         DETAILS: '/payroll/:id'
+    },
+    // point de terminaison pour la liste des formations
+    
+    TRAINERTYPE: {
+        LIST: '/trainertype',
+        CREATE: '/trainertype',
+        UPDATE: '/trainertype/:id',
+        DELETE: '/trainertype/:id',
+        DETAILS: '/trainertype/:id'
+    },
+    // point de terminaison pour les formateurs 
+    
+    TRAINER: {
+        LIST: '/trainer',
+        CREATE: '/trainer',
+        UPDATE: '/trainer/:id',
+        DELETE: '/trainer/:id',
+        DETAILS: '/trainer/:id'
     }
+    
     
 };

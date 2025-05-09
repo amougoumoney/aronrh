@@ -1,18 +1,23 @@
-<script>
-export default {
-  data() {
-    return {
-      title: "Timesheets",
-      text: "Employee",
-      text1: "Timesheets",
-    };
-  },
-  methods: {
-    toggleHeader() {
-      document.getElementById("collapse-header").classList.toggle("active");
-      document.body.classList.toggle("header-collapse");
-    },
-  },
+<script setup>
+import { ref } from 'vue';
+import timesheetsModal from '@/components/modal/timesheets-modal.vue';
+import timesheetsTable from './timesheets-table.vue';
+
+const title = ref("Timesheets");
+const text = ref("Employee");
+const text1 = ref("Timesheets");
+const timesheetModal = ref(null);
+
+const toggleHeader = () => {
+  const header = document.getElementById("collapse-header");
+  if (header) {
+    header.classList.toggle("active");
+    document.body.classList.toggle("header-collapse");
+  }
+};
+
+const showAddTimesheetModal = () => {
+  timesheetModal.value.show();
 };
 </script>
 
@@ -47,7 +52,7 @@ export default {
             </div>
           </div>
           <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_timesheet"
+            <a href="javascript:void(0);" data-bs-toggle="modal" @click="showAddTimesheetModal"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddTodaysWork')}}
               </a>
           </div>
@@ -127,5 +132,5 @@ export default {
   </div>
   <!-- /Page Wrapper -->
 
-  <timesheets-modal></timesheets-modal>
+  <timesheets-modal ref="timesheetModal"></timesheets-modal>
 </template>
