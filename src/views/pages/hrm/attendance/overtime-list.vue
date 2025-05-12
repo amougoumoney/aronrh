@@ -1,67 +1,65 @@
-<script>
+<script setup>
 import "daterangepicker/daterangepicker.css";
 import "daterangepicker/daterangepicker.js";
-import { ref } from "vue";
-import { onMounted } from "vue";
+import { ref, onMounted } from "vue";
 import moment from "moment";
 import DateRangePicker from "daterangepicker";
+import OvertimeModal from "@/components/modal/overtime-modal.vue";
+import OvertimeTable from "./overtime-table.vue";
 
-export default {
-    data() {
-        return {
-            title: "Overtime",
-            text: "Employee",
-            text1: "Overtime",
-        }
-    },
-    methods: {
-        toggleHeader() {
-            document.getElementById("collapse-header").classList.toggle("active");
-            document.body.classList.toggle("header-collapse");
-        },
-    },
-    setup() {
-        const dateRangeInput = ref(null);
+const title = "Overtime";
+const text = "Employee";
+const text1 = "Overtime";
 
-        // Move the function declaration outside of the onMounted callback
-        function booking_range(start, end) {
-            return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
-        }
+const dateRangeInput = ref(null);
+const overTimeModalRef = ref(null);
 
-        onMounted(() => {
-            if (dateRangeInput.value) {
-                const start = moment().subtract(6, "days");
-                const end = moment();
+// Fonction pour formater la plage de dates
+const booking_range = (start, end) => {
+    return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+};
 
-                new DateRangePicker(
-                    dateRangeInput.value,
-                    {
-                        startDate: start,
-                        endDate: end,
-                        ranges: {
-                            Today: [moment(), moment()],
-                            Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-                            "Last 7 Days": [moment().subtract(6, "days"), moment()],
-                            "Last 30 Days": [moment().subtract(29, "days"), moment()],
-                            "This Month": [moment().startOf("month"), moment().endOf("month")],
-                            "Last Month": [
-                                moment().subtract(1, "month").startOf("month"),
-                                moment().subtract(1, "month").endOf("month"),
-                            ],
-                        },
-                    },
-                    booking_range
-                );
+const showOvertimeModal = () => {
+    overTimeModalRef.value.show();
+};
 
-                booking_range(start, end);
-            }
-        });
+onMounted(() => {
+    if (dateRangeInput.value) {
+        const start = moment().subtract(6, "days");
+        const end = moment();
 
-        return {
-            dateRangeInput,
-        };
-    },
-}
+        new DateRangePicker(
+            dateRangeInput.value,
+            {
+                startDate: start,
+                endDate: end,
+                ranges: {
+                    Today: [moment(), moment()],
+                    Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+                    "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                    "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                    "This Month": [moment().startOf("month"), moment().endOf("month")],
+                    "Last Month": [
+                        moment().subtract(1, "month").startOf("month"),
+                        moment().subtract(1, "month").endOf("month"),
+                    ],
+                },
+            },
+            booking_range
+        );
+
+        booking_range(start, end);
+    }
+});
+
+// Fonction pour activer/désactiver l'en-tête
+const toggleHeader = () => {
+    const header = document.getElementById("collapse-header");
+    if (header) {
+        header.classList.toggle("active");
+        document.body.classList.toggle("header-collapse");
+    }
+};
 </script>
 
 <template>
@@ -96,7 +94,7 @@ export default {
                         </div>
                     </div>
                     <div class="mb-2">
-                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_overtime"
+                        <a href="javascript:void(0);" data-bs-toggle="modal" @click="showOvertimeModal"
                             class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>
                             {{$t('AddOvertime')}}</a>
                     </div>
@@ -293,5 +291,5 @@ export default {
     </div>
     <!-- /Page Wrapper -->
 
-    <overtime-modal></overtime-modal>
+    <overtime-modal ref="overTimeModalRef"></overtime-modal>
 </template>

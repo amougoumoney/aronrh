@@ -65,12 +65,12 @@ export const API_ENDPOINTS = {
 
     // Grant endpoints
     GRANT: {
-        LIST: '/grants',
-        CREATE: '/grants',
-        UPDATE: '/grants/:id',
-        DELETE: '/grants/:id',
-        DETAILS: '/grants/:id',
-        UPLOAD: '/grants/upload'
+        LIST: '/grant',
+        CREATE: '/grant',
+        UPDATE: '/grant/:id',
+        DELETE: '/grant/:id',
+        DETAILS: '/grant/:id',
+        UPLOAD: '/grant/upload'
     },
         // Points de terminaison pour les items de subvention
     GRANT_ITEM: {
@@ -101,11 +101,11 @@ export const API_ENDPOINTS = {
     },
      // Points de terminaison pour les départements
     DEPARTEMENT: {
-        LIST: '/departemnt',
-        CREATE: '/departemnt',
-        UPDATE: '/departemnt/:id',
-        DELETE: '/departemnt/:id',
-        DETAILS: '/departemnt/:id'
+        LIST: '/departement',
+        CREATE: '/departement',
+        UPDATE: '/departement/:id',
+        DELETE: '/departement/:id',
+        DETAILS: '/departement/:id'
     },
 
     // Points de terminaison pour les allocations d'emploi
@@ -177,6 +177,35 @@ export const API_ENDPOINTS = {
         UPDATE: '/lookup/:id',
         DELETE: '/lookup/:id',
         DETAILS: '/lookup/:id'
+    },
+
+    // point de terminaison pour les paiements
+
+    PAYROLL: {
+        LIST: '/payroll',
+        CREATE: '/payroll',
+        UPDATE: '/payroll/:id',
+        DELETE: '/payroll/:id',
+        DETAILS: '/payroll/:id'
+    },
+    // point de terminaison pour la liste des formations
+    
+    TRAINERTYPE: {
+        LIST: '/trainertype',
+        CREATE: '/trainertype',
+        UPDATE: '/trainertype/:id',
+        DELETE: '/trainertype/:id',
+        DETAILS: '/trainertype/:id'
+    },
+    // point de terminaison pour les formateurs 
+    
+    TRAINER: {
+        LIST: '/trainer',
+        CREATE: '/trainer',
+        UPDATE: '/trainer/:id',
+        DELETE: '/trainer/:id',
+        DETAILS: '/trainer/:id'
     }
+    
     
 };

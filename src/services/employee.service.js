@@ -70,6 +70,7 @@ class EmployeeService {
             subsidiary: data.subsidiary || 'SMRU',
             first_name: data.first_name,
             middle_name: data.middle_name,
+            departement_id: data.departement_id,
             last_name: data.last_name,
             gender: data.gender,
             date_of_birth: data.date_of_birth,

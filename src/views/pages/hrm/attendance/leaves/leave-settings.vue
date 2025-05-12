@@ -1,30 +1,6 @@
-<script>
-import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
-
-export default {
-  components: {
-    indexBreadcrumb
-  },
-  data() {
-    return {
-      title: "Leave Settings",
-      text: "Employee",
-      text1: "Leave Settings",
-    };
-  },
-  methods: {
-    toggleHeader() {
-      document.getElementById("collapse-header").classList.toggle("active");
-      document.body.classList.toggle("header-collapse");
-    },
-  },
-};
-</script>
-
 <template>
   <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar>
-
+  <layout-sidebar></layout-sidebar> 
   <!-- Page Wrapper -->
   <div class="page-wrapper">
     <div class="content">
@@ -33,9 +9,8 @@ export default {
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#new_custom_policy"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{
-                $t('AddCustomPolicy') }}
+            <a href="javascript:void(0);" @click="openModal('new_custom_policy')" class="btn btn-primary d-flex align-items-center">
+              <i class="ti ti-circle-plus me-2"></i>{{ $t('AddCustomPolicy') }}
             </a>
           </div>
           <div class="head-icons ms-2">
@@ -50,126 +25,20 @@ export default {
 
       <!-- Leaves Info -->
       <div class="row">
-        <div class="col-xl-4 col-md-6">
+        <div class="col-xl-4 col-md-6" v-for="leave in leaveTypes" :key="leave.key">
           <div class="card">
             <div class="card-body d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center">
                 <div class="form-check form-check-md form-switch me-1">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" role="switch" checked />
+                    <input class="form-check-input" type="checkbox" role="switch" v-model="leave.active" />
                   </label>
                 </div>
-                <h6 class="d-flex align-items-center">{{ $t('AnnualLeave') }}</h6>
+                <h6 class="d-flex align-items-center">{{ $t(leave.label) }}</h6>
               </div>
               <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#annual_leave_settings">
-                  <i class="ti ti-settings"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-          <div class="card">
-            <div class="card-body d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <div class="form-check form-check-md form-switch me-1">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" role="switch" />
-                  </label>
-                </div>
-                <h6 class="d-flex align-items-center">{{ $t('SickLeave') }}</h6>
-              </div>
-              <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#sick_leave_settings">
-                  <i class="ti ti-settings"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-          <div class="card">
-            <div class="card-body d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <div class="form-check form-check-md form-switch me-1">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" role="switch" checked />
-                  </label>
-                </div>
-                <h6 class="d-flex align-items-center">{{ $t('Hospitalisation') }}</h6>
-              </div>
-              <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#hospitalisation_settings"><i
-                    class="ti ti-settings"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-          <div class="card">
-            <div class="card-body d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <div class="form-check form-check-md form-switch me-1">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" role="switch" checked />
-                  </label>
-                </div>
-                <h6 class="d-flex align-items-center">{{ $t('Maternity') }}</h6>
-              </div>
-              <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#maternity_settings">
-                  <i class="ti ti-settings"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-          <div class="card">
-            <div class="card-body d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <div class="form-check form-check-md form-switch me-1">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" role="switch" />
-                  </label>
-                </div>
-                <h6 class="d-flex align-items-center">{{ $t('Paternity') }}</h6>
-              </div>
-              <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#paternity_settings">
-                  <i class="ti ti-settings"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-          <div class="card">
-            <div class="card-body d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <div class="form-check form-check-md form-switch me-1">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" role="switch" />
-                  </label>
-                </div>
-                <h6 class="d-flex align-items-center">LOP</h6>
-              </div>
-              <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="text-decoration-underline me-2" data-bs-toggle="modal"
-                  data-bs-target="#add_custom_policy">{{ $t('CustomPolicy') }}</a>
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#lop_settings">
+                <a href="javascript:void(0);" class="text-decoration-underline me-2" @click="openModal('#add_custom_policy')">{{ $t('CustomPolicy') }}</a>
+                <a href="javascript:void(0);" @click="openModal(leave.settingsModal)">
                   <i class="ti ti-settings"></i>
                 </a>
               </div>
@@ -189,5 +58,99 @@ export default {
   </div>
   <!-- /Page Wrapper -->
 
-  <leave-settings-modal></leave-settings-modal>
+  <!-- Modal Definitions -->
+  <div class="modal fade" id="new_custom_policy">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">New Custom Policy</h4>
+          <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form @submit.prevent="submitForm">
+          <div class="modal-body pb-0">
+            <div class="mb-3">
+              <label class="form-label">Leave Type</label>
+              <vue-select :options="Leavetype" placeholder="Select" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Policy Name</label>
+              <input type="text" class="form-control" v-model="policyName" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">No of Days</label>
+              <input type="text" class="form-control" v-model="noOfDays" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary">Add Leaves</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="annual_leave_settings">
+    <!-- Annual Leave Settings Modal Content -->
+  </div>
+  <div class="modal fade" id="sick_leave_settings">
+    <!-- Sick Leave Settings Modal Content -->
+  </div>
+  <div class="modal fade" id="hospitalisation_settings">
+    <!-- Hospitalisation Settings Modal Content -->
+  </div>
+  <div class="modal fade" id="maternity_settings">
+    <!-- Maternity Settings Modal Content -->
+  </div>
+  <div class="modal fade" id="paternity_settings">
+    <!-- Paternity Settings Modal Content -->
+  </div>
+  <div class="modal fade" id="lop_settings">
+    <!-- LOP Settings Modal Content -->
+  </div>
+  <div class="modal fade" id="delete_modal">
+    <!-- Delete Confirmation Modal Content -->
+  </div>
 </template>
+
+<script setup>
+import indexBreadcrumb from '@/components/breadcrumb/index-breadcrumb.vue';
+import { ref } from 'vue';
+import { Modal } from 'bootstrap';
+
+const title = ref("Leave Settings");
+const text = ref("Employee");
+const text1 = ref("Leave Settings");
+const policyName = ref('');
+const noOfDays = ref('');
+const leaveTypes = ref([
+  { key: 'AnnualLeave', label: 'AnnualLeave', active: true, settingsModal: 'annual_leave_settings' },
+  { key: 'SickLeave', label: 'SickLeave', active: false, settingsModal: 'sick_leave_settings' },
+  { key: 'Hospitalisation', label: 'Hospitalisation', active: true, settingsModal: 'hospitalisation_settings' },
+  { key: 'Maternity', label: 'Maternity', active: true, settingsModal: 'maternity_settings' },
+  { key: 'Paternity', label: 'Paternity', active: false, settingsModal: 'paternity_settings' },
+  { key: 'LOP', label: 'LOP', active: false, settingsModal: 'lop_settings' },
+]);
+
+const toggleHeader = () => {
+  document.getElementById("collapse-header").classList.toggle("active");
+  document.body.classList.toggle("header-collapse");
+};
+
+const openModal = (modalId) => {
+  const modal = new Modal(document.getElementById(modalId));
+  modal.show();
+};
+
+const submitForm = () => {
+  // Handle form submission logic
+  console.log("Form submitted: ", { policyName: policyName.value, noOfDays: noOfDays.value });
+  // Reset fields after submission
+  policyName.value = '';
+  noOfDays.value = '';
+};
+</script>
+
+<style>
+/* Add any specific styles here */
+</style>

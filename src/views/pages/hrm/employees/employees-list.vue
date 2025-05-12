@@ -230,8 +230,8 @@
           <td>
             <div class="d-flex align-items-center file-name-icon">
               <a href="javascript:void(0);" class="avatar avatar-md">
-                <img :src="employee.image || '@/assets/img/users/default-user.png'" 
-                     class="img-fluid rounded-circle" alt="img" />
+                <img :src="employee.profilePicture || '@/assets/img/users/default-user.png'" 
+                     class="img-fluid rounded-circle profile-image" alt="img" />
               </a>
               <div class="ms-2">
                 <h6 class="fw-medium">
@@ -459,3 +459,12 @@ onMounted(() => {
   );
 });
 </script>
+
+<style scoped>
+.profile-image {
+  width: 100px; /* Remplacez par la largeur souhaitée */
+  height: 40px; /* Remplacez par la hauteur souhaitée */
+  object-fit: cover; /* Conserve l'aspect ratio et couvre l'élément */
+  border-radius: 50%; /* Pour un affichage circulaire */
+}
+</style>

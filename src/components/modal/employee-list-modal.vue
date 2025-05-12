@@ -45,15 +45,21 @@
                 <div class="col-md-12">
                   <div class="d-flex align-items-center flex-wrap bg-light rounded p-3 mb-4">
                     <div class="avatar avatar-xxl rounded-circle border border-dashed me-3">
-                      <img v-if="formData.image" :src="formData.image" class="rounded-circle" alt="Profile">
+                      <img v-if="formData.profile_picture" :src="formData.profile_picture" class="rounded-circle" alt="Profile">
                       <i v-else class="ti ti-photo text-gray-2 fs-16"></i>
+                        <!-- Overlay de chargement -->
+                      <div v-if="uploading" class="upload-overlay">
+                        <div class="spinner-border text-primary" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                      </div>
                     </div>
                     <div class="profile-upload">
                       <h6>Upload Profile Image</h6>
                       <div class="d-flex align-items-center mt-2">
                         <label type="button" class="btn btn-sm btn-primary me-2">
                           Upload
-                          <input type="file" @change="handleImageUpload" class="d-none"  accept="image/*" >
+                          <input type="file" @change="handleImageUpload" class="d-none" accept="image/jpeg, image/png, image/webp" >
                         </label>
                         <button type="button" class="btn btn-sm btn-light" @click="removeImage">Cancel</button>
                       </div>
@@ -69,6 +75,20 @@
                 <div class="col-md-4 mb-3">
                   <label class="form-label">Subsidiary</label>
                   <input v-model="formData.subsidiary" type="text" class="form-control">
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="form-label">Departement</label>
+                  <select 
+                    v-model="formData.departement_id"
+                    class="form-control"
+                  >
+                    <option v-for="dept in departement" :key="dept.id" :value="dept.id">
+                      {{ dept.nom }}
+                    </option>
+                     <option value="" disabled>
+                      Select Department</option>
+                  </select>
                 </div>
 
                 <div class="col-md-4 mb-3">
@@ -270,17 +290,26 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { Modal } from 'bootstrap';
 import EmployeeService from '@/services/employee.service.js';
+import DepartmentPositionService from '@/services/departement.service'
 import { defineExpose } from 'vue';
 // Ajoutez en haut du fichier
 import NotificationMessage from '@/components/NotificationComponents/NotificationMessage.vue';
 import { useNotifications } from '@/composables/useNotifications';
 import { data } from 'jquery';
+import { v4 as uuidv4 } from 'uuid'; // Pour générer des noms de fichier uniques
+import axios from 'axios';
 
 // Dans votre setup
 const { showNotification } = useNotifications();
+
+const cloudName = 'ddwutdh6t'
+const uploadPreset = 'preset_profile'; // Remplacez par votre upload preset
+const uploading = ref(false);
+
+const departement = ref([])  
 
 const emit = defineEmits(['saved']);
 const isEditMode = ref(false);
@@ -290,6 +319,7 @@ const formData = ref({
   subsidiary: 'SMRU',
   first_name: '',
   middle_name: '',
+  departement_id: null,
   last_name: '',
   gender: 'Male',
   date_of_birth: '',
@@ -320,7 +350,6 @@ const formData = ref({
   mother_occupation: '',
   driver_license_number: '',
   email: '',
-  image: ''
 });
 
 const show = (editMode = false, employeeData = null) => {
@@ -335,10 +364,11 @@ const show = (editMode = false, employeeData = null) => {
       subsidiary: 'SMRU',
       first_name: '',
       middle_name: '',
+      departement_id: null,
       last_name: '',
       gender: 'Male',
       date_of_birth: '',
-      status: 'Expats',
+      status: '',
       religion: '',
       birth_place: '',
       identification_number: '',
@@ -365,12 +395,27 @@ const show = (editMode = false, employeeData = null) => {
       mother_occupation: '',
       driver_license_number: '',
       email: '',
-      image: ''
     };
   }
   
   const modal = new Modal(document.getElementById('employeeModal'));
   modal.show();
+};
+
+const fetchDepartement = async () => {
+  try {
+    const responsedepartement = await DepartmentPositionService.getAllDepartmentPositions()
+    departement.value = responsedepartement.data
+
+    console.log('departement.data', departement.value)
+  } catch (error) {
+    console.log('echec de chargement des departements', error)
+    showNotification({
+      type: 'error',
+      title: 'Erreur',
+      message: 'Impossible de charger les départements',
+    });
+  }
 };
 const submitForm = async () => {
   try {
@@ -382,7 +427,7 @@ const submitForm = async () => {
       'first_name': 'First Name',
       'last_name': 'Last Name',
       'email': 'Email',
-      'mobile_phone': 'Mobile Phone'
+      'mobile_phone': 'Mobile Phone',
     };
     
     const missingFields = Object.entries(requiredFields)
@@ -401,15 +446,15 @@ const submitForm = async () => {
     };
 
     // Création du payload
-    const payload = Object.fromEntries(
-      Object.entries(formData.value).map(([key, value]) => [key, formatPayloadValue(value)])
-    );
 
-    // Ajout des champs spéciaux
-    payload.date_of_birth = formData.value.date_of_birth 
-      ? new Date(formData.value.date_of_birth).toISOString().split('T')[0]
-      : null;
-
+    const payload = {
+      ...formData.value,
+      departement_id: formData.value.departement_id !== null ? Number(formData.value.departement_id) : null,
+      military_status: formData.value.military_status ? 1 : 0,
+      date_of_birth: formData.value.date_of_birth 
+        ? new Date(formData.value.date_of_birth).toISOString().split('T')[0]
+        : null
+    };
     console.log('Final payload being sent:', payload);
 
     // Envoi à l'API
@@ -423,6 +468,7 @@ const submitForm = async () => {
         timeout: 5000
       });
     } else {
+       console.log('donnee Employee:', payload)
       response = await EmployeeService.createEmployee(payload);
       showNotification({
         type: 'success',
@@ -474,21 +520,123 @@ const submitForm = async () => {
     });
   }
 };
-// Exposer la fonction show pour qu'elle puisse être appelée depuis le parent
-defineExpose({ show });
-const handleImageUpload = (event) => {
-  const file = event.target.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      formData.value.image = e.target.result;
-    };
-    reader.readAsDataURL(file);
+
+const uploadImageToCloudinary = async (file) => {
+  try {
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('upload_preset', uploadPreset);
+
+    const response = await axios.post(
+      `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`,
+      formData,
+      {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      }
+    );
+
+    return response.data.secure_url; // Retourner l'URL de l'image
+  } catch (error) {
+    console.error('Erreur lors du téléversement de l\'image:', error);
+    throw error;
   }
 };
+const handleImageUpload = async (event) => {
+  const file = event.target.files[0];
+  if (!file) return;
 
-const removeImage = () => {
-  formData.value.image = '';
+  const validTypes = ['image/jpeg', 'image/png', 'image/webp'];
+  const maxSize = 5 * 1024 * 1024; // 5MB
+
+  if (!validTypes.includes(file.type)) {
+    showNotification({
+      type: 'error',
+      title: 'Format invalide',
+      message: 'Seuls les JPEG, PNG et WEBP sont acceptés',
+      timeout: 5000
+    });
+    return;
+  }
+
+  if (file.size > maxSize) {
+    showNotification({
+      type: 'error',
+      title: 'Fichier trop lourd',
+      message: 'La taille maximale est de 5MB',
+      timeout: 5000
+    });
+    return;
+  }
+
+  uploading.value = true; // Afficher l'overlay de chargement
+  try {
+        // Afficher un loader pendant l'upload
+    showNotification({
+      type: 'info',
+      title: 'Upload en cours',
+      message: 'Traitement de votre image...',
+      timeout: 2000
+    });
+
+    const imageUrl = await uploadImageToCloudinary(file);
+    formData.value.profile_picture = imageUrl; // Mettre à jour l'URL dans formData
+        showNotification({
+      type: 'success',
+      title: 'Succès',
+      message: 'Image uploadée avec succès!',
+      timeout: 3000
+    });
+  } catch (error) {
+    showNotification({
+      type: 'error',
+      title: 'Échec du téléversement',
+      message: 'Échec du téléversement de l\'image',
+      timeout: 5000
+    });
+  } finally {
+    uploading.value = false; // Cacher l'overlay de chargement
+  }
 };
+const removeImage = async () => {
+  // Optionnel: Supprimer l'image de Cloudinary si nécessaire
+  // (nécessite une implémentation côté serveur pour la suppression sécurisée)
+  
+  formData.value.image = '';
+  formData.value.profile_picture = '';
+};
+// Exposer la fonction show pour qu'elle puisse être appelée depuis le parent
+defineExpose({ show });
+
+onMounted(() => {
+  fetchDepartement();
+});
 
 </script>
+
+<style scoped>
+.avatar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.upload-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>

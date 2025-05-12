@@ -1,67 +1,65 @@
-<script>
+<script setup>
+import { ref, onMounted } from "vue";
 import "daterangepicker/daterangepicker.css";
 import "daterangepicker/daterangepicker.js";
-import { ref } from "vue";
-import { onMounted } from "vue";
 import moment from "moment";
 import DateRangePicker from "daterangepicker";
+import trainingModal from "@/components/modal/training-modal.vue";
+import triningTable from './training-table.vue';
 
-export default {
-  data() {
-    return {
-      title: "Training",
-      text: "Performance",
-      text1: "Add New Training",
-    };
-  },
-  methods: {
-    toggleHeader() {
-      document.getElementById("collapse-header").classList.toggle("active");
-      document.body.classList.toggle("header-collapse");
-    },
-  },
-  setup() {
-    const dateRangeInput = ref(null);
+// Refs
+const dateRangeInput = ref(null);
+const trainingModalRef = ref(null);
 
-    // Move the function declaration outside of the onMounted callback
-    function booking_range(start, end) {
-      return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
-    }
+// Data
+const title = "Training";
+const text = "Performance";
+const text1 = "Add New Training";
 
-    onMounted(() => {
-      if (dateRangeInput.value) {
-        const start = moment().subtract(6, "days");
-        const end = moment();
 
-        new DateRangePicker(
-          dateRangeInput.value,
-          {
-            startDate: start,
-            endDate: end,
-            ranges: {
-              Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-              "Last 7 Days": [moment().subtract(6, "days"), moment()],
-              "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
-              "Last Month": [
-                moment().subtract(1, "month").startOf("month"),
-                moment().subtract(1, "month").endOf("month"),
-              ],
-            },
-          },
-          booking_range
-        );
+// Methods
+function toggleHeader() {
+  document.getElementById("collapse-header").classList.toggle("active");
+  document.body.classList.toggle("header-collapse");
+}
 
-        booking_range(start, end);
-      }
-    });
+function booking_range(start, end) {
+  return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
+}
 
-    return {
-      dateRangeInput,
-    };
-  },
-};
+function showAddTrainingModal() {
+  trainingModalRef.value.show();
+}
+
+// Lifecycle
+onMounted(() => {
+  if (dateRangeInput.value) {
+    const start = moment().subtract(6, "days");
+    const end = moment();
+
+    new DateRangePicker(
+      dateRangeInput.value,
+      {
+        startDate: start,
+        endDate: end,
+        ranges: {
+          Today: [moment(), moment()],
+          Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+          "Last 7 Days": [moment().subtract(6, "days"), moment()],
+          "Last 30 Days": [moment().subtract(29, "days"), moment()],
+          "This Month": [moment().startOf("month"), moment().endOf("month")],
+          "Last Month": [
+            moment().subtract(1, "month").startOf("month"),
+            moment().subtract(1, "month").endOf("month"),
+          ],
+        },
+      },
+      booking_range
+    );
+
+    booking_range(start, end);
+  }
+});
 </script>
 
 <template>
@@ -76,15 +74,15 @@ export default {
         <index-breadcrumb :title="title" :text="text" :text1="text1" />
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
           <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_training"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{$t('AddTraining')}}
-            </a>
+            <button @click="showAddTrainingModal" class="btn btn-primary d-flex align-items-center">
+              <i class="ti ti-circle-plus me-2"></i>{{$t('AddTraining')}}
+            </button>
           </div>
           <div class="head-icons ms-2">
-            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
+            <button class="btn" @click="toggleHeader" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-original-title="Collapse" id="collapse-header">
               <i class="ti ti-chevrons-up"></i>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -105,10 +103,9 @@ export default {
               </div>
             </div>
             <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown">
+              <button class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
                 {{$t('SortBy:Last7Days')}}
-              </a>
+              </button>
               <ul class="dropdown-menu dropdown-menu-end p-3">
                 <li>
                   <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('RecentlyAdded')}}</a>
@@ -131,7 +128,7 @@ export default {
         </div>
         <div class="card-body p-0">
           <div class="custom-datatable-filter table-responsive">
-            <trining-table></trining-table>
+            <trining-table @edit-training="(data) => trainingModalRef.value.show(true, data)"></trining-table>
           </div>
         </div>
       </div>
@@ -147,5 +144,7 @@ export default {
     </div>
   </div>
   <!-- /Page Wrapper -->
-  <training-modal></training-modal>
+
+  <!-- Training Modal Component -->
+  <training-modal ref="trainingModalRef" @training-saved="refreshTrainingList"></training-modal>
 </template>

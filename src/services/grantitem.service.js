@@ -3,8 +3,8 @@ import { API_ENDPOINTS } from '@/config/api.config';
 
 class GrantItemService {
   // Récupérer tous les éléments de subvention
-  async getAllGrantItems(grantId) {
-    const endpoint = API_ENDPOINTS.GRANT_ITEM.LIST.replace(':grantId', grantId);
+  async getAllGrantItems() {
+    const endpoint = API_ENDPOINTS.GRANT_ITEM.LIST.replace();
     return await apiService.get(endpoint);
   }
 

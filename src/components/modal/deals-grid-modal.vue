@@ -526,7 +526,7 @@ export default {
       startdateFour: currentDateFour,
       startdateFive: currentDateFive,
       dateFormat: "dd-MM-yyyy",
-      tagsOne: ["Collab", , "Rated"],
+      tagsOne: ["Collab", "Rated"],
       tags: ["Collab", "Rated"],
       Onetags: ["Vaughan Lewis"],
       Konospk: ["Select", "Collins", "Konopelski", "Adams"],
