@@ -95,7 +95,7 @@ class ApiService {
 
     // DELETE request
     async delete(endpoint) {
-        try {
+        try {   
             const response = await fetch(this.getFullURL(endpoint), {
                 method: 'DELETE',
                 headers: this.headers,

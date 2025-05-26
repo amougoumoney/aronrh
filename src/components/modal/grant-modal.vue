@@ -28,7 +28,7 @@
                     data-bs-target="#grant-items" 
                     type="button"
                     @click="activeTab = 'items'"
-                    :disabled="grants.length === 0"
+                    :disabled="grants.length === 0 && !formData.id"
                   >
                     Grant Items
                   </button>
@@ -42,11 +42,11 @@
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <label class="form-label">Nom du Grant <span class="text-danger">*</span></label>
-                    <input v-model="formData.name" type="text" class="form-control" @input="validateForm">
+                    <input v-model="formData.name" type="text" class="form-control" >
                   </div>
                   <div class="col-md-6 mb-3">
                     <label class="form-label">Code du Grant <span class="text-danger">*</span></label>
-                    <input v-model="formData.code" type="text" class="form-control" @input="validateForm">
+                    <input v-model="formData.code" type="text" class="form-control" >
                   </div>
                 </div>
                 <div class="row">
@@ -111,10 +111,11 @@
                   <div class="col-md-4 mb-3">
                     <label class="form-label">{{$t('GrantID')}}</label>
                     <select v-model="itemData.grant_id" class="form-control">
-                      <option v-for="grant in grants" :key="grant.id" :value="grant.id">
-                        {{ grant.name }}
-                      </option>
-                    </select>
+    <option value="">Sélectionnez un Grant</option>
+    <option v-for="grant in availableGrants" :key="grant.id" :value="grant.id">
+      {{ grant.name }}
+    </option>
+  </select>
                   </div>
                 </div>
                 <div class="row">
@@ -143,8 +144,8 @@
                 <i class="fas fa-save me-2"></i>
                 {{ 
                   isEditing 
-                    ? (activeTab === 'grant' ? 'Mettre à jour le Grant' : 'Mettre à jour les Items') 
-                    : (activeTab === 'grant' ? 'Enregistrer le Grant' : 'Enregistrer les Items') 
+                    ? (activeTab === 'grant' ? 'Mettre à jour' : 'Mettre à jour les Items') 
+                    : (activeTab === 'grant' ? 'Enregistrer' : 'Enregistrer les Items') 
                 }}
               </button>
             </div>
@@ -156,13 +157,13 @@
 </template>
 
 <script setup>
-import { ref, onMounted, defineEmits, defineExpose, watch } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 import GrantItemService from '@/services/grantitem.service';
 import GrantService from '@/services/grant.service';
 import { useNotifications } from '@/composables/useNotifications';
 import { Modal } from 'bootstrap';
 
-const emit = defineEmits(['submit', 'refresh']);
+const emit = defineEmits(['submit', 'item-created', 'refresh']);
 const { showNotification } = useNotifications();
 
 const isEditing = ref(false);
@@ -197,11 +198,17 @@ const grants = ref([]);
 const positions = ref([]);
 let grantModal = null;
 
+// Liste des grants disponibles pour association avec les items
+const availableGrants = computed(() => {
+  return isEditing.value && formData.value.id 
+    ? [...grants.value, formData.value] 
+    : grants.value;
+});
+
 onMounted(() => {
   grantModal = new Modal(document.getElementById('grant_modal'));
   fetchGrants();
   fetchPositions();
-  validateForm();
 });
 
 const fetchGrants = async () => {
@@ -210,11 +217,7 @@ const fetchGrants = async () => {
     grants.value = response.data;
   } catch (error) {
     console.error('Erreur lors de la récupération des grants :', error);
-    showNotification({
-      type: 'error',
-      title: 'Erreur',
-      message: 'Impossible de charger les grants',
-    });
+    showError('Impossible de charger les grants');
   }
 };
 
@@ -224,17 +227,13 @@ const fetchPositions = async () => {
     positions.value = response.data;
   } catch (error) {
     console.error('Erreur lors de la récupération des positions :', error);
-    showNotification({
-      type: 'error',
-      title: 'Erreur',
-      message: 'Impossible de charger les positions',
-    });
+    showError('Impossible de charger les positions');
   }
 };
 
 const validateForm = () => {
   isFormValid.value = formData.value.name.trim() !== '' && 
-  formData.value.code.trim() !== '';
+                     formData.value.code.trim() !== '';
 };
 
 watch(formData, () => {
@@ -244,8 +243,16 @@ watch(formData, () => {
 const handleSubmit = async () => {
   try {
     if (activeTab.value === 'grant') {
+      if (!formData.value.name || !formData.value.code) {
+        showError('Veuillez remplir tous les champs obligatoires du Grant');
+        return;
+      }
       await saveGrant();
     } else {
+      if (!itemData.value.grant_id) {
+        showError('Veuillez sélectionner un Grant pour cet item');
+        return;
+      }
       await saveGrantItems();
     }
   } catch (error) {
@@ -254,113 +261,73 @@ const handleSubmit = async () => {
 };
 
 const saveGrant = async () => {
-   try {
+  try {
     let response;
-    if (isEditing.value && formData.value.id) {
+    if (isEditing.value) {
       response = await GrantService.updateGrant(formData.value.id, formData.value);
+      emit('submit', { 
+        type: 'UPDATE_GRANT',
+        data: response.data 
+      });
+      showSuccess('Grant mis à jour avec succès');
     } else {
       response = await GrantService.createGrant(formData.value);
-      // Mettre à jour l'ID du nouveau Grant
-      formData.value.id = response.data.id;
+      emit('submit', { 
+        type: 'CREATE_GRANT',
+        data: response.data 
+      });
+      showSuccess('Grant créé avec succès');
+      
+      // Mettre à jour la liste des grants après création
+      await fetchGrants();
+      
+      // Ne pas forcer le passage à l'onglet Items
+      // L'utilisateur peut choisir de continuer ou fermer
     }
-
-    showNotification({
-      type: 'success',
-      title: 'Succès',
-      message: isEditing.value ? 'Grant mis à jour avec succès !' : 'Grant créé avec succès !',
-    });
-
-    emit('submit', response.data);
     
-    if (!isEditing.value) {
-      // Après création, on passe à l'onglet Items
-      activeTab.value = 'items';
-      // Pré-remplir le select avec le nouveau Grant
-      itemData.value.grant_id = response.data.id;
-    } else {
-      closeModal();
-    }
+    closeModal();
   } catch (error) {
     handleError(error);
   }
 };
 
-
 const saveGrantItems = async () => {
   try {
-    // Si on est en mode création et qu'aucun Grant n'est sélectionné
-    if (!isEditing.value && !itemData.value.grant_id && grants.value.length > 0) {
-      // On prend le premier Grant disponible par défaut
-      itemData.value.grant_id = grants.value[0].id;
-    }
-
-    if (!itemData.value.grant_id) {
+    if (!itemData.value.id) {
       throw new Error('Veuillez sélectionner un Grant');
     }
 
     let response;
-    if (isEditing.value && itemData.value.id) {
+    if (itemData.value.id) {
       response = await GrantItemService.updateGrantItem(itemData.value.id, itemData.value);
     } else {
       response = await GrantItemService.createGrantItem(itemData.value);
     }
 
-    showNotification({
-      type: 'success',
-      title: 'Succès',
-      message: isEditing.value ? 'Items mis à jour avec succès !' : 'Items ajoutés avec succès !',
-    });
-
-    emit('submit', response.data);
+    emit('item-created', response.data);
+    showSuccess(itemData.value.id ? 'Item mis à jour avec succès' : 'Item ajouté avec succès');
     
-    // Réinitialiser seulement les champs des items pour permettre d'ajouter d'autres items
-    itemData.value = {
-      ...itemData.value,
-      id: null,
-      bg_line: '',
-      grant_position: '',
-      grant_salary: null,
-      grant_benefit: null,
-      grant_level_of_effort: null,
-      grant_position_number: null,
-      grant_cost_by_monthly: null,
-      grant_total_cost_by_person: null,
-      position_id: null,
-      grant_total_amount: null,
-    };
-    
-     closeModal();
+    resetItemForm();
   } catch (error) {
     handleError(error);
   }
 };
 
-
-const showSuccessMessage = () => {
-  showNotification({
-    type: 'success',
-    title: 'Succès',
-    message: isEditing.value ? 'Grant mis à jour avec succès !' : 'Grant ajouté avec succès !',
-    duration: 3000
-  });
-};
-
-const handleError = (error) => {
-  console.error('Erreur :', error);
-  showNotification({
-    type: 'error',
-    title: 'Erreur',
-    message: error.response?.data?.message || 'Une erreur est survenue lors de l\'opération',
-    duration: 5000
-  });
-};
-
-const openModal = () => {
-  grantModal.show();
-};
-
-const closeModal = () => {
-  grantModal.hide();
+const resetItemForm = () => {
+  itemData.value = {
+    id: null,
+    bg_line: '',
+    grant_position: '',
+    grant_salary: null,
+    grant_benefit: null,
+    grant_level_of_effort: null,
+    grant_position_number: null,
+    grant_cost_by_monthly: null,
+    grant_total_cost_by_person: null,
+    grant_id: formData.value.id,
+    position_id: null,
+    grant_total_amount: null,
+  };
 };
 
 const resetForm = () => {
@@ -372,23 +339,41 @@ const resetForm = () => {
     start_date: '',
     end_date: '',
   };
-  itemData.value = {
-    id: null,
-    bg_line: '',
-    grant_position: '',
-    grant_salary: null,
-    grant_benefit: null,
-    grant_level_of_effort: null,
-    grant_position_number: null,
-    grant_cost_by_monthly: null,
-    grant_total_cost_by_person: null,
-    grant_id: null,
-    position_id: null,
-    grant_total_amount: null,
-  };
+  resetItemForm();
   isEditing.value = false;
-  isFormValid.value = false;
   activeTab.value = 'grant';
+};
+
+const showSuccess = (message) => {
+  showNotification({
+    type: 'success',
+    title: 'Succès',
+    message,
+    duration: 3000
+  });
+};
+
+const showError = (message) => {
+  showNotification({
+    type: 'error',
+    title: 'Erreur',
+    message,
+    duration: 5000
+  });
+};
+
+const handleError = (error) => {
+  console.error('Erreur :', error);
+  showError(error.response?.data?.message || error.message || 'Une erreur est survenue');
+};
+
+const openModal = () => {
+  grantModal.show();
+};
+
+const closeModal = () => {
+  grantModal.hide();
+  resetForm();
 };
 
 const setEditData = (grant, grantItem = null) => {
@@ -406,10 +391,16 @@ const setEditData = (grant, grantItem = null) => {
   validateForm();
 };
 
-defineExpose({ openModal, closeModal, setEditData });
+defineExpose({ 
+  openModal, 
+  closeModal, 
+  setEditData,
+  fetchGrants
+});
 </script>
 
 <style scoped>
+/* Vos styles existants */
 .modal-dialog {
   max-width: 800px;
 }

@@ -205,7 +205,16 @@ export const API_ENDPOINTS = {
         UPDATE: '/trainer/:id',
         DELETE: '/trainer/:id',
         DETAILS: '/trainer/:id'
+    },
+    
+    // point de terminaison pour les formations
+    
+    TRAINING: {
+        LIST: '/training',
+        CREATE: '/training',
+        UPDATE: '/training/:id',
+        DELETE: '/training/:id',
+        DETAILS: '/training/:id'
     }
-    
-    
+
 };

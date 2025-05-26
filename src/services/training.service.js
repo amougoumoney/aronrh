@@ -29,11 +29,14 @@ class TrainingService {
   // Formater les données de formation
   formatTrainingData(data) {
     return {
-      id: data.id,
-      title: data.title,
-      organizer: data.organizer,
+      training_type: data.training_type,
+      trainer: data.trainer,
+      employees:data.employees,
+      training_cost: data.training_cost,
       start_date: data.start_date,
       end_date: data.end_date,
+      description: data.description,
+      status: data.status,
       created_at: data.created_at || null,
       updated_at: data.updated_at || null,
       created_by: data.created_by || null,

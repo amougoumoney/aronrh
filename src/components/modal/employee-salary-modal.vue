@@ -1,17 +1,16 @@
 <template>
-  <!-- Modal Structure inchangée -->
   <div class="modal fade" id="new-employee-salary">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Add Employee Salary</h4>
+          <h4 class="modal-title">{{ editMode ? 'Edit' : 'Add' }} Employee Salary</h4>
           <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
           </button>
         </div>
         <form @submit.prevent="submitForm">
           <div class="modal-body pb-0">
-            <!-- Employee Information Section (inchangée) -->
+            <!-- Employee Information Section -->
             <div class="card mb-4 border">
               <div class="card-header bg-light">
                 <h5 class="mb-0">Employee Information</h5>
@@ -21,7 +20,7 @@
                   <div class="col-12 col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Department</label>
-                      <select v-model="formData.department_id" class="form-control">
+                      <select v-model="formData.department_id" class="form-control" @change="loadEmployeesByDepartment">
                         <option value="" disabled>Select Department</option>
                         <option v-for="dept in departments" :key="dept.id" :value="dept.id">
                           {{ dept.nom }}
@@ -32,10 +31,11 @@
                   <div class="col-12 col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Employee Name</label>
-                      <select class="form-control" :disabled="!formData.department_id" v-model="formData.employee_id">
+                      <select class="form-control" :disabled="!formData.department_id" 
+                              v-model="formData.employee_id" @change="loadEmployeeData">
                         <option value="" disabled>Select Employee</option>
-                        <option v-for="employee in EmployeName" :key="employee.id" :value="employee.id">
-                          {{ employee.label }}
+                        <option v-for="employee in allEmployees" :key="employee.id" :value="employee.id">
+                          {{ employee.fullName }}
                         </option>
                       </select>
                       <small v-if="!formData.department_id" class="text-muted">
@@ -54,14 +54,15 @@
                   <div class="col-12 col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Years of Service</label>
-                      <input type="number" class="form-control" v-model="seniorityYears" @input="calculateAll" min="0">
+                      <input type="number" class="form-control" v-model="formData.years_of_service" 
+                             @input="calculateAll" min="0" readonly>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Earnings Section - Modifiée pour calculs automatiques -->
+            <!-- Earnings Section -->
             <div class="card mb-4 border">
               <div class="card-header bg-success bg-opacity-10">
                 <h5 class="mb-0 text-success">Earnings</h5>
@@ -73,7 +74,8 @@
                       <label class="form-label">Basic Salary*</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control" v-model="formData.basic_salary" @input="calculateAll" required>
+                        <input type="number" min="0" class="form-control" 
+                               v-model="formData.basic_salary" @input="calculateAll" required readonly>
                       </div>
                     </div>
                   </div>
@@ -82,18 +84,22 @@
                       <label class="form-label">Seniority Bonus</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control" v-model="formData.salary_by_FTE" readonly>
+                        <input type="number" min="0" class="form-control" 
+                               v-model="formData.seniority_bonus" readonly>
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 col-md-4">
                     <div class="mb-3">
-                      <label class="form-label">Overtime ({{overtimeRate}}%)</label>
+                      <label class="form-label">Overtime</label>
                       <div class="input-group">
-                        <input type="number" min="0" class="form-control" v-model="formData.overtime_hours" @input="calculateAll" placeholder="Hours">
-                        <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control" v-model="formData.compensation_refund" readonly>
+                        <input type="number" min="0" class="form-control" 
+                               v-model="formData.overtime_hours" @input="calculateAll" placeholder="Hours">
+                        <input type="number" min="0" class="form-control" style="max-width: 100px;"
+                               v-model="formData.overtime_rate" @input="calculateAll" placeholder="Rate %">
+                        <span class="input-group-text">%</span>
                       </div>
+                      <small class="text-muted">Amount: {{ formatCurrency(formData.overtime_pay) }}</small>
                     </div>
                   </div>
                 </div>
@@ -103,7 +109,8 @@
                       <label class="form-label">Transport Allowance</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control" v-model="formData.transport_allowance" @input="calculateAll">
+                        <input type="number" min="0" class="form-control" 
+                               v-model="formData.transport_allowance" @input="calculateAll">
                       </div>
                     </div>
                   </div>
@@ -112,7 +119,8 @@
                       <label class="form-label">Housing Allowance</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control" v-model="formData.housing_allowance" @input="calculateAll">
+                        <input type="number" min="0" class="form-control" 
+                               v-model="formData.housing_allowance" @input="calculateAll">
                       </div>
                     </div>
                   </div>
@@ -121,7 +129,8 @@
                       <label class="form-label">13th Month Salary</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control" v-model="formData.thirteen_month_salary" readonly>
+                        <input type="number" min="0" class="form-control" 
+                               v-model="formData.thirteenth_month_salary" readonly>
                       </div>
                     </div>
                   </div>
@@ -129,14 +138,14 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="alert alert-success bg-success bg-opacity-10">
-                      <strong>Total Earnings: {{ formatCurrency(formData.grand_total_income) }}</strong>
+                      <strong>Total Earnings: {{ formatCurrency(formData.gross_salary) }}</strong>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Deductions Section - Modifiée pour calculs automatiques -->
+            <!-- Deductions Section -->
             <div class="card mb-4 border">
               <div class="card-header bg-danger bg-opacity-10">
                 <h5 class="mb-0 text-danger">Deductions</h5>
@@ -174,14 +183,14 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="alert alert-danger bg-danger bg-opacity-10">
-                      <strong>Total Deductions: {{ formatCurrency(formData.grand_total_deduction) }}</strong>
+                      <strong>Total Deductions: {{ formatCurrency(formData.total_deductions) }}</strong>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Employer Contributions Section - Modifiée pour calculs automatiques -->
+            <!-- Employer Contributions Section -->
             <div class="card mb-4 border">
               <div class="card-header bg-info bg-opacity-10">
                 <h5 class="mb-0 text-info">Employer Contributions</h5>
@@ -217,7 +226,7 @@
               </div>
             </div>
 
-            <!-- Summary Section (inchangée) -->
+            <!-- Summary Section -->
             <div class="card mb-4 border">
               <div class="card-header bg-primary bg-opacity-10">
                 <h5 class="mb-0 text-primary">Salary Summary</h5>
@@ -226,28 +235,28 @@
                 <div class="row">
                   <div class="col-12 col-md-4">
                     <div class="mb-3">
-                      <label class="form-label fw-bold">Grand Total Income</label>
+                      <label class="form-label fw-bold">Gross Salary</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control bg-success bg-opacity-10" v-model="formData.grand_total_income" readonly>
+                        <input type="number" min="0" class="form-control bg-success bg-opacity-10" v-model="formData.gross_salary" readonly>
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-md-4">
                     <div class="mb-3">
-                      <label class="form-label fw-bold">Grand Total Deduction</label>
+                      <label class="form-label fw-bold">Total Deductions</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control bg-danger bg-opacity-10" v-model="formData.grand_total_deduction" readonly>
+                        <input type="number" min="0" class="form-control bg-danger bg-opacity-10" v-model="formData.total_deductions" readonly>
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-md-4">
                     <div class="mb-3">
-                      <label class="form-label fw-bold">Net Paid</label>
+                      <label class="form-label fw-bold">Net Salary</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control bg-primary bg-opacity-10 fw-bold" v-model="formData.net_paid" readonly>
+                        <input type="number" min="0" class="form-control bg-primary bg-opacity-10 fw-bold" v-model="formData.net_salary" readonly>
                       </div>
                     </div>
                   </div>
@@ -267,7 +276,7 @@
                       <label class="form-label">Total Cost to Company</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control bg-warning bg-opacity-10" v-model="formData.two_sides" readonly>
+                        <input type="number" min="0" class="form-control bg-warning bg-opacity-10" v-model="formData.total_cost" readonly>
                       </div>
                     </div>
                   </div>
@@ -275,7 +284,7 @@
               </div>
             </div>
 
-            <!-- Payslip Information Section (inchangée) -->
+            <!-- Payslip Information Section -->
             <div class="card mb-4 border">
               <div class="card-header bg-light">
                 <h5 class="mb-0">Payslip Information</h5>
@@ -317,232 +326,338 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed, watch } from 'vue';
+import { ref, onMounted } from 'vue';
 import { Modal } from 'bootstrap';
 import EmployeeService from '@/services/employee.service';
 import DepartmentPositionService from '@/services/departement.service';
 import { useNotifications } from '@/composables/useNotifications';
 
 const { showNotification } = useNotifications();
+const emit = defineEmits(['save']);
 
-// Constants for Cameroon payroll
-const CNPS_EMPLOYEE_RATE = 0.042; // 4.2%
-const CNPS_EMPLOYER_RATE = 0.084; // 8.4%
-const CNPS_MAX_BASE = 274944; // Plafond CNPS 2024
-const SENIORITY_RATE = 0.02; // 2% per year
-const OVERTIME_RATE = 1.5; // 50% additional
-const THIRTEENTH_MONTH_DIVIDER = 12; // 1/12 of annual salary
+// Ajout des props pour gérer le mode édition
+const props = defineProps({
+  editMode: {
+    type: Boolean,
+    default: false
+  },
+  salaryData: {
+    type: Object,
+    default: null
+  }
+});
 
-// Data
-const EmployeName = ref([]);
+
+// Configuration constants
+const PAYROLL_CONFIG = {
+  CNPS_EMPLOYEE_RATE: 0.042,    // 4.2%
+  CNPS_EMPLOYER_RATE: 0.084,    // 8.4%
+  CNPS_MAX_BASE: 274944,        // CNPS ceiling 2024
+  SENIORITY_RATE: 0.02,         // 2% per year
+  WORKING_HOURS_PER_MONTH: 173.33,
+  DAYS_PER_YEAR: 365.25,
+  THIRTEENTH_MONTH_DIVIDER: 12  // 1/12 of annual salary
+};
+
+// Reactive data
 const departments = ref([]);
-const seniorityYears = ref(1);
-const overtimeRate = ref(50); // 50% for normal overtime
+const allEmployees = ref([]);
+const filteredEmployees = ref([]);
 
-// Form data
 const formData = ref({
+  // Employee info
   department_id: '',
   employee_id: '',
   pay_period_date: '',
+  years_of_service: 0,
+  hire_date: '',
+  
+  // Earnings
   basic_salary: 0,
-  salary_by_FTE: 0, // Used for seniority bonus
-  compensation_refund: 0, // Used for overtime pay
+  seniority_bonus: 0,
+  overtime_hours: 0,
+  overtime_rate: 50, // Default 50%
+  overtime_pay: 0,
   transport_allowance: 0,
   housing_allowance: 0,
-  thirteen_month_salary: 0,
-  overtime_hours: 0,
+  thirteenth_month_salary: 0,
+  
+  // Deductions
   employee_social_security: 0,
   employee_health_welfare: 0,
   tax: 0,
+  
+  // Employer contributions
   employer_social_security: 0,
   employer_health_welfare: 0,
-  grand_total_income: 0,
-  grand_total_deduction: 0,
-  net_paid: 0,
+  
+  // Totals
+  gross_salary: 0,
+  total_deductions: 0,
+  net_salary: 0,
   employer_contribution_total: 0,
-  two_sides: 0,
+  total_cost: 0,
+  
+  // Payslip info
   payslip_date: '',
   payslip_number: '',
   staff_signature: ''
 });
 
+// Fetch departments and employees
+onMounted(async () => {
+  try {
+    const [deptsResponse, empsResponse] = await Promise.all([
+      DepartmentPositionService.getAllDepartmentPositions(),
+      EmployeeService.getEmployees()
+    ]);
+    
+    departments.value = deptsResponse.data;
+    allEmployees.value = empsResponse.data.map(emp => ({
+      ...emp,
+      fullName: `${emp.firstName} ${emp.lastName}`,
+      hireDate: emp.dateOfCommencementService,
+      base_salary: emp.basicSalary|| 0
+    }));
+  } catch (error) {
+    showNotification({
+      type: 'error',
+      title: 'Error',
+      message: 'Failed to load initial data'
+    });
+    console.error('Initialization error:', error);
+  }
+});
+
+// Filter employees by selected department
+const loadEmployeesByDepartment = () => {
+  console.log('Selected department ID:', formData.value.department_id);
+  console.log('All employees:', allEmployees.value);
+  formData.value.employee_id = '';
+  if (!formData.value.department_id) {
+    filteredEmployees.value = [];
+    return;
+  }
+  // Convertir les ID en Number pour comparaison si nécessaire
+  const deptId = Number(formData.value.department_id);
+  
+  filteredEmployees.value = allEmployees.value.filter(
+    emp => Number(emp.department_id) === deptId
+  );
+  
+  // Debug: Afficher les employés filtrés
+  console.log('Filtered employees:', filteredEmployees.value);
+};
+
+// Load employee data when selected
+const loadEmployeeData = () => {
+  const employee = allEmployees.value.find(e => e.id === formData.value.employee_id);
+  if (employee) {
+    formData.value.basic_salary = employee.base_salary;
+    formData.value.hire_date = employee.dateOfCommencementService;
+    formData.value.years_of_service = calculateYearsOfService(employee.dateOfCommencementServicd);
+    calculateAll();
+  }
+};
+
+// Calculate years of service
+const calculateYearsOfService = (hireDate) => {
+  if (!hireDate) return 0;
+  const hire = new Date(hireDate);
+  const today = new Date();
+  const diffTime = today - hire;
+  const diffYears = diffTime / (1000 * 60 * 60 * 24 * PAYROLL_CONFIG.DAYS_PER_YEAR);
+  return Math.max(0, Math.floor(diffYears));
+};
+
 // Main calculation function
 const calculateAll = () => {
-  // 1. Calculate earnings
   calculateEarnings();
-  
-  // 2. Calculate deductions
   calculateDeductions();
-  
-  // 3. Calculate employer contributions
   calculateEmployerContributions();
-  
-  // 4. Update totals
   updateTotals();
 };
 
 const calculateEarnings = () => {
-  // Seniority bonus (2% per year)
-  formData.value.salary_by_FTE = formData.value.basic_salary * SENIORITY_RATE * seniorityYears.value;
+  // Seniority bonus
+  formData.value.seniority_bonus = formData.value.basic_salary * 
+    PAYROLL_CONFIG.SENIORITY_RATE * formData.value.years_of_service;
   
-  // Overtime pay (basic_salary / 173.33 = hourly rate)
-  const hourlyRate = formData.value.basic_salary / 173.33;
-  formData.value.compensation_refund = formData.value.overtime_hours * hourlyRate * OVERTIME_RATE;
+  // Overtime pay
+  const hourlyRate = formData.value.basic_salary / PAYROLL_CONFIG.WORKING_HOURS_PER_MONTH;
+  const rateMultiplier = formData.value.overtime_rate / 100;
+  formData.value.overtime_pay = formData.value.overtime_hours * hourlyRate * (1 + rateMultiplier);
   
-  // 13th month (prorated)
-  formData.value.thirteen_month_salary = formData.value.basic_salary / THIRTEENTH_MONTH_DIVIDER;
+  // 13th month
+  formData.value.thirteenth_month_salary = formData.value.basic_salary / 
+    PAYROLL_CONFIG.THIRTEENTH_MONTH_DIVIDER;
   
   // Gross salary
-  formData.value.grand_total_income = 
+  formData.value.gross_salary = 
     parseFloat(formData.value.basic_salary || 0) +
-    parseFloat(formData.value.salary_by_FTE || 0) +
-    parseFloat(formData.value.compensation_refund || 0) +
+    parseFloat(formData.value.seniority_bonus || 0) +
+    parseFloat(formData.value.overtime_pay || 0) +
     parseFloat(formData.value.transport_allowance || 0) +
     parseFloat(formData.value.housing_allowance || 0) +
-    parseFloat(formData.value.thirteen_month_salary || 0);
+    parseFloat(formData.value.thirteenth_month_salary || 0);
 };
 
 const calculateDeductions = () => {
   // CNPS Employee (4.2% of capped salary)
-  const cnpsBase = Math.min(formData.value.grand_total_income, CNPS_MAX_BASE);
-  formData.value.employee_social_security = Math.round(cnpsBase * CNPS_EMPLOYEE_RATE);
+  const cnpsBase = Math.min(formData.value.gross_salary, PAYROLL_CONFIG.CNPS_MAX_BASE);
+  formData.value.employee_social_security = Math.round(cnpsBase * PAYROLL_CONFIG.CNPS_EMPLOYEE_RATE);
   
-  // Income Tax (IRPP - progressive)
-  const taxableIncome = formData.value.grand_total_income - formData.value.employee_social_security;
-  formData.value.tax = calculateIRPP(taxableIncome);
+  // Income Tax (IRPP)
+ const taxableIncome = formData.value.gross_salary - formData.value.employee_social_security;
+  formData.value.tax = calculateMonthlyIRPP(taxableIncome);
+  
+  // Total deductions
+  formData.value.total_deductions = 
+    formData.value.employee_social_security +
+    formData.value.tax +
+    parseFloat(formData.value.employee_health_welfare || 0);
 };
+
+// Calculate monthly IRPP based on annual brackets
+const calculateMonthlyIRPP = (monthlyTaxableIncome) => {
+  // Appliquer un abattement de 20 %, plafonné à 80 000 FCFA
+  const abatement = Math.min(monthlyTaxableIncome * 0.20, 80000);
+  const netTaxable = monthlyTaxableIncome - abatement;
+
+  let tax = 0;
+
+  if (netTaxable <= 166667) {
+    tax = 0;
+  } else if (netTaxable <= 250000) {
+    tax = (netTaxable - 166667) * 0.10;
+  } else if (netTaxable <= 416667) {
+    tax = (250000 - 166667) * 0.10 + (netTaxable - 250000) * 0.15;
+  } else if (netTaxable <= 833333) {
+    tax = (250000 - 166667) * 0.10 + (416667 - 250000) * 0.15 + (netTaxable - 416667) * 0.25;
+  } else {
+    tax = (250000 - 166667) * 0.10 + (416667 - 250000) * 0.15 + (833333 - 416667) * 0.25 + (netTaxable - 833333) * 0.35;
+  }
+
+  return Math.round(tax);
+};
+
 
 const calculateEmployerContributions = () => {
   // CNPS Employer (8.4% of capped salary)
-  const cnpsBase = Math.min(formData.value.grand_total_income, CNPS_MAX_BASE);
-  formData.value.employer_social_security = Math.round(cnpsBase * CNPS_EMPLOYER_RATE);
+  const cnpsBase = Math.min(formData.value.gross_salary, PAYROLL_CONFIG.CNPS_MAX_BASE);
+  formData.value.employer_social_security = Math.round(cnpsBase * PAYROLL_CONFIG.CNPS_EMPLOYER_RATE);
   
-  // Other employer contributions (manual input)
+  // Other employer contributions
   formData.value.employer_contribution_total = 
-    parseFloat(formData.value.employer_social_security || 0) +
+    formData.value.employer_social_security +
     parseFloat(formData.value.employer_health_welfare || 0);
 };
 
-// Progressive IRPP calculation
-const calculateIRPP = (taxableIncome) => {
-  // Apply 20% deduction (optional)
-  taxableIncome = taxableIncome * 0.8;
-  
-  if (taxableIncome <= 2000000) return 0;
-  if (taxableIncome <= 3000000) return (taxableIncome - 2000000) * 0.1;
-  if (taxableIncome <= 5000000) return 100000 + (taxableIncome - 3000000) * 0.15;
-  return 400000 + (taxableIncome - 5000000) * 0.25;
-};
-
 const updateTotals = () => {
-  // Total deductions
-  formData.value.grand_total_deduction = 
-    parseFloat(formData.value.employee_social_security || 0) +
-    parseFloat(formData.value.tax || 0) +
-    parseFloat(formData.value.employee_health_welfare || 0);
-
   // Net salary
-  formData.value.net_paid = 
-    formData.value.grand_total_income - formData.value.grand_total_deduction;
+  formData.value.net_salary = formData.value.gross_salary - formData.value.total_deductions;
   
   // Total cost to company
-  formData.value.two_sides = 
-    formData.value.grand_total_income + formData.value.employer_contribution_total;
+  formData.value.total_cost = formData.value.gross_salary + formData.value.employer_contribution_total;
 };
 
-// Format currency for display
+// Currency formatting
 const formatCurrency = (value) => {
-  return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'XAF' }).format(value);
+  return new Intl.NumberFormat('fr-FR', { 
+    style: 'currency', 
+    currency: 'XAF',
+    minimumFractionDigits: 0
+  }).format(value || 0);
 };
 
-// Rest of your existing methods (show, fetchEmploye, fetchDepartments, etc.)
-const isEditMode = ref(false);
-const show = (editMode = false, salaryData = null) => {
-  isEditMode.value = editMode;
-  
-  if (editMode && salaryData) {
-    formData.value = { ...salaryData };
-    seniorityYears.value = salaryData.years_of_service || 1;
-  } else {
-    // Reset form
-    formData.value = {
-      department_id: '',
-      employee_id: '',
-      pay_period_date: '',
-      basic_salary: 0,
-      salary_by_FTE: 0,
-      compensation_refund: 0,
-      transport_allowance: 0,
-      housing_allowance: 0,
-      thirteen_month_salary: 0,
-      overtime_hours: 0,
-      employee_social_security: 0,
-      employee_health_welfare: 0,
-      tax: 0,
-      employer_social_security: 0,
-      employer_health_welfare: 0,
-      grand_total_income: 0,
-      grand_total_deduction: 0,
-      net_paid: 0,
-      employer_contribution_total: 0,
-      two_sides: 0,
-      payslip_date: '',
-      payslip_number: '',
-      staff_signature: ''
+// Modal control
+const show = () => {
+  if (props.editMode && props.salaryData) {
+    // Pré-remplir le formulaire avec les données existantes
+    formData.value = { 
+      ...props.salaryData,
+      // Convertir les dates si nécessaire
+      pay_period_date: formatDateForInput(props.salaryData.pay_period_date),
+      payslip_date: formatDateForInput(props.salaryData.payslip_date)
     };
-    seniorityYears.value = 1;
+  } else {
+    resetForm();
   }
   
-  const modalId = 'new-employee-salary';
-  const modal = new Modal(document.getElementById(modalId));
+  const modal = new Modal(document.getElementById('new-employee-salary'));
   modal.show();
-  calculateAll();
 };
 
-const fetchEmploye = async () => {
+const formatDateForInput = (dateString) => {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  return date.toISOString().split('T')[0];
+};
+
+
+const resetForm = () => {
+  formData.value = {
+    department_id: '',
+    employee_id: '',
+    pay_period_date: '',
+    years_of_service: 0,
+    hire_date: '',
+    basic_salary: 0,
+    seniority_bonus: 0,
+    overtime_hours: 0,
+    overtime_rate: 50,
+    overtime_pay: 0,
+    transport_allowance: 0,
+    housing_allowance: 0,
+    thirteenth_month_salary: 0,
+    employee_social_security: 0,
+    employee_health_welfare: 0,
+    tax: 0,
+    employer_social_security: 0,
+    employer_health_welfare: 0,
+    gross_salary: 0,
+    total_deductions: 0,
+    net_salary: 0,
+    employer_contribution_total: 0,
+    total_cost: 0,
+    payslip_date: '',
+    payslip_number: '',
+    staff_signature: ''
+  };
+};
+
+const submitForm = async () => {
   try {
-    const response = await EmployeeService.getEmployees();
-    EmployeName.value = response.data.map(emp => ({
-      label: `${emp.firstName} ${emp.lastName}`,
-      value: emp.id,
-      department_id: emp.department_id
-    }));
+    // Préparer les données à envoyer
+    const payload = {
+      ...formData.value,
+      // Convertir les dates au format attendu par l'API si nécessaire
+      pay_period_date: formData.value.pay_period_date ? new Date(formData.value.pay_period_date).toISOString() : null,
+      payslip_date: formData.value.payslip_date ? new Date(formData.value.payslip_date).toISOString() : null
+    };
+
+    // Émettre l'événement avec les données et le mode
+    emit('save', {
+      data: payload,
+      isEdit: props.editMode
+    });
+
+    showNotification({
+      type: 'success',
+      title: 'Success',
+      message: `Salary ${props.editMode ? 'updated' : 'added'} successfully`
+    });
+
+    const modal = Modal.getInstance(document.getElementById('new-employee-salary'));
+    modal.hide();
   } catch (error) {
-    console.error('Error fetching employees:', error);
     showNotification({
       type: 'error',
       title: 'Error',
-      message: 'Failed to load employees'
+      message: `Failed to ${props.editMode ? 'update' : 'add'} salary record`
     });
+    console.error('Submission error:', error);
   }
 };
-
-const fetchDepartments = async () => {
-  try {
-    const response = await DepartmentPositionService.getAllDepartmentPositions();
-    departments.value = response.data;
-  } catch (error) {
-    console.error('Error fetching departments:', error);
-    showNotification({
-      type: 'error',
-      title: 'Error',
-      message: 'Failed to load departments'
-    });
-  }
-};
-
-const submitForm = () => {
-  const modalId = 'new-employee-salary';
-  const modal = Modal.getInstance(document.getElementById(modalId));
-  modal.hide();
-  window.location.href = "/payroll/employee-salary";
-};
-
-// Initialize
-onMounted(() => {
-  fetchEmploye();
-  fetchDepartments();
-});
-
 defineExpose({ show });
 </script>

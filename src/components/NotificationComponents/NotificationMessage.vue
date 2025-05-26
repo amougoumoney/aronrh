@@ -70,7 +70,7 @@ onMounted(() => {
 <style scoped>
 .notification {
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -81,7 +81,7 @@ onMounted(() => {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: 1px solid #e0e0e0;
   display: flex;
-  align-items: right-end;
+  align-items: center;
   z-index: 1000;
   transition: all 0.3s ease;
 }

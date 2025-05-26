@@ -23,7 +23,7 @@ const { notifications, removeNotification } = useNotifications();
 <style>
 .notifications-container {
   position: fixed;
-  top: 20px;
+  top: 0px;
   right: 20px;
   z-index: 9999;
   display: flex;

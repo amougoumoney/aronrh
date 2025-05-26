@@ -92,10 +92,26 @@
                 </div>
 
                 <div class="col-md-4 mb-3">
+                  <label class="form-label"> Basic salary<span class="text-danger">*</span></label>
+                  <input v-model="formData.basic_salary" type="number" min="0" class="form-control" required>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="form-label">Date of commencement of service<span class="text-danger">*</span></label>
+                  <input v-model="formData.date_of_commencement_service" type="date" class="form-control" required>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="form-label">Status employee</label>
+                  <select v-model="formData.status_employee" class="form-control">
+                    <option v-for="statu in statusemployee " :key="statu.value" :value="statu.value">{{ statu.label }}</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4 mb-3">
                   <label class="form-label">Status</label>
                   <select v-model="formData.status" class="form-control">
-                    <option value="Expats">Expats</option>
-                    <option value="Local">Local</option>
+                    <option v-for="statu in status" :key="statu.value" :value="statu.value">{{ statu.label }}</option>
                   </select>
                 </div>
 
@@ -124,8 +140,8 @@
                 </div>
 
                 <div class="col-md-4 mb-3">
-                  <label class="form-label">Date of Birth</label>
-                  <input v-model="formData.date_of_birth" type="date" class="form-control">
+                  <label class="form-label">Date of Birth <span class="text-danger">*</span></label>
+                  <input v-model="formData.date_of_birth" type="date" class="form-control" required>
                 </div>
 
                 <div class="col-md-4 mb-3">
@@ -311,6 +327,16 @@ const uploading = ref(false);
 
 const departement = ref([])  
 
+const statusemployee = ref([
+  { label:'Inactive', value:0},
+  { label: 'Active', value:1}
+])
+
+const status = ref([
+  { label:'Expatas', value:'Expatas'},
+  { label: 'Local', value:'Local'}
+])
+
 const emit = defineEmits(['saved']);
 const isEditMode = ref(false);
 
@@ -324,11 +350,14 @@ const formData = ref({
   gender: 'Male',
   date_of_birth: '',
   status: 'Expats',
+  status_employee: false,
+  basic_salary: 0,
   religion: '',
   birth_place: '',
   identification_number: '',
   social_security_number: '',
   tax_number: '',
+  date_of_commencement_service:'',
   passport_number: '',
   bank_name: '',
   bank_branch: '',
@@ -369,11 +398,14 @@ const show = (editMode = false, employeeData = null) => {
       gender: 'Male',
       date_of_birth: '',
       status: '',
+      status_employee: false,
+      basic_salary: 0,
       religion: '',
       birth_place: '',
       identification_number: '',
       social_security_number: '',
       tax_number: '',
+      date_of_commencement_service:'',
       passport_number: '',
       profile_picture: '',
       bank_name: '',
@@ -451,7 +483,7 @@ const submitForm = async () => {
       ...formData.value,
       departement_id: formData.value.departement_id !== null ? Number(formData.value.departement_id) : null,
       military_status: formData.value.military_status ? 1 : 0,
-      date_of_birth: formData.value.date_of_birth 
+      date_of_birth: formData.value.date_of_birth
         ? new Date(formData.value.date_of_birth).toISOString().split('T')[0]
         : null
     };

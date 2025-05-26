@@ -6,77 +6,97 @@ import Multiselect from 'vue-multiselect';
 import 'vue-multiselect/dist/vue-multiselect.min.css';
 import EmployeeService from '@/services/employee.service';
 import TrainertypeService from '@/services/trainertype.service'
+import { useNotifications } from "@/composables/useNotifications";
+import TrainingService  from "@/services/training.service";
+import TrainerService from "@/services/trainerList.service"
 
+const { showNotification } = useNotifications()
 const router = useRouter();
 const currentDate = ref(new Date());
 const currentDateOne = ref(new Date());
 const isEditMode = ref(false);
-const employee = ref([])
-// Données statiques (pourrait être remplacé par des appels API)
+const employeeOptions = ref([]); // Options pour le multiselect
+const employeeImages = ref({}); // Dictionnaire pour stocker les images par ID employé
+const Trainer = ref({})
+
+// Données statiques
 const Trainingtype = ref([]);
-const Trainer = ref([]);
-const Employees = ref(["Bernardo Galaviz", "Jeffrey Warden"]);
-const Status = ref(["Active", "Inactive"]);
+const Status = ref([  { label: 'Active', value: 1 },
+  { label: 'Inactive', value: 0 }]);
 const dateFormat = "dd-MM-yyyy";
 
-
-const fetchTrainer = async() =>{
+const fetchTrainingType = async() => {
   try {
     const response = await TrainertypeService.getAllTrainertype()
-     Trainingtype.value = response.data.filter(trainer => trainer.status === true)
+    Trainingtype.value = response.data.filter(trainer => trainer.status === true)
   } catch (error) {
     console.error('trainer',error)
   }
 }
 
-// Données du formulaires
+const fetchTrainer = async () => {
+  try {
+    const responseTrainer = await TrainerService.getAllTrainer()
+    Trainer.value = responseTrainer.data
+  } catch (error) {
+    console.log('echec du chargement des formateurs', error)
+  }
+}
+
+// Données du formulaire
 const formData = ref({
   training_type: '',
   trainer: '',
-  employees: [],
+  employees: [], // Ce sera un tableau de strings (IDs)
   training_cost: '',
   start_date: currentDate.value,
   end_date: currentDateOne.value,
   description: '',
-  status: 'Active'
+  status: 0
 });
 
-const fetchemployee = async () => {
+const fetchEmployee = async () => {
   try {
     const response = await EmployeeService.getEmployees()
-    employee.value = response.data
-  }catch(error){
-    console.log('erruer de chargement des employees:', error)
+    // Préparer les options pour le multiselect
+    employeeOptions.value = response.data.map(emp => ({
+      value: emp.id, // L'ID comme valeur
+      label: `${emp.firstName} ${emp.lastName}`, // Nom complet comme label
+      image: emp.profilePicture // Stocker l'image
+    }));
+    
+    // Créer un dictionnaire d'images pour accès rapide
+    employeeImages.value = response.data.reduce((acc, emp) => {
+      acc[emp.id] = emp.profilePicture;
+      return acc;
+    }, {});
+    
+  } catch(error) {
+    console.log('erreur de chargement des employés:', error)
   }
 }
 
-// Met à jour Employees en fonction des éléments sélectionnés
-watch(() => formData.value.employees, (newVal, oldVal) => {
-  // Ajouter les anciens sélectionnés retirés
-  const removed = oldVal.filter(e => !newVal.includes(e));
-  removed.forEach(emp => {
-    if (!employee.value.includes(emp)) {
-      employee.value.push(emp);
-    }
-  });
-
-  // Retirer les nouveaux sélectionnés
-  Employees.value = Employees.value.filter(e => !newVal.includes(e));
-});
+// Fonction pour obtenir l'image d'un employé par son ID
+const getEmployeeImage = (employeeId) => {
+  return employeeImages.value[employeeId] || 'default-user.jpg';
+};
 
 // Afficher la modale en mode ajout ou édition
 const show = (editMode = false, trainingData = null) => {
   isEditMode.value = editMode;
   
   if (editMode && trainingData) {
-    // Remplir le formulaire avec les données existantes
+    // Convertir les données existantes si nécessaire
     formData.value = {
       ...trainingData,
+      employees: Array.isArray(trainingData.employees) 
+        ? trainingData.employees 
+        : [trainingData.employees].filter(Boolean),
       start_date: trainingData.start_date ? new Date(trainingData.start_date) : currentDate.value,
       end_date: trainingData.end_date ? new Date(trainingData.end_date) : currentDateOne.value
     };
   } else {
-    // Réinitialiser le formulaire pour un nouvel ajout
+    // Réinitialiser le formulaire
     formData.value = {
       training_type: '',
       trainer: '',
@@ -85,7 +105,7 @@ const show = (editMode = false, trainingData = null) => {
       start_date: currentDate.value,
       end_date: currentDateOne.value,
       description: '',
-      status: 'Active'
+      status: 1
     };
   }
   
@@ -96,37 +116,82 @@ const show = (editMode = false, trainingData = null) => {
 // Soumettre le formulaire
 const submitForm = async () => {
   try {
-    // Ici, vous devriez appeler votre service API pour créer/mettre à jour la formation
-    // Exemple:
-    // if (isEditMode.value) {
-    //   await TrainingService.updateTraining(formData.value.id, formData.value);
-    // } else {
-    //   await TrainingService.createTraining(formData.value);
-    // }
+    // Préparer les données pour l'API
+    const payload = {
+      ...formData.value,
+      employees: formData.value.employees // Déjà au bon format (string[])
+    };
     
-    // Fermer la modale
+    // Ici, vous devriez appeler votre service API
+     if (isEditMode.value) {
+       await TrainingService.updateTraining(payload.id, payload);
+      showNotification({
+      type: 'success',
+      title: 'Success',
+      message: 'Training updated successfully!',
+      timeout: 5000
+     });
+     } else {
+      console.log('training.data:', payload)
+       await TrainingService.createTraining(payload);
+      showNotification({
+      type: 'success',
+      title: 'Success',
+      message: 'Training add successfully!',
+      timeout: 5000
+     });
+     }
+    
     const modal = Modal.getInstance(document.getElementById('trainingModal'));
     modal.hide();
-    
-    // Rediriger ou rafraîchir les données
     router.push("/training/training-list");
+    
     
   } catch (error) {
     console.error("Error submitting training:", error);
-    // Gérer les erreurs ici
+
+    let errorMessage = 'An error occurred while saving the employee';
+    let errorType = 'error';
+     if (error.response) {
+      // Gestion des erreurs HTTP
+      switch (error.response.status) {
+        case 400:
+          errorMessage = error.response.data?.message || 'Invalid data provided';
+          break;
+        case 401:
+          errorMessage = 'Authentication required';
+          break;
+        case 500:
+          errorMessage = 'Server error, please try again later';
+          break;
+        default:
+          errorMessage = `Request failed with status ${error.response.status}`;
+      }
+    } else if (error.message) {
+      errorMessage = error.message;
+      errorType = 'warning';
+    }
+    
+    showNotification({
+      type: errorType,
+      title: 'Error',
+      message: errorMessage,
+      timeout: 8000
+    });
   }
 };
 
-// Calculer la durée de la formation en jours
+// Calculer la durée de la formation
 const trainingDuration = computed(() => {
   if (!formData.value.start_date || !formData.value.end_date) return 0;
   const diff = formData.value.end_date - formData.value.start_date;
-  return Math.ceil(diff / (1000 * 60 * 60 * 24)) + 1; // +1 pour inclure le premier jour
+  return Math.ceil(diff / (1000 * 60 * 60 * 24)) + 1;
 });
 
 defineExpose({ show });
 onMounted(() => {
-  fetchemployee();
+  fetchEmployee();
+  fetchTrainingType();
   fetchTrainer()
 }); 
 </script>
@@ -171,13 +236,35 @@ onMounted(() => {
                 <label class="form-label">Employees*</label>
                 <Multiselect
                   v-model="formData.employees"
-                  :options="employee"
+                  :options="employeeOptions"
                   :multiple="true"
                   :close-on-select="false"
                   :clear-on-select="false"
                   :preserve-search="true"
                   placeholder="Select employees"
+                  label="label"
+                  track-by="value"
                 />
+                <!-- Afficher les employés sélectionnés avec leurs images -->
+                <div class="avatar-list-stacked avatar-group-sm mt-2">
+                  <span 
+                    v-for="employeeId in formData.employees" 
+                    :key="employeeId" 
+                    class="avatar border-0"
+                  >
+                    <img 
+                      :src="`@/assets/img/users/${getEmployeeImage(employeeId)}`" 
+                      class="rounded-circle" 
+                      alt="img" 
+                    />
+                  </span>
+                  <span 
+                    v-if="formData.employees.length > 0" 
+                    class="avatar group-counts bg-primary rounded-circle border-0 fs-10"
+                  >
+                    +{{ formData.employees.length }}
+                  </span>
+                </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
@@ -248,8 +335,8 @@ onMounted(() => {
                 <div class="mb-3">
                   <label class="form-label">Status*</label>
                   <select v-model="formData.status" class="form-control" required>
-                    <option v-for="status in Status" :key="status" :value="status">
-                      {{ status }}
+                    <option v-for="status in Status" :key="status.value" :value="status.value">
+                      {{ status.label }}
                     </option>
                   </select>
                 </div>
@@ -269,7 +356,7 @@ onMounted(() => {
     </div>
   </div>
 
-  <!-- Delete Modal (peut rester inchangé) -->
+  <!-- Delete Modal -->
   <div class="modal fade" id="delete_modal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">

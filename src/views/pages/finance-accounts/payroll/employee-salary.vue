@@ -29,7 +29,7 @@
           </div>
 
           <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#new-employee-salary"
+            <a href="javascript:void(0);" data-bs-toggle="modal" @click="handleAddSalary"
               class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{ $t('AddSalary') }}</a>
           </div>
           <div class="head-icons ms-2">
@@ -160,13 +160,15 @@
                   </div>
                 </template>
                 <template v-if="column.key === 'action'">
-                  <div class="action-icon d-inline-flex">
-                    <a href="javascript:void(0);" class="me-2" data-bs-toggle="modal"
-                      data-bs-target="#edit-employee-salary"><i class="ti ti-edit"></i></a>
-                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i
-                        class="ti ti-trash"></i></a>
-                  </div>
-                </template>
+    <div class="action-icon d-inline-flex">
+      <a href="javascript:void(0);" class="me-2" @click="handleEditSalary(record)">
+        <i class="ti ti-edit"></i>
+      </a>
+      <a href="javascript:void(0);" @click="handleDeleteSalary(record.id)">
+        <i class="ti ti-trash"></i>
+      </a>
+    </div>
+  </template>
               </template>
             </a-table>
           </div>
@@ -183,7 +185,12 @@
     </div>
   </div>
   <!-- /Page Wrapper -->
-  <EmployeeSalary ></EmployeeSalary >
+  <EmployeeSalary 
+    ref="salaryModal"
+    :editMode="isEditMode"
+    :salaryData="currentSalary"
+    @save="handleSaveSalary"
+  />
 </template>
 <script setup>
 import "daterangepicker/daterangepicker.css";
@@ -192,13 +199,56 @@ import { ref, onMounted } from "vue";
 import moment from "moment";
 import DateRangePicker from "daterangepicker";
 import EmployeeSalary from "@/components/modal/employee-salary-modal.vue";
-
+import PayrollService from "@/services/payroll.service"
 
 
 const salaryModal = ref(null);
+const currentSalary = ref(null);
+const isEditMode = ref(false);
 salaryModal.value?.show();                                                                                                                                              
 
+// Ouvrir le modal en mode ajout
+const handleAddSalary = () => {
+  isEditMode.value = false;
+  currentSalary.value = null;
+  salaryModal.value?.show();
+};
 
+// Ouvrir le modal en mode édition
+const handleEditSalary = (salary) => {
+  isEditMode.value = true;
+  currentSalary.value = salary;
+  salaryModal.value?.show();
+};
+
+
+// Gérer la sauvegarde
+const handleSaveSalary = async ({ data, isEdit }) => {
+  try {
+    if (isEdit) {
+     await PayrollService.updatePayroll(data.id, data);
+    } else {
+      await PayrollService.createPayroll(data);
+    }
+    // Recharger les données
+    await PayrollService.getAllPayrolls()
+  } catch (error) {
+    console.error('Error saving salary:', error);
+  }
+};
+// Gérer la suppression
+const handleDeleteSalary = async (id) => {
+  if (confirm("Are you sure you want to delete this salary record?")) {
+    try {
+      await PayrollService.deleteSalary(id);
+      await PayrollService.getAllPayrolls(); // Recharger les données
+      // Ajoutez ici une notification de succès si nécessaire
+    } catch (error) {
+      console.error("Error deleting salary:", error);
+      // Ajoutez ici une notification d'erreur si nécessaire
+    }
+  }
+};
 const columns = ref([
   {
     sorter: false,
