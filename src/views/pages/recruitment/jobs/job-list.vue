@@ -5,6 +5,7 @@ import { ref, onMounted } from "vue";
 import moment from "moment";
 import DateRangePicker from "daterangepicker";
 import JobListModal from "@/components/modal/job-list-modal.vue";
+import jobTable from "./job-table.vue"
 
 // Data properties
 const title = "Jobs";

@@ -34,7 +34,7 @@
                       <select class="form-control" :disabled="!formData.department_id" 
                               v-model="formData.employee_id" @change="loadEmployeeData">
                         <option value="" disabled>Select Employee</option>
-                        <option v-for="employee in allEmployees" :key="employee.id" :value="employee.id">
+                        <option v-for="employee in filteredEmployees" :key="employee.id" :value="employee.id">
                           {{ employee.fullName }}
                         </option>
                       </select>
@@ -335,7 +335,6 @@ import { useNotifications } from '@/composables/useNotifications';
 const { showNotification } = useNotifications();
 const emit = defineEmits(['save']);
 
-// Ajout des props pour gérer le mode édition
 const props = defineProps({
   editMode: {
     type: Boolean,
@@ -347,8 +346,6 @@ const props = defineProps({
   }
 });
 
-
-// Configuration constants
 const PAYROLL_CONFIG = {
   CNPS_EMPLOYEE_RATE: 0.042,    // 4.2%
   CNPS_EMPLOYER_RATE: 0.084,    // 8.4%
@@ -359,66 +356,55 @@ const PAYROLL_CONFIG = {
   THIRTEENTH_MONTH_DIVIDER: 12  // 1/12 of annual salary
 };
 
-// Reactive data
 const departments = ref([]);
 const allEmployees = ref([]);
 const filteredEmployees = ref([]);
 
 const formData = ref({
-  // Employee info
   department_id: '',
   employee_id: '',
   pay_period_date: '',
   years_of_service: 0,
   hire_date: '',
-  
-  // Earnings
   basic_salary: 0,
   seniority_bonus: 0,
   overtime_hours: 0,
-  overtime_rate: 50, // Default 50%
+  overtime_rate: 50,
   overtime_pay: 0,
   transport_allowance: 0,
   housing_allowance: 0,
   thirteenth_month_salary: 0,
-  
-  // Deductions
   employee_social_security: 0,
   employee_health_welfare: 0,
   tax: 0,
-  
-  // Employer contributions
   employer_social_security: 0,
   employer_health_welfare: 0,
-  
-  // Totals
   gross_salary: 0,
   total_deductions: 0,
   net_salary: 0,
   employer_contribution_total: 0,
   total_cost: 0,
-  
-  // Payslip info
   payslip_date: '',
   payslip_number: '',
   staff_signature: ''
 });
 
-// Fetch departments and employees
 onMounted(async () => {
   try {
     const [deptsResponse, empsResponse] = await Promise.all([
       DepartmentPositionService.getAllDepartmentPositions(),
       EmployeeService.getEmployees()
     ]);
-    
+
     departments.value = deptsResponse.data;
     allEmployees.value = empsResponse.data.map(emp => ({
       ...emp,
       fullName: `${emp.firstName} ${emp.lastName}`,
       hireDate: emp.dateOfCommencementService,
-      base_salary: emp.basicSalary|| 0
+      base_salary: emp.basicSalary || 0
     }));
+
+    console.log('allemployee:', allEmployees)
   } catch (error) {
     showNotification({
       type: 'error',
@@ -429,38 +415,29 @@ onMounted(async () => {
   }
 });
 
-// Filter employees by selected department
 const loadEmployeesByDepartment = () => {
-  console.log('Selected department ID:', formData.value.department_id);
-  console.log('All employees:', allEmployees.value);
   formData.value.employee_id = '';
   if (!formData.value.department_id) {
     filteredEmployees.value = [];
     return;
   }
-  // Convertir les ID en Number pour comparaison si nécessaire
   const deptId = Number(formData.value.department_id);
   
   filteredEmployees.value = allEmployees.value.filter(
-    emp => Number(emp.department_id) === deptId
+    emp => Number(emp.departementId) === deptId
   );
-  
-  // Debug: Afficher les employés filtrés
-  console.log('Filtered employees:', filteredEmployees.value);
 };
 
-// Load employee data when selected
 const loadEmployeeData = () => {
   const employee = allEmployees.value.find(e => e.id === formData.value.employee_id);
   if (employee) {
     formData.value.basic_salary = employee.base_salary;
     formData.value.hire_date = employee.dateOfCommencementService;
-    formData.value.years_of_service = calculateYearsOfService(employee.dateOfCommencementServicd);
+    formData.value.years_of_service = calculateYearsOfService(employee.hireDate);
     calculateAll();
   }
 };
 
-// Calculate years of service
 const calculateYearsOfService = (hireDate) => {
   if (!hireDate) return 0;
   const hire = new Date(hireDate);
@@ -470,7 +447,6 @@ const calculateYearsOfService = (hireDate) => {
   return Math.max(0, Math.floor(diffYears));
 };
 
-// Main calculation function
 const calculateAll = () => {
   calculateEarnings();
   calculateDeductions();
@@ -479,48 +455,40 @@ const calculateAll = () => {
 };
 
 const calculateEarnings = () => {
-  // Seniority bonus
-  formData.value.seniority_bonus = formData.value.basic_salary * 
-    PAYROLL_CONFIG.SENIORITY_RATE * formData.value.years_of_service;
+  formData.value.seniority_bonus = Math.round(formData.value.basic_salary * 
+    PAYROLL_CONFIG.SENIORITY_RATE * formData.value.years_of_service);
   
-  // Overtime pay
   const hourlyRate = formData.value.basic_salary / PAYROLL_CONFIG.WORKING_HOURS_PER_MONTH;
   const rateMultiplier = formData.value.overtime_rate / 100;
-  formData.value.overtime_pay = formData.value.overtime_hours * hourlyRate * (1 + rateMultiplier);
+  formData.value.overtime_pay = Math.round(formData.value.overtime_hours * hourlyRate * (1 + rateMultiplier));
   
-  // 13th month
-  formData.value.thirteenth_month_salary = formData.value.basic_salary / 
-    PAYROLL_CONFIG.THIRTEENTH_MONTH_DIVIDER;
+  formData.value.thirteenth_month_salary = Math.round(formData.value.basic_salary / 
+    PAYROLL_CONFIG.THIRTEENTH_MONTH_DIVIDER);
   
-  // Gross salary
-  formData.value.gross_salary = 
+  formData.value.gross_salary = Math.round(
     parseFloat(formData.value.basic_salary || 0) +
     parseFloat(formData.value.seniority_bonus || 0) +
     parseFloat(formData.value.overtime_pay || 0) +
     parseFloat(formData.value.transport_allowance || 0) +
     parseFloat(formData.value.housing_allowance || 0) +
-    parseFloat(formData.value.thirteenth_month_salary || 0);
+    parseFloat(formData.value.thirteenth_month_salary || 0)
+  );
 };
 
 const calculateDeductions = () => {
-  // CNPS Employee (4.2% of capped salary)
   const cnpsBase = Math.min(formData.value.gross_salary, PAYROLL_CONFIG.CNPS_MAX_BASE);
   formData.value.employee_social_security = Math.round(cnpsBase * PAYROLL_CONFIG.CNPS_EMPLOYEE_RATE);
   
-  // Income Tax (IRPP)
- const taxableIncome = formData.value.gross_salary - formData.value.employee_social_security;
-  formData.value.tax = calculateMonthlyIRPP(taxableIncome);
+  const taxableIncome = formData.value.gross_salary - formData.value.employee_social_security;
+  formData.value.tax = Math.round(calculateMonthlyIRPP(taxableIncome));
   
-  // Total deductions
   formData.value.total_deductions = 
-    formData.value.employee_social_security +
-    formData.value.tax +
-    parseFloat(formData.value.employee_health_welfare || 0);
+    Math.round(formData.value.employee_social_security) +
+    Math.round(formData.value.tax) +
+    Math.round(parseFloat(formData.value.employee_health_welfare || 0));
 };
 
-// Calculate monthly IRPP based on annual brackets
 const calculateMonthlyIRPP = (monthlyTaxableIncome) => {
-  // Appliquer un abattement de 20 %, plafonné à 80 000 FCFA
   const abatement = Math.min(monthlyTaxableIncome * 0.20, 80000);
   const netTaxable = monthlyTaxableIncome - abatement;
 
@@ -541,27 +509,20 @@ const calculateMonthlyIRPP = (monthlyTaxableIncome) => {
   return Math.round(tax);
 };
 
-
 const calculateEmployerContributions = () => {
-  // CNPS Employer (8.4% of capped salary)
   const cnpsBase = Math.min(formData.value.gross_salary, PAYROLL_CONFIG.CNPS_MAX_BASE);
   formData.value.employer_social_security = Math.round(cnpsBase * PAYROLL_CONFIG.CNPS_EMPLOYER_RATE);
   
-  // Other employer contributions
   formData.value.employer_contribution_total = 
-    formData.value.employer_social_security +
-    parseFloat(formData.value.employer_health_welfare || 0);
+    Math.round(formData.value.employer_social_security) +
+    Math.round(parseFloat(formData.value.employer_health_welfare || 0));
 };
 
 const updateTotals = () => {
-  // Net salary
-  formData.value.net_salary = formData.value.gross_salary - formData.value.total_deductions;
-  
-  // Total cost to company
-  formData.value.total_cost = formData.value.gross_salary + formData.value.employer_contribution_total;
+  formData.value.net_salary = Math.round(formData.value.gross_salary - formData.value.total_deductions);
+  formData.value.total_cost = Math.round(formData.value.gross_salary + formData.value.employer_contribution_total);
 };
 
-// Currency formatting
 const formatCurrency = (value) => {
   return new Intl.NumberFormat('fr-FR', { 
     style: 'currency', 
@@ -570,13 +531,10 @@ const formatCurrency = (value) => {
   }).format(value || 0);
 };
 
-// Modal control
 const show = () => {
   if (props.editMode && props.salaryData) {
-    // Pré-remplir le formulaire avec les données existantes
     formData.value = { 
       ...props.salaryData,
-      // Convertir les dates si nécessaire
       pay_period_date: formatDateForInput(props.salaryData.pay_period_date),
       payslip_date: formatDateForInput(props.salaryData.payslip_date)
     };
@@ -593,7 +551,6 @@ const formatDateForInput = (dateString) => {
   const date = new Date(dateString);
   return date.toISOString().split('T')[0];
 };
-
 
 const resetForm = () => {
   formData.value = {
@@ -628,15 +585,12 @@ const resetForm = () => {
 
 const submitForm = async () => {
   try {
-    // Préparer les données à envoyer
     const payload = {
       ...formData.value,
-      // Convertir les dates au format attendu par l'API si nécessaire
       pay_period_date: formData.value.pay_period_date ? new Date(formData.value.pay_period_date).toISOString() : null,
       payslip_date: formData.value.payslip_date ? new Date(formData.value.payslip_date).toISOString() : null
     };
 
-    // Émettre l'événement avec les données et le mode
     emit('save', {
       data: payload,
       isEdit: props.editMode
@@ -659,5 +613,6 @@ const submitForm = async () => {
     console.error('Submission error:', error);
   }
 };
+
 defineExpose({ show });
 </script>

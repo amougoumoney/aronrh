@@ -215,6 +215,14 @@ export const API_ENDPOINTS = {
         UPDATE: '/training/:id',
         DELETE: '/training/:id',
         DETAILS: '/training/:id'
-    }
+    },
+
+    JOB_OFFER: {
+        LIST: '/job',
+        CREATE: '/job',
+        UPDATE: '/job/:id',
+        DELETE: '/job/:id',
+        DETAILS: '/job/:id'
+    },
 
 };

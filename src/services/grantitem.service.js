@@ -31,7 +31,7 @@ class GrantItemService {
   // Formater les données de l'élément de subvention
   formatGrantItemData(data) {
     return {
-      grant_id: data.grant_id|| 1,
+      grant_id: data.grant_id || 1,
       bg_line: data.bg_line,
       grant_position: data.grant_position,
       grant_salary: data.grant_salary,
@@ -41,7 +41,6 @@ class GrantItemService {
       grant_cost_by_monthly: data.grant_cost_by_monthly,
       grant_total_cost_by_person: data.grant_total_cost_by_person,
       grant_benefit_fte: data.grant_benefit_fte ||1,
-      position_id: data.position_id || 1,
       grant_total_amount: data.grant_total_amount,
       created_by: data.created_by || 'admin',
       updated_by: data.updated_by || 'admin',

@@ -50,12 +50,6 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-12 mb-3">
-                    <label class="form-label">Description</label>
-                    <textarea v-model="formData.description" class="form-control"></textarea>
-                  </div>
-                </div>
-                <div class="row">
                   <div class="col-md-6 mb-3">
                     <label class="form-label">Date de début</label>
                     <input v-model="formData.start_date" type="date" class="form-control">
@@ -64,6 +58,22 @@
                     <label class="form-label">Date de Fin</label>
                     <input v-model="formData.end_date" type="date" class="form-control">
                   </div> 
+                </div>
+                <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <label class="form-label">Status</label>
+                    <select v-model="formData.status" class="form-control">
+                    <option v-for="status in Status" :key="status.value" :value="status.value">
+                      {{ status.label }}
+                    </option>
+                  </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <label class="form-label">Description</label>
+                    <textarea v-model="formData.description" class="form-control"></textarea>
+                  </div>
                 </div>
               </div>
               
@@ -111,11 +121,11 @@
                   <div class="col-md-4 mb-3">
                     <label class="form-label">{{$t('GrantID')}}</label>
                     <select v-model="itemData.grant_id" class="form-control">
-    <option value="">Sélectionnez un Grant</option>
-    <option v-for="grant in availableGrants" :key="grant.id" :value="grant.id">
-      {{ grant.name }}
-    </option>
-  </select>
+                      <option value="">Sélectionnez un Grant</option>
+                      <option v-for="grant in availableGrants" :key="grant.id" :value="grant.id">
+                        {{ grant.name }}
+                      </option>
+                    </select>
                   </div>
                 </div>
                 <div class="row">
@@ -170,17 +180,25 @@ const isEditing = ref(false);
 const activeTab = ref('grant');
 const isFormValid = ref(false);
 
+const Status = ref ([
+  {
+    label: 'Inactive', value:0
+  },
+  {
+    label:'Active', value:1
+  }
+])
+
 const formData = ref({
-  id: null,
   name: '',
   code: '',
+  status: false,
   description: '',
   start_date: '',
   end_date: '',
 });
 
 const itemData = ref({
-  id: null,
   bg_line: '',
   grant_position: '',
   grant_salary: null,
@@ -265,14 +283,17 @@ const saveGrant = async () => {
     let response;
     if (isEditing.value) {
       response = await GrantService.updateGrant(formData.value.id, formData.value);
-      emit('submit', { 
+      emit('submit', 'refresh', { 
         type: 'UPDATE_GRANT',
-        data: response.data 
+        data: {
+          ...response.data,
+          id: formData.value.id // Toujours inclure l'id
+        } 
       });
       showSuccess('Grant mis à jour avec succès');
     } else {
       response = await GrantService.createGrant(formData.value);
-      emit('submit', { 
+      emit('submit', 'refresh', { 
         type: 'CREATE_GRANT',
         data: response.data 
       });
@@ -293,18 +314,21 @@ const saveGrant = async () => {
 
 const saveGrantItems = async () => {
   try {
-    if (!itemData.value.id) {
+    if (!itemData.value.grant_id) {
       throw new Error('Veuillez sélectionner un Grant');
     }
-
     let response;
-    if (itemData.value.id) {
+    if (isEditing.value) {
       response = await GrantItemService.updateGrantItem(itemData.value.id, itemData.value);
     } else {
+      console.log('send.data', itemData.value)
       response = await GrantItemService.createGrantItem(itemData.value);
     }
 
-    emit('item-created', response.data);
+    emit('item-created', {
+  ...response.data,
+  grant_id: itemData.value.grant_id // Garantir que grant_id est inclus
+});
     showSuccess(itemData.value.id ? 'Item mis à jour avec succès' : 'Item ajouté avec succès');
     
     resetItemForm();
@@ -315,7 +339,6 @@ const saveGrantItems = async () => {
 
 const resetItemForm = () => {
   itemData.value = {
-    id: null,
     bg_line: '',
     grant_position: '',
     grant_salary: null,
@@ -332,9 +355,9 @@ const resetItemForm = () => {
 
 const resetForm = () => {
   formData.value = {
-    id: null,
     name: '',
     code: '',
+    status: false,
     description: '',
     start_date: '',
     end_date: '',
@@ -378,12 +401,34 @@ const closeModal = () => {
 
 const setEditData = (grant, grantItem = null) => {
   formData.value = { ...grant };
+
+    if (!grant?.id) {
+    console.error('No grant ID provided');
+    return;
+  }
+
+  formData.value = { 
+    ...grant,
+    id: grant.id // S'assurer que l'ID est bien défini
+  }
   
-  if (grantItem) {
-    itemData.value = { ...grantItem };
+    if (grantItem) {
+    if (!grantItem.id) {
+      console.error('No grant item ID provided');
+      return;
+    }
+    
+    itemData.value = { 
+      ...grantItem,
+      id: grantItem.id, // S'assurer que l'ID est bien défini
+      grant_id: grantItem.grant_id || grant.id // Priorité à grant_id existant, sinon utiliser grant.id
+    };
     activeTab.value = 'items';
   } else {
-    itemData.value.grant_id = grant.id;
+    itemData.value = {
+      ...itemData.value,
+      grant_id: grant.id // Toujours définir le grant_id
+    };
     activeTab.value = 'grant';
   }
   

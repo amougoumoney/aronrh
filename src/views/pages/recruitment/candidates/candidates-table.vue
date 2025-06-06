@@ -1,19 +1,20 @@
-<script setup>
-import { ref, onMounted } from 'vue'
-import { Modal } from 'bootstrap'
-import { useRouter } from 'vue-router'
-import { useNotifications } from '@/composables/useNotifications'
-// import CandidateService from '@/services/candidate.service'
+  <script setup>
+  import { ref, onMounted } from 'vue'
+  import { Modal } from 'bootstrap'
+  import { useRouter } from 'vue-router'
+  import { useNotifications } from '@/composables/useNotifications'
+  import  CandidatService from '@/services/candidat.service';
+  // import CandidateService from '@/services/candidate.service'
 
-const router = useRouter()
-const { showNotification } = useNotifications()
+  const router = useRouter()
+  const { showNotification } = useNotifications()
 
-// Références
-const candidates = ref([])
-const selectedCandidate = ref(null)
-const isLoading = ref(false)
-const candidateModal = ref(null)
-const deleteModal = ref(null)
+  // Références
+  const candidates = ref([])
+  const selectedCandidate = ref(null)
+  const isLoading = ref(false)
+  const candidateModal = ref(null)
+  const deleteModal = ref(null)
 
 // Configuration des colonnes
 const columns = [
@@ -21,7 +22,7 @@ const columns = [
     title: "ID",
     dataIndex: "id",
     key: "id",
-    sorter: (a, b) => a.id.localeCompare(b.id),
+    sorter: (a, b) => a.id - b.id,
   },
   {
     title: "Candidate",
@@ -37,23 +38,23 @@ const columns = [
   },
   {
     title: "Phone",
-    dataIndex: "phone",
-    key: "phone",
+    dataIndex: "telephone",
+    key: "telephone",
   },
   {
     title: "CV",
     key: "cv",
     customRender: ({ record }) => {
-      if (!record.cvUrl) return 'No CV'
-      const extension = record.cvUrl.split('.').pop().toLowerCase()
+      if (!record.cv) return 'No CV'
+      const extension = record.cv.split('.').pop().toLowerCase()
       const icon = extension === 'pdf' ? 'ti ti-file-type-pdf' : 'ti ti-file-type-doc'
       return h('a', {
-        href: record.cvUrl,
+        href: record.cv,
         target: '_blank',
         class: 'btn btn-sm btn-outline-primary',
         onClick: (e) => {
           e.preventDefault()
-          window.open(record.cvUrl, '_blank', 'noopener,noreferrer')
+          window.open(record.cv, '_blank', 'noopener,noreferrer')
         }
       }, [
         h('i', { class: icon + ' me-1' }),
@@ -84,24 +85,42 @@ const formatCandidates = (data) => {
   return data.map(candidate => ({
     ...candidate,
     fullName: `${candidate.firstName} ${candidate.lastName}`,
-    applicationDate: new Date(candidate.applicationDate).toLocaleDateString('fr-FR'),
-    status: candidate.status.charAt(0).toUpperCase() + candidate.status.slice(1)
+    applicationDate: formatDate(candidate.applicationDate),
+    status: formatStatus(candidate.status),
+    telephone: candidate.telephone.toString() // Convertir le numéro en string
   }))
+}
+
+const formatDate = (dateString) => {
+  if (!dateString) return 'N/A'
+  const date = new Date(dateString)
+  return date.toLocaleDateString('fr-FR')
+}
+
+const formatStatus = (status) => {
+  if (!status) return 'Unknown'
+  return status.charAt(0).toUpperCase() + status.slice(1).toLowerCase()
 }
 
 // Récupérer les candidats
 const fetchCandidates = async () => {
   try {
     isLoading.value = true
-    const response = await CandidateService.getCandidates()
-    candidates.value = formatCandidates(response)
+    const response = await CandidatService.getAllCandidats()
+    console.log('API Response:', response)
+    
+    // Accéder à response.data.data si nécessaire
+    const candidatesData = response.data ? response.data : response
+    candidates.value = formatCandidates(candidatesData)
+    
   } catch (error) {
+    console.error('Error fetching candidates:', error)
     if (error.response?.status === 401) {
       router.push('/login')
     }
     showNotification({
       title: 'Error',
-      message: error.message,
+      message: error.message || 'Failed to load candidates',
       type: 'error'
     })
   } finally {
@@ -109,163 +128,163 @@ const fetchCandidates = async () => {
   }
 }
 
-// Gestion des modales
-const showDeleteModal = (candidate) => {
-  selectedCandidate.value = candidate
-  deleteModal.value.show()
-}
-
-// Supprimer un candidat
-const handleDelete = async () => {
-  try {
-    isLoading.value = true
-    await CandidateService.deleteCandidate(selectedCandidate.value.id)
-    showNotification({
-      title: 'Success',
-      message: 'Candidate deleted successfully',
-      type: 'success'
-    })
-    await fetchCandidates()
-    deleteModal.value.hide()
-  } catch (error) {
-    if (error.response?.status === 401) {
-      router.push('/login')
-    }
-    showNotification({
-      title: 'Error',
-      message: error.message,
-      type: 'error'
-    })
-  } finally {
-    isLoading.value = false
+  // Gestion des modales
+  const showDeleteModal = (candidate) => {
+    selectedCandidate.value = candidate
+    deleteModal.value.show()
   }
-}
 
-// Initialisation
-onMounted(() => {
-  candidateModal.value = new Modal(document.getElementById('candidateModal'))
-  deleteModal.value = new Modal(document.getElementById('deleteModal'))
-  fetchCandidates()
-})
+  // Supprimer un candidat
+  const handleDelete = async () => {
+    try {
+      isLoading.value = true
+      await CandidatService .deleteCandidat(selectedCandidate.value.id)
+      showNotification({
+        title: 'Success',
+        message: 'Candidate deleted successfully',
+        type: 'success'
+      })
+      await fetchCandidates()
+      deleteModal.value.hide()
+    } catch (error) {
+      if (error.response?.status === 401) {
+        router.push('/login')
+      }
+      showNotification({
+        title: 'Error',
+        message: error.message,
+        type: 'error'
+      })
+    } finally {
+      isLoading.value = false
+    }
+  }
 
-// Empêcher l'ajout dans l'historique de navigation
-const cleanUrl = () => {
-  window.history.replaceState({}, document.title, window.location.pathname)
-}
+  // Initialisation
+  onMounted(() => {
+    candidateModal.value = new Modal(document.getElementById('candidateModal'))
+    deleteModal.value = new Modal(document.getElementById('deleteModal'))
+    fetchCandidates()
+  })
 
-// Surveiller les changements de route
-router.afterEach(() => {
-  cleanUrl()
-})
-</script>
+  // Empêcher l'ajout dans l'historique de navigation
+  const cleanUrl = () => {
+    window.history.replaceState({}, document.title, window.location.pathname)
+  }
 
-<template>
-  <div class="candidate-management">
-    <div class="card">
-      <div class="card-body">
-        <a-table
+  // Surveiller les changements de route
+  router.afterEach(() => {
+    cleanUrl()
+  })
+  </script>
+
+  <template>
+    <div class="candidate-management">
+      <div class="card">
+        <div class="card-body">
+          <a-table
           :columns="columns"
           :data-source="candidates"
           :loading="isLoading"
           :row-key="record => record.id"
           bordered
-        >
-          <template #bodyCell="{ column, record }">
-            <!-- Colonne Candidate -->
-            <template v-if="column.key === 'candidate'">
-              <div class="d-flex align-items-center">
-                <div class="avatar me-3">
-                  <img 
-                    :src="record.photoUrl || '/src/assets/images/default-avatar.jpg'"
-                    class="rounded-circle"
-                    width="40"
-                    height="40"
-                    alt="Avatar"
+          >
+            <template #bodyCell="{ column, record }">
+              <!-- Colonne Candidate -->
+              <template v-if="column.key === 'candidate'">
+                <div class="d-flex align-items-center">
+                  <div class="avatar me-3">
+                    <img 
+                      :src="record.photoUrl || '/src/assets/images/default-avatar.jpg'"
+                      class="rounded-circle"
+                      width="40"
+                      height="40"
+                      alt="Avatar"
+                    >
+                  </div>
+                  <div>
+                    <div class="fw-semibold">{{ record.fullName }}</div>
+                    <div class="text-muted small">{{ record.email }}</div>
+                  </div>
+                </div>
+              </template>
+
+              <!-- Colonne Status -->
+              <template v-if="column.key === 'status'">
+                <span class="badge" :class="{
+                  'bg-primary': ['sent', 'received'].includes(record.status.toLowerCase()),
+                  'bg-info': record.status.toLowerCase() === 'scheduled',
+                  'bg-warning': record.status.toLowerCase() === 'interviewed',
+                  'bg-success': record.status.toLowerCase() === 'hired',
+                  'bg-danger': record.status.toLowerCase() === 'rejected'
+                }">
+                  {{ record.status }}
+                </span>
+              </template>
+
+              <!-- Colonne Actions -->
+              <template v-if="column.key === 'actions'">
+                <div class="d-flex gap-2">
+                  <button 
+                    class="btn btn-sm btn-outline-primary" 
+                    @click="router.push(`/candidates/edit/${record.id}`)"
                   >
+                    <i class="ti ti-edit"></i>
+                  </button>
+                  <button 
+                    class="btn btn-sm btn-outline-danger" 
+                    @click="showDeleteModal(record)"
+                  >
+                    <i class="ti ti-trash"></i>
+                  </button>
                 </div>
-                <div>
-                  <div class="fw-semibold">{{ record.fullName }}</div>
-                  <div class="text-muted small">{{ record.email }}</div>
-                </div>
-              </div>
+              </template>
             </template>
-
-            <!-- Colonne Status -->
-            <template v-if="column.key === 'status'">
-              <span class="badge" :class="{
-                'bg-primary': ['sent', 'received'].includes(record.status.toLowerCase()),
-                'bg-info': record.status.toLowerCase() === 'scheduled',
-                'bg-warning': record.status.toLowerCase() === 'interviewed',
-                'bg-success': record.status.toLowerCase() === 'hired',
-                'bg-danger': record.status.toLowerCase() === 'rejected'
-              }">
-                {{ record.status }}
-              </span>
-            </template>
-
-            <!-- Colonne Actions -->
-            <template v-if="column.key === 'actions'">
-              <div class="d-flex gap-2">
-                <button 
-                  class="btn btn-sm btn-outline-primary" 
-                  @click="router.push(`/candidates/edit/${record.id}`)"
-                >
-                  <i class="ti ti-edit"></i>
-                </button>
-                <button 
-                  class="btn btn-sm btn-outline-danger" 
-                  @click="showDeleteModal(record)"
-                >
-                  <i class="ti ti-trash"></i>
-                </button>
-              </div>
-            </template>
-          </template>
-        </a-table>
+          </a-table>
+        </div>
       </div>
-    </div>
 
-    <!-- Modal de suppression -->
-    <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Confirm Deletion</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Are you sure you want to delete candidate <strong>{{ selectedCandidate?.fullName }}</strong>?</p>
-            <p class="text-danger">This action cannot be undone.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <button 
-              type="button" 
-              class="btn btn-danger" 
-              @click="handleDelete" 
-              :disabled="isLoading"
-            >
-              <span v-if="isLoading" class="spinner-border spinner-border-sm me-1"></span>
-              Delete
-            </button>
+      <!-- Modal de suppression -->
+      <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Confirm Deletion</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure you want to delete candidate <strong>{{ selectedCandidate?.fullName }}</strong>?</p>
+              <p class="text-danger">This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button 
+                type="button" 
+                class="btn btn-danger" 
+                @click="handleDelete" 
+                :disabled="isLoading"
+              >
+                <span v-if="isLoading" class="spinner-border spinner-border-sm me-1"></span>
+                Delete
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</template>
+  </template>
 
-<style scoped>
-.avatar img {
-  object-fit: cover;
-}
+  <style scoped>
+  .avatar img {
+    object-fit: cover;
+  }
 
-.btn-outline-primary, .btn-outline-danger {
-  border-width: 1px;
-}
+  .btn-outline-primary, .btn-outline-danger {
+    border-width: 1px;
+  }
 
-:deep(.ant-table-thead > tr > th) {
-  background-color: #f8f9fa;
-  font-weight: 600;
-}
-</style>
+  :deep(.ant-table-thead > tr > th) {
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+  </style>

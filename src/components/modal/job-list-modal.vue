@@ -2,8 +2,11 @@
 import { ref } from 'vue';
 import { Modal } from 'bootstrap';
 import { useNotifications } from '@/composables/useNotifications';
-// import JobService from '@/services/job.service';
+import jobOfferService from '@/services/job.service'
+import axios from 'axios';
+import FormCheckboxRadios from '@/views/pages/uiinterface/forms/form-elements/form-checkbox-radios.vue';
 
+const uploading = ref(false);
 const currentDate = ref(new Date().toISOString().split('T')[0]);
 const isEditMode = ref(false);
 const { showNotification } = useNotifications();
@@ -12,29 +15,30 @@ const activeTab = ref('basic-info');
 // Configuration Cloudinary pour l'image du poste
 const cloudinaryConfig = {
   cloudName: 'ddwutdh6t',
-  uploadPreset: 'upload_image',
+  uploadPreset : 'jobOffert',
 };
 
 const formData = ref({
-  job_title: '',
-  job_description: '',
-  job_category: 'Select',
-  job_type: 'Select',
-  job_level: 'Select',
+  id:null,
+  jobTitle: '',
+  jobDescription: '',
+  jobCategory: 'Select',
+  jobType: 'Select',
+  jobLevel: 'Select',
   experience: 'Select',
   qualification: 'Select',
   gender: 'Select',
-  min_salary: 'Select',
-  max_salary: 'Select',
+  minSalary: 'Select',
+  maxSalary: 'Select',
   skills: '',
-  job_image_url: '',
-  job_image_name: '',
-  expired_date: currentDate.value,
+  jobImageUrl: '',
+  jobImageName: '',
+  expiredDate: currentDate.value,
   address: '',
   city: 'Select',
   state: 'Select',
   country: 'Select',
-  zip_code: ''
+  zipCode: ''
 });
 
 const options = {
@@ -52,69 +56,88 @@ const options = {
 };
 
 // Upload de l'image vers Cloudinary
-const handleImageUpload = async (event) => {
-  const file = event.target.files[0];
-  if (!file) return;
-
-  // Vérification du type de fichier
-  const validTypes = ['image/jpeg', 'image/png', 'image/gif'];
-  if (!validTypes.includes(file.type)) {
-    showNotification({
-      type: 'error',
-      title: 'Error',
-      message: 'Please upload a valid image (JPEG, PNG, GIF)',
-      timeout: 5000
-    });
-    return;
-  }
-
-  // Vérification de la taille (max 2MB)
-  if (file.size > 2 * 1024 * 1024) {
-    showNotification({
-      type: 'error',
-      title: 'Error',
-      message: 'Image size should not exceed 2MB',
-      timeout: 5000
-    });
-    return;
-  }
-
+const uploadImageToCloudinary = async (file) => {
   try {
     const formData = new FormData();
     formData.append('file', file);
     formData.append('upload_preset', cloudinaryConfig.uploadPreset);
-    formData.append('cloud_name', cloudinaryConfig.cloudName);
 
-    const response = await fetch(
-      `https://api.cloudinary.com/v1_1/${cloudinaryConfig.cloudName}/upload`,
+    const response = await axios.post(
+      `https://api.cloudinary.com/v1_1/${cloudinaryConfig.cloudName}/image/upload`,
+      formData,
       {
-        method: 'POST',
-        body: formData
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
       }
     );
 
-    const data = await response.json();
-    if (data.secure_url) {
-      formData.value.job_image_url = data.secure_url;
-      formData.value.job_image_name = file.name;
-      showNotification({
-        type: 'success',
-        title: 'Success',
-        message: 'Image uploaded successfully!',
-        timeout: 3000
-      });
-    }
+    return {
+      secure_url: response.data.secure_url,
+      original_filename: response.data.original_filename || file.name
+    };      
   } catch (error) {
-    console.error('Image upload error:', error);
-    showNotification({
-      type: 'error',
-      title: 'Error',
-      message: 'Failed to upload image',
-      timeout: 5000
-    });
+    console.error('Erreur lors du téléversement de l\'image:', error);
+    throw error;
   }
 };
+const handleImageUpload = async (event) => {
+  const file = event.target.files[0];
+  if (!file) return;
 
+  const validTypes = ['image/jpeg', 'image/png', 'image/webp'];
+  const maxSize = 5 * 1024 * 1024; // 5MB
+
+  if (!validTypes.includes(file.type)) {
+    showNotification({
+      type: 'error',
+      title: 'Format invalide',
+      message: 'Seuls les JPEG, PNG et WEBP sont acceptés',
+      timeout: 5000
+    });
+    return;
+  }
+
+  if (file.size > maxSize) {
+    showNotification({
+      type: 'error',
+      title: 'Fichier trop lourd',
+      message: 'La taille maximale est de 5MB',
+      timeout: 5000
+    });
+    return;
+  }
+
+  uploading.value = true; // Afficher l'overlay de chargement
+  try {
+        // Afficher un loader pendant l'upload
+    showNotification({
+      type: 'info',
+      title: 'Upload en cours',
+      message: 'Traitement de votre image...',
+      timeout: 2000
+    });
+
+     const { secure_url, original_filename } = await uploadImageToCloudinary(file);
+    formData.value.jobImageUrl = secure_url;
+    formData.value.jobImageName = original_filename; // Sauvegarde du nom de l'imagea
+        showNotification({
+      type: 'success',
+      title: 'Succès',
+      message: 'Image uploadée avec succès!',
+      timeout: 3000
+    });
+  } catch (error) {
+    showNotification({
+      type: 'error',
+      title: 'Échec du téléversement',
+      message: 'Échec du téléversement de l\'image',
+      timeout: 5000
+    });
+  } finally {
+    uploading.value = false; // Cacher l'overlay de chargement
+  }
+};
 const removeImage = () => {
   formData.value.job_image_url = '';
   formData.value.job_image_name = '';
@@ -122,11 +145,29 @@ const removeImage = () => {
 
 const show = (editMode = false, jobData = null) => {
   isEditMode.value = editMode;
-
   if (editMode && jobData) {
-    formData.value = { 
-      ...jobData,
-      expired_date: jobData.expired_date ? jobData.expired_date.split('T')[0] : currentDate.value
+    // Conversion des clés snake_case en CamelCase
+    formData.value = {
+      id: jobData.id,
+      jobTitle: jobData.job_title || jobData.jobTitle || '',
+      jobDescription: jobData.job_description || jobData.jobDescription || '',
+      jobCategory: jobData.job_category || jobData.jobCategory || 'Select',
+      jobType: jobData.job_type || jobData.jobType || 'Select',
+      jobLevel: jobData.job_level || jobData.jobLevel || 'Select',
+      experience: jobData.experience || 'Select',
+      qualification: jobData.qualification || 'Select',
+      gender: jobData.gender || 'Select',
+      minSalary: jobData.min_salary || jobData.minSalary || 'Select',
+      maxSalary: jobData.max_salary || jobData.maxSalary || 'Select',
+      skills: jobData.skills || '',
+      jobImageUrl: jobData.job_image_url || jobData.jobImageUrl || '',
+      jobImageName: jobData.job_image_name || jobData.jobImageName || '',
+      expiredDate: jobData.expired_date ? jobData.expired_date.split('T')[0] : currentDate.value,
+      address: jobData.address || '',
+      city: jobData.city || 'Select',
+      state: jobData.state || 'Select',
+      country: jobData.country || 'Select',
+      zipCode: jobData.zip_code || jobData.zipCode || ''
     };
   } else {
     resetForm();
@@ -138,31 +179,31 @@ const show = (editMode = false, jobData = null) => {
 
 const resetForm = () => {
   formData.value = {
-    job_title: '',
-    job_description: '',
-    job_category: 'Select',
-    job_type: 'Select',
-    job_level: 'Select',
+    jobTitle: '',
+    jobDescription: '',
+    jobCategory: 'Select',
+    jobType: 'Select',
+    jobLevel: 'Select',
     experience: 'Select',
     qualification: 'Select',
     gender: 'Select',
-    min_salary: 'Select',
-    max_salary: 'Select',
+    minSalary: 'Select',
+    maxSalary: 'Select',
     skills: '',
-    job_image_url: '',
-    job_image_name: '',
-    expired_date: currentDate.value,
+    jobImageUrl: '',
+    jobImageName: '',
+    expiredDate: currentDate.value,
     address: '',
     city: 'Select',
     state: 'Select',
     country: 'Select',
-    zip_code: ''
+    zipCode: ''
   };
   activeTab.value = 'basic-info';
+  isEditMode.value = false; 
 };
-
 const validateForm = () => {
-  if (!formData.value.job_title) {
+  if (!formData.value.jobTitle) {
     showNotification({
       type: 'error',
       title: 'Error',
@@ -172,7 +213,7 @@ const validateForm = () => {
     return false;
   }
   
-  if (formData.value.job_category === 'Select') {
+  if (formData.value.jobCategory === 'Select') {
     showNotification({
       type: 'error',
       title: 'Error',
@@ -191,13 +232,30 @@ const submitForm = async () => {
 
   try {
     const payload = {
-      ...formData.value,
-      // Nettoyer les données si nécessaire
+      job_title: formData.value.jobTitle,
+      job_description: formData.value.jobDescription,
+      job_category: formData.value.jobCategory,
+      job_type: formData.value.jobType,
+      job_level: formData.value.jobLevel,
+      experience: formData.value.experience,
+      qualification: formData.value.qualification,
+      gender: formData.value.gender,
+      min_salary: formData.value.minSalary,
+      max_salary: formData.value.maxSalary,
+      skills: formData.value.skills,
+      job_image_url: formData.value.jobImageUrl,
+      job_image_name: formData.value.jobImageName,
+      expired_date: formData.value.expiredDate,
+      address: formData.value.address,
+      city: formData.value.city,
+      state: formData.value.state,
+      country: formData.value.country,
+      zip_code: formData.value.zipCode
     };
 
     let response;
     if (isEditMode.value) {
-      response = await JobService.updateJob(formData.value.id, payload);
+      response = await jobOfferService .updateJobOffer(formData.value.id, payload);
       showNotification({
         type: 'success',
         title: 'Success',
@@ -205,7 +263,8 @@ const submitForm = async () => {
         timeout: 5000
       });
     } else {
-      response = await JobService.createJob(payload);
+      console.log('donneavent envoie:', payload)
+      response = await jobOfferService .createJobOffer(payload);
       showNotification({
         type: 'success',
         title: 'Success',
@@ -213,14 +272,18 @@ const submitForm = async () => {
         timeout: 5000
       });
     }
-
+        const jobToEmit = {
+      ...payload,
+      id: response.data?.id || formData.value.id
+    };
     emit('saved', {
       action: isEditMode.value ? 'update' : 'create',
-      job: response.data
+      job: jobToEmit
     });
 
     const modal = Modal.getInstance(document.getElementById('job_modal'));
     modal.hide();
+    resetForm();
   } catch (error) {
     console.error('Submission error:', error);
     handleSubmissionError(error);
@@ -311,14 +374,14 @@ const emit = defineEmits(['saved']);
                   <div class="col-md-12">
                     <div class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
                       <div 
-                        v-if="!formData.job_image_url"
+                        v-if="!formData.jobImageUrl"
                         class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames"
                       >
                         <i class="ti ti-briefcase fs-36"></i>
                       </div>
                       <img 
                         v-else
-                        :src="formData.job_image_url" 
+                        :src="formData.jobImageUrl" 
                         alt="Job image" 
                         class="avatar avatar-xxl rounded-circle me-2"
                       >
@@ -338,7 +401,7 @@ const emit = defineEmits(['saved']);
                             >
                           </div>
                           <button 
-                            v-if="formData.job_image_url"
+                            v-if="formData.jobImageUrl"
                             type="button" 
                             class="btn btn-light btn-sm"
                             @click="removeImage"
@@ -354,7 +417,7 @@ const emit = defineEmits(['saved']);
                     <div class="mb-3">
                       <label class="form-label">Job Title <span class="text-danger">*</span></label>
                       <input 
-                        v-model="formData.job_title" 
+                        v-model="formData.jobTitle" 
                         type="text" 
                         class="form-control" 
                         required
@@ -366,7 +429,7 @@ const emit = defineEmits(['saved']);
                     <div class="mb-3">
                       <label class="form-label">Job Description <span class="text-danger">*</span></label>
                       <textarea 
-                        v-model="formData.job_description" 
+                        v-model="formData.jobDescription" 
                         rows="3" 
                         class="form-control" 
                         required
@@ -378,7 +441,7 @@ const emit = defineEmits(['saved']);
                     <div class="mb-3">
                       <label class="form-label">Job Category <span class="text-danger">*</span></label>
                       <select 
-                        v-model="formData.job_category" 
+                        v-model="formData.jobCategory" 
                         class="form-select" 
                         required
                       >
@@ -393,7 +456,7 @@ const emit = defineEmits(['saved']);
                     <div class="mb-3">
                       <label class="form-label">Job Type <span class="text-danger">*</span></label>
                       <select 
-                        v-model="formData.job_type" 
+                        v-model="formData.jobType" 
                         class="form-select" 
                         required
                       >
@@ -408,7 +471,7 @@ const emit = defineEmits(['saved']);
                     <div class="mb-3">
                       <label class="form-label">Job Level <span class="text-danger">*</span></label>
                       <select 
-                        v-model="formData.job_level" 
+                        v-model="formData.jobLevel" 
                         class="form-select" 
                         required
                       >
@@ -468,7 +531,7 @@ const emit = defineEmits(['saved']);
                     <div class="mb-3">
                       <label class="form-label">Min. Salary <span class="text-danger">*</span></label>
                       <select 
-                        v-model="formData.min_salary" 
+                        v-model="formData.minSalary" 
                         class="form-select" 
                         required
                       >
@@ -483,7 +546,7 @@ const emit = defineEmits(['saved']);
                     <div class="mb-3">
                       <label class="form-label">Max. Salary <span class="text-danger">*</span></label>
                       <select 
-                        v-model="formData.max_salary" 
+                        v-model="formData.maxSalary" 
                         class="form-select" 
                         required
                       >
@@ -498,7 +561,7 @@ const emit = defineEmits(['saved']);
                     <div class="mb-3">
                       <label class="form-label">Job Expired Date <span class="text-danger">*</span></label>
                       <input 
-                        v-model="formData.expired_date" 
+                        v-model="formData.expiredDate" 
                         type="date" 
                         class="form-control" 
                         required
@@ -597,7 +660,7 @@ const emit = defineEmits(['saved']);
                     <div class="mb-3">
                       <label class="form-label">Zip Code <span class="text-danger">*</span></label>
                       <input 
-                        v-model="formData.zip_code" 
+                        v-model="formData.zipCode" 
                         type="text" 
                         class="form-control" 
                         required

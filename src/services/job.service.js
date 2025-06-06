@@ -27,20 +27,32 @@ class JobOfferService {
   }
 
   // Formater les données de l'offre d'emploi
-  formatJobOfferData(data) {
+formatJobOfferData(data) {
     return {
       id: data.id,
-      date: data.date,
-      candidate_name: data.candidate_name,
-      position_name: data.position_name,
-      salary_detail: data.salary_detail,
-      acceptance_deadline: data.acceptance_deadline,
-      acceptance_status: data.acceptance_status,
-      note: data.note || null,
-      created_by: data.created_by || null,
-      updated_by: data.updated_by || null,
+      job_title: data.job_title || null,
+      job_description: data.job_description || null,
+      job_category: data.job_category || null,
+      job_type: data.job_type || null,
+      job_level: data.job_level || null,
+      experience: data.experience || null,
+      qualification: data.qualification || null,
+      gender: data.gender || null,
+      min_salary: data.min_salary || null,
+      max_salary: data.max_salary || null,
+      skills: data.skills || null,
+      job_image_url: data.job_image_url || null,
+      job_image_name: data.job_image_name || null,
+      expired_date: data.expired_date || null,
+      address: data.address || null,
+      city: data.city || null,
+      state: data.state || null,
+      country: data.country || null,
+      zip_code: data.zip_code || null,
+      created_at: data.created_at || null,
+      updated_at: data.updated_at || null
     };
-  }
+}
 }
 
 export const jobOfferService = new JobOfferService();

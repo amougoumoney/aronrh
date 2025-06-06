@@ -46,6 +46,7 @@ class GrantService {
     return {
       name: data.name,
       code: data.code,
+      status: data.status,
       description: data.description,
       end_date: data.end_date,
       created_by: data.created_by || 'admin',

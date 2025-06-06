@@ -160,15 +160,15 @@
                   </div>
                 </template>
                 <template v-if="column.key === 'action'">
-    <div class="action-icon d-inline-flex">
-      <a href="javascript:void(0);" class="me-2" @click="handleEditSalary(record)">
-        <i class="ti ti-edit"></i>
-      </a>
-      <a href="javascript:void(0);" @click="handleDeleteSalary(record.id)">
-        <i class="ti ti-trash"></i>
-      </a>
-    </div>
-  </template>
+                  <div class="action-icon d-inline-flex">
+                    <a href="javascript:void(0);" class="me-2" @click="handleEditSalary(record)">
+                      <i class="ti ti-edit"></i>
+                    </a>
+                    <a href="javascript:void(0);" @click="handleDeleteSalary(record.id)">
+                      <i class="ti ti-trash"></i>
+                    </a>
+                  </div>
+                </template>
               </template>
             </a-table>
           </div>
@@ -200,8 +200,9 @@ import moment from "moment";
 import DateRangePicker from "daterangepicker";
 import EmployeeSalary from "@/components/modal/employee-salary-modal.vue";
 import PayrollService from "@/services/payroll.service"
+import { useNotifications } from '@/composables/useNotifications';
 
-
+const { showNotification } = useNotifications();
 const salaryModal = ref(null);
 const currentSalary = ref(null);
 const isEditMode = ref(false);
@@ -225,15 +226,36 @@ const handleEditSalary = (salary) => {
 // Gérer la sauvegarde
 const handleSaveSalary = async ({ data, isEdit }) => {
   try {
+    let response;
     if (isEdit) {
-     await PayrollService.updatePayroll(data.id, data);
+      response = await PayrollService.updatePayroll(data.id, data);
     } else {
-      await PayrollService.createPayroll(data);
+      console.log('data.send.payroll', data)
+      response = await PayrollService.createPayroll(data);
+
+      console.log('response.data', response)
     }
-    // Recharger les données
-    await PayrollService.getAllPayrolls()
+    
+    // Vérifiez que la réponse est valide
+    if (response && response.success) {
+      // Recharger les données et mettre à jour le tableau
+      const updatedData = await PayrollService.getAllPayrolls();
+      data.value = updatedData.data; // Supposant que l'API retourne {data: [...]}
+      
+      // Afficher notification de succès
+      showNotification({
+        type: 'success',
+        title: 'Success', 
+        message: `Salary ${isEdit ? 'updated' : 'added'} successfully`
+      });
+    }
   } catch (error) {
     console.error('Error saving salary:', error);
+    showNotification({
+      type: 'error',
+      title: 'Error',
+      message: error.response?.data?.message || 'Failed to save salary'
+    });
   }
 };
 // Gérer la suppression
@@ -247,6 +269,15 @@ const handleDeleteSalary = async (id) => {
       console.error("Error deleting salary:", error);
       // Ajoutez ici une notification d'erreur si nécessaire
     }
+  }
+};
+
+const loadPayrollData = async () => {
+  try {
+    const response = await PayrollService.getAllPayrolls();
+    data.value = response.data;
+  } catch (error) {
+    console.error('Error loading payroll data:', error);
   }
 };
 const columns = ref([
@@ -342,31 +373,6 @@ const columns = ref([
 ]);
 
 const data = ref([
-  {
-    EmpID: "Emp-001",
-    Name: "Anthony Lewis",
-    Work: "Finance",
-    Email: "anthony@example.com",
-    Phone: "(123) 4567 890",
-    Designation: "Finance",
-    JoiningDate: "12 Sep 2024",
-    Salary: "$40000",
-    Payslip: "Generate Slip",
-    Image: "user-32.jpg",
-  },
-  {
-    EmpID: "Emp-002",
-    Name: "Brian Villalobos",
-    Work: "Developer",
-    Email: "brian@example.com",
-    Phone: "(179) 7382 829",
-    Designation: "Developer",
-    JoiningDate: "24 Oct 2024",
-    Salary: "$35000",
-    Payslip: "Generate Slip",
-    Image: "user-09.jpg",
-  },
-  // ... (rest of your data items)
 ]);
 
 const rowSelection = ref({
@@ -390,6 +396,8 @@ function booking_range(start, end) {
 }
 
 onMounted(() => {
+
+   loadPayrollData();
   if (dateRangeInput.value) {
     const start = moment().subtract(6, "days");
     const end = moment();

@@ -7,6 +7,7 @@ import DateRangePicker from "daterangepicker";
 import CandidateModal from "@/components/modal/candidat-list-modal.vue";
 import { Modal } from "bootstrap";
 import candidatesTable from './candidates-table.vue'
+import  CandidatService from '@/services/candidat.service';
 
 const title = "Candidates";
 const text = "HR";
@@ -35,26 +36,35 @@ const handleEditCandidate = (candidate) => {
   candidateModalRef.value?.show(true, formattedCandidate);
 };
 
-const handleDeleteCandidate = async (candidateId) => {
-  try {
-    // Appel API pour supprimer le candidat
-    // await CandidateService.deleteCandidate(candidateId);
-    showNotification({
-      type: 'success',
-      title: 'Success',
-      message: 'Candidate deleted successfully!',
-      timeout: 5000
-    });
-    // Émettre un événement ou rafraîchir la liste
-  } catch (error) {
-    showNotification({
-      type: 'error',
-      title: 'Error',
-      message: 'Failed to delete candidate',
-      timeout: 5000
-    });
+
+const fetchallCandidate = async() => {
+  try{
+    const response = await CandidatService.getAllCandidats()
+    console.log('response.candidate:', response)
+  }catch(error){
+    console.error('error', error)
   }
-};
+}
+// const handleDeleteCandidate = async (candidateId) => {
+//   try {
+//     // Appel API pour supprimer le candidat
+//     // await CandidateService.deleteCandidate(candidateId);
+//     showNotification({
+//       type: 'success',
+//       title: 'Success',
+//       message: 'Candidate deleted successfully!',
+//       timeout: 5000
+//     });
+//     // Émettre un événement ou rafraîchir la liste
+//   } catch (error) {
+//     showNotification({
+//       type: 'error',
+//       title: 'Error',
+//       message: 'Failed to delete candidate',
+//       timeout: 5000
+//     });
+//   }
+// };
 
 // Fonction pour formater la plage de dates
 function bookingRange(start, end) {
@@ -63,6 +73,8 @@ function bookingRange(start, end) {
 
 // Initialisation du DateRangePicker
 onMounted(() => {
+
+  fetchallCandidate()
   if (dateRangeInput.value) {
     const start = moment().subtract(6, "days");
     const end = moment();

@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import { Modal } from 'bootstrap';
 import { useNotifications } from '@/composables/useNotifications';
 import axios from 'axios';
-// import CandidateService from '@/services/candidate.service';
+import  CandidatService from '@/services/candidat.service';
 
 const currentDate = ref(new Date().toISOString().split('T')[0]);
 const isEditMode = ref(false);
@@ -27,17 +27,17 @@ const statusOptions = [
 ];
 
 const formData = ref({
-  candidate_name: '',
-  candidate_surname: '',
-  birth_date: '',
-  birth_place: '',
+  first_name: '',
+  last_name: '',
   email: '',
-  phone: '',
-  cv_url: '', // Stockera l'URL Cloudinary
-  cv_name: '', // Nom original du fichier
+  place_birtday:'',
   job_position: '',
-  application_status: 'sent',
-  application_date: currentDate.value
+  status: '',
+  birthday: '',
+  application_date: currentDate.value,
+  telephone: '',
+  cv:'',
+  cv_name: ''
 });
 
 // Upload du CV vers Cloudinary
@@ -102,12 +102,12 @@ const Uploaddocument = async (event) =>{
 
   cvUploading.value = true;
   const documentUrl= await handleCVUpload(file)
-  formData.value.cv_url = documentUrl
+  formData.value.cv = documentUrl
 
 }
 
 const removeCV = () => {
-  formData.value.cv_url = '';
+  formData.value.cv = '';
   formData.value.cv_name = '';
 };
 
@@ -119,7 +119,7 @@ const show = (editMode = false, candidateData = null) => {
       ...candidateData,
       birth_date: candidateData.birth_date ? candidateData.birth_date.split('T')[0] : currentDate.value,
       application_date: candidateData.application_date ? candidateData.application_date.split('T')[0] : currentDate.value,
-      cv_url: candidateData.cv_url || '',
+      cv: candidateData.cv || '',
       cv_name: candidateData.cv_name || ''
     };
   } else {
@@ -132,22 +132,22 @@ const show = (editMode = false, candidateData = null) => {
 
 const resetForm = () => {
   formData.value = {
-    candidate_name: '',
-    candidate_surname: '',
-    birth_date: '',
-    birth_place: '',
-    email: '',
-    phone: '',
-    cv_url: '',
-    cv_name: '',
-    job_position: '',
-    application_status: 'sent',
-    application_date: currentDate.value
+  first_name: '',
+  last_name: '',
+  email: '',
+  place_birtday:'',
+  job_position: '',
+  status: '',
+  birthday: '',
+  application_date: currentDate.value,
+  telephone: '',
+  cv:'',
+  cv_name: ''
   };
 };
 
 const submitForm = async () => {
-  if (!formData.value.cv_url) {
+  if (!formData.value.cv) {
     showNotification({
       type: 'error',
       title: 'Error',
@@ -158,15 +158,11 @@ const submitForm = async () => {
   }
 
   try {
-    const payload = {
-      ...formData.value,
-      phone: formData.value.phone || null,
-      email: formData.value.email || null
-    };
-
     let response;
     if (isEditMode.value) {
-      response = await CandidateService.updateCandidate(formData.value.id, payload);
+      response = await  CandidatService.updateCandidat(formData.value.id, formData.value);
+
+      console.log('candidat.data', response)
       showNotification({
         type: 'success',
         title: 'Success',
@@ -174,7 +170,9 @@ const submitForm = async () => {
         timeout: 5000
       });
     } else {
-      response = await CandidateService.createCandidate(payload);
+      console.log('data.send', formData.value)
+      response = await  CandidatService.createCandidat(formData.value);
+          console.log('candidat.data', response)
       showNotification({
         type: 'success',
         title: 'Success',
@@ -259,7 +257,7 @@ const emit = defineEmits(['saved']);
                   <input 
                     class="form-control" 
                     type="text" 
-                    v-model="formData.candidate_name" 
+                    v-model="formData.first_name" 
                     maxlength="255"
                     required
                   >
@@ -271,7 +269,7 @@ const emit = defineEmits(['saved']);
                   <input 
                     class="form-control" 
                     type="text" 
-                    v-model="formData.candidate_surname" 
+                    v-model="formData.last_name" 
                     maxlength="255"
                     required
                   >
@@ -283,7 +281,7 @@ const emit = defineEmits(['saved']);
                   <input 
                     class="form-control" 
                     type="date" 
-                    v-model="formData.birth_date"
+                    v-model="formData.birthday"
                   >
                 </div>
               </div>
@@ -293,7 +291,7 @@ const emit = defineEmits(['saved']);
                   <input 
                     class="form-control" 
                     type="text" 
-                    v-model="formData.birth_place"
+                    v-model="formData.place_birtday"
                     maxlength="255"
                   >
                 </div>
@@ -315,9 +313,10 @@ const emit = defineEmits(['saved']);
                   <label class="form-label">Phone Number</label>
                   <input 
                     class="form-control" 
-                    type="text" 
-                    v-model="formData.phone" 
+                    type="number" 
+                    v-model="formData.telephone" 
                     maxlength="15"
+                    min="0"
                   >
                 </div>
               </div>
@@ -343,7 +342,7 @@ const emit = defineEmits(['saved']);
                   <label class="form-label">Application Status <span class="text-danger">*</span></label>
                   <select 
                     class="form-select" 
-                    v-model="formData.application_status"
+                    v-model="formData.status"
                     required
                   >
                     <option v-for="status in statusOptions" :key="status.value" :value="status.value">
@@ -366,7 +365,7 @@ const emit = defineEmits(['saved']);
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">CV <span class="text-danger">*</span></label>
-                  <div v-if="!formData.cv_url">
+                  <div v-if="!formData.cv">
                     <input 
                       class="form-control" 
                       type="file" 
@@ -389,7 +388,7 @@ const emit = defineEmits(['saved']);
                       <i class="ti ti-trash"></i>
                     </button>
                     <a 
-                      :href="formData.cv_url" 
+                      :href="formData.cv" 
                       target="_blank" 
                       class="btn btn-sm btn-link ms-1"
                       title="View CV"

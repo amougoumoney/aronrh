@@ -53,7 +53,7 @@
                     <td>{{ formatDate(grant.endDate) }}</td>
                     <td>
                       <span :class="'badge ' + getStatusClass(grant.status)">
-                        {{ grant.status || 'Active' }}
+                        {{ formatStatus(grant.status) }}
                       </span>
                     </td>
                     <td class="text-end">
@@ -88,7 +88,6 @@
                               <th>Coût Mensuel</th>
                               <th>Coût Total</th>
                               <th>Montant Total</th>
-                              <th class="text-end">Actions</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -130,7 +129,8 @@
     <!-- Grant Modal -->
     <grant-modal ref="grantModal" 
                 @submit="handleGrantSubmit"
-                @item-created="handleItemCreated" />
+                @item-created="handleItemCreated" 
+                @refresh="handleRefresh"/>
   </div>
 </template>
 
@@ -168,7 +168,7 @@ const fetchAllData = async () => {
         amount: grant.amount || calculateTotalAmount(associatedItems), // Calculer le montant total des items associés
         startDate: grant.startDate || new Date().toLocaleDateString(),
         endDate: grant.endDate || new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toLocaleDateString(),
-        status: grant.status || "Pending",
+        status: grant.status,
         items: associatedItems.map((item) => ({
           id: item.id,
           bg_line: item.bgLine,
@@ -222,8 +222,49 @@ const handleGrantSubmit = (event) => {
   }
 };
 
+const handleRefresh = async ({ type, data }) => {
+  switch(type) {
+    case 'GRANT_CREATED':
+    case 'GRANT_UPDATED':
+      await fetchGrants(); // Rechargez la liste des grants
+      break;
+    case 'GRANT_ITEM_CREATED':
+    case 'GRANT_ITEM_UPDATED':
+      await fetchGrantItems(); // Rechargez la liste des items
+      break;
+  }
+};
+
+const fetchGrants = async () => {
+  const grantsList = ref([])
+  try {
+    const response = await GrantService.getAllGrants();
+    grantsList.value = response.data;
+  } catch (error) {
+    console.error("Erreur lors du chargement des grants", error);
+  }
+};
+
+const fetchGrantItems = async () => {
+  const grantsItemsList = ref([])
+  try {
+    const response = await GrantItemService.getAllGrantItems();
+    grantsItemsList.value = response.data;
+  } catch (error) {
+    console.error("Erreur lors du chargement des grants", error);
+  }
+};
+
+
 const handleItemCreated = (newItem) => {
-  const grantIndex = grants.value.findIndex(g => g.id === newItem.grant_id);
+
+    console.log('New item received:', newItem.value); // Debug
+  const grantId = newItem.grant_id || newItem.grantId; // Essayez les deux possibilités
+  if (!grantId) {
+    console.error('Grant ID is missing in the new item');
+    return;
+  }
+  const grantIndex = grants.value.findIndex(g => g.id === newItem.grantId);
   if (grantIndex !== -1) {
     if (!grants.value[grantIndex].items) {
       grants.value[grantIndex].items = [];
@@ -310,12 +351,44 @@ const toggleGrant = (grant) => {
 };
 
 const getStatusClass = (status) => {
-  switch ((status || '').toLowerCase()) {
-    case 'active': return 'bg-success';
-    case 'pending': return 'bg-warning';
-    case 'completed': return 'bg-info';
-    case 'cancelled': return 'bg-danger';
-    default: return 'bg-secondary';
+  if (typeof status === 'boolean') {
+    return status ? 'bg-success' : 'bg-danger';
+  }
+  
+  // Gestion pour les cas où status serait une string (au cas où)
+  const statusStr = String(status || '').toLowerCase();
+  switch (statusStr) {
+    case 'active':
+    case 'true':
+      return 'bg-success';
+    case 'Inactive':
+    case 'false':
+      return 'bg-danger';
+    case 'pending':
+      return 'bg-warning';
+    case 'completed':
+      return 'bg-info';
+    default:
+      return 'bg-secondary';
+  }
+};
+
+const formatStatus = (status) => {
+  if (typeof status === 'boolean') {
+    return status ? 'Active' : 'Inactive';
+  }
+  
+  // Pour les chaînes (au cas où)
+  const statusStr = String(status || '').toLowerCase();
+  switch (statusStr) {
+    case 'active':
+    case 'true':
+      return 'Active';
+    case 'inactive':
+    case 'false':
+      return 'Inactive';
+    default:
+      return status || 'Inactive';
   }
 };
 
