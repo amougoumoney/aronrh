@@ -489,7 +489,7 @@ const calculateDeductions = () => {
 };
 
 const calculateMonthlyIRPP = (monthlyTaxableIncome) => {
-  const abatement = Math.min(monthlyTaxableIncome * 0.20, 80000);
+  const abatement = Math.min(monthlyTaxableIncome * 0.30, 41667);
   const netTaxable = monthlyTaxableIncome - abatement;
 
   let tax = 0;
@@ -501,13 +501,20 @@ const calculateMonthlyIRPP = (monthlyTaxableIncome) => {
   } else if (netTaxable <= 416667) {
     tax = (250000 - 166667) * 0.10 + (netTaxable - 250000) * 0.15;
   } else if (netTaxable <= 833333) {
-    tax = (250000 - 166667) * 0.10 + (416667 - 250000) * 0.15 + (netTaxable - 416667) * 0.25;
+    tax = (250000 - 166667) * 0.10 +
+          (416667 - 250000) * 0.15 +
+          (netTaxable - 416667) * 0.25;
   } else {
-    tax = (250000 - 166667) * 0.10 + (416667 - 250000) * 0.15 + (833333 - 416667) * 0.25 + (netTaxable - 833333) * 0.35;
+    tax = (250000 - 166667) * 0.10 +
+          (416667 - 250000) * 0.15 +
+          (833333 - 416667) * 0.25 +
+          (netTaxable - 833333) * 0.35;
   }
 
-  return Math.round(tax);
+  const taxWithCAC = tax + tax * 0.10; 
+  return Math.round(taxWithCAC);
 };
+
 
 const calculateEmployerContributions = () => {
   const cnpsBase = Math.min(formData.value.gross_salary, PAYROLL_CONFIG.CNPS_MAX_BASE);

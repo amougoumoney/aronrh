@@ -8,7 +8,7 @@ import grantDetails from '@/views/pages/grant/grant-details.vue';
 
 // References components
 import ReferencesList from '@/views/pages/recruitment/references/references-list.vue';
-
+import Referencedetails from '@/views/pages/recruitment/references/references-details.vue';
 // Request components
 import travelRequestIndex from '@/views/pages/requests/travel/travel-index.vue';
 import travelRequestList from '@/views/pages/requests/travel/travel-list.vue';
@@ -711,6 +711,7 @@ const routes = [
       { path: "candidates-kanban", component: CandidatesKanban },
       { path: "refferals", component: RefferalsList },
       { path: "references", component: ReferencesList },
+      { path: "references-details", component: Referencedetails },
       { path: "interviews-list", component: InterviewsList },
       { path: "interviews-details", component: InterviewsDetails },
     ]
