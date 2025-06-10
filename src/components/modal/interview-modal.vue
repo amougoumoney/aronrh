@@ -1,12 +1,14 @@
 <script setup>
-import { ref, defineEmits, defineExpose } from 'vue';
+import { ref, defineEmits, defineExpose, onMounted } from 'vue';
 import {Modal}  from 'bootstrap';
 import { useNotifications } from '@/composables/useNotifications';
 import InterviewService from '@/services/interview.service';
+import CandidatsService from '@/services/candidat.service';
 
 const currentDate = ref(new Date().toISOString().split('T')[0]); // Format as YYYY-MM-DD
 const isEditMode = ref(false);
 const {showNotification} = useNotifications();
+const candidat = ref([]);
 
 const formData = ref({
   candidate_name: '',
@@ -23,6 +25,16 @@ const formData = ref({
   feedback: '',
   reference_info: ''
 });
+
+const fetchCandidate = async () => {
+  try {
+    const response = await CandidatsService.getAllCandidats();
+    candidat.value = response.data;
+    console.log('candidate list:', candidat.value); // Corrigé le console.log
+  } catch(error) {
+    console.log('fetchCandidate error:', error); // Corrigé la faute de frappe
+  }
+};
 
 const show = (editMode = false, interviewData = null) => {
   isEditMode.value = editMode;
@@ -143,6 +155,10 @@ const submitForm = async () => {
     });
   }
 };
+
+onMounted(() => {
+  fetchCandidate();
+});
 </script>
 
 <template>
@@ -168,7 +184,22 @@ const submitForm = async () => {
               <div class="col-md-12">
                 <h5 class="mb-3">Candidate Information</h5>
               </div>
-              <div class="col-md-6">
+                            <div class="col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Candidate Name</label>
+                  <select class="form-control" v-model="formData.candidate_name">
+                    <option value="">Select Candidate</option>
+                    <option 
+                      v-for="candidate in candidat" 
+                      :key="candidate.id" 
+                      :value="candidate.id"
+                    >
+                      {{ candidate.firstName }} {{ candidate.lastName }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+<!--               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Candidate Name <span class="text-danger">*</span></label>
                   <input 
@@ -179,7 +210,7 @@ const submitForm = async () => {
                     required
                   >
                 </div>
-              </div>
+              </div> -->
               <div class="col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Phone</label>
@@ -188,17 +219,6 @@ const submitForm = async () => {
                     type="text" 
                     v-model="formData.phone" 
                     maxlength="10"
-                  >
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="mb-3">
-                  <label class="form-label">Resume URL</label>
-                  <input 
-                    class="form-control" 
-                    type="text" 
-                    v-model="formData.resume" 
-                    maxlength="255"
                   >
                 </div>
               </div>

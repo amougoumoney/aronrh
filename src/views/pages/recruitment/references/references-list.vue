@@ -91,27 +91,38 @@
                 <!-- Colonne Entreprise -->
                 <template v-else-if="column.key === 'company'">
                   <div>
-                    <div class="fw-bold">{{ record.companyName || '-' }}</div>
-                    <div class="text-muted small">{{ record.companyAddress }}</div>
+                    <div class="fw-bold">{{ record.entrepriseName || '-' }}</div>
+                    <div class="text-muted small">{{ record.entrepriseAdresse }}</div>
                   </div>
                 </template>
                 
                 <!-- Colonne Contact -->
                 <template v-else-if="column.key === 'contact'">
                   <div>
-                    <div>{{ record.companyPhone || '-' }}</div>
-                    <div class="text-muted small">{{ record.phone }}</div>
+                    <div>{{ formatPhoneNumber(record.phoneEntreprise) || '-' }}</div>
+                  </div>
+                </template>
+                
+                <!-- Colonne Référence -->
+                <template v-else-if="column.key === 'reference'">
+                  <div>
+                    <div class="fw-bold">{{ record.name || '-' }}</div>
+                    <div class="text-muted small">{{ record.jobTitle }}</div>
                   </div>
                 </template>
                 
                 <!-- Colonne Candidat -->
                 <template v-else-if="column.key === 'candidate'">
-                  {{ getCandidateName(record.candidate_id) }}
+                  {{ getCandidateName(record.candidate_Id) }}
+                </template>
+
+                 <template v-else-if="column.key === 'tatus'">
+                  {{ record.status || '-' }}
                 </template>
                 
                 <!-- Colonne Date -->
                 <template v-else-if="column.key === 'dateAdded'">
-                  {{ formatDate(record.dateAdded) }}
+                  {{ formatDate(record.createAt) }}
                 </template>
                 
                 <!-- Actions -->
@@ -140,7 +151,7 @@
       </div>
     </div>
 
-    <reference-modal ref="referenceModal" :candidats="candidats" @saved="handleReferenceSaved"></reference-modal>
+    <reference-modal ref="referenceModal" @saved="handleReferenceSaved"></reference-modal>
   </div>
 </template>
 
@@ -152,8 +163,8 @@ import indexBreadcrumb from "@/components/breadcrumb/index-breadcrumb.vue";
 import ReferenceModal from "@/components/modal/reference-modal.vue";
 import { useI18n } from "vue-i18n";
 import ReferencesService from "@/services/reference.service";
-import CandidatsService from "@/services/candidat.service";
 import { useNotifications } from '@/composables/useNotifications'
+import CandidatsService from "@/services/candidat.service";
 
 const { t } = useI18n();
 
@@ -165,8 +176,7 @@ const text = ref(t('Recruitment'));
 const text1 = ref(t('ReferencesList'));
 const currentSort = ref(t('Last7Days'));
 const currentStatusFilter = ref(null);
-const currentCandidateFilter = ref(null);
-const currentCompanyFilter = ref(null);
+const candidats = ref([]);
 const { showNotification } = useNotifications()
 const pagination = ref({
   current: 1,
@@ -185,22 +195,15 @@ const sortOptions = [
 ];
 
 const columns = [
-  
   {
     title: t('Company'),
     key: "company",
-    sorter: (a, b) => (a.companyName || '').localeCompare(b.entrpriseName || '')
-  },
-
-  {
-    title: t('ReferenceName'),
-    dataIndex: "name",
-    sorter: true
+    sorter: (a, b) => (a.entrepriseName || '').localeCompare(b.entrepriseName || '')
   },
   {
-    title: t('JobTitle'),
-    dataIndex: "jobTitle",
-    sorter: true
+    title: t('Reference'),
+    key: "reference",
+    sorter: (a, b) => (a.name || '').localeCompare(b.name || '')
   },
   {
     title: t('Contact'),
@@ -209,18 +212,18 @@ const columns = [
   {
     title: t('Candidate'),
     key: "candidate",
-    sorter: (a, b) => getCandidateName(a.candidate_id).localeCompare(getCandidateName(b.candidate_id))
+    sorter: (a, b) => (a.candidateName || '').localeCompare(b.candidateName || '')
   },
   {
     title: t('Status'),
     dataIndex: "status",
     key: "status",
-    width: 120
+    sorter: (a, b) => (a.status || '').localeCompare(b.status || '')
   },
   {
     title: t('DateAdded'),
     key: "dateAdded",
-    sorter: (a, b) => new Date(a.dateAdded) - new Date(b.createAt),
+    sorter: (a, b) => new Date(a.createAt) - new Date(b.createAt),
     width: 120
   },
   {
@@ -237,7 +240,12 @@ const rowSelection = {
 };
 
 const references = ref([]);
-const candidats = ref([]);
+
+const getCandidateName = (candidateId) => {
+  if (!candidateId) return '-';
+  const candidate = candidats.value.find(c => c.id === candidateId);
+  return candidate ? `${candidate.firstName} ${candidate.lastName}` : 'Candidat inconnu';
+};
 
 // Computed
 const filteredReferences = computed(() => {
@@ -247,23 +255,7 @@ const filteredReferences = computed(() => {
     result = result.filter(ref => ref.status === currentStatusFilter.value);
   }
   
-  if (currentCandidateFilter.value) {
-    result = result.filter(ref => ref.candidate_id === currentCandidateFilter.value);
-  }
-  
-  if (currentCompanyFilter.value) {
-    result = result.filter(ref => ref.companyName === currentCompanyFilter.value);
-  }
-  
   return result;
-});
-
-const uniqueCompanies = computed(() => {
-  const companies = new Set();
-  references.value.forEach(ref => {
-    if (ref.companyName) companies.add(ref.companyName);
-  });
-  return Array.from(companies).sort();
 });
 
 // Méthodes
@@ -281,11 +273,6 @@ const handleReferenceSaved = ({ action, reference }) => {
     }
   }
   fetchReferences();
-};
-
-const getCandidateName = (candidateId) => {
-  const candidate = candidats.value.find(c => c.id === candidateId);
-  return candidate ? `${candidate.firstName} ${candidate.lastName}` : 'Inconnu';
 };
 
 const booking_range = (start, end) => {
@@ -313,7 +300,7 @@ const viewReferenceDetails = (referenceId) => {
 const deleteReference = async (id) => {
   if (confirm(t('ConfirmDeleteReference'))) {
     try {
-      await ReferencesService.deleteReference(id);
+      await ReferencesService.deletereference(id);
       references.value = references.value.filter(ref => ref.id !== id);
       showNotification({
         type: 'success',
@@ -337,7 +324,6 @@ const filterByStatus = (status) => {
   currentStatusFilter.value = currentStatusFilter.value === status ? null : status;
 };
 
-
 const sortReferences = (sortOption) => {
   switch (sortOption) {
     case 'date-desc':
@@ -356,7 +342,10 @@ const sortReferences = (sortOption) => {
       references.value.sort((a, b) => b.name.localeCompare(a.name));
       currentSort.value = t('NameZA');
       break;
-
+    case 'company-asc':
+      references.value.sort((a, b) => (a.entrepriseName || '').localeCompare(b.entrepriseName || ''));
+      currentSort.value = t('CompanyAZ');
+      break;
   }
 };
 
@@ -367,15 +356,14 @@ const handleTableChange = (pagination, filters, sorter) => {
 const fetchReferences = async () => {
   try {
     const [candidatesResponse, referencesResponse] = await Promise.all([
-      CandidatsService.getAllCanxxxdidats(),
+      CandidatsService.getAllCandidats(),
       ReferencesService.getAllreferences()
     ]);
     
     candidats.value = candidatesResponse.data;
     references.value = referencesResponse.data.map(ref => ({
       ...ref,
-      companyPhone: formatPhoneNumber(ref.companyPhone),
-      phone: formatPhoneNumber(ref.phoneEntreprise)
+      status: ref.status || 'Pending' // Valeur par défaut si status est null
     }));
     
     pagination.value.total = references.value.length;

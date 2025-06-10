@@ -84,7 +84,7 @@ const submitForm = async () => {
 
     let response;
     if (isEditMode.value) {
-      response = await ReferencesService.updateReference(formData.value.id, payload);
+      response = await ReferencesService.updatereference(formData.value.id, payload);
       showNotification({
         type: 'success',
         title: 'Success',
@@ -92,7 +92,7 @@ const submitForm = async () => {
         timeout: 5000
       });
     } else {
-      response = await ReferencesService.createReference(payload);
+      response = await ReferencesService.createreference(payload);
       showNotification({
         type: 'success',
         title: 'Success',
@@ -104,7 +104,6 @@ const submitForm = async () => {
     emit('saved', {
       action: isEditMode.value ? 'update' : 'create',
       reference: response.data,
-      id: response.data.id || formData.value.id
     });
 
     const modal = Modal.getInstance(document.getElementById('reference_modal'));

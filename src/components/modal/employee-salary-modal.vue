@@ -20,7 +20,7 @@
                   <div class="col-12 col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Department</label>
-                      <select v-model="formData.department_id" class="form-control" @change="loadEmployeesByDepartment">
+                      <select v-model="formData.departmentId" class="form-control" @change="loadEmployeesByDepartment">
                         <option value="" disabled>Select Department</option>
                         <option v-for="dept in departments" :key="dept.id" :value="dept.id">
                           {{ dept.nom }}
@@ -31,14 +31,14 @@
                   <div class="col-12 col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Employee Name</label>
-                      <select class="form-control" :disabled="!formData.department_id" 
-                              v-model="formData.employee_id" @change="loadEmployeeData">
+                      <select class="form-control" :disabled="!formData.departmentId" 
+                              v-model="formData.employeeId" @change="loadEmployeeData">
                         <option value="" disabled>Select Employee</option>
                         <option v-for="employee in filteredEmployees" :key="employee.id" :value="employee.id">
                           {{ employee.fullName }}
                         </option>
                       </select>
-                      <small v-if="!formData.department_id" class="text-muted">
+                      <small v-if="!formData.departmentId" class="text-muted">
                         Please select a department first
                       </small>
                     </div>
@@ -48,13 +48,13 @@
                   <div class="col-12 col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Pay Period Date</label>
-                      <input type="date" class="form-control" v-model="formData.pay_period_date" />
+                      <input type="date" class="form-control" v-model="formData.payPeriodDate" />
                     </div>
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="mb-3">
                       <label class="form-label">Years of Service</label>
-                      <input type="number" class="form-control" v-model="formData.years_of_service" 
+                      <input type="number" class="form-control" v-model="formData.yearsOfService" 
                              @input="calculateAll" min="0" readonly>
                     </div>
                   </div>
@@ -75,7 +75,7 @@
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
                         <input type="number" min="0" class="form-control" 
-                               v-model="formData.basic_salary" @input="calculateAll" required readonly>
+                               v-model="formData.basicSalary" @input="calculateAll" required readonly>
                       </div>
                     </div>
                   </div>
@@ -85,7 +85,7 @@
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
                         <input type="number" min="0" class="form-control" 
-                               v-model="formData.seniority_bonus" readonly>
+                               v-model="formData.seniorityBonus" readonly>
                       </div>
                     </div>
                   </div>
@@ -99,7 +99,7 @@
                                v-model="formData.overtime_rate" @input="calculateAll" placeholder="Rate %">
                         <span class="input-group-text">%</span>
                       </div>
-                      <small class="text-muted">Amount: {{ formatCurrency(formData.overtime_pay) }}</small>
+                      <small class="text-muted">Amount: {{ formatCurrency(formData.overtimePay) }}</small>
                     </div>
                   </div>
                 </div>
@@ -110,7 +110,7 @@
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
                         <input type="number" min="0" class="form-control" 
-                               v-model="formData.transport_allowance" @input="calculateAll">
+                               v-model="formData.transportAllowance" @input="calculateAll">
                       </div>
                     </div>
                   </div>
@@ -120,7 +120,7 @@
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
                         <input type="number" min="0" class="form-control" 
-                               v-model="formData.housing_allowance" @input="calculateAll">
+                               v-model="formData.housingAllowance" @input="calculateAll">
                       </div>
                     </div>
                   </div>
@@ -130,7 +130,7 @@
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
                         <input type="number" min="0" class="form-control" 
-                               v-model="formData.thirteenth_month_salary" readonly>
+                               v-model="formData.thirteenthMonthSalary" readonly>
                       </div>
                     </div>
                   </div>
@@ -138,7 +138,7 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="alert alert-success bg-success bg-opacity-10">
-                      <strong>Total Earnings: {{ formatCurrency(formData.gross_salary) }}</strong>
+                      <strong>Total Earnings: {{ formatCurrency(formData.grossSalary) }}</strong>
                     </div>
                   </div>
                 </div>
@@ -157,7 +157,7 @@
                       <label class="form-label">CNPS (4.2%)</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control" v-model="formData.employee_social_security" readonly>
+                        <input type="number" min="0" class="form-control" v-model="formData.employeeSocialSecurity" readonly>
                       </div>
                     </div>
                   </div>
@@ -175,7 +175,7 @@
                       <label class="form-label">Health Insurance</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control" v-model="formData.employee_health_welfare" @input="calculateAll">
+                        <input type="number" min="0" class="form-control" v-model="formData.employeeHealthWelfare" @input="calculateAll">
                       </div>
                     </div>
                   </div>
@@ -183,7 +183,7 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="alert alert-danger bg-danger bg-opacity-10">
-                      <strong>Total Deductions: {{ formatCurrency(formData.total_deductions) }}</strong>
+                      <strong>Total Deductions: {{ formatCurrency(formData.totalDeductions) }}</strong>
                     </div>
                   </div>
                 </div>
@@ -202,7 +202,7 @@
                       <label class="form-label">CNPS Employer (8.4%)</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control" v-model="formData.employer_social_security" readonly>
+                        <input type="number" min="0" class="form-control" v-model="formData.employerSocialSecurity" readonly>
                       </div>
                     </div>
                   </div>
@@ -211,7 +211,7 @@
                       <label class="form-label">Other Contributions</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control" v-model="formData.employer_health_welfare" @input="calculateAll">
+                        <input type="number" min="0" class="form-control" v-model="formData.employerHealthWelfare" @input="calculateAll">
                       </div>
                     </div>
                   </div>
@@ -219,7 +219,7 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="alert alert-info bg-info bg-opacity-10">
-                      <strong>Total Employer Contribution: {{ formatCurrency(formData.employer_contribution_total) }}</strong>
+                      <strong>Total Employer Contribution: {{ formatCurrency(formData.employerContributionTotal) }}</strong>
                     </div>
                   </div>
                 </div>
@@ -238,7 +238,7 @@
                       <label class="form-label fw-bold">Gross Salary</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control bg-success bg-opacity-10" v-model="formData.gross_salary" readonly>
+                        <input type="number" min="0" class="form-control bg-success bg-opacity-10" v-model="formData.grossSalary" readonly>
                       </div>
                     </div>
                   </div>
@@ -247,7 +247,7 @@
                       <label class="form-label fw-bold">Total Deductions</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control bg-danger bg-opacity-10" v-model="formData.total_deductions" readonly>
+                        <input type="number" min="0" class="form-control bg-danger bg-opacity-10" v-model="formData.totalDeductions" readonly>
                       </div>
                     </div>
                   </div>
@@ -256,7 +256,7 @@
                       <label class="form-label fw-bold">Net Salary</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control bg-primary bg-opacity-10 fw-bold" v-model="formData.net_salary" readonly>
+                        <input type="number" min="0" class="form-control bg-primary bg-opacity-10 fw-bold" v-model="formData.netSalary" readonly>
                       </div>
                     </div>
                   </div>
@@ -267,7 +267,7 @@
                       <label class="form-label">Employer Contribution Total</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control bg-info bg-opacity-10" v-model="formData.employer_contribution_total" readonly>
+                        <input type="number" min="0" class="form-control bg-info bg-opacity-10" v-model="formData.employerContributionTotal" readonly>
                       </div>
                     </div>
                   </div>
@@ -276,7 +276,7 @@
                       <label class="form-label">Total Cost to Company</label>
                       <div class="input-group">
                         <span class="input-group-text">FCFA</span>
-                        <input type="number" min="0" class="form-control bg-warning bg-opacity-10" v-model="formData.total_cost" readonly>
+                        <input type="number" min="0" class="form-control bg-warning bg-opacity-10" v-model="formData.totalCost" readonly>
                       </div>
                     </div>
                   </div>
@@ -294,19 +294,19 @@
                   <div class="col-12 col-md-4">
                     <div class="mb-3">
                       <label class="form-label">Payslip Date</label>
-                      <input type="date" class="form-control" v-model="formData.payslip_date" />
+                      <input type="date" class="form-control" v-model="formData.payslipDate" />
                     </div>
                   </div>
                   <div class="col-12 col-md-4">
                     <div class="mb-3">
                       <label class="form-label">Payslip Number</label>
-                      <input type="text" class="form-control" v-model="formData.payslip_number" />
+                      <input type="text" class="form-control" v-model="formData.payslipNumber" />
                     </div>
                   </div>
                   <div class="col-12 col-md-4">
                     <div class="mb-3">
                       <label class="form-label">Staff Signature</label>
-                      <input type="text" class="form-control" v-model="formData.staff_signature" />
+                      <input type="text" class="form-control" v-model="formData.staffSignature" />
                     </div>
                   </div>
                 </div>
@@ -361,32 +361,32 @@ const allEmployees = ref([]);
 const filteredEmployees = ref([]);
 
 const formData = ref({
-  department_id: '',
-  employee_id: '',
-  pay_period_date: '',
-  years_of_service: 0,
-  hire_date: '',
-  basic_salary: 0,
-  seniority_bonus: 0,
-  overtime_hours: 0,
-  overtime_rate: 50,
-  overtime_pay: 0,
-  transport_allowance: 0,
-  housing_allowance: 0,
-  thirteenth_month_salary: 0,
-  employee_social_security: 0,
-  employee_health_welfare: 0,
+  departmentId: '',
+  employeeId: '',
+  payPeriodDate: '',
+  yearsOfService: 0,
+  hireDate: '',
+  basicSalary: 0,
+  seniorityBonus: 0,
+  overtimeHours: 0,
+  overtimeRate: 50,
+  overtimePay: 0,
+  transportAllowance: 0,
+  housingAllowance: 0,
+  thirteenthMonthSalary: 0,
+  employeeSocialSecurity: 0,
+  employeeHealthWelfare: 0,
   tax: 0,
-  employer_social_security: 0,
-  employer_health_welfare: 0,
-  gross_salary: 0,
-  total_deductions: 0,
-  net_salary: 0,
-  employer_contribution_total: 0,
-  total_cost: 0,
-  payslip_date: '',
-  payslip_number: '',
-  staff_signature: ''
+  employerSocialSecurity: 0,
+  employerHealthWelfare: 0,
+  grossSalary: 0,
+  totalDeductions: 0,
+  netSalary: 0,
+  employerContributionTotal: 0,
+  totalCost: 0,
+  payslipDate: '',
+  payslipNumber: '',
+  staffSignature: ''
 });
 
 onMounted(async () => {
@@ -401,7 +401,7 @@ onMounted(async () => {
       ...emp,
       fullName: `${emp.firstName} ${emp.lastName}`,
       hireDate: emp.dateOfCommencementService,
-      base_salary: emp.basicSalary || 0
+      baseSalary: emp.basicSalary || 0
     }));
 
     console.log('allemployee:', allEmployees)
@@ -416,12 +416,12 @@ onMounted(async () => {
 });
 
 const loadEmployeesByDepartment = () => {
-  formData.value.employee_id = '';
-  if (!formData.value.department_id) {
+  formData.value.employeeId = '';
+  if (!formData.value.departmentId) {
     filteredEmployees.value = [];
     return;
   }
-  const deptId = Number(formData.value.department_id);
+  const deptId = Number(formData.value.departmentId);
   
   filteredEmployees.value = allEmployees.value.filter(
     emp => Number(emp.departementId) === deptId
@@ -429,11 +429,11 @@ const loadEmployeesByDepartment = () => {
 };
 
 const loadEmployeeData = () => {
-  const employee = allEmployees.value.find(e => e.id === formData.value.employee_id);
+  const employee = allEmployees.value.find(e => e.id === formData.value.employeeId);
   if (employee) {
-    formData.value.basic_salary = employee.base_salary;
-    formData.value.hire_date = employee.dateOfCommencementService;
-    formData.value.years_of_service = calculateYearsOfService(employee.hireDate);
+    formData.value.basicSalary = employee.baseSalary;
+    formData.value.hireDate = employee.dateOfCommencementService;
+    formData.value.yearsOfService = calculateYearsOfService(employee.hireDate);
     calculateAll();
   }
 };
@@ -455,37 +455,37 @@ const calculateAll = () => {
 };
 
 const calculateEarnings = () => {
-  formData.value.seniority_bonus = Math.round(formData.value.basic_salary * 
-    PAYROLL_CONFIG.SENIORITY_RATE * formData.value.years_of_service);
+  formData.value.seniorityBonus = Math.round(formData.value.basicSalary * 
+    PAYROLL_CONFIG.SENIORITY_RATE * formData.value.yearsOfService);
   
-  const hourlyRate = formData.value.basic_salary / PAYROLL_CONFIG.WORKING_HOURS_PER_MONTH;
-  const rateMultiplier = formData.value.overtime_rate / 100;
-  formData.value.overtime_pay = Math.round(formData.value.overtime_hours * hourlyRate * (1 + rateMultiplier));
+  const hourlyRate = formData.value.basicSalary / PAYROLL_CONFIG.WORKING_HOURS_PER_MONTH;
+  const rateMultiplier = formData.value.overtimeRate / 100;
+  formData.value.overtimePay = Math.round(formData.value.overtimeHours * hourlyRate * (1 + rateMultiplier));
   
-  formData.value.thirteenth_month_salary = Math.round(formData.value.basic_salary / 
+  formData.value.thirteenthMonthSalary = Math.round(formData.value.basicSalary / 
     PAYROLL_CONFIG.THIRTEENTH_MONTH_DIVIDER);
   
-  formData.value.gross_salary = Math.round(
-    parseFloat(formData.value.basic_salary || 0) +
-    parseFloat(formData.value.seniority_bonus || 0) +
-    parseFloat(formData.value.overtime_pay || 0) +
-    parseFloat(formData.value.transport_allowance || 0) +
-    parseFloat(formData.value.housing_allowance || 0) +
-    parseFloat(formData.value.thirteenth_month_salary || 0)
+  formData.value.grossSalary = Math.round(
+    parseFloat(formData.value.basicSalary || 0) +
+    parseFloat(formData.value.seniorityBonus || 0) +
+    parseFloat(formData.value.overtimePay || 0) +
+    parseFloat(formData.value.transportAllowance || 0) +
+    parseFloat(formData.value.housingAllowance || 0) +
+    parseFloat(formData.value.thirteenthMonthSalary || 0)
   );
 };
 
 const calculateDeductions = () => {
-  const cnpsBase = Math.min(formData.value.gross_salary, PAYROLL_CONFIG.CNPS_MAX_BASE);
-  formData.value.employee_social_security = Math.round(cnpsBase * PAYROLL_CONFIG.CNPS_EMPLOYEE_RATE);
+  const cnpsBase = Math.min(formData.value.grossSalary, PAYROLL_CONFIG.CNPS_MAX_BASE);
+  formData.value.employeeSocialSecurity = Math.round(cnpsBase * PAYROLL_CONFIG.CNPS_EMPLOYEE_RATE);
   
-  const taxableIncome = formData.value.gross_salary - formData.value.employee_social_security;
+  const taxableIncome = formData.value.grossSalary - formData.value.employeeSocialSecurity;
   formData.value.tax = Math.round(calculateMonthlyIRPP(taxableIncome));
   
-  formData.value.total_deductions = 
-    Math.round(formData.value.employee_social_security) +
+  formData.value.totalDeductions = 
+    Math.round(formData.value.employeeSocialSecurity) +
     Math.round(formData.value.tax) +
-    Math.round(parseFloat(formData.value.employee_health_welfare || 0));
+    Math.round(parseFloat(formData.value.employeeHealthWelfare || 0));
 };
 
 const calculateMonthlyIRPP = (monthlyTaxableIncome) => {
@@ -517,17 +517,17 @@ const calculateMonthlyIRPP = (monthlyTaxableIncome) => {
 
 
 const calculateEmployerContributions = () => {
-  const cnpsBase = Math.min(formData.value.gross_salary, PAYROLL_CONFIG.CNPS_MAX_BASE);
-  formData.value.employer_social_security = Math.round(cnpsBase * PAYROLL_CONFIG.CNPS_EMPLOYER_RATE);
+  const cnpsBase = Math.min(formData.value.grossSalary, PAYROLL_CONFIG.CNPS_MAX_BASE);
+  formData.value.employerSocialSecurity = Math.round(cnpsBase * PAYROLL_CONFIG.CNPS_EMPLOYER_RATE);
   
-  formData.value.employer_contribution_total = 
-    Math.round(formData.value.employer_social_security) +
-    Math.round(parseFloat(formData.value.employer_health_welfare || 0));
+  formData.value.employerContributionTotal = 
+    Math.round(formData.value.employerSocialSecurity) +
+    Math.round(parseFloat(formData.value.employerHealthWelfare || 0));
 };
 
 const updateTotals = () => {
-  formData.value.net_salary = Math.round(formData.value.gross_salary - formData.value.total_deductions);
-  formData.value.total_cost = Math.round(formData.value.gross_salary + formData.value.employer_contribution_total);
+  formData.value.netSalary = Math.round(formData.value.grossSalary - formData.value.totalDeductions);
+  formData.value.totalCost = Math.round(formData.value.grossSalary + formData.value.employerContributionTotal);
 };
 
 const formatCurrency = (value) => {
@@ -542,8 +542,8 @@ const show = () => {
   if (props.editMode && props.salaryData) {
     formData.value = { 
       ...props.salaryData,
-      pay_period_date: formatDateForInput(props.salaryData.pay_period_date),
-      payslip_date: formatDateForInput(props.salaryData.payslip_date)
+      payPeriodDate: formatDateForInput(props.salaryData.payPeriodDate),
+      payslipDate: formatDateForInput(props.salaryData.payslipDate)
     };
   } else {
     resetForm();
@@ -561,42 +561,65 @@ const formatDateForInput = (dateString) => {
 
 const resetForm = () => {
   formData.value = {
-    department_id: '',
-    employee_id: '',
-    pay_period_date: '',
-    years_of_service: 0,
-    hire_date: '',
-    basic_salary: 0,
-    seniority_bonus: 0,
-    overtime_hours: 0,
-    overtime_rate: 50,
-    overtime_pay: 0,
-    transport_allowance: 0,
-    housing_allowance: 0,
-    thirteenth_month_salary: 0,
-    employee_social_security: 0,
-    employee_health_welfare: 0,
+    departmentId: '',
+    employeeId: '',
+    payPeriodDate: '',
+    yearsOfService: 0,
+    hireDate: '',
+    basicSalary: 0,
+    seniorityBonus: 0,
+    overtimeHours: 0,
+    overtimeRate: 50,
+    overtimePay: 0,
+    transportAllowance: 0,
+    housingAllowance: 0,
+    thirteenthMonthSalary: 0,
+    employeeSocialSecurity: 0,
+    employeeHealthWelfare: 0,
     tax: 0,
-    employer_social_security: 0,
-    employer_health_welfare: 0,
-    gross_salary: 0,
-    total_deductions: 0,
-    net_salary: 0,
-    employer_contribution_total: 0,
-    total_cost: 0,
-    payslip_date: '',
-    payslip_number: '',
-    staff_signature: ''
+    employerSocialSecurity: 0,
+    employerHealthWelfare: 0,
+    grossSalary: 0,
+    totalDeductions: 0,
+    netSalary: 0,
+    employerContributionTotal: 0,
+    totalCost: 0,
+    payslipDate: '',
+    payslipNumber: '',
+    staffSignature: ''
   };
 };
 
 const submitForm = async () => {
   try {
-    const payload = {
-      ...formData.value,
-      pay_period_date: formData.value.pay_period_date ? new Date(formData.value.pay_period_date).toISOString() : null,
-      payslip_date: formData.value.payslip_date ? new Date(formData.value.payslip_date).toISOString() : null
-    };
+const payload = {
+  department_id: formData.value.departmentId,
+  employee_id: formData.value.employeeId,
+  years_of_service: formData.value.yearsOfService,
+  hire_date: formData.value.hireDate,
+  basic_salary: formData.value.basicSalary,
+  seniority_bonus: formData.value.seniorityBonus, // Correction de casse
+  overtime_hours: formData.value.overtimeHours,
+  overtime_rate: formData.value.overtimeRate,
+  overtime_pay: formData.value.overtimePay,
+  transport_allowance: formData.value.transportAllowance,
+  housing_allowance: formData.value.housingAllowance,
+  thirteenth_month_salary: formData.value.thirteenthMonthSalary,
+  employee_social_security: formData.value.employeeSocialSecurity,
+  employee_health_welfare: formData.value.employeeHealthWelfare,
+  tax: formData.value.tax,
+  employer_social_security: formData.value.employerSocialSecurity,
+  employer_health_welfare: formData.value.employerHealthWelfare,
+  gross_salary: formData.value.grossSalary,
+  total_deductions: formData.value.totalDeductions,
+  net_salary: formData.value.netSalary,
+  employer_contribution_total: formData.value.employerContributionTotal, // Correction du nom
+  total_cost: formData.value.totalCost,
+  payslip_number: formData.value.payslipNumber,
+  staff_signature: formData.value.staffSignature,
+  pay_period_date: formData.value.payPeriodDate ? new Date(formData.value.payPeriodDate).toISOString() : null,
+  payslip_date: formData.value.payslipDate ? new Date(formData.value.payslipDate).toISOString() : null
+};
 
     emit('save', {
       data: payload,

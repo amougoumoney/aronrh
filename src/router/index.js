@@ -328,6 +328,7 @@ import InterviewsList from '@/views/pages/recruitment/interviews/interviews-list
 import InterviewsDetails from '@/views/pages/recruitment/interviews/interviews-details.vue';
 import Formationemployee from '@/views/pages/hrm/employees/formationemployee.vue';
 import EnfantEmployee from '@/views/pages/hrm/employees/childemployee.vue';
+import DepartmentList from '@/views/pages/hrm/departments/departments-list.vue'
 
 const routes = [
   // Public routes
@@ -347,12 +348,21 @@ const routes = [
       title: 'Forgot Password'
     }
   },
-  {
+  { 
     path: '/reset-password',
     name: 'reset-password',
     component: () => import("@/views/pages/authentication/reset-password.vue"),
     meta: {
       title: 'Reset Password'
+    }
+  },
+
+    {
+    path: '/departments/department-list',
+    name: 'departments-list',
+    component: DepartmentList,
+    meta: {
+      title: 'departments-list'
     }
   },
   {

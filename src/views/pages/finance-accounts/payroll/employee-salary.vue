@@ -1,248 +1,195 @@
 <template>
-  <layout-header></layout-header>
-  <layout-sidebar></layout-sidebar>
-  <!-- Page Wrapper -->
+  <layout-header />
+  <layout-sidebar />
   <div class="page-wrapper">
     <div class="content">
       <!-- Breadcrumb -->
       <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
-        <index-breadcrumb :title="title" :text="text" :text1="text1" />
-        <div class="d-flex my-xl-auto right-content align-items-center flex-wrap">
-          <div class="me-2 mb-2">
-            <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown">
-                <i class="ti ti-file-export me-1"></i>{{ $t('dashboard.export') }}
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end p-3">
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-pdf me-1"></i>{{ $t('dashboard.exportPDF') }}</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1"><i
-                      class="ti ti-file-type-xls me-1"></i>{{ $t('dashboard.exportEXCEL') }}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="mb-2">
-            <a href="javascript:void(0);" data-bs-toggle="modal" @click="handleAddSalary"
-              class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>{{ $t('AddSalary') }}</a>
-          </div>
-          <div class="head-icons ms-2">
-            <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
-              data-bs-original-title="Collapse" id="collapse-header" @click="toggleHeader">
-              <i class="ti ti-chevrons-up"></i>
-            </a>
-          </div>
+        <h5 class="fw-medium">Salary List</h5>
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-primary" @click="handleAddSalary">
+            <i class="ti ti-plus me-1"></i> Add Salary
+          </button>
         </div>
       </div>
-      <!-- /Breadcrumb -->
-
+      <!-- Table -->
       <div class="card">
-        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-          <h5>{{ $t('EmployeeSalaryList') }}</h5>
-          <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
-            <div class="me-3">
-              <div class="input-icon-end position-relative">
-                <input type="text" class="form-control date-range bookingrange" ref="dateRangeInput"
-                  placeholder="dd/mm/yyyy - dd/mm/yyyy" />
-                <span class="input-icon-addon">
-                  <i class="ti ti-chevron-down"></i>
-                </span>
-              </div>
-            </div>
-            <div class="dropdown me-3">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown">
-                {{ $t('Designation') }}
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end p-3">
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('finance') }}</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('Developer') }}</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('executive') }}</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{ $t('manager') }}</a>
-                </li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                data-bs-toggle="dropdown">
-                {{$t('SortBy:Last7Days')}}
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end p-3">
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('RecentlyAdded')}}</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Ascending')}}</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Descending')}}</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('lastMonth')}}</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);" class="dropdown-item rounded-1">{{$t('Last7Days')}}</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
         <div class="card-body p-0">
-          <div class="custom-datatable-filter table-responsive">
-            <a-table class="table datatable thead-light" :columns="columns" :data-source="data"
-              :row-selection="rowSelection">
-              <template #bodyCell="{ column, record }">
-                <template v-if="column.key === 'Name'">
-                  <div class="d-flex align-items-center file-name-icon">
-                    <a href="javascript:void(0);" class="avatar avatar-md">
-                      <img :src="`@/assets/img/users/${record.Image}`" class="img-fluid rounded-circle" alt="img" />
-                    </a>
-                    <div class="ms-2">
-                      <h6 class="fw-medium">
-                        <a href="javascript:void(0);">{{ record.Name }}</a>
-                      </h6>
-                      <span class="d-block mt-1">{{ record.Work }}</span>
-                    </div>
-                  </div>
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Position</th>
+                  <th>Department</th>
+                  <th>Hire Date</th>
+                  <th>Payslip</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <template v-if="filteredPayrolls.length > 0">
+                  <tr v-for="payroll in filteredPayrolls" :key="payroll.id">
+                    <td>{{ payroll.id }}</td>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <img 
+                          :src="getProfilePicture(payroll.employee.profilePicture)" 
+                          class="rounded-circle me-2" 
+                          width="60" 
+                          height="70"
+                          @error="handleImageError"
+                        />
+                        <div>
+                          <h6 class="mb-0">{{ payroll.employee.firstName }} {{ payroll.employee.lastName }}</h6>
+                          <small class="text-muted">{{ getDepartmentName(payroll.employee.departementId) }}</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>{{ payroll.employee.email }}</td>
+                    <td>{{ payroll.employee.position }}</td>
+                    <td>{{ getDepartmentName(payroll.employee.departementId) }}</td>
+                    <td>{{ formatDate(payroll.employee.dateOfCommencementService) }}</td>
+                    <td>
+                      <button 
+                        class="btn btn-sm btn-outline-primary"
+                        @click="viewPayslip(payroll.employee.id)"
+                      >
+                        View Payslip
+                      </button>
+                    </td>
+                    <td>
+                      <button class="btn btn-sm btn-icon" @click="handleEditSalary(payroll)">
+                        <i class="ti ti-edit"></i>
+                      </button>
+                      <button class="btn btn-sm btn-icon" @click="handleDeleteSalary(payroll.id)">
+                        <i class="ti ti-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
                 </template>
-                <template v-if="column.key === 'Designation'">
-                  <div class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                      data-bs-toggle="dropdown">
-                      <span
-                        class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>
-                      {{ record.Designation }}
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end p-3">
-                      <li>
-                        <a href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-success d-flex justify-content-center align-items-center me-2"></span>{{ $t('finance') }}</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{ $t('Developer') }}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{ $t('executive') }}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);"
-                          class="dropdown-item rounded-1 d-flex justify-content-start align-items-center"><span
-                            class="rounded-circle bg-transparent-skyblue d-flex justify-content-center align-items-center me-2"></span>{{ $t('manager') }}
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <template v-else>
+                  <tr>
+                    <td colspan="8" class="text-center py-4">
+                      No payroll records found. 
+                      <button @click="loadData" class="btn btn-link">Refresh data</button>
+                    </td>
+                  </tr>
                 </template>
-
-                <template v-if="column.key === 'Payslip'">
-                  <div>
-                    <span class="badge badge-dark badge-md">{{ record.Payslip }}</span>
-                  </div>
-                </template>
-                <template v-if="column.key === 'action'">
-                  <div class="action-icon d-inline-flex">
-                    <a href="javascript:void(0);" class="me-2" @click="handleEditSalary(record)">
-                      <i class="ti ti-edit"></i>
-                    </a>
-                    <a href="javascript:void(0);" @click="handleDeleteSalary(record.id)">
-                      <i class="ti ti-trash"></i>
-                    </a>
-                  </div>
-                </template>
-              </template>
-            </a-table>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
-      <p class="mb-0">2014 - 2025 &copy; AronHR.</p>
-      <p>
-        {{$t('designed')}}  &amp; {{$t('developedBy')}}
-        <a href="javascript:void(0);" class="text-primary">{{$t('dreams')}}</a>
-      </p>
     </div>
   </div>
-  <!-- /Page Wrapper -->
-  <EmployeeSalary 
+
+  <EmployeeSalaryModal
     ref="salaryModal"
-    :editMode="isEditMode"
-    :salaryData="currentSalary"
+    :employee="currentEmployee"
     @save="handleSaveSalary"
   />
 </template>
+
 <script setup>
-import "daterangepicker/daterangepicker.css";
-import "daterangepicker/daterangepicker.js";
-import { ref, onMounted } from "vue";
-import moment from "moment";
-import DateRangePicker from "daterangepicker";
-import EmployeeSalary from "@/components/modal/employee-salary-modal.vue";
-import PayrollService from "@/services/payroll.service"
+import { ref, computed, onMounted } from 'vue';
+import moment from 'moment';
+import EmployeeService from '@/services/employee.service';
+import payrollService from '@/services/payroll.service';
+import DepartmentService from '@/services/departement.service';
+import EmployeeSalaryModal from '@/components/modal/employee-salary-modal.vue';
 import { useNotifications } from '@/composables/useNotifications';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const { showNotification } = useNotifications();
+
+// Data
+const employees = ref([]);
+const payrolls = ref([]);
+const departments = ref([]);
+const loading = ref(false);
+const currentEmployee = ref(null);
 const salaryModal = ref(null);
-const currentSalary = ref(null);
-const isEditMode = ref(false);
-salaryModal.value?.show();                                                                                                                                              
 
-// Ouvrir le modal en mode ajout
-const handleAddSalary = () => {
-  isEditMode.value = false;
-  currentSalary.value = null;
-  salaryModal.value?.show();
+// Load all data
+const loadData = async () => {
+  loading.value = true;
+  try {
+    const [empRes, payRes, deptRes] = await Promise.all([
+      EmployeeService.getEmployees(),
+      payrollService.getAllPayrolls(),
+      DepartmentService.getAllDepartmentPositions()
+    ]);
+
+    employees.value = empRes.data;
+    payrolls.value = payRes.data;
+    departments.value = deptRes.data;
+    
+    console.log('Employees:', employees.value);
+    console.log('Payrolls:', payrolls.value);
+    console.log('Departments:', departments.value);
+  } catch (error) {
+    console.error("Loading error:", error);
+    showNotification({
+      type: 'error',
+      title: 'Error',
+      message: 'Failed to load data'
+    });
+  } finally {
+    loading.value = false;
+  }
 };
 
-// Ouvrir le modal en mode édition
-const handleEditSalary = (salary) => {
-  isEditMode.value = true;
-  currentSalary.value = salary;
-  salaryModal.value?.show();
+// Filter payrolls and include employee data
+const filteredPayrolls = computed(() => {
+  return payrolls.value.map(pay => {
+    const employee = employees.value.find(emp => emp.id === pay.employeeId);
+    return {
+      ...pay,
+      employee // Inclure toutes les données de l'employé
+    };
+  });
+});
+
+// Get department name
+const getDepartmentName = (departmentId) => {
+  if (!departmentId) return "Not assigned";
+  const department = departments.value.find(dept => dept.id === departmentId);
+  return department ? department.nom : "Unknown department";
 };
 
+// Profile picture handling
+const getProfilePicture = (path) => {
+  if (!path) return '/src/assets/default-profile.png';
+  return path.startsWith('http') ? path : `/storage/${path}`;
+};
 
-// Gérer la sauvegarde
+const handleImageError = (event) => {
+  event.target.src = '/src/assets/default-profile.png';
+};
+
+// Format date
+const formatDate = (date) => {
+  if (!date) return 'N/A';
+  return moment(date).format('DD/MM/YYYY');
+};
+
+// Handle save
 const handleSaveSalary = async ({ data, isEdit }) => {
   try {
     let response;
     if (isEdit) {
-      response = await PayrollService.updatePayroll(data.id, data);
+      response = await payrollService.updatePayroll(data.id, data);
     } else {
-      console.log('data.send.payroll', data)
-      response = await PayrollService.createPayroll(data);
-
-      console.log('response.data', response)
+      response = await payrollService.createPayroll(data);
     }
     
-    // Vérifiez que la réponse est valide
     if (response && response.success) {
-      // Recharger les données et mettre à jour le tableau
-      const updatedData = await PayrollService.getAllPayrolls();
-      data.value = updatedData.data; // Supposant que l'API retourne {data: [...]}
-      
-      // Afficher notification de succès
+      await loadData();
       showNotification({
         type: 'success',
         title: 'Success', 
@@ -258,171 +205,62 @@ const handleSaveSalary = async ({ data, isEdit }) => {
     });
   }
 };
-// Gérer la suppression
-const handleDeleteSalary = async (id) => {
-  if (confirm("Are you sure you want to delete this salary record?")) {
+
+// Actions
+const handleAddSalary = () => {
+  currentEmployee.value = null;
+  salaryModal.value.show();
+};
+
+const handleEditSalary = (payroll) => {
+  currentEmployee.value = payroll.employee;
+  salaryModal.value.show();
+};
+
+const handleDeleteSalary = async (payrollId) => {
+  if (confirm("Are you sure you want to delete this payroll?")) {
     try {
-      await PayrollService.deleteSalary(id);
-      await PayrollService.getAllPayrolls(); // Recharger les données
-      // Ajoutez ici une notification de succès si nécessaire
+      await payrollService.deletePayroll(payrollId);
+      await loadData();
+      showNotification({
+        type: 'success',
+        title: 'Success',
+        message: 'Payroll deleted successfully'
+      });
     } catch (error) {
-      console.error("Error deleting salary:", error);
-      // Ajoutez ici une notification d'erreur si nécessaire
+      console.error("Deletion error:", error);
+      showNotification({
+        type: 'error',
+        title: 'Error',
+        message: 'Failed to delete payroll'
+      });
     }
   }
 };
 
-const loadPayrollData = async () => {
-  try {
-    const response = await PayrollService.getAllPayrolls();
-    data.value = response.data;
-  } catch (error) {
-    console.error('Error loading payroll data:', error);
-  }
-};
-const columns = ref([
-  {
-    sorter: false,
-  },
-  {
-    title: "Emp ID",
-    dataIndex: "EmpID",
-    sorter: {
-      compare: (a, b) => {
-        a = a.EmpID.toLowerCase();
-        b = b.EmpID.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
-  },
-  {
-    title: "Name",
-    dataIndex: "Name",
-    key: "Name",
-    sorter: {
-      compare: (a, b) => {
-        a = a.Name.toLowerCase();
-        b = b.Name.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
-  },
-  {
-    title: "Email",
-    dataIndex: "Email",
-    sorter: {
-      compare: (a, b) => {
-        a = a.Email.toLowerCase();
-        b = b.Email.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
-  },
-  {
-    title: "Phone",
-    dataIndex: "Phone",
-    sorter: {
-      compare: (a, b) => {
-        a = a.Phone.toLowerCase();
-        b = b.Phone.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
-  },
-  {
-    title: "Designation",
-    dataIndex: "Designation",
-    key: "Designation",
-    sorter: {
-      compare: (a, b) => {
-        a = a.Designation.toLowerCase();
-        b = b.Designation.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
-  },
-  {
-    title: "Joining Date",
-    dataIndex: "JoiningDate",
-    key: "JoiningDate",
-    sorter: {
-      compare: (a, b) => {
-        a = a.JoiningDate.toLowerCase();
-        b = b.JoiningDate.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
-  },
-  {
-    title: "Payslip",
-    dataIndex: "Payslip",
-    key: "Payslip",
-    sorter: {
-      compare: (a, b) => {
-        a = a.Payslip.toLowerCase();
-        b = b.Payslip.toLowerCase();
-        return a > b ? -1 : b > a ? 1 : 0;
-      },
-    },
-  },
-  {
-    title: "",
-    key: "action",
-    sorter: false,
-  },
-]);
-
-const data = ref([
-]);
-
-const rowSelection = ref({
-  onChange: () => { },
-  onSelect: () => { },
-  onSelectAll: () => { },
-});
-
-const title = ref("Employee Salary");
-const text = ref("HR");
-const text1 = ref("Employee Salary");
-const dateRangeInput = ref(null);
-
-const toggleHeader = () => {
-  document.getElementById("collapse-header").classList.toggle("active");
-  document.body.classList.toggle("header-collapse");
+const viewPayslip = (id) => {
+  router.push(`/payroll/payslip/${id}`);
 };
 
-function booking_range(start, end) {
-  return start.format("M/D/YYYY") + " - " + end.format("M/D/YYYY");
-}
-
+// Initialization
 onMounted(() => {
-
-   loadPayrollData();
-  if (dateRangeInput.value) {
-    const start = moment().subtract(6, "days");
-    const end = moment();
-
-    new DateRangePicker(
-      dateRangeInput.value,
-      {
-        startDate: start,
-        endDate: end,
-        ranges: {
-          Today: [moment(), moment()],
-          Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
-          "Last 7 Days": [moment().subtract(6, "days"), moment()],
-          "Last 30 Days": [moment().subtract(29, "days"), moment()],
-          "This Month": [moment().startOf("month"), moment().endOf("month")],
-          "Last Month": [
-            moment().subtract(1, "month").startOf("month"),
-            moment().subtract(1, "month").endOf("month"),
-          ],
-        },
-      },
-      booking_range
-    );
-
-    booking_range(start, end);
-  }
+  loadData();
 });
 </script>
+
+<style scoped>
+.avatar {
+  object-fit: cover;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  color: #856404;
+}
+
+.btn-link {
+  padding: 0;
+  vertical-align: baseline;
+}
+</style>

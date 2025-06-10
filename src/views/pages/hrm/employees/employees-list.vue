@@ -278,7 +278,7 @@
               'badge-xs',
             ]">
               <i class="ti ti-point-filled me-1"></i>
-              {{ employee.status }}
+              {{ employee.statusEmployee }}
             </span>
           </td>
           <td>

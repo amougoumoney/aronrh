@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BASE_URL: import.meta.env.VUE_APP_API_BASE_URL || 'http://localhost:3333/api',
+    BASE_URL: import.meta.env.VUE_APP_API_BASE_URL || 'https://arh-backend.onrender.com/api',
     HEADERS: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
@@ -115,6 +115,14 @@ export const API_ENDPOINTS = {
         UPDATE: '/grantallocation/:id',
         DELETE: '/grantallocation/:id',
         DETAILS: '/grantallocation/:id'
+    },
+
+    REFERENCE: {
+        LIST: '/reference',
+        CREATE: '/reference',
+        UPDATE: '/reference/:id',
+        DELETE: '/reference/:id',
+        DETAILS: '/reference/:id'
     },
 
     // Points de terminaison pour les types d'emploi

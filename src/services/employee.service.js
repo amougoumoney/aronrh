@@ -72,6 +72,7 @@ class EmployeeService {
             middle_name: data.middle_name,
             departement_id: data.departement_id,
             last_name: data.last_name,
+            //job_position: data.job_position,
             gender: data.gender,
             date_of_birth: data.date_of_birth,
             status: data.status || 'Expats',

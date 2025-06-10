@@ -30,11 +30,12 @@ class DepartmentPositionService {
   formatDepartmentPositionData(data) {
     return {
       id: data.id,
-      department: data.department,
+      nom:data.nom,
+      description: data.description,
       position: data.position,
-      report_to: data.report_to || null,
-      created_by: data.created_by || 'admin',
-      updated_by: data.updated_by || 'admin',
+      cree_par: data.cree_par || 'admin',
+      signaler_a: data.signaler_a || 'admin',
+      mis_a_jour_par: data.mis_a_jour_par || 'admin',
     };
   }
 }

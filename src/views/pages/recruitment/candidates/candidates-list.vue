@@ -7,7 +7,7 @@ import DateRangePicker from "daterangepicker";
 import CandidateModal from "@/components/modal/candidat-list-modal.vue";
 import { Modal } from "bootstrap";
 import candidatesTable from './candidates-table.vue'
-import  CandidatService from '@/services/candidat.service';
+import CandidatService from '@/services/candidat.service';
 
 const title = "Candidates";
 const text = "HR";
@@ -15,6 +15,7 @@ const text1 = "Candidates";
 
 const dateRangeInput = ref(null);
 const candidateModalRef = ref(null);
+const candidates = ref([]);
 
 // Fonctions pour gérer les actions sur les candidats
 const openAddCandidateModal = () => {
@@ -22,7 +23,6 @@ const openAddCandidateModal = () => {
 };
 
 const handleEditCandidate = (candidate) => {
-  // Convertir les noms de propriétés snake_case en camelCase
   const formattedCandidate = {
     candidateName: candidate.candidate_name,
     candidateSurname: candidate.candidate_surname,
@@ -36,35 +36,30 @@ const handleEditCandidate = (candidate) => {
   candidateModalRef.value?.show(true, formattedCandidate);
 };
 
-
-const fetchallCandidate = async() => {
-  try{
-    const response = await CandidatService.getAllCandidats()
-    console.log('response.candidate:', response)
-  }catch(error){
-    console.error('error', error)
+const handleDeleteCandidate = async (candidateId) => {
+  try {
+    await CandidatService.deleteCandidat(candidateId);
+    refreshCandidateList();
+    // Vous pouvez ajouter une notification de succès ici si nécessaire
+  } catch (error) {
+    console.error('Error deleting candidate:', error);
+    // Vous pouvez ajouter une notification d'erreur ici si nécessaire
   }
-}
-// const handleDeleteCandidate = async (candidateId) => {
-//   try {
-//     // Appel API pour supprimer le candidat
-//     // await CandidateService.deleteCandidate(candidateId);
-//     showNotification({
-//       type: 'success',
-//       title: 'Success',
-//       message: 'Candidate deleted successfully!',
-//       timeout: 5000
-//     });
-//     // Émettre un événement ou rafraîchir la liste
-//   } catch (error) {
-//     showNotification({
-//       type: 'error',
-//       title: 'Error',
-//       message: 'Failed to delete candidate',
-//       timeout: 5000
-//     });
-//   }
-// };
+};
+
+const fetchAllCandidate = async () => {
+  try {
+    const response = await CandidatService.getAllCandidats();
+    candidates.value = response.data || response;
+    console.log('Candidates data:', candidates.value);
+  } catch (error) {
+    console.error('Error fetching candidates:', error);
+  }
+};
+
+const refreshCandidateList = () => {
+  fetchAllCandidate();
+};
 
 // Fonction pour formater la plage de dates
 function bookingRange(start, end) {
@@ -73,8 +68,8 @@ function bookingRange(start, end) {
 
 // Initialisation du DateRangePicker
 onMounted(() => {
-
-  fetchallCandidate()
+  fetchAllCandidate();
+  
   if (dateRangeInput.value) {
     const start = moment().subtract(6, "days");
     const end = moment();
@@ -179,10 +174,11 @@ function toggleHeader() {
         </div>
         <div class="card-body p-0">
           <div class="custom-datatable-filter table-responsive">
-            <!-- Passez les handlers d'événements au composant table -->
             <candidates-table 
+              :candidates="candidates"
               @edit-candidate="handleEditCandidate"
               @delete-candidate="handleDeleteCandidate"
+              @refresh="refreshCandidateList"
             ></candidates-table>
           </div>
         </div>

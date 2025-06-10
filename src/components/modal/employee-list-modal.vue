@@ -5,7 +5,7 @@
         <div class="modal-header">
           <div class="d-flex align-items-center">
             <h4 class="modal-title me-2">{{ isEditMode ? 'Edit Employee' : 'Add New Employee' }}</h4>
-            <span v-if="isEditMode">Employee ID : {{ formData.staff_id }}</span>
+            <span v-if="isEditMode">Employee ID : {{ formData.staffId }}</span>
           </div>
           <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="ti ti-x"></i>
@@ -45,7 +45,7 @@
                 <div class="col-md-12">
                   <div class="d-flex align-items-center flex-wrap bg-light rounded p-3 mb-4">
                     <div class="avatar avatar-xxl rounded-circle border border-dashed me-3">
-                      <img v-if="formData.profile_picture" :src="formData.profile_picture" class="rounded-circle" alt="Profile">
+                      <img v-if="formData.profilePicture" :src="formData.profilePicture" class="rounded-circle" alt="Profile">
                       <i v-else class="ti ti-photo text-gray-2 fs-16"></i>
                         <!-- Overlay de chargement -->
                       <div v-if="uploading" class="upload-overlay">
@@ -69,7 +69,7 @@
 
                 <div class="col-md-4 mb-3">
                   <label class="form-label">Staff ID <span class="text-danger">*</span></label>
-                  <input v-model="formData.staff_id" type="text" class="form-control" :readonly="isEditMode" required>
+                  <input v-model="formData.staffId" type="text" class="form-control" :readonly="isEditMode" required>
                 </div>
 
                 <div class="col-md-4 mb-3">
@@ -80,7 +80,7 @@
                 <div class="col-md-4 mb-3">
                   <label class="form-label">Departement</label>
                   <select 
-                    v-model="formData.departement_id"
+                    v-model="formData.departementId"
                     class="form-control"
                   >
                     <option v-for="dept in departement" :key="dept.id" :value="dept.id">
@@ -90,20 +90,24 @@
                       Select Department</option>
                   </select>
                 </div>
+                <div class="col-md-4 mb-3">
+                  <label class="form-label">Job Position <span class="text-danger">*</span></label>
+                  <input v-model="formData.jobPosition" type="text" class="form-control" :readonly="isEditMode" required>
+                </div>
 
                 <div class="col-md-4 mb-3">
                   <label class="form-label"> Basic salary<span class="text-danger">*</span></label>
-                  <input v-model="formData.basic_salary" type="number" min="0" class="form-control" required>
+                  <input v-model="formData.basicSalary" type="number" min="0" class="form-control" required>
                 </div>
 
                 <div class="col-md-4 mb-3">
                   <label class="form-label">Date of commencement of service<span class="text-danger">*</span></label>
-                  <input v-model="formData.date_of_commencement_service" type="date" class="form-control" required>
+                  <input v-model="formData.dateOfCommencementService" type="date" class="form-control" required>
                 </div>
 
                 <div class="col-md-4 mb-3">
                   <label class="form-label">Status employee</label>
-                  <select v-model="formData.status_employee" class="form-control">
+                  <select v-model="formData.statusEmployee" class="form-control">
                     <option v-for="statu in statusemployee " :key="statu.value" :value="statu.value">{{ statu.label }}</option>
                   </select>
                 </div>
@@ -117,17 +121,17 @@
 
                 <div class="col-md-4 mb-3">
                   <label class="form-label">First Name <span class="text-danger">*</span></label>
-                  <input v-model="formData.first_name" type="text" class="form-control" required>
+                  <input v-model="formData.firstName" type="text" class="form-control" required>
                 </div>
 
                 <div class="col-md-4 mb-3">
                   <label class="form-label">Middle Name</label>
-                  <input v-model="formData.middle_name" type="text" class="form-control">
+                  <input v-model="formData.middleName" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-4 mb-3">
                   <label class="form-label">Last Name <span class="text-danger">*</span></label>
-                  <input v-model="formData.last_name" type="text" class="form-control" required>
+                  <input v-model="formData.lastName" type="text" class="form-control" required>
                 </div>
 
                 <div class="col-md-4 mb-3">
@@ -141,7 +145,7 @@
 
                 <div class="col-md-4 mb-3">
                   <label class="form-label">Date of Birth <span class="text-danger">*</span></label>
-                  <input v-model="formData.date_of_birth" type="date" class="form-control" required>
+                  <input v-model="formData.dateOfBirth" type="date" class="form-control" required>
                 </div>
 
                 <div class="col-md-4 mb-3">
@@ -151,12 +155,12 @@
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Birth Place</label>
-                  <input v-model="formData.birth_place" type="text" class="form-control">
+                  <input v-model="formData.birthPlace" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Marital Status</label>
-                  <select v-model="formData.marital_status" class="form-control">
+                  <select v-model="formData.maritalStatus" class="form-control">
                     <option value="Single">Single</option>
                     <option value="Married">Married</option>
                     <option value="Divorced">Divorced</option>
@@ -176,38 +180,38 @@
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Office Phone</label>
-                  <input v-model="formData.office_phone" type="tel" class="form-control">
+                  <input v-model="formData.officePhone" type="tel" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Mobile Phone <span class="text-danger">*</span></label>
-                  <input v-model="formData.mobile_phone" type="tel" class="form-control" required>
+                  <input v-model="formData.mobilePhone" type="tel" class="form-control" required>
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Driver License Number</label>
-                  <input v-model="formData.driver_license_number" type="text" class="form-control">
+                  <input v-model="formData.driverLicenseNumber" type="text" class="form-control">
                 </div>
 
                 <div class="col-12 mb-3">
                   <label class="form-label">Permanent Address</label>
-                  <textarea v-model="formData.permanent_address" class="form-control" rows="3"></textarea>
+                  <textarea v-model="formData.permanentAddress" class="form-control" rows="3"></textarea>
                 </div>
 
                 <div class="col-12 mb-3">
                   <label class="form-label">Current Address</label>
-                  <textarea v-model="formData.current_address" class="form-control" rows="3"></textarea>
+                  <textarea v-model="formData.currentAddress" class="form-control" rows="3"></textarea>
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Stay With</label>
-                  <input v-model="formData.stay_with" type="text" class="form-control">
+                  <input v-model="formData.stayWith" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Military Status</label>
                   <div class="form-check form-switch">
-                    <input v-model="formData.military_status" class="form-check-input" type="checkbox">
+                    <input v-model="formData.militaryStatus" class="form-check-input" type="checkbox">
                     <label class="form-check-label">Completed Military Service</label>
                   </div>
                 </div>
@@ -219,32 +223,32 @@
               <div class="row">
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Spouse Name</label>
-                  <input v-model="formData.spouse_name" type="text" class="form-control">
+                  <input v-model="formData.spouseName" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Spouse Occupation</label>
-                  <input v-model="formData.spouse_occupation" type="text" class="form-control">
+                  <input v-model="formData.spouseOccupation" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Father Name</label>
-                  <input v-model="formData.father_name" type="text" class="form-control">
+                  <input v-model="formData.fatherName" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Father Occupation</label>
-                  <input v-model="formData.father_occupation" type="text" class="form-control">
+                  <input v-model="formData.fatherOccupation" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Mother Name</label>
-                  <input v-model="formData.mother_name" type="text" class="form-control">
+                  <input v-model="formData.motherName" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Mother Occupation</label>
-                  <input v-model="formData.mother_occupation" type="text" class="form-control">
+                  <input v-model="formData.motherOccupation" type="text" class="form-control">
                 </div>
               </div>
             </div>
@@ -254,42 +258,42 @@
               <div class="row">
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Bank Name</label>
-                  <input v-model="formData.bank_name" type="text" class="form-control">
+                  <input v-model="formData.bankName" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Bank Branch</label>
-                  <input v-model="formData.bank_branch" type="text" class="form-control">
+                  <input v-model="formData.bankBranch" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Bank Account Name</label>
-                  <input v-model="formData.bank_account_name" type="text" class="form-control">
+                  <input v-model="formData.bankAccountName" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Bank Account Number</label>
-                  <input v-model="formData.bank_account_number" type="text" class="form-control">
+                  <input v-model="formData.bankAccountNumber" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Identification Number</label>
-                  <input v-model="formData.identification_number" type="text" class="form-control">
+                  <input v-model="formData.identificationNumber" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Social Security Number</label>
-                  <input v-model="formData.social_security_number" type="text" class="form-control">
+                  <input v-model="formData.socialSecurityNumber" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Tax Number</label>
-                  <input v-model="formData.tax_number" type="text" class="form-control">
+                  <input v-model="formData.taxNumber" type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Passport Number</label>
-                  <input v-model="formData.passport_number" type="text" class="form-control">
+                  <input v-model="formData.passportNumber" type="text" class="form-control">
                 </div>
               </div>
             </div>
@@ -341,44 +345,45 @@ const emit = defineEmits(['saved']);
 const isEditMode = ref(false);
 
 const formData = ref({
-  staff_id: '',
-  subsidiary: 'SMRU',
-  first_name: '',
-  middle_name: '',
-  departement_id: null,
-  last_name: '',
-  gender: 'Male',
-  date_of_birth: '',
-  status: 'Expats',
-  status_employee: false,
-  basic_salary: 0,
-  religion: '',
-  birth_place: '',
-  identification_number: '',
-  social_security_number: '',
-  tax_number: '',
-  date_of_commencement_service:'',
-  passport_number: '',
-  bank_name: '',
-  bank_branch: '',
-  profile_picture: '',
-  bank_account_name: '',
-  bank_account_number: '',
-  office_phone: '',
-  mobile_phone: '',
-  permanent_address: '',
-  current_address: '',
-  stay_with: '',
-  military_status: false,
-  marital_status: 'Single',
-  spouse_name: '',
-  spouse_occupation: '',
-  father_name: '',
-  father_occupation: '',
-  mother_name: '',
-  mother_occupation: '',
-  driver_license_number: '',
-  email: '',
+    staffId: '',
+    subsidiary: 'SMRU',
+    firstName: '',
+    middleName: '',
+    jobPosition: '',
+    departementId: null,
+    lastName: '',
+    gender: 'Male',
+    dateOfBirth: '',
+    status: '',
+    statusEmployee: false,
+    basicSalary: 0,
+    religion: '',
+    birthPlace: '',
+    identificationNumber: '',
+    socialSecurityNumber: '',
+    taxNumber: '',
+    dateOfCommencementService:'',
+    passportNumber: '',
+    profilePicture: '',
+    bankName: '',
+    bankBranch: '',
+    bankAccountName: '',
+    bankAccountNumber: '',
+    officePhone: '',
+    mobilePhone: '',
+    permanent_address: '',
+    currentAddress: '',
+    stayWith: '',
+    militaryStatus: false,
+    maritalStatus: 'Single',
+    spouseName: '',
+    spouseOccupation: '',
+    fatherName: '',
+    fatherOccupation: '',
+    motherName: '',
+    motherOccupation: '',
+    driverLicenseNumber: '',
+    email: '',
 });
 
 const show = (editMode = false, employeeData = null) => {
@@ -389,43 +394,44 @@ const show = (editMode = false, employeeData = null) => {
   } else {
     // Reset form for new employee
     formData.value = {
-      staff_id: '',
+      staffId: '',
       subsidiary: 'SMRU',
-      first_name: '',
-      middle_name: '',
-      departement_id: null,
-      last_name: '',
+      firstName: '',
+      middleName: '',
+      departementId: null,
+      jobPosition:'',
+      lastName: '',
       gender: 'Male',
-      date_of_birth: '',
+      dateOfBirth: '',
       status: '',
-      status_employee: false,
-      basic_salary: 0,
+      statusEmployee: false,
+      basicSalary: 0,
       religion: '',
-      birth_place: '',
-      identification_number: '',
-      social_security_number: '',
-      tax_number: '',
-      date_of_commencement_service:'',
-      passport_number: '',
-      profile_picture: '',
-      bank_name: '',
-      bank_branch: '',
-      bank_account_name: '',
-      bank_account_number: '',
-      office_phone: '',
-      mobile_phone: '',
+      birthPlace: '',
+      identificationNumber: '',
+      socialSecurityNumber: '',
+      taxNumber: '',
+      dateOfCommencementService:'',
+      passportNumber: '',
+      profilePicture: '',
+      bankName: '',
+      bankBranch: '',
+      bankAccountName: '',
+      bankAccountNumber: '',
+      officePhone: '',
+      mobilePhone: '',
       permanent_address: '',
-      current_address: '',
-      stay_with: '',
-      military_status: false,
-      marital_status: 'Single',
-      spouse_name: '',
-      spouse_occupation: '',
-      father_name: '',
-      father_occupation: '',
-      mother_name: '',
-      mother_occupation: '',
-      driver_license_number: '',
+      currentAddress: '',
+      stayWith: '',
+      militaryStatus: false,
+      maritalStatus: 'Single',
+      spouseName: '',
+      spouseOccupation: '',
+      fatherName: '',
+      fatherOccupation: '',
+      motherName: '',
+      motherOccupation: '',
+      driverLicenseNumber: '',
       email: '',
     };
   }
@@ -455,11 +461,11 @@ const submitForm = async () => {
 
     // Validation des champs obligatoires
     const requiredFields = {
-      'staff_id': 'Staff ID',
-      'first_name': 'First Name',
-      'last_name': 'Last Name',
+      'staffId': 'Staff ID',
+      'firstName': 'First Name',
+      'lastName': 'Last Name',
       'email': 'Email',
-      'mobile_phone': 'Mobile Phone',
+      'mobilePhone': 'Mobile Phone',
     };
     
     const missingFields = Object.entries(requiredFields)
@@ -480,11 +486,46 @@ const submitForm = async () => {
     // Création du payload
 
     const payload = {
-      ...formData.value,
-      departement_id: formData.value.departement_id !== null ? Number(formData.value.departement_id) : null,
-      military_status: formData.value.military_status ? 1 : 0,
-      date_of_birth: formData.value.date_of_birth
-        ? new Date(formData.value.date_of_birth).toISOString().split('T')[0]
+      staff_id: formData.value.staffId,
+      subsidiary: formData.value.subsidiary,
+      first_name: formData.value.firstName,
+      middle_name: formData.value.middleName,
+      last_name: formData.value.lastName,
+      gender: formData.value.gender,
+      status: formData.value.status,
+      status_employee: formData.value.statusEmployee,
+      basic_salary: formData.value.basicSalary,
+      religion: formData.value.religion,
+      job_position: formData.value.jobPosition,
+      birth_place: formData.value.birthPlace,
+      identification_number: formData.value.identificationNumber,
+      social_security_number: formData.value.socialSecurityNumber,
+      tax_number: formData.value.taxNumber,
+      date_of_commencement_service: formData.value.dateOfCommencementService,
+      passport_number: formData.value.passportNumber,
+      profile_picture: formData.value.profilePicture,
+      bank_name: formData.value.bankName,
+      bank_branch: formData.value.bankBranch,
+      bank_account_name: formData.value.bankAccountName,
+      bank_account_number: formData.value.bankAccountNumber,
+      office_phone: formData.value.officePhone,
+      mobile_phone: formData.value.mobilePhone,
+      permanent_address: formData.value.permanentAddress,
+      current_address: formData.value.currentAddress,
+      stay_with: formData.value.stayWith,
+      marital_status: formData.value.maritalStatus,
+      spouse_name: formData.value.spouseName,
+      spouse_occupation: formData.value.spouseOccupation,
+      father_name: formData.value.fatherName,
+      father_occupation: formData.value.fatherOccupation,
+      mother_name: formData.value.motherName,
+      mother_occupation: formData.value.motherOccupation,
+      driver_license_number: formData.value.driverLicenseNumber,
+      email: formData.value.email,
+      departement_id: formData.value.departementId !== null ? Number(formData.value.departementId) : null,
+      military_status: formData.value.militaryStatus ? 1 : 0,
+      date_of_birth: formData.value.dateOfBirth
+        ? new Date(formData.value.dateOfBirth).toISOString().split('T')[0]
         : null
     };
     console.log('Final payload being sent:', payload);
@@ -492,7 +533,7 @@ const submitForm = async () => {
     // Envoi à l'API
     let response;
     if (isEditMode.value) {
-      response = await EmployeeService.updateEmployee(formData.value.staff_id, payload);
+      response = await EmployeeService.updateEmployee(formData.value.staffId, payload);
       showNotification({
         type: 'success',
         title: 'Success',
@@ -613,7 +654,7 @@ const handleImageUpload = async (event) => {
     });
 
     const imageUrl = await uploadImageToCloudinary(file);
-    formData.value.profile_picture = imageUrl; // Mettre à jour l'URL dans formData
+    formData.value.profilePicture = imageUrl; // Mettre à jour l'URL dans formData
         showNotification({
       type: 'success',
       title: 'Succès',
@@ -636,7 +677,7 @@ const removeImage = async () => {
   // (nécessite une implémentation côté serveur pour la suppression sécurisée)
   
   formData.value.image = '';
-  formData.value.profile_picture = '';
+  formData.value.profilePicture = '';
 };
 // Exposer la fonction show pour qu'elle puisse être appelée depuis le parent
 defineExpose({ show });
